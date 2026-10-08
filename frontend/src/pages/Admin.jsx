@@ -1,0 +1,289 @@
+import { useEffect, useState, useCallback } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import Status from '../components/Status.jsx';
+import {
+  VENDORS, PRODUCTS, ZONES, EXAMPLE_ORDER, ORDER_STATES, VENDOR_ORDERS, productById,
+} from '../data/examples.js';
+
+// Vista privada: todo el contenido interno llega del backend tras comprobar la sesión.
+const STATUSES = ['recibida', 'en revisión', 'verificada', 'rechazada'];
+const SECTIONS = [['resumen', 'Resumen'], ['mercado', 'Mercado'], ['legal', 'Marco legal'], ['equipo', 'Equipo'], ['hitos', 'Hitos y Asana'],['vendedores', 'Altas'], ['marketplace', 'Marketplace']];
+
+function Sellers() {
+  const [items, setItems] = useState([]);
+  const load = useCallback(() => fetch('/api/admin/sellers').then((r) => r.json()).then(setItems), []);
+  useEffect(() => { load(); }, [load]);
+
+  async function setStatus(id, status) {
+    await fetch(`/api/admin/sellers/${id}`, {
+      method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }),
+    });
+    load();
+  }
+
+  if (!items.length) return <p className="muted">Todavía no hay solicitudes de alta.</p>;
+  return (
+    <div className="table-wrap">
+      <table>
+        <thead><tr><th>Negocio</th><th>Tipo</th><th>Zona</th><th>Contacto</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
+        <tbody>
+          {items.map((s) => (
+            <tr key={s.id}>
+              <td><strong>{s.businessName}</strong><br /><span className="muted small">{s.offer}</span></td>
+              <td>{s.type}</td><td>{s.zone}</td><td>{s.email}</td><td>{s.sanitaryRegistry}</td>
+              <td>
+                <select aria-label={`Estado de ${s.businessName}`} value={s.status} onChange={(e) => setStatus(s.id, e.target.value)}>
+                  {STATUSES.map((st) => <option key={st}>{st}</option>)}
+                </select>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+const done = (t) => (t.completed ? <Status kind="decidido">Hecho</Status> : <Status kind="hipotesis">Abierto</Status>);
+const count = (p) => p && p.total > 0 && <span className="muted small"> · {p.done}/{p.total}</span>;
+
+// Responsable en Asana y, si difiere o falta, el previsto en el plan.
+function Who({ t }) {
+  const asana = t.assignee;
+  const plan = t.planned;
+  return (
+    <span className="muted small">
+      {asana ?? 'Sin asignar'}
+      {plan && plan !== asana && <> · plan: {plan}</>}
+      {t.due_on && <> · {t.due_on}</>}
+    </span>
+  );
+}
+
+// Hitos del curso leídos de Asana (tareas [Food4All]), con subtareas en dos niveles.
+function Milestones() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState('');
+  const load = useCallback(() => {
+    setData(null); setError('');
+    fetch('/api/admin/milestones')
+      .then((r) => (r.ok ? r.json() : r.json().then((d) => Promise.reject(new Error(d.error)))))
+      .then(setData)
+      .catch((e) => setError(e.message));
+  }, []);
+  useEffect(() => { load(); }, [load]);
+
+  if (error) return <p role="alert" style={{ color: 'var(--danger)' }}>Error al cargar los hitos: {error} <button className="btn btn-ghost" onClick={load}>Reintentar</button></p>;
+  if (!data) return <p className="muted">Cargando hitos de Asana…</p>;
+
+  return (
+    <>
+      <p className="toolbar">
+        <button className="btn btn-ghost" onClick={load}>Actualizar</button>
+        {data.source === 'plan'
+          ? <span className="muted small">Sin conexión con Asana ({data.error}). Se muestra solo el plan.</span>
+          : <span className="muted small">Datos en directo de Asana · solo tareas [Food4All].</span>}
+      </p>
+      {data.milestones.map((m) => (
+        <details key={m.n ?? m.title} className="milestone" open={!m.completed && m.children.length > 0}>
+          <summary>
+            <span className="milestone__title">Hito {m.n} · {m.title}</span>
+            {count(m.progress)}
+            {m.due_on && <span className="muted small"> · entrega {m.due_on}</span>}
+            {m.completed && <> <Status kind="decidido">Completado</Status></>}
+          </summary>
+          {m.children.length === 0
+            ? <p className="muted small">Todavía sin subtareas en Asana.</p>
+            : (
+              <ul className="divided">
+                {m.children.map((c) => (
+                  <li key={c.name}>
+                    <div className="task-line">
+                      <span>{done(c)} <strong>{c.name}</strong>{count(c.progress)}</span>
+                      <Who t={c} />
+                    </div>
+                    {c.children.length > 0 && (
+                      <ul className="subtasks">
+                        {c.children.map((l) => (
+                          <li key={l.name} className="task-line">
+                            <span>{done(l)} {l.name}</span>
+                            <Who t={l} />
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {c.planOnly?.length > 0 && !c.completed && (
+                      <ul className="subtasks subtasks--plan" aria-label="Pasos del plan que no están en Asana">
+                        {c.planOnly.map((l) => (
+                          <li key={l.name} className="task-line">
+                            <span><Status kind="pendiente">Solo en el plan</Status> {l.name}</span>
+                            <span className="muted small">plan: {l.planned}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+        </details>
+      ))}
+    </>
+  );
+}
+
+function MarketplaceExample() {
+  const orders = [
+    { ...EXAMPLE_ORDER, state: ORDER_STATES[EXAMPLE_ORDER.currentState] },
+    ...VENDOR_ORDERS.map((o) => ({ number: o.number, zone: 'Sevilla', items: o.items, state: o.state })),
+  ];
+  return (
+    <>
+      <div className="cols-3">
+        {ZONES.map((z) => (
+          <div key={z}>
+            <h3>{z}</h3>
+            <ul className="divided">
+              {VENDORS.filter((v) => v.zone === z).map((v) => (
+                <li key={v.id} className="task-line">
+                  <span><strong>{v.name}</strong> <span className="muted small">{v.type}</span></span>
+                  <span className="muted small">{PRODUCTS.filter((p) => p.vendor === v.id).length} productos</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <h3 style={{ marginTop: 24 }}>Pedidos de ejemplo</h3>
+      <div className="table-wrap">
+        <table>
+          <thead><tr><th>Pedido</th><th>Zona</th><th>Productos</th><th>Vendedores</th><th>Estado</th></tr></thead>
+          <tbody>
+            {orders.map((o) => {
+              const names = o.items.map(([id, q]) => `${productById(id).name} × ${q}`);
+              const sellers = new Set(o.items.map(([id]) => productById(id).vendor));
+              return (
+                <tr key={o.number}>
+                  <td><strong>{o.number}</strong></td><td>{o.zone}</td>
+                  <td className="muted small">{names.join(', ')}</td>
+                  <td>{sellers.size}</td><td>{o.state}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    </>
+  );
+}
+
+const KIND = { fuente: ['decidido', 'Fuente externa'], hipotesis: ['hipotesis', 'Estimación propia'], pendiente: ['pendiente', 'Por validar'] };
+
+export default function Admin() {
+  const [p, setP] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch('/api/admin/project').then((r) => (r.ok ? r.json().then(setP) : navigate('/admin/login')));
+  }, [navigate]);
+
+  async function logout() {
+    await fetch('/api/admin/logout', { method: 'POST' });
+    navigate('/');
+  }
+
+  if (!p) return null;
+  return (
+    <>
+      <div className="admin-bar">
+        <div className="container">
+          <strong>FOOD4ALL · Administración</strong>
+          <span><Link to="/">Salir a la web pública</Link> · <button className="btn btn-link" onClick={logout}>Cerrar sesión</button></span>
+        </div>
+      </div>
+      <nav className="zone-tabs" aria-label="Secciones de administración">
+        <div className="container">{SECTIONS.map(([id, t]) => <a key={id} href={`#${id}`}>{t}</a>)}</div>
+      </nav>
+      <main className="container">
+        <section className="section" id="resumen" style={{ borderTop: 0 }}>
+          <h2>Resumen del proyecto</h2>
+          <p className="lead">{p.summary}</p>
+          <div className="cols-2">
+            <div><h3>Incluye</h3><ul className="divided">{p.scope.includes.map((x) => <li key={x}>{x}</li>)}</ul></div>
+            <div><h3>No incluye</h3><ul className="divided">{p.scope.excludes.map((x) => <li key={x} className="muted">{x}</li>)}</ul></div>
+          </div>
+          <div className="cols-3" style={{ marginTop: 24 }}>
+            {[['decidido', 'Decidido'], ['hipotesis', 'Hipótesis'], ['pendiente', 'Pendiente']].map(([k, t]) => (
+              <div key={k}><h3><Status kind={k}>{t}</Status></h3><ul className="divided">{p.decisions[k].map((x) => <li key={x}>{x}</li>)}</ul></div>
+            ))}
+          </div>
+        </section>
+
+        <section className="section" id="mercado">
+          <h2>Mercado</h2>
+          <div className="table-wrap">
+            <table>
+              <thead><tr><th>Dato</th><th>Valor</th><th>Tipo</th><th>Fuente</th></tr></thead>
+              <tbody>
+                {p.market.map((m) => (
+                  <tr key={m.label}>
+                    <td>{m.label}</td><td><strong>{m.value}</strong></td>
+                    <td><Status kind={KIND[m.kind][0]}>{KIND[m.kind][1]}</Status></td>
+                    <td className="muted small">{m.url ? <a href={m.url} target="_blank" rel="noreferrer">{m.source}</a> : m.source}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="section" id="legal">
+          <h2>Marco legal</h2>
+          <p className="muted small">{p.legal.note}</p>
+          <div className="cols-2">
+            <ul className="divided">
+              {p.legal.areas.map(([area, norms]) => (
+                <li key={area}>
+                  <strong>{area}:</strong>{' '}
+                  {norms.map(([n, url], i) => (
+                    <span key={n}>{i > 0 && ' · '}<a href={url} target="_blank" rel="noreferrer">{n}</a></span>
+                  ))}
+                </li>
+              ))}
+            </ul>
+            <div>
+              <h3>Tareas legales pendientes</h3>
+              <ol className="divided numbered">{p.legal.tasks.map((t) => <li key={t}>{t}</li>)}</ol>
+            </div>
+          </div>
+          <p style={{ marginTop: 12 }}><Status kind="pendiente" /> {p.legal.pending}</p>
+        </section>
+
+        <section className="section" id="equipo">
+          <h2>Equipo y roles</h2>
+          <ul className="divided">
+            {p.team.map((m) => <li key={m.name}><strong>{m.name}</strong> — <span className="muted">{m.role}</span></li>)}
+            <li className="muted">{p.shared}</li>
+          </ul>
+        </section>
+
+        <section className="section" id="hitos">
+          <h2>Hitos y tareas (Asana)</h2>
+          <Milestones />
+        </section>
+
+        <section className="section" id="vendedores">
+          <h2>Altas de vendedores</h2>
+          <p className="muted small">Almacenamiento provisional en el servidor (backend/data/db.json). Solo visible para administración.</p>
+          <Sellers />
+        </section>
+
+        <section className="section" id="marketplace">
+          <h2>Marketplace <Status kind="ejemplo" /></h2>
+          <p className="muted small">Vendedores, catálogo y pedidos inventados que usa la web pública. Se editan en frontend/src/data/examples.js.</p>
+          <MarketplaceExample />
+        </section>
+      </main>
+    </>
+  );
+}

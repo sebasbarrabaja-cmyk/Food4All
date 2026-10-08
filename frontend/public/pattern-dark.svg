@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="560" viewBox="0 0 560 560">
+  <!-- Patrón de fondo: dibujos de comida en línea fina. Versión oscura (generada a partir de pattern-light.svg). -->
+  <g fill="none" stroke="#F1EBDC" stroke-opacity=".16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- manzana -->
+    <g transform="translate(36 44) rotate(-12 20 20)">
+      <path d="M20 12c-4-4-14-3-14 8 0 9 6 16 10 16 2 0 3-1 4-1s2 1 4 1c4 0 10-7 10-16 0-11-10-12-14-8Z"/>
+      <path d="M20 12c0-4 1-7 3-9M22 8c3-3 7-3 9-1-2 3-6 3-9 1Z"/>
+    </g>
+    <!-- zanahoria -->
+    <g transform="translate(232 14) rotate(18 20 20)">
+      <path d="M8 34 28 12c3-3 1-7-3-6L6 28c-2 3 0 8 2 6ZM27 9l5-6M29 11l7-2M25 8l1-7M13 24l3 3M19 17l3 3"/>
+    </g>
+    <!-- pan -->
+    <g transform="translate(452 96) rotate(-6 20 20)">
+      <path d="M3 28c0-9 8-15 17-15s17 6 17 15v3H3ZM12 19l4 6M19 16l4 7M27 18l3 6"/>
+    </g>
+    <!-- huevo -->
+    <g transform="translate(138 210) rotate(14 20 20)">
+      <path d="M20 4c-7 0-12 12-12 20a12 12 0 0 0 24 0c0-8-5-20-12-20Z"/>
+    </g>
+    <!-- rama de olivo -->
+    <g transform="translate(330 238) rotate(-20 20 20)">
+      <path d="M4 36C14 26 24 16 36 4M12 28c-4-1-6-4-6-7 4 0 6 3 6 7ZM20 20c0-4 2-7 6-7 0 4-2 7-6 7ZM28 12c-4-1-6-4-6-7 4 0 6 3 6 7Z"/>
+      <ellipse cx="17" cy="31" rx="2.6" ry="3.6" transform="rotate(35 17 31)"/>
+      <ellipse cx="31" cy="18" rx="2.6" ry="3.6" transform="rotate(35 31 18)"/>
+    </g>
+    <!-- limón -->
+    <g transform="translate(500 330) rotate(25 20 20)">
+      <path d="M7 20c0-7 6-11 13-11s13 4 13 11-6 11-13 11S7 27 7 20ZM4 20h3M33 20h3"/>
+    </g>
+    <!-- pera -->
+    <g transform="translate(28 396) rotate(8 20 20)">
+      <path d="M20 9c-3 0-5 3-5 7 0 3-7 6-7 13a12 10 0 0 0 24 0c0-7-7-10-7-13 0-4-2-7-5-7ZM20 9V4M21 6c2-2 5-2 6 0"/>
+    </g>
+    <!-- espiga -->
+    <g transform="translate(246 452) rotate(-15 20 20)">
+      <path d="M20 38V8M20 13c-4-1-6-4-6-8 4 1 6 4 6 8Zm0 0c4-1 6-4 6-8-4 1-6 4-6 8ZM20 21c-4-1-6-4-6-8 4 1 6 4 6 8Zm0 0c4-1 6-4 6-8-4 1-6 4-6 8ZM20 29c-4-1-6-4-6-8 4 1 6 4 6 8Zm0 0c4-1 6-4 6-8-4 1-6 4-6 8Z"/>
+    </g>
+    <!-- tomate -->
+    <g transform="translate(404 486) rotate(-8 20 20)">
+      <path d="M20 13c-9 0-15 5-15 12s6 11 15 11 15-4 15-11-6-12-15-12Z"/>
+      <path d="M20 13l-6-3M20 13l6-3M20 13V7M20 13l-3 4M20 13l3 4"/>
+    </g>
+    <!-- segunda zanahoria y segundo pan, para cubrir huecos -->
+    <g transform="translate(300 116) rotate(-34 20 20)">
+      <path d="M8 34 28 12c3-3 1-7-3-6L6 28c-2 3 0 8 2 6ZM27 9l5-6M29 11l7-2M25 8l1-7M13 24l3 3M19 17l3 3"/>
+    </g>
+    <g transform="translate(128 300) rotate(12 20 20)">
+      <path d="M3 28c0-9 8-15 17-15s17 6 17 15v3H3ZM12 19l4 6M19 16l4 7M27 18l3 6"/>
+    </g>
+    <!-- detalles pequeños: hojas y semillas sueltas -->
+    <path d="M150 110c6-6 13-6 16-3-3 6-10 7-16 3Z"/>
+    <path d="M420 200c-2 6 0 11 4 12 2-5 0-10-4-12Z"/>
+    <path d="M130 520c5-4 11-3 13 0-4 4-9 4-13 0Z"/>
+    <circle cx="352" cy="40" r="1.6"/>
+    <circle cx="70" cy="250" r="1.6"/>
+    <circle cx="540" cy="540" r="1.6"/>
+    <circle cx="220" cy="350" r="1.6"/>
+  </g>
+</svg>

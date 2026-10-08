@@ -1,0 +1,65 @@
+/* Tokens de diseño FOOD4ALL: único lugar donde se definen colores (sección 9.2). */
+:root {
+  --bg: #F6F1E6;
+  --surface: #FFFFFF;
+  --green: #2F5233;
+  --green-mid: #5C8A4A;
+  --earth: #8A5A3B;
+  --accent: #D9822B;
+  --on-accent: #23301F;
+  --text: #23301F;
+  --text-soft: #4A5340;
+  --border: #DDD0B0;
+
+  /* Paleta ampliada de mercado (decisión del equipo, oct. 2026): colores de producto
+     para iconos, ilustraciones y bandas. Sin azules ni morados. */
+  --tomato: #C8553D;
+  --saffron: #E3A82B;
+  --olive: #7D8A2E;
+  --peach: #E8915F;
+  /* Tintes suaves para fondos de sección y manchas de iconos */
+  --tint-sage: #E4ECD9;
+  --tint-peach: #FBE4D3;
+  --tint-mustard: #F8ECC8;
+  --tint-tomato: #F6DCD3;
+  --forest-text: #F6F1E6; /* texto sobre bandas verde bosque */
+
+  --success: #2F7D4B;
+  --danger: #C0392B;
+  --warning: #B7791F;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Figtree', system-ui, sans-serif;
+
+  --radius: 10px;
+  --radius-pill: 999px;
+  --shadow: 0 1px 4px rgba(35, 48, 31, 0.05);
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --dur: 200ms;
+  --maxw: 1120px;
+  /* Textura de fondo de la web pública: dibujos de comida en línea muy tenue */
+  --pattern: url('/pattern-light.svg');
+  --band: rgba(255, 255, 255, 0.38);
+  color-scheme: light;
+}
+
+/* Tema oscuro: desactivado por defecto (decisión del equipo: modo claro siempre).
+   Se activa poniendo data-theme="dark" en <html>, por ejemplo desde un futuro botón. */
+:root[data-theme="dark"] {
+  --bg: #171D15;
+  --surface: #202819;
+  --green: #8DBB74;
+  --green-mid: #8DBB74;
+  --earth: #C99A73;
+  --accent: #E39A2D;
+  --on-accent: #171D15;
+  --text: #F1EBDC;
+  --text-soft: #B7BFA9;
+  --border: #3A4533;
+  --success: #5FB37E;
+  --danger: #E0675A;
+  --warning: #D9A44A;
+  --pattern: url('/pattern-dark.svg');
+  --band: rgba(32, 40, 25, 0.6); /* superficie #202819 al 60 % */
+  color-scheme: dark;
+}
