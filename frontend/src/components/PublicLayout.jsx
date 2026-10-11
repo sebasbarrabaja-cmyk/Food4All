@@ -1,8 +1,11 @@
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import Logo from './Logo.jsx';
+import SocialLinks from './SocialLinks.jsx';
+import useReveal from './useReveal.js';
 
 export default function PublicLayout() {
   const { pathname, hash } = useLocation();
+  useReveal(pathname);
   return (
     <div className="public">
       <a className="skip-link" href="#main">Saltar al contenido</a>
@@ -43,10 +46,13 @@ export default function PublicLayout() {
             <Link to="/vender#alta">Solicitar el alta</Link>
             <Link to="/vender/panel">Panel de ejemplo</Link>
           </nav>
-          <div>
-            <h2 className="footer-title">Zona inicial</h2>
-            <p className="muted small">Málaga · Sevilla · Granada</p>
-          </div>
+          <nav aria-label="Comunidad">
+            <h2 className="footer-title">Comunidad</h2>
+            <Link to="/comunidad">Por qué nos importa</Link>
+            <Link to="/comunidad#redes">Nuestras redes</Link>
+            <SocialLinks className="social-links--footer" />
+            <p className="muted small" style={{ marginTop: 10 }}>Zona inicial: Málaga · Sevilla · Granada</p>
+          </nav>
         </div>
         <div className="container footer-bottom">
           <p className="muted small">Proyecto universitario conceptual · Datos de ejemplo · Sin vendedores, pedidos ni precios reales · <Link to="/creditos">Créditos de imágenes</Link></p>

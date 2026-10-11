@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Icon from '../components/Icon.jsx';
 import Blob from '../components/Blob.jsx';
 import Photo, { PhotoNote } from '../components/Photo.jsx';
+import SocialLinks from '../components/SocialLinks.jsx';
 
 // Portada mínima: se entiende en menos de 30 segundos y lleva a una de tres acciones.
 const HERO_IMG = '/hero.svg';
@@ -11,6 +12,13 @@ const STEPS = [
   ['spark', 'saffron', 5, 'La IA te propone', 'Una cesta de vendedores locales.'],
   ['card', 'olive', -4, 'Pagas una sola vez', 'Un carrito, un total.'],
   ['truck', 'peach', 6, 'Lo recibes todo junto', 'En una única entrega.'],
+];
+
+// Cinta de producto bajo el hero: da movimiento sin tapar nada (se pausa al pasar el ratón).
+const RIBBON = [
+  ['Tomate de la vega', 'tomato'], ['Pan de masa madre', 'saffron'], ['Aceite de oliva', 'olive'],
+  ['Huevos camperos', 'peach'], ['Naranjas del Guadalhorce', 'saffron'], ['Queso de cabra', 'olive'],
+  ['Lentejas', 'tomato'], ['Calabacín', 'olive'], ['Molletes', 'peach'], ['Manzanas', 'tomato'],
 ];
 
 export default function Home() {
@@ -30,9 +38,19 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="ribbon" aria-hidden="true">
+        <div className="ribbon__track">
+          {[0, 1].map((copy) => (
+            <span key={copy} className="ribbon__set">
+              {RIBBON.map(([t, tone]) => <span key={t} className="ribbon__item"><i className={`dot dot--${tone}`} />{t}</span>)}
+            </span>
+          ))}
+        </div>
+      </div>
+
       <section className="section band-plain" id="como" aria-labelledby="como-title">
         <div className="container">
-          <h2 id="como-title" className="center">Así de fácil</h2>
+          <h2 id="como-title" className="center"><span className="underline-doodle">Así de fácil</span></h2>
           <ol className="steps-visual">
             {STEPS.map(([icon, tone, tilt, t, d], i) => (
               <li key={t}>
@@ -47,7 +65,7 @@ export default function Home() {
 
       <section className="section band-sage" aria-labelledby="local">
         <div className="container">
-          <h2 id="local" className="center">Producto de cerca</h2>
+          <h2 id="local" className="center"><span className="underline-doodle">Producto de cerca</span></h2>
           <p className="center lead lead--center">De agricultores, panaderías, granjas y fruterías de Málaga, Sevilla y Granada.</p>
           <div className="mosaic">
             <figure className="mosaic__big">
@@ -64,6 +82,29 @@ export default function Home() {
             </figure>
           </div>
           <PhotoNote />
+        </div>
+      </section>
+
+      <section className="section band-mustard" aria-labelledby="comunidad">
+        <div className="container community-teaser">
+          <div>
+            <p className="eyebrow">Comunidad</p>
+            <h2 id="comunidad">Recetas, temporada y gente de aquí</h2>
+            <p className="muted">
+              Compartimos recetas fáciles con producto local, presentamos a los productores y aprendemos juntos
+              a aprovechar la comida. Síguenos en redes.
+            </p>
+            <div className="community-teaser__actions">
+              <Link to="/comunidad" className="btn btn-primary">Conoce la comunidad <Icon name="arrow" size={18} /></Link>
+              <SocialLinks className="social-links--big" />
+            </div>
+          </div>
+          <div className="community-teaser__art" aria-hidden="true">
+            <Blob icon="pot" tone="tomato" size={96} tilt={-8} />
+            <Blob icon="heart" tone="saffron" size={72} tilt={6} />
+            <Blob icon="users" tone="olive" size={84} tilt={-4} />
+            <Blob icon="leaf" tone="peach" size={64} tilt={10} />
+          </div>
         </div>
       </section>
 

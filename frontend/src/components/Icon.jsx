@@ -16,6 +16,21 @@ const PATHS = {
   route: 'M6 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm12-10a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM8 17h7a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h7',
   leaf: 'M5 19c0-8 6-14 14-14 0 8-6 14-14 14Zm0 0 7-7',
   lock: 'M6 11h12v9H6zM8 11V8a4 4 0 0 1 8 0v3',
+  search: 'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14Zm5-2 4 4',
+  copy: 'M9 9h11v11H9zM5 15H4V4h11v1',
+  pot: 'M4 10h16v3a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6v-3Zm4-3c0-1 1-1 1-2m3 2c0-1 1-1 1-2m3 2c0-1 1-1 1-2',
+  recycle: 'M7 7h10l-3-3m3 3-3 3M17 17H7l3 3m-3-3 3-3',
+  flag: 'M5 21V4m0 0h11l-2 4 2 4H5',
+  doc: 'M7 3h7l5 5v13H7zM14 3v5h5M10 13h6M10 17h6',
+  grid: 'M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z',
+  chart: 'M4 20V11m6 9V5m6 15v-7m-14 7h20',
+  scale: 'M12 4v16M8 20h8M5 8h14M5 8l-3 6a3 3 0 0 0 6 0L5 8Zm14 0-3 6a3 3 0 0 0 6 0l-3-6Z',
+  play: 'M8 5v14l11-7L8 5Z',
+  // Redes sociales: siluetas simplificadas en el mismo trazo que el resto
+  instagram: 'M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4Zm5 13a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm5-9.5h.01',
+  tiktok: 'M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2.5 4.5 5 4.5',
+  youtube: 'M3 8.5C3 6 4.5 5 7 5h10c2.5 0 4 1 4 3.5v7c0 2.5-1.5 3.5-4 3.5H7c-2.5 0-4-1-4-3.5v-7ZM10 9v6l5-3-5-3Z',
+  pinterest: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm-1.6-3.5 1.9-7.5M11 13.6c.5.8 1.3 1.1 2.2 1.1 1.9 0 3.2-1.8 3.2-3.9 0-2.2-1.9-3.7-4.3-3.7-2.6 0-4.4 1.8-4.4 4 0 .9.3 1.6.9 2',
 };
 
 export default function Icon({ name, size = 20, title }) {

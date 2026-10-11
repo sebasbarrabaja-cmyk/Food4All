@@ -2,7 +2,7 @@
 
 Referencia para seguir trabajando en la landing sin perder la coherencia. Si algo de aquí cambia, actualízalo en el mismo cambio.
 
-Estado: primera versión para el profesor (octubre de 2026), pensada para **ordenador** y en **modo claro**. La versión móvil está pendiente.
+Estado: segunda versión, tras el feedback del profesor (10 de octubre de 2026): comunidad y redes, más movimiento, panel con barra lateral y registro de prompts. Pensada para **ordenador** y en **modo claro**. La versión móvil está pendiente.
 
 ---
 
@@ -89,7 +89,14 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
   - Contenedor de 1120 px de ancho máximo.
   - Huecos entre tarjetas de 14 a 28 px.
 - **Zonas táctiles** de al menos 44 px. Los botones grandes del hero miden 54 px.
-- **Animación:** de 180 a 240 ms con `ease-out` (`--ease`), solo como respuesta a una interacción. Se respeta `prefers-reduced-motion`.
+- **Animación** (`styles/motion.css`). El profesor vio la primera versión "muy plana", así que ahora hay movimiento, siempre suave y sin tapar el texto:
+  - Respuesta al ratón: de 180 a 240 ms con `--ease` (botones, tarjetas que suben, fotos que se acercan, flechas que avanzan).
+  - Aparición al hacer scroll: 600 ms, subiendo 22 px. Las rejillas aparecen en escalera, 90 ms entre elementos. Lo hace `useReveal.js` solo, sin marcar nada en las páginas.
+  - Entrada del hero: el texto sube en escalera y la ilustración se asienta con un zoom de 1,8 s.
+  - Detalles continuos y lentos: la cinta de productos (38 s por vuelta, se para al pasar el ratón), las manchas de icono que flotan (5 s) y las publicaciones de ejemplo de `/comunidad` (7 s).
+  - Subrayado azafrán dibujado a mano (`.underline-doodle`) en los títulos clave. Se traza al aparecer.
+  - Onda entre la sección anterior y la banda verde de cierre. Toma el color de la sección de arriba con `--wave-from`.
+  - Con `prefers-reduced-motion` no hay nada de esto: todo se ve quieto desde el principio.
 - **Prohibido:** efecto cristal en formularios, listados, cabecera o admin; tarjetas anidadas; emojis como iconos; bordes de color a la izquierda de las tarjetas.
 
 ## 5. Componentes y patrones
@@ -107,6 +114,11 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
 | **Cesta por vendedor** | `BasketByVendor.jsx` | Agrupada por vendedor, con miniatura, y "Por qué" en la cesta de la IA |
 | **Badges de estado** | `Status.jsx` | Decidido, Hipótesis, Por definir y Datos de ejemplo |
 | **Iconos** | `Icon.jsx` | SVG de trazo de 1.6 px en un único fichero. Para añadir uno, se añade su `path` |
+| **Cinta de producto** | `Home.jsx`, `.ribbon` | Banda azafrán bajo el hero con nombres de producto y puntos de color en movimiento |
+| **Comunidad** | `Comunidad.jsx`, bloque en `Home.jsx` | Explica por qué importa la comunidad, qué se publicará y en qué redes, y cómo participar. Las publicaciones son de ejemplo |
+| **Redes sociales** | `SocialLinks.jsx`, `data/social.js` | Instagram, TikTok, YouTube y Pinterest. Mientras `url` sea `null`, salen como "Próximamente" y no enlazan. Al poner la URL, se enlazan solas |
+| **Barra lateral del admin** | `Admin.jsx`, `styles/admin.css` | Fija a la izquierda. Marca la sección visible y tiene arriba el buscador, todavía **pendiente** (desactivado) |
+| **Prompts** | `AdminPrompts.jsx` | Registro de prompts con filtro por tipo, copiar, "Pulir con IA" (original y propuesta lado a lado) y alta de prompts nuevos |
 | **Logo** | `Logo.jsx`, `public/favicon.svg` | Caja de mercado con tres frutas y una hoja, y "FOOD**4**ALL" en Fraunces con el 4 en naranja o azafrán. Se adapta al fondo con `--logo-crate` y `--logo-stripe` |
 
 ## 6. Imágenes
@@ -126,20 +138,24 @@ food4all/
 ├─ frontend/             React 18 + Vite + React Router
 │  ├─ public/            hero.svg, favicon.svg, pattern-*.svg, img/
 │  └─ src/
-│     ├─ styles/         tokens.css → base.css → layout.css → palette.css (en este orden)
-│     ├─ components/     PublicLayout, Logo, Icon, Blob, Photo, Status, ZoneTabs, BasketByVendor…
-│     ├─ pages/          Home, Comprar, ClienteVista, Vender, VendedorPanel, Creditos, Admin, AdminLogin, NotFound
-│     └─ data/           examples.js (vendedores, productos y pedidos inventados), photoCredits.js
+│     ├─ styles/         tokens.css → base.css → layout.css → palette.css → motion.css → admin.css
+│     ├─ components/     PublicLayout, Logo, Icon, Blob, Photo, Status, ZoneTabs, SocialLinks, useReveal…
+│     ├─ pages/          Home, Comprar, ClienteVista, Vender, VendedorPanel, Comunidad, Creditos, Admin, AdminPrompts, AdminLogin, NotFound
+│     └─ data/           examples.js (datos inventados), social.js (redes), photoCredits.js
 ├─ backend/              Node 22+ y Express (sin base de datos externa)
 │  ├─ server.js          API, sesión de admin y sirve frontend/dist
 │  ├─ project.js         contenido interno (equipo, mercado, legal, hitos): solo con sesión
 │  ├─ asana.js           intermediario con Asana (el token solo vive en .env)
-│  └─ store.js           guarda las altas de vendedores en data/db.json
+│  ├─ store.js           guarda las altas de vendedores en data/db.json
+│  ├─ prompts.js         lee y guarda el registro de prompts (/prompts)
+│  └─ agent.js           segundo agente (Claude) que pule prompts; clave en .env
+├─ prompts/              un .md por prompt usado en el desarrollo (va en el repo)
 ├─ docs/                 esta guía y la comparativa con la competencia
 └─ tools/fotos/          scripts para buscar y descargar fotos de Commons
 ```
 
-- **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel` y `/creditos`.
+- **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel`, `/comunidad` y `/creditos`.
+- **Cabecera:** siguen siendo tres botones. La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
 - **Rutas privadas:** `/admin` (las protege el backend, no solo la interfaz).
 - **Vista pública y privada están separadas:** el equipo, los hitos, el mercado y el marco legal **no** van en el JavaScript público. Viven en `backend/project.js` y se sirven con sesión.
 - **Asana:**
@@ -157,5 +173,9 @@ food4all/
 | Muchas secciones en la portada | Demasiado que leer | Cuatro bloques y tres botones |
 | Seguir el modo del sistema | El oscuro se veía plano | Modo claro siempre |
 | Iconos finos y pequeños | Poca presencia | Manchas de color con el icono |
+| Página sin movimiento | "Muy plana" (profesor) | Aparición al hacer scroll, cinta de producto, hover y detalles dibujados (`motion.css`) |
+| Captura del chat de la IA en Comprar | Aburre al visitante normal (profesor) | Dos líneas de texto. Si se graba un vídeo, se pone en `AI_VIDEO` de `Comprar.jsx` |
+| Sin presencia en redes | La comunidad y la visibilidad son clave (profesor) | Página `/comunidad`, bloque en la portada y redes en el pie |
+| Pestañas horizontales en el admin | Costaba moverse entre tantas secciones | Barra lateral fija con la sección activa marcada |
 
 Comparativa visual con la competencia: `docs/comparativa-competencia.png`.

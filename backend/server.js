@@ -7,9 +7,12 @@ import { fileURLToPath } from 'node:url';
 import * as store from './store.js';
 import { getSubtasks, getMilestones } from './asana.js';
 import { PROJECT } from './project.js';
+import * as prompts from './prompts.js';
+import { polishPrompt, agentReady, AgentError } from './agent.js';
 
 const app = express();
-app.use(express.json({ limit: '50kb' }));
+// 300 kB: los prompts del equipo (el documento maestro ocupa ~80 kB) viajan en JSON.
+app.use(express.json({ limit: '300kb' }));
 app.use(session({
   secret: process.env.SESSION_SECRET || 'dev-only-secret',
   resave: false,
@@ -91,6 +94,30 @@ app.get('/api/admin/milestones', requireAdmin, async (_req, res) => {
 app.get('/api/admin/asana/tasks/:gid/subtasks', requireAdmin, async (req, res) => {
   try { res.json({ source: 'asana', tasks: await getSubtasks(req.params.gid) }); }
   catch (e) { res.json({ source: 'fallback', error: e.message, tasks: [] }); }
+});
+
+// Registro de prompts usados en el desarrollo (ficheros en /prompts, dentro del repo).
+app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, agent: agentReady() }));
+
+app.post('/api/admin/prompts', requireAdmin, (req, res) => {
+  const b = req.body ?? {};
+  const errors = {};
+  if (str(b.titulo).length < 3) errors.titulo = 'Pon un título (mín. 3 caracteres).';
+  if (str(b.texto).length < 10) errors.texto = 'El prompt está vacío.';
+  if (!prompts.TYPES.includes(b.tipo)) errors.tipo = 'Elige un tipo.';
+  if (Object.keys(errors).length) return res.status(400).json({ errors });
+  res.status(201).json(prompts.add({
+    titulo: str(b.titulo), autor: str(b.autor), herramienta: str(b.herramienta) || 'Claude Code',
+    tipo: b.tipo, origen: str(b.origen), texto: str(b.texto),
+  }));
+});
+
+// Segundo agente: devuelve una versión pulida del prompt (no guarda nada).
+app.post('/api/admin/prompts/polish', requireAdmin, async (req, res) => {
+  const texto = str(req.body?.texto);
+  if (texto.length < 10) return res.status(400).json({ error: 'El prompt está vacío.' });
+  try { res.json(await polishPrompt(texto, str(req.body?.objetivo))); }
+  catch (e) { res.status(e instanceof AgentError ? e.status : 500).json({ error: e.message }); }
 });
 
 app.use('/api', (_req, res) => res.status(404).json({ error: 'No encontrado' }));

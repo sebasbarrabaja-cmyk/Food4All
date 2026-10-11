@@ -10,6 +10,7 @@ import AdminLogin from './pages/AdminLogin.jsx';
 import Admin from './pages/Admin.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Creditos from './pages/Creditos.jsx';
+import Comunidad from './pages/Comunidad.jsx';
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="comprar/cliente" element={<ClienteVista />} />
           <Route path="vender" element={<Vender />} />
           <Route path="vender/panel" element={<VendedorPanel />} />
+          <Route path="comunidad" element={<Comunidad />} />
           <Route path="creditos" element={<Creditos />} />
           <Route path="*" element={<NotFound />} />
         </Route>

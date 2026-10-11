@@ -7,6 +7,7 @@ const TITLES = [
   ['/comprar', 'Quiero comprar'],
   ['/vender/panel', 'Panel del vendedor'],
   ['/vender', 'Quiero vender'],
+  ['/comunidad', 'Comunidad'],
   ['/creditos', 'Créditos de imágenes'],
   ['/admin/login', 'Acceso administración'],
   ['/admin', 'Administración'],

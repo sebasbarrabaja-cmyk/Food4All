@@ -38,11 +38,24 @@ Colores, tipografía, componentes, imágenes y arquitectura: [`docs/DISENO.md`](
 | Ruta | Contenido |
 |---|---|
 | `/` | Portada: hero, quiénes somos, cómo funciona (con diagrama), qué somos y qué no, estado del proyecto, accesos a cada zona |
-| `/comprar` | Recorrido del cliente (6 pasos + 10 en detalle), ejemplo del asistente de IA, productos con filtros, comparación y suscripción |
+| `/comprar` | Recorrido del cliente (6 pasos + 10 en detalle), asistente de IA en dos líneas (vídeo opcional), productos con filtros, comparación y suscripción |
 | `/comprar/cliente` | Pedido de ejemplo: carrito multi-vendedor, pago único, seguimiento, recordatorios e incidencias |
 | `/vender` | Recorrido del vendedor, qué gana, reparto de papeles, requisitos y formulario de alta (funciona) |
+| `/comunidad` | Por qué nos importa la comunidad, qué publicaremos, nuestras redes (enlaces en `frontend/src/data/social.js`) y cómo participar |
 | `/vender/panel` | Panel de ejemplo: catálogo, pedidos, liquidación y visibilidad patrocinada |
-| `/admin` | Privado: resumen, mercado, marco legal, equipo, hitos de Asana en directo, altas y marketplace de ejemplo |
+| `/admin` | Privado, con barra lateral: resumen, mercado, marco legal, equipo, hitos de Asana en directo, altas, marketplace de ejemplo y registro de prompts con agente revisor |
+
+## Prompts y agente revisor
+
+Todos los prompts usados para desarrollar el proyecto se guardan en [`prompts/`](prompts/README.md), un `.md` por prompt. Se ven, se añaden y se copian desde `/admin#prompts`.
+
+El botón **Pulir con IA** llama a un segundo agente (Claude, `backend/agent.js`) que propone una versión más clara del prompt sin cambiar lo que pide. Nada se guarda sin confirmar, y el original no se toca. Necesita en `backend/.env`:
+
+```
+ANTHROPIC_API_KEY=tu_clave
+```
+
+La clave se crea en console.anthropic.com → API Keys. Solo vive en el backend. Cada revisión consume crédito de la cuenta (un prompt normal, céntimos; el documento maestro entero, bastante más).
 
 ## Asana
 

@@ -1,0 +1,89 @@
+/* Movimiento y detalles de la web pública (feedback del profesor, oct. 2026: "muy plana").
+   Se carga después de palette.css. Todo se desactiva con prefers-reduced-motion. */
+
+/* ---------- Aparición al hacer scroll (useReveal.js) ---------- */
+.reveal-on [data-reveal]:not(.is-visible) { opacity: 0; transform: translateY(22px); }
+.reveal-on [data-reveal] {
+  transition: opacity 600ms var(--ease), transform 600ms var(--ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+/* ---------- Hero: entrada escalonada y foto que se asienta ---------- */
+@keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes settle { from { transform: scale(1.08); } to { transform: scale(1); } }
+.hero__img { animation: settle 1.8s var(--ease) both; }
+.hero__content > * { animation: rise 700ms var(--ease) both; }
+.hero__content > :nth-child(2) { animation-delay: 120ms; }
+.hero__content > :nth-child(3) { animation-delay: 240ms; }
+.hero__content > :nth-child(4) { animation-delay: 360ms; }
+
+/* Subrayado dibujado a mano (azafrán) que se traza al aparecer */
+.underline-doodle { position: relative; display: inline-block; white-space: nowrap; isolation: isolate; }
+.underline-doodle::after {
+  content: ''; position: absolute; left: -2%; right: -2%; bottom: -0.18em; height: 0.32em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M2 8c30-6 60-7 98-4s70 4 98-2' fill='none' stroke='%23E3A82B' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+  transform-origin: left; animation: draw 900ms 300ms var(--ease) both;
+  z-index: -1;
+}
+@keyframes draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.reveal-on [data-reveal]:not(.is-visible) .underline-doodle::after { animation: none; transform: scaleX(0); }
+
+/* ---------- Cinta de producto ---------- */
+.ribbon { background: var(--saffron); color: var(--green); overflow: hidden; border-bottom: 1px solid rgba(35, 48, 31, .12); }
+.ribbon__track { display: flex; width: max-content; animation: ribbon 38s linear infinite; }
+.ribbon:hover .ribbon__track { animation-play-state: paused; }
+.ribbon__set { display: flex; }
+.ribbon__item { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; font: 600 1rem var(--font-display); white-space: nowrap; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot--tomato { background: var(--tomato); }
+.dot--saffron { background: #fff; }
+.dot--olive { background: var(--olive); }
+.dot--peach { background: var(--peach); }
+@keyframes ribbon { to { transform: translateX(-50%); } }
+
+/* ---------- Manchas de icono que respiran ---------- */
+@keyframes bob { 0%, 100% { translate: 0 0; } 50% { translate: 0 -6px; } }
+.steps-visual .blob, .why .blob, .community-teaser__art .blob { animation: bob 5s ease-in-out infinite; }
+.steps-visual li:nth-child(2) .blob, .why:nth-child(2) .blob, .community-teaser__art .blob:nth-child(2) { animation-delay: -1.2s; }
+.steps-visual li:nth-child(3) .blob, .why:nth-child(3) .blob, .community-teaser__art .blob:nth-child(3) { animation-delay: -2.4s; }
+.steps-visual li:nth-child(4) .blob, .why:nth-child(4) .blob, .community-teaser__art .blob:nth-child(4) { animation-delay: -3.6s; }
+.steps-visual li:hover .blob, .why:hover .blob { scale: 1.08; transition: scale 240ms var(--ease); }
+
+/* ---------- Respuesta al ratón ---------- */
+.btn .icon-arrow, .btn svg { transition: transform var(--dur) var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+.btn-cta { box-shadow: 0 0 0 0 rgba(217, 130, 43, 0); transition: background-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.btn-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(217, 130, 43, .32); }
+
+.mosaic .photo { transition: transform 700ms var(--ease); }
+.mosaic figure:hover .photo { transform: scale(1.05); }
+
+.product-card { transition: transform 240ms var(--ease), box-shadow 240ms var(--ease); }
+.product-card:hover { transform: translateY(-4px); box-shadow: 0 10px 24px rgba(35, 48, 31, .1); }
+.product-card .photo { transition: transform 600ms var(--ease); }
+.product-card:hover .photo { transform: scale(1.04); }
+
+.zone { transition: transform 240ms var(--ease), box-shadow 240ms var(--ease); }
+.zone:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(0, 0, 0, .18); }
+.zone:hover .zone__go svg { transform: translateX(4px); }
+.zone__go svg { transition: transform var(--dur) var(--ease); }
+
+/* Onda entre la portada clara y la banda verde de cierre */
+.band-forest { position: relative; }
+.band-forest::before {
+  content: ''; position: absolute; left: 0; right: 0; top: -1px; height: 28px;
+  /* La onda toma el color de la sección anterior (--wave-from) */
+  background: var(--wave-from, var(--bg));
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28' preserveAspectRatio='none'%3E%3Cpath d='M0 0h1200v8c-100 14-200 20-300 10S700-2 600 8 400 30 300 20 100 0 0 10z'/%3E%3C/svg%3E") no-repeat top / 100% 100%;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 28' preserveAspectRatio='none'%3E%3Cpath d='M0 0h1200v8c-100 14-200 20-300 10S700-2 600 8 400 30 300 20 100 0 0 10z'/%3E%3C/svg%3E") no-repeat top / 100% 100%;
+}
+.band-mustard + .band-forest { --wave-from: var(--tint-mustard); }
+.band-sage + .band-forest { --wave-from: var(--tint-sage); }
+.band-peach + .band-forest { --wave-from: var(--tint-peach); }
+.band-forest { padding-top: 76px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ribbon__track { animation: none; }
+  .hero__img, .hero__content > *, .underline-doodle::after { animation: none; }
+  .blob { animation: none !important; }
+}

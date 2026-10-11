@@ -1,13 +1,55 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Status from '../components/Status.jsx';
+import Icon from '../components/Icon.jsx';
+import AdminPrompts from './AdminPrompts.jsx';
 import {
   VENDORS, PRODUCTS, ZONES, EXAMPLE_ORDER, ORDER_STATES, VENDOR_ORDERS, productById,
 } from '../data/examples.js';
 
 // Vista privada: todo el contenido interno llega del backend tras comprobar la sesión.
 const STATUSES = ['recibida', 'en revisión', 'verificada', 'rechazada'];
-const SECTIONS = [['resumen', 'Resumen'], ['mercado', 'Mercado'], ['legal', 'Marco legal'], ['equipo', 'Equipo'], ['hitos', 'Hitos y Asana'],['vendedores', 'Altas'], ['marketplace', 'Marketplace']];
+const SECTIONS = [
+  ['resumen', 'Resumen', 'grid'], ['mercado', 'Mercado', 'chart'], ['legal', 'Marco legal', 'scale'],
+  ['equipo', 'Equipo', 'users'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
+  ['marketplace', 'Marketplace', 'basket'], ['prompts', 'Prompts', 'doc'],
+];
+
+// Barra lateral del panel: salta entre secciones y marca la que está en pantalla.
+function Sidebar() {
+  const [active, setActive] = useState(SECTIONS[0][0]);
+  useEffect(() => {
+    const io = new IntersectionObserver((entries) => {
+      const top = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+      if (top) setActive(top.target.id);
+    }, { rootMargin: '-15% 0px -70% 0px' });
+    SECTIONS.forEach(([id]) => { const el = document.getElementById(id); if (el) io.observe(el); });
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <aside className="admin-side">
+      {/* Pendiente: buscador para encontrar datos o hacer preguntas simples (¿con IA? por decidir) */}
+      <div className="side-search" aria-disabled="true">
+        <Icon name="search" size={18} />
+        <input type="search" placeholder="Buscar…" disabled aria-label="Buscador del panel (pendiente)" />
+        <Status kind="pendiente">Pendiente</Status>
+      </div>
+      <p className="side-search__note">Buscador interactivo, quizá con IA. Por decidir.</p>
+      <nav aria-label="Secciones de administración">
+        <ul className="side-nav">
+          {SECTIONS.map(([id, t, icon]) => (
+            <li key={id}>
+              <a href={`#${id}`} className={active === id ? 'active' : undefined} aria-current={active === id ? 'location' : undefined}>
+                <Icon name={icon} size={18} /> {t}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </aside>
+  );
+}
 
 function Sellers() {
   const [items, setItems] = useState([]);
@@ -201,89 +243,94 @@ export default function Admin() {
           <span><Link to="/">Salir a la web pública</Link> · <button className="btn btn-link" onClick={logout}>Cerrar sesión</button></span>
         </div>
       </div>
-      <nav className="zone-tabs" aria-label="Secciones de administración">
-        <div className="container">{SECTIONS.map(([id, t]) => <a key={id} href={`#${id}`}>{t}</a>)}</div>
-      </nav>
-      <main className="container">
-        <section className="section" id="resumen" style={{ borderTop: 0 }}>
-          <h2>Resumen del proyecto</h2>
-          <p className="lead">{p.summary}</p>
-          <div className="cols-2">
-            <div><h3>Incluye</h3><ul className="divided">{p.scope.includes.map((x) => <li key={x}>{x}</li>)}</ul></div>
-            <div><h3>No incluye</h3><ul className="divided">{p.scope.excludes.map((x) => <li key={x} className="muted">{x}</li>)}</ul></div>
-          </div>
-          <div className="cols-3" style={{ marginTop: 24 }}>
-            {[['decidido', 'Decidido'], ['hipotesis', 'Hipótesis'], ['pendiente', 'Pendiente']].map(([k, t]) => (
-              <div key={k}><h3><Status kind={k}>{t}</Status></h3><ul className="divided">{p.decisions[k].map((x) => <li key={x}>{x}</li>)}</ul></div>
-            ))}
-          </div>
-        </section>
-
-        <section className="section" id="mercado">
-          <h2>Mercado</h2>
-          <div className="table-wrap">
-            <table>
-              <thead><tr><th>Dato</th><th>Valor</th><th>Tipo</th><th>Fuente</th></tr></thead>
-              <tbody>
-                {p.market.map((m) => (
-                  <tr key={m.label}>
-                    <td>{m.label}</td><td><strong>{m.value}</strong></td>
-                    <td><Status kind={KIND[m.kind][0]}>{KIND[m.kind][1]}</Status></td>
-                    <td className="muted small">{m.url ? <a href={m.url} target="_blank" rel="noreferrer">{m.source}</a> : m.source}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-
-        <section className="section" id="legal">
-          <h2>Marco legal</h2>
-          <p className="muted small">{p.legal.note}</p>
-          <div className="cols-2">
-            <ul className="divided">
-              {p.legal.areas.map(([area, norms]) => (
-                <li key={area}>
-                  <strong>{area}:</strong>{' '}
-                  {norms.map(([n, url], i) => (
-                    <span key={n}>{i > 0 && ' · '}<a href={url} target="_blank" rel="noreferrer">{n}</a></span>
-                  ))}
-                </li>
-              ))}
-            </ul>
-            <div>
-              <h3>Tareas legales pendientes</h3>
-              <ol className="divided numbered">{p.legal.tasks.map((t) => <li key={t}>{t}</li>)}</ol>
+      <div className="admin-layout">
+        <Sidebar />
+        <main className="admin-main">
+          <section className="section" id="resumen" style={{ borderTop: 0 }}>
+            <h2>Resumen del proyecto</h2>
+            <p className="lead">{p.summary}</p>
+            <div className="cols-2">
+              <div><h3>Incluye</h3><ul className="divided">{p.scope.includes.map((x) => <li key={x}>{x}</li>)}</ul></div>
+              <div><h3>No incluye</h3><ul className="divided">{p.scope.excludes.map((x) => <li key={x} className="muted">{x}</li>)}</ul></div>
             </div>
-          </div>
-          <p style={{ marginTop: 12 }}><Status kind="pendiente" /> {p.legal.pending}</p>
-        </section>
+            <div className="cols-3" style={{ marginTop: 24 }}>
+              {[['decidido', 'Decidido'], ['hipotesis', 'Hipótesis'], ['pendiente', 'Pendiente']].map(([k, t]) => (
+                <div key={k}><h3><Status kind={k}>{t}</Status></h3><ul className="divided">{p.decisions[k].map((x) => <li key={x}>{x}</li>)}</ul></div>
+              ))}
+            </div>
+          </section>
 
-        <section className="section" id="equipo">
-          <h2>Equipo y roles</h2>
-          <ul className="divided">
-            {p.team.map((m) => <li key={m.name}><strong>{m.name}</strong> — <span className="muted">{m.role}</span></li>)}
-            <li className="muted">{p.shared}</li>
-          </ul>
-        </section>
+          <section className="section" id="mercado">
+            <h2>Mercado</h2>
+            <div className="table-wrap">
+              <table>
+                <thead><tr><th>Dato</th><th>Valor</th><th>Tipo</th><th>Fuente</th></tr></thead>
+                <tbody>
+                  {p.market.map((m) => (
+                    <tr key={m.label}>
+                      <td>{m.label}</td><td><strong>{m.value}</strong></td>
+                      <td><Status kind={KIND[m.kind][0]}>{KIND[m.kind][1]}</Status></td>
+                      <td className="muted small">{m.url ? <a href={m.url} target="_blank" rel="noreferrer">{m.source}</a> : m.source}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
 
-        <section className="section" id="hitos">
-          <h2>Hitos y tareas (Asana)</h2>
-          <Milestones />
-        </section>
+          <section className="section" id="legal">
+            <h2>Marco legal</h2>
+            <p className="muted small">{p.legal.note}</p>
+            <div className="cols-2">
+              <ul className="divided">
+                {p.legal.areas.map(([area, norms]) => (
+                  <li key={area}>
+                    <strong>{area}:</strong>{' '}
+                    {norms.map(([n, url], i) => (
+                      <span key={n}>{i > 0 && ' · '}<a href={url} target="_blank" rel="noreferrer">{n}</a></span>
+                    ))}
+                  </li>
+                ))}
+              </ul>
+              <div>
+                <h3>Tareas legales pendientes</h3>
+                <ol className="divided numbered">{p.legal.tasks.map((t) => <li key={t}>{t}</li>)}</ol>
+              </div>
+            </div>
+            <p style={{ marginTop: 12 }}><Status kind="pendiente" /> {p.legal.pending}</p>
+          </section>
 
-        <section className="section" id="vendedores">
-          <h2>Altas de vendedores</h2>
-          <p className="muted small">Almacenamiento provisional en el servidor (backend/data/db.json). Solo visible para administración.</p>
-          <Sellers />
-        </section>
+          <section className="section" id="equipo">
+            <h2>Equipo y roles</h2>
+            <ul className="divided">
+              {p.team.map((m) => <li key={m.name}><strong>{m.name}</strong> — <span className="muted">{m.role}</span></li>)}
+              <li className="muted">{p.shared}</li>
+            </ul>
+          </section>
 
-        <section className="section" id="marketplace">
-          <h2>Marketplace <Status kind="ejemplo" /></h2>
-          <p className="muted small">Vendedores, catálogo y pedidos inventados que usa la web pública. Se editan en frontend/src/data/examples.js.</p>
-          <MarketplaceExample />
-        </section>
-      </main>
+          <section className="section" id="hitos">
+            <h2>Hitos y tareas (Asana)</h2>
+            <Milestones />
+          </section>
+
+          <section className="section" id="vendedores">
+            <h2>Altas de vendedores</h2>
+            <p className="muted small">Almacenamiento provisional en el servidor (backend/data/db.json). Solo visible para administración.</p>
+            <Sellers />
+          </section>
+
+          <section className="section" id="marketplace">
+            <h2>Marketplace <Status kind="ejemplo" /></h2>
+            <p className="muted small">Vendedores, catálogo y pedidos inventados que usa la web pública. Se editan en frontend/src/data/examples.js.</p>
+            <MarketplaceExample />
+          </section>
+
+          <section className="section" id="prompts">
+            <h2>Prompts del proyecto</h2>
+            <AdminPrompts />
+          </section>
+        </main>
+      </div>
     </>
   );
 }

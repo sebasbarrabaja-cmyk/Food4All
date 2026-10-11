@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import ZoneTabs, { CLIENT_TABS } from '../components/ZoneTabs.jsx';
-import BasketByVendor from '../components/BasketByVendor.jsx';
 import Photo, { PhotoNote } from '../components/Photo.jsx';
 import Icon from '../components/Icon.jsx';
-import { AI_EXAMPLE, PRODUCTS, VENDORS, ZONES, CATEGORY_COLOR, vendorOf, PRICE_PENDING } from '../data/examples.js';
+import { PRODUCTS, VENDORS, ZONES, CATEGORY_COLOR, vendorOf, PRICE_PENDING } from '../data/examples.js';
 
 // Recorrido del cliente (sección 3.2): 6 pasos visibles + detalle del resto.
 const STEPS = [
@@ -30,6 +29,9 @@ const FULL_JOURNEY = [
   ['Incidencias', 'Un formulario sencillo si algo llega mal. Quién responde (vendedor, FOOD4ALL o ambos) está por definir.'],
   ['Suscripción', 'Beneficios de entrega y promociones, sin cajas obligatorias. Próximamente, sin precios todavía.'],
 ];
+
+// Vídeo corto del asistente (p. ej. '/video/asistente.mp4' en public/). Sin vídeo, el bloque queda en texto.
+const AI_VIDEO = null;
 
 const CATEGORIES = [...new Set(PRODUCTS.map((p) => p.category))].sort();
 
@@ -76,30 +78,22 @@ export default function Comprar() {
         </div>
       </section>
 
+      {/* Por feedback del profesor: sin captura del asistente (aburría). Solo vídeo, si lo hay. */}
       <section className="section" id="asistente">
-        <div className="container split">
+        <div className={`container ${AI_VIDEO ? 'split' : 'ai-brief'}`}>
           <div>
             <p className="eyebrow">Asistente de IA</p>
-            <h2>¿Qué necesitas?</h2>
+            <h2>Dile qué necesitas y te propone la cesta</h2>
             <p className="muted">
-              Le cuentas a la IA tu presupuesto, los días que quieres cubrir, tus preferencias y cuánto tiempo
-              tienes para cocinar. Te propone una cesta de varios vendedores y te explica cada elección.
-              Tú revisas, cambias y decides.
-            </p>
-            <p className="muted small">
-              Alergias e intolerancias: dato opcional. Son datos de salud y solo se usarían para filtrar la cesta.
+              Presupuesto, días y tiempo para cocinar. La IA te propone productos de varios vendedores
+              y te explica por qué. Tú decides.
             </p>
           </div>
-          <div className="panel chat" aria-label="Ejemplo de conversación con el asistente">
-            <p className="small"><Status kind="ejemplo">Ejemplo ilustrativo</Status> <span className="muted">El asistente todavía no está disponible.</span></p>
-            <div className="chat__msg chat__msg--user">{AI_EXAMPLE.request}</div>
-            <div className="chat__msg chat__msg--ai">
-              <p className="small muted" style={{ marginBottom: 8 }}><Icon name="spark" size={16} /> Propuesta generada por IA · revisa y ajusta antes de comprar</p>
-              <BasketByVendor lines={AI_EXAMPLE.basket} showNotes />
-              <PhotoNote />
-              <p className="small" style={{ marginTop: 8 }}>Zona: {AI_EXAMPLE.zone} · Total frente a tu presupuesto de 25 €: <strong>{PRICE_PENDING}</strong></p>
-            </div>
-          </div>
+          {AI_VIDEO && (
+            <video className="ai-video" src={AI_VIDEO} controls preload="metadata" playsInline>
+              Tu navegador no puede reproducir el vídeo.
+            </video>
+          )}
         </div>
       </section>
 

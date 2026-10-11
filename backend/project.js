@@ -31,7 +31,7 @@ export const PROJECT = {
   decisions: {
     decidido: ['Marketplace abierto con estándares mínimos', 'Carrito multi-vendedor', 'Entrega consolidada coordinada por FOOD4ALL', 'IA visible y funcional', 'Producto local como elemento central', 'Comisión como ingreso principal', 'Suscripción por beneficios'],
     hipotesis: ['Compra mínima de unos 10–15 €', 'Primer pedido con ventaja de entrega', 'Algunos productos más baratos que en el supermercado'],
-    pendiente: ['Porcentaje de comisión', 'Precios de suscripción', 'Ubicación del hub', 'Puntos de recogida', 'Horarios de entrega', 'Quién paga cada parte de la logística', 'Definición exacta de "local"', 'Proceso detallado de alta de vendedores', 'Rol jurídico de FOOD4ALL'],
+    pendiente: ['Porcentaje de comisión', 'Precios de suscripción', 'Ubicación del hub', 'Puntos de recogida', 'Horarios de entrega', 'Quién paga cada parte de la logística', 'Definición exacta de "local"', 'Proceso detallado de alta de vendedores', 'Rol jurídico de FOOD4ALL', 'Buscador del panel de administración (con IA o sin ella)', 'Cuentas de redes sociales (Instagram, TikTok, YouTube, Pinterest)'],
   },
 
   market: [
