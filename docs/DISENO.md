@@ -2,7 +2,7 @@
 
 Referencia para seguir trabajando en la landing sin perder la coherencia. Si algo de aquí cambia, actualízalo en el mismo cambio.
 
-Estado: segunda versión, tras el feedback del profesor (10 de octubre de 2026): comunidad y redes, más movimiento, panel con barra lateral y registro de prompts. Pensada para **ordenador** y en **modo claro**. La versión móvil está pendiente.
+Estado: segunda versión, tras el feedback del profesor (10 de octubre de 2026): comunidad y redes, más movimiento, panel con barra lateral y registro de prompts. Pensada para **ordenador** y en **modo claro**. La versión móvil está pendiente, **sin prioridad**.
 
 ---
 
@@ -117,7 +117,8 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
 | **Cinta de producto** | `Home.jsx`, `.ribbon` | Banda azafrán bajo el hero con nombres de producto y puntos de color en movimiento |
 | **Comunidad** | `Comunidad.jsx`, bloque en `Home.jsx` | Explica por qué importa la comunidad, qué se publicará y en qué redes, y cómo participar. Las publicaciones son de ejemplo |
 | **Redes sociales** | `SocialLinks.jsx`, `data/social.js` | Instagram, TikTok, YouTube y Pinterest. Mientras `url` sea `null`, salen como "Próximamente" y no enlazan. Al poner la URL, se enlazan solas |
-| **Barra lateral del admin** | `Admin.jsx`, `styles/admin.css` | Fija a la izquierda. Marca la sección visible y tiene arriba el buscador, todavía **pendiente** (desactivado) |
+| **Barra lateral del admin** | `Admin.jsx`, `styles/admin.css` | Fija a la izquierda. Marca la sección visible y tiene arriba el **buscador**: al escribir lista las secciones que coinciden (palabras en `KEYWORDS`); con Intro, la IA responde en 1-3 frases y ofrece un botón "Ir a…" (`btn-ghost`, no naranja: no es una llamada a la acción). Sin clave de IA, solo lista secciones |
+| **Decisiones** | `Admin.jsx`, sección Resumen | Cuatro columnas: Decidido, Hipótesis, Pendiente y **Descartado** (badge en `--danger` al 12 %), cada descartado con su porqué. Datos en `backend/project.js` |
 | **Prompts** | `AdminPrompts.jsx` | Registro de prompts con filtro por tipo, copiar, "Pulir con IA" (original y propuesta lado a lado) y alta de prompts nuevos |
 | **Logo** | `Logo.jsx`, `public/favicon.svg` | Caja de mercado con tres frutas y una hoja, y "FOOD**4**ALL" en Fraunces con el 4 en naranja o azafrán. Se adapta al fondo con `--logo-crate` y `--logo-stripe` |
 

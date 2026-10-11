@@ -72,7 +72,7 @@ function SellerForm() {
       <label htmlFor={k}>{label}</label>
       {input}
       {hint && <span className="hint">{hint}</span>}
-      {errors[k] && <span className="error" id={`${k}-err`}>{errors[k]}</span>}
+      {errors[k] && <span className="error" id={`${k}-err`} role="alert">{errors[k]}</span>}
     </div>
   );
   const inv = (k) => ({ id: k, 'aria-invalid': Boolean(errors[k]), 'aria-describedby': errors[k] ? `${k}-err` : undefined });

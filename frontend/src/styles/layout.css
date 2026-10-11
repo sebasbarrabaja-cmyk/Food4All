@@ -1,5 +1,5 @@
 .skip-link { position: absolute; left: -9999px; }
-.skip-link:focus { left: 16px; top: 8px; z-index: 10; background: var(--surface); padding: 8px 12px; }
+.skip-link:focus { left: 16px; top: 8px; z-index: 40; background: var(--surface); padding: 8px 12px; }
 
 /* Cabecera: plana, sin cristal (9.4) */
 .site-header { background: var(--bg); border-bottom: 1px solid var(--border); }
@@ -93,8 +93,9 @@ th { font-size: .85rem; color: var(--text-soft); font-weight: 600; }
 .tracker li.done .tracker__dot { background: var(--green-mid); border-color: var(--green-mid); color: var(--bg); }
 .tracker li.current .tracker__dot { border-color: var(--accent); }
 
-.cols-2, .cols-3 { display: grid; gap: 24px; grid-template-columns: 1fr; }
-@media (min-width: 760px) { .cols-2 { grid-template-columns: 1fr 1fr; } .cols-3 { grid-template-columns: repeat(3, 1fr); } }
+.cols-2, .cols-3, .cols-4 { display: grid; gap: 24px; grid-template-columns: 1fr; }
+@media (min-width: 760px) { .cols-2 { grid-template-columns: 1fr 1fr; } .cols-3 { grid-template-columns: repeat(3, 1fr); } .cols-4 { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1100px) { .cols-4 { grid-template-columns: repeat(4, 1fr); } }
 .task-line { display: flex; justify-content: space-between; gap: 12px; }
 .btn-link { min-height: 36px; padding: 0 8px; background: transparent; color: inherit; font-weight: 400; text-decoration: underline; }
 .btn:disabled { opacity: .55; cursor: not-allowed; }

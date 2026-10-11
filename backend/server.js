@@ -9,6 +9,7 @@ import { getSubtasks, getMilestones } from './asana.js';
 import { PROJECT } from './project.js';
 import * as prompts from './prompts.js';
 import { polishPrompt, agentReady, AgentError } from './agent.js';
+import { ask } from './search.js';
 
 const app = express();
 // 300 kB: los prompts del equipo (el documento maestro ocupa ~80 kB) viajan en JSON.
@@ -74,7 +75,7 @@ app.get('/api/admin/me', (req, res) => res.json({ admin: Boolean(req.session.adm
 // El resto de /api/admin exige sesión: la protección está aquí, no en el frontend.
 const requireAdmin = (req, res, next) => (req.session.admin ? next() : res.status(401).json({ error: 'No autorizado' }));
 
-app.get('/api/admin/project', requireAdmin, (_req, res) => res.json(PROJECT));
+app.get('/api/admin/project', requireAdmin, (_req, res) => res.json({ ...PROJECT, ia: agentReady() }));
 
 app.get('/api/admin/sellers', requireAdmin, (_req, res) => res.json(store.read('sellerApplications')));
 
@@ -117,6 +118,14 @@ app.post('/api/admin/prompts/polish', requireAdmin, async (req, res) => {
   const texto = str(req.body?.texto);
   if (texto.length < 10) return res.status(400).json({ error: 'El prompt está vacío.' });
   try { res.json(await polishPrompt(texto, str(req.body?.objetivo))); }
+  catch (e) { res.status(e instanceof AgentError ? e.status : 500).json({ error: e.message }); }
+});
+
+// Buscador del panel: pregunta simple → respuesta corta y apartado al que ir (no guarda nada).
+app.post('/api/admin/ask', requireAdmin, async (req, res) => {
+  const pregunta = str(req.body?.pregunta).slice(0, 300);
+  if (pregunta.length < 2) return res.status(400).json({ error: 'Escribe una pregunta.' });
+  try { res.json(await ask(pregunta)); }
   catch (e) { res.status(e instanceof AgentError ? e.status : 500).json({ error: e.message }); }
 });
 

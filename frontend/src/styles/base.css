@@ -45,6 +45,7 @@ p { margin: 0 0 12px; }
 .badge-decidido { color: var(--success); background: color-mix(in srgb, var(--success) 12%, transparent); }
 .badge-hipotesis { color: var(--warning); background: color-mix(in srgb, var(--warning) 12%, transparent); }
 .badge-pendiente { color: var(--text-soft); background: color-mix(in srgb, var(--text-soft) 12%, transparent); }
+.badge-descartado { color: var(--danger); background: color-mix(in srgb, var(--danger) 12%, transparent); }
 .badge-ejemplo { color: var(--earth); background: color-mix(in srgb, var(--earth) 12%, transparent); }
 
 /* Listas con divisores en lugar de tarjetas */
@@ -63,7 +64,7 @@ p { margin: 0 0 12px; }
 .steps p { margin: 0; color: var(--text-soft); }
 
 /* Formularios */
-.field { display: grid; gap: 4px; margin-bottom: 14px; }
+.field { display: grid; gap: 4px; margin-bottom: 14px; align-content: start; }
 .field label { font-weight: 600; font-size: .95rem; }
 .field input, .field select, .field textarea {
   font: inherit; color: var(--text); background: var(--surface);

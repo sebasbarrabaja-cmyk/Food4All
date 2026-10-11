@@ -15,8 +15,78 @@ const SECTIONS = [
   ['marketplace', 'Marketplace', 'basket'], ['prompts', 'Prompts', 'doc'],
 ];
 
+// Palabras con las que el buscador encuentra cada sección al momento, sin IA.
+const KEYWORDS = {
+  resumen: 'proyecto de que va idea resumen alcance incluye no incluye decisiones decidido hipotesis pendiente descartado',
+  mercado: 'mercado tam sam som datos estudiantes gasto cuota ticket',
+  legal: 'legal ley leyes normativa rgpd lopdgdd registro sanitario dsa',
+  equipo: 'equipo roles quien miembros sebastian juan antonio miguel',
+  hitos: 'hitos asana tareas plan entregas calendario',
+  vendedores: 'altas vendedores solicitudes alta',
+  marketplace: 'marketplace pedidos ejemplo zonas productos malaga sevilla granada',
+  prompts: 'prompts ia claude gemini registro revisor pulir',
+};
+const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const TITLES = Object.fromEntries(SECTIONS.map(([id, t]) => [`#${id}`, t]));
+
+// Buscador: al escribir, filtra secciones; con Intro, pregunta a la IA (backend/search.js).
+function SideSearch({ ia }) {
+  const [q, setQ] = useState('');
+  const [answer, setAnswer] = useState(null); // { loading } | { respuesta, destino } | { error }
+  const words = norm(q).split(/\s+/).filter((w) => w.length > 1);
+  const matches = words.length
+    ? SECTIONS.filter(([id, t]) => words.some((w) => norm(`${t} ${KEYWORDS[id] ?? ''}`).includes(w)))
+    : [];
+
+  async function submit(e) {
+    e.preventDefault();
+    if (q.trim().length < 2 || !ia) return;
+    setAnswer({ loading: true });
+    try {
+      const r = await fetch('/api/admin/ask', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pregunta: q.trim() }),
+      });
+      const data = await r.json();
+      setAnswer(r.ok ? data : { error: data.error ?? 'No se pudo responder.' });
+    } catch {
+      setAnswer({ error: 'No se pudo contactar con el servidor.' });
+    }
+  }
+
+  const goTo = answer?.destino;
+  return (
+    <>
+      <form className="side-search" role="search" onSubmit={submit}>
+        <Icon name="search" size={18} />
+        <input type="search" placeholder="Busca o pregunta…" value={q} aria-label="Buscar en el panel o hacer una pregunta"
+          onChange={(e) => { setQ(e.target.value); setAnswer(null); }} />
+      </form>
+      <p className="side-search__note">
+        {ia ? 'Escribe para saltar a una sección. Pulsa Intro para preguntar a la IA.' : 'IA sin configurar (GEMINI_API_KEY): solo busca secciones.'}
+      </p>
+      {matches.length > 0 && !answer && (
+        <ul className="side-search__results">
+          {matches.map(([id, t, icon]) => <li key={id}><a href={`#${id}`}><Icon name={icon} size={16} /> {t}</a></li>)}
+        </ul>
+      )}
+      <div className="side-search__answer" aria-live="polite">
+        {answer?.loading && <p className="muted small">Buscando…</p>}
+        {answer?.error && <p className="form-error small" role="alert">{answer.error}</p>}
+        {answer?.respuesta && (
+          <>
+            <p>{answer.respuesta}</p>
+            {goTo && (goTo.startsWith('#')
+              ? <a className="btn btn-ghost btn-sm" href={goTo}>Ir a {TITLES[goTo] ?? goTo}</a>
+              : <Link className="btn btn-ghost btn-sm" to={goTo}>Abrir {goTo}</Link>)}
+          </>
+        )}
+      </div>
+    </>
+  );
+}
+
 // Barra lateral del panel: salta entre secciones y marca la que está en pantalla.
-function Sidebar() {
+function Sidebar({ ia }) {
   const [active, setActive] = useState(SECTIONS[0][0]);
   useEffect(() => {
     const io = new IntersectionObserver((entries) => {
@@ -29,13 +99,7 @@ function Sidebar() {
 
   return (
     <aside className="admin-side">
-      {/* Pendiente: buscador para encontrar datos o hacer preguntas simples (¿con IA? por decidir) */}
-      <div className="side-search" aria-disabled="true">
-        <Icon name="search" size={18} />
-        <input type="search" placeholder="Buscar…" disabled aria-label="Buscador del panel (pendiente)" />
-        <Status kind="pendiente">Pendiente</Status>
-      </div>
-      <p className="side-search__note">Buscador interactivo, quizá con IA. Por decidir.</p>
+      <SideSearch ia={ia} />
       <nav aria-label="Secciones de administración">
         <ul className="side-nav">
           {SECTIONS.map(([id, t, icon]) => (
@@ -244,7 +308,7 @@ export default function Admin() {
         </div>
       </div>
       <div className="admin-layout">
-        <Sidebar />
+        <Sidebar ia={p.ia} />
         <main className="admin-main">
           <section className="section" id="resumen" style={{ borderTop: 0 }}>
             <h2>Resumen del proyecto</h2>
@@ -253,9 +317,9 @@ export default function Admin() {
               <div><h3>Incluye</h3><ul className="divided">{p.scope.includes.map((x) => <li key={x}>{x}</li>)}</ul></div>
               <div><h3>No incluye</h3><ul className="divided">{p.scope.excludes.map((x) => <li key={x} className="muted">{x}</li>)}</ul></div>
             </div>
-            <div className="cols-3" style={{ marginTop: 24 }}>
-              {[['decidido', 'Decidido'], ['hipotesis', 'Hipótesis'], ['pendiente', 'Pendiente']].map(([k, t]) => (
-                <div key={k}><h3><Status kind={k}>{t}</Status></h3><ul className="divided">{p.decisions[k].map((x) => <li key={x}>{x}</li>)}</ul></div>
+            <div className="cols-4" style={{ marginTop: 24 }}>
+              {[['decidido', 'Decidido'], ['hipotesis', 'Hipótesis'], ['pendiente', 'Pendiente'], ['descartado', 'Descartado']].map(([k, t]) => (
+                <div key={k}><h3><Status kind={k}>{t}</Status></h3><ul className="divided">{(p.decisions[k] ?? []).map((x) => <li key={x}>{x}</li>)}</ul></div>
               ))}
             </div>
           </section>
