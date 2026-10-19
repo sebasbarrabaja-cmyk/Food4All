@@ -27,8 +27,11 @@ Todos los colores están en `frontend/src/styles/tokens.css`. **No uses valores 
 | Token | Valor | Uso |
 |---|---|---|
 | `--bg` | `#F6F1E6` | Fondo crema de la página |
+| `--white` | `#FFFFFF` | Blanco puro (base de `--surface` y `--on-dark-hover`, punto de la cinta) |
+| `--black` | `#000000` | Sombra de las tarjetas de zona, oscurecido del botón naranja y fondo del vídeo |
 | `--surface` | `#FFFFFF` | Tarjetas, paneles, formularios |
-| `--green` | `#2F5233` | Verde bosque: títulos, cabecera, banda de cierre, botón primario |
+| `--green` | `#2F5233` | Verde bosque para **texto, foco y bordes**: títulos. También rellena el botón primario, cuyo texto en `--bg` se lee en los dos temas |
+| `--forest` | `#2F5233` | Verde bosque para **fondos oscuros**: cabecera, hero, banda verde, barra y menú del admin. Mismo valor que `--green`, pero no cambia con el tema |
 | `--green-mid` | `#5C8A4A` | Verde de apoyo |
 | `--earth` | `#8A5A3B` | Tierra: detalles y categoría "Despensa" |
 | `--accent` | `#D9822B` | Naranja: **solo llamadas a la acción** (con texto `--on-accent` `#23301F`) |
@@ -71,9 +74,13 @@ Los colores de mercado no llegan al contraste AA (4,5) con texto pequeño. Para 
 | `--accent-hover` | `#E8913A` | "Quiero comprar" con el ratón encima |
 | `--hero-lead` | `#F1EBDC` | Entradilla del hero |
 | `--on-dark-hover` | `#FFFFFF` | Texto con el ratón encima sobre verde |
+| `--on-saffron` | `#23301F` | Texto sobre azafrán: cinta y números de paso (6,54) |
+| `--hero-shade` | `#171D15` | Degradado sobre la foto del hero y sombra de la cabecera |
+| `--ink` | `#23301F` | Base de las sombras y del filete de la cinta, siempre con `color-mix` (en oscuro, negro) |
+| `--edge-on-forest` | transparente | Filete de las tarjetas «Quiero comprar / vender» sobre la banda verde: solo se ve en oscuro (≥ 3) |
 | `--tag-tomato-text`, `--tag-mustard-text` | `#8A3B26`, `#6B4A12` | Etiquetas de tipo en el admin |
 
-Sobre azafrán, el texto va en `--text` (6,54), no en `--green` (4,17).
+Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 
 ### Estados
 
@@ -84,8 +91,9 @@ Sobre azafrán, el texto va en `--text` (6,54), no en `--green` (4,17).
 - Ni azules, ni morados, ni degradados decorativos. El único degradado es el oscurecido del hero, que está para que se lea el texto.
 - El naranja `--accent` se reserva para lo que se pulsa.
 - **Foco del teclado:** contorno de 2 px en `--green` sobre fondos claros y en `--forest-text` dentro de la cabecera, las pestañas de zona, el hero, la banda verde y la barra del admin (`base.css`). El naranja no vale para el foco: sobre crema solo da 2,60.
-- Fuera de `tokens.css` no hay colores escritos a mano, salvo el negro de `color-mix` y el fondo del vídeo. Las transparencias se hacen con `color-mix(in srgb, var(--token) N%, transparent)`.
-- **Modo claro siempre.** El tema oscuro sigue definido, pero solo se activa con `data-theme="dark"` en `<html>`.
+- Fuera de `tokens.css` no hay colores escritos a mano. Las transparencias se hacen con `color-mix(in srgb, var(--token) N%, transparent)`.
+- **Fondo oscuro = `--forest`, no `--green`.** En el tema oscuro `--green` pasa a verde claro para que el texto se lea sobre la página oscura; si una banda usara `--green` de fondo, su texto crema quedaría a 1,96.
+- **Modo claro siempre.** El tema oscuro sigue definido, pero solo se activa con `data-theme="dark"` en `<html>`. Cambian los tokens que van sobre el fondo de la página (base, tintes, `--eyebrow`, etiquetas del admin y `--ink`, que pasa a negro), el naranja con su hover y `--edge-on-forest`; los que van sobre fondos fijos (`--forest`, hero, azafrán, melocotón) son iguales en los dos temas. Sobre azafrán y en los iconos de colores, el texto va en `--forest` u `--on-saffron`, nunca en `--green`. Contraste medido: texto ≥ 4,5 y filetes ≥ 3 (20/10/2026).
 
 ## 3. Tipografía
 

@@ -34,7 +34,7 @@
   transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 .side-nav a:hover { background: var(--tint-sage); color: var(--green); }
-.side-nav a.active { background: var(--green); color: var(--forest-text); }
+.side-nav a.active { background: var(--forest); color: var(--forest-text); }
 
 /* Prompts */
 .btn-sm { min-height: 38px; padding: 0 14px; font-size: .92rem; }

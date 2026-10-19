@@ -21,7 +21,7 @@ p { margin: 0 0 12px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
 .section { padding: 56px 0; border-top: 1px solid var(--border); }
-.eyebrow { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--earth); margin-bottom: 8px; }
+.eyebrow { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 8px; } /* color: palette.css */
 .muted { color: var(--text-soft); }
 .lead { font-size: 1.15rem; color: var(--text-soft); max-width: 60ch; }
 
@@ -34,7 +34,7 @@ p { margin: 0 0 12px; }
   transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }
 .btn-cta { background: var(--accent); color: var(--on-accent); }
-.btn-cta:hover { background: color-mix(in srgb, var(--accent) 88%, #000); }
+.btn-cta:hover { background: color-mix(in srgb, var(--accent) 88%, var(--black)); }
 .btn-primary { background: var(--green); color: var(--bg); }
 .btn-ghost { background: transparent; border-color: var(--border); color: var(--text); }
 .btn-ghost:hover { border-color: var(--text-soft); }

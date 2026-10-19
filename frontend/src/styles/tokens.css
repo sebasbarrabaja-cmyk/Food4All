@@ -1,8 +1,11 @@
 /* Tokens de diseño FOOD4ALL: único lugar donde se definen colores (sección 9.2). */
 :root {
   --bg: #F6F1E6;
-  --surface: #FFFFFF;
-  --green: #2F5233;
+  --white: #FFFFFF;
+  --black: #000000; /* sombras de las tarjetas de zona y fondo del vídeo */
+  --surface: var(--white);
+  --green: #2F5233; /* texto, foco y bordes: en el tema oscuro pasa a verde claro */
+  --forest: #2F5233; /* fondo de cabecera, hero y bandas verdes: igual en los dos temas */
   --green-mid: #5C8A4A;
   --earth: #8A5A3B;
   --accent: #D9822B;
@@ -22,12 +25,18 @@
   --tint-peach: #FBE4D3;
   --tint-mustard: #F8ECC8;
   --tint-tomato: #F6DCD3;
+  /* Estos van sobre fondos que no cambian (bandas --forest, el hero, el azafrán, el melocotón)
+     y son iguales en los dos temas, salvo --accent-hover, que sigue al naranja. */
   --forest-text: #F6F1E6; /* texto sobre bandas verde bosque */
-  --on-dark-hover: #FFFFFF; /* texto al pasar el ratón sobre verde */
+  --on-dark-hover: var(--white); /* texto al pasar el ratón sobre verde */
+  --on-saffron: #23301F; /* texto sobre azafrán (cinta, números de paso) */
+  --hero-shade: #171D15; /* degradado sobre la foto del hero y sombra de la cabecera */
+  --edge-on-forest: transparent; /* filete de las tarjetas sobre la banda verde: solo se ve en oscuro */
   --green-deep: #24402A; /* pestañas de zona, bajo la cabecera */
   --accent-hover: #E8913A;
   --hero-lead: #F1EBDC;
-  /* Variantes para texto o números pequeños (contraste AA ≥ 4,5) */
+  /* Variantes para texto o números pequeños (contraste AA ≥ 4,5). En oscuro cambian
+     --eyebrow y las etiquetas del admin; el resto va sobre fondos fijos. */
   --tomato-strong: #B04A34; /* fondo de números con texto crema */
   --olive-strong: #687326; /* fondo de números con texto crema */
   --eyebrow: #A9452F; /* rótulos sobre fondos claros */
@@ -45,7 +54,8 @@
 
   --radius: 10px;
   --radius-pill: 999px;
-  --shadow: 0 1px 4px rgba(35, 48, 31, 0.05);
+  --ink: #23301F; /* base de las sombras y del filete de la cinta, siempre con color-mix */
+  --shadow: 0 1px 4px color-mix(in srgb, var(--ink) 5%, transparent);
   --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
   --dur: 200ms;
   --maxw: 1120px;
@@ -56,7 +66,9 @@
 }
 
 /* Tema oscuro: desactivado por defecto (decisión del equipo: modo claro siempre).
-   Se activa poniendo data-theme="dark" en <html>, por ejemplo desde un futuro botón. */
+   Se activa poniendo data-theme="dark" en <html>, por ejemplo desde un futuro botón.
+   Cambian los tokens que van sobre el fondo de la página, el naranja y su hover, y el filete
+   de las tarjetas sobre la banda verde. Contraste medido: texto ≥ 4,5, filetes ≥ 3. */
 :root[data-theme="dark"] {
   --bg: #171D15;
   --surface: #202819;
@@ -71,6 +83,16 @@
   --success: #5FB37E;
   --danger: #E0675A;
   --warning: #D9A44A;
+  --tint-sage: #1E2A1B;
+  --tint-peach: #2D221B;
+  --tint-mustard: #2B2716;
+  --tint-tomato: #301F1B;
+  --eyebrow: #E8937A;
+  --tag-tomato-text: #F2A48F;
+  --tag-mustard-text: #E8C77E;
+  --ink: #000000;
+  --accent-hover: #EDAA4A;
+  --edge-on-forest: color-mix(in srgb, var(--forest-text) 55%, var(--forest));
   --pattern: url('/pattern-dark.svg');
   --band: rgba(32, 40, 25, 0.6); /* superficie #202819 al 60 % */
   color-scheme: dark;
