@@ -49,6 +49,11 @@ export async function ask(pregunta) {
   });
 
   let r;
-  try { r = JSON.parse(out); } catch { return { respuesta: out.trim(), destino: null }; }
-  return { respuesta: String(r.respuesta ?? '').trim(), destino: r.destino in DESTINOS ? r.destino : null };
+  try { r = JSON.parse(out); } catch { r = { respuesta: out }; } // texto sin JSON: se usa tal cual
+  // Si no viene con la forma pedida (null, un número, una lista, texto en blanco…), respuesta de
+  // reserva en vez de un 500 o de un panel vacío. hasOwn y no "in": "in" acepta "toString".
+  const respuesta = typeof r?.respuesta === 'string' ? r.respuesta.trim() : '';
+  const destino = Object.hasOwn(DESTINOS, r?.destino) ? r.destino : null;
+  if (respuesta) return { respuesta, destino };
+  return { respuesta: destino ? 'Lo encontrarás en este apartado.' : 'No he podido responder. Prueba a escribir la pregunta de otra forma.', destino };
 }
