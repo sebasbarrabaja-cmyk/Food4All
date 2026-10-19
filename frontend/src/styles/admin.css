@@ -57,9 +57,9 @@
 .input-inline { flex: 1; min-width: 220px; min-height: 38px; padding: 0 12px; font: inherit; font-size: .92rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--surface); color: var(--text); }
 
 .tag { display: inline-block; padding: 2px 10px; border-radius: var(--radius-pill); font-size: .78rem; font-weight: 600; background: var(--tint-sage); color: var(--green); }
-.tag--prompt { background: var(--tint-peach); color: #8A3B26; }
-.tag--feedback { background: var(--tint-tomato); color: #8A3B26; }
-.tag--versión { background: var(--tint-mustard); color: #6B4A12; }
+.tag--prompt { background: var(--tint-peach); color: var(--tag-tomato-text); }
+.tag--feedback { background: var(--tint-tomato); color: var(--tag-tomato-text); }
+.tag--versión { background: var(--tint-mustard); color: var(--tag-mustard-text); }
 
 .polish { margin-top: 14px; padding: 16px; border-radius: var(--radius); border: 1px solid var(--saffron); background: color-mix(in srgb, var(--tint-mustard) 45%, var(--surface)); }
 .polish__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 10px; }

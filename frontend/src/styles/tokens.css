@@ -23,6 +23,18 @@
   --tint-mustard: #F8ECC8;
   --tint-tomato: #F6DCD3;
   --forest-text: #F6F1E6; /* texto sobre bandas verde bosque */
+  --on-dark-hover: #FFFFFF; /* texto al pasar el ratón sobre verde */
+  --green-deep: #24402A; /* pestañas de zona, bajo la cabecera */
+  --accent-hover: #E8913A;
+  --hero-lead: #F1EBDC;
+  /* Variantes para texto o números pequeños (contraste AA ≥ 4,5) */
+  --tomato-strong: #B04A34; /* fondo de números con texto crema */
+  --olive-strong: #687326; /* fondo de números con texto crema */
+  --eyebrow: #A9452F; /* rótulos sobre fondos claros */
+  --saffron-light: #F3C66B; /* rótulos sobre verde y sobre el hero */
+  --on-peach: #3A2414; /* texto e iconos sobre melocotón */
+  --tag-tomato-text: #8A3B26; /* etiquetas del admin */
+  --tag-mustard-text: #6B4A12;
 
   --success: #2F7D4B;
   --danger: #C0392B;

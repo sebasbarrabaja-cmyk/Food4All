@@ -29,14 +29,14 @@
 .reveal-on [data-reveal]:not(.is-visible) .underline-doodle::after { animation: none; transform: scaleX(0); }
 
 /* ---------- Cinta de producto ---------- */
-.ribbon { background: var(--saffron); color: var(--green); overflow: hidden; border-bottom: 1px solid rgba(35, 48, 31, .12); }
+.ribbon { background: var(--saffron); color: var(--text); overflow: hidden; border-bottom: 1px solid rgba(35, 48, 31, .12); }
 .ribbon__track { display: flex; width: max-content; animation: ribbon 38s linear infinite; }
 .ribbon:hover .ribbon__track { animation-play-state: paused; }
 .ribbon__set { display: flex; }
 .ribbon__item { display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; font: 600 1rem var(--font-display); white-space: nowrap; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .dot--tomato { background: var(--tomato); }
-.dot--saffron { background: #fff; }
+.dot--saffron { background: var(--surface); }
 .dot--olive { background: var(--olive); }
 .dot--peach { background: var(--peach); }
 @keyframes ribbon { to { transform: translateX(-50%); } }

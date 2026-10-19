@@ -56,6 +56,25 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
 | `--tint-mustard` | `#F8ECC8` | Banda mostaza |
 | `--tint-tomato` | `#F6DCD3` | Fondos de avisos y del bloque "No somos" |
 
+### Variantes para texto pequeño y detalles
+
+Los colores de mercado no llegan al contraste AA (4,5) con texto pequeño. Para números, rótulos y texto se usan estas variantes:
+
+| Token | Valor | Uso |
+|---|---|---|
+| `--tomato-strong` | `#B04A34` | Fondo de los números de paso en tomate (4,81 con crema) |
+| `--olive-strong` | `#687326` | Fondo de los números de paso en oliva (4,58 con crema) |
+| `--eyebrow` | `#A9452F` | Rótulos sobre fondos claros |
+| `--saffron-light` | `#F3C66B` | Rótulos sobre el hero y la banda verde |
+| `--on-peach` | `#3A2414` | Texto e iconos sobre melocotón |
+| `--green-deep` | `#24402A` | Pestañas de zona |
+| `--accent-hover` | `#E8913A` | "Quiero comprar" con el ratón encima |
+| `--hero-lead` | `#F1EBDC` | Entradilla del hero |
+| `--on-dark-hover` | `#FFFFFF` | Texto con el ratón encima sobre verde |
+| `--tag-tomato-text`, `--tag-mustard-text` | `#8A3B26`, `#6B4A12` | Etiquetas de tipo en el admin |
+
+Sobre azafrán, el texto va en `--text` (6,54), no en `--green` (4,17).
+
 ### Estados
 
 Éxito `#2F7D4B`, peligro `#C0392B`, advertencia `#B7791F`. Los badges de estado (`Status.jsx`) usan esos colores con un fondo al 12 %.
@@ -64,6 +83,8 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
 
 - Ni azules, ni morados, ni degradados decorativos. El único degradado es el oscurecido del hero, que está para que se lea el texto.
 - El naranja `--accent` se reserva para lo que se pulsa.
+- **Foco del teclado:** contorno de 2 px en `--green` sobre fondos claros y en `--forest-text` dentro de la cabecera, las pestañas de zona, el hero, la banda verde y la barra del admin (`base.css`). El naranja no vale para el foco: sobre crema solo da 2,60.
+- Fuera de `tokens.css` no hay colores escritos a mano, salvo el negro de `color-mix` y el fondo del vídeo. Las transparencias se hacen con `color-mix(in srgb, var(--token) N%, transparent)`.
 - **Modo claro siempre.** El tema oscuro sigue definido, pero solo se activa con `data-theme="dark"` en `<html>`.
 
 ## 3. Tipografía
@@ -73,7 +94,7 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
   - `h2`: `clamp(1.6rem, 3.5vw, 2.2rem)`
   - `h3`: 1.2rem
 - **Texto:** Figtree a **17 px** (1.0625rem) con interlineado 1.6. El texto de interfaz va en peso 600.
-- **Rótulos** (`.eyebrow`): Figtree 0.85rem en mayúsculas con espaciado 0.06em, color `#A9452F`. Sobre el hero van en `#F3C66B`.
+- **Rótulos** (`.eyebrow`): Figtree 0.85rem en mayúsculas con espaciado 0.06em, color `--eyebrow`. Sobre el hero y la banda verde van en `--saffron-light`.
 - **Letra pequeña** de avisos (`.photo-note`): 0.78rem en `--text-soft`.
 - Ambas fuentes se cargan desde Google Fonts en `frontend/index.html`. No usar Inter, Roboto ni Arial.
 
@@ -104,12 +125,12 @@ Sirve para iconos, manchas de color, números de pasos, categorías y detalles. 
 | Patrón | Dónde | Notas |
 |---|---|---|
 | **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro y solo 3 botones. El activo va en crema y "Quiero comprar" siempre en naranja |
-| **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en verde `#24402A`. La activa se subraya en azafrán |
+| **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en `--green-deep`. La activa se subraya en azafrán |
 | **Hero** | `Home.jsx` | Ilustración `hero.svg`, oscurecido a la izquierda, "Come como en casa." en azafrán y tres botones grandes |
 | **Bandas de sección** | `palette.css` | `.band-sage`, `.band-peach`, `.band-mustard`, `.band-forest` y `.band-plain`. En páginas interiores se alternan solas salvia y melocotón |
 | **Banda de cierre** | `.band-forest` | Verde bosque con la textura de dibujos. **Es el único sitio con textura** |
 | **Manchas de icono** | `Blob.jsx` | Icono de trazo sobre mancha de color, con tono (`tomato`, `saffron`, `olive`, `peach`, `green`) y un giro leve |
-| **Pasos numerados** | `.steps`, `.steps-visual` | Número en círculo de color en ciclo: tomate → azafrán → oliva → melocotón |
+| **Pasos numerados** | `.steps`, `.steps-visual` | Número en círculo de color en ciclo: tomate → azafrán → oliva → melocotón (tomate y oliva en su variante `-strong` para que el número se lea) |
 | **Tarjeta de producto** | `Comprar.jsx` | Foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos, conservación y "Precio todavía no disponible" |
 | **Cesta por vendedor** | `BasketByVendor.jsx` | Agrupada por vendedor, con miniatura, y "Por qué" en la cesta de la IA |
 | **Badges de estado** | `Status.jsx` | Decidido, Hipótesis, Por definir y Datos de ejemplo |
@@ -149,7 +170,9 @@ food4all/
 │  ├─ asana.js           intermediario con Asana (el token solo vive en .env)
 │  ├─ store.js           guarda las altas de vendedores en data/db.json
 │  ├─ prompts.js         lee y guarda el registro de prompts (/prompts)
-│  └─ agent.js           segundo agente (Claude) que pule prompts; clave en .env
+│  ├─ gemini.js          llamada a Gemini (nivel gratuito); clave en .env
+│  ├─ search.js          buscador del panel: pregunta → respuesta corta y apartado
+│  └─ agent.js           segundo agente (Gemini) que pule prompts
 ├─ prompts/              un .md por prompt usado en el desarrollo (va en el repo)
 ├─ docs/                 esta guía y la comparativa con la competencia
 └─ tools/fotos/          scripts para buscar y descargar fotos de Commons
