@@ -33,27 +33,31 @@ const TYPES = [
   ['obrador', 'Obrador'], ['despensa', 'Despensa'], ['cocina', 'Cocina local'],
 ];
 const ZONES = [['malaga', 'Málaga'], ['sevilla', 'Sevilla'], ['granada', 'Granada']];
+// Longitud máxima de cada campo: los mismos límites que MAX_LEN de backend/server.js.
+const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
 const EMPTY = { businessName: '', type: '', zone: '', email: '', phone: '', sanitaryRegistry: '', offer: '', pickupHours: '' };
 
 function SellerForm() {
   const [form, setForm] = useState(EMPTY);
   const [errors, setErrors] = useState({});
-  const [state, setState] = useState('idle'); // idle | sending | done | error
+  const [state, setState] = useState('idle'); // idle | sending | done
+  const [formError, setFormError] = useState(''); // error general: sin conexión o demasiados envíos
 
   const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
   async function submit(e) {
     e.preventDefault();
     setState('sending');
+    setFormError('');
     try {
       const res = await fetch('/api/sellers/apply', {
         method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(form),
       });
       const data = await res.json();
-      if (!res.ok) { setErrors(data.errors ?? {}); setState('idle'); return; }
+      if (!res.ok) { setErrors(data.errors ?? {}); setFormError(data.error ?? ''); setState('idle'); return; }
       setErrors({}); setForm(EMPTY); setState('done');
     } catch {
-      setState('error');
+      setFormError('No se pudo enviar. Comprueba que el servidor está en marcha.'); setState('idle');
     }
   }
 
@@ -75,7 +79,7 @@ function SellerForm() {
       {errors[k] && <span className="error" id={`${k}-err`} role="alert">{errors[k]}</span>}
     </div>
   );
-  const inv = (k) => ({ id: k, 'aria-invalid': Boolean(errors[k]), 'aria-describedby': errors[k] ? `${k}-err` : undefined });
+  const inv = (k) => ({ id: k, maxLength: MAX_LEN[k], 'aria-invalid': Boolean(errors[k]), 'aria-describedby': errors[k] ? `${k}-err` : undefined });
 
   return (
     <form className="panel" onSubmit={submit} noValidate>
@@ -101,7 +105,7 @@ function SellerForm() {
       {field('sanitaryRegistry', 'Número de registro sanitario', <input {...inv('sanitaryRegistry')} value={form.sanitaryRegistry} onChange={set('sanitaryRegistry')} required />)}
       {field('offer', '¿Qué ofreces?', <textarea {...inv('offer')} value={form.offer} onChange={set('offer')} required />, 'Tipo de productos, temporada, volumen aproximado.')}
       {field('pickupHours', 'Horarios de recogida posibles', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
-      {state === 'error' && <p className="error" role="alert" style={{ color: 'var(--danger)' }}>No se pudo enviar. Comprueba que el servidor está en marcha.</p>}
+      {formError && <p className="error" role="alert" style={{ color: 'var(--danger)' }}>{formError}</p>}
       <button className="btn btn-cta" type="submit" disabled={state === 'sending'}>
         {state === 'sending' ? 'Enviando…' : 'Enviar solicitud'}
       </button>

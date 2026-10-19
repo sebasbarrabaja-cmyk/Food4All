@@ -1,6 +1,6 @@
 import express from 'express';
 import session from 'express-session';
-import { randomUUID, timingSafeEqual } from 'node:crypto';
+import { randomBytes, randomUUID, timingSafeEqual } from 'node:crypto';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,12 +10,21 @@ import { PROJECT } from './project.js';
 import * as prompts from './prompts.js';
 import { polishPrompt, agentReady, AgentError } from './agent.js';
 import { ask } from './search.js';
+import { limiter } from './limiter.js';
 
 const app = express();
 // 300 kB: los prompts del equipo (el documento maestro ocupa ~80 kB) viajan en JSON.
 app.use(express.json({ limit: '300kb' }));
+
+// Sin SESSION_SECRET (fase de desarrollo) se genera una clave al arrancar: funciona igual, pero las
+// sesiones se pierden al reiniciar. Una clave fija y pública permitiría falsificar la cookie de admin.
+let sessionSecret = process.env.SESSION_SECRET;
+if (!sessionSecret) {
+  sessionSecret = randomBytes(32).toString('hex');
+  console.warn('Aviso: falta SESSION_SECRET en backend/.env; uso una clave temporal (la sesión de admin se pierde al reiniciar).');
+}
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'dev-only-secret',
+  secret: sessionSecret,
   resave: false,
   saveUninitialized: false,
   cookie: { httpOnly: true, sameSite: 'lax', maxAge: 1000 * 60 * 60 * 8 },
@@ -26,9 +35,23 @@ const SELLER_TYPES = ['agricultor', 'granja', 'fruteria', 'panaderia', 'obrador'
 const ZONES = ['malaga', 'sevilla', 'granada'];
 const str = (v) => (typeof v === 'string' ? v.trim() : '');
 
+// Longitud máxima de cada campo del alta. Mantener al día con MAX_LEN de frontend/src/pages/Vender.jsx.
+const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
+const QUINCE_MIN = 15 * 60 * 1000;
+const tooMany = (res, wait) => res.set('Retry-After', String(wait)).status(429)
+  .json({ error: `Demasiados intentos. Prueba otra vez dentro de ${Math.ceil(wait / 60)} min.` });
+
+// Solo cuentan las altas que se guardan: las que no pasan la validación no escriben nada.
+const applyLimit = limiter({ max: 5, windowMs: QUINCE_MIN });
+
 app.post('/api/sellers/apply', (req, res) => {
+  const wait = applyLimit.blocked(req.ip);
+  if (wait) return tooMany(res, wait);
   const b = req.body ?? {};
   const errors = {};
+  for (const [k, max] of Object.entries(MAX_LEN)) {
+    if (str(b[k]).length > max) errors[k] = `Como máximo ${max} caracteres.`;
+  }
   if (str(b.businessName).length < 2) errors.businessName = 'Indica el nombre del negocio.';
   if (!SELLER_TYPES.includes(b.type)) errors.type = 'Elige un tipo de negocio.';
   if (!ZONES.includes(b.zone)) errors.zone = 'Elige una zona.';
@@ -36,6 +59,7 @@ app.post('/api/sellers/apply', (req, res) => {
   if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'El registro sanitario es obligatorio.';
   if (str(b.offer).length < 10) errors.offer = 'Cuéntanos brevemente qué ofreces (mín. 10 caracteres).';
   if (Object.keys(errors).length) return res.status(400).json({ errors });
+  applyLimit.hit(req.ip);
 
   const item = store.append('sellerApplications', {
     id: randomUUID(),
@@ -59,13 +83,20 @@ const safeEq = (a, b) => {
   return A.length === B.length && timingSafeEqual(A, B);
 };
 
+// Cuentan los intentos fallidos; entrar bien pone el contador a cero.
+const loginLimit = limiter({ max: 5, windowMs: QUINCE_MIN });
+
 app.post('/api/admin/login', (req, res) => {
   const { user, password } = req.body ?? {};
   const { ADMIN_USER, ADMIN_PASSWORD } = process.env;
   if (!ADMIN_USER || !ADMIN_PASSWORD) return res.status(503).json({ error: 'Administración no configurada (.env).' });
+  const wait = loginLimit.blocked(req.ip);
+  if (wait) return tooMany(res, wait);
   if (!safeEq(user, ADMIN_USER) || !safeEq(password, ADMIN_PASSWORD)) {
+    loginLimit.hit(req.ip);
     return res.status(401).json({ error: 'Usuario o contraseña incorrectos.' });
   }
+  loginLimit.clear(req.ip);
   req.session.regenerate(() => { req.session.admin = true; res.json({ ok: true }); });
 });
 
