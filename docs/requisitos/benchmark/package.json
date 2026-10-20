@@ -2,6 +2,11 @@
   "name": "food4all-benchmark",
   "private": true,
   "description": "Genera FOOD4ALL_requisitos_benchmark.xlsx: requisitos comparados con la competencia",
-  "scripts": { "build": "node build.js ../FOOD4ALL_requisitos_benchmark.xlsx stats.json" },
-  "dependencies": { "exceljs": "4.4.0" }
+  "scripts": {
+    "build": "node build.js ../FOOD4ALL_requisitos_benchmark.xlsx stats.json",
+    "asana": "node asana.js ../FOOD4ALL_requisitos_benchmark.xlsx ../FOOD4ALL_especificacion_requisitos.md ../FOOD4ALL_asana_vista_previa.md asana_tareas.json"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0"
+  }
 }

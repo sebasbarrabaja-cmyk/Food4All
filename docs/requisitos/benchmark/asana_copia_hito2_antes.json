@@ -1,0 +1,960 @@
+[
+ {
+  "gid": "1219576135905899",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-16T11:25:34.370Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-19T08:35:15.249Z",
+  "name": "Investigación sobre la entrega de paquetes a los clientes",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219576135905901",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-16T11:26:24.715Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-19T08:35:17.271Z",
+  "name": "Investigar sobre la recogida de productos de los vendedores",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219350212080609",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-09T11:41:36.021Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-19T08:35:13.263Z",
+  "name": "Requisitos temporales",
+  "notes": "Trabajamos la elección de los requisitos para el desarrollo de FOOD4ALL",
+  "num_subtasks": 4,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219350212080612",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": true,
+  "created_at": "2026-10-09T11:42:03.703Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-16T11:24:59.560Z",
+  "name": "Información de otras empresas",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [
+   {
+    "gid": "1219351060755462",
+    "name": "esquema_comparativo_de_empresas_de_alimentaci_n.md"
+   }
+  ],
+  "nivel": 1
+ },
+ {
+  "gid": "1219350212080613",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": true,
+  "created_at": "2026-10-09T11:42:19.691Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-16T11:25:01.145Z",
+  "name": "Información inicial de requisitos de nuestra empresa ",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [
+   {
+    "gid": "1219350212080622",
+    "name": "FOOD4ALL_requisitos.md"
+   }
+  ],
+  "nivel": 1
+ },
+ {
+  "gid": "1219350212080616",
+  "assignee": null,
+  "completed": true,
+  "created_at": "2026-10-09T11:43:20.170Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-16T11:25:02.839Z",
+  "name": "Comparar y contrastar información de los requisitos iniciales con las demás empreas",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219350212080617",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-09T11:45:20.566Z",
+  "created_by": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "modified_at": "2026-10-18T22:05:02.794Z",
+  "name": "Criba de requisitos",
+  "notes": "Definir cuales son los requisitos funcionales mínimos que tenemos que hacer. Y luego hacer una lista de requisitos secundarios no necesarios para el funcionamiento del marketplace ",
+  "num_subtasks": 0,
+  "comentarios": [
+   {
+    "gid": "1219607695631343",
+    "created_by": {
+     "gid": "1210397683752554",
+     "name": "Gerardo Casas Fernández"
+    },
+    "text": "Echadle un vistazo al hito 2 de los compañeros de los otros proyectos. Creo lo tienen mucho mejor planteado que vosotros.",
+    "type": "comment",
+    "resource_subtype": "comment_added"
+   }
+  ],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219638004965792",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:25:19.638Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-19T11:25:57.511Z",
+  "name": "Como centralizar el carrito",
+  "notes": "Los clientes",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219658628732136",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:38.731Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:16:41.501Z",
+  "name": "[B1] Conocer a los usuarios: entrevistas y necesidades",
+  "notes": "Responsable propuesto: Sebastián (Product Owner del sprint) · Fecha: lunes 20 oct\n\nObjetivo: conseguir evidencia real de qué necesitan compradores y vendedores ANTES de escribir los requisitos. Sin esto, los requisitos son inventados.\n\nCómo se registra: cada necesidad detectada se codifica como N-<MÓDULO>-NN (ej. N-ENT-01) y es el origen de las fichas RF/RNF del bloque B4.\n\nRegla del proyecto: lo que no salga de una entrevista o de una fuente citada se marca como HIPÓTESIS / PENDIENTE DE VALIDACIÓN.\n\nResultado: lista de necesidades N-XXX con su fuente (entrevista nº, fecha, perfil anonimizado).",
+  "num_subtasks": 3,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219639783923611",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:52:55.358Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:01:21.466Z",
+  "name": "Entrevistas a estudiantes (mínimo 5)",
+  "notes": "Responsable propuesto: Miguel · Fecha: lunes 20 oct\n\nObjetivo: entrevistar al menos a 5 estudiantes que viven fuera de casa (Málaga, Sevilla o Granada) usando el guion preparado en el Hito 1.\n\nPreguntas clave:\n• ¿Cuánto gastas a la semana en comida?\n• ¿Cocinas? ¿Cuánto tiempo le dedicas?\n• ¿Cuánta comida tiras y por qué?\n• ¿Dónde compras y cada cuánto?\n• ¿Qué apps usas (Glovo, supermercado online...)?\n• ¿En qué franjas podrías recibir un pedido?\n• ¿Tienes alergias o sigues alguna dieta?\n• ¿Qué te haría pagar por un servicio así?\n\nCómo registrar cada entrevista: código (E1, E2...), fecha, ciudad, perfil anonimizado (edad aproximada, curso) y respuestas literales. No guardar datos personales identificables (RGPD).",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639783923612",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:52:56.154Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:01:51.953Z",
+  "name": "Entrevistas o encuesta a vendedores locales (mínimo 2-3)",
+  "notes": "Responsable propuesto: Juan Antonio · Fecha: lunes 20 oct\n\nObjetivo: entender cómo trabajan los comercios locales y si se sumarían a Food4All. Mínimo 2-3 vendedores (frutería, panadería, puesto de mercado...).\n\nPreguntas clave:\n• ¿Cómo vendes hoy? (tienda, web, redes sociales)\n• ¿Qué comisión por venta te parecería aceptable?\n• ¿Podrías preparar pedidos para una recogida a una hora fija?\n• ¿Cómo controlas el stock y las caducidades?\n• ¿Qué haces con el producto que está a punto de caducar?\n• ¿Cómo cobras? ¿Qué plazos de pago necesitas?\n• ¿Qué te preocupa de vender en una plataforma?\n\nRegistro: código (V1, V2...), fecha, tipo de comercio, ciudad y respuestas literales. Si no se consigue entrevistar, hacer encuesta corta y marcar los resultados como HIPÓTESIS.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639783923613",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:52:56.947Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:02:16.766Z",
+  "name": "Resumen de hallazgos y lista de necesidades N-XXX",
+  "notes": "Responsable propuesto: Sebastián · Fecha: martes 21 oct\n\nObjetivo: convertir lo que dijeron estudiantes y vendedores en necesidades numeradas, que son el origen de todos los requisitos.\n\nFormato (tabla): Qué dijeron | Qué significa | Necesidad (N-ID) | Fuente\n\nEjemplo: \"No sé cuánto gastar a la semana\" | falta de planificación | N-IA-01: el estudiante necesita ayuda para ajustar su compra semanal a un presupuesto | E3, E5\n\nCódigos de módulo: CUE (cuentas), CAT (catálogo), VEN (vendedor), IA (asistente), CAR (carrito), PAG (pagos), HUB (consolidación), ENT (entrega), VAL (valoraciones), CAD (caducidad).\n\nCada necesidad se marca como CONFIRMADA (aparece en 2 o más fuentes) o HIPÓTESIS (1 fuente o ninguna).",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219658628732137",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:39.677Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:10:51.280Z",
+  "name": "[B2] Personas y mapas de empatía",
+  "notes": "Responsable propuesto: Juan Antonio · Fecha: martes 21 oct\n\nObjetivo: representar a los usuarios reales de Food4All con personas basadas en las entrevistas de B1, no inventadas. El hito pide al menos 2 personas y un mapa de empatía.\n\nPlantilla de cada persona:\n• Nombre ficticio, edad, ciudad y situación\n• Objetivos\n• Frustraciones\n• Cómo compra o vende hoy\n• Qué espera de Food4All\n• Una cita representativa sacada de las entrevistas\n• Necesidades relacionadas (N-ID)\n\nEjemplos orientativos (sustituir por datos reales de las entrevistas):\n• Estudiante: \"Lucía, 20 años, de Jaén, estudia en Granada. Tiene unos 40 € a la semana para comida, no sabe planificar y acaba tirando producto.\"\n• Vendedor: \"Antonio, frutero de barrio. No tiene web y parte de su género se estropea antes de venderlo.\"\n• Operador del hub o repartidor (opcional): es el actor que diferencia a Food4All de la competencia.\n\nMapa de empatía de cada persona: Piensa y siente / Ve / Oye / Dice y hace / Dolores / Ganancias.\n\nEntregable: personas + mapas de empatía adjuntos al documento de requisitos.",
+  "num_subtasks": 4,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219640513183933",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:55:57.648Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:04:17.578Z",
+  "name": "Persona 1: estudiante que vive fuera de casa",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640513183934",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:56:02.745Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:03:12.271Z",
+  "name": "Persona 2: vendedor local",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640513183935",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:56:03.983Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:10:19.332Z",
+  "name": "Persona 3 (opcional): operador del hub o repartidor",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640513183936",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:56:05.070Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:10:29.074Z",
+  "name": "Mapa de empatía de cada persona",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219658628732138",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:40.420Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:16:51.077Z",
+  "name": "[B3] Requisitos legales que se convierten en requisitos del software",
+  "notes": "Responsable propuesto: Sebastián · Fecha: martes 21 oct\n\nObjetivo: traducir el marco legal revisado en el Hito 1 en requisitos que el software debe cumplir (RNF-LEG). Se parte del rol jurídico acordado como supuesto en el Hito 1 (intermediario, operador alimentario o mixto).\n\nPuntos a convertir en requisitos (citar cada fuente con título, organismo, fecha y enlace):\n• Información alimentaria y alérgenos: Reglamento (UE) 1169/2011. En la venta a distancia la información obligatoria debe estar disponible antes de comprar.\n• Trazabilidad: Reglamento (CE) 178/2002. Saber de qué vendedor y lote viene cada producto que pasa por el hub.\n• Protección de datos: RGPD (UE 2016/679) y LOPDGDD (Ley Orgánica 3/2018). Consentimiento, finalidad, derechos de acceso y supresión.\n• Comercio electrónico y consumidores: LSSI-CE (Ley 34/2002) y Ley General para la Defensa de los Consumidores y Usuarios (RDL 1/2007). Información previa, condiciones de compra y desistimiento (comprobar la excepción para productos perecederos).\n\nResultado: requisitos RNF-LEG-01, 02... en el catálogo (B4) y en la matriz de trazabilidad.\n\nAVISO: todo esto es PENDIENTE DE VALIDACIÓN. La revisión legal profesional es obligatoria antes de pasar de piloto a lanzamiento.",
+  "num_subtasks": 4,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219639746665201",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:57:51.834Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:12:10.189Z",
+  "name": "Información alimentaria y alérgenos en la ficha de producto",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639746665202",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:57:52.341Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:12:19.792Z",
+  "name": "Trazabilidad de lotes y caducidades en el hub",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639746665203",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:57:52.678Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:12:29.593Z",
+  "name": "Protección de datos (RGPD y LOPDGDD)",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639746665204",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:57:53.185Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:12:48.774Z",
+  "name": "Condiciones de compra, desistimiento y comercio electrónico",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219658628732139",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:41.155Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:17:00.847Z",
+  "name": "[B4] Catálogo de requisitos: fichas RF / RNF",
+  "notes": "Responsable propuesto: Sebastián (coordina; cada ficha tiene su responsable) · Fecha: miércoles 22 oct\n\nObjetivo: escribir cada requisito como una ficha completa, siguiendo el ejemplo RF-ENT-01. No basta con \"el usuario podrá...\": cada ficha dice quién actúa, qué datos necesita, qué reglas se aplican, qué pasa si algo falla y cómo se comprueba.\n\nPlantilla de ficha (7 apartados):\n1) Identificación y origen: ID, nombre, actor principal, necesidad relacionada (N-ID) y fuente.\n2) Enunciado del requisito: \"El sistema deberá...\".\n3) Precondiciones y datos de entrada.\n4) Reglas de negocio propuestas.\n5) Flujo normal y resultado esperado.\n6) Alternativas y errores.\n7) Criterios de aceptación (CA-01, CA-02... con Dado / cuando / entonces).\n\nRequisitos no funcionales (RNF): mismos apartados adaptados, siempre con un valor medible y cómo se comprueba.\n\nReglas:\n• Todas las fichas son PROPUESTAS DIDÁCTICAS pendientes de validación. Las reglas se confirman con las entrevistas (B1) y con quien represente la operación; no las deciden solo los desarrolladores.\n• La prioridad MoSCoW se decide en la subtarea que ya existe \"Criba de requisitos\" (dentro de \"Requisitos temporales\").\n• Las subtareas de investigación que ya existían alimentan estas fichas: entrega → RF-ENT-01, recogida → RF-HUB-01, centralizar el carrito → RF-CAR-01 y RF-PAG-01.\n\nReparto propuesto:\n• Sebastián: RF-CAR-01, RF-PAG-01, RF-HUB-01, RNF-SEG-01, RNF-LEG-01\n• Juan Antonio: RF-CAT-01, RF-VEN-01, RF-VAL-01, RNF-USA-01\n• Miguel: RF-CUE-01, RF-IA-01, RF-ENT-01, RF-CAD-01, RNF-REN-01",
+  "num_subtasks": 14,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219639809015688",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:27.456Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:14:25.615Z",
+  "name": "RF-CUE-01 · Registrarse e iniciar sesión con un rol",
+  "notes": "Responsable propuesto: Miguel · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-CUE-01\nNombre: Registrarse e iniciar sesión con un rol.\nActor principal: Comprador (también Vendedor).\nNecesidad relacionada — N-CUE-01: cada tipo de usuario necesita acceder solo a las funciones que le corresponden.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1). No presentarla como necesidad demostrada hasta tener esa evidencia.\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir registrarse con email y contraseña eligiendo el tipo de cuenta (comprador o vendedor) y mostrará a cada usuario solo las zonas de su rol. Las cuentas de vendedor quedarán pendientes hasta que un administrador las apruebe.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl email no está registrado. Datos: nombre, email, contraseña, tipo de cuenta, ciudad (Málaga, Sevilla o Granada) y aceptación de las condiciones y de la política de privacidad.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• El email es único en el sistema.\n• La contraseña tiene al menos 8 caracteres.\n• Sin aceptar la política de privacidad no se crea la cuenta.\n• Una cuenta de vendedor queda \"pendiente de aprobación\" hasta que la valida un administrador.\n• Los roles operador del hub, repartidor y administrador no se registran desde la web pública: los crea un administrador.\n\n5) FLUJO NORMAL\nPaso 1 — El usuario elige \"Registrarse\".\nPaso 2 — Selecciona el tipo de cuenta.\nPaso 3 — Introduce sus datos y acepta las condiciones.\nPaso 4 — El sistema valida los datos.\nPaso 5 — El sistema crea la cuenta con un único rol.\nPaso 6 — El comprador entra en su zona; el vendedor ve el aviso \"pendiente de aprobación\".\nResultado esperado: cuenta creada con un rol y acceso solo a las funciones de ese rol.\n\n6) ALTERNATIVAS Y ERRORES\n• Email ya registrado: no se crea la cuenta y se ofrece iniciar sesión o recuperar la contraseña.\n• Contraseña no válida: se indica el requisito mínimo.\n• No acepta la privacidad: no se crea la cuenta.\n• Ciudad sin servicio: se informa de que aún no hay servicio en esa ciudad.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Registro correcto: Dado un email no registrado y datos válidos, cuando el comprador confirma el registro, entonces se crea la cuenta con rol comprador y accede a su zona.\nCA-02 — Email duplicado: Dado un email ya registrado, cuando alguien intenta registrarse con él, entonces no se crea una segunda cuenta.\nCA-03 — Vendedor pendiente: Dada una cuenta de vendedor no aprobada, cuando intenta publicar un producto, entonces el sistema no lo permite.\nCA-04 — Acceso por rol: Dado un comprador con sesión iniciada, cuando intenta abrir el panel de vendedor o de administración, entonces se le deniega el acceso.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015689",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:28.661Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:11:00.902Z",
+  "name": "RF-CAT-01 · Consultar y filtrar el catálogo con información de alérgenos",
+  "notes": "Responsable propuesto: Juan Antonio · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-CAT-01\nNombre: Consultar y filtrar el catálogo con información de alérgenos.\nActor principal: Comprador.\nNecesidad relacionada — N-CAT-01: el comprador necesita encontrar rápido productos locales que encajen con su dieta y su presupuesto, sabiendo qué contienen.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá mostrar al comprador los productos disponibles en su ciudad de todos los vendedores aprobados, y permitirá buscarlos y filtrarlos por categoría, precio, vendedor y alérgenos. Cada ficha de producto mostrará precio, unidad, vendedor, disponibilidad y los alérgenos declarados.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl comprador ha indicado su ciudad. Datos: ciudad, texto de búsqueda y filtros. Cada producto tiene nombre, foto, precio, unidad, categoría, vendedor, stock y alérgenos.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Solo se muestran productos de vendedores aprobados y activos de la ciudad del comprador.\n• Un producto sin stock se muestra como \"agotado\" y no se puede añadir al carrito.\n• El filtro \"sin <alérgeno>\" excluye cualquier producto que lo contenga.\n• Los precios se muestran con IVA incluido.\n• No se puede publicar un producto sin declarar alérgenos (ver RF-VEN-01).\n\n5) FLUJO NORMAL\nPaso 1 — El comprador abre el catálogo.\nPaso 2 — El sistema muestra los productos de su ciudad.\nPaso 3 — El comprador busca o aplica filtros.\nPaso 4 — El sistema actualiza la lista.\nPaso 5 — El comprador abre la ficha de un producto.\nResultado esperado: el comprador ve solo productos disponibles y compatibles con sus filtros, con su información alimentaria.\n\n6) ALTERNATIVAS Y ERRORES\n• Sin resultados: mensaje \"No hay productos con estos filtros\" y opción de quitarlos.\n• Ciudad sin vendedores: se informa de que aún no hay servicio.\n• Error al cargar: mensaje y opción de reintentar.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Filtro de alérgenos: Dado el filtro \"sin gluten\", cuando se aplica, entonces ningún producto listado declara gluten.\nCA-02 — Ciudad: Dado un comprador de Sevilla, cuando abre el catálogo, entonces no aparecen productos de vendedores de Málaga ni de Granada.\nCA-03 — Agotado: Dado un producto con stock 0, cuando el comprador lo ve, entonces aparece como \"agotado\" y no se puede añadir al carrito.\nCA-04 — Sin resultados: Dada una búsqueda sin coincidencias, cuando se ejecuta, entonces se muestra el mensaje y la opción de quitar filtros.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015690",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:29.544Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:11:10.719Z",
+  "name": "RF-VEN-01 · Publicar un producto como vendedor",
+  "notes": "Responsable propuesto: Juan Antonio · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-VEN-01\nNombre: Publicar un producto como vendedor.\nActor principal: Vendedor.\nNecesidad relacionada — N-VEN-01: el vendedor local necesita poner sus productos a la venta sin tener web propia y de forma rápida.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas a vendedores de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir a un vendedor aprobado publicar productos con todos los datos obligatorios, incluidos los alérgenos, y actualizar su stock. No se publicará un producto al que le falte algún dato obligatorio.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl vendedor tiene sesión iniciada y su cuenta está aprobada. Datos: nombre, categoría, precio, unidad (kg, unidad, docena...), stock, foto, alérgenos y, si aplica, fecha de caducidad o de consumo preferente.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Solo publican los vendedores aprobados.\n• Precio mayor que 0 y stock entero mayor o igual que 0.\n• Declarar alérgenos es obligatorio, aunque sea \"no contiene alérgenos de declaración obligatoria\".\n• Cambiar el precio no afecta a pedidos ya confirmados.\n• Un producto con stock 0 sigue publicado pero aparece como agotado.\n\n5) FLUJO NORMAL\nPaso 1 — El vendedor abre \"Nuevo producto\".\nPaso 2 — Rellena los datos.\nPaso 3 — El sistema valida los campos obligatorios.\nPaso 4 — El sistema publica el producto.\nPaso 5 — El producto aparece en el catálogo de su ciudad.\nResultado esperado: producto visible para los compradores de su ciudad con toda su información.\n\n6) ALTERNATIVAS Y ERRORES\n• Falta un dato obligatorio: no se publica y se marca el campo.\n• Vendedor pendiente de aprobación: no puede publicar.\n• Foto no válida (formato o tamaño): se pide otra.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Publicación correcta: Dado un vendedor aprobado y todos los datos válidos, cuando publica, entonces el producto aparece en el catálogo de su ciudad.\nCA-02 — Sin alérgenos: Dado un producto sin alérgenos declarados, cuando el vendedor intenta publicarlo, entonces no se publica y se pide completar ese campo.\nCA-03 — Vendedor no aprobado: Dado un vendedor pendiente, cuando intenta publicar, entonces el sistema no lo permite.\nCA-04 — Cambio de precio: Dado un pedido confirmado a 2 €, cuando el vendedor sube el precio a 3 €, entonces el pedido mantiene el precio de 2 €.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015691",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:31.271Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:14:44.499Z",
+  "name": "RF-IA-01 · Generar una cesta con el asistente IA",
+  "notes": "Responsable propuesto: Miguel · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-IA-01\nNombre: Generar una cesta con el asistente IA.\nActor principal: Comprador. Actor secundario: servicio de IA.\nNecesidad relacionada — N-IA-01: el estudiante sin experiencia necesita ayuda para planificar la compra semanal ajustándose a su presupuesto y sin tirar comida.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas a estudiantes de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá generar, a petición del comprador, una propuesta de cesta con productos del catálogo de su ciudad que cubra los días indicados, sin superar el presupuesto ni incluir productos incompatibles con sus restricciones. El comprador podrá aceptar, modificar o descartar la propuesta antes de pasarla al carrito.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl comprador tiene sesión iniciada y ciudad indicada. Datos: presupuesto en euros, número de días (1 a 7), restricciones (alérgenos, dieta) y preferencias opcionales.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• El total de la cesta nunca supera el presupuesto.\n• Solo se proponen productos que existen en el catálogo y tienen stock.\n• Nunca se proponen productos con alérgenos que el comprador ha excluido.\n• La propuesta no reserva stock: se comprueba al confirmar el pedido.\n• Si el servicio de IA no responde, se informa y se permite comprar manualmente.\n\n5) FLUJO NORMAL\nPaso 1 — El comprador pulsa \"Generar cesta\".\nPaso 2 — Indica presupuesto, días y restricciones.\nPaso 3 — El sistema envía la petición al servicio de IA con el catálogo disponible.\nPaso 4 — El sistema valida la respuesta (presupuesto, stock y alérgenos).\nPaso 5 — Muestra la propuesta con el total.\nPaso 6 — El comprador la acepta, la modifica o la descarta.\nPaso 7 — Si la acepta, los productos pasan al carrito.\nResultado esperado: una cesta válida en el carrito del comprador.\n\n6) ALTERNATIVAS Y ERRORES\n• Presupuesto insuficiente para los días indicados: se avisa y se propone una cesta parcial o el importe mínimo estimado.\n• Servicio de IA no disponible: mensaje y compra manual.\n• Un producto se agota antes de pasar al carrito: se propone un sustituto equivalente o se elimina con aviso.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Presupuesto: Dado un presupuesto de 40 € y 5 días, cuando se genera la cesta, entonces el total es igual o menor que 40 €.\nCA-02 — Alérgenos: Dado que el comprador excluye el gluten, cuando se genera la cesta, entonces ningún producto contiene gluten.\nCA-03 — Sin stock: Dado que un producto propuesto se agota, cuando el comprador acepta la cesta, entonces se ofrece un sustituto o se elimina con aviso.\nCA-04 — IA caída: Dado que el servicio de IA no responde, cuando el comprador pide una cesta, entonces ve un mensaje y puede seguir comprando manualmente.\nCA-05 — Solo catálogo: Dada cualquier propuesta, cuando se muestra, entonces todos sus productos existen en el catálogo de la ciudad del comprador.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015692",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:32.723Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:12:58.615Z",
+  "name": "RF-CAR-01 · Carrito único con productos de varios vendedores",
+  "notes": "Responsable propuesto: Sebastián · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\nRelacionada con la subtarea existente \"Como centralizar el carrito\".\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-CAR-01\nNombre: Carrito único con productos de varios vendedores.\nActor principal: Comprador.\nNecesidad relacionada — N-CAR-01: el comprador quiere comprar a varios comercios locales en una sola compra y recibir un único pedido.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1 e investigación del carrito).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir añadir a un mismo carrito productos de distintos vendedores de la ciudad, mostrando el desglose por vendedor, los subtotales, los gastos de envío y el total. Al confirmar se creará un único pedido para el comprador, dividido internamente en un subpedido por vendedor.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl comprador tiene sesión iniciada. Datos: productos, cantidades, vendedor de cada producto y zona de entrega.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Un comprador tiene un único carrito activo.\n• Solo se añaden productos de su ciudad.\n• La cantidad de cada producto no puede superar su stock.\n• El carrito no reserva stock: se comprueba al confirmar.\n• Un único gasto de envío por pedido (importe PENDIENTE DE DEFINIR).\n• Pedido mínimo: PENDIENTE DE DEFINIR.\n• Si el comprador cambia de ciudad, se vacía el carrito.\n\n5) FLUJO NORMAL\nPaso 1 — El comprador añade productos de varios vendedores.\nPaso 2 — El sistema agrupa el carrito por vendedor.\nPaso 3 — Muestra subtotales, envío y total.\nPaso 4 — El comprador pasa a confirmar.\nPaso 5 — El sistema comprueba el stock.\nPaso 6 — Crea un pedido con un subpedido por vendedor.\nResultado esperado: un pedido único, con sus subpedidos, listo para el pago (RF-PAG-01) y la franja de entrega (RF-ENT-01).\n\n6) ALTERNATIVAS Y ERRORES\n• Un producto se agota antes de confirmar: se avisa y se ajusta la cantidad o se elimina.\n• Cantidad mayor que el stock: se limita al máximo disponible.\n• No se alcanza el pedido mínimo: no se permite confirmar y se indica cuánto falta.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Desglose: Dado un carrito con productos de 3 vendedores, cuando el comprador lo abre, entonces ve 3 grupos con su subtotal.\nCA-02 — Pedido único: Dado un carrito con 3 vendedores, cuando se confirma, entonces se crea 1 pedido con 3 subpedidos.\nCA-03 — Stock: Dado un producto con 2 unidades en stock, cuando el comprador intenta añadir 5, entonces el sistema no lo permite y lo indica.\nCA-04 — Total: Dado cualquier carrito, cuando se muestra, entonces el total es igual a la suma de los subtotales más el envío.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015693",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:34.295Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:13:08.316Z",
+  "name": "RF-PAG-01 · Pagar el pedido en un único pago",
+  "notes": "Responsable propuesto: Sebastián · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\nRelacionada con la subtarea existente \"Como centralizar el carrito\".\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-PAG-01\nNombre: Pagar el pedido en un único pago.\nActor principal: Comprador. Actor secundario: pasarela de pago externa.\nNecesidad relacionada — N-PAG-01: el comprador quiere pagar una sola vez aunque compre a varios vendedores, y de forma segura.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir pagar el pedido completo en una sola operación mediante una pasarela de pago externa, y registrará el importe que corresponde a cada vendedor descontando la comisión de la plataforma. El pedido solo quedará confirmado cuando la pasarela confirme el pago.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nExiste un pedido pendiente de pago con franja de entrega seleccionada. Datos: importe total, desglose por vendedor y método de pago (los datos de tarjeta los gestiona la pasarela).\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• La plataforma no almacena datos de tarjeta.\n• Comisión de la plataforma: porcentaje PENDIENTE DE DEFINIR (HIPÓTESIS).\n• Importe para cada vendedor = subtotal de su subpedido menos la comisión.\n• Un pedido pendiente de pago caduca a los X minutos (PENDIENTE DE DEFINIR) y libera la franja.\n• Si un vendedor no puede servir su subpedido, se reembolsa esa parte (regla por acordar).\n\n5) FLUJO NORMAL\nPaso 1 — El comprador pulsa \"Pagar\".\nPaso 2 — El sistema envía el importe a la pasarela.\nPaso 3 — El comprador completa el pago en la pasarela.\nPaso 4 — La pasarela confirma el pago.\nPaso 5 — El sistema confirma el pedido y registra el importe de cada vendedor.\nResultado esperado: pedido pagado y confirmado, con el reparto por vendedor registrado.\n\n6) ALTERNATIVAS Y ERRORES\n• Pago rechazado: no se confirma el pedido y se conserva el carrito.\n• La pasarela no responde: el pedido sigue pendiente y se permite reintentar.\n• Doble clic en \"Pagar\": solo se realiza un cobro.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Pago correcto: Dado un pedido de 30 € con 2 vendedores, cuando la pasarela confirma el pago, entonces el pedido queda confirmado y se registra el importe de cada vendedor.\nCA-02 — Pago rechazado: Dado un pago rechazado, cuando la pasarela responde, entonces el pedido no se confirma y el carrito se conserva.\nCA-03 — Sin datos de tarjeta: Dado cualquier pago, cuando termina, entonces la base de datos de Food4All no contiene el número de tarjeta.\nCA-04 — Un solo cobro: Dado que el comprador pulsa \"Pagar\" dos veces, cuando se procesan las peticiones, entonces solo se realiza un cargo.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015694",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:36.730Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:13:27.357Z",
+  "name": "RF-HUB-01 · Recibir y consolidar subpedidos en el hub",
+  "notes": "Responsable propuesto: Sebastián · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\nRelacionada con la subtarea existente \"Investigar sobre la recogida de productos de los vendedores\".\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-HUB-01\nNombre: Recibir y consolidar subpedidos en el hub.\nActor principal: Operador del hub.\nNecesidad relacionada — N-HUB-01: el operador necesita saber qué llega de cada vendedor y cuándo un pedido está completo para prepararlo.\nFuente: PENDIENTE DE VALIDACIÓN (investigación de recogida y contraste con quien represente la operación).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir al operador registrar la recepción de cada subpedido, marcar incidencias (producto que falta o dañado) y pasar el pedido a \"listo para reparto\" solo cuando todos sus subpedidos estén recibidos o con sus incidencias resueltas.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nExiste un pedido confirmado con sus subpedidos. Datos: subpedido, hora de recepción, productos recibidos, lote y fecha de caducidad (si aplica) e incidencias.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Estados del subpedido: pendiente, recibido o con incidencia.\n• Un pedido no pasa a \"listo para reparto\" con subpedidos pendientes.\n• Toda incidencia se notifica al comprador y al vendedor.\n• Se registra la hora de recepción y el lote o la fecha de caducidad, si aplica (trazabilidad, ver RNF-LEG-01).\n\n5) FLUJO NORMAL\nPaso 1 — Llega al hub el producto de un vendedor.\nPaso 2 — El operador busca el subpedido.\nPaso 3 — Comprueba los productos y registra lote y caducidad.\nPaso 4 — Marca el subpedido como recibido.\nPaso 5 — Cuando todos están recibidos, el sistema permite marcar el pedido como \"listo para reparto\".\nResultado esperado: pedido consolidado y listo para su franja de entrega.\n\n6) ALTERNATIVAS Y ERRORES\n• Falta un producto: se marca la incidencia, se avisa al comprador y se aplica la regla de reembolso de RF-PAG-01.\n• Producto dañado: incidencia y aviso al vendedor.\n• Un vendedor no entrega a tiempo: el pedido queda retenido y se avisa al comprador.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Consolidación: Dado un pedido con 3 subpedidos, cuando el operador marca los 3 como recibidos, entonces puede pasar el pedido a \"listo para reparto\".\nCA-02 — Bloqueo: Dado un pedido con 1 subpedido pendiente, cuando el operador intenta marcarlo listo, entonces el sistema no lo permite.\nCA-03 — Incidencia: Dado un producto que falta, cuando el operador registra la incidencia, entonces el comprador y el vendedor reciben un aviso.\nCA-04 — Trazabilidad: Dado un producto con fecha de caducidad, cuando se recibe, entonces su lote o su fecha quedan registrados en el pedido.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015695",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:38.575Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:14:54.336Z",
+  "name": "RF-ENT-01 · Seleccionar una franja de entrega al confirmar el pedido",
+  "notes": "Responsable propuesto: Miguel · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: esta es la ficha de ejemplo de referencia. Es una propuesta didáctica, no un requisito ya validado por el equipo: sus reglas son decisiones propuestas que deben confirmarse.\nRelacionada con la subtarea existente \"Investigación sobre la entrega de paquetes a los clientes\".\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-ENT-01\nNombre: Seleccionar una franja de entrega al confirmar el pedido.\nActor principal: Comprador.\nNecesidad relacionada — N-ENT-01: el comprador necesita conocer cuándo recibirá su pedido y elegir una ventana compatible con su disponibilidad.\nFuente pendiente de validación: entrevistas con compradores y contraste con quien represente la operación de entrega. No debe presentarse como necesidad demostrada hasta disponer de esa evidencia.\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir al comprador seleccionar una franja de entrega disponible para su zona antes de confirmar el pedido. Al confirmar, comprobará que la franja sigue disponible. Si no está disponible, impedirá la confirmación, conservará el carrito y solicitará seleccionar otra franja.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl comprador tiene un carrito con al menos un producto y ha indicado una zona de entrega.\nLos datos necesarios son la zona, el carrito y la franja seleccionada. Cada franja tiene una fecha, una hora de inicio, una hora de fin y una capacidad disponible.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Solo se mostrarán franjas futuras de la zona indicada con capacidad disponible.\n• El pedido debe tener exactamente una franja de entrega.\n• Seleccionar una franja no reserva capacidad; confirmarla sí.\n• No se podrán confirmar más pedidos que la capacidad disponible de una franja.\n• Si cambia la zona, la selección anterior se eliminará y deberá elegirse una nueva franja.\nEstas reglas deben ser acordadas con quien represente la operación; no deducidas únicamente por los desarrolladores.\n\n5) FLUJO NORMAL\nPaso 1 — El comprador indica su zona.\nPaso 2 — El sistema muestra las franjas disponibles con fecha y horario.\nPaso 3 — El comprador selecciona una franja.\nPaso 4 — El sistema muestra la selección en el resumen del pedido.\nPaso 5 — El comprador confirma.\nPaso 6 — El sistema comprueba la disponibilidad.\nPaso 7 — Si sigue disponible, confirma el pedido, lo vincula a la franja y descuenta una unidad de capacidad.\nResultado esperado: el pedido queda confirmado con una única franja, visible en su resumen.\n\n6) ALTERNATIVAS Y ERRORES\n• Sin franja seleccionada: no se confirma el pedido y se muestra \"Selecciona una franja de entrega\".\n• La franja se ha llenado: no se confirma el pedido, se conserva el carrito y se muestran las alternativas disponibles.\n• Zona sin servicio o sin franjas disponibles: se informa de la situación y no se permite confirmar la entrega.\n• Cambio de zona: se borra la franja anterior y se actualizan las opciones.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Confirmación correcta: Dado un carrito válido y una franja con capacidad disponible, cuando el comprador confirme, entonces el pedido quedará asociado a esa franja y su capacidad se reducirá en una unidad.\nCA-02 — Selección obligatoria: Dado un pedido sin franja seleccionada, cuando el comprador intente confirmarlo, entonces no se creará el pedido y se solicitará seleccionar una franja.\nCA-03 — Última plaza: Dada una franja con una única plaza disponible y dos compradores que intentan confirmar, cuando se procesen ambas solicitudes, entonces solo una podrá confirmarse y la capacidad nunca será negativa.\nCA-04 — Cambio de zona: Dada una franja seleccionada para una zona, cuando el comprador cambie de zona, entonces la selección se eliminará y solo se ofrecerán franjas de la nueva zona.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015696",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:40.491Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:11:29.945Z",
+  "name": "RF-VAL-01 · Valorar al vendedor y la entrega",
+  "notes": "Responsable propuesto: Juan Antonio · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-VAL-01\nNombre: Valorar al vendedor y la entrega.\nActor principal: Comprador.\nNecesidad relacionada — N-VAL-01: el comprador necesita confiar en vendedores que no conoce, y el vendedor necesita saber cómo valoran su servicio.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá permitir al comprador valorar con 1 a 5 estrellas, y un comentario opcional, a cada vendedor de un pedido entregado y a la entrega, una sola vez por pedido. La valoración media de cada vendedor será visible en su perfil y en sus productos.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl pedido está en estado \"entregado\". Datos: pedido, vendedor o entrega que se valora, estrellas (1 a 5) y comentario opcional.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Solo se valoran pedidos entregados.\n• Una valoración por vendedor y por pedido, y una para la entrega.\n• Plazo para valorar: 14 días desde la entrega (PROPUESTO).\n• Comentario de 500 caracteres como máximo.\n• Un administrador puede ocultar comentarios ofensivos; la puntuación se mantiene.\n• La media se recalcula con cada nueva valoración.\n\n5) FLUJO NORMAL\nPaso 1 — Tras la entrega, el sistema invita a valorar.\nPaso 2 — El comprador elige las estrellas de cada vendedor y de la entrega.\nPaso 3 — Escribe un comentario (opcional).\nPaso 4 — Envía la valoración.\nPaso 5 — El sistema la guarda y actualiza la media.\nResultado esperado: valoración registrada y media actualizada en el perfil del vendedor.\n\n6) ALTERNATIVAS Y ERRORES\n• Pedido no entregado: no se puede valorar.\n• Ya valorado: se muestra la valoración existente.\n• Fuera de plazo: no se permite valorar.\n• Comentario demasiado largo: se indica el límite.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Valoración correcta: Dado un pedido entregado, cuando el comprador da 4 estrellas a un vendedor, entonces se guarda y la media del vendedor se actualiza.\nCA-02 — No entregado: Dado un pedido en reparto, cuando el comprador intenta valorarlo, entonces el sistema no lo permite.\nCA-03 — Duplicado: Dado un vendedor ya valorado en ese pedido, cuando el comprador intenta valorarlo otra vez, entonces no se crea una segunda valoración.\nCA-04 — Media: Dadas dos valoraciones de 5 y 3 estrellas, cuando se consulta el perfil del vendedor, entonces su media es 4.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639809015697",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:42.150Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:15:03.637Z",
+  "name": "RF-CAD-01 · Avisar de productos próximos a caducar",
+  "notes": "Responsable propuesto: Miguel · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, no es un requisito validado. Las reglas son decisiones propuestas que hay que confirmar.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RF-CAD-01\nNombre: Avisar de productos próximos a caducar.\nActor principal: Comprador. Actor secundario: sistema de notificaciones.\nNecesidad relacionada — N-CAD-01: el estudiante tira comida porque olvida qué tiene y cuándo caduca.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas a estudiantes de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá guardar la fecha de caducidad o de consumo preferente de los productos comprados que la tengan, y avisará al comprador con antelación para que los consuma, con una sugerencia de uso. El comprador podrá marcar un producto como consumido o desactivar los avisos.\n\n3) PRECONDICIONES Y DATOS DE ENTRADA\nEl comprador tiene un pedido entregado con productos que tienen fecha. Datos: producto, fecha (registrada por el vendedor o en el hub) y preferencias de aviso.\n\n4) REGLAS DE NEGOCIO PROPUESTAS\n• Solo se avisa de productos con fecha informada.\n• El aviso se envía 2 días antes de la fecha (PROPUESTO, configurable).\n• Un único aviso por producto.\n• No se avisa de productos marcados como consumidos.\n• El comprador puede desactivar los avisos en cualquier momento.\n• HIPÓTESIS: la fecha la informa el vendedor al publicar o el operador al recibir el lote en el hub.\n\n5) FLUJO NORMAL\nPaso 1 — El pedido se entrega.\nPaso 2 — El sistema registra las fechas de sus productos.\nPaso 3 — Dos días antes de cada fecha, el sistema envía un aviso.\nPaso 4 — El aviso incluye una sugerencia de uso (puede generarla el asistente IA).\nPaso 5 — El comprador marca el producto como consumido o ignora el aviso.\nResultado esperado: el comprador recibe a tiempo el aviso de cada producto a punto de caducar.\n\n6) ALTERNATIVAS Y ERRORES\n• Producto sin fecha: no genera aviso.\n• Avisos desactivados: no se envían.\n• La fecha ya está muy cerca al entregar: se avisa en el momento de la entrega.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Aviso: Dado un yogur con fecha del día 10, cuando llega el día 8, entonces el comprador recibe un aviso.\nCA-02 — Consumido: Dado un producto marcado como consumido, cuando llega su fecha de aviso, entonces no se envía.\nCA-03 — Desactivado: Dado un comprador con los avisos desactivados, cuando se acerca una fecha, entonces no recibe avisos.\nCA-04 — Sin fecha: Dado un producto sin fecha registrada, cuando se entrega, entonces no genera ningún aviso.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640464484045",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:44.552Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:15:22.619Z",
+  "name": "RNF-REN-01 · Tiempos de respuesta",
+  "notes": "Responsable propuesto: Miguel · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica. Los valores numéricos son PROPUESTOS y hay que confirmarlos.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RNF-REN-01\nNombre: Tiempos de respuesta.\nTipo: Rendimiento.\nAfecta a: RF-CAT-01, RF-IA-01 y RF-CAR-01.\nNecesidad relacionada — N-REN-01 (HIPÓTESIS): el estudiante compra desde el móvil y abandona si la aplicación tarda.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1).\n\n2) ENUNCIADO DEL REQUISITO\nEl catálogo deberá cargar en menos de 2 segundos y la cesta del asistente IA deberá generarse en menos de 5 segundos, en el 95 % de las peticiones, con 100 usuarios simultáneos.\n\n3) CONDICIONES DE MEDIDA\nConexión móvil 4G y una ciudad con un catálogo de unos 500 productos (valores PROPUESTOS).\n\n4) DECISIONES PROPUESTAS\n• Si la IA tarda más de 10 segundos, se cancela la petición y se ofrece la compra manual (ver RF-IA-01).\n• Mientras se espera, se muestra un indicador de carga.\n\n5) CÓMO SE COMPRUEBA\nPrueba de carga con una herramienta (por ejemplo JMeter o k6) simulando 100 usuarios; se mide el percentil 95 de cada operación.\n\n6) QUÉ PASA SI NO SE CUMPLE\nSe registra como defecto y se revisan la caché, la paginación del catálogo o el modelo de IA utilizado.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Catálogo: Dados 100 usuarios simultáneos, cuando abren el catálogo, entonces el 95 % de las cargas tarda menos de 2 segundos.\nCA-02 — Cesta IA: Dados 100 usuarios simultáneos, cuando generan una cesta, entonces el 95 % de las respuestas tarda menos de 5 segundos.\nCA-03 — Tiempo máximo: Dada una petición a la IA que supera 10 segundos, cuando se alcanza ese límite, entonces se cancela y se ofrece la compra manual.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640464484046",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:46.638Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:13:36.967Z",
+  "name": "RNF-SEG-01 · Seguridad y control de acceso por rol",
+  "notes": "Responsable propuesto: Sebastián · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica. Los valores numéricos son PROPUESTOS y hay que confirmarlos.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RNF-SEG-01\nNombre: Seguridad y control de acceso por rol.\nTipo: Seguridad.\nAfecta a: todos los RF, sobre todo RF-CUE-01 y RF-PAG-01.\nNecesidad relacionada — N-SEG-01: compradores y vendedores necesitan confiar en que sus datos y su dinero están protegidos.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1) y marco legal (B3).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá cifrar todas las comunicaciones, guardar las contraseñas cifradas con un algoritmo de hash seguro y permitir a cada usuario acceder solo a las funciones y los datos de su rol.\n\n3) CONDICIONES DE MEDIDA\nSe aplica a la aplicación web, a la API y a la base de datos, en todos los entornos.\n\n4) DECISIONES PROPUESTAS\n• Todo el tráfico va por HTTPS.\n• Contraseñas con hash (bcrypt o Argon2), nunca en texto plano.\n• La sesión caduca tras 30 minutos de inactividad (PROPUESTO).\n• Bloqueo temporal tras 5 intentos fallidos de inicio de sesión (PROPUESTO).\n• El control de acceso se comprueba en el servidor, no solo en la interfaz.\n• No se almacenan datos de tarjeta (ver RF-PAG-01).\n\n5) CÓMO SE COMPRUEBA\nRevisión de la base de datos, pruebas de acceso con usuarios de cada rol y pruebas de peticiones directas a la API.\n\n6) QUÉ PASA SI NO SE CUMPLE\nSe trata como defecto crítico: no se puede pasar a piloto con un fallo de seguridad abierto.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Contraseñas: Dado cualquier usuario registrado, cuando se revisa la base de datos, entonces su contraseña no aparece en texto plano.\nCA-02 — Acceso por rol: Dado un comprador con sesión iniciada, cuando llama directamente a una función de administrador, entonces el servidor la rechaza.\nCA-03 — HTTPS: Dada una petición por HTTP, cuando llega al servidor, entonces se redirige a HTTPS.\nCA-04 — Intentos fallidos: Dados 5 intentos de inicio de sesión fallidos, cuando se intenta el sexto, entonces la cuenta queda bloqueada temporalmente.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640464484047",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:55.978Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:11:39.764Z",
+  "name": "RNF-USA-01 · Usabilidad en móvil y accesibilidad",
+  "notes": "Responsable propuesto: Juan Antonio · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica. Los valores numéricos son PROPUESTOS y hay que confirmarlos.\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RNF-USA-01\nNombre: Usabilidad en móvil y accesibilidad.\nTipo: Usabilidad y accesibilidad.\nAfecta a: la interfaz del comprador (RF-CAT-01, RF-IA-01, RF-CAR-01 y RF-ENT-01).\nNecesidad relacionada — N-USA-01 (HIPÓTESIS): el estudiante compra sobre todo desde el móvil y tiene poca paciencia con procesos largos.\nFuente: PENDIENTE DE VALIDACIÓN (entrevistas de B1).\n\n2) ENUNCIADO DEL REQUISITO\nLa interfaz del comprador deberá funcionar en móviles desde 360 px de ancho, permitir ir del catálogo al pago en 3 pantallas como máximo y cumplir el nivel AA de las pautas WCAG 2.1 en contraste y textos alternativos.\n\n3) CONDICIONES DE MEDIDA\nMóvil de 360 px de ancho y navegador actual; flujo completo desde el catálogo hasta el pago.\n\n4) DECISIONES PROPUESTAS\n• Diseño pensado primero para móvil.\n• Botones de al menos 44 x 44 px.\n• Toda imagen de producto tiene texto alternativo.\n• Los mensajes de error explican cómo solucionar el problema.\n\n5) CÓMO SE COMPRUEBA\nPruebas en un móvil de 360 px, recuento de pantallas del flujo de compra, análisis con una herramienta automática de accesibilidad (por ejemplo Lighthouse) y prueba con 3 a 5 usuarios reales.\n\n6) QUÉ PASA SI NO SE CUMPLE\nSe registra como defecto y se rediseña la pantalla o el flujo afectado.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Móvil: Dado un móvil de 360 px, cuando se usa la aplicación, entonces no hay scroll horizontal ni elementos cortados.\nCA-02 — Pasos: Dado un carrito con productos, cuando el comprador va a pagar, entonces llega al pago en 3 pantallas o menos.\nCA-03 — Accesibilidad: Dada la pantalla del catálogo, cuando se analiza con Lighthouse, entonces no hay errores de contraste ni imágenes sin texto alternativo.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640464484048",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T12:01:59.232Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:13:46.612Z",
+  "name": "RNF-LEG-01 · Protección de datos e información alimentaria",
+  "notes": "Responsable propuesto: Sebastián · Prioridad MoSCoW: pendiente de la criba de requisitos\nAVISO: propuesta didáctica, PENDIENTE DE VALIDACIÓN legal profesional antes del lanzamiento.\nOrigen: bloque B3 (requisitos legales).\n\n1) IDENTIFICACIÓN Y ORIGEN\nID: RNF-LEG-01\nNombre: Protección de datos e información alimentaria.\nTipo: Legal / cumplimiento normativo.\nAfecta a: RF-CUE-01, RF-CAT-01, RF-VEN-01 y RF-HUB-01.\nNecesidad relacionada — N-LEG-01: Food4All debe cumplir la normativa de protección de datos y de información alimentaria según el rol jurídico supuesto en el Hito 1.\nFuentes: RGPD, LOPDGDD, Reglamento (UE) 1169/2011 y Reglamento (CE) 178/2002 (ver B3).\n\n2) ENUNCIADO DEL REQUISITO\nEl sistema deberá pedir consentimiento explícito para tratar datos personales, permitir al usuario consultar y eliminar sus datos, mostrar los alérgenos y la información alimentaria obligatoria antes de la compra y conservar la trazabilidad (vendedor y lote) de cada producto que pasa por el hub.\n\n3) CONDICIONES DE MEDIDA\nSe aplica al registro, al perfil del usuario, a las fichas de producto y a la recepción en el hub.\n\n4) DECISIONES PROPUESTAS\n• Consentimiento separado para comunicaciones comerciales.\n• El usuario puede pedir la eliminación de su cuenta y de sus datos.\n• Solo se guarda la información necesaria (minimización de datos).\n• La información alimentaria obligatoria aparece en la ficha antes de añadir al carrito.\n• Se registran el vendedor, el lote y la fecha de recepción en el hub.\n\n5) CÓMO SE COMPRUEBA\nRevisión del flujo de registro y del perfil, revisión de fichas de producto y prueba de trazabilidad de un pedido completo.\n\n6) QUÉ PASA SI NO SE CUMPLE\nNo se puede pasar de piloto a lanzamiento hasta corregirlo y obtener la revisión legal profesional.\n\n7) CRITERIOS DE ACEPTACIÓN\nCA-01 — Consentimiento: Dado un registro sin marcar la casilla de privacidad, cuando se envía, entonces no se crea la cuenta.\nCA-02 — Supresión: Dado un usuario que solicita borrar su cuenta, cuando se procesa la solicitud, entonces sus datos personales se eliminan o se anonimizan.\nCA-03 — Alérgenos: Dado cualquier producto, cuando el comprador abre su ficha, entonces ve sus alérgenos antes de poder añadirlo al carrito.\nCA-04 — Trazabilidad: Dado un pedido entregado, cuando se consulta desde administración, entonces se puede saber el vendedor y el lote de cada producto.",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219658628732140",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:42.430Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:17:21.573Z",
+  "name": "[B5] User stories y revisión INVEST",
+  "notes": "Responsable propuesto: Sebastián (coordina y revisa) · Fecha: jueves 22 oct\n\nObjetivo: escribir las user stories a partir de las fichas RF del bloque B4. Cada ficha RF tiene al menos una user story.\n\nFormato: US-<MÓDULO>-NN · Como <actor>, quiero <acción>, para <beneficio>.\nCriterios de aceptación: se reutilizan los CA de la ficha RF (Dado... cuando... entonces...).\n\nEjemplo:\nUS-IA-01 · Como estudiante, quiero que el asistente me proponga una cesta con mi presupuesto semanal, para no gastar de más ni tirar comida.\n• CA-01: Dado un presupuesto de 40 € y 5 días, cuando pulso \"Generar cesta\", entonces el total es igual o menor que 40 €.\n• CA-02: Dado que marco \"sin gluten\", entonces ningún producto de la cesta contiene gluten.\n• CA-03: Dado que un producto no tiene stock, entonces el asistente propone un sustituto equivalente.\n\nRevisión INVEST: cada historia debe ser Independiente, Negociable, Valiosa, Estimable, Pequeña (cabe en un sprint) y Testable. La que no cumpla se divide o se reescribe.",
+  "num_subtasks": 4,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219639974805259",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:58:34.346Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:14:06.039Z",
+  "name": "User stories de Sebastián: carrito, pagos y hub",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639974805260",
+  "assignee": {
+   "gid": "1218392455615310",
+   "name": "martincampanojuan@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:58:35.000Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:11:49.739Z",
+  "name": "User stories de Juan Antonio: catálogo, vendedor y valoraciones",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639974805261",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:58:35.372Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:15:32.131Z",
+  "name": "User stories de Miguel: cuentas, asistente IA, entrega y caducidad",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219639974805262",
+  "assignee": {
+   "gid": "1218442072411160",
+   "name": "sebasbarrabaja@gmail.com"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:58:35.823Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:14:15.918Z",
+  "name": "Revisión INVEST cruzada de todas las user stories",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219658628732141",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:42:43.700Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:17:31.024Z",
+  "name": "[B6] Trazabilidad y entrega del hito",
+  "notes": "Responsable propuesto: Miguel · Fecha: viernes 23 oct (entrega del hito)\n\nObjetivo: dejar el Hito 2 cerrado y comprobable.\n\nMatriz de trazabilidad inicial (una fila por requisito). Columnas: Necesidad (N-ID) | Fuente | Requisito (RF/RNF) | User story | Prioridad MoSCoW | Caso de uso (Hito 3) | Clase (Hito 4) | Prueba (Hito 5).\nLas tres últimas columnas se dejan vacías: se rellenan en los próximos hitos.\n\nGlosario v2: añadir hub, pedido consolidado, subpedido, cesta IA, franja de entrega, capacidad de franja, vendedor aprobado y lote.\n\nDocumento de requisitos: necesidades, personas y mapas de empatía, fichas RF/RNF, user stories, matriz y glosario. Adjuntarlo en la tarea del Hito 2 junto con el mapa de empatía.\n\nAl terminar: cambiar el campo \"Estado entrega\" del Hito 2 y presentar en la Sprint Review del viernes.",
+  "num_subtasks": 4,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 0
+ },
+ {
+  "gid": "1219640514565663",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:59:55.713Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:15:41.908Z",
+  "name": "Matriz de trazabilidad inicial",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640514565664",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:59:56.714Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:16:01.105Z",
+  "name": "Glosario v2",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640514565665",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:59:57.494Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:16:10.548Z",
+  "name": "Montar el documento de requisitos y adjuntarlo al Hito 2",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ },
+ {
+  "gid": "1219640514565666",
+  "assignee": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "completed": false,
+  "created_at": "2026-10-19T11:59:58.204Z",
+  "created_by": {
+   "gid": "1218470662161695",
+   "name": "Miguel"
+  },
+  "modified_at": "2026-10-20T00:16:20.484Z",
+  "name": "Actualizar \"Estado entrega\" del Hito 2 y preparar la Sprint Review",
+  "notes": "",
+  "num_subtasks": 0,
+  "comentarios": [],
+  "adjuntos": [],
+  "nivel": 1
+ }
+]

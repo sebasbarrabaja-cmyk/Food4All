@@ -45,6 +45,10 @@ Colores, tipografía, componentes, imágenes y arquitectura: [`docs/DISENO.md`](
 | `/vender/panel` | Panel de ejemplo: catálogo, pedidos, liquidación y visibilidad patrocinada |
 | `/admin` | Privado, con barra lateral: resumen, mercado, marco legal, equipo, hitos de Asana en directo, altas, marketplace de ejemplo y registro de prompts con agente revisor |
 
+## Requisitos (Hito 2)
+
+Requisitos del marketplace (RF-01 a RF-19, RNF-01 a RNF-11, 556 requisitos atómicos comparados con la competencia) y backlog: [`docs/requisitos/`](docs/requisitos/README.md). Están también en Asana, en el Hito 2 de Food4All.
+
 ## Prompts y agente revisor
 
 Todos los prompts usados para desarrollar el proyecto se guardan en [`prompts/`](prompts/README.md), un `.md` por prompt. Se ven, se añaden y se copian desde `/admin#prompts`.

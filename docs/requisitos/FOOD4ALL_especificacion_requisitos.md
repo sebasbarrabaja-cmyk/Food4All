@@ -32,10 +32,11 @@ Este documento es la Especificación de Requisitos de FOOD4ALL para el Hito 2. U
 | Entrega | Hito 2 · Requisitos y criterios de aceptación · Sprint 2 (semanas 3–5) |
 | Peso en la nota | 15 % |
 | Fecha límite | 23/10/2026 |
-| Versión | 0.2 |
+| Versión | 0.3 (20/10/2026: volcada en Asana) |
 | Autores | Sebastián, Juan Antonio, Miguel |
 | Revisor por bloque | Se indica en cada bloque (nadie revisa su propio bloque) |
 | Catálogo completo | `FOOD4ALL_requisitos_benchmark.xlsx` (556 requisitos comparados con la competencia) |
+| En Asana | [Food4All] Hito 2 → [B4] Catálogo de requisitos y [B5] Product Backlog |
 
 **Leyenda de estado** (se aplica a cada afirmación, necesidad y requisito):
 
@@ -384,15 +385,17 @@ Ocho puntos abiertos afectan a los requisitos; mientras sigan abiertos, cada fic
 
 ## 11. Organización en Asana y glosario
 
-La tarea del Hito 2 copia la estructura de INDICONNECT, que el profesor ha señalado como la mejor: una subtarea por entregable y, dentro de Requisitos funcionales y no funcionales, una subtarea por proceso con sus subrequisitos y su ficha. Así cada persona abre su requisito y trabaja sola.
+La tarea del Hito 2 sigue la estructura de INDICONNECT, que el profesor ha señalado como la mejor: un bloque por entregable y, dentro de los requisitos, una subtarea por proceso con sus subrequisitos y su ficha. Así cada persona abre su requisito y trabaja sola. Se volcó en Asana el 20/10/2026, sin responsables ni fechas todavía:
 
-1. **Necesidades identificadas**: fuentes, N-01 a N-08, personas y mapa de empatía (bloques 2 a 4)
-2. **User stories**: US-01 en adelante, con Gherkin (bloque 6)
-3. **Requisitos funcionales**: una subtarea por proceso (RF-01 a RF-19) y, dentro, una por subrequisito con la ficha de 16 apartados (bloque 7)
-4. **Requisitos no funcionales**: una subtarea por RNF-01 a RNF-11, con su ficha (bloque 8)
-5. **Matriz de trazabilidad**: tabla del bloque 9 y documento final unido
+1. **[B1] Conocer a los usuarios** y **[B2] Personas y mapas de empatía**: fuentes, N-01 a N-08, personas y mapa de empatía (bloques 2 a 4)
+2. **[B3] Requisitos legales**: indica en qué requisitos de B4 está cada norma
+3. **[B4] Catálogo de requisitos**:
+   - «Requisitos funcionales»: una subtarea por proceso (RF-01 a RF-19, en orden de construcción) y, dentro, una por subrequisito con la ficha de 16 apartados y sus requisitos atómicos (bloque 7)
+   - «Requisitos no funcionales»: lo mismo para RNF-01 a RNF-11 (bloque 8)
+4. **[B5] User stories**: subtarea «Product Backlog» con US-01 a US-13 (bloques 6 y 12)
+5. **[B6] Trazabilidad y entrega**: matriz del bloque 9 y documento final unido
 
-El Product Backlog (bloque 12) se adjunta en la tarea «[TODOS] Sprint Planning – Sprint 2», que lo pide. Cada subtarea lleva responsable, fecha, una línea «Hecho cuando» y un revisor distinto. La tarea madre solo se cierra cuando todas sus subtareas están cerradas.
+Cada subtarea lleva una línea «Hecho cuando». Cuando se repartan, cada proceso tendrá responsable, fecha y un revisor distinto (propuesta en `FOOD4ALL_propuesta_asana.md`). La tarea madre solo se cierra cuando todas sus subtareas están cerradas. Las tareas se generan desde este documento y el Excel con `benchmark/asana.js`; cómo regenerarlas o deshacer la subida está en `README.md` de esta carpeta.
 
 **Glosario**
 
@@ -461,7 +464,7 @@ Un requisito está completo cuando un programador puede construirlo sin pregunta
 
 **Origen de los datos de diseño.** FOOD4ALL usa su guía `docs/DISENO.md` (repositorio al día, commit f40af45). INDICONNECT y LearnCode usan los colores y fuentes de sus landings publicadas, consultadas el 19/10/2026. Las cifras de seguridad (intentos, caducidades) son **propuestas** para que cada equipo las apruebe: se marcan como Pendiente hasta entonces.
 
-> En el Excel, el login de FOOD4ALL está desglosado en más subrequisitos (RF-01.1 a RF-01.10, 83 requisitos atómicos), porque separa también verificación de correo, datos personales, preferencias y baja de la cuenta.
+> En FOOD4ALL (A.1, el Excel y Asana) el login está desglosado en más subrequisitos (RF-01.1 a RF-01.10, 83 requisitos atómicos), porque separa también verificación de correo, datos personales, preferencias y baja de la cuenta. Por eso en A.1 la recuperación de contraseña es RF-01.6 y el menú RF-01.7; INDICONNECT y LearnCode mantienen la tabla de arriba.
 
 ### A.1 FOOD4ALL
 
@@ -504,7 +507,7 @@ Si el usuario llega desde una acción que exige sesión (por ejemplo, pagar), la
 
 - Icono de ojo dentro del campo de contraseña para mostrarla u ocultarla (texto alternativo «Mostrar contraseña» / «Ocultar contraseña»).
 - Casilla «Mantener la sesión iniciada», desmarcada por defecto.
-- Enlace «¿Has olvidado tu contraseña?» alineado a la derecha, encima del botón (RF-01.5).
+- Enlace «¿Has olvidado tu contraseña?» alineado a la derecha, encima del botón (RF-01.6).
 - Botón «Entrar»: ancho completo, 48 px, forma píldora `--radius-pill`, fondo naranja `--accent` #D9822B, texto `--on-accent` #23301F en Figtree 600. Mientras se comprueba, muestra «Entrando…» y se desactiva.
 
 **Flujo:**
@@ -526,7 +529,7 @@ Si el usuario llega desde una acción que exige sesión (por ejemplo, pagar), la
 
 **Criterios:**
 
-- RF-01.2.CA1 — Dado un cliente registrado, cuando escribe su correo y contraseña correctos y pulsa «Entrar», entonces llega a `/comprar/cliente` y la cabecera muestra su menú (RF-01.6).
+- RF-01.2.CA1 — Dado un cliente registrado, cuando escribe su correo y contraseña correctos y pulsa «Entrar», entonces llega a `/comprar/cliente` y la cabecera muestra su menú (RF-01.7).
 - RF-01.2.CA2 — Dada una contraseña incorrecta, cuando pulsa «Entrar», entonces ve «El correo o la contraseña no son correctos.» y el campo contraseña se vacía.
 - RF-01.2.CA3 — Dados 5 fallos seguidos, cuando lo intenta por sexta vez, aunque la contraseña sea correcta, entonces no entra y ve el aviso de bloqueo.
 
@@ -573,7 +576,7 @@ Texto de la casilla obligatoria: «Acepto las Condiciones de uso y la Política 
 - RF-01.4.CA2 — Dado un correo ya registrado, cuando intenta registrarse, entonces ve el aviso con el enlace a `/entrar`.
 - RF-01.4.CA3 — Dado un cliente sin verificar, cuando pulsa «Pagar», entonces no puede pagar y ve el aviso para confirmar el correo.
 
-#### RF-01.5 · Recuperación de contraseña
+#### RF-01.6 · Recuperación de contraseña
 
 **Flujo:**
 
@@ -588,10 +591,10 @@ Texto de la casilla obligatoria: «Acepto las Condiciones de uso y la Política 
 
 **Criterios:**
 
-- RF-01.5.CA1 — Dado un correo no registrado, cuando pide el enlace, entonces ve el mismo mensaje que con uno registrado.
-- RF-01.5.CA2 — Dado un enlace de hace más de 60 minutos, cuando lo abre, entonces ve «Este enlace ya no sirve. Pide otro.»
+- RF-01.6.CA1 — Dado un correo no registrado, cuando pide el enlace, entonces ve el mismo mensaje que con uno registrado.
+- RF-01.6.CA2 — Dado un enlace de hace más de 60 minutos, cuando lo abre, entonces ve «Este enlace ya no sirve. Pide otro.»
 
-#### RF-01.6 · Menú de usuario y cierre de sesión
+#### RF-01.7 · Menú de usuario y cierre de sesión
 
 **Ubicación:** con sesión iniciada, «Entrar» se sustituye en la cabecera por un círculo de 36 px con las iniciales del usuario (fondo `--saffron` #E3A82B, texto `--text`) y su nombre en crema a la derecha. Al pulsarlo se abre un menú desplegable bajo él: fondo blanco, borde 1 px #DDD0B0, radio 10 px, 240 px de ancho, opciones de 44 px de alto.
 
@@ -606,8 +609,8 @@ Texto de la casilla obligatoria: «Acepto las Condiciones de uso y la Política 
 
 **Criterios:**
 
-- RF-01.6.CA1 — Dado un vendedor con sesión, cuando abre su menú, entonces ve las cinco opciones de vendedor en el orden indicado.
-- RF-01.6.CA2 — Dado un cliente con 3 productos en el carrito, cuando cierra sesión y vuelve a entrar, entonces su carrito sigue teniendo los 3 productos.
+- RF-01.7.CA1 — Dado un vendedor con sesión, cuando abre su menú, entonces ve las cinco opciones de vendedor en el orden indicado.
+- RF-01.7.CA2 — Dado un cliente con 3 productos en el carrito, cuando cierra sesión y vuelve a entrar, entonces su carrito sigue teniendo los 3 productos.
 
 ### A.2 INDICONNECT
 

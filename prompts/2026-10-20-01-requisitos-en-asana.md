@@ -20,3 +20,19 @@ Mira antes de nada, el git
 ### 18:06
 
 Sí, mételos en docs/requisitos y haz el commit. Luego quiero ver como quedaria los requsitos en asana
+
+### 18:13
+
+Si yo te digo que lo pongas en asana podrias volver atras si no me gusta?
+
+### 18:14
+
+Subelo al proyecto de clase, pero no asignes a nadie, eso lo hacemos despues
+
+### 18:16
+
+Y quita lo que hubiera antes, que tenga que ver con requsitos y no informacion
+
+### 18:24
+
+Dejalo todo apañado para mis compañeros

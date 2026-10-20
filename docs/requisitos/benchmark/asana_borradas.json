@@ -1,0 +1,134 @@
+[
+ {
+  "gid": "1219639809015688",
+  "nombre": "RF-CUE-01 · Registrarse e iniciar sesión con un rol",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:28.882Z"
+ },
+ {
+  "gid": "1219639809015689",
+  "nombre": "RF-CAT-01 · Consultar y filtrar el catálogo con información de alérgenos",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:30.120Z"
+ },
+ {
+  "gid": "1219639809015690",
+  "nombre": "RF-VEN-01 · Publicar un producto como vendedor",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:30.828Z"
+ },
+ {
+  "gid": "1219639809015691",
+  "nombre": "RF-IA-01 · Generar una cesta con el asistente IA",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:31.759Z"
+ },
+ {
+  "gid": "1219639809015692",
+  "nombre": "RF-CAR-01 · Carrito único con productos de varios vendedores",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:32.552Z"
+ },
+ {
+  "gid": "1219639809015693",
+  "nombre": "RF-PAG-01 · Pagar el pedido en un único pago",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:33.386Z"
+ },
+ {
+  "gid": "1219639809015694",
+  "nombre": "RF-HUB-01 · Recibir y consolidar subpedidos en el hub",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:34.215Z"
+ },
+ {
+  "gid": "1219639809015695",
+  "nombre": "RF-ENT-01 · Seleccionar una franja de entrega al confirmar el pedido",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:35.127Z"
+ },
+ {
+  "gid": "1219639809015696",
+  "nombre": "RF-VAL-01 · Valorar al vendedor y la entrega",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:36.153Z"
+ },
+ {
+  "gid": "1219639809015697",
+  "nombre": "RF-CAD-01 · Avisar de productos próximos a caducar",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:37.441Z"
+ },
+ {
+  "gid": "1219640464484045",
+  "nombre": "RNF-REN-01 · Tiempos de respuesta",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:38.301Z"
+ },
+ {
+  "gid": "1219640464484046",
+  "nombre": "RNF-SEG-01 · Seguridad y control de acceso por rol",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:39.148Z"
+ },
+ {
+  "gid": "1219640464484047",
+  "nombre": "RNF-USA-01 · Usabilidad en móvil y accesibilidad",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:40.350Z"
+ },
+ {
+  "gid": "1219640464484048",
+  "nombre": "RNF-LEG-01 · Protección de datos e información alimentaria",
+  "padre": "1219658628732139",
+  "borrada": "2026-10-20T16:26:41.155Z"
+ },
+ {
+  "gid": "1219639746665201",
+  "nombre": "Información alimentaria y alérgenos en la ficha de producto",
+  "padre": "1219658628732138",
+  "borrada": "2026-10-20T16:26:42.091Z"
+ },
+ {
+  "gid": "1219639746665202",
+  "nombre": "Trazabilidad de lotes y caducidades en el hub",
+  "padre": "1219658628732138",
+  "borrada": "2026-10-20T16:26:43.217Z"
+ },
+ {
+  "gid": "1219639746665203",
+  "nombre": "Protección de datos (RGPD y LOPDGDD)",
+  "padre": "1219658628732138",
+  "borrada": "2026-10-20T16:26:44.084Z"
+ },
+ {
+  "gid": "1219639746665204",
+  "nombre": "Condiciones de compra, desistimiento y comercio electrónico",
+  "padre": "1219658628732138",
+  "borrada": "2026-10-20T16:26:45.162Z"
+ },
+ {
+  "gid": "1219639974805259",
+  "nombre": "User stories de Sebastián: carrito, pagos y hub",
+  "padre": "1219658628732140",
+  "borrada": "2026-10-20T16:26:45.997Z"
+ },
+ {
+  "gid": "1219639974805260",
+  "nombre": "User stories de Juan Antonio: catálogo, vendedor y valoraciones",
+  "padre": "1219658628732140",
+  "borrada": "2026-10-20T16:26:47.210Z"
+ },
+ {
+  "gid": "1219639974805261",
+  "nombre": "User stories de Miguel: cuentas, asistente IA, entrega y caducidad",
+  "padre": "1219658628732140",
+  "borrada": "2026-10-20T16:26:48.029Z"
+ },
+ {
+  "gid": "1219639974805262",
+  "nombre": "Revisión INVEST cruzada de todas las user stories",
+  "padre": "1219658628732140",
+  "borrada": "2026-10-20T16:26:48.932Z"
+ }
+]

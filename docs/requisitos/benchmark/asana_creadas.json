@@ -1,0 +1,1042 @@
+{
+ "creadas": [
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19)",
+   "gid": "1219706035211412",
+   "nombre": "Requisitos funcionales (RF-01 a RF-19)",
+   "padre": "1219658628732139"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles",
+   "gid": "1219706071142641",
+   "nombre": "RF-01 · Registro, inicio de sesión y roles",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.1 · Punto de entrada y pantalla de acceso",
+   "gid": "1219706033865498",
+   "nombre": "RF-01.1 · Punto de entrada y pantalla de acceso",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.2 · Inicio de sesión con correo y contraseña",
+   "gid": "1219706035248422",
+   "nombre": "RF-01.2 · Inicio de sesión con correo y contraseña",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.3 · Inicio de sesión con Google",
+   "gid": "1219706071142652",
+   "nombre": "RF-01.3 · Inicio de sesión con Google",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.4 · Registro de cuenta de cliente",
+   "gid": "1219706268273482",
+   "nombre": "RF-01.4 · Registro de cuenta de cliente",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.5 · Verificación del correo",
+   "gid": "1219706268122928",
+   "nombre": "RF-01.5 · Verificación del correo",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.6 · Recuperación de contraseña",
+   "gid": "1219706071081571",
+   "nombre": "RF-01.6 · Recuperación de contraseña",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.7 · Menú de usuario y cierre de sesión",
+   "gid": "1219706034021041",
+   "nombre": "RF-01.7 · Menú de usuario y cierre de sesión",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.8 · Mis datos y direcciones",
+   "gid": "1219706071092406",
+   "nombre": "RF-01.8 · Mis datos y direcciones",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.9 · Preferencias, dieta y alergias",
+   "gid": "1219706195504327",
+   "nombre": "RF-01.9 · Preferencias, dieta y alergias",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-01 · Registro, inicio de sesión y roles > RF-01.10 · Privacidad y baja de la cuenta",
+   "gid": "1219706268341285",
+   "nombre": "RF-01.10 · Privacidad y baja de la cuenta",
+   "padre": "1219706071142641"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor",
+   "gid": "1219706071286491",
+   "nombre": "RF-02 · Alta y verificación de vendedor",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.1 · Página «Quiero vender»",
+   "gid": "1219706195545844",
+   "nombre": "RF-02.1 · Página «Quiero vender»",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.2 · Formulario de solicitud",
+   "gid": "1219706035087459",
+   "nombre": "RF-02.2 · Formulario de solicitud",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.3 · Documentación",
+   "gid": "1219706195303625",
+   "nombre": "RF-02.3 · Documentación",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.4 · Estados de la solicitud",
+   "gid": "1219706071337119",
+   "nombre": "RF-02.4 · Estados de la solicitud",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.5 · Activación y formación",
+   "gid": "1219706195506705",
+   "nombre": "RF-02.5 · Activación y formación",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.6 · Datos del negocio y perfil público",
+   "gid": "1219706071302464",
+   "nombre": "RF-02.6 · Datos del negocio y perfil público",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-02 · Alta y verificación de vendedor > RF-02.7 · Diseño y comportamiento del formulario de alta",
+   "gid": "1219706268415505",
+   "nombre": "RF-02.7 · Diseño y comportamiento del formulario de alta",
+   "padre": "1219706071286491"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración",
+   "gid": "1219706035374626",
+   "nombre": "RF-13 · Panel de administración",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.1 · Acceso",
+   "gid": "1219706071116244",
+   "nombre": "RF-13.1 · Acceso",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.2 · Vendedores",
+   "gid": "1219705972961513",
+   "nombre": "RF-13.2 · Vendedores",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.3 · Catálogo, pedidos e incidencias",
+   "gid": "1219706035087476",
+   "nombre": "RF-13.3 · Catálogo, pedidos e incidencias",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.4 · Contenido, métricas y auditoría",
+   "gid": "1219706195615050",
+   "nombre": "RF-13.4 · Contenido, métricas y auditoría",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.5 · Usuarios y roles",
+   "gid": "1219706035413952",
+   "nombre": "RF-13.5 · Usuarios y roles",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.6 · Configuración",
+   "gid": "1219706035394390",
+   "nombre": "RF-13.6 · Configuración",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-13 · Panel de administración > RF-13.7 · Prompts del proyecto",
+   "gid": "1219705972823314",
+   "nombre": "RF-13.7 · Prompts del proyecto",
+   "padre": "1219706035374626"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información",
+   "gid": "1219706035433217",
+   "nombre": "RF-15 · Web pública e información",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.1 · Cabecera",
+   "gid": "1219706195722940",
+   "nombre": "RF-15.1 · Cabecera",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.2 · Portada",
+   "gid": "1219706071466226",
+   "nombre": "RF-15.2 · Portada",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.3 · Cómo funciona",
+   "gid": "1219706268152619",
+   "nombre": "RF-15.3 · Cómo funciona",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.4 · Quiénes somos y comparativa",
+   "gid": "1219706268510006",
+   "nombre": "RF-15.4 · Quiénes somos y comparativa",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.5 · Preguntas frecuentes",
+   "gid": "1219705973107285",
+   "nombre": "RF-15.5 · Preguntas frecuentes",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.6 · Comunidad y redes",
+   "gid": "1219706268535179",
+   "nombre": "RF-15.6 · Comunidad y redes",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-15 · Web pública e información > RF-15.7 · Pie de página",
+   "gid": "1219721225367639",
+   "nombre": "RF-15.7 · Pie de página",
+   "padre": "1219706035433217"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto",
+   "gid": "1219706035513521",
+   "nombre": "RF-03 · Gestión del catálogo y ficha de producto",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.1 · Alta de producto",
+   "gid": "1219706268567602",
+   "nombre": "RF-03.1 · Alta de producto",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.2 · Información obligatoria",
+   "gid": "1219706071569278",
+   "nombre": "RF-03.2 · Información obligatoria",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.3 · Alérgenos",
+   "gid": "1219705973104817",
+   "nombre": "RF-03.3 · Alérgenos",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.4 · Fotos",
+   "gid": "1219706071436359",
+   "nombre": "RF-03.4 · Fotos",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.5 · Precio",
+   "gid": "1219705973159680",
+   "nombre": "RF-03.5 · Precio",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.6 · Stock y disponibilidad",
+   "gid": "1219705973206241",
+   "nombre": "RF-03.6 · Stock y disponibilidad",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.7 · Edición, retirada y packs",
+   "gid": "1219706268567540",
+   "nombre": "RF-03.7 · Edición, retirada y packs",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.8 · Promociones del vendedor",
+   "gid": "1219705973079581",
+   "nombre": "RF-03.8 · Promociones del vendedor",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-03 · Gestión del catálogo y ficha de producto > RF-03.9 · Revisión antes de publicar",
+   "gid": "1219705973220469",
+   "nombre": "RF-03.9 · Revisión antes de publicar",
+   "padre": "1219706035513521"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo",
+   "gid": "1219706071689465",
+   "nombre": "RF-04 · Búsqueda y consulta del catálogo",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.1 · Página de productos",
+   "gid": "1219706035513531",
+   "nombre": "RF-04.1 · Página de productos",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.2 · Buscador",
+   "gid": "1219705973111843",
+   "nombre": "RF-04.2 · Buscador",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.3 · Filtros y orden",
+   "gid": "1219706071440674",
+   "nombre": "RF-04.3 · Filtros y orden",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.4 · Tarjeta de producto",
+   "gid": "1219706071725686",
+   "nombre": "RF-04.4 · Tarjeta de producto",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.5 · Ficha de producto",
+   "gid": "1219706035534504",
+   "nombre": "RF-04.5 · Ficha de producto",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.6 · Favoritos y habituales",
+   "gid": "1219706071450177",
+   "nombre": "RF-04.6 · Favoritos y habituales",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.7 · Zona y patrocinados",
+   "gid": "1219706195993170",
+   "nombre": "RF-04.7 · Zona y patrocinados",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.8 · Catálogo en móvil y estados",
+   "gid": "1219721225417265",
+   "nombre": "RF-04.8 · Catálogo en móvil y estados",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-04 · Búsqueda y consulta del catálogo > RF-04.9 · Etiquetas y avisos en la tarjeta",
+   "gid": "1219706195943228",
+   "nombre": "RF-04.9 · Etiquetas y avisos en la tarjeta",
+   "padre": "1219706071689465"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta",
+   "gid": "1219705972941697",
+   "nombre": "RF-12 · Asistente de IA para generar la cesta",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.1 · Entrada",
+   "gid": "1219706196035731",
+   "nombre": "RF-12.1 · Entrada",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.2 · Generación de la cesta",
+   "gid": "1219706035374640",
+   "nombre": "RF-12.2 · Generación de la cesta",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.3 · Explicación y ajuste",
+   "gid": "1219706071837576",
+   "nombre": "RF-12.3 · Explicación y ajuste",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.4 · Transparencia",
+   "gid": "1219705973219214",
+   "nombre": "RF-12.4 · Transparencia",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.5 · Plan de comidas y después de comprar",
+   "gid": "1219706268805645",
+   "nombre": "RF-12.5 · Plan de comidas y después de comprar",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.6 · Diseño del asistente",
+   "gid": "1219706071814219",
+   "nombre": "RF-12.6 · Diseño del asistente",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-12 · Asistente de IA para generar la cesta > RF-12.7 · Reglas de la propuesta",
+   "gid": "1219706196082141",
+   "nombre": "RF-12.7 · Reglas de la propuesta",
+   "padre": "1219705972941697"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor",
+   "gid": "1219706035819977",
+   "nombre": "RF-16 · Panel del vendedor",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor > RF-16.1 · Inicio del panel",
+   "gid": "1219705973370916",
+   "nombre": "RF-16.1 · Inicio del panel",
+   "padre": "1219706035819977"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor > RF-16.2 · Pedidos del vendedor",
+   "gid": "1219706035820043",
+   "nombre": "RF-16.2 · Pedidos del vendedor",
+   "padre": "1219706035819977"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor > RF-16.3 · Ventas y estadísticas",
+   "gid": "1219706071421068",
+   "nombre": "RF-16.3 · Ventas y estadísticas",
+   "padre": "1219706035819977"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor > RF-16.4 · Productos en el panel",
+   "gid": "1219706035818803",
+   "nombre": "RF-16.4 · Productos en el panel",
+   "padre": "1219706035819977"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-16 · Panel del vendedor > RF-16.5 · Días de recogida",
+   "gid": "1219706071776066",
+   "nombre": "RF-16.5 · Días de recogida",
+   "padre": "1219706035819977"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-17 · Condiciones y liquidación del vendedor",
+   "gid": "1219706071928062",
+   "nombre": "RF-17 · Condiciones y liquidación del vendedor",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-17 · Condiciones y liquidación del vendedor > RF-17.1 · Condiciones",
+   "gid": "1219706035839823",
+   "nombre": "RF-17.1 · Condiciones",
+   "padre": "1219706071928062"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-17 · Condiciones y liquidación del vendedor > RF-17.2 · Liquidación",
+   "gid": "1219706071968081",
+   "nombre": "RF-17.2 · Liquidación",
+   "padre": "1219706071928062"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor",
+   "gid": "1219706035848794",
+   "nombre": "RF-05 · Carrito multi-vendedor",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.1 · Añadir al carrito",
+   "gid": "1219706196091685",
+   "nombre": "RF-05.1 · Añadir al carrito",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.2 · Vista del carrito agrupada",
+   "gid": "1219705973395160",
+   "nombre": "RF-05.2 · Vista del carrito agrupada",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.3 · Cantidades",
+   "gid": "1219706196091695",
+   "nombre": "RF-05.3 · Cantidades",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.4 · Envío y compra mínima",
+   "gid": "1219706035921232",
+   "nombre": "RF-05.4 · Envío y compra mínima",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.5 · Presupuesto",
+   "gid": "1219706196193926",
+   "nombre": "RF-05.5 · Presupuesto",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.6 · Cambios de stock y precio",
+   "gid": "1219705973399250",
+   "nombre": "RF-05.6 · Cambios de stock y precio",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.7 · Persistencia",
+   "gid": "1219706196039081",
+   "nombre": "RF-05.7 · Persistencia",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.8 · Diseño del carrito",
+   "gid": "1219705973220558",
+   "nombre": "RF-05.8 · Diseño del carrito",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-05 · Carrito multi-vendedor > RF-05.9 · Información de la entrega en el carrito",
+   "gid": "1219706072032371",
+   "nombre": "RF-05.9 · Información de la entrega en el carrito",
+   "padre": "1219706035848794"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado",
+   "gid": "1219706035988436",
+   "nombre": "RF-06 · Checkout y pago único simulado",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.1 · Acceso y resumen",
+   "gid": "1219706202813927",
+   "nombre": "RF-06.1 · Acceso y resumen",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.2 · Dirección y franja",
+   "gid": "1219706196255861",
+   "nombre": "RF-06.2 · Dirección y franja",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.3 · Revisión de alérgenos y condiciones",
+   "gid": "1219706072063915",
+   "nombre": "RF-06.3 · Revisión de alérgenos y condiciones",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.4 · Pago simulado",
+   "gid": "1219706071922663",
+   "nombre": "RF-06.4 · Pago simulado",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.5 · Confirmación",
+   "gid": "1219706202815409",
+   "nombre": "RF-06.5 · Confirmación",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.6 · Modificar o cancelar",
+   "gid": "1219706269081552",
+   "nombre": "RF-06.6 · Modificar o cancelar",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.7 · Diseño y navegación del checkout",
+   "gid": "1219705973398017",
+   "nombre": "RF-06.7 · Diseño y navegación del checkout",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-06 · Checkout y pago único simulado > RF-06.8 · Datos de facturación",
+   "gid": "1219706202815290",
+   "nombre": "RF-06.8 · Datos de facturación",
+   "padre": "1219706035988436"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor",
+   "gid": "1219706035931022",
+   "nombre": "RF-07 · División en subpedidos y confirmación del vendedor",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.1 · División",
+   "gid": "1219706268957586",
+   "nombre": "RF-07.1 · División",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.2 · Aviso y vista del vendedor",
+   "gid": "1219706196295509",
+   "nombre": "RF-07.2 · Aviso y vista del vendedor",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.3 · Confirmar o avisar de faltas",
+   "gid": "1219706269132631",
+   "nombre": "RF-07.3 · Confirmar o avisar de faltas",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.4 · Preparación y etiqueta",
+   "gid": "1219706071734111",
+   "nombre": "RF-07.4 · Preparación y etiqueta",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.5 · Plazos y avisos al vendedor",
+   "gid": "1219706071569328",
+   "nombre": "RF-07.5 · Plazos y avisos al vendedor",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-07 · División en subpedidos y confirmación del vendedor > RF-07.6 · Pedido sin el grupo de un vendedor",
+   "gid": "1219706268827681",
+   "nombre": "RF-07.6 · Pedido sin el grupo de un vendedor",
+   "padre": "1219706035931022"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-14 · Suscripción",
+   "gid": "1219706269191120",
+   "nombre": "RF-14 · Suscripción",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-14 · Suscripción > RF-14.1 · Suscripción opcional",
+   "gid": "1219706036142310",
+   "nombre": "RF-14.1 · Suscripción opcional",
+   "padre": "1219706269191120"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-14 · Suscripción > RF-14.2 · Gestión de la suscripción",
+   "gid": "1219706071999837",
+   "nombre": "RF-14.2 · Gestión de la suscripción",
+   "padre": "1219706269191120"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega",
+   "gid": "1219706196266331",
+   "nombre": "RF-08 · Recogida, consolidación en el hub y entrega",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.1 · Ruta de recogida",
+   "gid": "1219706196447338",
+   "nombre": "RF-08.1 · Ruta de recogida",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.2 · Recepción y verificación en el hub",
+   "gid": "1219706196217782",
+   "nombre": "RF-08.2 · Recepción y verificación en el hub",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.3 · Empaquetado consolidado",
+   "gid": "1219706036133863",
+   "nombre": "RF-08.3 · Empaquetado consolidado",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.4 · Reparto y entrega",
+   "gid": "1219706196281035",
+   "nombre": "RF-08.4 · Reparto y entrega",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.5 · Retirada y excedentes",
+   "gid": "1219706072190962",
+   "nombre": "RF-08.5 · Retirada y excedentes",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.6 · Aplicación del operador",
+   "gid": "1219706072016389",
+   "nombre": "RF-08.6 · Aplicación del operador",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-08 · Recogida, consolidación en el hub y entrega > RF-08.7 · Entrega al cliente",
+   "gid": "1219706072188575",
+   "nombre": "RF-08.7 · Entrega al cliente",
+   "padre": "1219706196266331"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones",
+   "gid": "1219706269260406",
+   "nombre": "RF-09 · Seguimiento del pedido y notificaciones",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones > RF-09.1 · Estados",
+   "gid": "1219706269269055",
+   "nombre": "RF-09.1 · Estados",
+   "padre": "1219706269260406"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones > RF-09.2 · Pantalla de seguimiento",
+   "gid": "1219706269277706",
+   "nombre": "RF-09.2 · Pantalla de seguimiento",
+   "padre": "1219706269260406"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones > RF-09.3 · Notificaciones",
+   "gid": "1219706196415197",
+   "nombre": "RF-09.3 · Notificaciones",
+   "padre": "1219706269260406"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones > RF-09.4 · Mis pedidos",
+   "gid": "1219706196587533",
+   "nombre": "RF-09.4 · Mis pedidos",
+   "padre": "1219706269260406"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-09 · Seguimiento del pedido y notificaciones > RF-09.5 · Plantillas de correo",
+   "gid": "1219706036265614",
+   "nombre": "RF-09.5 · Plantillas de correo",
+   "padre": "1219706269260406"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones",
+   "gid": "1219706036219380",
+   "nombre": "RF-10 · Incidencias, reembolsos y sustituciones",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones > RF-10.1 · Abrir una incidencia",
+   "gid": "1219721300487789",
+   "nombre": "RF-10.1 · Abrir una incidencia",
+   "padre": "1219706036219380"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones > RF-10.2 · Resolución",
+   "gid": "1219706203153942",
+   "nombre": "RF-10.2 · Resolución",
+   "padre": "1219706036219380"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones > RF-10.3 · Seguimiento de la incidencia",
+   "gid": "1219706203226144",
+   "nombre": "RF-10.3 · Seguimiento de la incidencia",
+   "padre": "1219706036219380"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones > RF-10.4 · Diseño del formulario de incidencia",
+   "gid": "1219706196763794",
+   "nombre": "RF-10.4 · Diseño del formulario de incidencia",
+   "padre": "1219706036219380"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-10 · Incidencias, reembolsos y sustituciones > RF-10.5 · Criterios de resolución",
+   "gid": "1219706196743546",
+   "nombre": "RF-10.5 · Criterios de resolución",
+   "padre": "1219706036219380"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-11 · Valoraciones de productos y vendedores",
+   "gid": "1219706072466119",
+   "nombre": "RF-11 · Valoraciones de productos y vendedores",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-11 · Valoraciones de productos y vendedores > RF-11.1 · Pedir la valoración",
+   "gid": "1219706072172317",
+   "nombre": "RF-11.1 · Pedir la valoración",
+   "padre": "1219706072466119"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-11 · Valoraciones de productos y vendedores > RF-11.2 · Mostrar y moderar",
+   "gid": "1219706202928302",
+   "nombre": "RF-11.2 · Mostrar y moderar",
+   "padre": "1219706072466119"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-11 · Valoraciones de productos y vendedores > RF-11.3 · Diseño y reglas de la valoración",
+   "gid": "1219706036513721",
+   "nombre": "RF-11.3 · Diseño y reglas de la valoración",
+   "padre": "1219706072466119"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-18 · Comunicación con vendedores",
+   "gid": "1219706036517353",
+   "nombre": "RF-18 · Comunicación con vendedores",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-18 · Comunicación con vendedores > RF-18.1 · Mensajes y avisos",
+   "gid": "1219706203253569",
+   "nombre": "RF-18.1 · Mensajes y avisos",
+   "padre": "1219706036517353"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-19 · Soporte y contacto",
+   "gid": "1219706072531669",
+   "nombre": "RF-19 · Soporte y contacto",
+   "padre": "1219706035211412"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-19 · Soporte y contacto > RF-19.1 · Contacto",
+   "gid": "1219706269567824",
+   "nombre": "RF-19.1 · Contacto",
+   "padre": "1219706072531669"
+  },
+  {
+   "clave": "B4 > Requisitos funcionales (RF-01 a RF-19) > RF-19 · Soporte y contacto > RF-19.2 · Bandeja de soporte del equipo",
+   "gid": "1219706072529288",
+   "nombre": "RF-19.2 · Bandeja de soporte del equipo",
+   "padre": "1219706072531669"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11)",
+   "gid": "1219706036557411",
+   "nombre": "Requisitos no funcionales (RNF-01 a RNF-11)",
+   "padre": "1219658628732139"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-01 · Seguridad",
+   "gid": "1219706072575192",
+   "nombre": "RNF-01 · Seguridad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-01 · Seguridad > RNF-01.1 · Autenticación y sesiones",
+   "gid": "1219706072583788",
+   "nombre": "RNF-01.1 · Autenticación y sesiones",
+   "padre": "1219706072575192"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-01 · Seguridad > RNF-01.2 · Autorización y datos de entrada",
+   "gid": "1219706072531683",
+   "nombre": "RNF-01.2 · Autorización y datos de entrada",
+   "padre": "1219706072575192"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-02 · Privacidad (RGPD y LOPDGDD)",
+   "gid": "1219706196906444",
+   "nombre": "RNF-02 · Privacidad (RGPD y LOPDGDD)",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-02 · Privacidad (RGPD y LOPDGDD) > RNF-02.1 · Minimización y consentimiento",
+   "gid": "1219706072583798",
+   "nombre": "RNF-02.1 · Minimización y consentimiento",
+   "padre": "1219706196906444"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-02 · Privacidad (RGPD y LOPDGDD) > RNF-02.2 · Derechos y conservación",
+   "gid": "1219706036516136",
+   "nombre": "RNF-02.2 · Derechos y conservación",
+   "padre": "1219706196906444"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-03 · Rendimiento",
+   "gid": "1219706072662475",
+   "nombre": "RNF-03 · Rendimiento",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-03 · Rendimiento > RNF-03.1 · Tiempos de carga",
+   "gid": "1219706269556383",
+   "nombre": "RNF-03.1 · Tiempos de carga",
+   "padre": "1219706072662475"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-03 · Rendimiento > RNF-03.2 · Servidor",
+   "gid": "1219706036717178",
+   "nombre": "RNF-03.2 · Servidor",
+   "padre": "1219706072662475"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-03 · Rendimiento > RNF-03.3 · Peso de la página",
+   "gid": "1219706036720479",
+   "nombre": "RNF-03.3 · Peso de la página",
+   "padre": "1219706072662475"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-04 · Usabilidad",
+   "gid": "1219706269568539",
+   "nombre": "RNF-04 · Usabilidad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-04 · Usabilidad > RNF-04.1 · Facilidad de uso",
+   "gid": "1219706196677297",
+   "nombre": "RNF-04.1 · Facilidad de uso",
+   "padre": "1219706269568539"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-04 · Usabilidad > RNF-04.2 · Consistencia visual",
+   "gid": "1219706072740103",
+   "nombre": "RNF-04.2 · Consistencia visual",
+   "padre": "1219706269568539"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-05 · Accesibilidad (WCAG 2.2 AA)",
+   "gid": "1219706072529060",
+   "nombre": "RNF-05 · Accesibilidad (WCAG 2.2 AA)",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-05 · Accesibilidad (WCAG 2.2 AA) > RNF-05.1 · Percepción y operación",
+   "gid": "1219706269568450",
+   "nombre": "RNF-05.1 · Percepción y operación",
+   "padre": "1219706072529060"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-06 · Compatibilidad",
+   "gid": "1219706197062859",
+   "nombre": "RNF-06 · Compatibilidad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-06 · Compatibilidad > RNF-06.1 · Navegadores y pantallas",
+   "gid": "1219706036763969",
+   "nombre": "RNF-06.1 · Navegadores y pantallas",
+   "padre": "1219706197062859"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-07 · Fiabilidad y disponibilidad",
+   "gid": "1219706036559022",
+   "nombre": "RNF-07 · Fiabilidad y disponibilidad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-07 · Fiabilidad y disponibilidad > RNF-07.1 · Disponibilidad y datos",
+   "gid": "1219706269567835",
+   "nombre": "RNF-07.1 · Disponibilidad y datos",
+   "padre": "1219706036559022"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-08 · Transparencia y cumplimiento",
+   "gid": "1219706203261210",
+   "nombre": "RNF-08 · Transparencia y cumplimiento",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-08 · Transparencia y cumplimiento > RNF-08.1 · IA, publicidad y comercio",
+   "gid": "1219706203531272",
+   "nombre": "RNF-08.1 · IA, publicidad y comercio",
+   "padre": "1219706203261210"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-09 · Trazabilidad alimentaria",
+   "gid": "1219706072798745",
+   "nombre": "RNF-09 · Trazabilidad alimentaria",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-09 · Trazabilidad alimentaria > RNF-09.1 · Registro de lotes",
+   "gid": "1219706269823193",
+   "nombre": "RNF-09.1 · Registro de lotes",
+   "padre": "1219706072798745"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-10 · Mantenibilidad",
+   "gid": "1219706269503860",
+   "nombre": "RNF-10 · Mantenibilidad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-10 · Mantenibilidad > RNF-10.1 · Código y documentación",
+   "gid": "1219706196755316",
+   "nombre": "RNF-10.1 · Código y documentación",
+   "padre": "1219706269503860"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-11 · Sostenibilidad",
+   "gid": "1219706036700484",
+   "nombre": "RNF-11 · Sostenibilidad",
+   "padre": "1219706036557411"
+  },
+  {
+   "clave": "B4 > Requisitos no funcionales (RNF-01 a RNF-11) > RNF-11 · Sostenibilidad > RNF-11.1 · Embalaje y desperdicio",
+   "gid": "1219706203422955",
+   "nombre": "RNF-11.1 · Embalaje y desperdicio",
+   "padre": "1219706036700484"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias)",
+   "gid": "1219706269855253",
+   "nombre": "Product Backlog (13 historias)",
+   "padre": "1219658628732140"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #1 US-01 · Registrarme con mi correo y elegir mi zona",
+   "gid": "1219706203431573",
+   "nombre": "#1 US-01 · Registrarme con mi correo y elegir mi zona",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #2 US-02 · Darme de alta con mis datos y mi registro sanitario",
+   "gid": "1219706036861038",
+   "nombre": "#2 US-02 · Darme de alta con mis datos y mi registro sanitario",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #3 US-09 · Aprobar o rechazar las solicitudes de vendedores",
+   "gid": "1219706036869441",
+   "nombre": "#3 US-09 · Aprobar o rechazar las solicitudes de vendedores",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #4 US-10 · Publicar productos con ficha completa (origen, alérgenos, conservación)",
+   "gid": "1219706203606715",
+   "nombre": "#4 US-10 · Publicar productos con ficha completa (origen, alérgenos, conservación)",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #5 US-03 · Ver de quién es cada producto y sus alérgenos",
+   "gid": "1219706203617583",
+   "nombre": "#5 US-03 · Ver de quién es cada producto y sus alérgenos",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #6 US-04 · Añadir productos de varios vendedores a un solo carrito",
+   "gid": "1219706269400190",
+   "nombre": "#6 US-04 · Añadir productos de varios vendedores a un solo carrito",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #7 US-05 · Pagar una sola vez todo el carrito",
+   "gid": "1219706197121531",
+   "nombre": "#7 US-05 · Pagar una sola vez todo el carrito",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #8 US-11 · Ver y confirmar solo la parte del pedido que me corresponde",
+   "gid": "1219706203584994",
+   "nombre": "#8 US-11 · Ver y confirmar solo la parte del pedido que me corresponde",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #9 US-12 · Comprobar que cada subpedido recibido coincide con el pedido",
+   "gid": "1219706269880452",
+   "nombre": "#9 US-12 · Comprobar que cada subpedido recibido coincide con el pedido",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #10 US-08 · Pedir a la IA una cesta para mi presupuesto y mis días",
+   "gid": "1219706036355102",
+   "nombre": "#10 US-08 · Pedir a la IA una cesta para mi presupuesto y mis días",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #11 US-06 · Seguir mi pedido hasta la entrega",
+   "gid": "1219706197125999",
+   "nombre": "#11 US-06 · Seguir mi pedido hasta la entrega",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #12 US-07 · Reclamar un producto en mal estado con una foto",
+   "gid": "1219706203387052",
+   "nombre": "#12 US-07 · Reclamar un producto en mal estado con una foto",
+   "padre": "1219706269855253"
+  },
+  {
+   "clave": "B5 > Product Backlog (13 historias) > #13 US-13 · Valorar productos y vendedores",
+   "gid": "1219706036912814",
+   "nombre": "#13 US-13 · Valorar productos y vendedores",
+   "padre": "1219706269855253"
+  }
+ ]
+}
