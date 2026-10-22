@@ -1,0 +1,4164 @@
+{
+ "fecha": "2026-10-22",
+ "motivo": "Valoración provisional del Hito 2 (21/10/2026): catálogo único de necesidades y regla prioridad/entrega",
+ "cambios": [
+  {
+   "id": "RF-01.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-07",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-08",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-09",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-01.1-10",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-11",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.1-12",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-07",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-08",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-09",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-10",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-11",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-12",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-13",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-14",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-15",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-01.2-16",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-17",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.2-18",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-05",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-07",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-01.3-08",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.3-09",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-05",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-07",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-08",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-09",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-10",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.4-11",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.5-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.5-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.5-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.5-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-05",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-06",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.6-07",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-01.7-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-07",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.7-08",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.8-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-01.9-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-01.9-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-01.9-03",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-01.9-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.10-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.10-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.10-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-01.10-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-02.1-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.1-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-02.1-03",
+   "necesidad": [
+    "N-05",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.1-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ]
+  },
+  {
+   "id": "RF-02.1-05",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-05",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-02.2-06",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-07",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-08",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-02.2-09",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.2-10",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-02.3-01",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-02.3-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.3-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-02.4-01",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-02.4-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.4-03",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-02.4-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.5-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.5-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.5-03",
+   "necesidad": [
+    "N-05",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.6-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-02.6-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-02.6-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-02.6-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-03.1-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.1-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.1-03",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.1-04",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.1-05",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.1-06",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.2-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.2-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-03.2-03",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-03.2-04",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-03.2-05",
+   "necesidad": [
+    "N-04",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-03.2-06",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-03.2-07",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-03.3-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-03.3-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-03.3-03",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-03.4-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.4-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.4-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-03.4-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-03.5-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-03.5-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-03.5-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-03.5-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-03.6-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.6-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.6-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.7-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.7-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.7-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-03.7-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-03.8-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-03.8-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-03.9-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.9-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-03.9-03",
+   "necesidad": [
+    "N-03",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-04.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.2-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.2-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.2-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.2-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.3-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-04.3-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-04.3-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-04.3-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.4-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-04.4-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.4-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.4-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.5-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-04.5-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-04.5-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-04.5-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.5-05",
+   "necesidad": [
+    "N-03",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-04.6-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-04.6-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-04.7-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.7-02",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-05.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.1-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-05",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-05.2-06",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-05.3-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.3-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.3-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.4-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-05.4-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.4-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.4-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-05.5-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-05.5-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-05.6-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.6-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.6-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-05.7-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.7-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.7-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.1-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-06.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.2-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-06.2-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-06.2-03",
+   "necesidad": [
+    "N-08",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-06.2-04",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-06.3-01",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-06.3-02",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-06.3-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.3-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.4-01",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.4-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-07",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.4-08",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-06.5-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.5-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.5-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.5-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.6-01",
+   "necesidad": [
+    "N-08",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-06.6-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.6-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.6-04",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-07.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-07.1-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-07.2-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-07.2-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-07.2-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-07.3-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-07.3-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.3-03",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.3-04",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.3-05",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.4-01",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-07.4-02",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-07.4-03",
+   "necesidad": [
+    "N-03",
+    "N-HUB-01"
+   ]
+  },
+  {
+   "id": "RF-08.1-01",
+   "necesidad": [
+    "N-02",
+    "N-HUB-01"
+   ]
+  },
+  {
+   "id": "RF-08.1-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-01"
+   ]
+  },
+  {
+   "id": "RF-08.1-03",
+   "necesidad": [
+    "N-05",
+    "N-HUB-01"
+   ]
+  },
+  {
+   "id": "RF-08.2-01",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-08.2-02",
+   "necesidad": [
+    "N-06",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-08.2-03",
+   "necesidad": [
+    "N-06",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-08.2-04",
+   "necesidad": [
+    "N-05",
+    "N-HUB-02"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-08.3-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.3-02",
+   "necesidad": [
+    "N-08",
+    "N-HUB-02"
+   ]
+  },
+  {
+   "id": "RF-08.3-03",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.3-04",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-08.4-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.4-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.4-03",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.4-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-08.4-05",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-08.5-01",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-08.5-02",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-09.1-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.1-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.1-03",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.2-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.2-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.2-03",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.2-04",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.3-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.3-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.3-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-09.3-04",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.4-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.4-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-04",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-05",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.1-06",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.2-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.2-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.2-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.2-04",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-10.2-05",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.3-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.3-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.3-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-11.1-01",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.1-02",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.1-03",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.1-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-11.2-01",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.2-02",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-11.2-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-11.2-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·V2"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.1-01",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.1-02",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.1-03",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.1-04",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.2-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-12.2-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.2-03",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.2-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-12.2-05",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-12.3-01",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ]
+  },
+  {
+   "id": "RF-12.3-02",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.3-03",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.3-04",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.4-01",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.4-02",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.4-03",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.4-04",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.5-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-12.5-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-12.5-03",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-12.5-04",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-13.1-01",
+   "necesidad": [
+    "N-05",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-13.1-02",
+   "necesidad": [
+    "N-05",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-13.1-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-13.2-01",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-13.2-02",
+   "necesidad": [
+    "N-05",
+    "N-VEN-07"
+   ]
+  },
+  {
+   "id": "RF-13.2-03",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.3-01",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.3-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-13.3-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-13.4-01",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-13.4-02",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-13.4-03",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.4-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "S·MVP",
+    "W·Excluido"
+   ]
+  },
+  {
+   "id": "RF-14.1-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "C·V3"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-14.1-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-14.1-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-14.1-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V3",
+    "C·V3"
+   ]
+  },
+  {
+   "id": "RF-15.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-15.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-15.1-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-15.1-05",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-15.2-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-15.2-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.2-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.2-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ],
+   "prioridad": [
+    "C·MVP",
+    "S·MVP"
+   ]
+  },
+  {
+   "id": "RF-15.2-05",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-15.2-06",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.3-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.3-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-15.3-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.3-04",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.4-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-15.4-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-15.4-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.4-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-15.5-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-15.5-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-15.5-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-15.5-04",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-15.6-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-15.6-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-15.6-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.6-04",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-15.7-01",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.7-02",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.7-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.7-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-15.7-05",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-16.1-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.1-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.1-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.2-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.2-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.2-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.3-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ]
+  },
+  {
+   "id": "RF-16.3-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ]
+  },
+  {
+   "id": "RF-16.3-03",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-16.3-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ]
+  },
+  {
+   "id": "RF-16.3-05",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ]
+  },
+  {
+   "id": "RF-17.1-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-17.1-02",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-17.1-03",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-17.2-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-17.2-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-17.2-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V3",
+    "C·V3"
+   ]
+  },
+  {
+   "id": "RF-17.2-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-05"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-18.1-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-18.1-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-18.1-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-18.1-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-19.1-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-19.1-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-19.1-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-19.1-04",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-19.1-05",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-13.5-01",
+   "necesidad": [
+    "N-05",
+    "N-CUE-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.5-02",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.5-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-13.6-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-13.6-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-13.6-03",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-13.7-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "S·MVP",
+    "W·Excluido"
+   ]
+  },
+  {
+   "id": "RF-13.7-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "S·MVP",
+    "W·Excluido"
+   ]
+  },
+  {
+   "id": "RF-13.7-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "C·MVP",
+    "W·Excluido"
+   ]
+  },
+  {
+   "id": "RF-02.7-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.7-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.7-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.7-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.7-05",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-02.7-06",
+   "necesidad": [
+    "N-03",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-04.8-01",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.8-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.8-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "C·MVP",
+    "C·V2"
+   ]
+  },
+  {
+   "id": "RF-04.8-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.8-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-04.9-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-04.9-02",
+   "necesidad": [
+    "N-08",
+    "N-VEN-03"
+   ]
+  },
+  {
+   "id": "RF-04.9-03",
+   "necesidad": [
+    "N-04",
+    "N-CAT-02"
+   ]
+  },
+  {
+   "id": "RF-04.9-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.8-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-05.9-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-05.9-02",
+   "necesidad": [
+    "N-08",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-05.9-03",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-06.7-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.7-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.7-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.7-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RF-06.7-05",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.7-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "C·MVP",
+    "C·V2"
+   ]
+  },
+  {
+   "id": "RF-06.8-01",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-06.8-02",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-07.5-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-07.5-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.5-03",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.5-04",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-07.6-01",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-07.6-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-08.6-01",
+   "necesidad": [
+    "N-02",
+    "N-HUB-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-08.6-02",
+   "necesidad": [
+    "N-02",
+    "N-HUB-01"
+   ]
+  },
+  {
+   "id": "RF-08.6-03",
+   "necesidad": [
+    "N-05",
+    "N-HUB-02"
+   ]
+  },
+  {
+   "id": "RF-08.6-04",
+   "necesidad": [
+    "N-06",
+    "N-HUB-03"
+   ]
+  },
+  {
+   "id": "RF-08.7-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.7-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-08.7-03",
+   "necesidad": [
+    "N-08",
+    "N-HUB-02"
+   ]
+  },
+  {
+   "id": "RF-08.7-04",
+   "necesidad": [
+    "N-06",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.5-01",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.5-02",
+   "necesidad": [
+    "N-02",
+    "N-ENT-01"
+   ]
+  },
+  {
+   "id": "RF-09.5-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-09.5-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RF-10.4-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.4-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.4-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.4-04",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.5-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.5-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-10.5-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-11.3-01",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.3-02",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.3-03",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-11.3-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RF-11.3-05",
+   "necesidad": [
+    "N-06",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RF-12.6-01",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.6-02",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ]
+  },
+  {
+   "id": "RF-12.6-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-12.6-04",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RF-12.6-05",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.7-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-01"
+   ]
+  },
+  {
+   "id": "RF-12.7-02",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-12.7-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ],
+   "prioridad": [
+    "M·MVP",
+    "S·MVP"
+   ],
+   "motivo": "Alinear la prioridad del requisito con la de su proceso e historia"
+  },
+  {
+   "id": "RF-12.7-04",
+   "necesidad": [
+    "N-01",
+    "N-PLA-01"
+   ]
+  },
+  {
+   "id": "RF-14.2-01",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-14.2-02",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-14.2-03",
+   "necesidad": [
+    "N-01",
+    "N-PLA-02"
+   ]
+  },
+  {
+   "id": "RF-14.2-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RF-16.4-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-16.4-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-16.4-03",
+   "necesidad": [
+    "N-04",
+    "N-VEN-06"
+   ]
+  },
+  {
+   "id": "RF-16.4-04",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RF-16.5-01",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-16.5-02",
+   "necesidad": [
+    "N-03",
+    "N-VEN-04"
+   ]
+  },
+  {
+   "id": "RF-19.2-01",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-19.2-02",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RF-19.2-03",
+   "necesidad": [
+    "N-06",
+    "N-INC-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.2-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "C·MVP",
+    "S·MVP"
+   ]
+  },
+  {
+   "id": "RNF-03.3-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.3-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-01.1-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.1-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.1-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.1-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.1-05",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-05",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-06",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-01.2-07",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.1-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.1-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.1-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.1-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.2-01",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.2-02",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ]
+  },
+  {
+   "id": "RNF-02.2-03",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-02.2-04",
+   "necesidad": [
+    "N-07",
+    "N-CUE-01"
+   ],
+   "prioridad": [
+    "S·V3",
+    "C·V3"
+   ]
+  },
+  {
+   "id": "RNF-03.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.2-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-03.2-02",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RNF-04.1-01",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.1-02",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.1-03",
+   "necesidad": [
+    "N-03",
+    "N-VEN-02"
+   ]
+  },
+  {
+   "id": "RNF-04.1-04",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.1-05",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-04.1-06",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-06",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-05.1-07",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-06.1-01",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-06.1-02",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-06.1-03",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-06.1-04",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-07.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "S·V3",
+    "C·V3"
+   ]
+  },
+  {
+   "id": "RNF-07.1-02",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-07.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-07.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-07.1-05",
+   "necesidad": [
+    "N-01",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-08.1-01",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ]
+  },
+  {
+   "id": "RNF-08.1-02",
+   "necesidad": [
+    "N-07",
+    "N-IA-02"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-08.1-03",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-08.1-04",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RNF-08.1-05",
+   "necesidad": [
+    "N-07",
+    "N-CAT-03"
+   ]
+  },
+  {
+   "id": "RNF-08.1-06",
+   "necesidad": [
+    "N-05",
+    "N-CAT-03"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-09.1-01",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RNF-09.1-02",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-09.1-03",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ],
+   "prioridad": [
+    "M·V2",
+    "S·V2"
+   ]
+  },
+  {
+   "id": "RNF-09.1-04",
+   "necesidad": [
+    "N-05",
+    "N-CAT-01"
+   ]
+  },
+  {
+   "id": "RNF-10.1-01",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-10.1-02",
+   "necesidad": [
+    "N-01",
+    "N-IA-01"
+   ]
+  },
+  {
+   "id": "RNF-10.1-03",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-10.1-04",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-10.1-05",
+   "necesidad": [
+    "N-02",
+    "N-CAR-01"
+   ]
+  },
+  {
+   "id": "RNF-11.1-01",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RNF-11.1-02",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RNF-11.1-03",
+   "necesidad": [
+    "N-08",
+    "N-CAD-01"
+   ]
+  },
+  {
+   "id": "RF-07.3-06",
+   "nuevo": true,
+   "motivo": "Reglas de falta pedidas en la valoración (rango, idempotencia y etapa)"
+  },
+  {
+   "id": "RF-07.3-07",
+   "nuevo": true,
+   "motivo": "Reglas de falta pedidas en la valoración (rango, idempotencia y etapa)"
+  },
+  {
+   "id": "RF-07.3-08",
+   "nuevo": true,
+   "motivo": "Reglas de falta pedidas en la valoración (rango, idempotencia y etapa)"
+  },
+  {
+   "id": "RF-07.3-05",
+   "motivo": "Reescrito: reembolso de prueba sin transferencia, pedido global conservado (ejemplo de la valoración)"
+  },
+  {
+   "id": "RF-10.2-02",
+   "motivo": "Reescrito: reembolso de prueba en el MVP; devolución real al medio de pago en V3"
+  }
+ ]
+}

@@ -1,10 +1,12 @@
 {
   "name": "food4all-benchmark",
   "private": true,
-  "description": "Genera FOOD4ALL_requisitos_benchmark.xlsx: requisitos comparados con la competencia",
+  "description": "Genera el catálogo de requisitos (Excel), las tareas de Asana, la matriz de trazabilidad y el documento de requisitos del Hito 2",
   "scripts": {
     "build": "node build.js ../FOOD4ALL_requisitos_benchmark.xlsx stats.json",
-    "asana": "node asana.js ../FOOD4ALL_requisitos_benchmark.xlsx ../FOOD4ALL_especificacion_requisitos.md ../FOOD4ALL_asana_vista_previa.md asana_tareas.json"
+    "asana": "node asana.js ../FOOD4ALL_requisitos_benchmark.xlsx ../FOOD4ALL_especificacion_requisitos.md ../FOOD4ALL_asana_vista_previa.md asana_tareas.json",
+    "documento": "node documento.js",
+    "todo": "npm run build && npm run asana && npm run documento"
   },
   "dependencies": {
     "exceljs": "4.4.0"

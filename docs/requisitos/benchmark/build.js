@@ -2,8 +2,11 @@
 const fs = require('fs');
 const ExcelJS = require('exceljs');
 const { COMPETIDORES, FUENTES, NO_ABIERTAS, BF } = require('./bench');
+const { NECESIDADES } = require('./necesidades');
+const { alcance, dependeDe } = require('./alcance');
 
 const [outXlsx, outStats] = process.argv.slice(2);
+const NEC = Object.fromEntries(NECESIDADES.map((n) => [n.id, n]));
 const PRIO = { M: 'Must', S: 'Should', C: 'Could', W: "Won't" };
 const COMP = COMPETIDORES.map((c) => c[0]);
 const NOMBRE = Object.fromEntries(COMPETIDORES.map((c) => [c[0], c[1]]));
@@ -82,6 +85,10 @@ for (const r of rows) {
   r.just = r.just ? `${r.just}${r.bfs.length ? ` Datos: ${datos}.` : ''}` : just;
   r.estado = r.estado || 'Pendiente';
   r.funciones = r.bfs.map((b) => `${b} ${BF[b].nombre}`).join('\n');
+  if (!NEC[r.necesidad]) throw new Error(`Necesidad desconocida ${r.necesidad} en ${r.id}`);
+  r.necTexto = NEC[r.necesidad].texto;
+  r.alcance = alcance(r);
+  r.depende = dependeDe(r);
 }
 
 // ---------- Excel ----------
@@ -108,14 +115,18 @@ const leeme = wb.addWorksheet('Léeme');
 leeme.columns = [{ width: 26 }, { width: 110 }];
 [
   ['FOOD4ALL · Catálogo de requisitos con benchmark', ''],
-  ['Fecha', '19/10/2026'],
+  ['Fecha', '19/10/2026 · v0.4 del 22/10/2026: catálogo único de necesidades, regla prioridad/entrega, alcance y dependencias'],
   ['Requisitos', `${total} (${nRF} funcionales y ${total - nRF} no funcionales)`],
   ['Competidores', COMPETIDORES.map((c) => `${c[1]} (${c[2]})`).join('; ')],
   ['Método', 'Cada requisito se enlaza con una o varias funciones observables de los competidores (hoja Benchmark). La comparación sale de las páginas públicas de cada uno (hoja Fuentes). Solo se marca S, N o P con una fuente abierta; lo demás queda como «?».'],
   ['Valores', 'S = lo tiene · P = parcial o con condiciones · N = no lo tiene · ? = no verificado · vacío = el requisito no es comparable'],
   ['Posición', 'Paridad: lo ofrecen 3 o más (estándar, imprescindible para competir) · Poco extendido: 1 o 2 · Diferencial: ninguno verificado y al menos uno confirmado que no · Mejora: FOOD4ALL lo hace mejor que quien lo tiene (motivo en la justificación) · Sin evidencia: no se pudo comprobar · Sin referente: requisito interno, legal o técnico'],
   ['Prioridad', 'MoSCoW: Must, Should, Could, Won\'t'],
-  ['Entrega', 'MVP = demo de 60 segundos · V2 = siguiente versión · V3 = más adelante'],
+  ['Entrega', 'MVP = demo de 60 segundos · V2 = siguiente versión · V3 = más adelante · Excluido = no es del marketplace (Won\'t)'],
+  ['Regla', 'Must solo en MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. La prioridad MoSCoW se refiere siempre al MVP'],
+  ['Alcance', 'MVP simulado = entra en la demo con un servicio simulado (pago, reembolso de prueba o IA) · MVP · V2 · V3 · Excluido'],
+  ['Depende de', 'Decisión pendiente (D-), hipótesis (H-) o servicio externo que puede cambiar el requisito. Detalle en la especificación, bloque 10'],
+  ['Necesidad', 'Catálogo único N-<MÓDULO>-NN (hoja Necesidades). Sustituye a N-01…N-08 (v0.3) y a N-01…N-20 del documento de personas'],
   ['Estado', 'Decidido = ya acordado en el proyecto · Hipótesis = falta validarlo con datos · Pendiente = propuesta para que el equipo la apruebe'],
   ['IDs', 'RF-05.2-03 = proceso RF-05, subrequisito 2, requisito 3. Cada subrequisito (RF-05.2) se corresponde con una ficha y una subtarea de Asana.'],
   ['Límites', 'Too Good To Go y la ayuda de Mercadona bloquearon el acceso automático, así que sus valores salen sobre todo del comparativo interno F-04 o quedan como «?». Glovo podría permitir acceso con Google o Apple, pero solo lo indican guías no oficiales que no se abrieron: queda «?». Lo que exige cuenta o app debe comprobarlo el equipo a mano.'],
@@ -131,7 +142,8 @@ const ws = wb.addWorksheet('Requisitos');
 cabecera(ws, [
   ['ID', 'id', 13], ['Proceso', 'procName', 22], ['Subrequisito', 'subName', 24], ['Tipo', 'tipo', 6],
   ['El sistema deberá…', 'texto', 60], ['Criterio de aceptación', 'criterio', 55], ['Prioridad', 'prio', 9],
-  ['Entrega', 'entrega', 8], ['Necesidad', 'necesidad', 9], ['Funciones comparadas', 'funciones', 30], ['Nivel de comparación', 'nivel', 14],
+  ['Entrega', 'entrega', 8], ['Alcance', 'alcance', 12], ['Depende de', 'depende', 18], ['Necesidad', 'necesidad', 10], ['Necesidad (texto)', 'necTexto', 34],
+  ['Funciones comparadas', 'funciones', 30], ['Nivel de comparación', 'nivel', 14],
   ...COMPETIDORES.map((c) => [c[1], c[0], 10]),
   ['Posición', 'pos', 14], ['Justificación', 'just', 55], ['Fuentes', 'fuentes', 12], ['Estado', 'estado', 11], ['Responsable', 'resp', 14],
 ]);
@@ -145,6 +157,15 @@ for (const r of rows) {
   });
   const pc = row.getCell('pos');
   if (POSFILL[r.pos]) pc.fill = { type: 'pattern', pattern: 'solid', fgColor: { argb: POSFILL[r.pos] } };
+}
+
+// Necesidades: catálogo único y cuántos requisitos cubren cada una
+const wn = wb.addWorksheet('Necesidades');
+cabecera(wn, [['ID', 'id', 10], ['Necesidad', 'texto', 50], ['Quién', 'quien', 14], ['Tipo', 'tipo', 14], ['Estado', 'estado', 14], ['Fuentes', 'fuentes', 34],
+  ['Antes (v0.3)', 'v03', 12], ['Antes (B2 v1)', 'b2', 14], ['Requisitos', 'n', 10], ['Requisitos MVP', 'nMvp', 10]]);
+for (const n of NECESIDADES) {
+  const rs = rows.filter((r) => r.necesidad === n.id);
+  wn.addRow({ ...n, n: rs.length, nMvp: rs.filter((r) => r.entrega === 'MVP').length }).alignment = { wrapText: true, vertical: 'top' };
 }
 
 // Benchmark
@@ -190,7 +211,10 @@ for (const r of rows) {
   stats.porPrio[r.prio] = (stats.porPrio[r.prio] || 0) + 1;
   stats.porEntrega[r.entrega] = (stats.porEntrega[r.entrega] || 0) + 1;
   stats.porEstado[r.estado] = (stats.porEstado[r.estado] || 0) + 1;
+  stats.porAlcance = stats.porAlcance || {};
+  stats.porAlcance[r.alcance] = (stats.porAlcance[r.alcance] || 0) + 1;
 }
+stats.porNecesidad = Object.fromEntries(NECESIDADES.map((n) => [n.id, rows.filter((r) => r.necesidad === n.id).length]));
 stats.diferenciales = rows.filter((r) => r.pos === 'Diferencial' || r.pos === 'Mejora').map((r) => `${r.id} · ${r.texto}`);
 stats.bfSinVerificar = Object.values(BF).filter((b) => COMP.every((c) => !b.vals[c])).map((b) => `${b.id} ${b.nombre}`);
 stats.compVerif = Object.fromEntries(COMP.map((c) => [c, Object.values(BF).filter((b) => b.vals[c]).length]));
