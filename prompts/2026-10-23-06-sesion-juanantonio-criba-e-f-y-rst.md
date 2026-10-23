@@ -233,6 +233,12 @@ y donde la subo
 
 **Resultado:** se le indicó el camino en Asana: [Food4All] Hito 2 → [B6] Matriz de trazabilidad, línea base y entrega → «Revisión cruzada: comparativo y personas» → comentarios.
 
+### Hora no registrada (después de las 21:51)
+
+revisa asna y el git
+
+**Resultado:** el Asana de clase sigue sin estar conectado a esta sesión. En git, Sebastián unió a `main` sus revisiones críticas (PR #4 y #5), pero no hay ningún PR de `docs/juanantonio-hito2`: sus últimos commits (revisión crítica incluida) no están en `main`. No chocan con `main`.
+
 ---
 
 ## Revisión crítica del equipo
