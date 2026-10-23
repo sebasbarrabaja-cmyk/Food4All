@@ -122,3 +122,9 @@ Christina ya ha terminado, sigue con sus resultados
 Tienes instrucciones de mel. a)
 
 **Resultado:** «Tienes instrucciones de mel.» es el mensaje que Sebastián envió a Christina; se registró en `2026-10-23-04-recorridos-competencia-christina.md`, junto con el guion que ella siguió. M-01, opción a: nuevo RF-07.3-09 (Should · V2, el cliente elige «Sustituir por uno parecido» o «No servir» al pagar); RF-07.3-04 solo pregunta si no eligió; nueva fila en la tabla de estados de la línea. Se regeneró con `npm run todo` (7,6 s, sin errores): 560 requisitos. Anotado como C-14.
+
+### 16:45 (aprox.)
+
+1a 2c 3a
+
+**Resultado:** M-02 aplicada. Nuevos RF-08.4-06 (aviso de retraso del reparto con nueva hora u otra franja), RF-08.2-05 y RF-08.2-06 (si un vendedor llega tarde al hub, el cliente elige esperar o recibir lo demás; sin respuesta se entrega lo demás); los tres Must · MVP. Se actualizaron las fichas de RF-08.2 y RF-08.4 y las reglas de `FOOD4ALL_estados_pedido.md`; la compensación queda pendiente (D-02). Se regeneró: 563 requisitos, 403 en el MVP. Anotado como C-15.

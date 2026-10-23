@@ -61,7 +61,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 ## 5. Lo decidido hasta hoy (23/10)
 
-- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 560 requisitos (MVP 400, de ellos 38 simulados), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
+- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 563 requisitos (MVP 403, de ellos 38 simulados), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
 - **Orden de lo imprescindible** (Product Owner, C-13, pendiente del visto bueno del equipo): **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado), que van ligados; **3) el asistente de IA**, importante pero detrás. En las entrevistas, la confianza en la IA es baja (N-IA-01 «No confirmada»).
 - **Regla de prioridad:** Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio.
 - **Una entrevista en contra no cambia un requisito:** se registra como riesgo. Si 3 o más lo contradicen, se reabre con un registro de cambio.
@@ -91,5 +91,5 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 - **Esta rama (`docs/hito2-entrega`)** tiene todo el Hito 2. Las mejoras de la landing hechas en WSL todavía no están unidas: contraste AA, tema oscuro, límites del formulario y del login, fecha de los prompts y buscador del panel. Se unirán desde las ramas `fix/*` de Sebastián, y al hacerlo se renumeran dos prompts repetidos del 19/10 y el 20/10.
 - **Pendiente de Sebastián:** comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y los recorridos por la competencia con capturas (en curso).
-- **Logística (pendiente):** entrega que llega tarde al cliente, vendedor que falla y cómo se unen los carritos de varios vendedores. Lo que ya está cubierto y lo que falta está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
+- **Logística:** retrasos del reparto y del vendedor, cubiertos el 23/10 (C-15: RF-08.2-05, RF-08.2-06 y RF-08.4-06). Queda la compensación por retraso. Las mejoras de los recorridos por la competencia (M-01 a M-08) se revisan una a una: `docs/competencia/FOOD4ALL_recorridos_competencia.md`.
 - **Abierto en el Hito 2:** aprobar la criba, validar las RST, las entrevistas del resto del equipo, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.

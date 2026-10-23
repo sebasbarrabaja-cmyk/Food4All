@@ -147,7 +147,7 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
 | N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
-| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
+| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 36 (30) |
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
@@ -1146,7 +1146,7 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 | N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
 | N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
-| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
+| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 36 (30) |
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
@@ -2024,6 +2024,12 @@ stateDiagram-v2
 
 **Regla de cálculo (RF-09.1-02):** el estado global es el del subpedido activo más atrasado hasta que todos llegan al hub. Los subpedidos cancelados o no servibles no cuentan. Los seis estados centrales están decididos; Pago rechazado, Entrega fallida y Cancelado son propuestas (Pendiente).
 
+**Retrasos** (23/10/2026, mejora M-02 de los recorridos por la competencia):
+
+- **El reparto no llegará dentro de la franja:** el operador marca «Retraso» y el cliente recibe un aviso antes de que acabe la franja, con la nueva hora estimada. Puede mantenerla o elegir otra franja sin coste (RF-08.4-06).
+- **Un vendedor llega tarde al hub:** si su subpedido no ha llegado a la hora de empaquetar, el cliente elige «Esperar y recibirlo todo en la siguiente franja» o «Recibir ahora lo demás» (RF-08.2-05). Si no responde antes del inicio de la franja, se entrega lo demás y ese grupo se excluye con su reembolso de prueba, con el motivo «llegó tarde al hub» (RF-08.2-06). Con «Esperar», el pedido entero pasa a la siguiente franja libre.
+- **Compensación:** no hay en el MVP. Depende de la comisión y del coste del envío (D-02).
+
 ### 4. Subpedido (lo que ve cada vendedor)
 
 ```mermaid
@@ -2083,7 +2089,7 @@ Si el vendedor no confirma dentro del plazo, el subpedido sigue «Nuevo», el ad
 
 **Total del pedido** = pago de prueba − suma de reembolsos de prueba. Es lo que muestran el seguimiento (RF-09.2) y «Mis pedidos» (RF-09.4).
 
-**Motivos de reembolso:** falta (vendedor), sustituto sin aceptación (V2), grupo no servible, retirada en el hub, cancelación del cliente, incidencia aprobada y envío (si se cancelan todos los grupos).
+**Motivos de reembolso:** falta (vendedor), sustituto sin aceptación (V2), grupo no servible, retirada en el hub, grupo que llegó tarde al hub, cancelación del cliente, incidencia aprobada y envío (si se cancelan todos los grupos).
 
 **Con pagos reales (V3)** el registro de reembolso daría lugar a una devolución al medio de pago original en un máximo de 5 días hábiles (RF-10.2-02). Eso depende de una pasarela que hoy no existe y queda fuera del Hito 2.
 
@@ -2123,7 +2129,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-PLA-01** Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Indicio | F-01, F-02, F-07 (E3, E4) | RF-04, RF-05, RF-06, RF-09, RF-12, RF-15 | 13 | US-08, US-14, US-19 | 21 (12) | — |
 | **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Indicio | F-01, F-07 (E4; E1 comparativo) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-12, RF-14, RF-15 | 14 | US-08, US-19 | 20 (5) | — |
 | **N-CAR-01** Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-12, RF-13, RF-15, RNF-03, RNF-04, RNF-05, RNF-06, RNF-07, RNF-10 | 44 | US-01, US-04, US-05, US-14 | 162 (137) | — |
-| **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 16 | US-06, US-12 | 33 (27) | — |
+| **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 17 | US-06, US-12 | 36 (30) | — |
 | **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
 | **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | No confirmada | F-02, F-07 (en contra: E3, E4) | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
@@ -2236,9 +2242,9 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-14.1** Suscripción opcional | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.1-01 … RF-14.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-14.2** Gestión de la suscripción | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.2-01 … RF-14.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-08.1** Ruta de recogida | N-HUB-01 | F-06, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.1-01 … RF-08.1-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-HUB-02 | F-03, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.3** Empaquetado consolidado | N-ENT-01, N-CAT-02, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.3-01 … RF-08.3-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-05 (5) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Should · V2 | V2 | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-06, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.7** Entrega al cliente | N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.7-01 … RF-08.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
@@ -2277,7 +2283,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 ### 3. Controles
 
-- Requisitos sin necesidad: **0** de 560.
+- Requisitos sin necesidad: **0** de 563.
 - Procesos RF sin historia: **ninguno**.
 - Subrequisitos: 127 (105 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
@@ -11563,7 +11569,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 
 **Necesidades que cubre (nº de requisitos)**
 
-- N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (8)
+- N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (11)
 - N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» (5)
 - N-HUB-02 Mantener la cadena de frío y separar frío y seco (4)
 - N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar (4)
@@ -11580,16 +11586,16 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 **Subrequisitos (uno por subtarea)**
 
 - RF-08.1 · Ruta de recogida (3) · Must · MVP
-- RF-08.2 · Recepción y verificación en el hub (4) · Must · MVP
+- RF-08.2 · Recepción y verificación en el hub (6) · Must · MVP
 - RF-08.3 · Empaquetado consolidado (4) · Must · MVP
-- RF-08.4 · Reparto y entrega (5) · Must · MVP
+- RF-08.4 · Reparto y entrega (6) · Must · MVP
 - RF-08.5 · Retirada y excedentes (2) · Should · V2
 - RF-08.6 · Aplicación del operador (4) · Should · V2
 - RF-08.7 · Entrega al cliente (4) · Must · MVP
 
 **Competencia**
 
-26 requisitos atómicos · Poco extendido 13 · Paridad 12 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-08.
+29 requisitos atómicos · Poco extendido 13 · Paridad 12 · Mejora 4. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-08.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -11706,9 +11712,10 @@ Recepción en el hub y verificación línea a línea de cada subpedido antes de 
 **2. Origen**
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
+- Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-05, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -11748,6 +11755,7 @@ No tiene campos de entrada.
 
 - Línea que no coincide con lo pedido: se marca y se avisa al admin.
 - Verificación terminada con líneas sin revisar: no se permite.
+- Subpedido que no ha llegado a la hora de empaquetar: se marca «No ha llegado» y el cliente elige esperar a la siguiente franja o recibir lo demás (RF-08.2-05); sin respuesta al empezar la franja, se entrega lo demás (RF-08.2-06).
 
 **11. Reglas de negocio y seguridad**
 
@@ -11769,21 +11777,21 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-09 Traz
 
 **15. Competencia**
 
-Poco extendido 2 · Mejora 1 · Paridad 1
+Mejora 3 · Poco extendido 2 · Paridad 1
 
 - Mercadona online: 0 sí
 - Glovo: 0 sí
 - Too Good To Go: 0 sí
-- Wetaca: 2 sí
-- Market Wagon: 3 sí, 1 no
-- Open Food Network: 2 sí
-- Diferenciales y mejoras: RF-08.2-02 (Mejora)
+- Wetaca: 4 sí
+- Market Wagon: 5 sí, 1 no
+- Open Food Network: 4 sí
+- Diferenciales y mejoras: RF-08.2-02 (Mejora), RF-08.2-05 (Mejora), RF-08.2-06 (Mejora)
 
 **16. Fuera de alcance**
 
 Control de temperatura automatizado.
 
-**Requisitos atómicos (4)**
+**Requisitos atómicos (6)**
 
 - [ ] **RF-08.2-01** `Must·MVP·Pendiente` Registrar la llegada de cada subpedido al hub con hora y responsable. _(N-HUB-03)_
   - Criterio: Dado un subpedido recibido, cuando se registra, entonces su estado pasa a «En el hub».
@@ -11797,6 +11805,12 @@ Control de temperatura automatizado.
 - [ ] **RF-08.2-04** `Should·V2·Pendiente` Registrar la temperatura de la cámara de frío al recibir refrigerados. _(N-HUB-02)_
   - Criterio: Dada una temperatura de 6 °C, cuando se registra, entonces salta una alerta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open ? → Poco extendido
+- [ ] **RF-08.2-05** `Must·MVP·Pendiente` Si un subpedido no ha llegado al hub a la hora de empaquetar su franja, avisar al cliente y dejarle elegir: «Esperar y recibirlo todo en la siguiente franja» o «Recibir ahora lo demás» (ese grupo se excluye con su reembolso de prueba). _(N-ENT-01)_
+  - Criterio: Dado un pedido de dos vendedores con uno sin llegar al hub a la hora de empaquetar, cuando el operador lo marca «No ha llegado», entonces el cliente recibe el aviso con las dos opciones.
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Mejora
+- [ ] **RF-08.2-06** `Must·MVP·Pendiente` Si el cliente no responde al aviso antes del inicio de la franja, entregar lo demás a tiempo y excluir el grupo que falta con su reembolso de prueba y el motivo «llegó tarde al hub»; con «Esperar», el pedido entero pasa a la siguiente franja libre. _(N-ENT-01)_
+  - Criterio: Dado el aviso sin respuesta al empezar la franja, cuando se empaqueta, entonces sale el pedido sin ese grupo, el total simulado baja una sola vez y el registro muestra «llegó tarde al hub».
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -11961,12 +11975,14 @@ Panel interno (vendedor, operador o admin): fondo --bg #F6F1E6, contenido en tar
 **10. Flujos alternativos y errores**
 
 - Segunda entrega fallida: devolución al hub (V2, RF-08.4-04).
+- El reparto no llegará dentro de la franja: el operador marca «Retraso» y el cliente recibe, antes de que termine, la nueva hora estimada, y puede mantenerla o elegir otra franja sin coste (RF-08.4-06).
 
 **11. Reglas de negocio y seguridad**
 
 - Entrega en la franja elegida (Hipótesis, H-02).
 - Modelo laboral de la última milla pendiente (Pendiente, Ley 12/2021).
 - Puntos de recogida, V3.
+- Sin compensación por retraso en el MVP: depende de la comisión y del coste del envío (D-02, Pendiente).
 
 **12. Accesibilidad**
 
@@ -11982,20 +11998,21 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-09 Traz
 
 **15. Competencia**
 
-Paridad 4 · Poco extendido 1
+Paridad 4 · Poco extendido 1 · Mejora 1
 
-- Mercadona online: 3 sí
-- Glovo: 4 sí
-- Too Good To Go: 3 sí, 1 no
-- Wetaca: 3 sí
-- Market Wagon: 5 sí
-- Open Food Network: 3 sí, 1 parcial
+- Mercadona online: 4 sí
+- Glovo: 5 sí
+- Too Good To Go: 4 sí, 1 no
+- Wetaca: 4 sí
+- Market Wagon: 6 sí
+- Open Food Network: 4 sí, 1 parcial
+- Diferenciales y mejoras: RF-08.4-06 (Mejora)
 
 **16. Fuera de alcance**
 
 Mapa en tiempo real (V3).
 
-**Requisitos atómicos (5)**
+**Requisitos atómicos (6)**
 
 - [ ] **RF-08.4-01** `Must·MVP·Pendiente` Asignar los pedidos empaquetados a rutas de reparto por franja. _(N-ENT-01)_
   - Criterio: Dada la franja 18–20 h, cuando se asigna, entonces todos sus pedidos están en una ruta.
@@ -12012,6 +12029,9 @@ Mapa en tiempo real (V3).
 - [ ] **RF-08.4-05** `Could·V3·Pendiente` Ofrecer recogida en un punto de la zona sin coste de envío. _(N-PLA-02)_
   - Criterio: Dada la opción «Recoger en punto», cuando la elige, entonces el envío es 0 €.
   - Competencia: Mercadona ? · Glovo S · Too S · Wetaca ? · Market S · Open S → Paridad
+- [ ] **RF-08.4-06** `Must·MVP·Pendiente` Si el reparto no va a llegar dentro de la franja, avisar al cliente antes de que termine, con la nueva hora estimada, y dejarle mantenerla o elegir otra franja sin coste. _(N-ENT-01)_
+  - Criterio: Dada una franja de 18 a 20 h y una llegada estimada a las 20:30, cuando el operador marca «Retraso», entonces el cliente recibe el aviso antes de las 20:00 y puede elegir otra franja.
+  - Competencia: Mercadona S · Glovo S · Too S · Wetaca S · Market S · Open S → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

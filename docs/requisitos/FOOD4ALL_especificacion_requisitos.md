@@ -147,7 +147,7 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
 | N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
-| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
+| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 36 (30) |
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |

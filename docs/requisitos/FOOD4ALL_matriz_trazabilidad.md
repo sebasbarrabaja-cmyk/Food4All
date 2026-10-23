@@ -13,7 +13,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-PLA-01** Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Indicio | F-01, F-02, F-07 (E3, E4) | RF-04, RF-05, RF-06, RF-09, RF-12, RF-15 | 13 | US-08, US-14, US-19 | 21 (12) | — |
 | **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Indicio | F-01, F-07 (E4; E1 comparativo) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-12, RF-14, RF-15 | 14 | US-08, US-19 | 20 (5) | — |
 | **N-CAR-01** Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-12, RF-13, RF-15, RNF-03, RNF-04, RNF-05, RNF-06, RNF-07, RNF-10 | 44 | US-01, US-04, US-05, US-14 | 162 (137) | — |
-| **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 16 | US-06, US-12 | 33 (27) | — |
+| **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 17 | US-06, US-12 | 36 (30) | — |
 | **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
 | **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | No confirmada | F-02, F-07 (en contra: E3, E4) | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
@@ -126,9 +126,9 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-14.1** Suscripción opcional | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.1-01 … RF-14.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-14.2** Gestión de la suscripción | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.2-01 … RF-14.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-08.1** Ruta de recogida | N-HUB-01 | F-06, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.1-01 … RF-08.1-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-HUB-02 | F-03, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.3** Empaquetado consolidado | N-ENT-01, N-CAT-02, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.3-01 … RF-08.3-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-05 (5) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Should · V2 | V2 | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-06, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.7** Entrega al cliente | N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.7-01 … RF-08.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
@@ -167,7 +167,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 ## 3. Controles
 
-- Requisitos sin necesidad: **0** de 560.
+- Requisitos sin necesidad: **0** de 563.
 - Procesos RF sin historia: **ninguno**.
 - Subrequisitos: 127 (105 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.

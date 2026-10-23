@@ -60,6 +60,12 @@ stateDiagram-v2
 
 **Regla de cálculo (RF-09.1-02):** el estado global es el del subpedido activo más atrasado hasta que todos llegan al hub. Los subpedidos cancelados o no servibles no cuentan. Los seis estados centrales están decididos; Pago rechazado, Entrega fallida y Cancelado son propuestas (Pendiente).
 
+**Retrasos** (23/10/2026, mejora M-02 de los recorridos por la competencia):
+
+- **El reparto no llegará dentro de la franja:** el operador marca «Retraso» y el cliente recibe un aviso antes de que acabe la franja, con la nueva hora estimada. Puede mantenerla o elegir otra franja sin coste (RF-08.4-06).
+- **Un vendedor llega tarde al hub:** si su subpedido no ha llegado a la hora de empaquetar, el cliente elige «Esperar y recibirlo todo en la siguiente franja» o «Recibir ahora lo demás» (RF-08.2-05). Si no responde antes del inicio de la franja, se entrega lo demás y ese grupo se excluye con su reembolso de prueba, con el motivo «llegó tarde al hub» (RF-08.2-06). Con «Esperar», el pedido entero pasa a la siguiente franja libre.
+- **Compensación:** no hay en el MVP. Depende de la comisión y del coste del envío (D-02).
+
 ## 4. Subpedido (lo que ve cada vendedor)
 
 ```mermaid
@@ -119,7 +125,7 @@ Si el vendedor no confirma dentro del plazo, el subpedido sigue «Nuevo», el ad
 
 **Total del pedido** = pago de prueba − suma de reembolsos de prueba. Es lo que muestran el seguimiento (RF-09.2) y «Mis pedidos» (RF-09.4).
 
-**Motivos de reembolso:** falta (vendedor), sustituto sin aceptación (V2), grupo no servible, retirada en el hub, cancelación del cliente, incidencia aprobada y envío (si se cancelan todos los grupos).
+**Motivos de reembolso:** falta (vendedor), sustituto sin aceptación (V2), grupo no servible, retirada en el hub, grupo que llegó tarde al hub, cancelación del cliente, incidencia aprobada y envío (si se cancelan todos los grupos).
 
 **Con pagos reales (V3)** el registro de reembolso daría lugar a una devolución al medio de pago original en un máximo de 5 días hábiles (RF-10.2-02). Eso depende de una pasarela que hoy no existe y queda fuera del Hito 2.
 

@@ -15,13 +15,13 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | Proceso | Requisitos | En el MVP | Aplazados (V2/V3) |
 | --- | --- | --- | --- |
 | RF-05 Carrito · RF-06 Checkout · RF-07 Subpedidos | 92 | 78 | 14 |
-| RF-08 Hub y entrega | 26 | 13 | 13 |
+| RF-08 Hub y entrega | 29 | 16 | 13 |
 | RF-12 Asistente de IA | 30 | 24 (simulado, ninguno Must) | 6 |
 | RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 0 | 40 |
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
-| **Total** | **560** | **400** (38 simulados) | **156** + 4 excluidos |
+| **Total** | **563** | **403** (38 simulados) | **156** + 4 excluidos |
 
 Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). Son solo las de Sebastián: faltan las del resto del equipo.
 - **Precio y producto:** E4 compraría directamente al productor si percibe «mayor calidad, un precio favorable y una cantidad adecuada». A E2 le atraen los productos «locales, menos procesados y más baratos».
@@ -83,12 +83,12 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 
 ## D · Hub y entrega con la mitad aplazada (RF-08) · Sebastián
 
-**Decisión propuesta:** RF-08 es Must, pero solo 13 de sus 26 requisitos entran en el MVP. El modelo de hub (D-03) no está decidido, y los requisitos afectados llevan un valor provisional.
+**Decisión propuesta:** RF-08 es Must, pero solo 16 de sus 29 requisitos entran en el MVP (13 de 26 antes de los 3 de retrasos de C-15). El modelo de hub (D-03) no está decidido, y los requisitos afectados llevan un valor provisional.
 
 **Qué pidió el profesor:** «no es incoherente modelar el comportamiento antes de cerrarlo, pero debe marcarse como supuesto del piloto» (valoración, apartado 3). En la Clase 5, el ejemplo de marketplace excluye «integración de rutas, gestión de frío, stock en tiempo real».
 
 **Preguntas:**
-1. ¿Qué criterio separó los 13 requisitos del hub que entran de los 13 que se aplazan?
+1. ¿Qué criterio separó los requisitos del hub que entran de los 13 que se aplazan?
 2. Si el hub no está decidido, ¿por qué se modela ya? ¿Qué cambia si al final no hay hub (por ejemplo, con puntos de recogida)?
 3. H-02 supone que el estudiante acepta esperar a una entrega en una franja. ¿Qué requisitos caen si resulta falsa?
 
