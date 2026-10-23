@@ -8,14 +8,13 @@
 // Uso: node actualizar_asana.js                    en seco: no escribe; deja el HTML en ./html_previo_v04 y lista los cambios
 //      node actualizar_asana.js --si               aplica los cambios de descripción y crea las historias nuevas
 //      node actualizar_asana.js --si --adjuntos    además adjunta los documentos (.md) en sus tareas
-//      node actualizar_asana.js --si --comentar-criba   además deja en «Criba de requisitos» la propuesta para aprobar
+// Nunca publica comentarios en Asana (regla del proyecto desde el 23/10/2026): los comentarios los escribe el equipo.
 const fs = require('fs');
 const path = require('path');
 const { cliente, html, bloqueMd, bienFormado } = require('./asana_html');
 
 const aplicar = process.argv.includes('--si');
 const conAdjuntos = process.argv.includes('--adjuntos');
-const comentarCriba = process.argv.includes('--comentar-criba');
 const { asana, adjuntar, env } = cliente();
 const { b4, b5 } = JSON.parse(fs.readFileSync(path.join(__dirname, 'asana_tareas.json'), 'utf8'));
 const COPIA = path.join(__dirname, 'asana_copia_hito2_v04_antes.json');
@@ -141,10 +140,6 @@ const F = 'name,html_notes,completed';
       if (!ya.some((a) => a.name === f)) plan.push({ tipo: 'adjuntar', gid: t.gid, nombre: `${f} → ${t.name}`, fichero: path.join(DOCS, f) });
     }
   }
-  if (comentarCriba) {
-    const texto = fs.readFileSync(path.join(DOCS, 'FOOD4ALL_correcciones_hito2.md'), 'utf8').split('## 4. Propuesta de criba (para aprobar)')[1].split('\n## ')[0].trim();
-    plan.push({ tipo: 'comentar', gid: destinos['Criba de requisitos'].gid, nombre: 'Criba de requisitos', html: `<body><strong>Propuesta de criba v0.4 (22/10/2026), pendiente de aprobación del equipo</strong>\n${bloqueMd(texto)}</body>` });
-  }
 
   const cuenta = plan.reduce((c, p) => ({ ...c, [p.tipo]: (c[p.tipo] || 0) + 1 }), {});
   console.log(`Hito: ${hito.name}`);
@@ -169,7 +164,6 @@ const F = 'name,html_notes,completed';
     if (p.tipo === 'actualizar' || p.tipo === 'prefacio') await asana('PUT', `/tasks/${p.gid}`, { name: p.nombre, html_notes: p.notas });
     else if (p.tipo === 'crear') await asana('POST', `/tasks/${p.padre}/subtasks`, { name: p.nombre, html_notes: p.notas });
     else if (p.tipo === 'adjuntar') await adjuntar(p.gid, p.fichero);
-    else if (p.tipo === 'comentar') await asana('POST', `/tasks/${p.gid}/stories`, { html_text: p.html });
     if (++n % 20 === 0) console.log(`${n} de ${plan.length}…`);
   }
   // Las subtareas nuevas aparecen arriba: se deja el backlog en el orden de la especificación

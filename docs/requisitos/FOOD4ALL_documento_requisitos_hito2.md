@@ -92,7 +92,7 @@ FOOD4ALL permite a un estudiante que vive fuera de casa comprar a varios vendedo
 
 **Alcance de este hito.** Marketplace local con cuatro actores (cliente, vendedor, operador del hub y administrador): catálogo, carrito multi-vendedor, pago único simulado, subpedidos, logística consolidada, seguimiento, incidencias y asistente de IA simulado. Quedan fuera los precios reales, la comisión, la ubicación del hub y los pagos reales (bloque 10).
 
-**Qué es evidencia y qué no.** Ninguna necesidad de usuario está todavía confirmada: las entrevistas F-07 y F-08 se registran el 23/10/2026. Hasta entonces, las necesidades son hipótesis apoyadas en documentación, o bien obligaciones legales. Las personas de B2 son arquetipos documentales, no usuarios observados. Los umbrales de los RNF indican si salen de una norma, de una referencia técnica, de una decisión o de una hipótesis, y se verificarán en el Sprint 5.
+**Qué es evidencia y qué no.** Ninguna necesidad de usuario está todavía confirmada. El 23/10/2026 se registraron las primeras 4 entrevistas a estudiantes (F-07), y solo 2 son del perfil objetivo. Con ellas, cinco necesidades pasan a «Indicio» y N-IA-01 queda «No confirmada» (`FOOD4ALL_necesidades.md`, apartado 5.1). Las demás siguen como hipótesis o como obligaciones legales. Faltan las entrevistas del resto del equipo, también las de vendedores (F-08), así que estos estados son provisionales. Las personas de B2 son arquetipos documentales, no usuarios observados. Los umbrales de los RNF indican si salen de una norma, de una referencia técnica, de una decisión o de una hipótesis, y se verificarán en el Sprint 5.
 
 **Entregables exigidos en Asana** y dónde se cubren:
 
@@ -128,7 +128,7 @@ Todo lo que viene después se apoya en estas fuentes: una necesidad sin fuente n
 | F-04 | Comparativo de 10 empresas del sector | Benchmark exploratorio: brecha del carrito multi-vendedor, pagos, incidencias. Fiabilidad baja: no cita fuentes | Juan Antonio | Hecho |
 | F-05 | Investigación de entrega a clientes | Franjas, zonas, entrega fallida | Miguel | En curso |
 | F-06 | Investigación de recogida a vendedores | Rutas, ventanas, paradas | Juan Antonio | En curso |
-| F-07 | Entrevistas a estudiantes (mínimo 5), códigos E1, E2… | Contrastar las necesidades del cliente | Miguel | Se registran el 23/10/2026 |
+| F-07 | Entrevistas a estudiantes (mínimo 5), códigos E1, E2… | Contrastar las necesidades del cliente | Miguel | E1–E4 registradas el 23/10/2026 (`FOOD4ALL_entrevistas_estudiantes.md`); faltan las del resto del equipo |
 | F-08 | Entrevistas a vendedores locales (mínimo 2–3), códigos V1, V2… | Contrastar las necesidades del vendedor | Juan Antonio | Se registran el 23/10/2026 |
 | F-09 | Borrador de 211 requisitos (`FOOD4ALL_requisitos.md`, 09/10/2026) | Lista de partida para la criba. Histórico: no es evidencia | Sebastián | Hecho |
 | F-10 | Benchmark de competidores (Anexo B y Excel) | Qué hace la competencia en cada requisito | Sebastián | Hecho |
@@ -144,14 +144,14 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 <!-- catalogo:inicio -->
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
-| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Hipótesis | F-01, F-02 | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Hipótesis | F-01 | 19 (5) |
-| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Hipótesis | F-04, F-10 | 162 (137) |
+| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
 | N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
-| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Hipótesis | F-01, F-03 | 8 (3) |
-| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | Hipótesis | F-02 | 10 (10) |
+| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
+| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Hipótesis | F-03 (Reglamento 178/2002), F-04 | 36 (14) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
@@ -356,7 +356,7 @@ Criterio 2 — Dado «Cancelar suscripción», cuando confirma, entonces no hay 
 | US-11 | Sí | Sí | Sí | Sí | Sí | Sí | Depende de la máquina de estados común (`FOOD4ALL_estados_pedido.md`) |
 | US-12 | Sí | Sí | Sí | Con supuesto (D-03, hub sin decidir) | Sí (8) | Sí | Si cambia el modelo de hub, se reestima |
 | US-06, US-07 | Sí | Sí | Sí | Sí | Sí | Sí | US-07 depende de H-04 (plazos) |
-| US-08 | Sí | Sí | Hipótesis (N-IA-01 sin validar) | Sí | Sí (8) | Sí | Valor por confirmar con las entrevistas |
+| US-08 | Sí | Sí | Dudoso (N-IA-01 no confirmada: E3 y E4 no confían en la IA) | Sí | Sí (8) | Sí | Se mantiene como Should y simulado. La compra no depende de ella |
 | US-13, US-16, US-17, US-18 | Sí | Sí | Sí | US-16 con supuesto (D-02) | Sí | Sí | — |
 | US-19 | Sí | Sí | Hipótesis | No hasta decidir precio y planes | Sí | Sí | Se reestima cuando se decida la suscripción |
 
@@ -1143,14 +1143,14 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 <!-- catalogo:inicio -->
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
-| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Hipótesis | F-01, F-02 | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Hipótesis | F-01 | 19 (5) |
-| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Hipótesis | F-04, F-10 | 162 (137) |
+| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
 | N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
-| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Hipótesis | F-01, F-03 | 8 (3) |
-| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | Hipótesis | F-02 | 10 (10) |
+| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
+| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Hipótesis | F-03 (Reglamento 178/2002), F-04 | 36 (14) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
@@ -1254,6 +1254,44 @@ Para cada necesidad de usuario: con qué pregunta del guion de B1 se contrasta y
 
 Las necesidades de tipo **Obligación legal** (N-IA-02, N-CAT-02, N-CAT-03, N-CUE-01, N-VEN-07 y N-HUB-02) no dependen de las entrevistas. Si un entrevistado no las menciona, no cambian.
 
+#### 5.1 Resultado de las entrevistas a estudiantes (F-07, 23/10/2026)
+
+Fuente: `FOOD4ALL_entrevistas_estudiantes.md`, con los apuntes de las 4 entrevistas de Sebastián (E1–E4). Faltan las del resto del equipo, así que **estos estados son provisionales** y se recalculan cuando estén. Son apuntes, no transcripciones.
+
+- **Perfil objetivo:** solo E3 y E4, que comparten piso.
+- **Perfiles comparativos:** E1 y E2 viven con su familia. Se anotan, pero no cuentan como apoyo ni como contradicción del perfil objetivo.
+
+**Ninguna necesidad pasa a «Confirmada».** No se cumplen tres de las cuatro condiciones:
+- hay 2 entrevistas del perfil objetivo, y hacen falta 3;
+- no hay citas literales;
+- no consta si las respuestas fueron a preguntas abiertas.
+
+| Necesidad | Apoyan (perfil objetivo) | En contra | Comparativos | Estado |
+| --- | --- | --- | --- | --- |
+| N-PLA-01 Planificar en vez de improvisar | E3 y E4: improvisan con lo que hay en la nevera; al principio les costaba decidir qué comer | — | E1 sabe qué preparar; a E2 le planifican sus padres | **Indicio** |
+| N-PLA-02 Controlar el gasto | E4: 40–60 €/semana y a veces se queda ajustado | — (E3 da su cifra, 30–50 €, pero no dice que sea un problema) | E1 va justo; E2 no tiene problema | **Indicio** |
+| N-CAR-01 Varios vendedores en una compra | E4: le interesa comprar directamente al productor si ve calidad, precio y cantidad. E3: le molesta salir a comprar lo que le falta | E3 **no usaría FOOD4ALL**. Rechaza el producto, no la necesidad, y es un riesgo para el núcleo | E2: le atraen los productos locales | **Indicio** |
+| N-ENT-01 Una entrega en una franja | — | — | E1: puntualidad y frescura | Hipótesis |
+| N-CAD-01 No tirar comida | E3 (se le estropean las verduras) y E4 (a veces desperdicia) | — | E1 y E2 dicen que no desperdician | **Indicio** |
+| N-IA-01 Asistente que simplifica | — | E3 y E4: poca o ninguna confianza en la IA | E1 la revisaría; E2 la pondría a prueba | **No confirmada** |
+| N-CAT-01 Confiar en origen y calidad | E4: la calidad es condición para comprar | — | E2: le preocupan la fiabilidad de una empresa nueva y la falta de opiniones; E1: frescura | **Indicio** |
+| N-INC-01 Solución si algo llega mal | — | — | — | Hipótesis |
+
+**Qué cambia en los requisitos.** Hay una sola entrevista de cada lado y dos que no la piden. Con tan poca evidencia, de momento no se cambia ningún requisito. Se proponen para la criba:
+- **RF-12 (asistente):** sigue como Should y «MVP simulado», fuera del núcleo. La cesta se puede revisar producto a producto (RF-12.3, quitar, cambiar u «Otra opción»), y la compra no necesita la IA.
+  - Propuesta: que la portada no la presente como la única forma de comprar.
+  - Si F-07 completa lo mantiene, se aplica lo previsto arriba: RF-12.1-03 se descarta y el asistente se queda en opciones guiadas.
+- **N-CAR-01:** el rechazo de E3 entra en la defensa como riesgo de valor (apartado 11.6 del contexto), no como dato que se esconde.
+- **Necesidades candidatas,** todavía fuera del catálogo hasta que el equipo las apruebe:
+  - descuentos u ofertas para animarse a probar (E3, E4; E1 comparativo);
+  - interfaz sencilla y rápida (E3, E4);
+  - métodos de pago sencillos (E1);
+  - descubrir productos distintos de los del supermercado (E2);
+  - tamaño y frecuencia del pedido distintos: compras pequeñas (E3) frente a grandes cada 1–2 semanas (E4). Afecta a la compra mínima.
+- **Conservación con gases:** queda como línea técnica pendiente (apartado 10 de las entrevistas). Nadie la pidió.
+
+Faltan las entrevistas del resto del equipo, de estudiantes (F-07) y de vendedores (F-08). Cuando lleguen, la tabla se rehace con todas. Conviene que incluyan citas literales y estudiantes que vivan fuera de casa.
+
 ### 6. Cómo registrar una entrevista
 
 Cada entrevista va como subtarea de «Historias de usuario» (instrucciones de Sebastián del 22/10/2026), con esta plantilla. No se guardan nombres, teléfonos ni nada que identifique a la persona (RGPD).
@@ -1274,6 +1312,285 @@ Conclusiones del entrevistador (separadas de lo que dijo): …
 ```
 
 Después, en «Resumen de hallazgos y lista de necesidades» de B1 se rellena la tabla «Qué dijeron | Qué significa | N-ID | Fuente», se cuentan las menciones de cada necesidad y se cambia su estado con la regla del apartado 1. Hay que cambiarlo en `benchmark/necesidades.js` y regenerar con `npm run asana`. Una necesidad nueva recibe el siguiente número libre de su módulo (por ejemplo, N-CAR-02).
+
+
+---
+
+## Anexo C2. Entrevistas a estudiantes (F-07, E1–E4)
+
+**Documento de trabajo** · Elaborado el 23/10/2026  
+**Base:** apuntes facilitados después de cuatro entrevistas. No son transcripciones literales.  
+**Propósito:** centralizar los datos, distinguir lo expresado por los entrevistados de las interpretaciones del equipo y proponer tres historias de usuario iniciales.
+
+---
+
+### 1. Resumen ejecutivo
+
+Se han recogido apuntes de **cuatro personas**: dos estudiantes que viven con familiares y dos que comparten piso de estudiantes. El público objetivo inicial de FOOD4ALL son los estudiantes que viven fuera del hogar familiar y se responsabilizan de comprar su comida; por ello, los dos perfiles que comparten piso son los más directamente relevantes. Los otros dos sirven como perfiles comparativos para explorar necesidades de consumidores cuya alimentación está organizada, total o parcialmente, por familiares.
+
+Las entrevistas son exploratorias y la muestra es pequeña. Permiten identificar temas e hipótesis, pero **no demuestran que las necesidades sean comunes a todos los estudiantes** ni que haya una intención de compra generalizada.
+
+#### Principales aprendizajes provisionales
+
+- **Compra y planificación:** los dos estudiantes que comparten piso improvisan las comidas a partir de lo que hay en la nevera, recurren a recetas de Internet y suelen repetir platos o productos conocidos.
+- **Hábitos de compra diferentes:** uno hace compras pequeñas y suele salir a comprar cuando le falta algo; el otro hace compras grandes cada una o dos semanas y, si le falta un ingrediente, cambia el plan o prepara algo más sencillo.
+- **Presupuesto:** uno declara gastar entre 30 y 50 € semanales; el otro, entre 40 y 60 € semanales y comenta que puede quedarse ajustado.
+- **Interés desigual en FOOD4ALL:** uno de los estudiantes que comparte piso dice que no utilizaría la propuesta. El otro se muestra interesado de forma condicionada, especialmente si la compra directa a productores se traduce en una percepción clara de calidad, cantidad y precio.
+- **Confianza en la IA:** los dos estudiantes que comparten piso manifiestan poca o ninguna confianza en las recomendaciones de IA. Conviene no hacer que la IA sea la única forma de utilizar el servicio y permitir revisar las propuestas.
+- **Confianza en una empresa nueva:** uno de los perfiles que vive con sus padres menciona como barrera la falta de fiabilidad percibida y de opiniones o valoraciones.
+- **Incentivos y experiencia:** los dos estudiantes que comparten piso mencionan descuentos, una interfaz sencilla y rápida, publicidad de productos/ofertas y la recomendación de alguien de confianza como factores que podrían favorecer el interés. Esto no anula el rechazo explícito de uno de ellos a utilizar FOOD4ALL.
+
+---
+
+### 2. Segmentos considerados
+
+#### Público objetivo inicial
+
+**Estudiantes que viven fuera del hogar familiar y gestionan su compra alimentaria**, en particular quienes comparten piso. Las dos entrevistas de estudiantes que comparten piso son las más relevantes para comprobar necesidades relacionadas con el presupuesto, la organización de comidas, las compras y la conveniencia de reunir productos de distintos vendedores en una sola compra.
+
+#### Perfiles comparativos
+
+**Estudiantes que viven con familiares**, donde el familiar paga, compra o planifica buena parte de la alimentación. Estos perfiles pueden ayudar a descubrir interés por productos locales, variedad, comodidad, confianza y métodos de pago, pero sus respuestas no deben presentarse automáticamente como evidencia de necesidades del segmento prioritario.
+
+---
+
+### 3. Entrevista 1 — Estudiante que vive con familiares y cocina por su cuenta
+
+#### Contexto y hábitos registrados
+
+- El estudiante cocina.
+- La comida la pagan su abuela o sus abuelas.
+- Suele comer prácticamente lo mismo cada semana.
+- Dice que sabe lo que quiere preparar.
+- Su elección combina la orientación de su entrenador personal con sus propias preferencias y apetencias.
+- Indica que va justo de dinero y menciona un máximo de 100 €, pero **no quedó concretado el periodo al que corresponde esa cantidad**.
+- Señala que no suele desperdiciar comida.
+- Cuando necesita resolver una comida, puede comprar algo preparado o utilizar lo que tenga disponible en casa.
+
+#### Opinión sobre FOOD4ALL y necesidades expresadas
+
+- Consideraría la solución como una opción si viviera de forma independiente; no expresó una intención clara de utilizarla en su situación actual.
+- Revisaría las recomendaciones de IA y considera que podría confiar en ellas porque conoce el tema de alimentación y podría contrastarlas.
+- Valora métodos de pago sencillos, como Apple Pay o Google Pay.
+- Menciona «plazos asequibles»; no quedó aclarado exactamente qué modalidad de pago tiene en mente.
+- Pide un catálogo amplio, ofertas y regularidad del servicio.
+- Sobre la entrega, destaca tanto la puntualidad/fiabilidad como que los productos lleguen frescos y en buen estado.
+
+#### Lectura provisional
+
+Este perfil no manifiesta una necesidad fuerte de ayuda para decidir qué comer, ya que conoce los platos que suele preparar. Su posible interés futuro se relaciona más con la comodidad de la compra, las ofertas, la facilidad de pago, la amplitud del catálogo y la fiabilidad de la entrega. Como su interés en FOOD4ALL depende de una futura independencia, debe tratarse como un perfil comparativo y no como validación directa del uso actual.
+
+---
+
+### 4. Entrevista 2 — Estudiante que vive con sus padres
+
+#### Contexto y hábitos registrados
+
+- Vive con sus padres, que se encargan de la mayor parte de la alimentación.
+- Sus padres organizan las comidas, excepto los desayunos y las meriendas.
+- No identifica dificultades actuales de organización, porque su familia gestiona esa parte.
+- La planificación de las comidas la hacen sus padres.
+- No identifica problemas de presupuesto.
+- Indica que no suele desperdiciar comida.
+- Cuando organiza sus propias comidas, planifica qué comer, compra los ingredientes y prepara platos sencillos, sin complicarse con recetas elaboradas.
+
+#### Opinión sobre FOOD4ALL y necesidades expresadas
+
+- Le llamaría la atención una plataforma si ofreciera productos locales, menos procesados y más baratos.
+- Le interesaría descubrir productos que aporten variedad a sus platos y que perciba como diferentes de los que encuentra normalmente en su supermercado habitual.
+- Pondría a prueba las recomendaciones de IA antes de confiar en ellas.
+- Le preocupa que, al ser una empresa nueva, pueda carecer de fiabilidad y de opiniones o valoraciones de otros usuarios.
+
+#### Lectura provisional
+
+No se detecta un problema actual de planificación, ya que sus padres se ocupan de esa tarea. El interés potencial se centra en el descubrimiento de productos, el origen, el grado de procesamiento, el precio y la confianza en la plataforma. Es un perfil comparativo que podría resultar más relevante si en el futuro gestionara su alimentación de forma independiente.
+
+---
+
+### 5. Entrevista 3 — Estudiante que comparte piso (Persona 1)
+
+#### Contexto y hábitos registrados
+
+- Comparte piso de estudiantes.
+- Recibe apoyo económico de sus padres.
+- Improvisa las comidas según lo que hay en la nevera.
+- Al principio le costaba saber qué comer; buscó recetas en Internet y fue construyendo un repertorio de platos conocidos y de confianza.
+- Suele comprar los mismos productos.
+- Mira qué le falta y hace la compra.
+- Declara un presupuesto alimentario de **30–50 € semanales**.
+- Hace compras pequeñas y controla lo que compra, aunque a veces se le estropean las verduras.
+- Cuando le falta un producto para cocinar, suele ir a comprarlo, aunque le resulta molesto.
+
+#### Opinión sobre FOOD4ALL y necesidades expresadas
+
+- Dice expresamente que **no utilizaría** la propuesta de FOOD4ALL.
+- Manifiesta poca o ninguna confianza en las recomendaciones de IA.
+- Menciona como posibles factores de interés general: códigos de descuento por una cantidad determinada, interfaz sencilla y rápida, publicidad de productos y ofertas dentro de la plataforma y recomendación de alguien de confianza.
+- Estos factores no deben interpretarse como aceptación de FOOD4ALL, porque su rechazo a utilizar la propuesta fue explícito.
+
+#### Lectura provisional
+
+Las necesidades potenciales se relacionan con reducir visitas imprevistas a la tienda y gestionar mejor lo que se compra, especialmente los productos que pueden estropearse. Sin embargo, este perfil sirve también para detectar una barrera importante: resolver una necesidad no implica que la persona quiera hacerlo mediante FOOD4ALL.
+
+---
+
+### 6. Entrevista 4 — Estudiante que comparte piso (Persona 2)
+
+#### Contexto y hábitos registrados
+
+- Comparte piso de estudiantes.
+- Recibe apoyo económico de sus padres.
+- Improvisa las comidas según lo que hay en la nevera.
+- Al principio le costaba decidir qué comer; consultó recetas en Internet y creó platos conocidos.
+- Suele comprar los mismos productos.
+- Revisa qué le falta antes de comprar.
+- Declara un presupuesto alimentario de **40–60 € semanales**. Puede quedarse ajustado y le gustaría dedicar más dinero a la alimentación.
+- Suele hacer compras grandes cada semana o cada dos semanas.
+- Cuando le falta un producto, improvisa: cambia el plan de comida o prepara algo más sencillo.
+- Indica que a veces desperdicia alimentos; no se anotó qué productos ni con qué frecuencia.
+
+#### Opinión sobre FOOD4ALL y necesidades expresadas
+
+- Se muestra interesado en una solución de compra directa al sector primario, condicionada a que transmita mayor calidad, un precio favorable y una cantidad adecuada de producto.
+- Manifiesta poca o ninguna confianza en las recomendaciones de IA y las pondría a prueba.
+- Menciona como posibles factores que podrían animarle a probar una plataforma: códigos de descuento, interfaz sencilla y rápida, publicidad de productos y ofertas dentro de la plataforma y recomendación de alguien de confianza.
+
+#### Lectura provisional
+
+Es el perfil del público objetivo que expresa el interés más claro, aunque condicionado. La propuesta tendría que demostrar el valor de la compra directa a productores, detallar con transparencia los precios y las cantidades, y generar confianza. Sus hábitos de compra grandes y menos frecuentes pueden no encajar con cualquier modelo de entrega; conviene validar qué frecuencia y tamaño de pedido le resultarían útiles.
+
+---
+
+### 7. Comparación transversal
+
+| Aspecto | Entrevista 1: vive con familiares | Entrevista 2: vive con sus padres | Entrevista 3: comparte piso | Entrevista 4: comparte piso |
+|---|---|---|---|---|
+| Quién organiza la comida | Cocina el propio estudiante; pagan sus abuelas | Principalmente sus padres | El estudiante se organiza | El estudiante se organiza |
+| Planificación | Conoce lo que quiere preparar; rutina repetida | Sus padres planifican la mayor parte | Improvisa según la nevera | Improvisa según la nevera |
+| Presupuesto | Máximo de 100 €, periodo no concretado | No identifica problema | 30–50 €/semana | 40–60 €/semana; a veces ajustado |
+| Compra | Sin frecuencia concreta registrada | Principalmente la familia | Compras pequeñas | Compras grandes cada 1–2 semanas |
+| Desperdicio | Dice que no suele desperdiciar | Dice que no | A veces se estropean verduras | A veces desperdicia; detalle no registrado |
+| Interés en FOOD4ALL | Condicional a independizarse | Interés condicionado a productos locales, menos procesados y baratos | Dice que no la usaría | Interés condicionado a calidad, precio y cantidad |
+| Confianza en IA | Revisaría las propuestas y podría confiar por su conocimiento | La pondría a prueba | Poca o ninguna | Poca o ninguna; la pondría a prueba |
+| Otros factores relevantes | Pago sencillo, ofertas, catálogo, entrega fiable y fresca | Descubrimiento, variedad y confianza/reputación | Descuento, sencillez, rapidez y recomendación; aun así rechaza la propuesta | Descuento, sencillez, rapidez y recomendación |
+
+---
+
+### 8. Tres historias de usuario propuestas
+
+Las historias siguientes son **propuestas iniciales** a partir de los apuntes, no funcionalidades ya aprobadas ni prueba de que todos los entrevistados aceptarían el producto. Las dos primeras están relacionadas con el segmento prioritario; la tercera procede de perfiles comparativos y debe tratarse como una oportunidad secundaria.
+
+#### HU-01 — Planificar la compra y reducir las visitas imprevistas
+
+**Segmento:** prioritario — estudiante que comparte piso.
+
+**Historia de usuario**  
+Como estudiante que comparte piso y suele comprar cuando detecta que le falta algún producto, quiero organizar una lista de compra para varios días y revisar alternativas si falta un ingrediente, para reducir visitas imprevistas a la tienda y resolver las comidas con menos esfuerzo.
+
+**Evidencia de las entrevistas**
+
+- La Persona 1 hace compras pequeñas y le molesta tener que ir a la tienda cuando le falta algo.
+- La Persona 2 hace compras grandes; cuando falta un ingrediente, cambia el plan o prepara algo más sencillo.
+- Ambos improvisan las comidas según lo que encuentran en la nevera y suelen repetir productos o platos conocidos.
+
+**Criterios de aceptación propuestos**
+
+1. El usuario puede crear y revisar una lista de productos antes de comprar.
+2. Puede consultar los productos, cantidades y precios incluidos en la cesta.
+3. Antes de confirmar el pedido, se muestra el total estimado de la compra y cualquier coste adicional aplicable.
+4. Si se sugieren sustituciones o alternativas, se explican con claridad y el usuario conserva la decisión final.
+5. La compra reúne en un único resumen los productos seleccionados de distintos vendedores, de acuerdo con la propuesta central de FOOD4ALL.
+
+**Validación pendiente:** la Persona 1 declaró que no utilizaría FOOD4ALL, por lo que esta historia representa una necesidad potencial, no aceptación de la plataforma. También debe validarse que planificar varios días sea preferible a las compras pequeñas o a la improvisación actual.
+
+#### HU-02 — Comprar productos locales con una buena relación calidad-precio
+
+**Segmento:** prioritario — estudiante que comparte piso.
+
+**Historia de usuario**  
+Como estudiante que comparte piso y tiene un presupuesto alimentario ajustado, quiero comparar productos de distintos productores locales viendo claramente su precio, cantidad y origen, para decidir si su calidad y coste justifican la compra sin perder el control de mi presupuesto.
+
+**Evidencia de las entrevistas**
+
+- La Persona 2 declara gastar entre 40 y 60 € semanales, a veces con el presupuesto ajustado, y le gustaría dedicar más dinero a la alimentación.
+- Muestra interés en comprar directamente al sector primario si percibe mayor calidad, un precio favorable y una cantidad adecuada.
+- La Persona 1 declara un presupuesto de 30–50 € semanales, aunque rechaza utilizar FOOD4ALL en su forma descrita.
+
+**Criterios de aceptación propuestos**
+
+1. La ficha del producto muestra el precio, la unidad o cantidad y la información disponible sobre su origen y vendedor.
+2. La plataforma permite explorar productos de distintos vendedores y categorías.
+3. La cesta muestra un importe total actualizado antes de confirmar la compra.
+4. La información permite evaluar la relación entre precio y cantidad sin afirmar que todos los productos son más baratos que en un supermercado.
+5. Los productos y vendedores se presentan con información verificable; las valoraciones solo se muestran si existen.
+
+**Validación pendiente:** no se ha demostrado que la compra directa sea siempre más barata ni que los estudiantes vayan a cambiar su hábito. Hace falta comparar precios y condiciones reales, y comprobar la disposición a comprar.
+
+#### HU-03 — Descubrir productos nuevos con información fiable y compra sencilla
+
+**Segmento:** comparativo / oportunidad secundaria — estudiante que vive con familiares y podría gestionar su propia compra en el futuro.
+
+**Historia de usuario**  
+Como consumidor interesado en ampliar las opciones para mis platos, quiero descubrir productos locales o menos procesados y consultar información clara sobre su precio, origen y vendedor, para valorar nuevas opciones de compra con confianza.
+
+**Evidencia de las entrevistas**
+
+- La persona de la Entrevista 2 manifiesta interés por productos locales, menos procesados, más económicos y diferentes de los que compra habitualmente.
+- También expresa preocupación por la fiabilidad de una empresa nueva y por la falta de opiniones o valoraciones.
+- La persona de la Entrevista 1 valora un catálogo amplio, ofertas, métodos de pago sencillos y una entrega puntual, fiable y en buen estado; su interés en FOOD4ALL depende de que viva de forma independiente.
+
+**Criterios de aceptación propuestos**
+
+1. El usuario puede explorar productos y descubrir opciones que no conoce.
+2. Las fichas muestran precio, vendedor y origen cuando estos datos estén disponibles y verificados.
+3. La plataforma comunica de forma transparente la información y las condiciones de entrega.
+4. Los métodos de pago disponibles se indican antes de confirmar el pedido.
+5. La plataforma no inventa valoraciones, testimonios ni indicadores de popularidad: la información de reputación solo aparece cuando se dispone de ella.
+
+**Prioridad:** secundaria. Ninguno de estos dos perfiles comparativos ha demostrado una necesidad actual fuerte de una plataforma de compra alimentaria; uno depende de independizarse y el otro tiene la organización resuelta por sus padres.
+
+---
+
+### 9. Implicaciones preliminares para el diseño de FOOD4ALL
+
+1. **No asumir que todo estudiante tiene el mismo problema.** Los perfiles que viven con familiares no experimentan necesariamente dificultades de compra o planificación.
+2. **Mostrar utilidad sin exigir confianza ciega en la IA.** En los dos estudiantes que comparten piso, la confianza en la IA es baja. Las propuestas deberían ser revisables, transparentes y opcionales, y el usuario debería conservar el control.
+3. **Demostrar el valor económico con información clara.** Mostrar precio, cantidad, origen y total de la cesta; no prometer que todos los productos serán más baratos.
+4. **Tratar la frescura y la fiabilidad de la entrega como requisitos por validar.** Aparecieron en el primer perfil comparativo, pero deben contrastarse con el público prioritario.
+5. **La confianza no se resuelve inventando prueba social.** La falta de valoraciones fue una preocupación explícita. Si no existen reseñas reales, debe comunicarse con honestidad y aportar otra información verificable sobre los vendedores y el servicio.
+6. **Los descuentos podrían incentivar la prueba, pero no garantizan uso recurrente.** Debe comprobarse si convierten el interés en una compra y si el usuario volvería a utilizar la plataforma.
+7. **La publicidad se refiere, según la aclaración recibida, a productos y ofertas dentro de la plataforma.** Si se incorpora, debe distinguirse claramente del contenido orgánico y de las recomendaciones de la IA.
+8. **La compra consolidada y el tamaño del pedido deben validarse con hábitos distintos.** Una persona hace compras pequeñas y la otra grandes cada una o dos semanas; una única frecuencia no debe darse por válida sin más evidencia.
+
+---
+
+### 10. Línea técnica aparte: conservación de alimentos
+
+En los apuntes se plantea investigar el uso de gases para mantener los productos frescos. Se registra como **línea de investigación técnica pendiente**, no como una necesidad expresada de forma directa por los entrevistados ni como una función decidida de FOOD4ALL.
+
+Antes de considerar una solución de envasado o atmósfera modificada habría que estudiar su adecuación a cada tipo de alimento y sus requisitos de conservación, además del control de temperatura, los tiempos de transporte, la seguridad alimentaria y los costes operativos. No debe asumirse que una mezcla de gases sirve para todos los productos ni que sustituye a la cadena de frío.
+
+---
+
+### 11. Datos pendientes o no registrados
+
+- **Entrevista 1:** el máximo de 100 € se refiere a «otro periodo», pero no se concretó cuál. No debe etiquetarse como semanal ni mensual.
+- **Entrevista 1:** no se registró qué entiende exactamente por «plazos asequibles» ni a qué modalidad de pago se refiere.
+- **Entrevista 2:** la respuesta sobre desayunos y meriendas se conoce; no hay información adicional sobre el coste o la frecuencia de compra de esos productos.
+- **Entrevista 3:** no se indicó con qué frecuencia exacta se estropean las verduras.
+- **Entrevista 4:** se sabe que a veces desperdicia, pero no qué productos, en qué cantidad ni con qué frecuencia.
+- **Entrevistas 3 y 4:** se conocen los presupuestos semanales aproximados, pero no el desglose por categorías o productos.
+- **Todas las entrevistas:** no se registraron fechas, edad, curso, ciudad, frecuencia exacta de compra en todos los casos ni citas literales completas.
+- **Interés de uso:** una declaración de interés no equivale a disposición a pagar. Salvo el rechazo explícito de la Persona 1 del piso, no se registró un compromiso de compra real ni una prueba del producto.
+- **Criterios de aceptación:** todos los incluidos en este documento son propuestas de trabajo derivadas de las historias, no compromisos ya aceptados por usuarios ni especificaciones finales.
+
+---
+
+### 12. Conclusión
+
+Las entrevistas exploratorias sugieren que, dentro del público prioritario que comparte piso, hay diferencias en la frecuencia de compra, la gestión de los ingredientes y la sensibilidad al presupuesto. La compra consolidada y los productos locales podrían resultar atractivos para algunos perfiles, pero todavía no se ha validado que la plataforma resuelva suficientemente sus problemas ni que cambien sus hábitos.
+
+Las tres historias de usuario propuestas separan dos oportunidades del segmento prioritario —organizar mejor la compra y valorar productos locales por su relación calidad-precio— de una oportunidad comparativa relacionada con el descubrimiento de productos y la confianza. El siguiente paso sería contrastar estas historias con más estudiantes que gestionen directamente su alimentación y, cuando sea posible, presentarles un flujo o prototipo para observar acciones y objeciones concretas.
 
 
 ---
@@ -1802,14 +2119,14 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 | Necesidad | Estado | Fuentes | Procesos | Subrequisitos | Historias | Requisitos (MVP) | Observación |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **N-PLA-01** Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Hipótesis | F-01, F-02 | RF-04, RF-05, RF-06, RF-09, RF-12, RF-15 | 13 | US-08, US-14, US-19 | 21 (12) | — |
-| **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Hipótesis | F-01 | RF-01, RF-03, RF-04, RF-05, RF-06, RF-08, RF-12, RF-14, RF-15 | 13 | US-08, US-19 | 19 (5) | — |
-| **N-CAR-01** Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Hipótesis | F-04, F-10 | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-12, RF-13, RF-15, RNF-03, RNF-04, RNF-05, RNF-06, RNF-07, RNF-10 | 44 | US-01, US-04, US-05, US-14 | 162 (137) | — |
+| **N-PLA-01** Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Indicio | F-01, F-02, F-07 (E3, E4) | RF-04, RF-05, RF-06, RF-09, RF-12, RF-15 | 13 | US-08, US-14, US-19 | 21 (12) | — |
+| **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Indicio | F-01, F-07 (E4; E1 comparativo) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-08, RF-12, RF-14, RF-15 | 13 | US-08, US-19 | 19 (5) | — |
+| **N-CAR-01** Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-12, RF-13, RF-15, RNF-03, RNF-04, RNF-05, RNF-06, RNF-07, RNF-10 | 44 | US-01, US-04, US-05, US-14 | 162 (137) | — |
 | **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 16 | US-06, US-12 | 33 (27) | — |
-| **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Hipótesis | F-01, F-03 | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
-| **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Hipótesis | F-02 | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
+| **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
+| **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | No confirmada | F-02, F-07 (en contra: E3, E4) | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
-| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Hipótesis | F-03 (Reglamento 178/2002), F-04 | RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 20 | US-03, US-10, US-13 | 36 (14) | — |
+| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 20 | US-03, US-10, US-13 | 36 (14) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
 | **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 25 | US-05 | 35 (18) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
@@ -1829,15 +2146,15 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 | Requisito | Necesidades | Fuentes de la necesidad | Historia | Prioridad · Entrega | Alcance | Depende de | Criterios de aceptación | RNF | Caso de uso (H3) | Clase (H4) | Prueba (H5) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **RF-01.1** Punto de entrada y pantalla de acceso | N-CAR-01, N-CUE-01, N-VEN-06 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | — | RF-01.1-01 … RF-01.1-12 (12) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.2** Inicio de sesión con correo y contraseña | N-CAR-01, N-CUE-01, N-VEN-07 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | — | RF-01.2-01 … RF-01.2-18 (18) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.3** Inicio de sesión con Google | N-CAR-01, N-CUE-01, N-VEN-07 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | Servicio externo: Google | RF-01.3-01 … RF-01.3-09 (9) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.4** Registro de cuenta de cliente | N-CAR-01, N-CUE-01 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | — | RF-01.4-01 … RF-01.4-11 (11) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.1** Punto de entrada y pantalla de acceso | N-CAR-01, N-CUE-01, N-VEN-06 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | — | RF-01.1-01 … RF-01.1-12 (12) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.2** Inicio de sesión con correo y contraseña | N-CAR-01, N-CUE-01, N-VEN-07 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | — | RF-01.2-01 … RF-01.2-18 (18) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.3** Inicio de sesión con Google | N-CAR-01, N-CUE-01, N-VEN-07 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | Servicio externo: Google | RF-01.3-01 … RF-01.3-09 (9) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.4** Registro de cuenta de cliente | N-CAR-01, N-CUE-01 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | — | RF-01.4-01 … RF-01.4-11 (11) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
 | **RF-01.5** Verificación del correo | N-CUE-01 | F-03 | US-01 | Must · MVP | MVP | Servicio externo: correo | RF-01.5-01 … RF-01.5-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.6** Recuperación de contraseña | N-CUE-01, N-CAR-01 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | Servicio externo: correo | RF-01.6-01 … RF-01.6-07 (7) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.7** Menú de usuario y cierre de sesión | N-CAR-01, N-CUE-01, N-VEN-02 | F-01, F-03, F-04, F-10 | US-01 | Must · MVP | MVP | — | RF-01.7-01 … RF-01.7-08 (8) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.8** Mis datos y direcciones | N-CAR-01, N-CUE-01 | F-03, F-04, F-10 | US-01 | Must · MVP | MVP | D-03 hub y zonas | RF-01.8-01 … RF-01.8-06 (6) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
-| **RF-01.9** Preferencias, dieta y alergias | N-CAT-02, N-CUE-01, N-PLA-02 | F-01, F-03 | US-01 | Must · MVP | MVP | — | RF-01.9-01 … RF-01.9-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.6** Recuperación de contraseña | N-CUE-01, N-CAR-01 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | Servicio externo: correo | RF-01.6-01 … RF-01.6-07 (7) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.7** Menú de usuario y cierre de sesión | N-CAR-01, N-CUE-01, N-VEN-02 | F-01, F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | — | RF-01.7-01 … RF-01.7-08 (8) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.8** Mis datos y direcciones | N-CAR-01, N-CUE-01 | F-03, F-04, F-07, F-10 | US-01 | Must · MVP | MVP | D-03 hub y zonas | RF-01.8-01 … RF-01.8-06 (6) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
+| **RF-01.9** Preferencias, dieta y alergias | N-CAT-02, N-CUE-01, N-PLA-02 | F-01, F-03, F-07 | US-01 | Must · MVP | MVP | — | RF-01.9-01 … RF-01.9-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
 | **RF-01.10** Privacidad y baja de la cuenta | N-CUE-01 | F-03 | US-01 | Must · MVP | MVP | — | RF-01.10-01 … RF-01.10-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06 | | | |
 | **RF-02.1** Página «Quiero vender» | N-VEN-06, N-VEN-01, N-VEN-05 | F-01, F-03, F-12 | US-02 | Must · MVP | MVP | D-02 comisión | RF-02.1-01 … RF-02.1-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-02.2** Formulario de solicitud | N-VEN-06, N-VEN-07, N-CUE-01 | F-03 | US-02 | Must · MVP | MVP | D-03 hub y zonas; Servicio externo: correo | RF-02.2-01 … RF-02.2-10 (10) | RNF-01, RNF-05, RNF-06 | | | |
@@ -1847,96 +2164,96 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-02.6** Datos del negocio y perfil público | N-VEN-01, N-VEN-05 | F-01, F-12 | US-02 | Should · MVP | MVP | — | RF-02.6-01 … RF-02.6-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-02.7** Diseño y comportamiento del formulario de alta | N-VEN-06 | F-03 | US-02 | Must · MVP | MVP | — | RF-02.7-01 … RF-02.7-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.1** Acceso | N-CUE-01 | F-03 | US-09 | Must · MVP | MVP | — | RF-13.1-01 … RF-13.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.2** Vendedores | N-VEN-07, N-CAT-01 | F-03, F-04 | US-09 | Must · MVP | MVP | — | RF-13.2-01 … RF-13.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.3** Catálogo, pedidos e incidencias | N-CAT-01, N-HUB-03, N-INC-01 | F-03, F-04, F-06, F-12 | US-09 | Must · MVP | MVP | H-04 plazos de incidencias | RF-13.3-01 … RF-13.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.4** Contenido, métricas y auditoría | N-CAT-01, N-CAR-01, N-CAT-03 | F-03, F-04, F-10 | US-09 | Should · V2 | V2 | — | RF-13.4-01 … RF-13.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.5** Usuarios y roles | N-CUE-01, N-CAT-01 | F-03, F-04 | US-09 | Must · MVP | MVP | — | RF-13.5-01 … RF-13.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.6** Configuración | N-ENT-01, N-CAT-01 | F-03, F-04, F-05 | US-09 | Must · MVP | MVP | D-03 hub y zonas; H-01 compra mínima | RF-13.6-01 … RF-13.6-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.7** Prompts del proyecto | N-CAR-01 | F-04, F-10 | US-09 | Won't · Excluido | Excluido | — | RF-13.7-01 … RF-13.7-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.1** Cabecera | N-CAR-01, N-PLA-01 | F-01, F-02, F-04, F-10 | US-14 | Must · MVP | MVP | — | RF-15.1-01 … RF-15.1-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.2** Portada | N-PLA-01, N-VEN-01, N-CAT-03, N-ENT-01 | F-01, F-02, F-03, F-04, F-05 | US-14 | Must · MVP | MVP | — | RF-15.2-01 … RF-15.2-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.3** Cómo funciona | N-PLA-01, N-ENT-01 | F-01, F-02, F-04, F-05 | US-14 | Must · MVP | MVP | — | RF-15.3-01 … RF-15.3-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.4** Quiénes somos y comparativa | N-CAR-01, N-CAT-03, N-ENT-01, N-PLA-01 | F-01, F-02, F-03, F-04, F-05, F-10 | US-14 | Must · MVP | MVP | — | RF-15.4-01 … RF-15.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.2** Vendedores | N-VEN-07, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | — | RF-13.2-01 … RF-13.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.3** Catálogo, pedidos e incidencias | N-CAT-01, N-HUB-03, N-INC-01 | F-03, F-04, F-06, F-07, F-12 | US-09 | Must · MVP | MVP | H-04 plazos de incidencias | RF-13.3-01 … RF-13.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.4** Contenido, métricas y auditoría | N-CAT-01, N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-09 | Should · V2 | V2 | — | RF-13.4-01 … RF-13.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.5** Usuarios y roles | N-CUE-01, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | — | RF-13.5-01 … RF-13.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.6** Configuración | N-ENT-01, N-CAT-01 | F-03, F-04, F-05, F-07 | US-09 | Must · MVP | MVP | D-03 hub y zonas; H-01 compra mínima | RF-13.6-01 … RF-13.6-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.7** Prompts del proyecto | N-CAR-01 | F-04, F-07, F-10 | US-09 | Won't · Excluido | Excluido | — | RF-13.7-01 … RF-13.7-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-15.1** Cabecera | N-CAR-01, N-PLA-01 | F-01, F-02, F-04, F-07, F-10 | US-14 | Must · MVP | MVP | — | RF-15.1-01 … RF-15.1-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-15.2** Portada | N-PLA-01, N-VEN-01, N-CAT-03, N-ENT-01 | F-01, F-02, F-03, F-04, F-05, F-07 | US-14 | Must · MVP | MVP | — | RF-15.2-01 … RF-15.2-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-15.3** Cómo funciona | N-PLA-01, N-ENT-01 | F-01, F-02, F-04, F-05, F-07 | US-14 | Must · MVP | MVP | — | RF-15.3-01 … RF-15.3-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-15.4** Quiénes somos y comparativa | N-CAR-01, N-CAT-03, N-ENT-01, N-PLA-01 | F-01, F-02, F-03, F-04, F-05, F-07, F-10 | US-14 | Must · MVP | MVP | — | RF-15.4-01 … RF-15.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-15.5** Preguntas frecuentes | N-INC-01 | F-04 | US-14 | Should · V2 | V2 | — | RF-15.5-01 … RF-15.5-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.6** Comunidad y redes | N-VEN-01, N-CAT-03, N-PLA-02 | F-01, F-03 | US-14 | Must · MVP | MVP | — | RF-15.6-01 … RF-15.6-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-15.7** Pie de página | N-CAT-03, N-CAR-01 | F-03, F-04, F-10 | US-14 | Must · MVP | MVP | — | RF-15.7-01 … RF-15.7-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-03.1** Alta de producto | N-CAT-01, N-VEN-02 | F-01, F-03, F-04 | US-10 | Must · MVP | MVP | — | RF-03.1-01 … RF-03.1-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-03.2** Información obligatoria | N-CAD-01, N-CAT-03, N-CAT-01, N-CAT-02, N-VEN-01 | F-01, F-03, F-04 | US-10 | Must · MVP | MVP | — | RF-03.2-01 … RF-03.2-07 (7) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-15.6** Comunidad y redes | N-VEN-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-07 | US-14 | Must · MVP | MVP | — | RF-15.6-01 … RF-15.6-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-15.7** Pie de página | N-CAT-03, N-CAR-01 | F-03, F-04, F-07, F-10 | US-14 | Must · MVP | MVP | — | RF-15.7-01 … RF-15.7-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-03.1** Alta de producto | N-CAT-01, N-VEN-02 | F-01, F-03, F-04, F-07 | US-10 | Must · MVP | MVP | — | RF-03.1-01 … RF-03.1-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-03.2** Información obligatoria | N-CAD-01, N-CAT-03, N-CAT-01, N-CAT-02, N-VEN-01 | F-01, F-03, F-04, F-07 | US-10 | Must · MVP | MVP | — | RF-03.2-01 … RF-03.2-07 (7) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
 | **RF-03.3** Alérgenos | N-CAT-02 | F-03 | US-10 | Must · MVP | MVP | — | RF-03.3-01 … RF-03.3-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-03.4** Fotos | N-CAR-01, N-CAT-01 | F-03, F-04, F-10 | US-10 | Must · MVP | MVP | — | RF-03.4-01 … RF-03.4-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-03.5** Precio | N-PLA-02, N-CAT-03, N-VEN-02 | F-01, F-03, F-04 | US-10 | Must · MVP | MVP | — | RF-03.5-01 … RF-03.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-03.4** Fotos | N-CAR-01, N-CAT-01 | F-03, F-04, F-07, F-10 | US-10 | Must · MVP | MVP | — | RF-03.4-01 … RF-03.4-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-03.5** Precio | N-PLA-02, N-CAT-03, N-VEN-02 | F-01, F-03, F-04, F-07 | US-10 | Must · MVP | MVP | — | RF-03.5-01 … RF-03.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
 | **RF-03.6** Stock y disponibilidad | N-VEN-02 | F-01, F-04 | US-10 | Must · MVP | MVP | — | RF-03.6-01 … RF-03.6-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-03.7** Edición, retirada y packs | N-VEN-02, N-PLA-02 | F-01, F-04 | US-10 | Must · MVP | MVP | — | RF-03.7-01 … RF-03.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-03.7** Edición, retirada y packs | N-VEN-02, N-PLA-02 | F-01, F-04, F-07 | US-10 | Must · MVP | MVP | — | RF-03.7-01 … RF-03.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
 | **RF-03.8** Promociones del vendedor | N-VEN-01 | F-01 | US-10 | Could · V2 | V2 | — | RF-03.8-01 … RF-03.8-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-03.9** Revisión antes de publicar | N-CAT-01, N-CAT-03 | F-03, F-04 | US-10 | Must · MVP | MVP | — | RF-03.9-01 … RF-03.9-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
-| **RF-04.1** Página de productos | N-CAR-01 | F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.1-01 … RF-04.1-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.2** Buscador | N-CAR-01 | F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.2-01 … RF-04.2-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.3** Filtros y orden | N-CAT-02, N-CAR-01, N-PLA-02 | F-01, F-03, F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.3-01 … RF-04.3-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.4** Tarjeta de producto | N-CAR-01, N-CAT-01 | F-03, F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.4-01 … RF-04.4-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.5** Ficha de producto | N-CAR-01, N-CAT-01, N-CAT-02, N-CAT-03, N-VEN-01 | F-01, F-03, F-04, F-10 | US-03 | Must · MVP | MVP | D-02 comisión | RF-04.5-01 … RF-04.5-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.6** Favoritos y habituales | N-PLA-01 | F-01, F-02 | US-03 | Should · V2 | V2 | — | RF-04.6-01 … RF-04.6-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.7** Zona y patrocinados | N-CAR-01, N-IA-02 | F-03, F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.7-01 … RF-04.7-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.8** Catálogo en móvil y estados | N-CAR-01 | F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.8-01 … RF-04.8-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-04.9** Etiquetas y avisos en la tarjeta | N-CAR-01, N-CAT-02, N-VEN-01, N-VEN-03 | F-01, F-03, F-04, F-10 | US-03 | Must · MVP | MVP | — | RF-04.9-01 … RF-04.9-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
-| **RF-12.1** Entrada | N-IA-01 | F-02 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.1-01 … RF-12.1-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-12.2** Generación de la cesta | N-PLA-01, N-CAR-01, N-CAT-02, N-PLA-02 | F-01, F-02, F-03, F-04, F-10 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.2-01 … RF-12.2-05 (5) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-12.3** Explicación y ajuste | N-IA-01, N-IA-02 | F-02, F-03 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.3-01 … RF-12.3-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-03.9** Revisión antes de publicar | N-CAT-01, N-CAT-03 | F-03, F-04, F-07 | US-10 | Must · MVP | MVP | — | RF-03.9-01 … RF-03.9-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09 | | | |
+| **RF-04.1** Página de productos | N-CAR-01 | F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.1-01 … RF-04.1-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.2** Buscador | N-CAR-01 | F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.2-01 … RF-04.2-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.3** Filtros y orden | N-CAT-02, N-CAR-01, N-PLA-02 | F-01, F-03, F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.3-01 … RF-04.3-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.4** Tarjeta de producto | N-CAR-01, N-CAT-01 | F-03, F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.4-01 … RF-04.4-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.5** Ficha de producto | N-CAR-01, N-CAT-01, N-CAT-02, N-CAT-03, N-VEN-01 | F-01, F-03, F-04, F-07, F-10 | US-03 | Must · MVP | MVP | D-02 comisión | RF-04.5-01 … RF-04.5-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.6** Favoritos y habituales | N-PLA-01 | F-01, F-02, F-07 | US-03 | Should · V2 | V2 | — | RF-04.6-01 … RF-04.6-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.7** Zona y patrocinados | N-CAR-01, N-IA-02 | F-03, F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.7-01 … RF-04.7-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.8** Catálogo en móvil y estados | N-CAR-01 | F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.8-01 … RF-04.8-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-04.9** Etiquetas y avisos en la tarjeta | N-CAR-01, N-CAT-02, N-VEN-01, N-VEN-03 | F-01, F-03, F-04, F-07, F-10 | US-03 | Must · MVP | MVP | — | RF-04.9-01 … RF-04.9-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06, RNF-08 | | | |
+| **RF-12.1** Entrada | N-IA-01 | F-02, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.1-01 … RF-12.1-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-12.2** Generación de la cesta | N-PLA-01, N-CAR-01, N-CAT-02, N-PLA-02 | F-01, F-02, F-03, F-04, F-07, F-10 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.2-01 … RF-12.2-05 (5) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-12.3** Explicación y ajuste | N-IA-01, N-IA-02 | F-02, F-03, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.3-01 … RF-12.3-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
 | **RF-12.4** Transparencia | N-IA-02 | F-03 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.4-01 … RF-12.4-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-12.5** Plan de comidas y después de comprar | N-PLA-01, N-CAD-01 | F-01, F-02, F-03 | US-08 | Should · V2 | V2 | Servicio externo: motor de IA | RF-12.5-01 … RF-12.5-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-12.6** Diseño del asistente | N-IA-01, N-IA-02, N-PLA-02 | F-01, F-02, F-03 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.6-01 … RF-12.6-05 (5) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-12.7** Reglas de la propuesta | N-PLA-01, N-CAD-01, N-VEN-01 | F-01, F-02, F-03 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.7-01 … RF-12.7-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-12.5** Plan de comidas y después de comprar | N-PLA-01, N-CAD-01 | F-01, F-02, F-03, F-07 | US-08 | Should · V2 | V2 | Servicio externo: motor de IA | RF-12.5-01 … RF-12.5-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-12.6** Diseño del asistente | N-IA-01, N-IA-02, N-PLA-02 | F-01, F-02, F-03, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.6-01 … RF-12.6-05 (5) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
+| **RF-12.7** Reglas de la propuesta | N-PLA-01, N-CAD-01, N-VEN-01 | F-01, F-02, F-03, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.7-01 … RF-12.7-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
 | **RF-16.1** Inicio del panel | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.1-01 … RF-16.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-16.2** Pedidos del vendedor | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.2-01 … RF-16.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-16.3** Ventas y estadísticas | N-VEN-05, N-CAT-01 | F-03, F-04, F-12 | US-15 | Should · V2 | V2 | — | RF-16.3-01 … RF-16.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-16.3** Ventas y estadísticas | N-VEN-05, N-CAT-01 | F-03, F-04, F-07, F-12 | US-15 | Should · V2 | V2 | — | RF-16.3-01 … RF-16.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-16.4** Productos en el panel | N-VEN-02, N-VEN-06 | F-01, F-03, F-04 | US-15 | Must · MVP | MVP | — | RF-16.4-01 … RF-16.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-16.5** Días de recogida | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.5-01 … RF-16.5-02 (2) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-17.1** Condiciones | N-CAT-01, N-CAT-03, N-VEN-05 | F-03, F-04, F-12 | US-16 | Should · V2 | V2 | D-02 comisión | RF-17.1-01 … RF-17.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-17.1** Condiciones | N-CAT-01, N-CAT-03, N-VEN-05 | F-03, F-04, F-07, F-12 | US-16 | Should · V2 | V2 | D-02 comisión | RF-17.1-01 … RF-17.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-17.2** Liquidación | N-VEN-05, N-CAT-03 | F-03, F-12 | US-16 | Should · V2 | V2 | D-02 comisión | RF-17.2-01 … RF-17.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-05.1** Añadir al carrito | N-CAR-01 | F-04, F-10 | US-04 | Must · MVP | MVP | — | RF-05.1-01 … RF-05.1-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.2** Vista del carrito agrupada | N-CAR-01, N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05, F-10 | US-04 | Must · MVP | MVP | — | RF-05.2-01 … RF-05.2-06 (6) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.3** Cantidades | N-CAR-01 | F-04, F-10 | US-04 | Must · MVP | MVP | — | RF-05.3-01 … RF-05.3-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.4** Envío y compra mínima | N-CAR-01, N-CAT-03, N-ENT-01 | F-03, F-04, F-05, F-10 | US-04 | Must · MVP | MVP | H-01 compra mínima | RF-05.4-01 … RF-05.4-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.5** Presupuesto | N-PLA-02 | F-01 | US-04 | Should · MVP | MVP | — | RF-05.5-01 … RF-05.5-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.6** Cambios de stock y precio | N-CAR-01, N-CAT-03 | F-03, F-04, F-10 | US-04 | Must · MVP | MVP | — | RF-05.6-01 … RF-05.6-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.7** Persistencia | N-CAR-01 | F-04, F-10 | US-04 | Must · MVP | MVP | — | RF-05.7-01 … RF-05.7-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.8** Diseño del carrito | N-CAR-01 | F-04, F-10 | US-04 | Must · MVP | MVP | H-01 compra mínima | RF-05.8-01 … RF-05.8-06 (6) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-05.9** Información de la entrega en el carrito | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05 | US-04 | Should · MVP | MVP | — | RF-05.9-01 … RF-05.9-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
-| **RF-06.1** Acceso y resumen | N-CAR-01, N-CUE-01 | F-03, F-04, F-10 | US-05 | Must · MVP | MVP | — | RF-06.1-01 … RF-06.1-03 (3) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.2** Dirección y franja | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05 | US-05 | Must · MVP | MVP | D-03 hub y zonas; H-02 espera de la entrega | RF-06.2-01 … RF-06.2-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-05.1** Añadir al carrito | N-CAR-01 | F-04, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.1-01 … RF-05.1-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.2** Vista del carrito agrupada | N-CAR-01, N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.2-01 … RF-05.2-06 (6) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.3** Cantidades | N-CAR-01 | F-04, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.3-01 … RF-05.3-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.4** Envío y compra mínima | N-CAR-01, N-CAT-03, N-ENT-01 | F-03, F-04, F-05, F-07, F-10 | US-04 | Must · MVP | MVP | H-01 compra mínima | RF-05.4-01 … RF-05.4-04 (4) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.5** Presupuesto | N-PLA-02 | F-01, F-07 | US-04 | Should · MVP | MVP | — | RF-05.5-01 … RF-05.5-02 (2) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.6** Cambios de stock y precio | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.6-01 … RF-05.6-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.7** Persistencia | N-CAR-01 | F-04, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.7-01 … RF-05.7-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.8** Diseño del carrito | N-CAR-01 | F-04, F-07, F-10 | US-04 | Must · MVP | MVP | H-01 compra mínima | RF-05.8-01 … RF-05.8-06 (6) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-05.9** Información de la entrega en el carrito | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05, F-07 | US-04 | Should · MVP | MVP | — | RF-05.9-01 … RF-05.9-03 (3) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
+| **RF-06.1** Acceso y resumen | N-CAR-01, N-CUE-01 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | — | RF-06.1-01 … RF-06.1-03 (3) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.2** Dirección y franja | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05, F-07 | US-05 | Must · MVP | MVP | D-03 hub y zonas; H-02 espera de la entrega | RF-06.2-01 … RF-06.2-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.3** Revisión de alérgenos y condiciones | N-CAT-02, N-CAT-03 | F-03 | US-05 | Must · MVP | MVP | — | RF-06.3-01 … RF-06.3-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.4** Pago simulado | N-CAR-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.4-01 … RF-06.4-08 (8) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.5** Confirmación | N-CAR-01, N-CAT-03 | F-03, F-04, F-10 | US-05 | Must · MVP | MVP | Servicio externo: correo | RF-06.5-01 … RF-06.5-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.6** Modificar o cancelar | N-CAR-01, N-PLA-01, N-PLA-02 | F-01, F-02, F-04, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.7** Diseño y navegación del checkout | N-CAR-01, N-CAT-03 | F-03, F-04, F-10 | US-05 | Must · MVP | MVP | — | RF-06.7-01 … RF-06.7-06 (6) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.4** Pago simulado | N-CAR-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.4-01 … RF-06.4-08 (8) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.5** Confirmación | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | Servicio externo: correo | RF-06.5-01 … RF-06.5-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.6** Modificar o cancelar | N-CAR-01, N-PLA-01, N-PLA-02 | F-01, F-02, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.7** Diseño y navegación del checkout | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | — | RF-06.7-01 … RF-06.7-06 (6) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.8** Datos de facturación | N-CAT-03 | F-03 | US-05 | Could · V2 | V2 | — | RF-06.8-01 … RF-06.8-02 (2) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.2** Aviso y vista del vendedor | N-VEN-04, N-CUE-01 | F-03, F-06, F-12 | US-11 | Must · MVP | MVP | Servicio externo: correo | RF-07.2-01 … RF-07.2-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.3** Confirmar o avisar de faltas | N-HUB-03, N-VEN-04 | F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | — | RF-07.3-01 … RF-07.3-08 (8) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.4** Preparación y etiqueta | N-CAT-01, N-HUB-01 | F-03, F-04, F-06, F-12 | US-11 | Must · MVP | MVP | — | RF-07.4-01 … RF-07.4-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.5** Plazos y avisos al vendedor | N-HUB-03, N-CAT-01, N-VEN-04 | F-03, F-04, F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | D-02 comisión | RF-07.5-01 … RF-07.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.4** Preparación y etiqueta | N-CAT-01, N-HUB-01 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP | — | RF-07.4-01 … RF-07.4-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.5** Plazos y avisos al vendedor | N-HUB-03, N-CAT-01, N-VEN-04 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | D-02 comisión | RF-07.5-01 … RF-07.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.6** Pedido sin el grupo de un vendedor | N-HUB-03 | F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | H-01 compra mínima | RF-07.6-01 … RF-07.6-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-14.1** Suscripción opcional | N-PLA-02, N-CAT-03 | F-01, F-03 | US-19 | Could · V3 | V3 | — | RF-14.1-01 … RF-14.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-14.2** Gestión de la suscripción | N-PLA-02, N-CAT-03 | F-01, F-03 | US-19 | Could · V3 | V3 | — | RF-14.2-01 … RF-14.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-14.1** Suscripción opcional | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.1-01 … RF-14.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-14.2** Gestión de la suscripción | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.2-01 … RF-14.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-08.1** Ruta de recogida | N-HUB-01 | F-06, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.1-01 … RF-08.1-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-HUB-02 | F-03, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.3** Empaquetado consolidado | N-ENT-01, N-CAT-02, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.3-01 … RF-08.3-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-05 (5) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04 | US-12 | Should · V2 | V2 | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-05 (5) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Should · V2 | V2 | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-06, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.7** Entrega al cliente | N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.7-01 … RF-08.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-09.1** Estados | N-ENT-01 | F-04, F-05 | US-06 | Must · MVP | MVP | — | RF-09.1-01 … RF-09.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-09.2** Pantalla de seguimiento | N-ENT-01 | F-04, F-05 | US-06 | Must · MVP | MVP | H-02 espera de la entrega | RF-09.2-01 … RF-09.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-09.3** Notificaciones | N-ENT-01, N-CUE-01 | F-03, F-04, F-05 | US-06 | Must · MVP | MVP | Servicio externo: correo | RF-09.3-01 … RF-09.3-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-09.4** Mis pedidos | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05 | US-06 | Must · MVP | MVP | — | RF-09.4-01 … RF-09.4-02 (2) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-09.4** Mis pedidos | N-ENT-01, N-PLA-01 | F-01, F-02, F-04, F-05, F-07 | US-06 | Must · MVP | MVP | — | RF-09.4-01 … RF-09.4-02 (2) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-09.5** Plantillas de correo | N-CUE-01, N-ENT-01 | F-03, F-04, F-05 | US-06 | Must · MVP | MVP | Servicio externo: correo | RF-09.5-01 … RF-09.5-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.1** Abrir una incidencia | N-INC-01 | F-04 | US-07 | Must · MVP | MVP (con partes simuladas) | H-04 plazos de incidencias | RF-10.1-01 … RF-10.1-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.2** Resolución | N-INC-01 | F-04 | US-07 | Must · MVP | MVP (con partes simuladas) | D-02 comisión; H-04 plazos de incidencias | RF-10.2-01 … RF-10.2-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.3** Seguimiento de la incidencia | N-INC-01 | F-04 | US-07 | Must · MVP | MVP | — | RF-10.3-01 … RF-10.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.4** Diseño del formulario de incidencia | N-INC-01 | F-04 | US-07 | Must · MVP | MVP | — | RF-10.4-01 … RF-10.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.5** Criterios de resolución | N-INC-01 | F-04 | US-07 | Should · V2 | V2 | — | RF-10.5-01 … RF-10.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-11.1** Pedir la valoración | N-CAT-01, N-CAT-03 | F-03, F-04 | US-13 | Should · V2 | V2 | — | RF-11.1-01 … RF-11.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-11.2** Mostrar y moderar | N-CAT-03, N-CAT-01, N-VEN-01 | F-01, F-03, F-04 | US-13 | Should · V2 | V2 | — | RF-11.2-01 … RF-11.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-11.3** Diseño y reglas de la valoración | N-CAT-01, N-CAT-03 | F-03, F-04 | US-13 | Should · V2 | V2 | — | RF-11.3-01 … RF-11.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-11.1** Pedir la valoración | N-CAT-01, N-CAT-03 | F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.1-01 … RF-11.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-11.2** Mostrar y moderar | N-CAT-03, N-CAT-01, N-VEN-01 | F-01, F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.2-01 … RF-11.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-11.3** Diseño y reglas de la valoración | N-CAT-01, N-CAT-03 | F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.3-01 … RF-11.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-18.1** Mensajes y avisos | N-VEN-02, N-VEN-01 | F-01, F-04 | US-18 | Should · V2 | V2 | — | RF-18.1-01 … RF-18.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-19.1** Contacto | N-INC-01 | F-04 | US-17 | Should · V2 | V2 | — | RF-19.1-01 … RF-19.1-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-19.2** Bandeja de soporte del equipo | N-INC-01 | F-04 | US-17 | Should · V2 | V2 | — | RF-19.2-01 … RF-19.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
@@ -1944,18 +2261,18 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RNF-01.2** Autorización y datos de entrada | N-CUE-01 | F-03 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-01.2-01 … RNF-01.2-07 (7) | — | | | |
 | **RNF-02.1** Minimización y consentimiento | N-CUE-01 | F-03 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-02.1-01 … RNF-02.1-04 (4) | — | | | |
 | **RNF-02.2** Derechos y conservación | N-CUE-01 | F-03 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-02.2-01 … RNF-02.2-04 (4) | — | | | |
-| **RNF-03.1** Tiempos de carga | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-03.1-01 … RNF-03.1-04 (4) | — | | | |
-| **RNF-03.2** Servidor | N-CAR-01, N-IA-01 | F-02, F-04, F-10 | (criterio de las historias de sus procesos) | Should · MVP | MVP | — | RNF-03.2-01 … RNF-03.2-02 (2) | — | | | |
-| **RNF-03.3** Peso de la página | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Should · MVP | MVP | — | RNF-03.3-01 … RNF-03.3-02 (2) | — | | | |
-| **RNF-04.1** Facilidad de uso | N-CAR-01, N-VEN-02 | F-01, F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-04.1-01 … RNF-04.1-06 (6) | — | | | |
-| **RNF-04.2** Consistencia visual | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-04.2-01 … RNF-04.2-06 (6) | — | | | |
-| **RNF-05.1** Percepción y operación | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-05.1-01 … RNF-05.1-07 (7) | — | | | |
-| **RNF-06.1** Navegadores y pantallas | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-06.1-01 … RNF-06.1-04 (4) | — | | | |
-| **RNF-07.1** Disponibilidad y datos | N-CAR-01 | F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-07.1-01 … RNF-07.1-05 (5) | — | | | |
+| **RNF-03.1** Tiempos de carga | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-03.1-01 … RNF-03.1-04 (4) | — | | | |
+| **RNF-03.2** Servidor | N-CAR-01, N-IA-01 | F-02, F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Should · MVP | MVP | — | RNF-03.2-01 … RNF-03.2-02 (2) | — | | | |
+| **RNF-03.3** Peso de la página | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Should · MVP | MVP | — | RNF-03.3-01 … RNF-03.3-02 (2) | — | | | |
+| **RNF-04.1** Facilidad de uso | N-CAR-01, N-VEN-02 | F-01, F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-04.1-01 … RNF-04.1-06 (6) | — | | | |
+| **RNF-04.2** Consistencia visual | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-04.2-01 … RNF-04.2-06 (6) | — | | | |
+| **RNF-05.1** Percepción y operación | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-05.1-01 … RNF-05.1-07 (7) | — | | | |
+| **RNF-06.1** Navegadores y pantallas | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-06.1-01 … RNF-06.1-04 (4) | — | | | |
+| **RNF-07.1** Disponibilidad y datos | N-CAR-01 | F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-07.1-01 … RNF-07.1-05 (5) | — | | | |
 | **RNF-08.1** IA, publicidad y comercio | N-CAT-03, N-IA-02 | F-03 | (criterio de las historias de sus procesos) | Must · MVP | MVP | D-01 rol jurídico | RNF-08.1-01 … RNF-08.1-06 (6) | — | | | |
-| **RNF-09.1** Registro de lotes | N-CAT-01 | F-03, F-04 | (criterio de las historias de sus procesos) | Must · MVP | MVP | D-01 rol jurídico | RNF-09.1-01 … RNF-09.1-04 (4) | — | | | |
-| **RNF-10.1** Código y documentación | N-CAR-01, N-IA-01 | F-02, F-04, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-10.1-01 … RNF-10.1-05 (5) | — | | | |
-| **RNF-11.1** Embalaje y desperdicio | N-CAD-01 | F-01, F-03 | (criterio de las historias de sus procesos) | Should · V2 | V2 | — | RNF-11.1-01 … RNF-11.1-03 (3) | — | | | |
+| **RNF-09.1** Registro de lotes | N-CAT-01 | F-03, F-04, F-07 | (criterio de las historias de sus procesos) | Must · MVP | MVP | D-01 rol jurídico | RNF-09.1-01 … RNF-09.1-04 (4) | — | | | |
+| **RNF-10.1** Código y documentación | N-CAR-01, N-IA-01 | F-02, F-04, F-07, F-10 | (criterio de las historias de sus procesos) | Must · MVP | MVP | — | RNF-10.1-01 … RNF-10.1-05 (5) | — | | | |
+| **RNF-11.1** Embalaje y desperdicio | N-CAD-01 | F-01, F-03, F-07 | (criterio de las historias de sus procesos) | Should · V2 | V2 | — | RNF-11.1-01 … RNF-11.1-03 (3) | — | | | |
 
 ### 3. Controles
 
@@ -1975,7 +2292,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | F-04 | Comparativo de 10 empresas (adjunto de Juan Antonio, 09/10/2026) | Benchmark exploratorio: fiabilidad baja, no cita fuentes |
 | F-05 | Investigación de entrega a clientes (Miguel) | En curso |
 | F-06 | Investigación de recogida a vendedores (Juan Antonio) | En curso |
-| F-07 | Entrevistas a estudiantes (mínimo 5) | Pendiente: se suben el 23/10/2026 |
+| F-07 | Entrevistas a estudiantes: E1–E4 de Sebastián (23/10/2026), con E3 y E4 del perfil objetivo y E1 y E2 comparativos; faltan las del resto del equipo | Apuntes, no transcripciones: sin citas literales |
 | F-08 | Entrevistas a vendedores (mínimo 2-3) | Pendiente: se suben el 23/10/2026 |
 | F-09 | Borrador de 211 requisitos (09/10/2026) | Histórico: lista de ideas, no evidencia |
 | F-10 | Benchmark de 6 competidores, consultado el 19/10/2026 | Referencia externa (páginas públicas) |
@@ -2116,7 +2433,7 @@ Si el usuario llega desde una acción que exige sesión (por ejemplo, pagar), la
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-06 Conocer con claridad los requisitos y los pasos del alta
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -2242,7 +2559,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -2365,7 +2682,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -2467,7 +2784,7 @@ Texto de la casilla obligatoria: «Acepto las Condiciones de uso y la Política 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -2676,7 +2993,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01
 
 **3. Actores y roles**
 
@@ -2766,7 +3083,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-01
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -2844,7 +3161,7 @@ Página «Mis datos» donde el cliente consulta y cambia su nombre, correo, tel�
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S09
 
 **3. Actores y roles**
 
@@ -2970,7 +3287,7 @@ Preferencias que personalizan la compra: presupuesto semanal, personas del piso,
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-01
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S06, S09
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S06, S09
 
 **3. Actores y roles**
 
@@ -4130,7 +4447,7 @@ Gestión de solicitudes de alta de vendedores por el administrador: listarlas, r
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -4233,7 +4550,7 @@ Vista del admin sobre pedidos e incidencias: buscar un pedido y ver sus subpedid
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S01, S04, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
 
 **3. Actores y roles**
 
@@ -4333,7 +4650,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -4394,7 +4711,7 @@ Gestión de cuentas por el admin. En el MVP solo cubre crear administradores des
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -4491,7 +4808,7 @@ Configuración operativa que hoy son hipótesis o decisiones pendientes: compra 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S01, S04, S05, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
 
 **3. Actores y roles**
 
@@ -4594,7 +4911,7 @@ Fuera del MVP (Excluido): esta ficha se completa cuando el requisito entre en un
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-09
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -4688,7 +5005,7 @@ Cabecera común de toda la web pública: logo, los tres botones principales y la
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-10 · Fuentes del benchmark: S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -4794,7 +5111,7 @@ Portada que en un vistazo dice qué es FOOD4ALL, para quién y qué hacer: lema,
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -4903,7 +5220,7 @@ Sección «Cómo funciona» que explica el recorrido del cliente y el logístico
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -5007,7 +5324,7 @@ Sección «Quiénes somos» y comparativa honesta con el supermercado online y e
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -5171,7 +5488,7 @@ Página /comunidad: por qué importa la comunidad, qué se publicará y cómo pa
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: F-04, S02
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: F-04, S02
 
 **3. Actores y roles**
 
@@ -5272,7 +5589,7 @@ Pie común con enlaces legales, créditos de imágenes, redes y el aviso de proy
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-14
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -5417,7 +5734,7 @@ El vendedor crea un producto desde su panel. Todo producto nace como Borrador y 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04, S02, S04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S02, S04, S08, S09
 
 **3. Actores y roles**
 
@@ -5534,7 +5851,7 @@ Datos obligatorios de cada producto para vender alimentos a distancia: origen, i
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -5755,7 +6072,7 @@ Fotos del producto: al menos una y hasta cinco, con texto alternativo. El sistem
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-10
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -5859,7 +6176,7 @@ Precio del producto. Mientras el proyecto sea conceptual, el catálogo muestra �
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: S04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: S04, S08, S09
 
 **3. Actores y roles**
 
@@ -6058,7 +6375,7 @@ Editar y retirar productos. Un cambio de precio nunca afecta a pedidos ya pagado
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -6215,7 +6532,7 @@ Control de calidad antes de publicar: solo se publica una ficha completa, y el v
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-10
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S07, S08
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S07, S08
 
 **3. Actores y roles**
 
@@ -6353,7 +6670,7 @@ Página de productos de la zona elegida, con categorías y rejilla. Es la puerta
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S02, S04, S06, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S02, S04, S06, S09
 
 **3. Actores y roles**
 
@@ -6456,7 +6773,7 @@ Buscador de productos y vendedores, tolerante a mayúsculas y tildes, con sugere
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -6559,7 +6876,7 @@ Filtros del catálogo, con el filtro de alérgenos como pieza clave: el cliente 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -6664,7 +6981,7 @@ Tarjeta de producto del catálogo con los datos para decidir sin abrir la ficha:
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-03
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S04, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S08, S09
 
 **3. Actores y roles**
 
@@ -6773,7 +7090,7 @@ Ficha completa del producto con toda la información obligatoria antes de compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -6879,7 +7196,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-02 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-01, F-02, F-07 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -6934,7 +7251,7 @@ Elección de zona en la primera visita y su recuerdo. En el MVP no hay patrocina
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Historias: US-03
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06
 
 **3. Actores y roles**
 
@@ -7028,7 +7345,7 @@ Comportamiento del catálogo al volver de una ficha y cuando falla la carga.
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -7133,7 +7450,7 @@ Etiquetas y avisos de la tarjeta, sobre todo el aviso «Contiene tus alérgenos�
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Necesidad: N-VEN-03 Reducir la merma del género que no vende a tiempo
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S08, S09
 
 **3. Actores y roles**
 
@@ -7271,7 +7588,7 @@ Entrada al asistente: el cliente indica presupuesto, días, personas y tiempo pa
 
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: US-08
-- Fuentes de las necesidades: F-02 · Fuentes del benchmark: S06
+- Fuentes de las necesidades: F-02, F-07 · Fuentes del benchmark: S06
 
 **3. Actores y roles**
 
@@ -7381,7 +7698,7 @@ Generación de la cesta: productos disponibles de la zona, dentro del presupuest
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -7492,7 +7809,7 @@ El cliente revisa la cesta: ve por qué se propone cada producto, la ajusta y la
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Historias: US-08
-- Fuentes de las necesidades: F-02, F-03 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-02, F-03, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -7694,7 +8011,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: F-04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: F-04, S06
 
 **3. Actores y roles**
 
@@ -7757,7 +8074,7 @@ Diseño del asistente como conversación con opciones guiadas, para que el clien
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: S06
 
 **3. Actores y roles**
 
@@ -7865,7 +8182,7 @@ Reglas de calidad de la propuesta: respetar la dieta y priorizar temporada y vid
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: F-04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: F-04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -8194,7 +8511,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-15
-- Fuentes de las necesidades: F-03, F-04, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -8483,7 +8800,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
 - Historias: US-16
-- Fuentes de las necesidades: F-03, F-04, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -8638,7 +8955,7 @@ Añadir productos de cualquier vendedor de la zona a un único carrito. Es el pr
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -8747,7 +9064,7 @@ Vista del carrito agrupada por vendedor con un único total. El cliente ve de qu
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -8858,7 +9175,7 @@ Cambiar cantidades y quitar líneas con recálculo inmediato y opción de deshac
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -8957,7 +9274,7 @@ Un solo coste de envío por pedido, se compre a uno o a cinco vendedores, y una 
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-05, F-10 · Fuentes del benchmark: S01, S05, S07
+- Fuentes de las necesidades: F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
 
 **3. Actores y roles**
 
@@ -9061,7 +9378,7 @@ Si el cliente fijó un presupuesto, el carrito le dice cuánto lleva y le avisa 
 
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-04
-- Fuentes de las necesidades: F-01 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -9156,7 +9473,7 @@ Si un producto se agota o cambia de precio después de añadirlo, el carrito lo 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9253,7 +9570,7 @@ El carrito no se pierde: con sesión se guarda en la cuenta y sin sesión en el 
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -9350,7 +9667,7 @@ Diseño del carrito en ordenador: líneas a la izquierda y resumen fijo a la der
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S04, S05, S07, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S05, S07, S09
 
 **3. Actores y roles**
 
@@ -9457,7 +9774,7 @@ Información de entrega en el carrito: la próxima franja y por qué hay un solo
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -9592,7 +9909,7 @@ Entrada al checkout: exige sesión con correo verificado y muestra en una sola p
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -9691,7 +10008,7 @@ Paso «Entrega»: dirección, día y franja de entrega con su hora de cierre. La
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -9910,7 +10227,7 @@ Paso «Pago»: pago de prueba con tarjeta, sin cobro real, en un único cargo po
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S01, S02, S04, S06, S07, S09, S10
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S01, S02, S04, S06, S07, S09, S10
 
 **3. Actores y roles**
 
@@ -10034,7 +10351,7 @@ Confirmación del pedido con su número, franja, dirección y grupos por vendedo
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -10138,7 +10455,7 @@ El cliente puede cancelar sin coste hasta la hora de cierre de su franja; despu�
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S10
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
 
 **3. Actores y roles**
 
@@ -10243,7 +10560,7 @@ Diseño y navegación del checkout en acordeón, sin perder lo rellenado y volvi
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06
 
 **3. Actores y roles**
 
@@ -10443,7 +10760,7 @@ Al confirmarse el pago, el pedido global se divide en un subpedido por vendedor.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-04, F-06, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-04, F-06, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -10762,7 +11079,7 @@ El vendedor prepara su parte, imprime la etiqueta con número, bultos, conservac
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -10864,7 +11181,7 @@ Plazos y avisos: recordatorio al vendedor antes de que venza su plazo, aviso al 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -11086,7 +11403,7 @@ En el MVP la suscripción solo se anuncia como «Próximamente», sin precios. L
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-19
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S06, S10
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S06, S10
 
 **3. Actores y roles**
 
@@ -11184,7 +11501,7 @@ Fuera del MVP (V3): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-19
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S04, S06, S09, S10
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S04, S06, S09, S10
 
 **3. Actores y roles**
 
@@ -11601,7 +11918,7 @@ Reparto de los pedidos empaquetados por franja y registro de la entrega; si no h
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04, F-05 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-05, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -11707,7 +12024,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -12251,7 +12568,7 @@ Lista «Mis pedidos» con los pedidos del cliente del más reciente al más anti
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-06
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -12969,7 +13286,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-13
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -13031,7 +13348,7 @@ En el MVP solo aplica una regla: no se muestran valoraciones inventadas ni prueb
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-13
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -13129,7 +13446,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-13
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -13824,7 +14141,7 @@ Tiempos de carga en móvil: contenido principal, estabilidad visual y respuesta 
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -13903,7 +14220,7 @@ Rendimiento del servidor y tiempo de respuesta del asistente.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: —
-- Fuentes de las necesidades: F-02, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-02, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -13976,7 +14293,7 @@ Peso de la página: fuentes que no bloquean el texto y JavaScript inicial conten
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14071,7 +14388,7 @@ Facilidad de uso: entender la portada en 30 s, primera compra sin ayuda, textos 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: —
-- Fuentes de las necesidades: F-01, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14157,7 +14474,7 @@ Consistencia visual con la guía de diseño: tipografía, color de acción, radi
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14261,7 +14578,7 @@ Accesibilidad WCAG 2.2 nivel AA: contraste, teclado, zonas táctiles, texto alte
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14369,7 +14686,7 @@ Compatibilidad con navegadores y pantallas; modo claro por defecto.
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14468,7 +14785,7 @@ Fiabilidad: un pedido pagado nunca se pierde aunque falle un subpedido o un serv
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14681,7 +14998,7 @@ Trazabilidad alimentaria: para cada línea entregada, vendedor, producto, lote o
 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: —
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S06, S07
 
 **3. Actores y roles**
 
@@ -14782,7 +15099,7 @@ Mantenibilidad: capas separadas, IA simulada sustituible por una real cambiando 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: —
-- Fuentes de las necesidades: F-02, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-02, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -14883,7 +15200,7 @@ Sostenibilidad: embalaje reutilizable o reciclable y medición del desperdicio d
 
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Historias: —
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 

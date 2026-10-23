@@ -38,14 +38,14 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 <!-- catalogo:inicio -->
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
-| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Hipótesis | F-01, F-02 | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Hipótesis | F-01 | 19 (5) |
-| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Hipótesis | F-04, F-10 | 162 (137) |
+| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
 | N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
-| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Hipótesis | F-01, F-03 | 8 (3) |
-| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | Hipótesis | F-02 | 10 (10) |
+| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
+| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Hipótesis | F-03 (Reglamento 178/2002), F-04 | 36 (14) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
@@ -148,6 +148,44 @@ Para cada necesidad de usuario: con qué pregunta del guion de B1 se contrasta y
 | N-HUB-01, N-HUB-02, N-HUB-03 (operador) | No hay entrevistas a operadores previstas; se apoyan en F-12 (estudio de Wisconsin). Si es posible, una entrevista opcional a un repartidor o a un food hub | Siguen como hipótesis documentales. La verificación en el hub (RF-08.2) se mantiene por N-CAT-01 y por obligación legal (N-HUB-02) |
 
 Las necesidades de tipo **Obligación legal** (N-IA-02, N-CAT-02, N-CAT-03, N-CUE-01, N-VEN-07 y N-HUB-02) no dependen de las entrevistas. Si un entrevistado no las menciona, no cambian.
+
+### 5.1 Resultado de las entrevistas a estudiantes (F-07, 23/10/2026)
+
+Fuente: `FOOD4ALL_entrevistas_estudiantes.md`, con los apuntes de las 4 entrevistas de Sebastián (E1–E4). Faltan las del resto del equipo, así que **estos estados son provisionales** y se recalculan cuando estén. Son apuntes, no transcripciones.
+
+- **Perfil objetivo:** solo E3 y E4, que comparten piso.
+- **Perfiles comparativos:** E1 y E2 viven con su familia. Se anotan, pero no cuentan como apoyo ni como contradicción del perfil objetivo.
+
+**Ninguna necesidad pasa a «Confirmada».** No se cumplen tres de las cuatro condiciones:
+- hay 2 entrevistas del perfil objetivo, y hacen falta 3;
+- no hay citas literales;
+- no consta si las respuestas fueron a preguntas abiertas.
+
+| Necesidad | Apoyan (perfil objetivo) | En contra | Comparativos | Estado |
+| --- | --- | --- | --- | --- |
+| N-PLA-01 Planificar en vez de improvisar | E3 y E4: improvisan con lo que hay en la nevera; al principio les costaba decidir qué comer | — | E1 sabe qué preparar; a E2 le planifican sus padres | **Indicio** |
+| N-PLA-02 Controlar el gasto | E4: 40–60 €/semana y a veces se queda ajustado | — (E3 da su cifra, 30–50 €, pero no dice que sea un problema) | E1 va justo; E2 no tiene problema | **Indicio** |
+| N-CAR-01 Varios vendedores en una compra | E4: le interesa comprar directamente al productor si ve calidad, precio y cantidad. E3: le molesta salir a comprar lo que le falta | E3 **no usaría FOOD4ALL**. Rechaza el producto, no la necesidad, y es un riesgo para el núcleo | E2: le atraen los productos locales | **Indicio** |
+| N-ENT-01 Una entrega en una franja | — | — | E1: puntualidad y frescura | Hipótesis |
+| N-CAD-01 No tirar comida | E3 (se le estropean las verduras) y E4 (a veces desperdicia) | — | E1 y E2 dicen que no desperdician | **Indicio** |
+| N-IA-01 Asistente que simplifica | — | E3 y E4: poca o ninguna confianza en la IA | E1 la revisaría; E2 la pondría a prueba | **No confirmada** |
+| N-CAT-01 Confiar en origen y calidad | E4: la calidad es condición para comprar | — | E2: le preocupan la fiabilidad de una empresa nueva y la falta de opiniones; E1: frescura | **Indicio** |
+| N-INC-01 Solución si algo llega mal | — | — | — | Hipótesis |
+
+**Qué cambia en los requisitos.** Hay una sola entrevista de cada lado y dos que no la piden. Con tan poca evidencia, de momento no se cambia ningún requisito. Se proponen para la criba:
+- **RF-12 (asistente):** sigue como Should y «MVP simulado», fuera del núcleo. La cesta se puede revisar producto a producto (RF-12.3, quitar, cambiar u «Otra opción»), y la compra no necesita la IA.
+  - Propuesta: que la portada no la presente como la única forma de comprar.
+  - Si F-07 completa lo mantiene, se aplica lo previsto arriba: RF-12.1-03 se descarta y el asistente se queda en opciones guiadas.
+- **N-CAR-01:** el rechazo de E3 entra en la defensa como riesgo de valor (apartado 11.6 del contexto), no como dato que se esconde.
+- **Necesidades candidatas,** todavía fuera del catálogo hasta que el equipo las apruebe:
+  - descuentos u ofertas para animarse a probar (E3, E4; E1 comparativo);
+  - interfaz sencilla y rápida (E3, E4);
+  - métodos de pago sencillos (E1);
+  - descubrir productos distintos de los del supermercado (E2);
+  - tamaño y frecuencia del pedido distintos: compras pequeñas (E3) frente a grandes cada 1–2 semanas (E4). Afecta a la compra mínima.
+- **Conservación con gases:** queda como línea técnica pendiente (apartado 10 de las entrevistas). Nadie la pidió.
+
+Faltan las entrevistas del resto del equipo, de estudiantes (F-07) y de vendedores (F-08). Cuando lleguen, la tabla se rehace con todas. Conviene que incluyan citas literales y estudiantes que vivan fuera de casa.
 
 ## 6. Cómo registrar una entrevista
 
