@@ -10,7 +10,7 @@ origen: Mensajes enviados a Claude Code (Windows) en la sesión, en orden y sin 
 
 Sesión de Juan Antonio desde su terminal de Windows, con Sebastián en llamada.
 
-*Nota (23/10, 21:07):* las cinco últimas entradas tenían horas estimadas posteriores a la subida a GitHub (último commit a las 21:04), así que no podían ser reales. Se han cambiado por «Hora no registrada (antes de las 21:04)». El orden de los mensajes y su texto no cambian. A las 21:25 volvió a pasar con las siete entradas siguientes (21:35 a 22:10, con el último commit a las 21:25): ahora dicen «Hora no registrada (entre las 21:04 y las 21:25)».
+*Nota (23/10, 21:07):* las cinco últimas entradas tenían horas estimadas posteriores a la subida a GitHub (último commit a las 21:04), así que no podían ser reales. Se han cambiado por «Hora no registrada (antes de las 21:04)». El orden de los mensajes y su texto no cambian. A las 21:25 volvió a pasar con las siete entradas siguientes (21:35 a 22:10, con el último commit a las 21:25): ahora dicen «Hora no registrada (entre las 21:04 y las 21:25)». Y otra vez a las 21:36, con 22:12, 22:20 y 22:24 (último commit a las 21:35): «Hora no registrada (entre las 21:25 y las 21:35)».
 
 ### 20:15
 
@@ -150,43 +150,37 @@ Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte l
 
 **Resultado:** el asistente le explicó que no lo ejecute: según la regla 7 de `AGENTS.md`, `npm run todo` lo ejecuta solo Sebastián para que no haya choques. Además estaba en la carpeta equivocada (fuera del repositorio y de `docs/requisitos/benchmark/`). No se cambió nada.
 
-### 22:12
+### Hora no registrada (entre las 21:25 y las 21:35)
 
 en que parte de asana subo el comentario
 
 **Resultado:** se le indicó el camino en Asana: tarea [Food4All] Hito 2 – Requisitos y Criterios de Aceptación · Marketplace Local → subtarea [B2] Personas y mapas de empatía → caja de comentarios.
 
-### 22:20
+### Hora no registrada (entre las 21:25 y las 21:35)
 
 se a actualizado el asana revisalo y dime si tengo que cambiar algo del comentario de asana que es este (pegó su comentario de revisión cruzada)
 
 **Resultado:** el Asana conectado a esta sesión no es el de clase, así que se leyó el cambio en git (`reordenar_hito2.js`, 21:28): B2 está completada y el comentario va en la nueva tarea «[B6] … → Revisión cruzada: comparativo y personas». Se le propusieron dos ajustes al comentario (añadir «Cambio» y que la rama ya está unida en `docs/hito2-entrega`) y se le avisó de su segunda revisión cruzada (núcleo de compra y estados del pedido) y de la revisión crítica de este registro de prompts.
 
-### 22:24
+### Hora no registrada (entre las 21:25 y las 21:35)
 
 entonces debo cambiar algo del comentario
 
 **Resultado:** sí, dos cosas: añadir «Cambio» y sustituir «Rama de trabajo» por que los cambios ya están unidos en `docs/hito2-entrega`. Se le dio el comentario completo con esos dos ajustes para pegarlo él.
-
-### 22:26
+### Hora no registrada (después de las 21:35)
 
 solo ese o tengo que implementar el anterior comentario
 
 **Resultado:** solo el último, que ya lleva todo el anterior más los dos ajustes. Si ya había pegado el anterior en [B2], que lo borre de ahí.
 
-### 22:28
+### Hora no registrada (después de las 21:35)
 
 entoneces dame exactamente todo lo que tengo que poner en asana
 
 **Resultado:** se le dio el único texto que tiene listo para Asana (su comentario de revisión cruzada, con dónde pegarlo). La segunda revisión cruzada aún no está hecha, así que no hay comentario para ella.
----
 
-## Revisión crítica del equipo
+### Hora no registrada (después de las 21:35)
 
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
+queda algo más de mi parte ?
 
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_
+**Resultado:** se trajo lo último de `docs/hito2-entrega` (criba aprobada, C-28 y C-29). Le quedan: pegar el comentario en Asana, la segunda revisión cruzada (núcleo de compra y estados del pedido) y escribir con sus palabras la «Revisión crítica del equipo» al final de este archivo (prioritario en `AGENTS.md`).

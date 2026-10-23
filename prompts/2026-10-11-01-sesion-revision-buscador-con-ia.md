@@ -25,15 +25,3 @@ No estoy interesadi en la version de movil. Ponlo como pendiente pero sin priori
 ### 3
 
 1a(No quiero un agente, quiero un buscador para tipo:  ¿De que va el proyecto? y que te envie al apartado correcto o reponda preguntas simples. 2a(Busca antes de nada) 3a(Quiero que sea util. pero tampoco vamos a poner 100 pronts al dia, yo te digo que mas de 5-10 lo dudo) 3a
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

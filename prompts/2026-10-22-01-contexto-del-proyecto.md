@@ -45,15 +45,3 @@ Cuando lo tengas ajustado, elimina todo lo repetido e innecesario. Sin que se pi
 (Respuesta a la pregunta del asistente) Borra los 4, y que no tengan contenido redundante. Y revisa que no haya fallos graves como por ejmeplo FOOF4ALL en vez de FOOD4ALL. Dentro del repo: no tocarlos.
 
 **Resultado:** se pasó al contexto la lista entera de los 211 requisitos del borrador. Se borraron de `C:\Universidad\Software` los ficheros `FOOD4ALL_master_prompt.md`, `FOOD4ALL_prompt_landing.md`, `FOOD4ALL_requisitos.md` y `esquema_comparativo_de_empresas_de_alimentaci_n.md`; los dos primeros siguen enteros en `prompts/`. Erratas revisadas: no queda ningún «FOOF4ALL» por error; los que aparecen son citas de la errata o el filtro de Asana que la acepta. El repo no se tocó.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_
