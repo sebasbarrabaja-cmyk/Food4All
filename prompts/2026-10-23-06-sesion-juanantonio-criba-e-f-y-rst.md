@@ -161,6 +161,12 @@ en que parte de asana subo el comentario
 se a actualizado el asana revisalo y dime si tengo que cambiar algo del comentario de asana que es este (pegó su comentario de revisión cruzada)
 
 **Resultado:** el Asana conectado a esta sesión no es el de clase, así que se leyó el cambio en git (`reordenar_hito2.js`, 21:28): B2 está completada y el comentario va en la nueva tarea «[B6] … → Revisión cruzada: comparativo y personas». Se le propusieron dos ajustes al comentario (añadir «Cambio» y que la rama ya está unida en `docs/hito2-entrega`) y se le avisó de su segunda revisión cruzada (núcleo de compra y estados del pedido) y de la revisión crítica de este registro de prompts.
+
+### 22:24
+
+entonces debo cambiar algo del comentario
+
+**Resultado:** sí, dos cosas: añadir «Cambio» y sustituir «Rama de trabajo» por que los cambios ya están unidos en `docs/hito2-entrega`. Se le dio el comentario completo con esos dos ajustes para pegarlo él.
 ---
 
 ## Revisión crítica del equipo
