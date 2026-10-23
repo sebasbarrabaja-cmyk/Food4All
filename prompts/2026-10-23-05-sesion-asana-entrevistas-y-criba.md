@@ -283,3 +283,57 @@ Pues hazme un sistemas de preguntas para los promts. De miguel olvidate por hoy
 1abc 2abcd 3abc · 1acbd 2abd 3abc · 1abcd 2abc 3ac · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abc 2abc 3abc · 1abc 2abc 3abc · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abcd 2abcd 3abc
 
 **Resultado:** diez respuestas, una por bloque. Los 19 prompts de Sebastián terminan con «## Revisión crítica del equipo», hecha con sus elecciones y marcada como «Respuestas de Sebastián a preguntas guiadas del asistente». Quedan el de Juan Antonio y los dos «del Equipo».
+
+### 21:50
+
+sí, hazme el bloque
+
+**Resultado:** un último bloque de preguntas para los dos prompts base del equipo (`2026-10-08-01` y `-02`).
+
+### 21:51
+
+1abc 2abcd 3abc
+
+**Resultado:** los dos prompts base terminan con su revisión crítica, hecha por Sebastián, con la nota de que Juan Antonio y Miguel no la han revisado. Solo queda la de Juan Antonio.
+
+### 21:52
+
+Juan antonio gestiona lo suyo, algo mas de mi parte?
+
+**Resultado:** queda «Estado entrega», avisar cuando Juan Antonio suba lo suyo, dar al profesor la contraseña del panel y, más adelante, poner al día la defensa.
+
+### 21:53
+
+El estado esta ya. Sin contar lo de Juan antonio, si el profesor lo revisa mañana esta todo correcto?
+
+**Resultado:** no del todo. Las 129 fichas de B4 y B5 en Asana eran las del 22/10 y no recogían lo de hoy (C-14 a C-29). Se adaptó `actualizar_asana.js` al Asana reordenado (la criba ahora está en [B4]) y se probó en seco.
+
+### 21:54
+
+El profesor pide de entrega un archivo cargado, ademas del asana
+
+**Resultado:** se le preguntó qué archivo y dónde. El documento completo ya está adjunto en Asana (856 kB en Markdown).
+
+### 21:54
+
+1a 2(Literalmete pone o una url o un archivo cargado)
+
+**Resultado:** `actualizar_asana.js --si` tardó 2 min 21 s: 129 descripciones actualizadas, ninguna creada, borrada ni comentada, y copia previa en `asana_copia_hito2_v04_antes.json`. En la nueva prueba en seco quedan 39 diferencias que son solo de codificación de comillas (`&quot;` en Asana frente a `"`): el contenido coincide. Lo de la URL o el archivo se plantea a continuación.
+
+### 21:59
+
+El repsitorio es publico y creo que quiere un zip con todo de la landing
+
+**Resultado:** se comprobó que el repositorio es público (el asistente había dicho que era privado, basándose en las notas antiguas). Se unió lo último de Juan Antonio y se llevó a `main` (PR #6) antes de preparar el zip.
+
+### 22:00
+
+Mira lo subido por juan antonio, revisalo y pasalo al git. Vamos a ultimar ya
+
+**Resultado:** la revisión crítica de Juan Antonio ya estaba en el PR #6 y está bien hecha. Los 22 prompts tienen su revisión crítica, y la nota de «prioritario» de `AGENTS.md` pasa a «hecha».
+
+### 22:01
+
+1a
+
+**Resultado:** el zip de entrega (`FOOD4ALL_Hito2_2026-10-23.zip`, 26 MB, desde `main` y sin `.env` ni `node_modules`) queda fuera del repositorio. Los datos de E5 y E6 que siguen en el historial público de git se dejan para otro día, y quedan anotados como pendiente interno en `AGENTS.md`.
