@@ -129,7 +129,7 @@ module.exports = (R) => {
   R('Mostrar en /producto/<id> la galería de fotos, el nombre, el vendedor con enlace a su perfil y el precio por unidad y por kilo.', 'Dada una ficha, cuando pulsa el vendedor, entonces llega a su perfil.', 'M', 'MVP', ['BF17', 'BF18'], 'N-CAT-01');
   R('Mostrar ingredientes, alérgenos (contiene y trazas), conservación, tipo de fecha y vida útil.', 'Dado un queso, cuando se abre la ficha, entonces se ven los cinco datos.', 'M', 'MVP', ['BF14', 'BF15', 'BF21'], 'N-CAT-02', { estado: 'Decidido' });
   R('Mostrar el origen con municipio y distancia aproximada al centro de la zona.', 'Dado un producto de Alhaurín, cuando se ve en Málaga, entonces muestra «Alhaurín el Grande · 20 km».', 'S', 'MVP', ['BF16'], 'N-VEN-01');
-  R('Mostrar hasta 4 productos relacionados del mismo vendedor.', 'Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 relacionados.', 'C', 'V2', [], 'N-CAR-01');
+  R('Mostrar hasta 4 productos del mismo vendedor bajo el título «Más de <vendedor>», para que se vea el criterio.', 'Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 bajo «Más de <vendedor>».', 'C', 'V2', [], 'N-CAR-01');
   R('Mostrar el desglose orientativo del precio: parte del vendedor, logística y FOOD4ALL.', 'Dado un precio, cuando se pulsa «¿A dónde va tu dinero?», entonces se ve el desglose.', 'C', 'V3', ['BF19'], 'N-CAT-03');
 
   R.sub('RF-04.6', 'Favoritos y habituales');

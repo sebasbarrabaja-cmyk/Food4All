@@ -75,7 +75,7 @@ module.exports = (R) => {
   R('Responder en 10 segundos como máximo; si tarda más, mostrar «Estamos preparando tu cesta…» con una animación suave.', 'Dada una respuesta de 12 s, cuando pasa de 10 s, entonces ve el mensaje.', 'S', 'MVP', [], 'N-PLA-01');
 
   R.sub('RF-12.3', 'Explicación y ajuste');
-  R('Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»).', 'Dada una cesta, cuando se ve un producto, entonces tiene su motivo.', 'S', 'MVP', ['BF68'], 'N-IA-02');
+  R('Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»).', 'Dada una cesta, cuando se ve un producto, entonces tiene su motivo.', 'S', 'MVP', ['BF68'], 'N-IA-02', { pos: 'Mejora', just: 'Ningún competidor recorrido explica sus recomendaciones («Otros también compraron», «Productos relacionados», platos «similares»); solo la etiqueta ambiental de Open Food Network dice en qué se basa (recorrido del 23/10/2026).' });
   R('Permitir quitar, cambiar la cantidad o pedir «Otra opción» en cada producto.', 'Dado «Otra opción», cuando la pulsa, entonces se cambia por un producto de la misma categoría.', 'S', 'MVP', [], 'N-IA-01');
   R('Permitir pasar toda la cesta al carrito con «Añadir todo al carrito».', 'Dada una cesta de 9 productos, cuando pulsa el botón, entonces el carrito tiene los 9.', 'S', 'MVP', [], 'N-IA-01');
   R('No añadir nada al carrito sin que el cliente lo confirme.', 'Dada una cesta generada, cuando no pulsa nada, entonces el carrito no cambia.', 'S', 'MVP', [], 'N-IA-02', { estado: 'Decidido' });

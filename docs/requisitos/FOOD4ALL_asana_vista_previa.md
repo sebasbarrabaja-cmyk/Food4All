@@ -5016,8 +5016,8 @@ Productos relacionados (V2).
 - [ ] **RF-04.5-03** `Should·MVP·Pendiente` Mostrar el origen con municipio y distancia aproximada al centro de la zona. _(N-VEN-01)_
   - Criterio: Dado un producto de Alhaurín, cuando se ve en Málaga, entonces muestra «Alhaurín el Grande · 20 km».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Poco extendido
-- [ ] **RF-04.5-04** `Could·V2·Pendiente` Mostrar hasta 4 productos relacionados del mismo vendedor. _(N-CAR-01)_
-  - Criterio: Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 relacionados.
+- [ ] **RF-04.5-04** `Could·V2·Pendiente` Mostrar hasta 4 productos del mismo vendedor bajo el título «Más de <vendedor>», para que se vea el criterio. _(N-CAR-01)_
+  - Criterio: Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 bajo «Más de <vendedor>».
   - Competencia: Mercadona S · Glovo ? · Too N · Wetaca P · Market S · Open S → Paridad
 - [ ] **RF-04.5-05** `Could·V3·Pendiente` Mostrar el desglose orientativo del precio: parte del vendedor, logística y FOOD4ALL. _(N-CAT-03)_
   - Criterio: Dado un precio, cuando se pulsa «¿A dónde va tu dinero?», entonces se ve el desglose.
@@ -5413,7 +5413,7 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 
 **Competencia**
 
-30 requisitos atómicos · Poco extendido 26 · Diferencial 2 · Paridad 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-12.
+30 requisitos atómicos · Poco extendido 25 · Diferencial 2 · Paridad 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-12.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -5709,7 +5709,7 @@ RNF-01 Seguridad · RNF-02 Privacidad · RNF-05 Accesibilidad · RNF-06 Compatib
 
 **15. Competencia**
 
-Poco extendido 4
+Poco extendido 3 · Mejora 1
 
 - Mercadona online: 0 sí, 4 no
 - Glovo: 0 sí, 4 parcial
@@ -5717,6 +5717,7 @@ Poco extendido 4
 - Wetaca: 0 sí
 - Market Wagon: 0 sí
 - Open Food Network: 0 sí
+- Diferenciales y mejoras: RF-12.3-01 (Mejora)
 
 **16. Fuera de alcance**
 
@@ -5726,7 +5727,7 @@ Guardar cestas (V2).
 
 - [ ] **RF-12.3-01** `Should·MVP·Pendiente` `simulado` Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»). _(N-IA-02)_
   - Criterio: Dada una cesta, cuando se ve un producto, entonces tiene su motivo.
-  - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Mejora
 - [ ] **RF-12.3-02** `Should·MVP·Pendiente` `simulado` Permitir quitar, cambiar la cantidad o pedir «Otra opción» en cada producto. _(N-IA-01)_
   - Criterio: Dado «Otra opción», cuando la pulsa, entonces se cambia por un producto de la misma categoría.
   - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido

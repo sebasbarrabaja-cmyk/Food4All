@@ -158,3 +158,15 @@ Tienes instrucciones de mel. a)
 Habrá que hacer nuevas entrevistas para ello. Dejalo como pendiente.  1a
 
 **Resultado:** el asistente lo interpretó así: pagar como invitado (opción b) queda pendiente de nuevas entrevistas, y se aplica la opción a. RF-05.7-02 (guardar el carrito del visitante) y RF-05.7-03 (unirlo al de la cuenta al entrar) pasan de Should a Must, con la evidencia de Market Wagon, Open Food Network y KnowEats. Se regeneró: Must 305. Anotado como C-20, y pagar como invitado, en los pendientes de la línea base.
+
+### 17:18 (aprox.)
+
+a. Importante, me quedan pococ tokens, prepara todo para que mis compañeros puedan terminar sin mi, Primero ver que toda la informacion esté bien, correcta, revisada y contrastada; que hayan subido sus entrevistas, yo tengo que hacerlo(Cuando pueda fijate en la descripcion de la tarea y subelo por mi), que el asana este bien estructuado y tenga sentido, ademas de estar todo actualizado y asignado. Que no haya 20 pestañas por que sí, prefiero que haya menos muy bien estructuradas y revisar si falta algo por lo eigido por el profesor
+
+**Resultado:** M-08 aplicada (C-21: evidencia en RF-12.3-01; RF-04.5-04 se titula «Más de <vendedor>»). Se leyó el Asana de clase en modo solo lectura (122 s, 336 GET); el resultado se guardó fuera del repositorio.
+
+### 17:20 (aprox.)
+
+No necestio lo de asana primero, lo de git es prioritario
+
+**Resultado:** se dejó Asana para después y se pasó a preparar el repositorio para que el equipo termine sin Sebastián: unir las ramas de WSL, renumerar los prompts repetidos, revisar la coherencia y dejar el traspaso en `AGENTS.md`.
