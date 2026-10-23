@@ -84,7 +84,7 @@ a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la ca
   - El login de prueba usó credenciales pasadas por variable de entorno, no las de `backend/.env`.
 - **Sin probar:** el tema oscuro. `DISENO.md` dice «modo claro siempre» y el oscuro solo se activa a mano.
 
-### 21:03
+### 21:01
 
 sube el git para juan antonio
 
