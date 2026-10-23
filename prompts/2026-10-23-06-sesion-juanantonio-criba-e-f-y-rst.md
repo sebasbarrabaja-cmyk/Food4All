@@ -143,3 +143,9 @@ subelo al git y sebastian lo rebisa desde hay y que queda de mi parte
 Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte lo pego
 
 **Resultado:** se confirmó que todo está en GitHub. Se le volvió a dar el comentario y, según `FOOD4ALL_propuesta_asana.md` y `FOOD4ALL_comparativo_revisado.md`, dónde pegarlo: en [B2] Personas y mapas de empatía de la tarea del Hito 2, y la parte del comparativo en «Requisitos temporales → Información de otras empresas». Lo pega él.
+
+### 22:10
+
+(pegó el error de PowerShell al ejecutar `npm run todo` en la carpeta `Food4All` de fuera del repositorio: «la ejecución de scripts está deshabilitada en este sistema»)
+
+**Resultado:** el asistente le explicó que no lo ejecute: según la regla 7 de `AGENTS.md`, `npm run todo` lo ejecuta solo Sebastián para que no haya choques. Además estaba en la carpeta equivocada (fuera del repositorio y de `docs/requisitos/benchmark/`). No se cambió nada.
