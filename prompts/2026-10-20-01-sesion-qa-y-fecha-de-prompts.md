@@ -68,3 +68,20 @@ cada 15 min por IP, textos de hasta 1000 y 120 caracteres (a).
 ```
 
 Esta entrada acompaña el arreglo de la fecha (rama `fix/fecha-prompts`). El buscador y la seguridad van en sus propias ramas, con su entrada.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a los cuatro archivos de la sesión 4 (20-01 a 20-04); aquí van solo las que corresponden a este arreglo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - La revisión en el navegador y la de código, que encontraron fallos reales que yo no había visto (fecha en UTC, buscador que se quedaba en blanco).
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Cada arreglo fue en su propia rama, y comprobé que se podían unir antes de hacerlo.
+- **Por qué estaba justificado usar IA aquí:**
+  - Encontrar fallos de seguridad y de accesibilidad que necesitan conocimientos que todavía estoy aprendiendo.
+  - Probar en el navegador decenas de páginas y estados que a mano llevarían horas.
+  - La IA proponía, y yo decidía cuál de las opciones se aplicaba.

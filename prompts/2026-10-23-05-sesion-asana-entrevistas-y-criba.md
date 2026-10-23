@@ -243,3 +243,43 @@ aplica Asana
 - El Hito 2 tiene adjunto el documento v0.4.
 - Las tareas de Miguel pasan a Sebastián.
 - Hay dos revisiones cruzadas asignadas a Juan Antonio.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026). Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Los argumentos de los bloques B, C y D de la criba, porque los revisé uno a uno antes de aprobarlos.
+  - El formato pregunta-respuesta de E1–E4 sin rellenar huecos, porque es honesto con lo que se apuntó.
+  - Las conclusiones de E5–E6 como punto de partida, aunque luego Juan Antonio las reescribió.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Corregí los datos de E1–E4 que la IA había interpretado mal: los «plazos» eran de entrega y no de pago, E4 no desperdicia y el presupuesto de E1 es mensual.
+  - Rechacé las 12 historias que Miguel generó con IA.
+  - Cambié la propuesta de la IA para el asistente: en vez de quitarlo de la portada, lo puse como pestaña en la cabecera.
+  - Decidí dejar D-03 (el hub) para el Hito 3 con el profesor, en lugar de cerrarlo ya.
+- **Por qué estaba justificado usar IA aquí:**
+  - Había que revisar que muchos documentos dijeran lo mismo (coherencia) en poco tiempo.
+  - Me proponía opciones con pros y contras y la decisión la tomaba yo.
+  - Para tareas mecánicas: regenerar el catálogo, contar requisitos, mover tareas en Asana.
+
+### 21:40
+
+Dime para tontos los pasos a dar
+
+**Resultado:** seis pasos sencillos: la revisión crítica de sus prompts, «Estado entrega», lo de Miguel, los comentarios y la revisión crítica de Juan Antonio, y avisar para subir.
+
+### 21:41
+
+Pues hazme un sistemas de preguntas para los promts. De miguel olvidate por hoy
+
+**Resultado:** lo de Miguel queda como pendiente interno en `AGENTS.md`. Para cada prompt (o grupo de prompts de una misma sesión), el asistente propuso tres preguntas con opciones: qué se aceptó, qué se corrigió y por qué estaba justificada la IA.
+
+### Hora no registrada (entre las 21:41 y las 21:49)
+
+1abc 2abcd 3abc · 1acbd 2abd 3abc · 1abcd 2abc 3ac · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abc 2abc 3abc · 1abc 2abc 3abc · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abcd 2abcd 3abc
+
+**Resultado:** diez respuestas, una por bloque. Los 19 prompts de Sebastián terminan con «## Revisión crítica del equipo», hecha con sus elecciones y marcada como «Respuestas de Sebastián a preguntas guiadas del asistente». Quedan el de Juan Antonio y los dos «del Equipo».

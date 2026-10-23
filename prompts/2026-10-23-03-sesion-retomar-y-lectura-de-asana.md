@@ -179,3 +179,24 @@ Subelo, y luego haces las pruebas
 **Resultado:** se unieron a `docs/hito2-entrega` las ramas de WSL `fix/seguridad-formularios`, `fix/fecha-prompts` y `fix/buscador-reserva` (un conflicto en `README.md`, resuelto dejando las dos secciones). Se renumeraron los prompts de Windows por orden de hora: `2026-10-19-01-sesion-requisitos-y-benchmark` → `2026-10-19-03` y `2026-10-20-01-requisitos-en-asana` → `2026-10-20-05`, con su referencia en `FOOD4ALL_propuesta_asana.md`. Push y, después, las pruebas.
 
 **Pruebas (17:35):** compila (16 s); las rutas públicas responden 200; la API de administración, 401 sin sesión; el login con credenciales de prueba, 200; el panel lista 19 prompts; el bloqueo salta tras 5 fallos (429); un alta con un nombre de 200 caracteres se rechaza. Se corrigieron cifras desfasadas (564 requisitos) en el README, la guía de requisitos, la defensa y la propuesta de criba, y se añadió a `AGENTS.md` el traspaso para el equipo.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a las dos sesiones de Asana (20-05 y 23-03); aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Que la IA solo leyera el Asana de los otros grupos para compararnos, sin escribir nada en él.
+  - Revisar las mejoras de la competencia (M-01 a M-08) una a una, en lugar de aplicarlas todas de golpe.
+  - Guardar una copia antes de cada cambio en Asana, por si había que deshacerlo.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Dejé M-06 (punto de recogida) y pagar como invitado pendientes de debate y de nuevas entrevistas, en vez de aplicarlos.
+  - Dije que git era prioritario sobre Asana cuando me quedaban pocos tokens.
+  - Pedí no registrar un prompt y la IA se negó, porque el profesor pide todos: fue lo correcto y lo acepté.
+- **Por qué estaba justificado usar IA aquí:**
+  - Crear o cambiar cientos de tareas en Asana a mano es lento y es fácil equivocarse.
+  - Comparar dos copias del repositorio y unir ramas sin perder nada.
+  - Las decisiones (qué se aplica, quién hace cada cosa) las tomé yo.

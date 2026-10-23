@@ -51,3 +51,19 @@ No tenemos un servidor para pagar la web, para esta semana le entregare una copi
 No hubo clase hoy, es todo . OK
 
 **Resultado:** especificación aprobada. Rama `docs/hito2-entrega` con el trabajo pendiente de Windows y hoja `docs/requisitos/FOOD4ALL_tareas_entrega.md` con calendario, tareas por persona, formato del comentario de revisión y mensaje para el grupo.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a 22-01, 23-02 y 23-04; aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - El plan de entrega por persona, con tareas y horas, para repartir el trabajo del último día.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Antes de unir nada, pedí analizar la copia de Windows sin cambiar nada.
+- **Por qué estaba justificado usar IA aquí:**
+  - Mantener la documentación al día para que el equipo pudiera seguir sin mí.
+  - Las reglas y las decisiones las puse yo; la IA las aplicaba y documentaba.

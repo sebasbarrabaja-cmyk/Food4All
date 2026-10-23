@@ -166,3 +166,26 @@ Quita el pendiente, Anotalo internamente como prioritario, pero que visiblemente
   - `FOOD4ALL_contexto.md` y `FOOD4ALL_resumen.md`, en la carpeta recibida, están al día;
   - la nota técnica de la wiki del proyecto está actualizada.
 - B6: Sebastián dio el ok en Asana.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026). Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Que la página lea los datos directamente de `docs/requisitos` en vez de copiarlos, para que la landing y los documentos digan siempre lo mismo.
+  - Pasar antes la especificación (objetivo, qué se toca y cuándo está hecho) y esperar mi `ok`.
+  - Los arreglos de la revisión de código, como el `stats.json` que hacía fallar la página en un clon nuevo.
+  - Reinstalar las dependencias con `npm ci`, que tardó 6 s, porque las de Windows no compilaban.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Decidí cómo debía verse la pestaña: visible, pero sin destacar más que «Quiero comprar».
+  - Pedí agrupar los prompts por persona y por tema, no por día.
+  - Rechacé que se viera en el panel la plantilla de «Revisión pendiente»; lo dejamos como nota interna.
+  - Comprobé lo que subía Juan Antonio antes de unirlo, y se corrigieron las horas inventadas de su registro.
+- **Por qué estaba justificado usar IA aquí:**
+  - Programar la página, probarla en el navegador y revisarla (código y seguridad) en menos de una hora, con la entrega esa misma noche.
+  - La IA revisaba que todo fuera coherente: cifras, nombres de Asana y orden de la trazabilidad.
+  - El diseño y las decisiones las tomé yo; la IA las implementaba.
