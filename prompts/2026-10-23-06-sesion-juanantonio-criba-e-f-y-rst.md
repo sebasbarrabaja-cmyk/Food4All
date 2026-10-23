@@ -251,6 +251,12 @@ ya lo cree, revisa el git y dime si falta algo
 
 **Resultado:** el PR #9 existe. Su revisión crítica ya está en `main` (Sebastián la unió por `docs/hito2-entrega`); el PR solo añade los últimos registros de esta sesión. Se le avisó del pendiente interno que Sebastián anotó en `AGENTS.md` sobre los datos de E5 y E6 en el historial público de git.
 
+### Hora no registrada (después de las 22:01)
+
+comprueba asana y ya me dices
+
+**Resultado:** no se pudo. El Asana conectado a esta sesión es la cuenta personal de Gmail de Juan Antonio, con un solo espacio de trabajo; al pedir la tarea [B6] del Hito 2 por su identificador, Asana responde «Not Authorized». El de clase va con otra cuenta. Lo comprueba él a mano o Sebastián.
+
 ---
 
 ## Revisión crítica del equipo
