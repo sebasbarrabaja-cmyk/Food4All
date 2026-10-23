@@ -104,3 +104,15 @@ corrige las discrepancias del documento de personas
 pues vamos a ello
 
 **Resultado:** en `FOOD4ALL_comparativo_revisado.md`, el hallazgo 1 pasa a verificado en Glovo con los recorridos del 23/10 (un carrito por tienda) y el 7 se refuerza con los precios de envío por dirección. Se anota en el apartado 3.
+
+### 21:35
+
+(pegó dos de sus tareas pendientes: el comentario de Asana y revisar con sus palabras E5, E6 y los bloques E y F)
+
+**Resultado:** el asistente le dio los datos en bruto del comentario de Asana (no lo publica) y le preguntó con qué conclusiones y decisiones estaba de acuerdo. Respuestas: en E5, ninguna de las propuestas y una suya («El conforto y la buena calidad de las comidas y alimentos de productos frescos frente a los ultraprocesados y el apollo del comercio local frente a las empresas gigantes»); en E6, solo «Le frenan los gastos de envío»; bloque E, «Subir algo al MVP»; bloque F, «Sí, como está».
+
+### 21:37
+
+dame esas dos cosas y ya redacto yo
+
+**Resultado:** el asistente le dio el material para el comentario de Asana y para reescribir E5, E6 y el bloque E. No cambió los documentos: los redacta Juan Antonio.
