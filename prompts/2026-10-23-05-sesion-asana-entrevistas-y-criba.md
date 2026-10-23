@@ -122,3 +122,15 @@ Y voy a hacer la parte de Miguel yo
 Escribe que ahora estamos en llamada juan antonio y yo
 
 **Resultado:** se anotó en `AGENTS.md` («Ahora mismo») que Sebastián y Juan Antonio están en llamada terminando el Hito 2, para que el agente de Juan Antonio se coordine con lo que decidan.
+
+### 20:36
+
+1a
+
+**Resultado:** RF-06.6-04 (códigos promocionales) sigue en Could · V2. Su justificación en el catálogo dice por qué y apunta al riesgo, anotado como C-24 en la línea base. Se regeneró con `npm run todo` y las cifras no cambian.
+
+### 20:37
+
+Coherencia por encima de cualquier cosa
+
+**Resultado:** se comprobó que las justificaciones nuevas (RF-08.5-01 y RF-06.6-04) van en el campo que usa el catálogo y salen en el Excel. El siguiente bloque es que E1–E6 digan lo mismo en todos los documentos.
