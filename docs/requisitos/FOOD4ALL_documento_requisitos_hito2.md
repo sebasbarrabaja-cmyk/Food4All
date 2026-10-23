@@ -153,7 +153,7 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
 | N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
-| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
+| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
 | N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | 34 (17) |
 | N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 15 (10) |
@@ -1152,7 +1152,7 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
 | N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
-| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
+| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
 | N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | 34 (17) |
 | N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 15 (10) |
@@ -2135,7 +2135,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
 | **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 20 | US-03, US-10, US-13 | 36 (14) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
-| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 25 | US-05 | 35 (18) | — |
+| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (19) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
 | **N-INC-01** Tener una solución rápida, atendida por personas, si algo llega mal | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | RF-10, RF-13, RF-15, RF-19 | 9 | US-07, US-17 | 34 (17) | — |
 | **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 15 (10) | — |
@@ -2230,7 +2230,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-06.3** Revisión de alérgenos y condiciones | N-CAT-02, N-CAT-03 | F-03 | US-05 | Must · MVP | MVP | — | RF-06.3-01 … RF-06.3-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.4** Pago simulado | N-CAR-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.4-01 … RF-06.4-08 (8) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.5** Confirmación | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | Servicio externo: correo | RF-06.5-01 … RF-06.5-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.6** Modificar o cancelar | N-CAR-01, N-PLA-01, N-PLA-02 | F-01, F-02, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.6** Modificar o cancelar | N-CAR-01, N-CAT-03, N-PLA-01, N-PLA-02 | F-01, F-02, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-05 (5) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.7** Diseño y navegación del checkout | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | — | RF-06.7-01 … RF-06.7-06 (6) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.8** Datos de facturación | N-CAT-03 | F-03 | US-05 | Could · V2 | V2 | — | RF-06.8-01 … RF-06.8-02 (2) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
@@ -2283,7 +2283,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 ### 3. Controles
 
-- Requisitos sin necesidad: **0** de 563.
+- Requisitos sin necesidad: **0** de 564.
 - Procesos RF sin historia: **ninguno**.
 - Subrequisitos: 127 (105 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
@@ -9873,7 +9873,7 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 **Necesidades que cubre (nº de requisitos)**
 
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (18)
-- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (7)
+- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (8)
 - N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (3)
 - N-CAT-02 Conocer ingredientes y alérgenos antes de pagar (2)
 - N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar (2)
@@ -9891,13 +9891,13 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 - RF-06.3 · Revisión de alérgenos y condiciones (4) · Must · MVP
 - RF-06.4 · Pago simulado (8) · Must · MVP
 - RF-06.5 · Confirmación (4) · Must · MVP
-- RF-06.6 · Modificar o cancelar (4) · Must · MVP
+- RF-06.6 · Modificar o cancelar (5) · Must · MVP
 - RF-06.7 · Diseño y navegación del checkout (6) · Must · MVP
 - RF-06.8 · Datos de facturación (2) · Could · V2
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 20 · Paridad 11 · Diferencial 2 · Sin referente 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
+36 requisitos atómicos · Poco extendido 19 · Paridad 12 · Diferencial 2 · Sin referente 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -10459,10 +10459,11 @@ El cliente puede cancelar sin coste hasta la hora de cierre de su franja; despu�
 **2. Origen**
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
+- Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
 
 **3. Actores y roles**
 
@@ -10522,33 +10523,37 @@ RNF-01 Seguridad · RNF-04 Usabilidad · RNF-05 Accesibilidad · RNF-06 Compatib
 
 **15. Competencia**
 
-Poco extendido 3 · Paridad 1
+Paridad 2 · Poco extendido 2 · Mejora 1
 
-- Mercadona online: 3 sí
-- Glovo: 3 sí, 1 parcial
+- Mercadona online: 4 sí
+- Glovo: 4 sí, 1 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 1 sí
 - Market Wagon: 0 sí
 - Open Food Network: 1 sí
+- Diferenciales y mejoras: RF-06.6-05 (Mejora)
 
 **16. Fuera de alcance**
 
 Cancelación parcial por el cliente.
 
-**Requisitos atómicos (4)**
+**Requisitos atómicos (5)**
 
 - [ ] **RF-06.6-01** `Should·V2·Pendiente` Permitir modificar cantidades o franja hasta la hora de cierre de la franja. _(N-PLA-01)_
   - Criterio: Dado un pedido antes del cierre, cuando cambia la franja, entonces se guarda.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open S → Paridad
 - [ ] **RF-06.6-02** `Must·MVP·Pendiente` `simulado` Permitir cancelar sin coste hasta la hora de cierre con el botón «Cancelar pedido» y confirmación. _(N-CAR-01)_
   - Criterio: Dada una cancelación antes del cierre, cuando confirma, entonces el pedido pasa a Cancelado y se registra un reembolso de prueba por el total.
-  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Paridad
 - [ ] **RF-06.6-03** `Must·MVP·Pendiente` Después del cierre, ocultar «Cancelar pedido» y mostrar «El pedido ya se está preparando». _(N-CAR-01)_
   - Criterio: Dado un pedido tras el cierre, cuando lo abre, entonces no ve el botón.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-06.6-04** `Could·V2·Pendiente` Aplicar códigos promocionales en el checkout con el campo «¿Tienes un código?». _(N-PLA-02)_
   - Criterio: Dado un código válido del 10 %, cuando lo aplica, entonces el total baja un 10 %.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+- [ ] **RF-06.6-05** `Must·MVP·Pendiente` En la confirmación del pedido y en su correo, mostrar «Puedes cancelar sin coste hasta el <día> a las <hora>» con la hora de cierre de su franja. _(N-CAT-03)_
+  - Criterio: Dado un pedido de la franja del jueves con cierre el martes a las 20:00, cuando se confirma, entonces la pantalla y el correo dicen «Puedes cancelar sin coste hasta el martes a las 20:00».
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

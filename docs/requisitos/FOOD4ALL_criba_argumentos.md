@@ -21,7 +21,7 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
-| **Total** | **563** | **403** (38 simulados) | **156** + 4 excluidos |
+| **Total** | **564** | **404** (38 simulados) | **156** + 4 excluidos |
 
 Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). Son solo las de Sebastián: faltan las del resto del equipo.
 - **Precio y producto:** E4 compraría directamente al productor si percibe «mayor calidad, un precio favorable y una cantidad adecuada». A E2 le atraen los productos «locales, menos procesados y más baratos».

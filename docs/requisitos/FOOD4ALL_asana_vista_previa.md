@@ -7707,7 +7707,7 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 **Necesidades que cubre (nº de requisitos)**
 
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (18)
-- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (7)
+- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (8)
 - N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (3)
 - N-CAT-02 Conocer ingredientes y alérgenos antes de pagar (2)
 - N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar (2)
@@ -7725,13 +7725,13 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 - RF-06.3 · Revisión de alérgenos y condiciones (4) · Must · MVP
 - RF-06.4 · Pago simulado (8) · Must · MVP
 - RF-06.5 · Confirmación (4) · Must · MVP
-- RF-06.6 · Modificar o cancelar (4) · Must · MVP
+- RF-06.6 · Modificar o cancelar (5) · Must · MVP
 - RF-06.7 · Diseño y navegación del checkout (6) · Must · MVP
 - RF-06.8 · Datos de facturación (2) · Could · V2
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 20 · Paridad 11 · Diferencial 2 · Sin referente 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
+36 requisitos atómicos · Poco extendido 19 · Paridad 12 · Diferencial 2 · Sin referente 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -8293,10 +8293,11 @@ El cliente puede cancelar sin coste hasta la hora de cierre de su franja; despu�
 **2. Origen**
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
+- Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
 
 **3. Actores y roles**
 
@@ -8356,33 +8357,37 @@ RNF-01 Seguridad · RNF-04 Usabilidad · RNF-05 Accesibilidad · RNF-06 Compatib
 
 **15. Competencia**
 
-Poco extendido 3 · Paridad 1
+Paridad 2 · Poco extendido 2 · Mejora 1
 
-- Mercadona online: 3 sí
-- Glovo: 3 sí, 1 parcial
+- Mercadona online: 4 sí
+- Glovo: 4 sí, 1 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 1 sí
 - Market Wagon: 0 sí
 - Open Food Network: 1 sí
+- Diferenciales y mejoras: RF-06.6-05 (Mejora)
 
 **16. Fuera de alcance**
 
 Cancelación parcial por el cliente.
 
-**Requisitos atómicos (4)**
+**Requisitos atómicos (5)**
 
 - [ ] **RF-06.6-01** `Should·V2·Pendiente` Permitir modificar cantidades o franja hasta la hora de cierre de la franja. _(N-PLA-01)_
   - Criterio: Dado un pedido antes del cierre, cuando cambia la franja, entonces se guarda.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open S → Paridad
 - [ ] **RF-06.6-02** `Must·MVP·Pendiente` `simulado` Permitir cancelar sin coste hasta la hora de cierre con el botón «Cancelar pedido» y confirmación. _(N-CAR-01)_
   - Criterio: Dada una cancelación antes del cierre, cuando confirma, entonces el pedido pasa a Cancelado y se registra un reembolso de prueba por el total.
-  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Paridad
 - [ ] **RF-06.6-03** `Must·MVP·Pendiente` Después del cierre, ocultar «Cancelar pedido» y mostrar «El pedido ya se está preparando». _(N-CAR-01)_
   - Criterio: Dado un pedido tras el cierre, cuando lo abre, entonces no ve el botón.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-06.6-04** `Could·V2·Pendiente` Aplicar códigos promocionales en el checkout con el campo «¿Tienes un código?». _(N-PLA-02)_
   - Criterio: Dado un código válido del 10 %, cuando lo aplica, entonces el total baja un 10 %.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+- [ ] **RF-06.6-05** `Must·MVP·Pendiente` En la confirmación del pedido y en su correo, mostrar «Puedes cancelar sin coste hasta el <día> a las <hora>» con la hora de cierre de su franja. _(N-CAT-03)_
+  - Criterio: Dado un pedido de la franja del jueves con cierre el martes a las 20:00, cuando se confirma, entonces la pantalla y el correo dicen «Puedes cancelar sin coste hasta el martes a las 20:00».
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

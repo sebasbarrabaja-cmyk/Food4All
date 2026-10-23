@@ -128,3 +128,9 @@ Tienes instrucciones de mel. a)
 1a 2c 3a
 
 **Resultado:** M-02 aplicada. Nuevos RF-08.4-06 (aviso de retraso del reparto con nueva hora u otra franja), RF-08.2-05 y RF-08.2-06 (si un vendedor llega tarde al hub, el cliente elige esperar o recibir lo demás; sin respuesta se entrega lo demás); los tres Must · MVP. Se actualizaron las fichas de RF-08.2 y RF-08.4 y las reglas de `FOOD4ALL_estados_pedido.md`; la compensación queda pendiente (D-02). Se regeneró: 563 requisitos, 403 en el MVP. Anotado como C-15.
+
+### 16:52 (aprox.)
+
+1a
+
+**Resultado:** M-03 aplicada. Nuevo RF-06.6-05 (Must · MVP: la confirmación y su correo dicen hasta cuándo se puede cancelar sin coste) y justificación de RF-06.6-02 con la evidencia de Wetaca, Mercadona y Open Food Network. En la línea base, esa evidencia queda en la fila de la regla de cancelación. Se regeneró: 564 requisitos, 404 en el MVP. Anotado como C-16.

@@ -19,7 +19,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
 | **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 20 | US-03, US-10, US-13 | 36 (14) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
-| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 25 | US-05 | 35 (18) | — |
+| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (19) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
 | **N-INC-01** Tener una solución rápida, atendida por personas, si algo llega mal | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | RF-10, RF-13, RF-15, RF-19 | 9 | US-07, US-17 | 34 (17) | — |
 | **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 15 (10) | — |
@@ -114,7 +114,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-06.3** Revisión de alérgenos y condiciones | N-CAT-02, N-CAT-03 | F-03 | US-05 | Must · MVP | MVP | — | RF-06.3-01 … RF-06.3-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.4** Pago simulado | N-CAR-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.4-01 … RF-06.4-08 (8) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.5** Confirmación | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | Servicio externo: correo | RF-06.5-01 … RF-06.5-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-06.6** Modificar o cancelar | N-CAR-01, N-PLA-01, N-PLA-02 | F-01, F-02, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-04 (4) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-06.6** Modificar o cancelar | N-CAR-01, N-CAT-03, N-PLA-01, N-PLA-02 | F-01, F-02, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-05 (5) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.7** Diseño y navegación del checkout | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | — | RF-06.7-01 … RF-06.7-06 (6) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.8** Datos de facturación | N-CAT-03 | F-03 | US-05 | Could · V2 | V2 | — | RF-06.8-01 … RF-06.8-02 (2) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
@@ -167,7 +167,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 ## 3. Controles
 
-- Requisitos sin necesidad: **0** de 563.
+- Requisitos sin necesidad: **0** de 564.
 - Procesos RF sin historia: **ninguno**.
 - Subrequisitos: 127 (105 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
