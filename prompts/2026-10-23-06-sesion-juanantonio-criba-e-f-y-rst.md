@@ -239,6 +239,18 @@ revisa asna y el git
 
 **Resultado:** el Asana de clase sigue sin estar conectado a esta sesión. En git, Sebastián unió a `main` sus revisiones críticas (PR #4 y #5), pero no hay ningún PR de `docs/juanantonio-hito2`: sus últimos commits (revisión crítica incluida) no están en `main`. No chocan con `main`.
 
+### Hora no registrada (después de las 21:51)
+
+pues hazlo y pon de nombre Revisión crítica de Juan Antonio
+
+**Resultado:** no se pudo crear el PR desde la terminal: no hay `gh` instalado y usar la credencial guardada de GitHub quedó bloqueado por los permisos de la sesión. Se le abrió en el navegador la página del PR con el título «Revisión crítica de Juan Antonio» ya puesto, para que pulse «Create pull request».
+
+### Hora no registrada (después de las 22:01)
+
+ya lo cree, revisa el git y dime si falta algo
+
+**Resultado:** el PR #9 existe. Su revisión crítica ya está en `main` (Sebastián la unió por `docs/hito2-entrega`); el PR solo añade los últimos registros de esta sesión. Se le avisó del pendiente interno que Sebastián anotó en `AGENTS.md` sobre los datos de E5 y E6 en el historial público de git.
+
 ---
 
 ## Revisión crítica del equipo
