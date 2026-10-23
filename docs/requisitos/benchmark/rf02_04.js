@@ -39,7 +39,7 @@ module.exports = (R) => {
 
   R.sub('RF-02.6', 'Datos del negocio y perfil público');
   R('Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad.', 'Dado un cambio de historia, cuando guarda, entonces se ve en su perfil público.', 'S', 'MVP', ['BF17'], 'N-VEN-01');
-  R('Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona y productos activos.', 'Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos.', 'S', 'MVP', ['BF17'], 'N-VEN-01');
+  R('Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona, productos activos y un apartado «Cómo producimos» escrito por el vendedor (hasta 500 caracteres).', 'Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos y el apartado «Cómo producimos».', 'M', 'MVP', ['BF17'], 'N-CAT-01', { pos: 'Paridad', just: 'Market Wagon muestra en cada producto la granja, el condado, cómo produce y una descripción del productor; Glovo, Mercadona y Wetaca no dicen el origen (recorrido del 23/10/2026). La ficha (RF-04.5-01, Must) enlaza a este perfil.' });
   R('Guardar el IBAN para las liquidaciones, visible solo enmascarado (ES** **** 1234).', 'Dado un IBAN guardado, cuando el vendedor lo consulta, entonces ve solo los 4 últimos dígitos.', 'S', 'V2', ['BF76'], 'N-VEN-05');
   R('Validar el formato del IBAN español (ES + 22 dígitos) antes de guardarlo.', 'Dado un IBAN de 20 dígitos, cuando guarda, entonces ve «El IBAN no es válido».', 'S', 'V2', [], 'N-VEN-05');
 

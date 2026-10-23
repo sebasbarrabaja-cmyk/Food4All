@@ -151,12 +151,12 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (15) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
 | N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | 34 (17) |
-| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 15 (10) |
+| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 14 (9) |
 | N-VEN-02 | Vender online sin montar una web propia ni gestionar envíos | Vendedor (P2) | Usuario | Hipótesis | F-01, F-04 | 16 (9) |
 | N-VEN-03 | Reducir la merma del género que no vende a tiempo | Vendedor (P2) | Usuario | Hipótesis | F-03 (Ley 1/2025) | 1 (0) |
 | N-VEN-04 | Saber qué preparar y para cuándo: pedido claro y franja de recogida | Vendedor (P2) | Usuario | Hipótesis | F-06, F-12 | 13 (12) |
@@ -1150,12 +1150,12 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (15) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
 | N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | 34 (17) |
-| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 15 (10) |
+| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 14 (9) |
 | N-VEN-02 | Vender online sin montar una web propia ni gestionar envíos | Vendedor (P2) | Usuario | Hipótesis | F-01, F-04 | 16 (9) |
 | N-VEN-03 | Reducir la merma del género que no vende a tiempo | Vendedor (P2) | Usuario | Hipótesis | F-03 (Ley 1/2025) | 1 (0) |
 | N-VEN-04 | Saber qué preparar y para cuándo: pedido claro y franja de recogida | Vendedor (P2) | Usuario | Hipótesis | F-06, F-12 | 13 (12) |
@@ -2133,12 +2133,12 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
 | **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | No confirmada | F-02, F-07 (en contra: E3, E4) | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
-| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 20 | US-03, US-10, US-13 | 36 (14) | — |
+| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-02, RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 21 | US-03, US-10, US-13 | 37 (15) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
 | **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (19) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
 | **N-INC-01** Tener una solución rápida, atendida por personas, si algo llega mal | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | RF-10, RF-13, RF-15, RF-19 | 9 | US-07, US-17 | 34 (17) | — |
-| **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 15 (10) | — |
+| **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 14 (9) | — |
 | **N-VEN-02** Vender online sin montar una web propia ni gestionar envíos | Hipótesis | F-01, F-04 | RF-01, RF-03, RF-16, RF-18, RNF-04 | 8 | US-02, US-18 | 16 (9) | — |
 | **N-VEN-03** Reducir la merma del género que no vende a tiempo | Hipótesis | F-03 (Ley 1/2025) | RF-04 | 1 | — | 1 (0) | Solo fuera del MVP; sin historia |
 | **N-VEN-04** Saber qué preparar y para cuándo: pedido claro y franja de recogida | Hipótesis | F-06, F-12 | RF-07, RF-16 | 7 | US-11, US-15 | 13 (12) | — |
@@ -2168,7 +2168,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-02.3** Documentación | N-CUE-01, N-VEN-06, N-VEN-07 | F-03 | US-02 | Must · MVP | MVP | — | RF-02.3-01 … RF-02.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-02.4** Estados de la solicitud | N-VEN-06, N-VEN-07 | F-03 | US-02 | Must · MVP | MVP | Servicio externo: correo | RF-02.4-01 … RF-02.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-02.5** Activación y formación | N-VEN-06 | F-03 | US-02 | Must · MVP | MVP | — | RF-02.5-01 … RF-02.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-02.6** Datos del negocio y perfil público | N-VEN-01, N-VEN-05 | F-01, F-12 | US-02 | Should · MVP | MVP | — | RF-02.6-01 … RF-02.6-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-02.6** Datos del negocio y perfil público | N-VEN-05, N-CAT-01, N-VEN-01 | F-01, F-03, F-04, F-07, F-12 | US-02 | Must · MVP | MVP | — | RF-02.6-01 … RF-02.6-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-02.7** Diseño y comportamiento del formulario de alta | N-VEN-06 | F-03 | US-02 | Must · MVP | MVP | — | RF-02.7-01 … RF-02.7-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.1** Acceso | N-CUE-01 | F-03 | US-09 | Must · MVP | MVP | — | RF-13.1-01 … RF-13.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.2** Vendedores | N-VEN-07, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | — | RF-13.2-01 … RF-13.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
@@ -3510,9 +3510,10 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - N-VEN-06 Conocer con claridad los requisitos y los pasos del alta (22)
 - N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada (5)
-- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (3)
 - N-VEN-05 Cobrar con transparencia: comisión y liquidación claras (3)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (2)
+- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (2)
+- N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra (1)
 
 **Supone que existe:** RF-01 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -3523,12 +3524,12 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - RF-02.3 · Documentación (3) · Must · MVP
 - RF-02.4 · Estados de la solicitud (4) · Must · MVP
 - RF-02.5 · Activación y formación (3) · Must · MVP
-- RF-02.6 · Datos del negocio y perfil público (4) · Should · MVP
+- RF-02.6 · Datos del negocio y perfil público (4) · Must · MVP
 - RF-02.7 · Diseño y comportamiento del formulario de alta (6) · Must · MVP
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 30 · Sin referente 3 · Mejora 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
+35 requisitos atómicos · Poco extendido 29 · Sin referente 3 · Mejora 2 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -4094,7 +4095,7 @@ Formación en vídeo; visitas al vendedor.
 
 _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
 
 **1. Descripción**
 
@@ -4102,10 +4103,11 @@ Datos comerciales del vendedor y su perfil público, donde los clientes ven su h
 
 **2. Origen**
 
-- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
+- Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
+- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-02
-- Fuentes de las necesidades: F-01, F-12 · Fuentes del benchmark: F-04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-12 · Fuentes del benchmark: F-04, S08, S09
 
 **3. Actores y roles**
 
@@ -4162,7 +4164,7 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad
 
 **15. Competencia**
 
-Poco extendido 4
+Poco extendido 3 · Paridad 1
 
 - Mercadona online: 0 sí, 3 no
 - Glovo: 0 sí
@@ -4180,9 +4182,9 @@ IBAN y su validación (V2); valoraciones en el perfil (RF-11).
 - [ ] **RF-02.6-01** `Should·MVP·Pendiente` Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad. _(N-VEN-01)_
   - Criterio: Dado un cambio de historia, cuando guarda, entonces se ve en su perfil público.
   - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-02.6-02** `Should·MVP·Pendiente` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona y productos activos. _(N-VEN-01)_
-  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos.
-  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
+- [ ] **RF-02.6-02** `Must·MVP·Pendiente` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona, productos activos y un apartado «Cómo producimos» escrito por el vendedor (hasta 500 caracteres). _(N-CAT-01)_
+  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos y el apartado «Cómo producimos».
+  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Paridad
 - [ ] **RF-02.6-03** `Should·V2·Pendiente` Guardar el IBAN para las liquidaciones, visible solo enmascarado (ES** **** 1234). _(N-VEN-05)_
   - Criterio: Dado un IBAN guardado, cuando el vendedor lo consulta, entonces ve solo los 4 últimos dígitos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido

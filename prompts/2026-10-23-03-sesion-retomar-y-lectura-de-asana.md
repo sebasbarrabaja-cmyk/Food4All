@@ -140,3 +140,9 @@ Tienes instrucciones de mel. a)
 1a
 
 **Resultado:** M-04 ya estaba cubierta (RF-05.4 y RF-05.2-04). Se corrigió la justificación de RF-05.4-02 (Mercadona: 60 € más 8,20 € de tarifa, verificado el 23/10, en lugar de «50 €») y se añadió la evidencia de mejora a RF-05.4-04. Sin requisitos nuevos (564). Anotado como C-17.
+
+### 17:02 (aprox.)
+
+1a
+
+**Resultado:** M-05 aplicada. RF-02.6-02 (perfil público del vendedor) pasa de Should a Must y añade el apartado «Cómo producimos» (hasta 500 caracteres); así deja de haber una ficha Must que enlaza a un perfil Should. El asistente también cambió su necesidad de N-VEN-01 a N-CAT-01, y lo avisó para que Sebastián lo confirme. Se regeneró: 564 requisitos (Must 303). Anotado como C-18.

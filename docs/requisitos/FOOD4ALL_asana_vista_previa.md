@@ -1344,9 +1344,10 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - N-VEN-06 Conocer con claridad los requisitos y los pasos del alta (22)
 - N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada (5)
-- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (3)
 - N-VEN-05 Cobrar con transparencia: comisión y liquidación claras (3)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (2)
+- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (2)
+- N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra (1)
 
 **Supone que existe:** RF-01 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -1357,12 +1358,12 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - RF-02.3 · Documentación (3) · Must · MVP
 - RF-02.4 · Estados de la solicitud (4) · Must · MVP
 - RF-02.5 · Activación y formación (3) · Must · MVP
-- RF-02.6 · Datos del negocio y perfil público (4) · Should · MVP
+- RF-02.6 · Datos del negocio y perfil público (4) · Must · MVP
 - RF-02.7 · Diseño y comportamiento del formulario de alta (6) · Must · MVP
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 30 · Sin referente 3 · Mejora 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
+35 requisitos atómicos · Poco extendido 29 · Sin referente 3 · Mejora 2 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -1928,7 +1929,7 @@ Formación en vídeo; visitas al vendedor.
 
 _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
 
 **1. Descripción**
 
@@ -1936,10 +1937,11 @@ Datos comerciales del vendedor y su perfil público, donde los clientes ven su h
 
 **2. Origen**
 
-- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
+- Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
+- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-02
-- Fuentes de las necesidades: F-01, F-12 · Fuentes del benchmark: F-04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-12 · Fuentes del benchmark: F-04, S08, S09
 
 **3. Actores y roles**
 
@@ -1996,7 +1998,7 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad
 
 **15. Competencia**
 
-Poco extendido 4
+Poco extendido 3 · Paridad 1
 
 - Mercadona online: 0 sí, 3 no
 - Glovo: 0 sí
@@ -2014,9 +2016,9 @@ IBAN y su validación (V2); valoraciones en el perfil (RF-11).
 - [ ] **RF-02.6-01** `Should·MVP·Pendiente` Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad. _(N-VEN-01)_
   - Criterio: Dado un cambio de historia, cuando guarda, entonces se ve en su perfil público.
   - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-02.6-02** `Should·MVP·Pendiente` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona y productos activos. _(N-VEN-01)_
-  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos.
-  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
+- [ ] **RF-02.6-02** `Must·MVP·Pendiente` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona, productos activos y un apartado «Cómo producimos» escrito por el vendedor (hasta 500 caracteres). _(N-CAT-01)_
+  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos y el apartado «Cómo producimos».
+  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Paridad
 - [ ] **RF-02.6-03** `Should·V2·Pendiente` Guardar el IBAN para las liquidaciones, visible solo enmascarado (ES** **** 1234). _(N-VEN-05)_
   - Criterio: Dado un IBAN guardado, cuando el vendedor lo consulta, entonces ve solo los 4 últimos dígitos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
