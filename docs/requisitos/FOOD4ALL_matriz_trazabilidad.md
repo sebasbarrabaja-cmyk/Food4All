@@ -25,13 +25,13 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 14 (9) | — |
 | **N-VEN-02** Vender online sin montar una web propia ni gestionar envíos | Hipótesis | F-01, F-04 | RF-01, RF-03, RF-16, RF-18, RNF-04 | 8 | US-02, US-18 | 16 (9) | — |
 | **N-VEN-03** Reducir la merma del género que no vende a tiempo | Hipótesis | F-03 (Ley 1/2025) | RF-04 | 1 | — | 1 (0) | Solo fuera del MVP; sin historia |
-| **N-VEN-04** Saber qué preparar y para cuándo: pedido claro y franja de recogida | Hipótesis | F-06, F-12 | RF-07, RF-16 | 7 | US-11, US-15 | 13 (12) | — |
+| **N-VEN-04** Saber qué preparar y para cuándo: pedido claro y franja de recogida | Hipótesis | F-12 | RF-07, RF-16 | 7 | US-11, US-15 | 13 (12) | — |
 | **N-VEN-05** Cobrar con transparencia: comisión y liquidación claras | Hipótesis | F-12 (críticas a la tarifa de Market Wagon) | RF-02, RF-16, RF-17 | 5 | US-16 | 11 (1) | — |
 | **N-VEN-06** Conocer con claridad los requisitos y los pasos del alta | Hipótesis | F-03 | RF-01, RF-02, RF-16 | 8 | US-02 | 24 (22) | — |
 | **N-VEN-07** Admitir solo vendedores con registro sanitario o con una exención justificada | Obligación legal | F-03 (RD 191/2011; RD 1086/2020) | RF-01, RF-02, RF-13 | 6 | US-02, US-09 | 9 (9) | — |
-| **N-HUB-01** Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» | Hipótesis | F-06, F-12 | RF-07, RF-08 | 3 | US-12 | 6 (3) | — |
+| **N-HUB-01** Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» | Hipótesis | F-12 | RF-07, RF-08 | 3 | US-12 | 6 (3) | — |
 | **N-HUB-02** Mantener la cadena de frío y separar frío y seco | Obligación legal | F-03 (Reglamento 852/2004), F-12 | RF-08 | 4 | US-12 | 4 (2) | — |
-| **N-HUB-03** Verificar cada pedido y resolver las faltas antes de entregar | Hipótesis | F-06, F-12 | RF-07, RF-08, RF-13 | 6 | US-11, US-12 | 16 (13) | — |
+| **N-HUB-03** Verificar cada pedido y resolver las faltas antes de entregar | Hipótesis | F-12 | RF-07, RF-08, RF-13 | 6 | US-11, US-12 | 16 (13) | — |
 
 ## 2. Matriz por subrequisito
 
@@ -56,7 +56,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-02.7** Diseño y comportamiento del formulario de alta | N-VEN-06 | F-03 | US-02 | Must · MVP | MVP | — | RF-02.7-01 … RF-02.7-06 (6) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.1** Acceso | N-CUE-01 | F-03 | US-09 | Must · MVP | MVP | — | RF-13.1-01 … RF-13.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.2** Vendedores | N-VEN-07, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | — | RF-13.2-01 … RF-13.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-13.3** Catálogo, pedidos e incidencias | N-CAT-01, N-HUB-03, N-INC-01 | F-03, F-04, F-06, F-07, F-12 | US-09 | Must · MVP | MVP | H-04 plazos de incidencias | RF-13.3-01 … RF-13.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-13.3** Catálogo, pedidos e incidencias | N-CAT-01, N-HUB-03, N-INC-01 | F-03, F-04, F-07, F-12 | US-09 | Must · MVP | MVP | H-04 plazos de incidencias | RF-13.3-01 … RF-13.3-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.4** Contenido, métricas y auditoría | N-CAT-01, N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-09 | Should · V2 | V2 | — | RF-13.4-01 … RF-13.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.5** Usuarios y roles | N-CUE-01, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | — | RF-13.5-01 … RF-13.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-13.6** Configuración | N-ENT-01, N-CAT-01 | F-03, F-04, F-07 | US-09 | Must · MVP | MVP | D-03 hub y zonas; H-01 compra mínima | RF-13.6-01 … RF-13.6-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
@@ -93,11 +93,11 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-12.5** Plan de comidas y después de comprar | N-PLA-01, N-CAD-01 | F-01, F-02, F-03, F-07 | US-08 | Should · V2 | V2 | Servicio externo: motor de IA | RF-12.5-01 … RF-12.5-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
 | **RF-12.6** Diseño del asistente | N-IA-01, N-IA-02, N-PLA-02 | F-01, F-02, F-03, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.6-01 … RF-12.6-05 (5) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
 | **RF-12.7** Reglas de la propuesta | N-PLA-01, N-CAD-01, N-VEN-01 | F-01, F-02, F-03, F-07 | US-08 | Should · MVP | MVP (con partes simuladas) | Servicio externo: motor de IA | RF-12.7-01 … RF-12.7-04 (4) | RNF-01, RNF-02, RNF-05, RNF-06, RNF-08, RNF-10 | | | |
-| **RF-16.1** Inicio del panel | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.1-01 … RF-16.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-16.2** Pedidos del vendedor | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.2-01 … RF-16.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-16.1** Inicio del panel | N-VEN-04 | F-12 | US-15 | Must · MVP | MVP | — | RF-16.1-01 … RF-16.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-16.2** Pedidos del vendedor | N-VEN-04 | F-12 | US-15 | Must · MVP | MVP | — | RF-16.2-01 … RF-16.2-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-16.3** Ventas y estadísticas | N-VEN-05, N-CAT-01 | F-03, F-04, F-07, F-12 | US-15 | Should · V2 | V2 | — | RF-16.3-01 … RF-16.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-16.4** Productos en el panel | N-VEN-02, N-VEN-06 | F-01, F-03, F-04 | US-15 | Must · MVP | MVP | — | RF-16.4-01 … RF-16.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-16.5** Días de recogida | N-VEN-04 | F-06, F-12 | US-15 | Must · MVP | MVP | — | RF-16.5-01 … RF-16.5-02 (2) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-16.5** Días de recogida | N-VEN-04 | F-12 | US-15 | Must · MVP | MVP | — | RF-16.5-01 … RF-16.5-02 (2) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-17.1** Condiciones | N-CAT-01, N-CAT-03, N-VEN-05 | F-03, F-04, F-07, F-12 | US-16 | Should · V2 | V2 | D-02 comisión | RF-17.1-01 … RF-17.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-17.2** Liquidación | N-VEN-05, N-CAT-03 | F-03, F-12 | US-16 | Should · V2 | V2 | D-02 comisión | RF-17.2-01 … RF-17.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-05.1** Añadir al carrito | N-CAR-01 | F-04, F-07, F-10 | US-04 | Must · MVP | MVP | — | RF-05.1-01 … RF-05.1-05 (5) | RNF-01, RNF-03, RNF-04, RNF-05, RNF-06 | | | |
@@ -117,20 +117,20 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-06.6** Modificar o cancelar | N-CAR-01, N-CAT-03, N-PLA-01, N-PLA-02 | F-01, F-02, F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP (con partes simuladas) | — | RF-06.6-01 … RF-06.6-05 (5) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.7** Diseño y navegación del checkout | N-CAR-01, N-CAT-03 | F-03, F-04, F-07, F-10 | US-05 | Must · MVP | MVP | — | RF-06.7-01 … RF-06.7-06 (6) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-06.8** Datos de facturación | N-CAT-03 | F-03 | US-05 | Could · V2 | V2 | — | RF-06.8-01 … RF-06.8-02 (2) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.2** Aviso y vista del vendedor | N-VEN-04, N-CUE-01 | F-03, F-06, F-12 | US-11 | Must · MVP | MVP | Servicio externo: correo | RF-07.2-01 … RF-07.2-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.3** Confirmar o avisar de faltas | N-HUB-03, N-PLA-02, N-VEN-04 | F-01, F-06, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | — | RF-07.3-01 … RF-07.3-09 (9) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.4** Preparación y etiqueta | N-CAT-01, N-HUB-01 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP | — | RF-07.4-01 … RF-07.4-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.5** Plazos y avisos al vendedor | N-HUB-03, N-CAT-01, N-VEN-04 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | D-02 comisión | RF-07.5-01 … RF-07.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.6** Pedido sin el grupo de un vendedor | N-HUB-03 | F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | H-01 compra mínima | RF-07.6-01 … RF-07.6-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.2** Aviso y vista del vendedor | N-VEN-04, N-CUE-01 | F-03, F-12 | US-11 | Must · MVP | MVP | Servicio externo: correo | RF-07.2-01 … RF-07.2-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.3** Confirmar o avisar de faltas | N-HUB-03, N-PLA-02, N-VEN-04 | F-01, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | — | RF-07.3-01 … RF-07.3-09 (9) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.4** Preparación y etiqueta | N-CAT-01, N-HUB-01 | F-03, F-04, F-07, F-12 | US-11 | Must · MVP | MVP | — | RF-07.4-01 … RF-07.4-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.5** Plazos y avisos al vendedor | N-HUB-03, N-CAT-01, N-VEN-04 | F-03, F-04, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | D-02 comisión | RF-07.5-01 … RF-07.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.6** Pedido sin el grupo de un vendedor | N-HUB-03 | F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | H-01 compra mínima | RF-07.6-01 … RF-07.6-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-14.1** Suscripción opcional | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.1-01 … RF-14.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-14.2** Gestión de la suscripción | N-PLA-02, N-CAT-03 | F-01, F-03, F-07 | US-19 | Could · V3 | V3 | — | RF-14.2-01 … RF-14.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-08.1** Ruta de recogida | N-HUB-01 | F-06, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.1-01 … RF-08.1-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-ENT-01, N-HUB-02 | F-03, F-04, F-06, F-07, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.1** Ruta de recogida | N-HUB-01 | F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.1-01 … RF-08.1-03 (3) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-ENT-01, N-HUB-02 | F-03, F-04, F-07, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.3** Empaquetado consolidado | N-ENT-01, N-CAT-02, N-HUB-02 | F-03, F-04, F-07, F-12 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.3-01 … RF-08.3-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-06, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.7** Entrega al cliente | N-ENT-01, N-HUB-02 | F-03, F-04, F-07, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.7-01 … RF-08.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-09.1** Estados | N-ENT-01 | F-04, F-07 | US-06 | Must · MVP | MVP | — | RF-09.1-01 … RF-09.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-09.2** Pantalla de seguimiento | N-ENT-01 | F-04, F-07 | US-06 | Must · MVP | MVP | H-02 espera de la entrega | RF-09.2-01 … RF-09.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
@@ -181,8 +181,8 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | F-02 | Alcance (Hito 1) | Decisión del equipo |
 | F-03 | Marco legal (Hito 1) | Norma (análisis orientativo, sin revisión profesional) |
 | F-04 | Comparativo de 10 empresas (adjunto de Juan Antonio, 09/10/2026) | Benchmark exploratorio: fiabilidad baja, no cita fuentes |
-| F-05 | Investigación de entrega a clientes (Miguel) | En curso |
-| F-06 | Investigación de recogida a vendedores (Juan Antonio) | En curso |
+| F-05 | Investigación de entrega a clientes (Miguel) | No se hizo: lo cubren C-15 y D-03 (Hito 3) |
+| F-06 | Investigación de recogida a vendedores (Juan Antonio) | No se hizo: lo cubren C-15 y D-03 (Hito 3) |
 | F-07 | Entrevistas a estudiantes (23/10/2026): E1–E4 de Sebastián y E5–E6 de Juan Antonio; perfil objetivo E3–E6, comparativos E1 y E2. Las 12 de Miguel se descartaron (C-22) | E1–E4: apuntes sin citas literales; E5–E6: literales, compañeras de piso entre sí |
 | F-08 | Entrevistas a vendedores (mínimo 2-3) | Pendiente: se suben el 23/10/2026 |
 | F-09 | Borrador de 211 requisitos (09/10/2026) | Histórico: lista de ideas, no evidencia |

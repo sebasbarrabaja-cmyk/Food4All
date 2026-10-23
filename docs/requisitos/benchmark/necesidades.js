@@ -34,14 +34,14 @@ const NECESIDADES = [
   { id: 'N-VEN-01', texto: 'Llegar a clientes nuevos y ganar visibilidad', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-01 (comercio tradicional 10,6 %)', estado: 'Hipótesis', v03: 'N-03', b2: 'N-12' },
   { id: 'N-VEN-02', texto: 'Vender online sin montar una web propia ni gestionar envíos', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-01, F-04', estado: 'Hipótesis', v03: 'N-03', b2: 'N-13' },
   { id: 'N-VEN-03', texto: 'Reducir la merma del género que no vende a tiempo', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-03 (Ley 1/2025)', estado: 'Hipótesis', v03: '—', b2: 'N-14' },
-  { id: 'N-VEN-04', texto: 'Saber qué preparar y para cuándo: pedido claro y franja de recogida', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-06, F-12', estado: 'Hipótesis', v03: 'N-03 (parte)', b2: 'N-15' },
+  { id: 'N-VEN-04', texto: 'Saber qué preparar y para cuándo: pedido claro y franja de recogida', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-12', estado: 'Hipótesis', v03: 'N-03 (parte)', b2: 'N-15' },
   { id: 'N-VEN-05', texto: 'Cobrar con transparencia: comisión y liquidación claras', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-12 (críticas a la tarifa de Market Wagon)', estado: 'Hipótesis', v03: 'N-03 (parte)', b2: 'N-16' },
   { id: 'N-VEN-06', texto: 'Conocer con claridad los requisitos y los pasos del alta', quien: 'Vendedor', persona: 'P2', tipo: 'Usuario', fuentes: 'F-03', estado: 'Hipótesis', v03: 'N-03 (parte)', b2: 'N-17' },
   { id: 'N-VEN-07', texto: 'Admitir solo vendedores con registro sanitario o con una exención justificada', quien: 'Administrador', persona: 'P3', tipo: 'Obligación legal', fuentes: 'F-03 (RD 191/2011; RD 1086/2020)', estado: 'Obligación legal', v03: 'N-05', b2: '—' },
   // Operador del hub y repartidor (P3 · Rafa)
-  { id: 'N-HUB-01', texto: 'Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»', quien: 'Operador', persona: 'P3', tipo: 'Usuario', fuentes: 'F-06, F-12', estado: 'Hipótesis', v03: '—', b2: 'N-18' },
+  { id: 'N-HUB-01', texto: 'Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»', quien: 'Operador', persona: 'P3', tipo: 'Usuario', fuentes: 'F-12', estado: 'Hipótesis', v03: '—', b2: 'N-18' },
   { id: 'N-HUB-02', texto: 'Mantener la cadena de frío y separar frío y seco', quien: 'Operador', persona: 'P3', tipo: 'Obligación legal', fuentes: 'F-03 (Reglamento 852/2004), F-12', estado: 'Obligación legal', v03: '—', b2: 'N-19' },
-  { id: 'N-HUB-03', texto: 'Verificar cada pedido y resolver las faltas antes de entregar', quien: 'Operador', persona: 'P3', tipo: 'Usuario', fuentes: 'F-06, F-12', estado: 'Hipótesis', v03: 'N-02 (parte)', b2: 'N-20' },
+  { id: 'N-HUB-03', texto: 'Verificar cada pedido y resolver las faltas antes de entregar', quien: 'Operador', persona: 'P3', tipo: 'Usuario', fuentes: 'F-12', estado: 'Hipótesis', v03: 'N-02 (parte)', b2: 'N-20' },
 ];
 
 // Fuentes de las necesidades. F-11 no es evidencia independiente: resume documentación del propio equipo.
@@ -50,8 +50,8 @@ const FUENTES_N = [
   ['F-02', 'Alcance (Hito 1)', 'Decisión del equipo'],
   ['F-03', 'Marco legal (Hito 1)', 'Norma (análisis orientativo, sin revisión profesional)'],
   ['F-04', 'Comparativo de 10 empresas (adjunto de Juan Antonio, 09/10/2026)', 'Benchmark exploratorio: fiabilidad baja, no cita fuentes'],
-  ['F-05', 'Investigación de entrega a clientes (Miguel)', 'En curso'],
-  ['F-06', 'Investigación de recogida a vendedores (Juan Antonio)', 'En curso'],
+  ['F-05', 'Investigación de entrega a clientes (Miguel)', 'No se hizo: lo cubren C-15 y D-03 (Hito 3)'],
+  ['F-06', 'Investigación de recogida a vendedores (Juan Antonio)', 'No se hizo: lo cubren C-15 y D-03 (Hito 3)'],
   ['F-07', 'Entrevistas a estudiantes (23/10/2026): E1–E4 de Sebastián y E5–E6 de Juan Antonio; perfil objetivo E3–E6, comparativos E1 y E2. Las 12 de Miguel se descartaron (C-22)', 'E1–E4: apuntes sin citas literales; E5–E6: literales, compañeras de piso entre sí'],
   ['F-08', 'Entrevistas a vendedores (mínimo 2-3)', 'Pendiente: se suben el 23/10/2026'],
   ['F-09', 'Borrador de 211 requisitos (09/10/2026)', 'Histórico: lista de ideas, no evidencia'],

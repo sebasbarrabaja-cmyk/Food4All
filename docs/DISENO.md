@@ -132,7 +132,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 
 | Patrón | Dónde | Notas |
 |---|---|---|
-| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro y solo 3 botones. El activo va en crema y "Quiero comprar" siempre en naranja |
+| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro, 3 botones y, a la derecha, la pestaña **«Asistente IA»** (`.nav-btn--ai`: filo y chispa en azafrán, visible pero sin destacar más que comprar; RF-12.1-01, C-26). El activo va en crema y "Quiero comprar" siempre en naranja |
 | **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en `--green-deep`. La activa se subraya en azafrán |
 | **Hero** | `Home.jsx` | Ilustración `hero.svg`, oscurecido a la izquierda, "Come como en casa." en azafrán y tres botones grandes |
 | **Bandas de sección** | `palette.css` | `.band-sage`, `.band-peach`, `.band-mustard`, `.band-forest` y `.band-plain`. En páginas interiores se alternan solas salvia y melocotón |
@@ -148,6 +148,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 | **Redes sociales** | `SocialLinks.jsx`, `data/social.js` | Instagram, TikTok, YouTube y Pinterest. Mientras `url` sea `null`, salen como "Próximamente" y no enlazan. Al poner la URL, se enlazan solas |
 | **Barra lateral del admin** | `Admin.jsx`, `styles/admin.css` | Fija a la izquierda. Marca la sección visible y tiene arriba el **buscador**: al escribir lista las secciones que coinciden (palabras en `KEYWORDS`); con Intro, la IA responde en 1-3 frases y ofrece un botón "Ir a…" (`btn-ghost`, no naranja: no es una llamada a la acción). Sin clave de IA, solo lista secciones |
 | **Decisiones** | `Admin.jsx`, sección Resumen | Cuatro columnas: Decidido, Hipótesis, Pendiente y **Descartado** (badge en `--danger` al 12 %), cada descartado con su porqué. Datos en `backend/project.js` |
+| **Hito 2** | `AdminHito2.jsx`, `backend/hito2.js` | Sección `#hito2` del panel: cifras, necesidades, criba, hipótesis y decisiones, RST y exclusiones, fuentes, trazabilidad por necesidad (con enlaces a Asana) y registro de cambios. Todo se lee de `docs/requisitos` en cada petición: no se copia a mano |
 | **Prompts** | `AdminPrompts.jsx` | Registro de prompts con filtro por tipo, copiar, "Pulir con IA" (original y propuesta lado a lado) y alta de prompts nuevos |
 | **Logo** | `Logo.jsx`, `public/favicon.svg` | Caja de mercado con tres frutas y una hoja, y "FOOD**4**ALL" en Fraunces con el 4 en naranja o azafrán. Se adapta al fondo con `--logo-crate` y `--logo-stripe` |
 
@@ -175,6 +176,7 @@ food4all/
 ├─ backend/              Node 22+ y Express (sin base de datos externa)
 │  ├─ server.js          API, sesión de admin y sirve frontend/dist
 │  ├─ project.js         contenido interno (equipo, mercado, legal, hitos): solo con sesión
+│  ├─ hito2.js           lee docs/requisitos (Markdown y JSON) para la sección del Hito 2: solo con sesión
 │  ├─ asana.js           intermediario con Asana (el token solo vive en .env)
 │  ├─ store.js           guarda las altas de vendedores en data/db.json
 │  ├─ prompts.js         lee y guarda el registro de prompts (/prompts)
@@ -187,7 +189,7 @@ food4all/
 ```
 
 - **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel`, `/comunidad` y `/creditos`.
-- **Cabecera:** siguen siendo tres botones. La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
+- **Cabecera:** tres botones más la pestaña «Asistente IA» a la derecha (23/10/2026, C-26). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
 - **Rutas privadas:** `/admin` (las protege el backend, no solo la interfaz).
 - **Vista pública y privada están separadas:** el equipo, los hitos, el mercado y el marco legal **no** van en el JavaScript público. Viven en `backend/project.js` y se sirven con sesión.
 - **Asana:**

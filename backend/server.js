@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import * as store from './store.js';
 import { getSubtasks, getMilestones } from './asana.js';
 import { PROJECT } from './project.js';
+import { hito2 } from './hito2.js';
 import * as prompts from './prompts.js';
 import { polishPrompt, agentReady, AgentError } from './agent.js';
 import { ask } from './search.js';
@@ -126,6 +127,15 @@ app.get('/api/admin/milestones', requireAdmin, async (_req, res) => {
 app.get('/api/admin/asana/tasks/:gid/subtasks', requireAdmin, async (req, res) => {
   try { res.json({ source: 'asana', tasks: await getSubtasks(req.params.gid) }); }
   catch (e) { res.json({ source: 'fallback', error: e.message, tasks: [] }); }
+});
+
+// Hito 2 leído de docs/requisitos: necesidades, decisiones, trazabilidad y registro de cambios.
+app.get('/api/admin/hito2', requireAdmin, (_req, res) => {
+  try { res.json(hito2()); }
+  catch (e) {
+    console.error('Hito 2:', e);
+    res.status(500).json({ error: 'No se pudieron leer los documentos del Hito 2 (docs/requisitos).' });
+  }
 });
 
 // Registro de prompts usados en el desarrollo (ficheros en /prompts, dentro del repo).

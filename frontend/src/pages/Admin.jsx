@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import Icon from '../components/Icon.jsx';
 import AdminPrompts from './AdminPrompts.jsx';
+import AdminHito2 from './AdminHito2.jsx';
 import {
   VENDORS, PRODUCTS, ZONES, EXAMPLE_ORDER, ORDER_STATES, VENDOR_ORDERS, productById,
 } from '../data/examples.js';
@@ -11,7 +12,7 @@ import {
 const STATUSES = ['recibida', 'en revisión', 'verificada', 'rechazada'];
 const SECTIONS = [
   ['resumen', 'Resumen', 'grid'], ['mercado', 'Mercado', 'chart'], ['legal', 'Marco legal', 'scale'],
-  ['equipo', 'Equipo', 'users'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
+  ['equipo', 'Equipo', 'users'], ['hito2', 'Hito 2 · Requisitos', 'doc'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
   ['marketplace', 'Marketplace', 'basket'], ['prompts', 'Prompts', 'doc'],
 ];
 
@@ -21,6 +22,7 @@ const KEYWORDS = {
   mercado: 'mercado tam sam som datos estudiantes gasto cuota ticket',
   legal: 'legal ley leyes normativa rgpd lopdgdd registro sanitario dsa',
   equipo: 'equipo roles quien miembros sebastian juan antonio miguel',
+  hito2: 'hito 2 requisitos necesidades criba decisiones restricciones rst exclusiones trazabilidad matriz criterios cambios linea base fuentes entrevistas',
   hitos: 'hitos asana tareas plan entregas calendario',
   vendedores: 'altas vendedores solicitudes alta',
   marketplace: 'marketplace pedidos ejemplo zonas productos malaga sevilla granada',
@@ -370,6 +372,11 @@ export default function Admin() {
               {p.team.map((m) => <li key={m.name}><strong>{m.name}</strong> — <span className="muted">{m.role}</span></li>)}
               <li className="muted">{p.shared}</li>
             </ul>
+          </section>
+
+          <section className="section" id="hito2">
+            <h2>Hito 2 · Necesidades y requisitos</h2>
+            <AdminHito2 />
           </section>
 
           <section className="section" id="hitos">

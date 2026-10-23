@@ -282,3 +282,8 @@ a.network:hover { transform: translateY(-4px); box-shadow: 0 12px 26px color-mix
   .why-grid, .network-grid { grid-template-columns: 1fr 1fr; }
   .community-teaser { grid-template-columns: 1fr; }
 }
+/* Asistente IA: a la derecha de la cabecera, con filo azafrán; se ve, pero no compite con «Quiero comprar» (C-26) */
+.site-nav .nav-btn--ai { gap: 8px; border-color: var(--saffron); }
+.site-nav .nav-btn--ai svg { color: var(--saffron); }
+.site-nav .nav-btn--ai:hover { background: color-mix(in srgb, var(--saffron) 18%, transparent); }
+.site-nav .nav-btn--ai.active svg { color: var(--forest); }

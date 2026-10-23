@@ -87,3 +87,6 @@ p { margin: 0 0 12px; }
 .form-row { display: grid; gap: 0 12px; grid-template-columns: 1fr; }
 @media (min-width: 560px) { .form-row { grid-template-columns: 1fr 1fr; } }
 .nowrap { white-space: nowrap; }
+
+/* Texto solo para lectores de pantalla (por ejemplo, «abre en otra pestaña») */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
