@@ -85,7 +85,7 @@ export default function Comprar() {
             <p className="eyebrow">Asistente de IA</p>
             <h2>Elige qué necesitas y te propone la cesta</h2>
             <p className="muted">
-              Con unos botones eliges presupuesto, días y tiempo para cocinar. La IA te propone productos de varios vendedores
+              Eliges presupuesto, días, cuántas personas sois y tiempo para cocinar. La IA te propone productos de varios vendedores
               y te explica por qué. Tú decides.
             </p>
           </div>

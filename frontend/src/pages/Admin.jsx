@@ -12,7 +12,7 @@ import {
 const STATUSES = ['recibida', 'en revisión', 'verificada', 'rechazada'];
 const SECTIONS = [
   ['resumen', 'Resumen', 'grid'], ['mercado', 'Mercado', 'chart'], ['legal', 'Marco legal', 'scale'],
-  ['equipo', 'Equipo', 'users'], ['hito2', 'Hito 2 · Requisitos', 'doc'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
+  ['equipo', 'Equipo', 'users'], ['hito2', 'Hito 2 · Requisitos', 'check'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
   ['marketplace', 'Marketplace', 'basket'], ['prompts', 'Prompts', 'doc'],
 ];
 

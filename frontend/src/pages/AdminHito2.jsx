@@ -31,7 +31,7 @@ function Figures({ f }) {
 }
 
 function Trace({ needs, trace }) {
-  const [need, setNeed] = useState('N-CAR-01');
+  const [need, setNeed] = useState(needs.some((n) => n.id === 'N-CAR-01') ? 'N-CAR-01' : needs[0]?.id);
   const items = trace.filter((t) => t.necesidades.includes(need));
   const current = needs.find((n) => n.id === need);
   return (
