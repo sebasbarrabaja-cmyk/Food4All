@@ -213,3 +213,21 @@ Para lo de juan antonio esperamos a que me de el ok, esta trabajando e ello
 sí, prepáralo en seco
 
 **Resultado:** se escribió `benchmark/reordenar_hito2.js` y se probó en seco (8,6 s, solo GET, sin escribir nada en Asana): 38 cambios, ninguno de ellos un comentario. Se añadieron al repositorio el guion de entrevistas y E1–E4 en formato pregunta y respuesta (`FOOD4ALL_entrevistas_E1_E4_preguntas.md`), que el script usa como texto de las subtareas.
+
+### 21:25
+
+Mira lo subido por juan antonio,da el ok
+
+**Resultado:** se fusionó lo nuevo de Juan Antonio: las conclusiones de E5 y E6 y la pregunta 1 del bloque E, redactadas por él, que proponen subir RF-11.2-04 al MVP. Se volvieron a corregir siete horas imposibles de su registro (21:35 a 22:10 a las 21:25). Se preguntaron dos decisiones de Product Owner.
+
+### 21:27
+
+1a 2a, Juan Antonio da el ok a C-13
+
+**Resultado:** criba aprobada (C-28):
+- RF-15.2-04 pasa a Could · V2.
+- 242 requisitos del MVP sin dependencias pasan a «Decidido»: ahora hay 348 Decidido, 205 Pendiente y 11 Hipótesis.
+- C-02, C-03 y C-11 quedan aprobados, y C-13 con el visto bueno de Juan Antonio.
+- RF-11.2-04 sube a Must · MVP (C-29).
+- MVP: 403. Must: 307.
+- La criba y las RST salen de los temas abiertos. Se regeneró con `npm run todo`.

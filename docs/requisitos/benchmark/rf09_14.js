@@ -57,7 +57,7 @@ module.exports = (R) => {
   R('Mostrar en el perfil del vendedor la media y el número de valoraciones a partir de 3.', 'Dadas 2 valoraciones, cuando se ve el perfil, entonces muestra «Pocas valoraciones todavía».', 'S', 'V2', ['BF63'], 'N-CAT-01');
   R('Moderar los comentarios antes de publicarlos: sin insultos, datos personales ni publicidad.', 'Dado un comentario con un teléfono, cuando se modera, entonces no se publica.', 'S', 'V2', [], 'N-CAT-03');
   R('Permitir al vendedor responder una vez a cada comentario.', 'Dada una respuesta, cuando se publica, entonces aparece bajo el comentario.', 'C', 'V2', [], 'N-VEN-01');
-  R('No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual.', 'Dado el modo conceptual, cuando se ve un perfil, entonces no hay estrellas de ejemplo.', 'S', 'V2', [], 'N-CAT-03', { estado: 'Decidido' });
+  R('No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual.', 'Dado el modo conceptual, cuando se ve un perfil, entonces no hay estrellas de ejemplo.', 'M', 'MVP', [], 'N-CAT-03', { estado: 'Decidido', just: 'Sube al MVP a propuesta de Juan Antonio (criba, bloque E; C-29): E2, E5 y E6 desconfían de una app nueva, y se cumple sin valoraciones reales porque consiste en no inventarlas. Información veraz: N-CAT-03, regla A.2 c.' });
 
   R.proc('RF-12', 'Asistente de IA para generar la cesta');
 

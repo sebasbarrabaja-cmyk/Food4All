@@ -6,6 +6,7 @@ const { NECESIDADES } = require('./necesidades');
 const { alcance, dependeDe } = require('./alcance');
 
 const [outXlsx, outStats] = process.argv.slice(2);
+const CRIBA_APROBADA = true;
 const NEC = Object.fromEntries(NECESIDADES.map((n) => [n.id, n]));
 const PRIO = { M: 'Must', S: 'Should', C: 'Could', W: "Won't" };
 const COMP = COMPETIDORES.map((c) => c[0]);
@@ -89,6 +90,9 @@ for (const r of rows) {
   r.necTexto = NEC[r.necesidad].texto;
   r.alcance = alcance(r);
   r.depende = dependeDe(r);
+  // Criba aprobada por el Product Owner (23/10/2026, C-28): lo del MVP que no depende de ninguna decisión abierta,
+  // hipótesis ni servicio externo pasa de Pendiente a Decidido (FOOD4ALL_correcciones_hito2.md, apartado 4.2).
+  if (CRIBA_APROBADA && r.entrega === 'MVP' && r.estado === 'Pendiente' && !r.depende) r.estado = 'Decidido';
 }
 
 // ---------- Excel ----------

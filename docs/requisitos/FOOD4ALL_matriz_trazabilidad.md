@@ -19,10 +19,10 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (8) | — |
 | **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E5 y E6 comprueban la fiabilidad de una app antes de usarla; en contra del origen: E6; E1 y E2 comparativos) | RF-02, RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 21 | US-03, US-10, US-13 | 37 (16) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
-| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (19) | — |
+| **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (20) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
 | **N-INC-01** Tener una solución rápida, atendida por personas, si algo llega mal | Indicio | F-04 (fiabilidad baja: no cita fuentes), F-07 (E5) | RF-10, RF-13, RF-15, RF-19 | 9 | US-07, US-17 | 34 (17) | — |
-| **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 14 (9) | — |
+| **N-VEN-01** Llegar a clientes nuevos y ganar visibilidad | Hipótesis | F-01 (comercio tradicional 10,6 %) | RF-02, RF-03, RF-04, RF-11, RF-12, RF-15, RF-18 | 11 | US-10 | 14 (8) | — |
 | **N-VEN-02** Vender online sin montar una web propia ni gestionar envíos | Hipótesis | F-01, F-04 | RF-01, RF-03, RF-16, RF-18, RNF-04 | 8 | US-02, US-18 | 16 (9) | — |
 | **N-VEN-03** Reducir la merma del género que no vende a tiempo | Hipótesis | F-03 (Ley 1/2025) | RF-04 | 1 | — | 1 (0) | Solo fuera del MVP; sin historia |
 | **N-VEN-04** Saber qué preparar y para cuándo: pedido claro y franja de recogida | Hipótesis | F-12 | RF-07, RF-16 | 7 | US-11, US-15 | 13 (12) | — |
@@ -143,7 +143,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-10.4** Diseño del formulario de incidencia | N-INC-01 | F-04, F-07 | US-07 | Must · MVP | MVP | — | RF-10.4-01 … RF-10.4-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-10.5** Criterios de resolución | N-INC-01 | F-04, F-07 | US-07 | Should · V2 | V2 | — | RF-10.5-01 … RF-10.5-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-11.1** Pedir la valoración | N-CAT-01, N-CAT-03 | F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.1-01 … RF-11.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
-| **RF-11.2** Mostrar y moderar | N-CAT-03, N-CAT-01, N-VEN-01 | F-01, F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.2-01 … RF-11.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
+| **RF-11.2** Mostrar y moderar | N-CAT-03, N-CAT-01, N-VEN-01 | F-01, F-03, F-04, F-07 | US-13 | Must · MVP | MVP | — | RF-11.2-01 … RF-11.2-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-11.3** Diseño y reglas de la valoración | N-CAT-01, N-CAT-03 | F-03, F-04, F-07 | US-13 | Should · V2 | V2 | — | RF-11.3-01 … RF-11.3-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-18.1** Mensajes y avisos | N-VEN-02, N-VEN-01 | F-01, F-04 | US-18 | Should · V2 | V2 | — | RF-18.1-01 … RF-18.1-04 (4) | RNF-01, RNF-05, RNF-06 | | | |
 | **RF-19.1** Contacto | N-INC-01 | F-04, F-07 | US-17 | Should · V2 | V2 | — | RF-19.1-01 … RF-19.1-05 (5) | RNF-01, RNF-05, RNF-06 | | | |
@@ -169,7 +169,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 - Requisitos sin necesidad: **0** de 564.
 - Procesos RF sin historia: **ninguno**.
-- Subrequisitos: 127 (106 del MVP, todos con ficha completa).
+- Subrequisitos: 127 (107 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
 - Necesidades de usuario confirmadas con entrevistas: **0** de 16. Entrevistas: F-07 tiene E1–E6 (23/10/2026) y F-08 (vendedores) ninguna; sus estados siguen la regla de evidencia de `FOOD4ALL_necesidades.md`.
 
