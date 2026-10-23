@@ -145,7 +145,7 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
 | N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
 | N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
@@ -1144,7 +1144,7 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
 | N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
 | N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
@@ -2065,6 +2065,7 @@ Si el vendedor no confirma dentro del plazo, el subpedido sigue «Nuevo», el ad
 | Falta total | El vendedor no puede servir ninguna | 0; reembolso de prueba de la línea |
 | Sustituto propuesto (V2) | El vendedor propone otro producto igual o más barato | Pendiente de respuesta del cliente |
 | Sustituto aceptado (V2) | El cliente acepta antes de la hora de corte | Precio del sustituto; reembolso de prueba por la diferencia si es más barato |
+| Sustituto aceptado por preferencia (V2) | El cliente eligió «Sustituir» al pagar y el sustituto es igual o más barato (RF-07.3-09): no se le pregunta | Precio del sustituto; reembolso de prueba por la diferencia si es más barato |
 | Excluida (V2) | Sustituto rechazado o sin respuesta («sin aceptación») | 0; reembolso de prueba de la línea |
 | Retirada en el hub | El hub la retira por mal estado, caducidad o falta (RF-08.2-03) | 0; reembolso de prueba de la línea |
 | Entregada | Llega al cliente | Importe final |
@@ -2120,7 +2121,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | Necesidad | Estado | Fuentes | Procesos | Subrequisitos | Historias | Requisitos (MVP) | Observación |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | **N-PLA-01** Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Indicio | F-01, F-02, F-07 (E3, E4) | RF-04, RF-05, RF-06, RF-09, RF-12, RF-15 | 13 | US-08, US-14, US-19 | 21 (12) | — |
-| **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Indicio | F-01, F-07 (E4; E1 comparativo) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-08, RF-12, RF-14, RF-15 | 13 | US-08, US-19 | 19 (5) | — |
+| **N-PLA-02** Controlar cuánto gasta en comida y ajustarse a un presupuesto | Indicio | F-01, F-07 (E4; E1 comparativo) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-12, RF-14, RF-15 | 14 | US-08, US-19 | 20 (5) | — |
 | **N-CAR-01** Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | RF-01, RF-03, RF-04, RF-05, RF-06, RF-07, RF-12, RF-13, RF-15, RNF-03, RNF-04, RNF-05, RNF-06, RNF-07, RNF-10 | 44 | US-01, US-04, US-05, US-14 | 162 (137) | — |
 | **N-ENT-01** Recibir todo en una sola entrega, en una franja conocida | Hipótesis | F-04, F-05 | RF-05, RF-06, RF-08, RF-09, RF-13, RF-15 | 16 | US-06, US-12 | 33 (27) | — |
 | **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
@@ -2228,7 +2229,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-06.8** Datos de facturación | N-CAT-03 | F-03 | US-05 | Could · V2 | V2 | — | RF-06.8-01 … RF-06.8-02 (2) | RNF-01, RNF-04, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.1** División | N-CAR-01, N-VEN-04 | F-04, F-06, F-07, F-10, F-12 | US-11 | Must · MVP | MVP | — | RF-07.1-01 … RF-07.1-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.2** Aviso y vista del vendedor | N-VEN-04, N-CUE-01 | F-03, F-06, F-12 | US-11 | Must · MVP | MVP | Servicio externo: correo | RF-07.2-01 … RF-07.2-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
-| **RF-07.3** Confirmar o avisar de faltas | N-HUB-03, N-VEN-04 | F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | — | RF-07.3-01 … RF-07.3-08 (8) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
+| **RF-07.3** Confirmar o avisar de faltas | N-HUB-03, N-PLA-02, N-VEN-04 | F-01, F-06, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | — | RF-07.3-01 … RF-07.3-09 (9) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.4** Preparación y etiqueta | N-CAT-01, N-HUB-01 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP | — | RF-07.4-01 … RF-07.4-03 (3) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.5** Plazos y avisos al vendedor | N-HUB-03, N-CAT-01, N-VEN-04 | F-03, F-04, F-06, F-07, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | D-02 comisión | RF-07.5-01 … RF-07.5-04 (4) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
 | **RF-07.6** Pedido sin el grupo de un vendedor | N-HUB-03 | F-06, F-12 | US-11 | Must · MVP | MVP (con partes simuladas) | H-01 compra mínima | RF-07.6-01 … RF-07.6-02 (2) | RNF-01, RNF-05, RNF-06, RNF-07 | | | |
@@ -2276,7 +2277,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 ### 3. Controles
 
-- Requisitos sin necesidad: **0** de 559.
+- Requisitos sin necesidad: **0** de 560.
 - Procesos RF sin historia: **ninguno**.
 - Subrequisitos: 127 (105 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
@@ -10725,6 +10726,7 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (1)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (1)
 - N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» (1)
+- N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto (1)
 
 **Supone que existe:** RF-01, RF-02, RF-13, RF-15, RF-03, RF-04, RF-12, RF-16, RF-17, RF-05, RF-06 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -10734,14 +10736,14 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - RF-07.1 · División (2) · Must · MVP
 - RF-07.2 · Aviso y vista del vendedor (3) · Must · MVP
-- RF-07.3 · Confirmar o avisar de faltas (8) · Must · MVP
+- RF-07.3 · Confirmar o avisar de faltas (9) · Must · MVP
 - RF-07.4 · Preparación y etiqueta (3) · Must · MVP
 - RF-07.5 · Plazos y avisos al vendedor (4) · Must · MVP
 - RF-07.6 · Pedido sin el grupo de un vendedor (2) · Must · MVP
 
 **Competencia**
 
-22 requisitos atómicos · Poco extendido 21 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
+23 requisitos atómicos · Poco extendido 21 · Mejora 1 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -10952,9 +10954,10 @@ El vendedor confirma su subpedido o declara faltas línea a línea antes de la r
 **2. Origen**
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
+- Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S01, S07, S08
+- Fuentes de las necesidades: F-01, F-06, F-07, F-12 · Fuentes del benchmark: S01, S07, S08
 
 **3. Actores y roles**
 
@@ -11021,13 +11024,13 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-07 Fiab
 
 **15. Competencia**
 
-Poco extendido 7 · Mejora 1
+Poco extendido 7 · Mejora 1 · Paridad 1
 
 - Mercadona online: 0 sí
 - Glovo: 0 sí, 6 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 0 sí
-- Market Wagon: 8 sí
+- Market Wagon: 9 sí
 - Open Food Network: 0 sí
 - Diferenciales y mejoras: RF-07.3-04 (Mejora)
 
@@ -11035,7 +11038,7 @@ Poco extendido 7 · Mejora 1
 
 Sustitutos (V2); transferencia bancaria real; automatizar el inventario del comercio.
 
-**Requisitos atómicos (8)**
+**Requisitos atómicos (9)**
 
 - [ ] **RF-07.3-01** `Must·MVP·Pendiente` Pedir al vendedor que confirme cada subpedido antes de 12 horas desde la hora de cierre. _(N-VEN-04)_
   - Criterio: Dado un subpedido sin confirmar a las 12 h, cuando vence, entonces el admin recibe una alerta.
@@ -11046,7 +11049,7 @@ Sustitutos (V2); transferencia bancaria real; automatizar el inventario del come
 - [ ] **RF-07.3-03** `Should·V2·Pendiente` Permitir al vendedor proponer un sustituto solo de su catálogo y de precio igual o menor. _(N-HUB-03)_
   - Criterio: Dado un sustituto más caro, cuando lo propone, entonces no se permite.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-04** `Should·V2·Pendiente` Pedir al cliente que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
+- [ ] **RF-07.3-04** `Should·V2·Pendiente` Si el cliente no eligió preferencia (RF-07.3-09), pedirle que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
   - Criterio: Dado un sustituto sin respuesta, cuando vence la hora de corte, entonces la línea se excluye, el registro muestra «sin aceptación» y el total baja una sola vez.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Mejora
 - [ ] **RF-07.3-05** `Must·MVP·Pendiente` `simulado` Al confirmarse una falta, conservar el pedido global, recalcular el total simulado por la diferencia y registrar un reembolso de prueba (cambio de estado y de saldo, sin transferencia real) con fecha y autor. _(N-HUB-03)_
@@ -11061,6 +11064,9 @@ Sustitutos (V2); transferencia bancaria real; automatizar el inventario del come
 - [ ] **RF-07.3-08** `Must·MVP·Pendiente` No permitir declarar faltas después de que el operador registre la recogida; desde ese momento la diferencia la registra el hub al verificar (RF-08.2). _(N-HUB-03)_
   - Criterio: Dada la recogida ya registrada, cuando el vendedor intenta declarar una falta, entonces la acción está bloqueada con el aviso «El pedido ya se ha recogido. Avisa al equipo».
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
+- [ ] **RF-07.3-09** `Should·V2·Pendiente` Dejar elegir al cliente al pagar, para todo el pedido o por producto, qué hacer si falta algo: «Sustituir por uno parecido» o «No servir». Con «No servir» no se le proponen sustitutos; con «Sustituir», el sustituto se acepta solo si es igual o más barato. _(N-PLA-02)_
+  - Criterio: Dada la preferencia «Sustituir» y un sustituto de 0,90 € para una línea de 1,00 €, cuando el vendedor lo propone, entonces se acepta sin preguntar y se registra un reembolso de prueba de 0,10 €; dada «No servir», cuando falta, entonces la línea se excluye sin proponer sustituto.
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Paridad
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

@@ -8566,6 +8566,7 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (1)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (1)
 - N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» (1)
+- N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto (1)
 
 **Supone que existe:** RF-01, RF-02, RF-13, RF-15, RF-03, RF-04, RF-12, RF-16, RF-17, RF-05, RF-06 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -8575,14 +8576,14 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - RF-07.1 · División (2) · Must · MVP
 - RF-07.2 · Aviso y vista del vendedor (3) · Must · MVP
-- RF-07.3 · Confirmar o avisar de faltas (8) · Must · MVP
+- RF-07.3 · Confirmar o avisar de faltas (9) · Must · MVP
 - RF-07.4 · Preparación y etiqueta (3) · Must · MVP
 - RF-07.5 · Plazos y avisos al vendedor (4) · Must · MVP
 - RF-07.6 · Pedido sin el grupo de un vendedor (2) · Must · MVP
 
 **Competencia**
 
-22 requisitos atómicos · Poco extendido 21 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
+23 requisitos atómicos · Poco extendido 21 · Mejora 1 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -8793,9 +8794,10 @@ El vendedor confirma su subpedido o declara faltas línea a línea antes de la r
 **2. Origen**
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
+- Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S01, S07, S08
+- Fuentes de las necesidades: F-01, F-06, F-07, F-12 · Fuentes del benchmark: S01, S07, S08
 
 **3. Actores y roles**
 
@@ -8862,13 +8864,13 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-07 Fiab
 
 **15. Competencia**
 
-Poco extendido 7 · Mejora 1
+Poco extendido 7 · Mejora 1 · Paridad 1
 
 - Mercadona online: 0 sí
 - Glovo: 0 sí, 6 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 0 sí
-- Market Wagon: 8 sí
+- Market Wagon: 9 sí
 - Open Food Network: 0 sí
 - Diferenciales y mejoras: RF-07.3-04 (Mejora)
 
@@ -8876,7 +8878,7 @@ Poco extendido 7 · Mejora 1
 
 Sustitutos (V2); transferencia bancaria real; automatizar el inventario del comercio.
 
-**Requisitos atómicos (8)**
+**Requisitos atómicos (9)**
 
 - [ ] **RF-07.3-01** `Must·MVP·Pendiente` Pedir al vendedor que confirme cada subpedido antes de 12 horas desde la hora de cierre. _(N-VEN-04)_
   - Criterio: Dado un subpedido sin confirmar a las 12 h, cuando vence, entonces el admin recibe una alerta.
@@ -8887,7 +8889,7 @@ Sustitutos (V2); transferencia bancaria real; automatizar el inventario del come
 - [ ] **RF-07.3-03** `Should·V2·Pendiente` Permitir al vendedor proponer un sustituto solo de su catálogo y de precio igual o menor. _(N-HUB-03)_
   - Criterio: Dado un sustituto más caro, cuando lo propone, entonces no se permite.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-04** `Should·V2·Pendiente` Pedir al cliente que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
+- [ ] **RF-07.3-04** `Should·V2·Pendiente` Si el cliente no eligió preferencia (RF-07.3-09), pedirle que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
   - Criterio: Dado un sustituto sin respuesta, cuando vence la hora de corte, entonces la línea se excluye, el registro muestra «sin aceptación» y el total baja una sola vez.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Mejora
 - [ ] **RF-07.3-05** `Must·MVP·Pendiente` `simulado` Al confirmarse una falta, conservar el pedido global, recalcular el total simulado por la diferencia y registrar un reembolso de prueba (cambio de estado y de saldo, sin transferencia real) con fecha y autor. _(N-HUB-03)_
@@ -8902,6 +8904,9 @@ Sustitutos (V2); transferencia bancaria real; automatizar el inventario del come
 - [ ] **RF-07.3-08** `Must·MVP·Pendiente` No permitir declarar faltas después de que el operador registre la recogida; desde ese momento la diferencia la registra el hub al verificar (RF-08.2). _(N-HUB-03)_
   - Criterio: Dada la recogida ya registrada, cuando el vendedor intenta declarar una falta, entonces la acción está bloqueada con el aviso «El pedido ya se ha recogido. Avisa al equipo».
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
+- [ ] **RF-07.3-09** `Should·V2·Pendiente` Dejar elegir al cliente al pagar, para todo el pedido o por producto, qué hacer si falta algo: «Sustituir por uno parecido» o «No servir». Con «No servir» no se le proponen sustitutos; con «Sustituir», el sustituto se acepta solo si es igual o más barato. _(N-PLA-02)_
+  - Criterio: Dada la preferencia «Sustituir» y un sustituto de 0,90 € para una línea de 1,00 €, cuando el vendedor lo propone, entonces se acepta sin preguntar y se registra un reembolso de prueba de 0,10 €; dada «No servir», cuando falta, entonces la línea se excluye sin proponer sustituto.
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Paridad
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

@@ -62,7 +62,7 @@ Son **propuestas**: ninguna está aprobada ni aplicada. Las decide Sebastián co
 
 | N.º | Mejora | Lo hace | Requisito afectado | Por qué |
 | --- | --- | --- | --- | --- |
-| M-01 | Que el cliente elija, al pagar o por cada producto, «sustituir por uno parecido» o «no servir», y que el sustituto nunca sea más caro | Mercadona | RF-07.3 (faltas y sustitutos), RF-06 | Evita preguntar en cada falta y protege el presupuesto (N-PLA-02) |
+| M-01 ✅ C-14 (RF-07.3-09, Should · V2) | Que el cliente elija, al pagar o por cada producto, «sustituir por uno parecido» o «no servir», y que el sustituto nunca sea más caro | Mercadona | RF-07.3 (faltas y sustitutos), RF-06 | Evita preguntar en cada falta y protege el presupuesto (N-PLA-02) |
 | M-02 | Avisar al cliente si la entrega va a llegar tarde, con una nueva hora estimada o la opción de cambiar de franja | Wetaca (franja acotada por correo); Mercadona (contacto si no está) | RF-08.4, RF-08.7-01 (hoy en V2), RF-09 | Cubre el hueco de la entrega tardía |
 | M-03 | Ciclos de pedido explícitos: cada franja tiene su hora de cierre, se ve desde el carrito y explica hasta cuándo se puede cancelar | Open Food Network, Wetaca | RF-06.2-03 (hora de cierre visible), RF-13.6 | Deja clara la consolidación y da evidencia para la regla de cancelación |
 | M-04 | Mostrar desde el carrito el mínimo que falta, la tarifa de envío y el total final | Lo contrario de lo que hacen Mercadona y KnowEats | RF-05, RF-06; N-CAT-03 | Precio claro, sin sorpresas: es la prioridad 2 del PO |

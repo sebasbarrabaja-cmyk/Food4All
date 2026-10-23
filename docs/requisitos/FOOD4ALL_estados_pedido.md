@@ -101,6 +101,7 @@ Si el vendedor no confirma dentro del plazo, el subpedido sigue «Nuevo», el ad
 | Falta total | El vendedor no puede servir ninguna | 0; reembolso de prueba de la línea |
 | Sustituto propuesto (V2) | El vendedor propone otro producto igual o más barato | Pendiente de respuesta del cliente |
 | Sustituto aceptado (V2) | El cliente acepta antes de la hora de corte | Precio del sustituto; reembolso de prueba por la diferencia si es más barato |
+| Sustituto aceptado por preferencia (V2) | El cliente eligió «Sustituir» al pagar y el sustituto es igual o más barato (RF-07.3-09): no se le pregunta | Precio del sustituto; reembolso de prueba por la diferencia si es más barato |
 | Excluida (V2) | Sustituto rechazado o sin respuesta («sin aceptación») | 0; reembolso de prueba de la línea |
 | Retirada en el hub | El hub la retira por mal estado, caducidad o falta (RF-08.2-03) | 0; reembolso de prueba de la línea |
 | Entregada | Llega al cliente | Importe final |

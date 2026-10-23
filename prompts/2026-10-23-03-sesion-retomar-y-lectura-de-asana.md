@@ -116,3 +116,9 @@ Christina ya ha terminado, sigue con sus resultados
 1a 2a 3 De lo que recomienda en vez de hacerla del tiron implemtetalo uno por uno y para enteder los puntos y para comprobarlos y contrastarlo con lo que tenemos
 
 **Resultado:** las 98 capturas se pasaron a JPEG en `docs/competencia/recorridos/` (18 MB) y `registro.tsv` apunta a los `.jpg`. Para registrar los prompts de Christina se pidió el texto que le envió Sebastián. Las mejoras se revisan una a una: qué dicen, qué hay ya en los requisitos y qué cambia; cada una se aplica solo con el ok de Sebastián.
+
+### 16:35 (aprox.)
+
+Tienes instrucciones de mel. a)
+
+**Resultado:** «Tienes instrucciones de mel.» es el mensaje que Sebastián envió a Christina; se registró en `2026-10-23-04-recorridos-competencia-christina.md`, junto con el guion que ella siguió. M-01, opción a: nuevo RF-07.3-09 (Should · V2, el cliente elige «Sustituir por uno parecido» o «No servir» al pagar); RF-07.3-04 solo pregunta si no eligió; nueva fila en la tabla de estados de la línea. Se regeneró con `npm run todo` (7,6 s, sin errores): 560 requisitos. Anotado como C-14.
