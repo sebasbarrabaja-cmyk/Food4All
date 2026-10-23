@@ -117,19 +117,19 @@ Y voy a hacer la parte de Miguel yo
 
 **Resultado:** en `AGENTS.md` y en la criba, el bloque C, su parte de las RST y la entrega en Asana pasan a Sebastián. La revisión cruzada del núcleo de compra queda pendiente de reasignar, porque tiene que hacerla alguien distinto del autor.
 
-### 20:35
+### 20:32
 
 Escribe que ahora estamos en llamada juan antonio y yo
 
 **Resultado:** se anotó en `AGENTS.md` («Ahora mismo») que Sebastián y Juan Antonio están en llamada terminando el Hito 2, para que el agente de Juan Antonio se coordine con lo que decidan.
 
-### 20:36
+### 20:33
 
 1a
 
 **Resultado:** RF-06.6-04 (códigos promocionales) sigue en Could · V2. Su justificación en el catálogo dice por qué y apunta al riesgo, anotado como C-24 en la línea base. Se regeneró con `npm run todo` y las cifras no cambian.
 
-### 20:37
+### 20:34
 
 Coherencia por encima de cualquier cosa
 

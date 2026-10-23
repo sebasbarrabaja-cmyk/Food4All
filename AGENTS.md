@@ -1,6 +1,6 @@
 # FOOD4ALL · Guía para los agentes del equipo
 
-Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 23/10/2026, 20:35.
+Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 23/10/2026, 20:34.
 
 ## 1. El proyecto en cinco líneas
 
@@ -9,7 +9,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Equipo:** Sebastián (backend y Product Owner), Juan Antonio (frontend), Miguel (IA y datos).
 - **En este repositorio:** una landing documental (`frontend/` y `backend/`, con `npm start` → `localhost:3001`), los requisitos del Hito 2 (`docs/requisitos/`) y el registro de prompts (`prompts/`).
 - **Ahora mismo:** el **Hito 2 (necesidades, requisitos y criterios de aceptación) se entrega el 23/10/2026 a las 23:59**. El Sprint 3 (análisis y diseño estructurado) empieza el 26/10.
-- **23/10, desde las 20:35:** Sebastián y Juan Antonio están en llamada terminando el Hito 2 juntos (criba, RST, entrevistas y Asana). Si eres el agente de Juan Antonio, coordina con lo que decidan en la llamada antes de tocar `FOOD4ALL_criba_argumentos.md`.
+- **23/10, desde las 20:32:** Sebastián y Juan Antonio están en llamada terminando el Hito 2 juntos (criba, RST, entrevistas y Asana). Si eres el agente de Juan Antonio, coordina con lo que decidan en la llamada antes de tocar `FOOD4ALL_criba_argumentos.md`.
 
 ## 2. Reglas para el agente (obligatorias)
 
@@ -96,7 +96,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 ## 8. Traspaso (23/10, 17:40): lo que queda para terminar sin Sebastián
 
 - **Rama:** todo está en `docs/hito2-entrega`, ya con las mejoras de la landing de WSL unidas y probadas: compila, las rutas responden, el login bloquea tras 5 fallos y el panel lista los 19 prompts. Los `node_modules` que vinieron de Windows no sirven en Linux: reinstalad con `npm run install:all`.
-- **Criba (actualizado a las 20:35):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
+- **Criba (actualizado a las 20:34):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
 - **Mejoras de los recorridos por la competencia:** M-01 a M-08 revisadas una a una (C-14 a C-21 en la línea base). M-06 (punto de recogida) y pagar como invitado esperan a nuevas entrevistas y a un debate del equipo.
 - **Asana (pendiente):** subir las entrevistas E1–E4 de Sebastián como subtareas de «Historias de usuario», comprobar que estén las vuestras, asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
 - **Antes de entregar:** RST validadas; criba aprobada; documento adjunto al Hito 2 y «Estado entrega» cambiado (Sebastián, en lugar de Miguel); explicación al profesor de cómo ver los prompts (`/admin#prompts`). La contraseña la da Sebastián en persona.
