@@ -209,6 +209,12 @@ dime el que tengo que redactar
 
 **Resultado:** la revisión crítica se pegó tal cual al final de este archivo. Los dos comentarios los pega él en Asana, cada uno en su tarea de [B6]; se le avisó de que el primero que pegó era la versión antigua, sin «Cambio».
 
+### Hora no registrada (después de las 21:42)
+
+pegue el 2 que mas hago
+
+**Resultado:** le quedan pegar el comentario de la primera revisión (con el final corregido) si no está, y pedir a Sebastián que una `docs/juanantonio-hito2` a `main`.
+
 ---
 
 ## Revisión crítica del equipo
