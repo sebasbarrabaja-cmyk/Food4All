@@ -14,7 +14,7 @@ Requisitos del **marketplace** FOOD4ALL, no de la landing. Versión **0.4** (22/
 | [`FOOD4ALL_correcciones_hito2.md`](FOOD4ALL_correcciones_hito2.md) | Qué se corrigió tras la valoración, qué falta y la propuesta de criba |
 | [`FOOD4ALL_defensa_hito2.md`](FOOD4ALL_defensa_hito2.md) | Preparación de la Sprint Review: los tres recorridos y las preguntas complementarias |
 | `FOOD4ALL_documento_requisitos_hito2.md` | Documento final (generado): la especificación con todos los anexos y las fichas, para adjuntar en el Hito 2 |
-| `FOOD4ALL_requisitos_benchmark.xlsx` | Los 559 requisitos atómicos con criterio, necesidad, alcance, dependencias y comparación con 6 competidores; hoja «Necesidades» |
+| `FOOD4ALL_requisitos_benchmark.xlsx` | Los 564 requisitos atómicos con criterio, necesidad, alcance, dependencias y comparación con 6 competidores; hoja «Necesidades» |
 | [`FOOD4ALL_asana_vista_previa.md`](FOOD4ALL_asana_vista_previa.md) | Todas las tareas de [B4] y [B5] con su descripción, para leerlas sin abrir Asana |
 | [`FOOD4ALL_propuesta_asana.md`](FOOD4ALL_propuesta_asana.md) | Cómo se decidió organizarlo en Asana y el reparto propuesto |
 | `benchmark/` | Fuentes y generadores |

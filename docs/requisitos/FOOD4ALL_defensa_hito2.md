@@ -59,7 +59,7 @@ Que alguien marcó la casilla: es un estado administrativo. No demuestra que otr
 **«¿Qué miembro revisó el requisito y qué cambió tras la revisión?»**
 Responder con lo que haya en Asana el día de la defensa. A 22/10 no hay revisiones registradas: la v0.4 está pendiente de revisión por Juan Antonio y Miguel. Si se hacen el 23/10, enseñar el comentario. Si no, decirlo.
 
-**Si preguntan por el volumen (559 requisitos)**
+**Si preguntan por el volumen (564 requisitos)**
 Son requisitos atómicos con su criterio, generados a partir del borrador y del benchmark. 442 son **propuestas pendientes de criba**, no decisiones. El volumen no es calidad. Lo que defendemos es el núcleo (RF-05, RF-06, RF-07 y sus estados), la regla de evidencia y la trazabilidad.
 
 ## 5. Antes de la Sprint Review

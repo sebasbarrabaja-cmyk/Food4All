@@ -47,7 +47,7 @@ Colores, tipografía, componentes, imágenes y arquitectura: [`docs/DISENO.md`](
 
 ## Requisitos (Hito 2)
 
-Requisitos del marketplace (RF-01 a RF-19, RNF-01 a RNF-11, 556 requisitos atómicos comparados con la competencia) y backlog: [`docs/requisitos/`](docs/requisitos/README.md). Están también en Asana, en el Hito 2 de Food4All.
+Requisitos del marketplace (RF-01 a RF-19, RNF-01 a RNF-11, 564 requisitos atómicos comparados con la competencia) y backlog: [`docs/requisitos/`](docs/requisitos/README.md). Están también en Asana, en el Hito 2 de Food4All.
 
 ## IA del panel: buscador y agente revisor
 
