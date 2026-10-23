@@ -173,12 +173,12 @@ La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualida
 | RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | Sí | Sí | Asume Sebastián |
 | RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | Sí (las zonas dentro de cada ciudad son D-03, Hito 3) | Sí | Asume Sebastián |
 | RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | Sí | Sí | Asume Sebastián |
-| RST-06 | Ni el prototipo ni el registro de entrevistas permiten identificar a nadie: las entrevistas son a personas reales, pero sin nombre, contacto ni combinaciones de datos (carrera, curso, edad, localidad) que digan quién es | N-CUE-01 (RGPD); Clase 11 | Cambiar (texto nuevo; perfiles de E5 y E6 generalizados el 23/10) | Pendiente: el texto cambió (C-27) | Asume Sebastián |
-| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio, ni motor de IA (la cesta del asistente la genera un simulador; RNF-10.1-02 permite cambiarlo por uno real) | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5; RNF-10.1-02; C-26 | Cambiar (añade el motor de IA) | Pendiente: el texto cambió (C-27) | Asume Sebastián |
+| RST-06 | Ni el prototipo ni el registro de entrevistas permiten identificar a nadie: las entrevistas son a personas reales, pero sin nombre, contacto ni combinaciones de datos (carrera, curso, edad, localidad) que digan quién es | N-CUE-01 (RGPD); Clase 11 | Cambiar (texto nuevo; perfiles de E5 y E6 generalizados el 23/10) | Sí (al texto nuevo) | Asume Sebastián |
+| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio, ni motor de IA (la cesta del asistente la genera un simulador; RNF-10.1-02 permite cambiarlo por uno real) | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5; RNF-10.1-02; C-26 | Cambiar (añade el motor de IA) | Sí (al texto nuevo) | Asume Sebastián |
 | RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | Sí | Sí | Asume Sebastián |
 | RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | Sí | Sí | Asume Sebastián |
 
-*Columna de Juan Antonio rellenada con ayuda del asistente (23/10/2026). RST-06 y RST-07 quedan pendientes de su voto porque Sebastián cambió el texto después (C-27).*
+*Columna de Juan Antonio rellenada con ayuda del asistente (23/10/2026). RST-06 y RST-07 las votó después, sobre el texto nuevo de Sebastián (C-27).*
 
 Se descartaron RST-08 (valores provisionales de D-01 a D-04), porque es un supuesto del piloto y ya figura como C-09 en la línea base, y RST-09 (análisis legal orientativo), porque es un aviso sobre el documento y no un límite del sistema. Los números no se reutilizan. La regla de cancelación (solo antes de la hora de cierre) se decide en el comité de cambio, no aquí.
 

@@ -86,3 +86,9 @@ mira el git y me vuelves a preguntar
 Sí estas son https://openfoodnetwork.net/?locale=es_US , https://home.localfoodmarketplace.com/ , https://dairy.marketwagon.com/
 
 **Resultado:** las tres páginas se añadieron como fuentes del comparativo original en `FOOD4ALL_comparativo_revisado.md`, apartado 4, sin cambiar la fiabilidad de F-04. Siguen pendientes su voto en RST-06 y RST-07 y lo de «mi compañero» en E5.
+
+### 21:18
+
+hazme las dos preguntas de elejir
+
+**Resultado:** Juan Antonio eligió «Sí a las dos» (RST-06 y RST-07, texto nuevo de Sebastián) y que «mi compañero» de E5 P7 es «alguien de fuera del piso». Se anotó en la tabla de RST y como aclaración del entrevistador en E5.
