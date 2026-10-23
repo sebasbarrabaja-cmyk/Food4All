@@ -91,4 +91,5 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 - **Esta rama (`docs/hito2-entrega`)** tiene todo el Hito 2. Las mejoras de la landing hechas en WSL todavía no están unidas: contraste AA, tema oscuro, límites del formulario y del login, fecha de los prompts y buscador del panel. Se unirán desde las ramas `fix/*` de Sebastián, y al hacerlo se renumeran dos prompts repetidos del 19/10 y el 20/10.
 - **Pendiente de Sebastián:** comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y los recorridos por la competencia con capturas (en curso).
+- **Logística (pendiente):** entrega que llega tarde al cliente, vendedor que falla y cómo se unen los carritos de varios vendedores. Lo que ya está cubierto y lo que falta está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
 - **Abierto en el Hito 2:** aprobar la criba, validar las RST, las entrevistas del resto del equipo, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.

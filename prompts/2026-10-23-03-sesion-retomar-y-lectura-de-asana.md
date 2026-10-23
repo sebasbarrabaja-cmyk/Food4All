@@ -92,3 +92,15 @@ Lo he leido, y estoy de acuerdo(Lo de la IA no es solo las entrevistas, claro qu
 Antes de nada, todos mis compañerso tienen acceso al git. Quiero que subas dentro de este un .md que lean sus agentes con su respectivo trabajo. En el git ha de estar docuemntado todo, includio lo que hemos hecho esta sesion, requitiso temas, todo. No tiene que ser explicito, no tienes que escribir las 11 clases, solo las conclusiones para que los agentes de los demas compañerso, nada mas los conecten puedan y sigan los pasos correctos
 
 **Resultado:** se escribió `AGENTS.md` en la raíz (lo leen Codex, Cursor y otros agentes) y un `CLAUDE.md` que lo importa (para Claude Code). Incluye el proyecto, las reglas para el agente (registrar prompts, no comentar en Asana, no inventar evidencia, ramas), dónde está cada documento, las conclusiones del temario y de la valoración, lo decidido hasta el 23/10 y el trabajo de cada uno. Se añadieron al documento de la criba las RST candidatas revisadas con el temario: se quitan RST-08 y RST-09, se cambia RST-03 y se añaden RST-10 y RST-11. Commits en `docs/hito2-entrega`; el push, con la clave de Sebastián.
+
+### 16:12 (aprox.)
+
+Antes de seguri con el bloque 2 espero a christina, cuando este agente lo tenga, tambien sube sus resultados al git,Esta investigacion ha de estar docuemtado para asana tambien. Pasos realizados, informacion reacudada, comparacion con nuestro producto, problemas reales, como afrontan ellos los problemas, posibles mejoras a implementar para nuestro prodcuto. Y a parte, con dicho resultado lo usas tu, me preguntas sobre el tema, y te doy el okey. Y que no se me olvide el tema de la logistica, que pasa si llega tarde un paquete, un vendedor nos falla, o como unimos los carritos.
+
+**Resultado:** se dejó apuntada la logística como pendiente en la línea base y en `AGENTS.md`. Ya cubierto: el vendedor que no confirma (RF-07.3-01, RF-07.5-02), el vendedor que no puede servir (RF-07.6) y la consolidación (RF-08.3-01). Falta: la entrega que llega tarde al cliente y la recogida que llega tarde al hub. Los recorridos de Christina parecen terminados (8 competidores y los dos resúmenes, a las 16:10); se espera a que lo confirme.
+
+### 16:14 (aprox.)
+
+Hecho lo del git
+
+**Resultado:** push de `docs/hito2-entrega` a GitHub por SSH (rama nueva; `main` sin tocar).

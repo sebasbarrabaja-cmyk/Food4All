@@ -64,6 +64,7 @@ Campos de la Clase 11: origen, elemento afectado, impacto, alternativa, decisió
 | Entrevistas del resto del equipo | Sin ellas, las necesidades siguen en Hipótesis o Indicio | Juan Antonio y Miguel |
 | Revisión cruzada de cada bloque | Tiene que hacerla alguien distinto del autor | Cada uno, en un comentario de Asana |
 | Regla de cancelación (comité de cambio de la Clase 11: el productor quiere limitar cancelaciones y el comprador quiere flexibilidad) | Hoy el cliente puede cancelar antes de la hora de cierre, y «Cancelado» es una propuesta. Falta decidir quién fija la regla y con qué evidencia | Equipo; las entrevistas a vendedores aportan evidencia |
+| Logística: qué pasa si un paquete llega tarde, si un vendedor falla y cómo se unen los carritos de varios vendedores | Ya está cubierto: el vendedor que no confirma a tiempo (alerta y aviso de posible retraso, RF-07.3-01 y RF-07.5-02), el vendedor que no puede servir (RF-07.6; el pedido global se conserva) y la consolidación en una sola entrega (RF-08.3-01). **No está cubierto:** que la entrega llegue tarde al cliente ni que una recogida llegue tarde al hub. Se revisa con los recorridos por la competencia (cómo lo resuelven ellos) | Sebastián, con el visto bueno del equipo |
 | Responsables y revisores en Asana | Es una decisión del equipo | Equipo, con la propuesta de `FOOD4ALL_propuesta_asana.md` |
 
 Asana y este documento tienen que apuntar a la misma decisión (Clase 11, lista de revisión, punto 6). Al aprobar la criba, se actualiza el estado en los dos.
