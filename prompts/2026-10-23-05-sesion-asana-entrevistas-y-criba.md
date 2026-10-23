@@ -159,8 +159,8 @@ La IA tendra que existir, pero eso quiero debatirlo con el profesor. por lo expl
 
 **Resultado:** queda anotado como tema abierto en la línea base: el motor de IA real se debatirá con el profesor y, de momento, RST-07 lo deja simulado. Se pasa al bloque de la landing.
 
-### 20:52
+### 20:49
 
 Ok, pero primero, antes de todo, actualiza el git con lo que haces para qeu juan antonio pueda trabajar tambien
 
-**Resultado:** se aprobó la especificación de la página «Hito 2 · Requisitos» del panel `/admin`, de la pestaña «Asistente IA» y del texto de `/comprar`; el texto está en el registro de la sesión siguiente. Antes de empezar, se subió todo y se avisó en `AGENTS.md` de qué archivos se van a tocar, para que Juan Antonio trabaje en `docs/requisitos/` sin choques.
+**Resultado:** se aprobó la especificación de la página «Hito 2 · Requisitos» del panel `/admin`, de la pestaña «Asistente IA» y del texto de `/comprar`; el texto queda en `2026-10-23-06`, el registro del cambio de la landing. Antes de empezar, se subió todo y se avisó en `AGENTS.md` de qué archivos se van a tocar, para que Juan Antonio trabaje en `docs/requisitos/` sin choques.
