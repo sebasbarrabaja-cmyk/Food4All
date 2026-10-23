@@ -8,7 +8,7 @@ import { PRODUCTS, VENDORS, ZONES, CATEGORY_COLOR, vendorOf, PRICE_PENDING } fro
 
 // Recorrido del cliente (sección 3.2): 6 pasos visibles + detalle del resto.
 const STEPS = [
-  ['Dinos qué necesitas', 'El asistente pregunta presupuesto, días, preferencias y tiempo para cocinar. Por ejemplo: "Tengo 25 € y necesito comida para cuatro días".'],
+  ['Dinos qué necesitas', 'En el asistente eliges con botones el presupuesto, los días, cuántas personas sois y el tiempo para cocinar. Por ejemplo: 25 € para cuatro días.'],
   ['Recibe una propuesta de cesta', 'La IA agrupa los productos por vendedor, explica por qué propone cada uno y compara el total con tu presupuesto. La decisión es tuya.'],
   ['Ajusta a tu gusto', 'Quita, cambia o añade productos y pide sustitutos. El total se recalcula y te avisamos si superas el presupuesto.'],
   ['Paga una sola vez', 'Un único carrito con productos de varios vendedores y un solo total. Antes de pagar ves ingredientes y alérgenos.'],
@@ -83,9 +83,9 @@ export default function Comprar() {
         <div className={`container ${AI_VIDEO ? 'split' : 'ai-brief'}`}>
           <div>
             <p className="eyebrow">Asistente de IA</p>
-            <h2>Dile qué necesitas y te propone la cesta</h2>
+            <h2>Elige qué necesitas y te propone la cesta</h2>
             <p className="muted">
-              Presupuesto, días y tiempo para cocinar. La IA te propone productos de varios vendedores
+              Con unos botones eliges presupuesto, días y tiempo para cocinar. La IA te propone productos de varios vendedores
               y te explica por qué. Tú decides.
             </p>
           </div>

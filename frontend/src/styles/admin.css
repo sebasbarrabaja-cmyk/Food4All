@@ -75,3 +75,28 @@
   .admin-side { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); padding-right: 0; }
   .polish__cols { grid-template-columns: 1fr; }
 }
+
+/* Hito 2: requisitos leídos de docs/requisitos (AdminHito2.jsx) */
+#hito2 h3 { margin-top: 36px; }
+.h2-links { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.h2-links a {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: var(--radius-pill);
+  border: 1px solid var(--border); background: var(--surface); color: var(--green); font-weight: 600; font-size: .9rem; text-decoration: none;
+}
+.h2-links a:hover { background: var(--tint-sage); }
+.h2-figures { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 16px 0; }
+.h2-figure { display: grid; gap: 4px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.h2-figure__label { font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--eyebrow); }
+.h2-figure strong { font: 600 2rem/1.1 var(--font-display); color: var(--green); }
+.h2-more > summary { cursor: pointer; font-weight: 600; color: var(--green); min-height: 44px; display: flex; align-items: center; }
+.h2-sub { margin: 20px 0 4px; }
+#hito2 .filter select { max-width: 100%; }
+.h2-changes { display: grid; gap: 10px; margin-top: 12px; }
+.h2-change { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+.h2-change dt { font-weight: 600; color: var(--green); }
+.h2-change dd { margin: 0; }
+.h2-more > summary::before { content: '▸'; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
+.h2-more[open] > summary::before { transform: rotate(90deg); }
+.h2-changes .prompt > summary { display: block; }
+.h2-changes .prompt > summary::before { float: none; display: inline-block; }
+.h2-changes .prompt__meta { display: flex; margin-top: 4px; }
