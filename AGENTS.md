@@ -63,7 +63,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 ## 5. Lo decidido hasta hoy (23/10)
 
-- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 405, de ellos 38 simulados; cifras del 23/10 con C-23), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
+- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 403, de ellos 36 simulados; cifras del 23/10 con C-26), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
 - **Orden de lo imprescindible** (Product Owner, C-13, pendiente del visto bueno del equipo): **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado), que van ligados; **3) el asistente de IA**, importante pero detrás. En las entrevistas, la confianza en la IA es baja (N-IA-01 «No confirmada»).
 - **Regla de prioridad:** Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio.
 - **Una entrevista en contra no cambia un requisito:** se registra como riesgo. Si 3 o más lo contradicen, se reabre con un registro de cambio.

@@ -140,3 +140,9 @@ Coherencia por encima de cualquier cosa
 a
 
 **Resultado:** E1–E6 dicen lo mismo en todos los documentos (C-25). Se corrigieron los datos de E1–E4 y la tabla 5.1 de necesidades se rehízo con E1–E6. N-INC-01 pasa a Indicio y N-CAD-01 se debilita; ninguna necesidad llega a Confirmada. Se actualizaron las fuentes F-05 a F-08 y la evidencia de D-03, y se quitaron las comillas de citas que no son literales (E1–E4 son apuntes). Se regeneró con `npm run todo`.
+
+### 20:39
+
+a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la cabezera de la web que ponga asistente ia, y que se vea bien, no remarcado pero casi)
+
+**Resultado:** bloque C aprobado y escrito en la criba (C-26). Por el plan de contraste de N-IA-01, RF-12.1-03 (texto libre) y RF-12.6-05 pasan a Could · V2. RF-12.1-01 pasa a ser una pestaña «Asistente IA» arriba a la derecha de la cabecera, visible pero sin destacar más que «Comprar». Se ajustaron las fichas del asistente y las cifras: MVP 403, con 36 simulados. La pestaña se hará en la landing.

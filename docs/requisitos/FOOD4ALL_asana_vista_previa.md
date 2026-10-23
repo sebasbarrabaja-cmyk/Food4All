@@ -5444,13 +5444,12 @@ Cliente
 
 **5. Ubicación**
 
-/comprar#asistente y acceso «Pide una cesta a la IA» en la portada y en el carrito vacío.
+/comprar#asistente, desde la pestaña «Asistente IA» de la cabecera (arriba a la derecha) y desde el carrito vacío.
 
 **6. Elementos de la pantalla (en este orden)**
 
 - Botones de presupuesto 15, 25, 40 € y días 2, 4, 7 (RF-12.6)
 - Campos: presupuesto, días, personas, tiempo para cocinar
-- Campo de texto libre «Cuéntanos qué necesitas»
 - Botón «Preparar mi cesta»
 
 **7. Diseño**
@@ -5459,9 +5458,9 @@ Ver RF-12.6.
 
 **8. Flujo principal**
 
-1. El cliente elige con botones o escribe una frase («Tengo 25 € y 4 días»).
-2. El asistente rellena los campos con lo entendido.
-3. El cliente pulsa «Preparar mi cesta».
+1. El cliente elige el presupuesto y los días con los botones.
+2. Completa personas y tiempo para cocinar.
+3. Pulsa «Preparar mi cesta».
 
 **9. Campos y validaciones**
 
@@ -5472,7 +5471,7 @@ Ver RF-12.6.
 
 **10. Flujos alternativos y errores**
 
-- Frase que no se entiende: «No lo he entendido. Elige el presupuesto y los días con los botones.»
+- Campo vacío o fuera de rango: se muestra el mensaje del campo y no se envía.
 
 **11. Reglas de negocio y seguridad**
 
@@ -5509,13 +5508,13 @@ Entrada por voz o foto de la nevera.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-12.1-01** `Should·MVP·Pendiente` `simulado` Ofrecer el asistente en /comprar#asistente y desde la portada con «Pide una cesta a la IA». _(N-IA-01)_
-  - Criterio: Dada la portada, cuando pulsa el acceso, entonces llega al asistente.
+- [ ] **RF-12.1-01** `Should·MVP·Pendiente` `simulado` Ofrecer el asistente en /comprar#asistente y desde la pestaña «Asistente IA» de la cabecera, arriba a la derecha: visible, pero sin destacar más que «Comprar». _(N-IA-01)_
+  - Criterio: Dada cualquier página, cuando pulsa «Asistente IA» en la cabecera, entonces llega al asistente.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.1-02** `Should·MVP·Pendiente` `simulado` Pedir presupuesto (5 a 200 €), días (1 a 7), número de personas (1 a 6) y tiempo para cocinar (poco, normal, mucho). _(N-IA-01)_
   - Criterio: Dado un presupuesto de 3 €, cuando envía, entonces ve «El presupuesto mínimo es de 5 €».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Diferencial
-- [ ] **RF-12.1-03** `Should·MVP·Pendiente` `simulado` Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»). _(N-IA-01)_
+- [ ] **RF-12.1-03** `Could·V2·Pendiente` Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»). _(N-IA-01)_
   - Criterio: Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.1-04** `Should·MVP·Pendiente` `simulado` Rellenar por defecto con las preferencias guardadas del cliente. _(N-IA-01)_
@@ -5936,7 +5935,6 @@ Cliente
 **6. Elementos de la pantalla (en este orden)**
 
 - Botones de presupuesto (15, 25, 40 €) y días (2, 4, 7)
-- Campo de texto libre
 - Mensajes: cliente a la derecha; IA a la izquierda con etiqueta «IA»
 - Total de la cesta y «Te sobran 1,60 €»
 - Botón «Nueva cesta»
@@ -5947,7 +5945,7 @@ Mensajes en tarjetas de radio 10 px: cliente en --tint-peach, IA en --surface co
 
 **8. Flujo principal**
 
-1. El cliente usa los botones o escribe.
+1. El cliente usa los botones y los campos.
 2. Ve la respuesta a la izquierda.
 3. Pulsa «Nueva cesta» para empezar de cero.
 
@@ -5957,11 +5955,11 @@ No tiene campos de entrada.
 
 **10. Flujos alternativos y errores**
 
-- Petición que no es de comida: «Solo puedo ayudarte con tu compra de comida».
+- Respuesta que tarda más de 10 s: «Estamos preparando tu cesta…» (RF-12.2-05).
 
 **11. Reglas de negocio y seguridad**
 
-- La IA solo atiende compras de comida (Pendiente: propuesta).
+- Sin texto libre en el MVP: solo opciones guiadas (C-26). El filtro de peticiones que no son de comida llega con el texto libre (RF-12.6-05, V2).
 
 **12. Accesibilidad**
 
@@ -5992,8 +5990,8 @@ Historial de conversaciones.
 
 **Requisitos atómicos (5)**
 
-- [ ] **RF-12.6-01** `Should·MVP·Pendiente` `simulado` Mostrar el asistente con opciones guiadas (botones de presupuesto 15, 25, 40 € y días 2, 4, 7) y un campo de texto libre. _(N-IA-01)_
-  - Criterio: Dado el asistente, cuando se abre, entonces se ven los botones y el campo.
+- [ ] **RF-12.6-01** `Should·MVP·Pendiente` `simulado` Mostrar el asistente con opciones guiadas: botones de presupuesto (15, 25, 40 €) y días (2, 4, 7), y los campos de personas y tiempo para cocinar. _(N-IA-01)_
+  - Criterio: Dado el asistente, cuando se abre, entonces se ven los botones y los campos, sin texto libre.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.6-02** `Should·MVP·Pendiente` `simulado` Mostrar la conversación como mensajes: los del cliente a la derecha y los de la IA a la izquierda con la etiqueta «IA». _(N-IA-02)_
   - Criterio: Dada una respuesta, cuando aparece, entonces está a la izquierda con la etiqueta.
@@ -6004,7 +6002,7 @@ Historial de conversaciones.
 - [ ] **RF-12.6-04** `Should·MVP·Pendiente` `simulado` Permitir empezar de nuevo con «Nueva cesta». _(N-IA-01)_
   - Criterio: Dado «Nueva cesta», cuando lo pulsa, entonces se vacía la conversación.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-12.6-05** `Should·MVP·Pendiente` `simulado` Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida». _(N-IA-02)_
+- [ ] **RF-12.6-05** `Could·V2·Pendiente` Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida». _(N-IA-02)_
   - Criterio: Dado «hazme los deberes», cuando lo envía, entonces recibe esa respuesta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 

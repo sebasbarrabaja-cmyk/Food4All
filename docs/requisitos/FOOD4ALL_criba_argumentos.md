@@ -16,12 +16,12 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | --- | --- | --- | --- |
 | RF-05 Carrito · RF-06 Checkout · RF-07 Subpedidos | 92 | 78 | 14 |
 | RF-08 Hub y entrega | 29 | 17 | 12 |
-| RF-12 Asistente de IA | 30 | 24 (simulado, ninguno Must) | 6 |
+| RF-12 Asistente de IA | 30 | 22 (simulado, ninguno Must) | 8 |
 | RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 0 | 40 |
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
-| **Total** | **564** | **405** (38 simulados) | **155** + 4 excluidos |
+| **Total** | **564** | **403** (36 simulados) | **157** + 4 excluidos |
 
 Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). E1–E4 son apuntes de Sebastián, sin citas literales; E5–E6 son de Juan Antonio, literales. Las de Miguel se descartaron (C-22).
 - **Precio y producto:** E4 compraría directamente al productor si percibe mayor calidad, un precio favorable y una cantidad adecuada. A E2 le atraen los productos locales, menos procesados y más baratos. E5 busca «de lo más barato del mercado» y a E6 le frenan los gastos de envío de Glovo. E6 no mira el origen: «solo miro que me vaya a gustar».
@@ -89,7 +89,12 @@ Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 3. Si lo atractivo es el precio y el producto natural (postura del PO, C-13: carrito y producto primero, IA en tercer lugar), ¿qué requisitos de RF-12 bajarías de prioridad y cuáles conservarías?
 4. ¿Por qué el pago y el reembolso son simulados, y qué no podemos afirmar en la demo por eso?
 
-**Respuesta (Sebastián):** _pendiente_
+**Decisión de Sebastián (redactada con ayuda del asistente):**
+
+1. **Por qué la IA sigue en la demo.** Entra como Should · MVP simulado: opcional y revisable. Nunca añade nada al carrito sin confirmación (RF-12.3-04) y lleva la etiqueta «Propuesta generada por IA» (RF-12.4-01). No puede ser Must, porque N-IA-01 quedó «No confirmada»: E3 y E4 tienen poca o ninguna confianza. Se diseña para esa desconfianza: E1 la revisaría y E2 la pondría a prueba. Si 3 o más entrevistas del perfil objetivo la rechazan, sale del MVP (regla A.3).
+2. **Alternativa sin IA.** El catálogo de la zona con filtros y el carrito normal (RF-04 y RF-05). La compra funciona entera sin el asistente.
+3. **Qué baja y qué se conserva.** Se aplica el plan de contraste de N-IA-01 (`FOOD4ALL_necesidades.md`, apartado 5): RF-12.1-03 (escribir en lenguaje natural) pasa a Could · V2, y con él el filtro de peticiones que no son de comida (RF-12.6-05). El asistente se queda en opciones guiadas: presupuesto, días, personas y tiempo para cocinar. El acceso (RF-12.1-01) pasa a ser una pestaña «Asistente IA» arriba a la derecha de la cabecera: visible, pero sin destacar más que «Comprar». Es el tercer lugar de C-13: la IA no se presenta como la única forma de comprar. Se conservan la cesta dentro del presupuesto, la exclusión de alérgenos, el ajuste producto a producto y la transparencia (RF-12.2 a RF-12.4).
+4. **Por qué pago y reembolso son simulados.** Nunca hay dinero real: sin pasarela, sin comisiones reales y sin el riesgo legal de cobrar. Por eso en la demo no se puede afirmar que el cobro, el reparto del dinero entre vendedores o los reembolsos funcionen de verdad: solo que el recorrido y los importes son correctos.
 
 ## D · Hub y entrega con la mitad aplazada (RF-08) · Sebastián
 

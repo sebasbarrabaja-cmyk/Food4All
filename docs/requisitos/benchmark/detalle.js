@@ -97,11 +97,11 @@ module.exports = (R) => {
 
   R.proc('RF-12', 'Asistente de IA para generar la cesta');
   R.sub('RF-12.6', 'Diseño del asistente');
-  R('Mostrar el asistente con opciones guiadas (botones de presupuesto 15, 25, 40 € y días 2, 4, 7) y un campo de texto libre.', 'Dado el asistente, cuando se abre, entonces se ven los botones y el campo.', 'S', 'MVP', ['BF67'], 'N-IA-01');
+  R('Mostrar el asistente con opciones guiadas: botones de presupuesto (15, 25, 40 €) y días (2, 4, 7), y los campos de personas y tiempo para cocinar.', 'Dado el asistente, cuando se abre, entonces se ven los botones y los campos, sin texto libre.', 'S', 'MVP', ['BF67'], 'N-IA-01');
   R('Mostrar la conversación como mensajes: los del cliente a la derecha y los de la IA a la izquierda con la etiqueta «IA».', 'Dada una respuesta, cuando aparece, entonces está a la izquierda con la etiqueta.', 'S', 'MVP', [], 'N-IA-02');
   R('Mostrar el total de la cesta propuesta y lo que queda del presupuesto.', 'Dada una cesta de 23,40 € con 25 €, cuando se ve, entonces muestra «Te sobran 1,60 €».', 'S', 'MVP', [], 'N-PLA-02');
   R('Permitir empezar de nuevo con «Nueva cesta».', 'Dado «Nueva cesta», cuando lo pulsa, entonces se vacía la conversación.', 'S', 'MVP', [], 'N-IA-01');
-  R('Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida».', 'Dado «hazme los deberes», cuando lo envía, entonces recibe esa respuesta.', 'S', 'MVP', [], 'N-IA-02');
+  R('Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida».', 'Dado «hazme los deberes», cuando lo envía, entonces recibe esa respuesta.', 'C', 'V2', [], 'N-IA-02', { just: 'Solo aplica con texto libre (RF-12.1-03), que pasa a V2 (C-26).' });
   R.sub('RF-12.7', 'Reglas de la propuesta');
   R('Repartir la cesta entre al menos 2 vendedores cuando sea posible, sin encarecerla.', 'Dadas dos opciones de igual precio, cuando se genera, entonces se combinan vendedores.', 'C', 'V2', ['BF24'], 'N-VEN-01');
   R('Priorizar los productos de temporada y los de vida útil adecuada a los días pedidos.', 'Dados 7 días, cuando se genera, entonces no propone pescado fresco para el día 7.', 'S', 'MVP', [], 'N-CAD-01');
