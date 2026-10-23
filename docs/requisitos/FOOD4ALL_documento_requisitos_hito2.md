@@ -151,7 +151,7 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (15) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (16) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
@@ -522,7 +522,7 @@ Estos puntos abiertos afectan a los requisitos. Mientras sigan abiertos, cada fi
 | H-04 | Hipótesis | Plazos de incidencias aceptables: 48 h en frescos, 14 días en despensa y respuesta humana en 24 h laborables | RF-10, RF-13 | Esos valores | Entrevistas F-07 y capacidad del equipo |
 | D-01 | Pendiente | Rol jurídico: intermediario, operador alimentario o mixto | RF-02, RF-08, RF-10, RNF-08, RNF-09 | Mixto | Decisión del equipo con el profesor y revisión profesional |
 | D-02 | Pendiente | Porcentaje de comisión por venta | RF-02, RF-07, RF-13, RF-17 | Sin mostrar | Modelo de negocio |
-| D-03 | Pendiente | Ubicación del hub, zonas y horas de cierre de cada franja | RF-06, RF-08, RF-13 | Una zona por ciudad; cierre la víspera a las 20:00 | Investigación F-05 y F-06. Alternativa considerada: puntos de recogida comunitarios en lugar de la entrega en casa (M-06 de los recorridos del 23/10), pendiente de debate del equipo |
+| D-03 | Pendiente | Ubicación del hub, zonas y horas de cierre de cada franja | RF-06, RF-08, RF-13 | Una zona por ciudad; cierre la víspera a las 20:00 | Investigación F-05 y F-06. Alternativa considerada: puntos de recogida comunitarios en lugar de la entrega en casa (M-06 de los recorridos del 23/10), pendiente de debate del equipo. **Se decide en el Hito 3** (antes del 13/11/2026), con el profesor; responsable: Sebastián |
 | D-04 | Pendiente | Plazo de confirmación del vendedor | RF-07, RF-16 | Hora de cierre + 12 h | Entrevistas F-08 |
 | R-01 | Riesgo | Pocos vendedores por zona hacen inviable la consolidación | RF-08 | Mínimo de vendedores por zona | Entrevistas F-08 |
 | R-02 | Riesgo | La IA propone un producto con un alérgeno declarado | RF-12 | Filtro obligatorio por alérgenos | Criterio de aceptación en RF-12.2-03 |
@@ -1150,7 +1150,7 @@ Con 5 estudiantes y 2–3 vendedores esto da para pasar de hipótesis a indicio 
 | N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
 | N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
 | N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (15) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 37 (16) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
 | N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (19) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
@@ -2133,7 +2133,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **N-CAD-01** Gestionar cantidades, conservación y caducidades para no tirar comida | Indicio | F-01, F-03, F-07 (E3, E4) | RF-03, RF-08, RF-12, RNF-11 | 5 | US-08 | 8 (3) | — |
 | **N-IA-01** Que el asistente simplifique la decisión sin obligarle a explicar demasiado | No confirmada | F-02, F-07 (en contra: E3, E4) | RF-12, RNF-03, RNF-10 | 5 | US-08 | 10 (10) | — |
 | **N-IA-02** Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | RF-04, RF-12, RNF-08 | 5 | US-08 | 11 (9) | — |
-| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-02, RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 21 | US-03, US-10, US-13 | 37 (15) | — |
+| **N-CAT-01** Confiar en el origen, la calidad y la trazabilidad de lo que compra | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | RF-02, RF-03, RF-04, RF-07, RF-08, RF-11, RF-13, RF-16, RF-17, RNF-09 | 21 | US-03, US-10, US-13 | 37 (16) | — |
 | **N-CAT-02** Conocer ingredientes y alérgenos antes de pagar | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | RF-01, RF-03, RF-04, RF-06, RF-08, RF-12 | 9 | US-03, US-05, US-10 | 14 (14) | — |
 | **N-CAT-03** Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | RF-03, RF-04, RF-05, RF-06, RF-08, RF-11, RF-13, RF-14, RF-15, RF-17, RNF-08 | 26 | US-05 | 36 (19) | — |
 | **N-CUE-01** Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Obligación legal | F-03 (RGPD; LOPDGDD) | RF-01, RF-02, RF-06, RF-07, RF-09, RF-13, RNF-01, RNF-02 | 22 | US-01 | 61 (53) | — |
@@ -2245,7 +2245,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 | **RF-08.2** Recepción y verificación en el hub | N-HUB-03, N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-06, F-12 | US-12 | Must · MVP | MVP (con partes simuladas) | D-01 rol jurídico; D-03 hub y zonas | RF-08.2-01 … RF-08.2-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.3** Empaquetado consolidado | N-ENT-01, N-CAT-02, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.3-01 … RF-08.3-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.4** Reparto y entrega | N-ENT-01, N-CAT-03, N-PLA-02 | F-01, F-03, F-04, F-05, F-07 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.4-01 … RF-08.4-06 (6) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
-| **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Should · V2 | V2 | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
+| **RF-08.5** Retirada y excedentes | N-CAD-01, N-CAT-01 | F-01, F-03, F-04, F-07 | US-12 | Must · MVP | MVP | D-01 rol jurídico; D-03 hub y zonas | RF-08.5-01 … RF-08.5-02 (2) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.6** Aplicación del operador | N-HUB-01, N-HUB-02, N-HUB-03 | F-03, F-06, F-12 | US-12 | Should · V2 | V2 | D-03 hub y zonas | RF-08.6-01 … RF-08.6-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-08.7** Entrega al cliente | N-ENT-01, N-HUB-02 | F-03, F-04, F-05, F-12 | US-12 | Must · MVP | MVP | D-03 hub y zonas | RF-08.7-01 … RF-08.7-04 (4) | RNF-01, RNF-05, RNF-06, RNF-09, RNF-11 | | | |
 | **RF-09.1** Estados | N-ENT-01 | F-04, F-05 | US-06 | Must · MVP | MVP | — | RF-09.1-01 … RF-09.1-03 (3) | RNF-01, RNF-05, RNF-06 | | | |
@@ -2285,7 +2285,7 @@ Responde a [B6] «Matriz de trazabilidad inicial». Columnas: necesidad, fuente,
 
 - Requisitos sin necesidad: **0** de 564.
 - Procesos RF sin historia: **ninguno**.
-- Subrequisitos: 127 (105 del MVP, todos con ficha completa).
+- Subrequisitos: 127 (106 del MVP, todos con ficha completa).
 - N-VEN-03 solo se cubre fuera del MVP.
 - Necesidades de usuario confirmadas con entrevistas: **0** de 16. Las entrevistas F-07 y F-08 se registran el 23/10/2026; hasta entonces todas son hipótesis (regla de evidencia en `FOOD4ALL_necesidades.md`).
 
@@ -11597,7 +11597,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 - RF-08.2 · Recepción y verificación en el hub (6) · Must · MVP
 - RF-08.3 · Empaquetado consolidado (4) · Must · MVP
 - RF-08.4 · Reparto y entrega (6) · Must · MVP
-- RF-08.5 · Retirada y excedentes (2) · Should · V2
+- RF-08.5 · Retirada y excedentes (2) · Must · MVP
 - RF-08.6 · Aplicación del operador (4) · Should · V2
 - RF-08.7 · Entrega al cliente (4) · Must · MVP
 
@@ -12047,11 +12047,11 @@ Mapa en tiempo real (V3).
 
 _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** V2 · **Alcance:** V2 · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
 
 **1. Descripción**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Retirada de un lote: el admin retira un producto o lote que no es seguro y la plataforma avisa a todos los clientes que lo compraron. En el MVP solo la retirada con aviso (RF-08.5-01); los excedentes del hub son V2.
 
 **2. Origen**
 
@@ -12063,6 +12063,53 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 **3. Actores y roles**
 
 Operador, repartidor
+
+**4. Supuestos de entrada y salida**
+
+- Supone que existe: Aviso del productor o de la autoridad sanitaria sobre un lote; cuenta de admin con sesión.
+- Entrega a: Producto retirado del catálogo, líneas afectadas marcadas y aviso enviado a cada comprador (correo y «Mis pedidos»).
+
+**5. Ubicación**
+
+/admin → Productos → «Retirar lote».
+
+**6. Elementos de la pantalla (en este orden)**
+
+- Buscador de producto y vendedor
+- Campo de lote o rango de fechas de venta
+- Campo «Motivo» que verá el cliente
+- Recuento de pedidos y clientes afectados
+- Botón «Retirar y avisar» con confirmación
+
+**7. Diseño**
+
+Panel interno (vendedor, operador o admin): fondo --bg #F6F1E6, contenido en tarjetas; pestañas o barra lateral con la sección activa marcada; Botón principal: píldora (--radius-pill), 48 px de alto, fondo --accent #D9822B, texto --on-accent #23301F en Figtree 600. Ratón encima: sube 2 px en 200 ms. Foco: anillo de 2 px --green #2F5233 separado 2 px. Desactivado: opacidad 50 % y cursor «no permitido». Cargando: texto en gerundio («Guardando…») y desactivado.
+
+**8. Flujo principal**
+
+1. El admin elige el producto y el lote o las fechas de venta.
+2. Ve cuántos pedidos y clientes están afectados.
+3. Escribe el motivo y pulsa «Retirar y avisar».
+4. El producto deja de venderse, las líneas de los pedidos aún no entregados se excluyen y cada comprador recibe el aviso con qué hacer con el producto.
+
+**9. Campos y validaciones**
+
+- **Motivo** · texto · obligatorio: Sí · 10 a 300 · mensaje: «Explica al cliente por qué se retira»
+
+**10. Flujos alternativos y errores**
+
+- Ningún pedido con ese lote: se retira del catálogo sin avisos y se indica «Sin compradores afectados».
+- Correo que no se puede enviar: el aviso queda igualmente en «Mis pedidos» y se registra el fallo.
+
+**11. Reglas de negocio y seguridad**
+
+- Avisar a quien compró un producto inseguro (Decidido, C-23; Reglamento (CE) 178/2002, art. 19).
+- Quién ordena la retirada, la plataforma o el productor, depende de su rol jurídico (Pendiente, D-01); el aviso a los compradores es de la plataforma en cualquier caso.
+- El reembolso de lo retirado sigue la regla de incidencias (RF-10, simulado).
+
+**12. Accesibilidad**
+
+Orden de tabulación igual al orden visual; foco siempre visible; zonas pulsables de 44 × 44 px como mínimo; contraste ≥ 4,5:1 (RNF-05)
 
 **13. Criterios de aceptación**
 
@@ -12085,11 +12132,11 @@ Poco extendido 2
 
 **16. Fuera de alcance**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Registro de excedentes y su destino (V2, RF-08.5-02).
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-08.5-01** `Should·V2·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
+- [ ] **RF-08.5-01** `Must·MVP·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
   - Criterio: Dado un lote retirado, cuando se confirma, entonces cada comprador recibe el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too P · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-08.5-02** `Should·V2·Pendiente` Registrar los excedentes del hub y su destino: devolución, donación o desecho. _(N-CAD-01)_

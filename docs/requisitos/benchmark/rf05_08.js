@@ -141,6 +141,6 @@ module.exports = (R) => {
   R('Si el reparto no va a llegar dentro de la franja, avisar al cliente antes de que termine, con la nueva hora estimada, y dejarle mantenerla o elegir otra franja sin coste.', 'Dada una franja de 18 a 20 h y una llegada estimada a las 20:30, cuando el operador marca «Retraso», entonces el cliente recibe el aviso antes de las 20:00 y puede elegir otra franja.', 'M', 'MVP', [], 'N-ENT-01', { pos: 'Mejora', just: 'Market Wagon y KnowEats no garantizan hora y Wetaca acota la franja por correo; ninguno avisa de un retraso en el recorrido (23/10/2026).' });
 
   R.sub('RF-08.5', 'Retirada y excedentes');
-  R('Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron.', 'Dado un lote retirado, cuando se confirma, entonces cada comprador recibe el aviso.', 'S', 'V2', [], 'N-CAT-01', { estado: 'Decidido' });
+  R('Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron.', 'Dado un lote retirado, cuando se confirma, entonces cada comprador recibe el aviso.', 'M', 'MVP', [], 'N-CAT-01', { estado: 'Decidido', just: 'Seguridad alimentaria (regla A.2 c de la criba): solo la plataforma sabe quién compró el lote, así que el aviso a los compradores es suyo sea cual sea D-01 (C-23).' });
   R('Registrar los excedentes del hub y su destino: devolución, donación o desecho.', 'Dado un excedente, cuando se registra, entonces queda su destino y fecha.', 'S', 'V2', ['BF69'], 'N-CAD-01');
 };

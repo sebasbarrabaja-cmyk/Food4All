@@ -15,13 +15,13 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | Proceso | Requisitos | En el MVP | Aplazados (V2/V3) |
 | --- | --- | --- | --- |
 | RF-05 Carrito · RF-06 Checkout · RF-07 Subpedidos | 92 | 78 | 14 |
-| RF-08 Hub y entrega | 29 | 16 | 13 |
+| RF-08 Hub y entrega | 29 | 17 | 12 |
 | RF-12 Asistente de IA | 30 | 24 (simulado, ninguno Must) | 6 |
 | RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 0 | 40 |
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
-| **Total** | **564** | **404** (38 simulados) | **156** + 4 excluidos |
+| **Total** | **564** | **405** (38 simulados) | **155** + 4 excluidos |
 
 Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). Son solo las de Sebastián: faltan las del resto del equipo.
 - **Precio y producto:** E4 compraría directamente al productor si percibe «mayor calidad, un precio favorable y una cantidad adecuada». A E2 le atraen los productos «locales, menos procesados y más baratos».
@@ -62,9 +62,18 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 3. ¿Qué alternativa había (por ejemplo, un pedido y un pago por vendedor) y por qué no se eligió?
 4. Con la postura del PO (C-13: carrito simplificado y producto primero), ¿qué parte del núcleo hace visible ese valor?
 
-**Respuesta (Sebastián):** _pendiente_
+**Decisión de Sebastián (redactada con ayuda del asistente):**
 
-## C · Lo simulado: pago, reembolso e IA · Miguel
+1. **Problema y evidencia.** Comprar a varios productores locales supone hoy varios pedidos, envíos y pagos. El núcleo lo convierte en un carrito, un pago y una entrega: carrito con varios vendedores (RF-05.1-01), un único coste de envío (RF-05.4-01) y un subpedido por vendedor (RF-07.1-01). La evidencia es un **Indicio**, no está confirmada. E4 compraría al productor si percibe calidad, precio y cantidad. A E3 le molesta salir a comprar lo que le falta, pero no usaría FOOD4ALL. A E6 le frenan los gastos de envío de Glovo, y eso apoya el envío único.
+2. **Por qué sigue siendo Must aunque E3 diga que no.** Es el recorrido central (regla A.2 a): sin él no hay marketplace de varios vendedores y la demo no responde al problema. Una contradicción se registra como riesgo y no cambia el requisito (regla A.3). Además, E3 rechaza FOOD4ALL en general, no el carrito. Lo que pide (sencillo, rápido, con descuentos) habla de cómo tiene que ser, y eso refuerza el «carrito simplificado» de C-13. Se revisa si 3 o más entrevistas del perfil objetivo prefieren comprar a cada vendedor por separado.
+3. **Alternativa descartada.** Un pedido y un pago por vendedor. Es más fácil de construir (sin subpedidos ni hub), pero el cliente pagaría varios envíos y recibiría varias entregas. *Inferencia:* con presupuestos de 30–60 € a la semana (E3 y E4), alcanzar la compra mínima de 10–15 € (RF-05.4-02) en cada vendedor sería difícil. Se elige un pago con subpedidos: el cliente ve un solo pedido y cada vendedor, el suyo (RF-07.1-02).
+4. **Cómo se ve el valor de C-13.** El carrito agrupado por vendedor muestra el origen (RF-05.2). El botón «Pagar 28,90 €» muestra el total claro (RF-05.8-04). Se explica por qué hay un solo envío (RF-05.9-03) y hasta cuándo se puede cancelar (RF-06.6-05).
+
+**Qué queda fuera (14):** pagos reales (PayPal, Bizum, tickets restaurante), la factura de empresa y en PDF, modificar el pedido, las sustituciones, los códigos promocionales, la barra fija en móvil y reservar la franja durante 15 minutos. Son comodidades o casos minoritarios: el recorrido central funciona sin ellos.
+
+**Recorrido de defensa** (lo pidió la valoración, apartado 5): el pedido 1042 crea los subpedidos 1042-A y 1042-B (RF-07.1-01). El vendedor B marca una falta (RF-07.3-02). Esa línea se reembolsa de forma simulada y el total se recalcula (RF-07.6). Después de la hora de cierre ya no se puede cancelar (RF-06.6-03).
+
+## C · Lo simulado: pago, reembolso e IA · Sebastián (asume la parte de Miguel)
 
 **Decisión propuesta:** el pago y el reembolso son de prueba (nunca dinero real). El asistente de IA (RF-12) queda como «Should · MVP simulado»: entra en la demo, ninguno de sus requisitos es Must, y la compra funciona sin él.
 
@@ -79,11 +88,11 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 3. Si lo atractivo es el precio y el producto natural (postura del PO, C-13: carrito y producto primero, IA en tercer lugar), ¿qué requisitos de RF-12 bajarías de prioridad y cuáles conservarías?
 4. ¿Por qué el pago y el reembolso son simulados, y qué no podemos afirmar en la demo por eso?
 
-**Respuesta (Miguel):** _pendiente_
+**Respuesta (Sebastián):** _pendiente_
 
 ## D · Hub y entrega con la mitad aplazada (RF-08) · Sebastián
 
-**Decisión propuesta:** RF-08 es Must, pero solo 16 de sus 29 requisitos entran en el MVP (13 de 26 antes de los 3 de retrasos de C-15). El modelo de hub (D-03) no está decidido, y los requisitos afectados llevan un valor provisional.
+**Decisión propuesta:** RF-08 es Must, pero solo 16 de sus 29 requisitos entraban en el MVP (13 de 26 antes de los 3 de retrasos de C-15); 17 desde C-23. El modelo de hub (D-03) no está decidido, y los requisitos afectados llevan un valor provisional.
 
 **Qué pidió el profesor:** «no es incoherente modelar el comportamiento antes de cerrarlo, pero debe marcarse como supuesto del piloto» (valoración, apartado 3). En la Clase 5, el ejemplo de marketplace excluye «integración de rutas, gestión de frío, stock en tiempo real».
 
@@ -92,7 +101,13 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 2. Si el hub no está decidido, ¿por qué se modela ya? ¿Qué cambia si al final no hay hub (por ejemplo, con puntos de recogida)?
 3. H-02 supone que el estudiante acepta esperar a una entrega en una franja. ¿Qué requisitos caen si resulta falsa?
 
-**Respuesta (Sebastián):** _pendiente_
+**Decisión de Sebastián (redactada con ayuda del asistente):**
+
+1. **Criterio.** Entra lo necesario para que un pedido recorra la cadena completa una vez: recoger, verificar, consolidar y entregar (RF-08.1 a RF-08.4), con el operador en una vista de escritorio. También entra la seguridad alimentaria: embalaje isotérmico, hoja de información obligatoria, retirada de lo caducado y entrega en mano de los refrigerados (RF-08.2-03, RF-08.3-02, RF-08.3-04 y RF-08.7-03). Y los fallos del camino principal: entrega fallida y retrasos (RF-08.4-03 y C-15). Y la retirada de un lote con aviso a sus compradores (RF-08.5-01), que sube al MVP con C-23. Se aplazan 12: el orden de las paradas, la app móvil del operador (RF-08.6), las comodidades del cliente (aviso 30 minutos antes, dejarlo a un vecino, foto de la entrega), lo que depende de D-01 (temperatura de la cámara y excedentes), la devolución tras dos entregas fallidas y el punto de recogida.
+2. **Por qué se modela sin estar decidido.** La valoración lo admite si se marca como supuesto del piloto, y todo RF-08 lleva «Depende de D-03». El hub es lo que hace posible «una sola entrega» (RF-08.3-01), la prioridad 1 de C-13. Si no hubiera hub (por ejemplo, con puntos de recogida), cambiaría cómo se entrega, pero no lo que ve el cliente: un carrito, un pago y subpedidos. Por eso el bloque B no depende de D-03.
+3. **Si H-02 es falsa.** Caen directamente las franjas de 2 horas (RF-06.2-02) y la hora estimada (RF-09.2-03). Indirectamente cae la entrega a domicilio (RF-08.4 y RF-08.7-03). El plan B es el punto de recogida (C-19). *Inferencia:* las compras grandes cada 1–2 semanas de E4 encajan mejor con una franja programada.
+
+**D-03 se decide en el Hito 3** (antes del 13/11/2026), con la ayuda del profesor, las entrevistas a vendedores y la pregunta del punto de recogida. Es una decisión de operación y diseño, no un requisito: el requisito es que el pedido llegue en una sola entrega. Responsable: Sebastián. Hasta entonces vale el supuesto del piloto: una zona por ciudad y cierre la víspera a las 20:00.
 
 ## E · Los cinco procesos fuera del MVP · Juan Antonio
 

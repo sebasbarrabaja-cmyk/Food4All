@@ -9431,7 +9431,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 - RF-08.2 · Recepción y verificación en el hub (6) · Must · MVP
 - RF-08.3 · Empaquetado consolidado (4) · Must · MVP
 - RF-08.4 · Reparto y entrega (6) · Must · MVP
-- RF-08.5 · Retirada y excedentes (2) · Should · V2
+- RF-08.5 · Retirada y excedentes (2) · Must · MVP
 - RF-08.6 · Aplicación del operador (4) · Should · V2
 - RF-08.7 · Entrega al cliente (4) · Must · MVP
 
@@ -9881,11 +9881,11 @@ Mapa en tiempo real (V3).
 
 _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** V2 · **Alcance:** V2 · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
 
 **1. Descripción**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Retirada de un lote: el admin retira un producto o lote que no es seguro y la plataforma avisa a todos los clientes que lo compraron. En el MVP solo la retirada con aviso (RF-08.5-01); los excedentes del hub son V2.
 
 **2. Origen**
 
@@ -9897,6 +9897,53 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 **3. Actores y roles**
 
 Operador, repartidor
+
+**4. Supuestos de entrada y salida**
+
+- Supone que existe: Aviso del productor o de la autoridad sanitaria sobre un lote; cuenta de admin con sesión.
+- Entrega a: Producto retirado del catálogo, líneas afectadas marcadas y aviso enviado a cada comprador (correo y «Mis pedidos»).
+
+**5. Ubicación**
+
+/admin → Productos → «Retirar lote».
+
+**6. Elementos de la pantalla (en este orden)**
+
+- Buscador de producto y vendedor
+- Campo de lote o rango de fechas de venta
+- Campo «Motivo» que verá el cliente
+- Recuento de pedidos y clientes afectados
+- Botón «Retirar y avisar» con confirmación
+
+**7. Diseño**
+
+Panel interno (vendedor, operador o admin): fondo --bg #F6F1E6, contenido en tarjetas; pestañas o barra lateral con la sección activa marcada; Botón principal: píldora (--radius-pill), 48 px de alto, fondo --accent #D9822B, texto --on-accent #23301F en Figtree 600. Ratón encima: sube 2 px en 200 ms. Foco: anillo de 2 px --green #2F5233 separado 2 px. Desactivado: opacidad 50 % y cursor «no permitido». Cargando: texto en gerundio («Guardando…») y desactivado.
+
+**8. Flujo principal**
+
+1. El admin elige el producto y el lote o las fechas de venta.
+2. Ve cuántos pedidos y clientes están afectados.
+3. Escribe el motivo y pulsa «Retirar y avisar».
+4. El producto deja de venderse, las líneas de los pedidos aún no entregados se excluyen y cada comprador recibe el aviso con qué hacer con el producto.
+
+**9. Campos y validaciones**
+
+- **Motivo** · texto · obligatorio: Sí · 10 a 300 · mensaje: «Explica al cliente por qué se retira»
+
+**10. Flujos alternativos y errores**
+
+- Ningún pedido con ese lote: se retira del catálogo sin avisos y se indica «Sin compradores afectados».
+- Correo que no se puede enviar: el aviso queda igualmente en «Mis pedidos» y se registra el fallo.
+
+**11. Reglas de negocio y seguridad**
+
+- Avisar a quien compró un producto inseguro (Decidido, C-23; Reglamento (CE) 178/2002, art. 19).
+- Quién ordena la retirada, la plataforma o el productor, depende de su rol jurídico (Pendiente, D-01); el aviso a los compradores es de la plataforma en cualquier caso.
+- El reembolso de lo retirado sigue la regla de incidencias (RF-10, simulado).
+
+**12. Accesibilidad**
+
+Orden de tabulación igual al orden visual; foco siempre visible; zonas pulsables de 44 × 44 px como mínimo; contraste ≥ 4,5:1 (RNF-05)
 
 **13. Criterios de aceptación**
 
@@ -9919,11 +9966,11 @@ Poco extendido 2
 
 **16. Fuera de alcance**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Registro de excedentes y su destino (V2, RF-08.5-02).
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-08.5-01** `Should·V2·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
+- [ ] **RF-08.5-01** `Must·MVP·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
   - Criterio: Dado un lote retirado, cuando se confirma, entonces cada comprador recibe el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too P · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-08.5-02** `Should·V2·Pendiente` Registrar los excedentes del hub y su destino: devolución, donación o desecho. _(N-CAD-01)_
