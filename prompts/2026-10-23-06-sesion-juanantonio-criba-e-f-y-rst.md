@@ -167,6 +167,12 @@ se a actualizado el asana revisalo y dime si tengo que cambiar algo del comentar
 entonces debo cambiar algo del comentario
 
 **Resultado:** sí, dos cosas: añadir «Cambio» y sustituir «Rama de trabajo» por que los cambios ya están unidos en `docs/hito2-entrega`. Se le dio el comentario completo con esos dos ajustes para pegarlo él.
+
+### 22:26
+
+solo ese o tengo que implementar el anterior comentario
+
+**Resultado:** solo el último, que ya lleva todo el anterior más los dos ajustes. Si ya había pegado el anterior en [B2], que lo borre de ahí.
 ---
 
 ## Revisión crítica del equipo
