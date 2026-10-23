@@ -50,3 +50,9 @@ tienes la regla que incluyo sebastian para que se guarden todos los promts
 súbelo a github
 
 **Resultado:** se subió la rama `docs/juanantonio-hito2` a GitHub para que Sebastián la una a `docs/hito2-entrega`.
+
+### 20:52
+
+que falta y que debo comunicar a mis compañeros
+
+**Resultado:** lista de lo que falta para la entrega, a partir de `AGENTS.md` y `FOOD4ALL_tareas_entrega.md` de la rama del equipo, y un mensaje para el grupo con lo que ha hecho Juan Antonio.
