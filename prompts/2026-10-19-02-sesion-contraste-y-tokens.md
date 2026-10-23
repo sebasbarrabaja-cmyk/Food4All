@@ -17,3 +17,15 @@ Continuación de 2026-10-19-01. En el mensaje 2 de esa sesión se pidió revisar
 ### 2
 
 ok
+
+---
+
+## Revisión crítica del equipo
+
+*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
+
+- **Revisado por:** _pendiente_
+- **Fecha:** _pendiente_
+- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
+- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
+- **Por qué estaba justificado usar IA aquí:** _pendiente_

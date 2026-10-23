@@ -127,3 +127,27 @@ Siguiente paso
 - `prompts/README.md` y `DISENO.md` están al día.
 - Se arregló, en todo el panel, la flecha de los desplegables que caía en su propia línea.
 - Verificación: compila; la API devuelve el tema de los 22 prompts y en PinchTab no hay errores. No se guardó ningún prompt de prueba.
+
+---
+
+## Revisión crítica del equipo
+
+*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
+
+- **Revisado por:** _pendiente_
+- **Fecha:** _pendiente_
+- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
+- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
+- **Por qué estaba justificado usar IA aquí:** _pendiente_
+
+### 21:33 · Revisión crítica de los prompts
+
+prepara lo de la revisión crítica de los prompts
+
+**Resultado:**
+- Los 22 prompts terminan con un apartado «## Revisión crítica del equipo» con cinco campos: quién lo revisó, cuándo, qué se aceptó de la IA, qué se corrigió o rechazó y por qué estaba justificada. Todos los campos están en «_pendiente_»: el asistente no los rellena, los escribe cada persona.
+- El panel marca cada prompt como «Revisado por el equipo» o «Revisión pendiente» y cuenta cuántos hay revisados.
+- Los prompts que se guarden desde el panel ya llevan el apartado.
+- `prompts/README.md` y `AGENTS.md` están al día.
+- Verificación: compila y la API devuelve «pendiente» en los 22.
+- **Sin probar en el navegador.**
