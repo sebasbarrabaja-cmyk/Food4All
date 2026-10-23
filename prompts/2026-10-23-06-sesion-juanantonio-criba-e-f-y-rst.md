@@ -173,6 +173,12 @@ entonces debo cambiar algo del comentario
 solo ese o tengo que implementar el anterior comentario
 
 **Resultado:** solo el último, que ya lleva todo el anterior más los dos ajustes. Si ya había pegado el anterior en [B2], que lo borre de ahí.
+
+### 22:28
+
+entoneces dame exactamente todo lo que tengo que poner en asana
+
+**Resultado:** se le dio el único texto que tiene listo para Asana (su comentario de revisión cruzada, con dónde pegarlo). La segunda revisión cruzada aún no está hecha, así que no hay comentario para ella.
 ---
 
 ## Revisión crítica del equipo
