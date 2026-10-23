@@ -331,3 +331,9 @@ El repsitorio es publico y creo que quiere un zip con todo de la landing
 Mira lo subido por juan antonio, revisalo y pasalo al git. Vamos a ultimar ya
 
 **Resultado:** la revisión crítica de Juan Antonio ya estaba en el PR #6 y está bien hecha. Los 22 prompts tienen su revisión crítica, y la nota de «prioritario» de `AGENTS.md` pasa a «hecha».
+
+### 22:01
+
+1a
+
+**Resultado:** el zip de entrega (`FOOD4ALL_Hito2_2026-10-23.zip`, 26 MB, desde `main` y sin `.env` ni `node_modules`) queda fuera del repositorio. Los datos de E5 y E6 que siguen en el historial público de git se dejan para otro día, y quedan anotados como pendiente interno en `AGENTS.md`.
