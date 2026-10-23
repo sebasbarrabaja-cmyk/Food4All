@@ -265,3 +265,21 @@ aplica Asana
   - Había que revisar que muchos documentos dijeran lo mismo (coherencia) en poco tiempo.
   - Me proponía opciones con pros y contras y la decisión la tomaba yo.
   - Para tareas mecánicas: regenerar el catálogo, contar requisitos, mover tareas en Asana.
+
+### 21:40
+
+Dime para tontos los pasos a dar
+
+**Resultado:** seis pasos sencillos: la revisión crítica de sus prompts, «Estado entrega», lo de Miguel, los comentarios y la revisión crítica de Juan Antonio, y avisar para subir.
+
+### 21:41
+
+Pues hazme un sistemas de preguntas para los promts. De miguel olvidate por hoy
+
+**Resultado:** lo de Miguel queda como pendiente interno en `AGENTS.md`. Para cada prompt (o grupo de prompts de una misma sesión), el asistente propuso tres preguntas con opciones: qué se aceptó, qué se corrigió y por qué estaba justificada la IA.
+
+### Hora no registrada (entre las 21:41 y las 21:49)
+
+1abc 2abcd 3abc · 1acbd 2abd 3abc · 1abcd 2abc 3ac · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abc 2abc 3abc · 1abc 2abc 3abc · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abcd 2abcd 3abc
+
+**Resultado:** diez respuestas, una por bloque. Los 19 prompts de Sebastián terminan con «## Revisión crítica del equipo», hecha con sus elecciones y marcada como «Respuestas de Sebastián a preguntas guiadas del asistente». Quedan el de Juan Antonio y los dos «del Equipo».
