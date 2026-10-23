@@ -134,3 +134,9 @@ Tienes instrucciones de mel. a)
 1a
 
 **Resultado:** M-03 aplicada. Nuevo RF-06.6-05 (Must · MVP: la confirmación y su correo dicen hasta cuándo se puede cancelar sin coste) y justificación de RF-06.6-02 con la evidencia de Wetaca, Mercadona y Open Food Network. En la línea base, esa evidencia queda en la fila de la regla de cancelación. Se regeneró: 564 requisitos, 404 en el MVP. Anotado como C-16.
+
+### 16:57 (aprox.)
+
+1a
+
+**Resultado:** M-04 ya estaba cubierta (RF-05.4 y RF-05.2-04). Se corrigió la justificación de RF-05.4-02 (Mercadona: 60 € más 8,20 € de tarifa, verificado el 23/10, en lugar de «50 €») y se añadió la evidencia de mejora a RF-05.4-04. Sin requisitos nuevos (564). Anotado como C-17.

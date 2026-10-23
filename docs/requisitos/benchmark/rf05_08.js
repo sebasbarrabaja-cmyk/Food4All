@@ -24,9 +24,9 @@ module.exports = (R) => {
 
   R.sub('RF-05.4', 'Envío y compra mínima');
   R('Cobrar un único coste de envío por pedido, sea cual sea el número de vendedores.', 'Dados 4 vendedores, cuando se ve el total, entonces hay un solo concepto de envío.', 'M', 'MVP', ['BF26'], 'N-ENT-01', { estado: 'Decidido' });
-  R('Exigir una compra mínima configurable por el admin (hipótesis inicial: entre 10 y 15 €).', 'Dado un mínimo de 12 € y 10 € en el carrito, cuando pulsa «Pagar», entonces no avanza.', 'M', 'MVP', ['BF25'], 'N-CAR-01', { estado: 'Hipótesis', pos: 'Mejora', just: 'Mercadona exige 50 €; un mínimo de 10–15 € encaja con el ticket medio de 19,4 € (F-01).' });
+  R('Exigir una compra mínima configurable por el admin (hipótesis inicial: entre 10 y 15 €).', 'Dado un mínimo de 12 € y 10 € en el carrito, cuando pulsa «Pagar», entonces no avanza.', 'M', 'MVP', ['BF25'], 'N-CAR-01', { estado: 'Hipótesis', pos: 'Mejora', just: 'Mercadona exige 60 € más 8,20 € de tarifa de servicio (condiciones oficiales, verificado el 23/10/2026, captura mercadona-07); un mínimo de 10–15 € encaja con el ticket medio de 19,4 € (F-01).' });
   R('Mostrar una barra de progreso hacia la compra mínima: «Te faltan 2,00 € para el mínimo».', 'Dados 10 € y un mínimo de 12 €, cuando se ve el carrito, entonces aparece ese texto.', 'M', 'MVP', ['BF25'], 'N-CAR-01');
-  R('Mostrar el coste de envío antes del checkout, nunca por primera vez al pagar.', 'Dado el carrito, cuando se ve, entonces el envío ya figura en el desglose.', 'M', 'MVP', ['BF26'], 'N-CAT-03');
+  R('Mostrar el coste de envío antes del checkout, nunca por primera vez al pagar.', 'Dado el carrito, cuando se ve, entonces el envío ya figura en el desglose.', 'M', 'MVP', ['BF26'], 'N-CAT-03', { pos: 'Mejora', just: 'Mercadona no muestra en el carrito ni el mínimo ni la tarifa, y KnowEats y Glovo esconden el envío hasta poner la dirección (recorrido del 23/10/2026).' });
 
   R.sub('RF-05.5', 'Presupuesto');
   R('Si el cliente fijó un presupuesto, mostrar en el carrito «Llevas 24,10 € de tu presupuesto de 30 €».', 'Dado un presupuesto de 30 €, cuando el carrito suma 24,10 €, entonces ve ese texto.', 'S', 'MVP', [], 'N-PLA-02', { pos: 'Diferencial', just: 'Ningún competidor verificado compara el carrito con un presupuesto del cliente.' });

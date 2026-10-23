@@ -8944,7 +8944,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 25 · Paridad 7 · Diferencial 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
+35 requisitos atómicos · Poco extendido 24 · Paridad 7 · Mejora 2 · Diferencial 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -9340,7 +9340,7 @@ RNF-01 Seguridad · RNF-03 Eficiencia · RNF-04 Usabilidad · RNF-05 Accesibilid
 
 **15. Competencia**
 
-Poco extendido 3 · Mejora 1
+Poco extendido 2 · Mejora 2
 
 - Mercadona online: 4 sí
 - Glovo: 0 sí, 2 no
@@ -9348,7 +9348,7 @@ Poco extendido 3 · Mejora 1
 - Wetaca: 0 sí
 - Market Wagon: 2 sí
 - Open Food Network: 0 sí
-- Diferenciales y mejoras: RF-05.4-02 (Mejora)
+- Diferenciales y mejoras: RF-05.4-02 (Mejora), RF-05.4-04 (Mejora)
 
 **16. Fuera de alcance**
 
@@ -9367,7 +9367,7 @@ Envío gratis por suscripción (V3); envío por distancia.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-05.4-04** `Must·MVP·Pendiente` Mostrar el coste de envío antes del checkout, nunca por primera vez al pagar. _(N-CAT-03)_
   - Criterio: Dado el carrito, cuando se ve, entonces el envío ya figura en el desglose.
-  - Competencia: Mercadona S · Glovo N · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo N · Too ? · Wetaca ? · Market S · Open ? → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
