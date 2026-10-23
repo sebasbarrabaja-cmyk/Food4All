@@ -39,8 +39,8 @@ module.exports = (R) => {
 
   R.sub('RF-05.7', 'Persistencia');
   R('Guardar el carrito de un cliente con sesión en su cuenta y mostrarlo en cualquier dispositivo.', 'Dado un carrito en el ordenador, cuando entra desde el móvil, entonces ve el mismo carrito.', 'M', 'MVP', ['BF28'], 'N-CAR-01');
-  R('Guardar el carrito de un visitante sin sesión en el navegador durante 7 días.', 'Dado un visitante, cuando vuelve a los 5 días, entonces su carrito sigue.', 'S', 'MVP', ['BF28'], 'N-CAR-01');
-  R('Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar.', 'Dados 2 tomates en el navegador y 3 en la cuenta, cuando entra, entonces quedan 3 y ve el aviso.', 'S', 'MVP', ['BF28'], 'N-CAR-01');
+  R('Guardar el carrito de un visitante sin sesión en el navegador durante 7 días.', 'Dado un visitante, cuando vuelve a los 5 días, entonces su carrito sigue.', 'M', 'MVP', ['BF28'], 'N-CAR-01', { pos: 'Paridad', just: 'Market Wagon, Open Food Network y KnowEats dejan llenar el carrito sin cuenta; Glovo y Mercadona la piden antes (recorrido del 23/10/2026).' });
+  R('Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar.', 'Dados 2 tomates en el navegador y 3 en la cuenta, cuando entra, entonces quedan 3 y ve el aviso.', 'M', 'MVP', ['BF28'], 'N-CAR-01', { pos: 'Paridad', just: 'Market Wagon, Open Food Network y KnowEats dejan llenar el carrito sin cuenta; Glovo y Mercadona la piden antes (recorrido del 23/10/2026).' });
 
   R.proc('RF-06', 'Checkout y pago único simulado');
 

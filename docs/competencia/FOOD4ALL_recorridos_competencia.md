@@ -68,7 +68,7 @@ Son **propuestas**: ninguna está aprobada ni aplicada. Las decide Sebastián co
 | M-04 ✅ C-17 (ya cubierta en RF-05.4; dato de Mercadona corregido) | Mostrar desde el carrito el mínimo que falta, la tarifa de envío y el total final | Lo contrario de lo que hacen Mercadona y KnowEats | RF-05, RF-06; N-CAT-03 | Precio claro, sin sorpresas: es la prioridad 2 del PO |
 | M-05 ✅ C-18 (RF-02.6-02 a Must, con «Cómo producimos»; reseñas en V2) | Ficha de productor completa en cada producto: nombre, zona, cómo produce y reseñas | Market Wagon | RF-03, RF-04; RF-11 (valoraciones, hoy en V2) | Es el diferencial del producto (prioridad 2) y responde a E2, que echaba de menos opiniones |
 | M-06 ⏸ C-19 (plan B de H-02 y alternativa de D-03; pendiente de debate) | Punto de recogida comunitario como alternativa a la entrega en casa | Market Wagon (Market Host), Open Food Network | RF-08.4-05 (hoy en V3); D-03 | Reduce el riesgo de H-02 (esperar una franja) y el coste del reparto |
-| M-07 | Mirar el catálogo y llenar el carrito sin cuenta; pedirla solo al pagar | Market Wagon, Open Food Network, KnowEats | RF-01, RF-05 | Menos barreras para probar. Glovo y Mercadona piden cuenta antes |
+| M-07 ✅ C-20 (RF-05.7-02 y -03 a Must; pagar como invitado, pendiente de entrevistas) | Mirar el catálogo y llenar el carrito sin cuenta; pedirla solo al pagar | Market Wagon, Open Food Network, KnowEats | RF-01, RF-05 | Menos barreras para probar. Glovo y Mercadona piden cuenta antes |
 | M-08 | Que toda recomendación (también la de la IA) diga en qué se basa | Etiqueta ambiental A-E de Open Food Network | RF-12; N-IA-02 | La IA va en tercer lugar y la confianza es baja: si explica, se puede comprobar |
 
 ## 7. Siguientes pasos

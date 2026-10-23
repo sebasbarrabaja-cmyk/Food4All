@@ -8946,7 +8946,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 24 · Paridad 7 · Mejora 2 · Diferencial 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
+35 requisitos atómicos · Poco extendido 22 · Paridad 9 · Mejora 2 · Diferencial 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -9635,7 +9635,7 @@ RNF-01 Seguridad · RNF-03 Eficiencia · RNF-04 Usabilidad · RNF-05 Accesibilid
 
 **15. Competencia**
 
-Poco extendido 3
+Paridad 2 · Poco extendido 1
 
 - Mercadona online: 3 sí
 - Glovo: 0 sí
@@ -9653,12 +9653,12 @@ Listas guardadas (V2).
 - [ ] **RF-05.7-01** `Must·MVP·Pendiente` Guardar el carrito de un cliente con sesión en su cuenta y mostrarlo en cualquier dispositivo. _(N-CAR-01)_
   - Criterio: Dado un carrito en el ordenador, cuando entra desde el móvil, entonces ve el mismo carrito.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.7-02** `Should·MVP·Pendiente` Guardar el carrito de un visitante sin sesión en el navegador durante 7 días. _(N-CAR-01)_
+- [ ] **RF-05.7-02** `Must·MVP·Pendiente` Guardar el carrito de un visitante sin sesión en el navegador durante 7 días. _(N-CAR-01)_
   - Criterio: Dado un visitante, cuando vuelve a los 5 días, entonces su carrito sigue.
-  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.7-03** `Should·MVP·Pendiente` Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar. _(N-CAR-01)_
+  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Paridad
+- [ ] **RF-05.7-03** `Must·MVP·Pendiente` Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar. _(N-CAR-01)_
   - Criterio: Dados 2 tomates en el navegador y 3 en la cuenta, cuando entra, entonces quedan 3 y ve el aviso.
-  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Paridad
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 

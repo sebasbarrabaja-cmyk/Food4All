@@ -152,3 +152,9 @@ Tienes instrucciones de mel. a)
 1a(Tenemos que debatir de esto primero, por que es un cambio considerable)
 
 **Resultado:** M-06 no cambia ningún requisito. El punto de recogida queda como plan B de H-02 y alternativa de D-03 en el bloque 10 de la especificación, y como tema pendiente de debate del equipo en la línea base (C-19). Se añadió a `AGENTS.md` una pregunta para las entrevistas de hoy (qué haría si no pudiera estar en casa y si preferiría recoger en un punto).
+
+### 17:12 (aprox.)
+
+Habrá que hacer nuevas entrevistas para ello. Dejalo como pendiente.  1a
+
+**Resultado:** el asistente lo interpretó así: pagar como invitado (opción b) queda pendiente de nuevas entrevistas, y se aplica la opción a. RF-05.7-02 (guardar el carrito del visitante) y RF-05.7-03 (unirlo al de la cuenta al entrar) pasan de Should a Must, con la evidencia de Market Wagon, Open Food Network y KnowEats. Se regeneró: Must 305. Anotado como C-20, y pagar como invitado, en los pendientes de la línea base.
