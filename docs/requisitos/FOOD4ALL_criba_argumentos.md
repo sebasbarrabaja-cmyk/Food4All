@@ -127,9 +127,24 @@ Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 3. ¿Qué riesgo se acepta al dejarlos fuera, y a quién afecta: al comprador o al vendedor?
 4. ¿Por qué el panel de prompts y los hitos de Asana no son requisitos del marketplace?
 
-**Decisión de Juan Antonio (redactada con ayuda del asistente):**
+**Decisión de Juan Antonio sobre las valoraciones (redactada por él, 23/10/2026): subir RF-11.2-04 a Must · MVP.**
 
-1. **Por qué las valoraciones pueden esperar.** Es cierto que E2, E5 y E6 miran opiniones o fiabilidad antes de usar una app nueva, y no lo descartamos: queda registrado como el riesgo más claro de este bloque. Pero RF-11 no resuelve eso en la demo. Las valoraciones necesitan compradores reales que reciban pedidos reales, y el MVP es una demo con pago de prueba (RST-01): no habría ninguna valoración verdadera que enseñar. La media solo se muestra a partir de 3 valoraciones (RF-11.2-01), y está prohibido mostrar valoraciones inventadas mientras el proyecto sea conceptual (RF-11.2-04). *Inferencia:* además, lo que hacen E5 y E6 es mirar reseñas **de la app** en la tienda de aplicaciones o en Google, fuera de la plataforma; las valoraciones de productos y vendedores de RF-11 son otra cosa. En el MVP la confianza se apoya en lo que sí entra: el perfil del vendedor con «Cómo producimos» (M-05), el registro sanitario aprobado (RST-05) y las incidencias con reembolso (RF-10). **Para que entraran:** que haya pedidos reales en un piloto y que más entrevistas, de personas que no se conozcan entre sí, pidan valorar o ver valoraciones de los vendedores. Ojo: E5 y E6 son compañeras de piso y cercanas a mí, así que no cuentan como tres fuentes independientes.
+Se propone priorizar el requisito RF-11.2-04: «No mostrar valoraciones inventadas ni contadores de prueba social».
+
+La decisión se apoya en que E2, E5 y E6 consultan opiniones o buscan señales de fiabilidad antes de utilizar una aplicación. Esto apunta a que la confianza puede influir en la decisión de uso. No obstante, se trata de indicios cualitativos, no de una prueba concluyente de lo que harán todos los usuarios. Además, E5 y E6 comparten piso, por lo que sus opiniones no deben considerarse completamente independientes.
+
+Este requisito puede incorporarse sin necesidad de disponer de compras o valoraciones reales: consiste en evitar que la demostración presente opiniones, puntuaciones o contadores ficticios como si fueran reales. Así se mejora la transparencia sin introducir una simulación engañosa.
+
+Los otros dos requisitos se mantienen en V2:
+- **RF-11.1-02:** valorar al vendedor mediante una puntuación de 1 a 5 estrellas.
+- **RF-11.2-01:** mostrar la valoración media a partir de tres valoraciones.
+
+No se propone adelantar estas funciones porque la demostración no dispondría de valoraciones reales. Simularlas restaría coherencia a la decisión de no mostrar prueba social inventada.
+
+**Acción pendiente:** comunicar a Sebastián el cambio de prioridad para que lo refleje en la línea base de requisitos.
+
+**Resto del bloque E (preguntas 2 a 4), redactado con ayuda del asistente:**
+
 2. **Por qué el valor se demuestra sin los otros cuatro.** El valor es comprar a varios vendedores en un carrito, pagar una vez y recibirlo todo en una entrega (bloques B y D). Ninguno de los cuatro procesos forma parte de ese recorrido:
    - **Suscripción (RF-14, Could):** es una comodidad para quien ya compra cada semana. Primero hay que ver que compran una vez. E5 y E6 organizan la semana según lo que traen del pueblo, así que una suscripción fija tampoco encaja todavía con lo que contaron.
    - **Liquidación del vendedor (RF-17):** con pago de prueba no hay dinero real que repartir, y la comisión (D-02) no está decidida.
