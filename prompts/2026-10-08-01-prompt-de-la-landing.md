@@ -4,6 +4,7 @@ fecha: 2026-10-08
 autor: Equipo
 herramienta: Claude Code
 tipo: Prompt base
+tema: Contexto y método
 origen: FOOD4ALL_prompt_landing.md
 ---
 

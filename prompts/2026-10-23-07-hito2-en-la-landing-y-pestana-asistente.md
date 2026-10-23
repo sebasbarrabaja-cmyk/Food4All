@@ -4,6 +4,7 @@ fecha: 2026-10-23
 autor: Sebastián
 herramienta: Claude Code
 tipo: Prompt base
+tema: Landing (web y panel)
 origen: Especificación preparada por el asistente a partir de la petición de Sebastián y del enunciado del Hito 2; Sebastián la aprobó con «Ok» a las 20:49 (sesión `2026-10-23-05`)
 ---
 
@@ -115,3 +116,14 @@ Lo que no se cambió, y por qué:
 Siguiente paso
 
 **Resultado:** se quitó el aviso de `AGENTS.md` que pedía no tocar esos archivos y se pasó al bloque de Asana.
+
+### 21:10 · Prompts por persona y por tema
+
+1 a y b
+
+**Resultado:** el panel `/admin#prompts` agrupa los prompts por persona (Sebastián, Juan Antonio, Miguel, Equipo) y, dentro de cada una, por tema; en cada tema van del más nuevo al más antiguo.
+- Cada archivo de `prompts/` lleva un campo nuevo, `tema`, que dice para qué sirvió: Contexto y método · Landing (web y panel) · Requisitos del Hito 2 · Asana · Competencia · Organización del equipo · Otro. El asistente asignó el tema de los 22 archivos.
+- El formulario de alta pide el tema.
+- `prompts/README.md` y `DISENO.md` están al día.
+- Se arregló, en todo el panel, la flecha de los desplegables que caía en su propia línea.
+- Verificación: compila; la API devuelve el tema de los 22 prompts y en PinchTab no hay errores. No se guardó ningún prompt de prueba.

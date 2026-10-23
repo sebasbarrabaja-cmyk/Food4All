@@ -4,6 +4,7 @@ fecha: 2026-10-23
 autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
+tema: Asana
 origen: Mensajes enviados a Claude Code (WSL) en la sesión, en orden y sin corregir. Horas aproximadas
 ---
 

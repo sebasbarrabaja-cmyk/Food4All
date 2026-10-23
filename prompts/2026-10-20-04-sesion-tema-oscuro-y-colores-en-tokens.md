@@ -4,6 +4,7 @@ fecha: 2026-10-20
 autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
+tema: Landing (web y panel)
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 

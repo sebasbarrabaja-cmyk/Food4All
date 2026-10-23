@@ -4,6 +4,7 @@ fecha: 2026-10-23
 autor: Sebastián
 herramienta: Claude (Christina, asistente de Sebastián en mikoshi)
 tipo: Otro
+tema: Competencia
 origen: Mensaje de Sebastián a Christina y guion escrito por Melchizedek (Claude Code en WSL) que ella siguió. Resultado en docs/competencia/
 ---
 

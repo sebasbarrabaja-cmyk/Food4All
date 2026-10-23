@@ -4,7 +4,7 @@ import Status from '../components/Status.jsx';
 
 // Registro de prompts del proyecto + segundo agente que los pule (backend/agent.js).
 const AUTHORS = ['Sebastián', 'Juan Antonio', 'Miguel', 'Equipo'];
-const EMPTY = { titulo: '', autor: 'Sebastián', herramienta: 'Claude Code', tipo: 'Sesión de trabajo', texto: '' };
+const EMPTY = { titulo: '', autor: 'Sebastián', herramienta: 'Claude Code', tipo: 'Sesión de trabajo', tema: 'Requisitos del Hito 2', texto: '' };
 
 const words = (t) => t.trim().split(/\s+/).filter(Boolean).length;
 
@@ -70,7 +70,7 @@ function PromptItem({ p, agentOn, onSaved }) {
     try {
       await api('/api/admin/prompts', {
         titulo: `${p.titulo} (pulido)`, autor: 'Agente revisor', herramienta: p.herramienta,
-        tipo: 'Versión pulida', origen: `Versión pulida de ${p.id}`, texto: polish.result.texto,
+        tipo: 'Versión pulida', tema: p.tema || 'Otro', origen: `Versión pulida de ${p.id}`, texto: polish.result.texto,
       });
       polish.reset(); onSaved();
     } catch (e) { setSaveError(e.message); } finally { setSaving(false); }
@@ -103,7 +103,7 @@ function PromptItem({ p, agentOn, onSaved }) {
   );
 }
 
-function NewPrompt({ types, agentOn, onSaved }) {
+function NewPrompt({ types, temas, agentOn, onSaved }) {
   const [form, setForm] = useState(EMPTY);
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
@@ -133,6 +133,10 @@ function NewPrompt({ types, agentOn, onSaved }) {
         <div className="field">
           <label htmlFor="np-tipo">Tipo</label>
           <select id="np-tipo" value={form.tipo} onChange={set('tipo')}>{types.map((t) => <option key={t}>{t}</option>)}</select>
+        </div>
+        <div className="field">
+          <label htmlFor="np-tema">Para qué sirvió</label>
+          <select id="np-tema" value={form.tema} onChange={set('tema')}>{temas.map((t) => <option key={t}>{t}</option>)}</select>
         </div>
         <div className="field">
           <label htmlFor="np-autor">Autor</label>
@@ -166,6 +170,16 @@ function NewPrompt({ types, agentOn, onSaved }) {
   );
 }
 
+// Por persona (en el orden del equipo) y, dentro, por tema; en cada tema, del más nuevo al más antiguo.
+function groups(prompts, temas) {
+  const people = [...AUTHORS, ...new Set(prompts.map((p) => p.autor || 'Sin autor'))].filter((a, i, all) => all.indexOf(a) === i);
+  return people
+    .map((autor) => [autor, [...temas, 'Sin tema']
+      .map((tema) => [tema, prompts.filter((p) => (p.autor || 'Sin autor') === autor && (temas.includes(p.tema) ? p.tema : 'Sin tema') === tema)])
+      .filter(([, ps]) => ps.length)])
+    .filter(([, ts]) => ts.length);
+}
+
 export default function AdminPrompts() {
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
@@ -195,11 +209,21 @@ export default function AdminPrompts() {
           </button>
         ))}
       </div>
-      <div className="prompt-list">
-        {shown.length ? shown.map((p) => <PromptItem key={p.id} p={p} agentOn={data.agent} onSaved={load} />)
-          : <p className="muted">No hay prompts de este tipo.</p>}
-      </div>
-      <NewPrompt types={data.types} agentOn={data.agent} onSaved={load} />
+      {shown.length === 0 && <p className="muted">No hay prompts de este tipo.</p>}
+      {groups(shown, data.temas).map(([autor, temas]) => (
+        <section key={autor} className="prompt-group" aria-labelledby={`pg-${autor}`}>
+          <h3 id={`pg-${autor}`}>{autor} <span className="muted small">· {temas.reduce((n, [, ps]) => n + ps.length, 0)}</span></h3>
+          {temas.map(([tema, ps]) => (
+            <div key={tema}>
+              <h4 className="prompt-group__tema">{tema} <span className="muted small">· {ps.length}</span></h4>
+              <div className="prompt-list">
+                {ps.map((p) => <PromptItem key={p.id} p={p} agentOn={data.agent} onSaved={load} />)}
+              </div>
+            </div>
+          ))}
+        </section>
+      ))}
+      <NewPrompt types={data.types} temas={data.temas} agentOn={data.agent} onSaved={load} />
     </>
   );
 }
