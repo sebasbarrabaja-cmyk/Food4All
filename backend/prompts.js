@@ -5,20 +5,6 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 
 const DIR = new URL('../prompts/', import.meta.url);
 const FIELDS = ['titulo', 'fecha', 'autor', 'herramienta', 'tipo', 'tema', 'origen'];
 export const TYPES = ['Prompt base', 'Sesión de trabajo', 'Feedback', 'Versión pulida', 'Otro'];
-// Apartado que se añade a cada prompt nuevo; lo rellena la persona, no el asistente (prompts/README.md).
-const PLANTILLA = `
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_
-`;
 // Para qué sirvió cada prompt: el panel los agrupa por persona y, dentro, por tema.
 export const TEMAS = ['Contexto y método', 'Landing (web y panel)', 'Requisitos del Hito 2', 'Asana', 'Competencia', 'Organización del equipo', 'Otro'];
 
@@ -32,16 +18,7 @@ function parse(file) {
       if (i > 0) meta[line.slice(0, i).trim()] = line.slice(i + 1).trim();
     }
   }
-  const texto = (m ? m[2] : raw).trim();
-  return { id: file.replace(/\.md$/, ''), ...meta, revision: revision(texto), texto };
-}
-
-// Revisión crítica del equipo (enunciado del Hito 2): «hecha» cuando su apartado ya no tiene ningún «_pendiente_».
-const REVISION = '## Revisión crítica del equipo';
-function revision(texto) {
-  const i = texto.indexOf(REVISION);
-  if (i < 0) return 'sin apartado';
-  return texto.slice(i).includes('_pendiente_') ? 'pendiente' : 'hecha';
+  return { id: file.replace(/\.md$/, ''), ...meta, texto: (m ? m[2] : raw).trim() };
 }
 
 export function list() {
@@ -78,6 +55,6 @@ export function add({ titulo, autor, herramienta, tipo, tema, origen, texto }) {
 
   const meta = { titulo, fecha, autor, herramienta, tipo, tema, origen };
   const head = FIELDS.filter((k) => oneLine(meta[k])).map((k) => `${k}: ${oneLine(meta[k])}`).join('\n');
-  writeFileSync(new URL(file, DIR), `---\n${head}\n---\n\n${texto.trim()}\n${texto.includes(REVISION) ? '' : PLANTILLA}`);
+  writeFileSync(new URL(file, DIR), `---\n${head}\n---\n\n${texto.trim()}\n`);
   return parse(file);
 }

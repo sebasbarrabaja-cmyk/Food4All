@@ -51,15 +51,3 @@ No tenemos un servidor para pagar la web, para esta semana le entregare una copi
 No hubo clase hoy, es todo . OK
 
 **Resultado:** especificación aprobada. Rama `docs/hito2-entrega` con el trabajo pendiente de Windows y hoja `docs/requisitos/FOOD4ALL_tareas_entrega.md` con calendario, tareas por persona, formato del comentario de revisión y mensaje para el grupo.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

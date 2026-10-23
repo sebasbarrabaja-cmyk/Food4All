@@ -215,15 +215,3 @@ No es una textura decorativa, es un patrón de jerarquía y flotabilidad.
 1. Primero resume en pocas líneas la arquitectura y la tecnología elegidas.
 2. Después entrega el código completo y organizado por archivos.
 3. Termina con los pasos para ejecutarlo y para configurar el token y el ID del proyecto de Asana.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

@@ -36,15 +36,3 @@ cada 15 min por IP, textos de hasta 1000 y 120 caracteres (a).
 ```
 
 Respuestas: 1a (limitador propio, sin dependencias), 2 "que entre directamente o algo muy sencillo" (si falta la clave se genera una al arrancar y se avisa por consola) y 3a.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

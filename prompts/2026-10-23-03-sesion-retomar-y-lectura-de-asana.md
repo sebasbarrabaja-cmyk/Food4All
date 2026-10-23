@@ -179,15 +179,3 @@ Subelo, y luego haces las pruebas
 **Resultado:** se unieron a `docs/hito2-entrega` las ramas de WSL `fix/seguridad-formularios`, `fix/fecha-prompts` y `fix/buscador-reserva` (un conflicto en `README.md`, resuelto dejando las dos secciones). Se renumeraron los prompts de Windows por orden de hora: `2026-10-19-01-sesion-requisitos-y-benchmark` → `2026-10-19-03` y `2026-10-20-01-requisitos-en-asana` → `2026-10-20-05`, con su referencia en `FOOD4ALL_propuesta_asana.md`. Push y, después, las pruebas.
 
 **Pruebas (17:35):** compila (16 s); las rutas públicas responden 200; la API de administración, 401 sin sesión; el login con credenciales de prueba, 200; el panel lista 19 prompts; el bloqueo salta tras 5 fallos (429); un alta con un nombre de 200 caracteres se rechaza. Se corrigieron cifras desfasadas (564 requisitos) en el README, la guía de requisitos, la defensa y la propuesta de criba, y se añadió a `AGENTS.md` el traspaso para el equipo.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

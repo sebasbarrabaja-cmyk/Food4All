@@ -82,7 +82,6 @@ function PromptItem({ p, agentOn, onSaved }) {
         <span className="prompt__title">{p.titulo}</span>
         <span className="prompt__meta">
           <span className={`tag tag--${(p.tipo || '').split(' ')[0].toLowerCase()}`}>{p.tipo}</span>
-          {p.revision === 'hecha' ? <Status kind="decidido">Revisado por el equipo</Status> : <Status kind="pendiente">Revisión pendiente</Status>}
           <span className="muted small">{p.fecha} · {p.autor} · {p.herramienta} · {words(p.texto).toLocaleString('es-ES')} palabras</span>
         </span>
       </summary>
@@ -197,8 +196,6 @@ export default function AdminPrompts() {
       <p className="muted small">
         Todo prompt usado para desarrollar el proyecto se guarda aquí tal cual se envió (ficheros en <code>prompts/</code> del repositorio).
         El <strong>agente revisor</strong> propone una versión más clara; el original no se toca.
-        Cada prompt termina con la <strong>revisión crítica del equipo</strong>, escrita por la persona:{' '}
-        {data.prompts.filter((p) => p.revision === 'hecha').length} de {data.prompts.length} revisados.
       </p>
       <p className="toolbar">
         {data.agent

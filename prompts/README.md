@@ -7,4 +7,3 @@ Registro de todos los prompts usados para desarrollar FOOD4ALL. Se consultan, se
 - En las sesiones, cada mensaje va bajo `### HH:MM` y termina con una línea `**Resultado:**` que dice qué se hizo con él (o si se interrumpió o se descartó). Así cada prompt queda con fecha, persona y resultado.
 - Los prompts se guardan tal cual se enviaron, con sus erratas: es un registro, no un documento pulido. Las versiones mejoradas se guardan aparte con el tipo "Versión pulida".
 - Si añadís uno a mano, seguid el mismo formato y subidlo con el resto de cambios.
-- Cada prompt termina con **«## Revisión crítica del equipo»**: quién lo revisó, cuándo, qué se aceptó de la IA, qué se corrigió o se rechazó y por qué estaba justificado usarla. La escribe la persona, no el asistente (lo pide el enunciado del Hito 2: «revisados críticamente por el equipo»). Mientras quede algún «_pendiente_», el panel muestra «Revisión pendiente».

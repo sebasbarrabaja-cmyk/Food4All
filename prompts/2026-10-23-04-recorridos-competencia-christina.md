@@ -97,15 +97,3 @@ Carpeta `~/proyectos/Food4All-recibido-2026-10-23/competencia-recorridos/` con:
 3. Al final de `RESULTADOS.md`, una tabla resumen: competidor × (varios vendedores, mínimo, envío, franja, faltas, cancelación, IA) con Sí / No / No verificado.
 
 Cuando termines, avisa a Sebas para que se lo diga a Melchizedek. Tiempo orientativo: unos 10–15 min por competidor.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_

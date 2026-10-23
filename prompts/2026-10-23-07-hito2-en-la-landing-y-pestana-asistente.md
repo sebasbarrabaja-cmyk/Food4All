@@ -151,3 +151,9 @@ prepara lo de la revisión crítica de los prompts
 - `prompts/README.md` y `AGENTS.md` están al día.
 - Verificación: compila y la API devuelve «pendiente» en los 22.
 - **Sin probar en el navegador.**
+
+### 21:35
+
+Quita el pendiente, Anotalo internamente como prioritario, pero que visiblemente no este. Haz el merge al manin y sigue con el cierre, ya le di el ok al B6
+
+**Resultado:** se deshace lo visible del cambio de las 21:33: la plantilla al final de los 22 prompts, el aviso de «Revisión pendiente» y el recuento del panel. Queda anotado como prioritario solo en `AGENTS.md`, que no se ve en la landing. Ningún prompt dice que esté revisado. Después se fusiona con `main` y se hace el cierre.

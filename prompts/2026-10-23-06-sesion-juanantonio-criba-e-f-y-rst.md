@@ -149,15 +149,3 @@ Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte l
 (pegó el error de PowerShell al ejecutar `npm run todo` en la carpeta `Food4All` de fuera del repositorio: «la ejecución de scripts está deshabilitada en este sistema»)
 
 **Resultado:** el asistente le explicó que no lo ejecute: según la regla 7 de `AGENTS.md`, `npm run todo` lo ejecuta solo Sebastián para que no haya choques. Además estaba en la carpeta equivocada (fuera del repositorio y de `docs/requisitos/benchmark/`). No se cambió nada.
-
----
-
-## Revisión crítica del equipo
-
-*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
-
-- **Revisado por:** _pendiente_
-- **Fecha:** _pendiente_
-- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
-- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
-- **Por qué estaba justificado usar IA aquí:** _pendiente_
