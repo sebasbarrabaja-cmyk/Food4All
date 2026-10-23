@@ -202,3 +202,39 @@ dame la 2 revision cruzada y todo loq eu falta
 dime el que tengo que redactar
 
 **Resultado:** se le dijo que tiene que redactar dos textos: el comentario de la segunda revisión cruzada (Asana, [B6]) y la «Revisión crítica del equipo» de este archivo. Se le dieron los huecos de cada uno, sin rellenar.
+
+### Hora no registrada (después de las 21:42)
+
+(pegó tres textos suyos: el comentario de la primera revisión cruzada, el de la segunda y su revisión crítica de los prompts) donde subo cada uno?
+
+**Resultado:** la revisión crítica se pegó tal cual al final de este archivo. Los dos comentarios los pega él en Asana, cada uno en su tarea de [B6]; se le avisó de que el primero que pegó era la versión antigua, sin «Cambio».
+
+---
+
+## Revisión crítica del equipo
+
+Revisado por: Juan Antonio
+
+Fecha: 23/10/2026
+
+Qué aceptamos de lo que propuso la IA y por qué:
+
+Aceptamos su ayuda para organizar la revisión cruzada, redactar las discrepancias de forma clara y relacionar los problemas detectados con los requisitos correspondientes. También aprovechamos sus propuestas para separar las conclusiones respaldadas por las entrevistas de las interpretaciones personales.
+
+En la revisión de las entrevistas, se mantuvo como conclusión de E5 su preferencia por la comida recién hecha frente a la congelada. La idea de apoyar al comercio local se formuló como interpretación propia, ya que E5 no la expresó directamente. En E6 se conservó únicamente la conclusión relacionada con los gastos de envío y gestión de Glovo, respaldada por su respuesta a la pregunta 4.
+
+También se utilizó la IA para estructurar la propuesta de priorización de RF-11.2-04, que busca evitar valoraciones inventadas y contadores ficticios de prueba social. Esta opción permite trabajar la confianza sin simular opiniones reales. Los requisitos relativos a valorar al vendedor y mostrar una media de valoraciones se mantienen en V2 en la propuesta redactada.
+
+Qué corregimos, rechazamos o comprobamos aparte:
+
+Se corrigieron las discrepancias detectadas en la tabla 3 de Personas y en el apartado 6.2, incluida la clasificación de las necesidades según las entrevistas, la distinción entre MVP y V2, la referencia que faltaba para el tratamiento de las faltas y el momento de envío del aviso «Consume primero». También se corrigieron la errata «Universidad Europe» y un problema de formato que convertía un párrafo en título.
+
+En el comparativo, se incorporaron las fuentes originales de Open Food Network, Local Food Marketplace y Market Wagon. El hallazgo 1 se comprobó mediante recorridos de Glovo realizados el 23/10/2026 y el hallazgo 7 se reforzó con la revisión.
+
+En las conclusiones de las entrevistas se descartaron las afirmaciones que no estaban suficientemente respaldadas. No se presentó la interpretación sobre el comercio local como si fuera una afirmación literal de E5 y se eliminaron las conclusiones adicionales de E6 que no se iban a mantener.
+
+Por qué estaba justificado usar IA aquí:
+
+La IA resultó útil para ordenar información extensa, comparar apartados, detectar posibles incoherencias y convertir las observaciones en textos claros y estructurados. También facilitó la redacción de una propuesta de prioridades y la separación entre evidencias, hipótesis e interpretaciones.
+
+Sin embargo, sus propuestas no se consideraron correctas automáticamente. Las conclusiones se contrastaron con las entrevistas, los requisitos y las fuentes disponibles. La comprobación de Glovo y la revisión del alcance del MVP fueron necesarias para no dar por verificados datos o funcionalidades sin evidencia. La decisión final sobre qué aceptar, corregir o dejar pendiente corresponde al equipo.
