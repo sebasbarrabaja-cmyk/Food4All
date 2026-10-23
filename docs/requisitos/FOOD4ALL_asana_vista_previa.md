@@ -2393,7 +2393,7 @@ Vista del admin sobre pedidos e incidencias: buscar un pedido y ver sus subpedid
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
 
 **3. Actores y roles**
 
@@ -6156,7 +6156,7 @@ Inicio del panel del vendedor: qué tiene que hacer hoy y con qué plazo.
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6253,7 +6253,7 @@ Lista de subpedidos del vendedor por día de recogida, con su estado y la opció
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6518,7 +6518,7 @@ Días sin recogida (vacaciones) del vendedor, avisando si ya hay pedidos en esas
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -8608,7 +8608,7 @@ Al confirmarse el pago, el pedido global se divide en un subpedido por vendedor.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-04, F-06, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-04, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -8704,7 +8704,7 @@ El vendedor recibe aviso de cada subpedido nuevo y ve solo su parte, sin datos d
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -8803,7 +8803,7 @@ El vendedor confirma su subpedido o declara faltas línea a línea antes de la r
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-01, F-06, F-07, F-12 · Fuentes del benchmark: S01, S07, S08
+- Fuentes de las necesidades: F-01, F-07, F-12 · Fuentes del benchmark: S01, S07, S08
 
 **3. Actores y roles**
 
@@ -8931,7 +8931,7 @@ El vendedor prepara su parte, imprime la etiqueta con número, bultos, conservac
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9033,7 +9033,7 @@ Plazos y avisos: recordatorio al vendedor antes de que venza su plazo, aviso al 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9134,7 +9134,7 @@ Si un vendedor no puede servir su grupo, el resto del pedido sigue sin recargo; 
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Historias: US-11
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S05
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S05
 
 **3. Actores y roles**
 
@@ -9453,7 +9453,7 @@ Ruta diaria de recogida en origen: qué vendedores visitar, cuándo y qué subpe
 
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-12
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08, S09
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08, S09
 
 **3. Actores y roles**
 
@@ -9555,7 +9555,7 @@ Recepción en el hub y verificación línea a línea de cada subpedido antes de 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9993,7 +9993,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
