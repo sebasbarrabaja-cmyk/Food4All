@@ -3,7 +3,7 @@
 **Fuente:** entrevistas presenciales del 23/10/2026, hechas por Juan Antonio con un guion propio de 9 preguntas abiertas que no repiten las de E1–E4. Las respuestas son **literales**.
 **Datos personales (RST-06):** son personas reales, pero el perfil se ha dejado general (sin carrera, curso, edad ni localidad de origen) para que no se pueda saber quiénes son.
 **Nota de método:** E5 y E6 son compañeras de piso entre sí y personas cercanas al entrevistador. Puede influir en lo que cuentan, y no son del todo independientes.
-**Pendiente (Juan Antonio):** revisar las conclusiones; en E5, P7, aclarar «mi compañero» (el perfil dice que comparte piso con otras estudiantes); no se hizo la pregunta de «si no pudieras estar en casa cuando llega el pedido» ni la del punto de recogida.
+**Pendiente (Juan Antonio):** revisar las conclusiones; no se hizo la pregunta de «si no pudieras estar en casa cuando llega el pedido» ni la del punto de recogida.
 
 ---
 
@@ -32,6 +32,7 @@
 
 **Pregunta 7:** Cuéntame la última vez que hubo un malentendido o un roce en el piso por la comida. ¿Qué pasó?
 **Respuesta 7 (literal):** «Mi compañero me pidió cocinarle una hamburguesa, y para él estaba quemada. En mi opinión, solo estaba bien hecha».
+*Aclaración del entrevistador (23/10/2026): «mi compañero» es alguien de fuera del piso, no un compañero de piso.*
 
 **Pregunta 8:** Cuando alguien te recomienda una app o web nueva, ¿qué haces antes de fiarte y darle tus datos?
 **Respuesta 8 (literal):** «Leer las reseñas en la app donde la descargué o informarme en Google de cómo funciona la web».
@@ -51,7 +52,7 @@
 - Aunque cocina 5 días a la semana, lo que comió hoy lo hizo su madre (P1): su cocina diaria convive con mucha comida traída del pueblo.
 - No compra comida por internet: su última compra online no fue de comida (P4).
 - El horario de comida no le supone un problema; le sirve de descanso (P5).
-- El único roce en el piso fue por gustos al cocinar para otro, no por compras, gastos ni nevera compartida (P7).
+- El único roce que recuerda fue con alguien de fuera del piso, por gustos al cocinarle algo; no por compras, gastos ni nevera compartida (P7).
 
 **Ideas nuevas:**
 - Su experiencia con Amazon (dos envíos rotos del mismo vendedor) apunta al post-compra: incidencias, devoluciones, reembolso y valoración del vendedor.
