@@ -146,3 +146,9 @@ Tienes instrucciones de mel. a)
 1a
 
 **Resultado:** M-05 aplicada. RF-02.6-02 (perfil público del vendedor) pasa de Should a Must y añade el apartado «Cómo producimos» (hasta 500 caracteres); así deja de haber una ficha Must que enlaza a un perfil Should. El asistente también cambió su necesidad de N-VEN-01 a N-CAT-01, y lo avisó para que Sebastián lo confirme. Se regeneró: 564 requisitos (Must 303). Anotado como C-18.
+
+### 17:06 (aprox.)
+
+1a(Tenemos que debatir de esto primero, por que es un cambio considerable)
+
+**Resultado:** M-06 no cambia ningún requisito. El punto de recogida queda como plan B de H-02 y alternativa de D-03 en el bloque 10 de la especificación, y como tema pendiente de debate del equipo en la línea base (C-19). Se añadió a `AGENTS.md` una pregunta para las entrevistas de hoy (qué haría si no pudiera estar en casa y si preferiría recoger en un punto).

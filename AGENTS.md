@@ -71,7 +71,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 ## 6. Trabajo de cada uno (hoy)
 
 **Juan Antonio**
-1. **Entrevistas antes de las 19:00:** estudiantes hasta llegar a 5 y 2–3 vendedores (repartidos con Miguel). Plantilla en `FOOD4ALL_necesidades.md`, apartado 6. Respuestas literales, sin datos personales. Se suben como subtarea de «Historias de usuario» en Asana y se avisa a Sebastián.
+1. **Entrevistas antes de las 19:00:** estudiantes hasta llegar a 5 y 2–3 vendedores (repartidos con Miguel). Plantilla en `FOOD4ALL_necesidades.md`, apartado 6. Respuestas literales, sin datos personales. Incluye esta pregunta, sin sugerir la respuesta: «Si no pudieras estar en casa cuando llega el pedido, ¿qué harías?», y, después, si preferiría recogerlo en un punto cercano (por ejemplo, junto a la facultad). Se suben como subtarea de «Historias de usuario» en Asana y se avisa a Sebastián.
 2. **Criba, bloques E y F** de `FOOD4ALL_criba_argumentos.md` (procesos fuera del MVP; usabilidad y accesibilidad frente a sostenibilidad).
 3. **RST:** sí, no o cambiar en la tabla de `FOOD4ALL_criba_argumentos.md`.
 4. **Revisión cruzada:** `FOOD4ALL_comparativo_revisado.md` y `FOOD4ALL_personas_empatia_v2.md` (apartados 6.2 y 10). Comentario en Asana, escrito por él: elemento revisado, discrepancias, decisión (reformular / investigar / descartar / correcto), cambio, fecha y revisor.
