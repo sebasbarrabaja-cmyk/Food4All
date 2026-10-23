@@ -1,0 +1,94 @@
+---
+titulo: Retomar la sesión, comparar las dos copias y rehacer la lectura de Asana
+fecha: 2026-10-23
+autor: Sebastián
+herramienta: Claude Code
+tipo: Sesión de trabajo
+origen: Mensajes enviados a Claude Code (WSL) en la sesión, en orden y sin corregir. Horas aproximadas
+---
+
+Sesión nueva después de que se reiniciara WSL (hacia las 15:11), que borró los archivos temporales de la anterior.
+
+### 15:11 (aprox.)
+
+Perdon te interrumpi, por donde ibamos con F4L
+
+**Resultado:** sin el historial de la sesión anterior, se reconstruyó el estado desde git de `~/proyectos/Food4All`: siete ramas locales (contraste, seguridad, fecha de prompts, buscador y la copia `taste`), nada subido a GitHub.
+
+### 15:13 (aprox.)
+
+Tenes lo de hoy?, lo del temario, lo del windos y lo demas?
+
+**Resultado:** se encontraron, por fecha, la carpeta `Food4All-recibido-2026-10-23` (la copia de Windows) y el temario (clases 01–08 y 11). Se propuso analizar la carpeta y usar el temario como apoyo.
+
+### 15:15 (aprox.)
+
+1a 2b(No hagas un resumen usalo como apoyo)
+
+**Resultado:** se compararon las dos copias sin cambiar nada (en un clon temporal). La rama `docs/hito2-entrega` solo cambia `docs/` y `prompts/`, y las ramas de WSL solo `frontend/` y `backend/`. Hay dos números de prompt repetidos (`2026-10-19-01` y `2026-10-20-01`) y `prompts/README.md` está cambiado en las dos. Se leyeron la valoración del Hito 2 y las 9 clases del temario. Con una búsqueda rápida no aparecen ni RST, ni la «Línea Base Hito 2 v0», ni un registro de cambios con versión (lo pide la Clase 11).
+
+### 15:17 (aprox.)
+
+1a 2b(primero quiero terminar lo se asana, te acuerdas de que era? tal vez los promts enviados de antes que han de haber sido guardado te guien
+
+**Resultado:** con `2026-10-23-02` se recuperó la tarea: leer, solo con GET, el proyecto de Asana de la asignatura para comparar Food4All con IndiConnect y LearnCode. El script de la sesión anterior se había perdido con el reinicio, así que se reescribió como `docs/requisitos/benchmark/leer_otros_grupos.js`. Solo hace GET y deja el resultado fuera del repositorio, en `asana-otros-grupos/`. Lo ejecuta Sebastián.
+
+### 15:21 (aprox.)
+
+Ya esta, antes de continuar, tengo que pasarle a mis compañersos sus tareas
+
+**Resultado:** se preparó el mensaje para el grupo, que se entiende sin abrir el repositorio: entrevistas antes de las 19:00 con su plantilla, criba y RST antes de las 21:00 y revisión cruzada con el formato del comentario. Se comprobó que la lectura de Asana no había dejado resultado: la carpeta `asana-otros-grupos/` no existía.
+
+### 15:25 (aprox.)
+
+Enviado, sigue con la criba y las RST. Recuerda que para la criva me tienes que preguntar. Y espera a la respuesta de chirstina
+
+**Resultado:** se sacaron los datos de la criba por proceso (`stats.json`) y se propusieron, como preguntas: qué decisiones argumentar (seis bloques), quién argumenta cada una y cómo guiar a Sebastián. También 9 RST candidatas, cada una con la decisión de la que sale. No se escribió ningún argumento.
+
+### 15:28 (aprox.)
+
+Voy ha hacer la comida, 30-40 min aprox, aprovechalos como creas conveniente
+
+**Resultado:** sin esperar a las respuestas de la criba, se escribió `docs/requisitos/FOOD4ALL_linea_base_h2.md` (Línea Base H2-v0.4, en borrador), con el registro de cambios en el formato de la Clase 11. Se ensayó la unión con las ramas de WSL en un clon temporal: un conflicto en `README.md` (se quedan las dos secciones) y dos prompts con el número repetido (`2026-10-19-01` y `2026-10-20-01`).
+
+### 15:35 (aprox.)
+
+Voy ha hacer la comida, 30-40 min aprox, aprovechalos como creas conveniente
+
+**Resultado:** mensaje repetido. Se comprobaron las cifras de la línea base con `stats.json` y coinciden.
+
+### 15:37 (aprox.)
+
+Dame el bloque de preguntas
+
+**Resultado:** se juntaron en un solo bloque las cinco preguntas pendientes: bloques de la criba, quién argumenta cada uno, cómo guiar, numeración de los prompts repetidos y RST.
+
+### 15:40 (aprox.)
+
+1a 2a 3a 4a 5 pendiente, mira el temario del profesor y su critca para ayudar. Y un punto muy importante, la IA no es el punto fuerte de nuestra app, despeus de las entrevista lo atractivo es el precio + el tipo de producto, su naturalidad. Luego seria lo demas
+
+**Resultado:** se comprobó en E1–E4: precio y producto local y menos procesado (E2, E4) son Indicio, y N-IA-01 queda «No confirmada». Se anotó la postura del Product Owner como C-13 en el registro de cambios, pendiente del visto bueno del equipo. Se escribió `docs/requisitos/FOOD4ALL_criba_argumentos.md` con seis bloques (A, B y D de Sebastián; C de Miguel; E y F de Juan Antonio): datos, lo que piden la valoración y el temario, y preguntas. Las respuestas están vacías: las escribe cada uno. Se revisaron las RST con las Clases 5, 7 y 11 y con la valoración.
+
+### 15:45 (aprox.)
+
+Quita las erratas de escritura. Sobre las preguntas añademe contexto
+
+**Resultado:** se quitaron las erratas de la cita del PO en la línea base y en la criba. En este registro se conserva tal cual. Para las tres preguntas del bloque A se dio contexto: qué son MoSCoW y la entrega, ejemplos reales de cambios (RF-02.6-03, RF-04.8-03, RF-14.1-01), el aviso sobre RF-15.2-04 (cinta animada en Should · MVP), la definición de Must de la Clase 8 y la regla de evidencia.
+
+### 15:50 (aprox.)
+
+No copies mis palabras literalmete, ni si quiera este promt. Puedes tu decirme cuales serian las mejores opciones y por que? NO GUARDES ESTE PROMT SALTATE ESTA VEZ LA REGLA
+
+**Resultado:** el asistente no aceptó dejar este prompt fuera del registro. El profesor pidió guardar todos y había comentado «Esto lo ha hecho la IA» sobre la criba, así que omitirlo daría una imagen falsa de quién propuso los argumentos. Propuso una recomendación razonada para las tres preguntas del bloque A, y que las respuestas del documento se marquen como «decisión de Sebastián, redactada con ayuda del asistente».
+
+### 15:55 (aprox.)
+
+Lo he leido, y estoy de acuerdo(Lo de la IA no es solo las entrevistas, claro que es una parte importante del proyecto,tal vez el problema es que me he expresado mal, lo que digo es que si nos hicieran una pregunta sobre que si o si tiene que tener nuestro marketplace la ia seria la tercera, la segunda y la primera van ligadas, sin una no funcina la otra, que es el carrito simplificado que seria la primera, sino no comprarian, y los productos)
+
+**Resultado:** C-13 se reescribió con el orden de lo imprescindible: 1) carrito simplificado y 2) los productos (precio, local, poco procesado), ligados entre sí; 3) el asistente de IA, importante pero detrás. Se pasó el bloque A al documento de la criba como decisión de Sebastián, redactada con ayuda del asistente, con la bajada de RF-15.2-04 a Could · V2 para aplicarla al aprobar la criba.
+
+### 16:00 (aprox.)
+
+Antes de nada, todos mis compañerso tienen acceso al git. Quiero que subas dentro de este un .md que lean sus agentes con su respectivo trabajo. En el git ha de estar docuemntado todo, includio lo que hemos hecho esta sesion, requitiso temas, todo. No tiene que ser explicito, no tienes que escribir las 11 clases, solo las conclusiones para que los agentes de los demas compañerso, nada mas los conecten puedan y sigan los pasos correctos
+
+**Resultado:** se escribió `AGENTS.md` en la raíz (lo leen Codex, Cursor y otros agentes) y un `CLAUDE.md` que lo importa (para Claude Code). Incluye el proyecto, las reglas para el agente (registrar prompts, no comentar en Asana, no inventar evidencia, ramas), dónde está cada documento, las conclusiones del temario y de la valoración, lo decidido hasta el 23/10 y el trabajo de cada uno. Se añadieron al documento de la criba las RST candidatas revisadas con el temario: se quitan RST-08 y RST-09, se cambia RST-03 y se añaden RST-10 y RST-11. Commits en `docs/hito2-entrega`; el push, con la clave de Sebastián.
