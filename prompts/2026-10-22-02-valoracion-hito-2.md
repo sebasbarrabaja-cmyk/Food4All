@@ -57,3 +57,15 @@ No se asignó a nadie, no se pusieron fechas ni se completó nada. Se comprobó 
 Hasta mañana
 
 **Resultado:** cierre de la sesión. Se apuntó este mensaje en el registro y se actualizó la memoria de Asana. Queda para el 23/10 meter las entrevistas y volver a generar todo.
+
+---
+
+## Revisión crítica del equipo
+
+*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
+
+- **Revisado por:** _pendiente_
+- **Fecha:** _pendiente_
+- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
+- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
+- **Por qué estaba justificado usar IA aquí:** _pendiente_

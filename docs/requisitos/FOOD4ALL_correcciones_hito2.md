@@ -64,7 +64,7 @@ La valoración provisional del Hito 2 (Gerardo Casas, 21/10/2026) es favorable s
 
 La criba («Requisitos temporales → Criba de requisitos») decide qué es imprescindible y qué es secundario. Propuesta:
 
-> **Actualización del 23/10/2026:** tras los cambios C-14 a C-26 de la línea base (mejoras de los recorridos por la competencia y bloques C y D de la criba), hay 564 requisitos: **403 en el MVP** y 157 secundarios (V2 y V3). Las cifras de abajo son las del 22/10 y se recalculan al aprobar la criba (`npm run todo`). Los argumentos de cada decisión están en `FOOD4ALL_criba_argumentos.md`.
+> **Actualización del 23/10/2026:** tras los cambios C-14 a C-29 de la línea base (mejoras de los recorridos por la competencia y criba aprobada), hay 564 requisitos: **403 en el MVP** y 157 secundarios. Al aprobar la criba (C-28) pasaron a «Decidido» 242 requisitos del MVP: hay 348 Decidido, 205 Pendiente y 11 Hipótesis (V2 y V3). Las cifras de abajo son las del 22/10 y se recalculan al aprobar la criba (`npm run todo`). Los argumentos de cada decisión están en `FOOD4ALL_criba_argumentos.md`.
 
 1. **Aprobar la regla de prioridad y entrega** del punto 9 y el alcance «MVP simulado» para el pago, los reembolsos y la IA.
 2. **Requisitos mínimos (MVP): los 400 requisitos con entrega MVP.** Al aprobar la criba:

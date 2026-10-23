@@ -146,8 +146,8 @@
       "p": "RF-11",
       "n": "Valoraciones de productos y vendedores",
       "t": 13,
-      "m": 0,
-      "mvp": 0,
+      "m": 1,
+      "mvp": 1,
       "Paridad": 0,
       "Paridad parcial": 0,
       "Poco extendido": 13,
@@ -203,7 +203,7 @@
       "n": "Web pública e información",
       "t": 32,
       "m": 17,
-      "mvp": 25,
+      "mvp": 24,
       "Paridad": 17,
       "Paridad parcial": 0,
       "Poco extendido": 10,
@@ -432,9 +432,9 @@
     "Diferencial": 10
   },
   "porPrio": {
-    "Must": 306,
-    "Should": 195,
-    "Could": 59,
+    "Must": 307,
+    "Should": 193,
+    "Could": 60,
     "Won't": 4
   },
   "porEntrega": {
@@ -444,8 +444,8 @@
     "Excluido": 4
   },
   "porEstado": {
-    "Decidido": 106,
-    "Pendiente": 447,
+    "Decidido": 348,
+    "Pendiente": 205,
     "Hipótesis": 11
   },
   "bf": 90,

@@ -64,8 +64,8 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 ## 5. Lo decidido hasta hoy (23/10)
 
-- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 403, de ellos 36 simulados; cifras del 23/10 con C-26), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
-- **Orden de lo imprescindible** (Product Owner, C-13, pendiente del visto bueno del equipo): **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado), que van ligados; **3) el asistente de IA**, importante pero detrás. En las entrevistas, la confianza en la IA es baja (N-IA-01 «No confirmada»).
+- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 403, de ellos 36 simulados; Must 307; 348 Decidido; cifras del 23/10 con C-29), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
+- **Orden de lo imprescindible** (Product Owner, C-13, con el visto bueno de Juan Antonio): **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado), que van ligados; **3) el asistente de IA**, importante pero detrás. En las entrevistas, la confianza en la IA es baja (N-IA-01 «No confirmada»).
 - **Regla de prioridad:** Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio.
 - **Una entrevista en contra no cambia un requisito:** se registra como riesgo. Si 3 o más lo contradicen, se reabre con un registro de cambio.
 - **Pago y reembolso son de prueba:** nunca hay dinero real.
@@ -97,7 +97,8 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 ## 8. Traspaso (23/10, 17:40): lo que queda para terminar sin Sebastián
 
 - **Rama:** todo está en `docs/hito2-entrega`, ya con las mejoras de la landing de WSL unidas y probadas: compila, las rutas responden, el login bloquea tras 5 fallos y el panel lista los 19 prompts. Los `node_modules` que vinieron de Windows no sirven en Linux: reinstalad con `npm run install:all`.
-- **Criba (actualizado a las 20:34):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
+- **Criba (23/10, 21:27): aprobada** por Sebastián con el visto bueno de Juan Antonio (C-28). Bloques A–F respondidos; RF-11.2-04 sube al MVP (C-29); RF-15.2-04 baja a V2; 242 requisitos del MVP pasan a «Decidido». RST validadas por los dos (C-27).
 - **Mejoras de los recorridos por la competencia:** M-01 a M-08 revisadas una a una (C-14 a C-21 en la línea base). M-06 (punto de recogida) y pagar como invitado esperan a nuevas entrevistas y a un debate del equipo.
 - **Asana (pendiente, lo sube Sebastián al final, cuando todo esté verificado):** subir E1–E4 (Sebastián) y E5–E6 (Juan Antonio) como subtareas de «Historias de usuario», asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
+- **Revisión crítica de los prompts (la pide el enunciado):** cada archivo de `prompts/` termina con «## Revisión crítica del equipo». Rellénala **tú, con tus palabras**, en tus prompts: quién, cuándo, qué aceptasteis de la IA, qué corregisteis o rechazasteis y por qué estaba justificada. Tu agente no la redacta. El panel muestra «Revisión pendiente» hasta que no quede ningún «_pendiente_».
 - **Antes de entregar:** RST validadas; criba aprobada; documento adjunto al Hito 2 y «Estado entrega» cambiado (Sebastián, en lugar de Miguel); explicación al profesor de cómo ver los prompts (`/admin#prompts`). La contraseña la da Sebastián en persona.

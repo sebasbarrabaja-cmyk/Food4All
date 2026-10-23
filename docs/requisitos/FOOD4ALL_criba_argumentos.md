@@ -1,6 +1,6 @@
 # FOOD4ALL · Argumentos de la criba (Hito 2)
 
-23/10/2026 · Para responder antes de las 21:00 · Aprueba: Sebastián (Product Owner), con el visto bueno de Juan Antonio y Miguel
+23/10/2026 · **Aprobada por Sebastián (Product Owner) a las 21:27, con el visto bueno de Juan Antonio** (C-28). Miguel no vota: sus tareas las asume Sebastián (C-22).
 
 > Comentario del profesor en «Criba de requisitos» (23/10, 09:23): «Esto lo ha hecho la IA. Necesito los prompts en la landing documental y que me expliquéis porque habéis cribado esos en concreto. Argumentos.»
 
@@ -17,7 +17,7 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | RF-05 Carrito · RF-06 Checkout · RF-07 Subpedidos | 92 | 78 | 14 |
 | RF-08 Hub y entrega | 29 | 17 | 12 |
 | RF-12 Asistente de IA | 30 | 22 (simulado, ninguno Must) | 8 |
-| RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 0 | 40 |
+| RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 1 (RF-11.2-04, C-29) | 39 |
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |

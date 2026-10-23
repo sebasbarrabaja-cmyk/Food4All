@@ -177,3 +177,81 @@ Espera a juan antonio, creo que ha subido algo
 a( que se separe los promts por personas, pero no por dias o bloques de para que han servido)
 
 **Resultado:** se fusionó la rama. El registro de la landing pasa a ser `2026-10-23-07` (la sesión de Juan Antonio empezó antes) y las cinco horas imposibles de su registro quedan como «Hora no registrada (antes de las 21:04)». Lo de separar los prompts por personas se aclara en el siguiente mensaje.
+
+### 21:12
+
+Espera a juan antonio, queda ya poco, Queda algo mas?
+
+**Resultado:** se listó lo que falta, por prioridad:
+- aprobar la criba;
+- Asana y «Estado entrega»;
+- los prompts de Miguel, que no están registrados;
+- la revisión crítica de los prompts por el equipo;
+- las revisiones cruzadas en Asana;
+- el cierre de la sesión.
+
+También se comprobó que los 22 prompts no tienen correos ni teléfonos.
+
+### 21:14
+
+empieza por el punto 1
+
+**Resultado:** se preparó la aprobación de la criba con lo que dicen los documentos que se aplica al aprobarla:
+- RF-15.2-04 pasa a Could · V2;
+- los requisitos del MVP en «Pendiente» que no dependen de nada pasan a «Decidido»;
+- C-02, C-03 y C-11 se aprueban;
+- se anota C-28.
+
+### 21:15
+
+Para lo de juan antonio esperamos a que me de el ok, esta trabajando e ello
+
+**Resultado:** la aprobación queda en espera del ok de Juan Antonio. No se tocan la criba ni la línea base.
+
+### 21:16
+
+sí, prepáralo en seco
+
+**Resultado:** se escribió `benchmark/reordenar_hito2.js` y se probó en seco (8,6 s, solo GET, sin escribir nada en Asana): 38 cambios, ninguno de ellos un comentario. Se añadieron al repositorio el guion de entrevistas y E1–E4 en formato pregunta y respuesta (`FOOD4ALL_entrevistas_E1_E4_preguntas.md`), que el script usa como texto de las subtareas.
+
+### 21:25
+
+Mira lo subido por juan antonio,da el ok
+
+**Resultado:** se fusionó lo nuevo de Juan Antonio: las conclusiones de E5 y E6 y la pregunta 1 del bloque E, redactadas por él, que proponen subir RF-11.2-04 al MVP. Se volvieron a corregir siete horas imposibles de su registro (21:35 a 22:10 a las 21:25). Se preguntaron dos decisiones de Product Owner.
+
+### 21:27
+
+1a 2a, Juan Antonio da el ok a C-13
+
+**Resultado:** criba aprobada (C-28):
+- RF-15.2-04 pasa a Could · V2.
+- 242 requisitos del MVP sin dependencias pasan a «Decidido»: ahora hay 348 Decidido, 205 Pendiente y 11 Hipótesis.
+- C-02, C-03 y C-11 quedan aprobados, y C-13 con el visto bueno de Juan Antonio.
+- RF-11.2-04 sube a Must · MVP (C-29).
+- MVP: 403. Must: 307.
+- La criba y las RST salen de los temas abiertos. Se regeneró con `npm run todo`.
+
+### 21:28
+
+aplica Asana
+
+**Resultado:** antes de aplicar se comprobó que las 6 tareas que se iban a borrar seguían vacías (sin subtareas, comentarios ni adjuntos) y que nadie había subido ya E1–E6. Después se ejecutó `reordenar_hito2.js --si`, que tardó 51 s, con 38 cambios y ningún comentario; la copia previa quedó en `asana_copia_hito2_reordenar_antes.json`. Comprobación, volviendo a leer Asana:
+- B1–B6 tienen los nombres del enunciado.
+- E1–E6 están en «Historias de usuario», con su responsable. Se pusieron en orden, porque Asana las había dejado al revés.
+- La criba conserva los 3 comentarios: 2 del profesor y 1 de Sebastián.
+- El Hito 2 tiene adjunto el documento v0.4.
+- Las tareas de Miguel pasan a Sebastián.
+- Hay dos revisiones cruzadas asignadas a Juan Antonio.
+
+---
+
+## Revisión crítica del equipo
+
+*La escribe la persona autora (o quien revise), con sus palabras. No la redacta el asistente. Mientras ponga «pendiente», el panel marca este prompt como «Revisión pendiente».*
+
+- **Revisado por:** _pendiente_
+- **Fecha:** _pendiente_
+- **Qué aceptamos de lo que propuso la IA y por qué:** _pendiente_
+- **Qué corregimos, rechazamos o comprobamos aparte:** _pendiente_
+- **Por qué estaba justificado usar IA aquí:** _pendiente_
