@@ -137,3 +137,9 @@ escribe el mensaje en asana y dime lo de sebastian ya que estoy en llamada
 subelo al git y sebastian lo rebisa desde hay y que queda de mi parte
 
 **Resultado:** se comprobó que todo estaba ya subido a `docs/juanantonio-hito2`, sin conflictos con `docs/hito2-entrega`, y se subió este registro. Se le dijo lo que le queda: pegar su comentario en Asana y, si da tiempo, las dos preguntas extra a E5 y E6.
+
+### 22:05
+
+Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte lo pego
+
+**Resultado:** se confirmó que todo está en GitHub. Se le volvió a dar el comentario y, según `FOOD4ALL_propuesta_asana.md` y `FOOD4ALL_comparativo_revisado.md`, dónde pegarlo: en [B2] Personas y mapas de empatía de la tarea del Hito 2, y la parte del comparativo en «Requisitos temporales → Información de otras empresas». Lo pega él.
