@@ -40,7 +40,7 @@ El comparativo original se conserva tal cual en Asana («Requisitos temporales �
 
 - Open Food Network: https://openfoodnetwork.net/?locale=es_US (hallazgo 4).
 - Local Food Marketplace: https://home.localfoodmarketplace.com/ (no tiene un hallazgo propio en la tabla).
-- Market Wagon: https://dairy.marketwagon.com/ (hallazgos 2, 3 y 10).
+- Market Wagon: https://dairy.marketwagon.com/ (hallazgos 2 y 3).
 
 Con esto el original ya tiene fuentes para Open Food Network y Market Wagon. El resto de empresas del original (Glovo, Mercadona, Wetaca, Too Good To Go) siguen sin página indicada. Si cambia la fiabilidad de F-04 lo decide el equipo.
 - Comprobar a mano, con cuenta o app, lo que quedó sin verificar (lista «Por verificar a mano» del Anexo B de la especificación).
