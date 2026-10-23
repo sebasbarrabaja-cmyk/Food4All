@@ -319,3 +319,15 @@ El profesor pide de entrega un archivo cargado, ademas del asana
 1a 2(Literalmete pone o una url o un archivo cargado)
 
 **Resultado:** `actualizar_asana.js --si` tardó 2 min 21 s: 129 descripciones actualizadas, ninguna creada, borrada ni comentada, y copia previa en `asana_copia_hito2_v04_antes.json`. En la nueva prueba en seco quedan 39 diferencias que son solo de codificación de comillas (`&quot;` en Asana frente a `"`): el contenido coincide. Lo de la URL o el archivo se plantea a continuación.
+
+### 21:59
+
+El repsitorio es publico y creo que quiere un zip con todo de la landing
+
+**Resultado:** se comprobó que el repositorio es público (el asistente había dicho que era privado, basándose en las notas antiguas). Se unió lo último de Juan Antonio y se llevó a `main` (PR #6) antes de preparar el zip.
+
+### 22:00
+
+Mira lo subido por juan antonio, revisalo y pasalo al git. Vamos a ultimar ya
+
+**Resultado:** la revisión crítica de Juan Antonio ya estaba en el PR #6 y está bien hecha. Los 22 prompts tienen su revisión crítica, y la nota de «prioritario» de `AGENTS.md` pasa a «hecha».
