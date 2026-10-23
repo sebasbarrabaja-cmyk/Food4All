@@ -11,6 +11,7 @@ const comoAnexo = (texto, titulo) => `## ${titulo}\n` + texto.replace(/^# .*\n/,
 
 const ANEXOS = [
   ['FOOD4ALL_necesidades.md', 'Anexo C. Catálogo único de necesidades'],
+  ['FOOD4ALL_entrevistas_estudiantes.md', 'Anexo C2. Entrevistas a estudiantes (F-07, E1–E4)'],
   ['FOOD4ALL_personas_empatia_v2.md', 'Anexo D. Personas y mapas de empatía (B2, v2)'],
   ['FOOD4ALL_estados_pedido.md', 'Anexo E. Estados del pedido, subpedido y reembolso de prueba'],
   ['FOOD4ALL_matriz_trazabilidad.md', 'Anexo F. Matriz de trazabilidad'],

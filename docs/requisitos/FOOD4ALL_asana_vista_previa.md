@@ -274,7 +274,7 @@ Si el usuario llega desde una acción que exige sesión (por ejemplo, pagar), la
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-06 Conocer con claridad los requisitos y los pasos del alta
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -400,7 +400,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -523,7 +523,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -625,7 +625,7 @@ Texto de la casilla obligatoria: «Acepto las Condiciones de uso y la Política 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -834,7 +834,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01
 
 **3. Actores y roles**
 
@@ -924,7 +924,7 @@ Ficha completa del Anexo A de la especificación (apartados 1 y 5 a 13); el rest
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-01
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -1002,7 +1002,7 @@ Página «Mis datos» donde el cliente consulta y cambia su nombre, correo, tel�
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-01
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S09
 
 **3. Actores y roles**
 
@@ -1128,7 +1128,7 @@ Preferencias que personalizan la compra: presupuesto semanal, personas del piso,
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-01
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S06, S09
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S06, S09
 
 **3. Actores y roles**
 
@@ -2288,7 +2288,7 @@ Gestión de solicitudes de alta de vendedores por el administrador: listarlas, r
 - Necesidad: N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -2391,7 +2391,7 @@ Vista del admin sobre pedidos e incidencias: buscar un pedido y ver sus subpedid
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S01, S04, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
 
 **3. Actores y roles**
 
@@ -2491,7 +2491,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -2552,7 +2552,7 @@ Gestión de cuentas por el admin. En el MVP solo cubre crear administradores des
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -2649,7 +2649,7 @@ Configuración operativa que hoy son hipótesis o decisiones pendientes: compra 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S01, S04, S05, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
 
 **3. Actores y roles**
 
@@ -2752,7 +2752,7 @@ Fuera del MVP (Excluido): esta ficha se completa cuando el requisito entre en un
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-09
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -2846,7 +2846,7 @@ Cabecera común de toda la web pública: logo, los tres botones principales y la
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-10 · Fuentes del benchmark: S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -2952,7 +2952,7 @@ Portada que en un vistazo dice qué es FOOD4ALL, para quién y qué hacer: lema,
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3061,7 +3061,7 @@ Sección «Cómo funciona» que explica el recorrido del cliente y el logístico
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3165,7 +3165,7 @@ Sección «Quiénes somos» y comparativa honesta con el supermercado online y e
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -3329,7 +3329,7 @@ Página /comunidad: por qué importa la comunidad, qué se publicará y cómo pa
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: F-04, S02
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: F-04, S02
 
 **3. Actores y roles**
 
@@ -3430,7 +3430,7 @@ Pie común con enlaces legales, créditos de imágenes, redes y el aviso de proy
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-14
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -3575,7 +3575,7 @@ El vendedor crea un producto desde su panel. Todo producto nace como Borrador y 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04, S02, S04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S02, S04, S08, S09
 
 **3. Actores y roles**
 
@@ -3692,7 +3692,7 @@ Datos obligatorios de cada producto para vender alimentos a distancia: origen, i
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -3913,7 +3913,7 @@ Fotos del producto: al menos una y hasta cinco, con texto alternativo. El sistem
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-10
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -4017,7 +4017,7 @@ Precio del producto. Mientras el proyecto sea conceptual, el catálogo muestra �
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: S04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: S04, S08, S09
 
 **3. Actores y roles**
 
@@ -4216,7 +4216,7 @@ Editar y retirar productos. Un cambio de precio nunca afecta a pedidos ya pagado
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-10
-- Fuentes de las necesidades: F-01, F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -4373,7 +4373,7 @@ Control de calidad antes de publicar: solo se publica una ficha completa, y el v
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-10
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S07, S08
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S07, S08
 
 **3. Actores y roles**
 
@@ -4511,7 +4511,7 @@ Página de productos de la zona elegida, con categorías y rejilla. Es la puerta
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S02, S04, S06, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S02, S04, S06, S09
 
 **3. Actores y roles**
 
@@ -4614,7 +4614,7 @@ Buscador de productos y vendedores, tolerante a mayúsculas y tildes, con sugere
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -4717,7 +4717,7 @@ Filtros del catálogo, con el filtro de alérgenos como pieza clave: el cliente 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -4822,7 +4822,7 @@ Tarjeta de producto del catálogo con los datos para decidir sin abrir la ficha:
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-03
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S04, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S08, S09
 
 **3. Actores y roles**
 
@@ -4931,7 +4931,7 @@ Ficha completa del producto con toda la información obligatoria antes de compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -5037,7 +5037,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-02 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-01, F-02, F-07 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -5092,7 +5092,7 @@ Elección de zona en la primera visita y su recuerdo. En el MVP no hay patrocina
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Historias: US-03
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06
 
 **3. Actores y roles**
 
@@ -5186,7 +5186,7 @@ Comportamiento del catálogo al volver de una ficha y cuando falla la carga.
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-03
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -5291,7 +5291,7 @@ Etiquetas y avisos de la tarjeta, sobre todo el aviso «Contiene tus alérgenos�
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Necesidad: N-VEN-03 Reducir la merma del género que no vende a tiempo
 - Historias: US-03
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S08, S09
 
 **3. Actores y roles**
 
@@ -5429,7 +5429,7 @@ Entrada al asistente: el cliente indica presupuesto, días, personas y tiempo pa
 
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: US-08
-- Fuentes de las necesidades: F-02 · Fuentes del benchmark: S06
+- Fuentes de las necesidades: F-02, F-07 · Fuentes del benchmark: S06
 
 **3. Actores y roles**
 
@@ -5539,7 +5539,7 @@ Generación de la cesta: productos disponibles de la zona, dentro del presupuest
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -5650,7 +5650,7 @@ El cliente revisa la cesta: ve por qué se propone cada producto, la ajusta y la
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Historias: US-08
-- Fuentes de las necesidades: F-02, F-03 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-02, F-03, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -5852,7 +5852,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: F-04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: F-04, S06
 
 **3. Actores y roles**
 
@@ -5915,7 +5915,7 @@ Diseño del asistente como conversación con opciones guiadas, para que el clien
 - Necesidad: N-IA-02 Saber cuándo habla con una IA y distinguir una recomendación de la publicidad
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: S06
 
 **3. Actores y roles**
 
@@ -6023,7 +6023,7 @@ Reglas de calidad de la propuesta: respetar la dieta y priorizar temporada y vid
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-08
-- Fuentes de las necesidades: F-01, F-02, F-03 · Fuentes del benchmark: F-04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-07 · Fuentes del benchmark: F-04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -6352,7 +6352,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-15
-- Fuentes de las necesidades: F-03, F-04, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6641,7 +6641,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
 - Historias: US-16
-- Fuentes de las necesidades: F-03, F-04, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6796,7 +6796,7 @@ Añadir productos de cualquier vendedor de la zona a un único carrito. Es el pr
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S08, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -6905,7 +6905,7 @@ Vista del carrito agrupada por vendedor con un único total. El cliente ve de qu
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -7016,7 +7016,7 @@ Cambiar cantidades y quitar líneas con recálculo inmediato y opción de deshac
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04, S09
 
 **3. Actores y roles**
 
@@ -7115,7 +7115,7 @@ Un solo coste de envío por pedido, se compre a uno o a cinco vendedores, y una 
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-05, F-10 · Fuentes del benchmark: S01, S05, S07
+- Fuentes de las necesidades: F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
 
 **3. Actores y roles**
 
@@ -7219,7 +7219,7 @@ Si el cliente fijó un presupuesto, el carrito le dice cuánto lleva y le avisa 
 
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-04
-- Fuentes de las necesidades: F-01 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -7314,7 +7314,7 @@ Si un producto se agota o cambia de precio después de añadirlo, el carrito lo 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -7411,7 +7411,7 @@ El carrito no se pierde: con sesión se guarda en la cuenta y sin sesión en el 
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: S04
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: S04
 
 **3. Actores y roles**
 
@@ -7508,7 +7508,7 @@ Diseño del carrito en ordenador: líneas a la izquierda y resumen fijo a la der
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: US-04
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: F-04, S04, S05, S07, S09
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S05, S07, S09
 
 **3. Actores y roles**
 
@@ -7615,7 +7615,7 @@ Información de entrega en el carrito: la próxima franja y por qué hay un solo
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -7750,7 +7750,7 @@ Entrada al checkout: exige sesión con correo verificado y muestra en una sola p
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -7849,7 +7849,7 @@ Paso «Entrega»: dirección, día y franja de entrega con su hora de cierre. La
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -8068,7 +8068,7 @@ Paso «Pago»: pago de prueba con tarjeta, sin cobro real, en un único cargo po
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-03, F-04, F-10 · Fuentes del benchmark: F-04, S01, S02, S04, S06, S07, S09, S10
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S01, S02, S04, S06, S07, S09, S10
 
 **3. Actores y roles**
 
@@ -8192,7 +8192,7 @@ Confirmación del pedido con su número, franja, dirección y grupos por vendedo
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -8296,7 +8296,7 @@ El cliente puede cancelar sin coste hasta la hora de cierre de su franja; despu�
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-10 · Fuentes del benchmark: S01, S04, S06, S10
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
 
 **3. Actores y roles**
 
@@ -8401,7 +8401,7 @@ Diseño y navegación del checkout en acordeón, sin perder lo rellenado y volvi
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-05
-- Fuentes de las necesidades: F-03, F-04, F-10 · Fuentes del benchmark: S01, S04, S06
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06
 
 **3. Actores y roles**
 
@@ -8601,7 +8601,7 @@ Al confirmarse el pago, el pedido global se divide en un subpedido por vendedor.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-04, F-06, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-04, F-06, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -8920,7 +8920,7 @@ El vendedor prepara su parte, imprime la etiqueta con número, bultos, conservac
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9022,7 +9022,7 @@ Plazos y avisos: recordatorio al vendedor antes de que venza su plazo, aviso al 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9244,7 +9244,7 @@ En el MVP la suscripción solo se anuncia como «Próximamente», sin precios. L
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-19
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S06, S10
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S06, S10
 
 **3. Actores y roles**
 
@@ -9342,7 +9342,7 @@ Fuera del MVP (V3): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-19
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: S01, S04, S06, S09, S10
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: S01, S04, S06, S09, S10
 
 **3. Actores y roles**
 
@@ -9759,7 +9759,7 @@ Reparto de los pedidos empaquetados por franja y registro de la entrega; si no h
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04, F-05 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-05, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -9865,7 +9865,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -10409,7 +10409,7 @@ Lista «Mis pedidos» con los pedidos del cliente del más reciente al más anti
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-06
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -11127,7 +11127,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-13
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -11189,7 +11189,7 @@ En el MVP solo aplica una regla: no se muestran valoraciones inventadas ni prueb
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-13
-- Fuentes de las necesidades: F-01, F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -11287,7 +11287,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Historias: US-13
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 
@@ -11982,7 +11982,7 @@ Tiempos de carga en móvil: contenido principal, estabilidad visual y respuesta 
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12061,7 +12061,7 @@ Rendimiento del servidor y tiempo de respuesta del asistente.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: —
-- Fuentes de las necesidades: F-02, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-02, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12134,7 +12134,7 @@ Peso de la página: fuentes que no bloquean el texto y JavaScript inicial conten
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12229,7 +12229,7 @@ Facilidad de uso: entender la portada en 30 s, primera compra sin ayuda, textos 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-02 Vender online sin montar una web propia ni gestionar envíos
 - Historias: —
-- Fuentes de las necesidades: F-01, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-01, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12315,7 +12315,7 @@ Consistencia visual con la guía de diseño: tipografía, color de acción, radi
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12419,7 +12419,7 @@ Accesibilidad WCAG 2.2 nivel AA: contraste, teclado, zonas táctiles, texto alte
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12527,7 +12527,7 @@ Compatibilidad con navegadores y pantallas; modo claro por defecto.
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12626,7 +12626,7 @@ Fiabilidad: un pedido pagado nunca se pierde aunque falle un subpedido o un serv
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Historias: —
-- Fuentes de las necesidades: F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -12839,7 +12839,7 @@ Trazabilidad alimentaria: para cada línea entregada, vendedor, producto, lote o
 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: —
-- Fuentes de las necesidades: F-03, F-04 · Fuentes del benchmark: S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S06, S07
 
 **3. Actores y roles**
 
@@ -12940,7 +12940,7 @@ Mantenibilidad: capas separadas, IA simulada sustituible por una real cambiando 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-IA-01 Que el asistente simplifique la decisión sin obligarle a explicar demasiado
 - Historias: —
-- Fuentes de las necesidades: F-02, F-04, F-10 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-02, F-04, F-07, F-10 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -13041,7 +13041,7 @@ Sostenibilidad: embalaje reutilizable o reciclable y medición del desperdicio d
 
 - Necesidad: N-CAD-01 Gestionar cantidades, conservación y caducidades para no tirar comida
 - Historias: —
-- Fuentes de las necesidades: F-01, F-03 · Fuentes del benchmark: F-04
+- Fuentes de las necesidades: F-01, F-03, F-07 · Fuentes del benchmark: F-04
 
 **3. Actores y roles**
 

@@ -6,6 +6,7 @@ Requisitos del **marketplace** FOOD4ALL, no de la landing. Versión **0.4** (22/
 | --- | --- |
 | [`FOOD4ALL_especificacion_requisitos.md`](FOOD4ALL_especificacion_requisitos.md) | La especificación: fuentes, necesidades, personas, procesos en cascada, 19 historias con Gherkin, RF-01 a RF-19, RNF-01 a RNF-11, trazabilidad, decisiones abiertas, fuentes de verdad, glosario v2, backlog y el ejemplo del login (Anexo A) |
 | [`FOOD4ALL_necesidades.md`](FOOD4ALL_necesidades.md) | **Catálogo único de necesidades** (N-<MÓDULO>-NN), regla de evidencia, equivalencias con los códigos antiguos, plan de contraste y plantilla de entrevista |
+| [`FOOD4ALL_entrevistas_estudiantes.md`](FOOD4ALL_entrevistas_estudiantes.md) | Entrevistas a estudiantes E1–E4 (F-07, 23/10/2026): apuntes, comparación y tres historias propuestas. Faltan las del resto del equipo |
 | [`FOOD4ALL_estados_pedido.md`](FOOD4ALL_estados_pedido.md) | Estados del pedido global, el subpedido y la línea, y el pago y el reembolso de prueba: el contrato común de RF-06 a RF-10 |
 | [`FOOD4ALL_matriz_trazabilidad.md`](FOOD4ALL_matriz_trazabilidad.md) | Matriz de trazabilidad (generada): cobertura por necesidad, una fila por subrequisito y controles |
 | [`FOOD4ALL_personas_empatia_v2.md`](FOOD4ALL_personas_empatia_v2.md) | Personas y mapas de empatía de B2 (Juan Antonio), v2 con los IDs corregidos |
@@ -72,7 +73,7 @@ Estos scripts escriben en el proyecto de clase, que comparten los tres grupos. N
 
 | Script o fichero | Para qué |
 | --- | --- |
-| `actualizar_asana.js` | Lleva la v0.4 a Asana. Sin opciones va **en seco**: solo lee y enseña el plan. Con `--si` actualiza las descripciones de [B4] y [B5], crea US-14 a US-19 y añade un bloque «Actualización v0.4» en [B1], [B2], [B4], [B5] y [B6]. `--adjuntos` sube los documentos y `--comentar-criba` deja la propuesta de criba. Antes de escribir, guarda una copia en `asana_copia_hito2_v04_antes.json` |
+| `actualizar_asana.js` | Lleva la v0.4 a Asana. Sin opciones va **en seco**: solo lee y enseña el plan. Con `--si` actualiza las descripciones de [B4] y [B5], crea US-14 a US-19 y añade un bloque «Actualización v0.4» en [B1], [B2], [B4], [B5] y [B6]. `--adjuntos` sube los documentos. No publica comentarios: los escribe el equipo. Antes de escribir, guarda una copia en `asana_copia_hito2_v04_antes.json` |
 | `subir_asana.js` | Creación inicial del 20/10/2026 |
 | `asana_creadas.json` | Las 173 tareas creadas el 20/10/2026, con su ID de Asana. `node subir_asana.js --deshacer --si` las borra; no borra nada más |
 | `asana_borradas.json` | Las 22 tareas antiguas que se quitaron: 14 fichas de B4 (RF-CUE-01…) y las subtareas vacías de B3 y B5 |

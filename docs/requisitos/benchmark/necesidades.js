@@ -10,18 +10,21 @@
 //   Indicio            → la mencionan 1 o 2 entrevistas (o todas, si la muestra es menor de 3).
 //   Confirmada         → regla de evidencia de FOOD4ALL_necesidades.md (≥ 3 entrevistas independientes…).
 //   No confirmada      → las entrevistas la contradicen.
-// Mientras no se registren las entrevistas F-07 y F-08, ninguna necesidad de usuario pasa de Hipótesis.
+// F-07 (23/10/2026): primeras 4 entrevistas a estudiantes, las de Sebastián, en apuntes y sin citas literales
+// (FOOD4ALL_entrevistas_estudiantes.md). Faltan las del resto del equipo: los estados son provisionales.
+// Solo E3 y E4 son del perfil objetivo (comparten piso); E1 y E2 viven con su familia y cuentan como comparativos.
+// Ninguna llega a Confirmada: faltan 3 entrevistas del perfil y citas literales. F-08 (vendedores) sigue pendiente.
 
 const NECESIDADES = [
   // Estudiante (P1 · Lucía)
-  { id: 'N-PLA-01', texto: 'Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01, F-02', estado: 'Hipótesis', v03: 'N-01', b2: 'N-03, N-04, N-05' },
-  { id: 'N-PLA-02', texto: 'Controlar cuánto gasta en comida y ajustarse a un presupuesto', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01', estado: 'Hipótesis', v03: 'N-01', b2: 'N-01' },
-  { id: 'N-CAR-01', texto: 'Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-04, F-10', estado: 'Hipótesis', v03: 'N-02', b2: 'N-02, N-08' },
+  { id: 'N-PLA-01', texto: 'Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01, F-02, F-07 (E3, E4)', estado: 'Indicio', v03: 'N-01', b2: 'N-03, N-04, N-05' },
+  { id: 'N-PLA-02', texto: 'Controlar cuánto gasta en comida y ajustarse a un presupuesto', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01, F-07 (E4; E1 comparativo)', estado: 'Indicio', v03: 'N-01', b2: 'N-01' },
+  { id: 'N-CAR-01', texto: 'Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad)', estado: 'Indicio', v03: 'N-02', b2: 'N-02, N-08' },
   { id: 'N-ENT-01', texto: 'Recibir todo en una sola entrega, en una franja conocida', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-04, F-05', estado: 'Hipótesis', v03: 'N-02', b2: 'N-10' },
-  { id: 'N-CAD-01', texto: 'Gestionar cantidades, conservación y caducidades para no tirar comida', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01, F-03', estado: 'Hipótesis', v03: 'N-08', b2: 'N-06, N-07' },
-  { id: 'N-IA-01', texto: 'Que el asistente simplifique la decisión sin obligarle a explicar demasiado', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-02', estado: 'Hipótesis', v03: 'N-01 (parte)', b2: 'N-11' },
+  { id: 'N-CAD-01', texto: 'Gestionar cantidades, conservación y caducidades para no tirar comida', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-01, F-03, F-07 (E3, E4)', estado: 'Indicio', v03: 'N-08', b2: 'N-06, N-07' },
+  { id: 'N-IA-01', texto: 'Que el asistente simplifique la decisión sin obligarle a explicar demasiado', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-02, F-07 (en contra: E3, E4)', estado: 'No confirmada', v03: 'N-01 (parte)', b2: 'N-11' },
   { id: 'N-IA-02', texto: 'Saber cuándo habla con una IA y distinguir una recomendación de la publicidad', quien: 'Estudiante', persona: 'P1', tipo: 'Obligación legal', fuentes: 'F-03 (Reglamento de IA 2024/1689; DSA 2022/2065)', estado: 'Obligación legal', v03: 'N-07 (parte)', b2: '—' },
-  { id: 'N-CAT-01', texto: 'Confiar en el origen, la calidad y la trazabilidad de lo que compra', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-03 (Reglamento 178/2002), F-04', estado: 'Hipótesis', v03: 'N-04 y N-05 (parte)', b2: 'N-09' },
+  { id: 'N-CAT-01', texto: 'Confiar en el origen, la calidad y la trazabilidad de lo que compra', quien: 'Estudiante', persona: 'P1', tipo: 'Usuario', fuentes: 'F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos)', estado: 'Indicio', v03: 'N-04 y N-05 (parte)', b2: 'N-09' },
   { id: 'N-CAT-02', texto: 'Conocer ingredientes y alérgenos antes de pagar', quien: 'Estudiante', persona: 'P1', tipo: 'Obligación legal', fuentes: 'F-03 (Reglamento 1169/2011, art. 14)', estado: 'Obligación legal', v03: 'N-04', b2: '—' },
   { id: 'N-CAT-03', texto: 'Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas', quien: 'Estudiante', persona: 'P1', tipo: 'Obligación legal', fuentes: 'F-03 (RDL 1/2007; LSSI; P2B 2019/1150)', estado: 'Obligación legal', v03: 'N-07 (parte)', b2: '—' },
   { id: 'N-CUE-01', texto: 'Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó', quien: 'Estudiante, vendedor', persona: 'P1, P2', tipo: 'Obligación legal', fuentes: 'F-03 (RGPD; LOPDGDD)', estado: 'Obligación legal', v03: 'N-07 (parte)', b2: '—' },
@@ -48,7 +51,7 @@ const FUENTES_N = [
   ['F-04', 'Comparativo de 10 empresas (adjunto de Juan Antonio, 09/10/2026)', 'Benchmark exploratorio: fiabilidad baja, no cita fuentes'],
   ['F-05', 'Investigación de entrega a clientes (Miguel)', 'En curso'],
   ['F-06', 'Investigación de recogida a vendedores (Juan Antonio)', 'En curso'],
-  ['F-07', 'Entrevistas a estudiantes (mínimo 5)', 'Pendiente: se suben el 23/10/2026'],
+  ['F-07', 'Entrevistas a estudiantes: E1–E4 de Sebastián (23/10/2026), con E3 y E4 del perfil objetivo y E1 y E2 comparativos; faltan las del resto del equipo', 'Apuntes, no transcripciones: sin citas literales'],
   ['F-08', 'Entrevistas a vendedores (mínimo 2-3)', 'Pendiente: se suben el 23/10/2026'],
   ['F-09', 'Borrador de 211 requisitos (09/10/2026)', 'Histórico: lista de ideas, no evidencia'],
   ['F-10', 'Benchmark de 6 competidores, consultado el 19/10/2026', 'Referencia externa (páginas públicas)'],
