@@ -44,3 +44,9 @@ hazlo desde esta terminal
 tienes la regla que incluyo sebastian para que se guarden todos los promts
 
 **Resultado:** el asistente confirmó que aplica la regla 1 de `AGENTS.md` (cargada desde `CLAUDE.md`) y añadió este mensaje al registro de la sesión.
+
+### 20:48
+
+súbelo a github
+
+**Resultado:** se subió la rama `docs/juanantonio-hito2` a GitHub para que Sebastián la una a `docs/hito2-entrega`.
