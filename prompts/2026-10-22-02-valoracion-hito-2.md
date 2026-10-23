@@ -57,3 +57,24 @@ No se asignó a nadie, no se pusieron fechas ni se completó nada. Se comprobó 
 Hasta mañana
 
 **Resultado:** cierre de la sesión. Se apuntó este mensaje en el registro y se actualizó la memoria de Asana. Queda para el 23/10 meter las entrevistas y volver a generar todo.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026). Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Unir los tres catálogos de necesidades en uno, porque era el fallo principal que marcó el profesor.
+  - La regla de prioridad («Must solo en el MVP…»), porque resolvía las 58 contradicciones de forma clara.
+  - Los estados del pedido y el reembolso de prueba, porque el profesor pedía un recorrido de defensa concreto.
+  - Dejar las entrevistas fuera hasta tenerlas de verdad, en lugar de rellenarlas.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - El comentario de la criba que publicó la IA en Asana fue un error: el profesor respondió «Esto lo ha hecho la IA». Desde el 23/10 la regla es que la IA nunca comenta en Asana; los comentarios y argumentos los escribe el equipo.
+  - La criba que propuso la IA no se dio por aprobada: al día siguiente la argumentamos bloque a bloque y la aprobé yo como Product Owner.
+  - Revisé el resultado en Asana leyéndolo de nuevo antes de darlo por bueno.
+- **Por qué estaba justificado usar IA aquí:**
+  - La valoración llegó el 21/10 y la entrega era el 23/10: había que reorganizar cientos de requisitos en una noche.
+  - Las decisiones de fondo (qué se prioriza y qué no) las revisamos nosotros después.

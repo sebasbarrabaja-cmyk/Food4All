@@ -48,3 +48,25 @@ Haz el 2, no el 1
 **Resultado:** se hizo commit y push a `main` de los cambios de hoy y del registro de prompts, sin coautoría de Claude. Asana no se actualizó: se hará cuando el usuario lo pida.
 
 *Entrada recuperada de `main` al fusionar el 23/10/2026 a las 21:36: estaba solo en esa rama.*
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026). Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Aplicar la regla de evidencia sin forzarla: con 2 entrevistas del perfil objetivo y sin citas literales, nada pasa a «Confirmada».
+  - Marcar N-IA-01 como «No confirmada» porque E3 y E4 no confían en la IA, aunque la IA fuera parte de nuestra idea inicial.
+  - Quitar del script la opción de comentar en Asana, para que no se repitiera.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Puse yo la regla de no comentar en Asana, después de la respuesta del profesor.
+  - Corregí el texto para que dijera que E1–E4 eran solo mías y que faltaban las del resto del equipo, porque los estados eran provisionales.
+  - Paré la búsqueda de las entrevistas por el ordenador y le dije dónde estaban.
+  - Elegí qué se subía (commit y push) y dejé Asana para cuando yo lo pidiera.
+- **Por qué estaba justificado usar IA aquí:**
+  - Cruzar 4 entrevistas con 22 necesidades y su regla de evidencia es repetitivo y fácil de equivocarse a mano.
+  - Leer los comentarios de 272 tareas de Asana para encontrar el del profesor.
+  - Las conclusiones sobre el producto las saqué yo; la IA aplicaba la regla que habíamos fijado.
