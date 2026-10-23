@@ -37,7 +37,7 @@ export default function FlowDiagram() {
         <text x="300" y="22" className="fd-label">recogida en origen</text>
 
         {/* Hub */}
-        <rect x="392" y="80" width="300" height="140" rx="8" fill="var(--green)" />
+        <rect x="392" y="80" width="300" height="140" rx="8" fill="var(--forest)" />
         <text x="542" y="122" textAnchor="middle" className="fd-hub-title">Hub FOOD4ALL</text>
         <text x="542" y="152" textAnchor="middle" className="fd-hub">consolida · verifica · empaqueta</text>
         <text x="542" y="196" textAnchor="middle" className="fd-hub-small">ubicación por definir</text>

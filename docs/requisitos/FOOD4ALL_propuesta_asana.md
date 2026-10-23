@@ -2,7 +2,7 @@
 
 > **Estado:** aplicada el 20/10/2026, **sin responsables ni fechas** (se asignan después). Decisiones tomadas: D1 dentro de [B4]; D2 las 14 fichas antiguas de B4 se borraron, junto con las subtareas vacías de B3 y B5 (copia en `benchmark/asana_copia_hito2_antes.json`); D3 requisitos atómicos como lista; D5 sin asignar todavía; D7 numeración del Excel. Pendientes: D4 reparto, D6 adjuntos, RF-13.7.
 > **Fuente:** `FOOD4ALL_especificacion_requisitos.md` (v0.2) y `FOOD4ALL_requisitos_benchmark.xlsx` (556 requisitos).
-> **Prompt de origen:** `prompts/2026-10-20-01-requisitos-en-asana.md`.
+> **Prompt de origen:** `prompts/2026-10-20-05-requisitos-en-asana.md`.
 
 ## 1. Qué se toca y qué no
 

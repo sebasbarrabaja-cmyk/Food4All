@@ -1,10 +1,12 @@
 # FOOD4ALL: Personas y mapas de empatía
 
-**Entregable del Hito 2 · Requisitos y criterios de aceptación** · Asignatura ISW, Universidad Europe
+**Entregable del Hito 2 · Requisitos y criterios de aceptación** · Asignatura ISW, Universidad Europea
 
 Equipo: Sebastián, Juan Antonio y Miguel · Responsable de este entregable: Juan Antonio · Fecha: 21 de octubre de 2026 · Se adjunta al documento de requisitos
 
-**Versión 2 (22/10/2026).** Corrección de identificadores tras la valoración provisional del Hito 2. Las necesidades usan el catálogo único N-<MÓDULO>-NN (`FOOD4ALL_necesidades.md`) y los requisitos, los IDs vigentes de B4. Los textos de las personas y de los mapas no cambian. Cambios hechos por Sebastián; pendiente de revisión por Juan Antonio.
+**Versión 2 (22/10/2026).** Corrección de identificadores tras la valoración provisional del Hito 2. Las necesidades usan el catálogo único N-<MÓDULO>-NN (`FOOD4ALL_necesidades.md`) y los requisitos, los IDs vigentes de B4. Los textos de las personas y de los mapas no cambian. Cambios hechos por Sebastián.
+
+**Revisión de Juan Antonio (23/10/2026).** Se actualizan los estados de la tabla 3 con las entrevistas E1–E6, se corrigen cuatro criterios del apartado 6.2 que prometían más de lo que hay en el MVP o no coincidían con B4, y dos erratas. Cambios aplicados con ayuda del asistente.
 
 ---
 
@@ -37,7 +39,7 @@ Las personas se han construido a partir de investigación documental, no de caso
 
 Los nombres, edades y ciudades de las personas son ficticios. Cada afirmación lleva entre corchetes la referencia de la sección 9 que la respalda.
 
-> **Límite de este documento.** Son **arquetipos documentales**, no usuarios observados. Las «frases representativas» resumen la documentación; no son citas de entrevistas. Antes de presentarlas como validación hay que contrastarlas con las entrevistas de B1 (F-07 a estudiantes y F-08 a vendedores, que se registran el 23/10/2026). Mientras tanto, todas las necesidades de usuario de la tabla 3 están en estado **Hipótesis**.
+> **Límite de este documento.** Son **arquetipos documentales**, no usuarios observados. Las «frases representativas» resumen la documentación; no son citas de entrevistas. Antes de presentarlas como validación hay que contrastarlas con entrevistas. A 23/10/2026 hay seis a estudiantes (E1–E4 de Sebastián y E5–E6 de Juan Antonio) y ninguna a vendedores ni a operadores. Por eso las necesidades de Lucía están en **Indicio** o **No confirmada**, y las de Antonio y Rafa siguen en **Hipótesis** (tabla 3; el detalle está en `FOOD4ALL_necesidades.md`).
 
 ---
 
@@ -45,13 +47,13 @@ Los nombres, edades y ciudades de las personas son ficticios. Cada afirmación l
 
 | N-ID (catálogo único) | Necesidad | Persona | Estado | ID en la v1 |
 | --- | --- | --- | --- | --- |
-| N-PLA-02 | Controlar cuánto gasta en comida | Lucía | Hipótesis | N-01 |
-| N-CAR-01 | Comprar a varios vendedores en un solo pedido y pago, sin ir de tienda en tienda (ahorrar tiempo, acceder a producto local) | Lucía | Hipótesis | N-02, N-08 |
-| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Lucía | Hipótesis | N-03, N-04, N-05 |
-| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Lucía | Hipótesis | N-06, N-07 |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad | Lucía | Hipótesis | N-09 |
+| N-PLA-02 | Controlar cuánto gasta en comida | Lucía | Indicio | N-01 |
+| N-CAR-01 | Comprar a varios vendedores en un solo pedido y pago, sin ir de tienda en tienda (ahorrar tiempo, acceder a producto local) | Lucía | Indicio (E3 en contra) | N-02, N-08 |
+| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Lucía | Indicio | N-03, N-04, N-05 |
+| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Lucía | Indicio (débil) | N-06, N-07 |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad | Lucía | Indicio | N-09 |
 | N-ENT-01 | Recibir todo en una sola entrega consolidada | Lucía | Hipótesis | N-10 |
-| N-IA-01 | Que el asistente simplifique y no exija explicar demasiado | Lucía | Hipótesis | N-11 |
+| N-IA-01 | Que el asistente simplifique y no exija explicar demasiado | Lucía | No confirmada | N-11 |
 | N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Antonio | Hipótesis | N-12 |
 | N-VEN-02 | Vender sin montar una web propia ni gestionar envíos | Antonio | Hipótesis | N-13 |
 | N-VEN-03 | Reducir la merma del género | Antonio | Hipótesis | N-14 |
@@ -62,7 +64,8 @@ Los nombres, edades y ciudades de las personas son ficticios. Cada afirmación l
 | N-HUB-02 | Mantener la cadena de frío y separar productos | Rafa | Obligación legal (Reglamento 852/2004) | N-19 |
 | N-HUB-03 | Verificar el pedido y resolver faltas | Rafa | Hipótesis | N-20 |
 
-Tres necesidades de la v1 (N-03, N-04 y N-05) eran la misma: saber qué comprar, qué comer y planificar. Se unen en N-PLA-01. Lo mismo ocurre con N-06 y N-07 (N-CAD-01) y con N-02 y N-08 (N-CAR-01). El catálogo único añade obligaciones legales que no salen de las personas (alérgenos antes de pagar, protección de datos, transparencia de la IA y registro sanitario); están en `FOOD4ALL_necesidades.md`.
+Tres necesidades de la v1 (N-03, N-04 y N-05) eran la misma: saber qué comprar, qué comer y planificar. Se unen en N-PLA-01. Lo mismo ocurre con N-06 y N-07 (N-CAD-01) y con N-02 y N-08 (N-CAR-01). El catálogo único añade obligaciones legales que no salen de las personas (alérgenos antes de pagar, protección de datos, transparencia de la IA y registro sanitario); están en `FOOD4ALL_necesidades.md`. Los estados son los del catálogo a 23/10/2026, con E1–E6.
+
 ---
 
 ## 4. Personas
@@ -266,14 +269,14 @@ Los identificadores de esta tabla eran propios del documento (RF-01 a RF-14) y *
 | RF-06.4, RF-06.5 | RF-03 | El checkout realiza una única compra para todos los vendedores | N-CAR-01, N-ENT-01 | Dado un carrito multivendedor, cuando el usuario confirma, entonces se registra un solo pedido con un solo pago y se informa de que la entrega será consolidada (RF-06.4-05, RF-05.2-05) |
 | RF-04.5 | RF-04 | Cada ficha de producto muestra vendedor, origen, alérgenos, tipo de fecha y conservación | N-CAD-01, N-CAT-01, N-CAT-02 | Dado un producto del catálogo, cuando el usuario abre su ficha, entonces ve todos esos campos antes de pagar (RF-04.5-02) |
 | RF-09.1, RF-09.2 | RF-05 | El usuario ve el estado de su pedido en cada fase | N-ENT-01, N-CAT-01 | Dado un pedido en curso, cuando el usuario abre el seguimiento, entonces ve el estado actual entre recibido, recogida en origen, en el hub, empaquetado, en reparto y entregado (RF-09.1-01, RF-09.2-01) |
-| RF-12.5 (V2) | RF-06 | El sitio envía recordatorios de qué consumir primero | N-CAD-01 | Dado un pedido entregado con productos perecederos, cuando se acerca su límite de consumo, entonces el usuario recibe un aviso con el producto y una sugerencia para aprovecharlo (RF-12.5-03) |
+| RF-12.5 (V2) | RF-06 | El sitio envía recordatorios de qué consumir primero | N-CAD-01 | Dado un pedido entregado con productos perecederos, cuando se entrega, entonces el usuario recibe un aviso «Consume primero» con los productos de vida útil más corta (RF-12.5-03) |
 | RF-02.2, RF-02.4 | RF-07 | El vendedor solicita el alta y consulta su estado | N-VEN-01, N-VEN-06 | Dado el formulario de alta, cuando el vendedor lo envía con los campos obligatorios, entonces ve el estado de su solicitud: recibida, en revisión, verificada o rechazada (RF-02.4-01) |
 | RF-03.1, RF-03.2, RF-03.3 | RF-08 | El vendedor mantiene su catálogo con ficha completa | N-VEN-02, N-VEN-06 | Dado un vendedor verificado, cuando añade un producto, entonces el sitio exige origen, precio, unidad, ingredientes, alérgenos, tipo de fecha y conservación (RF-03.9-01) |
 | RF-07.2, RF-07.3, RF-07.4, RF-16.2 | RF-09 | El vendedor ve solo su parte del pedido y puede confirmar, avisar de una falta o marcarla como lista | N-VEN-02, N-VEN-04 | Dado un pedido consolidado, cuando el vendedor abre su panel, entonces ve solo sus productos, cantidades, número de pedido y franja de recogida, y puede cambiar el estado (RF-07.2-02, RF-07.3-02, RF-07.4-03) |
-| RF-07.3-03, RF-07.3-04 (V2) | RF-10 | Ante una falta se propone un sustituto y se notifica al cliente | N-VEN-03, N-HUB-03 | Dado un producto marcado como falta, cuando se registra, entonces el vendedor puede proponer un sustituto de su catálogo y el cliente puede aceptarlo o rechazarlo (en B4 lo propone el vendedor, no el sistema) |
+| RF-07.3-09, RF-07.3-03, RF-07.3-04 (V2) | RF-10 | Ante una falta se propone un sustituto y se notifica al cliente | N-VEN-03, N-HUB-03 | Dado un producto marcado como falta, cuando se registra, entonces el vendedor puede proponer un sustituto de su catálogo y el cliente puede aceptarlo o rechazarlo (en B4 lo propone el vendedor, no el sistema). Si al pagar el cliente eligió qué hacer si falta algo («Sustituir por uno parecido» o «No servir», RF-07.3-09), se aplica su preferencia sin preguntarle |
 | RF-17.2 (V2) | RF-11 | El vendedor consulta su liquidación y la comisión aplicada | N-VEN-05 | Dado un periodo de ventas, cuando el vendedor abre su liquidación, entonces ve ventas, comisión y total a cobrar (RF-17.2-02; la comisión depende de D-02) |
-| RF-08.1 (MVP), RF-08.6 (V2) | RF-12 | El operador ve su ruta de recogida con franjas y datos de acceso | N-HUB-01 | Dada una ruta del día, cuando el operador la abre, entonces ve las paradas ordenadas con franja, dirección y notas de acceso (RF-08.1-01) |
-| RF-08.1-03, RF-08.2-04 (V2), RF-07.4-02 | RF-13 | El operador registra cantidad, estado y temperatura en cada parada | N-HUB-02, N-HUB-03 | Dada una parada, cuando el operador registra la recogida, entonces se guardan cantidad, estado, temperatura, lote y hora (el registro de temperatura es V2) |
+| RF-08.1 (MVP), RF-08.6 (V2) | RF-12 | El operador ve su ruta de recogida con franjas y datos de acceso | N-HUB-01 | Dada una ruta del día, cuando el operador la abre, entonces ve la lista de vendedores a visitar con dirección, franja de recogida y subpedidos (RF-08.1-01). Ordenar las paradas por cercanía es V2 (RF-08.1-02) |
+| RF-08.1-03, RF-08.2-04 (V2), RF-07.4-02 | RF-13 | El operador registra cantidad, estado y temperatura en cada parada | N-HUB-02, N-HUB-03 | Dada una parada, cuando el operador registra la recogida, entonces se guardan la hora de recogida y los bultos recogidos (RF-08.1-03). El registro de la temperatura de la cámara de frío es V2 (RF-08.2-04) |
 | RF-08.2 | RF-14 | El hub verifica el pedido consolidado antes de empaquetarlo | N-HUB-03 | Dado un pedido en el hub, cuando se verifica, entonces el sistema compara lo recogido con lo pedido y marca las diferencias (RF-08.2-02) |
 ---
 

@@ -14,12 +14,14 @@ h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); }
 h3 { font-size: 1.2rem; }
 p { margin: 0 0 12px; }
 
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Foco: verde sobre fondos claros y crema sobre los verdes (contraste ≥ 3 en ambos). */
+:focus-visible { outline: 2px solid var(--green); outline-offset: 2px; }
+:is(.site-header, .zone-tabs, .hero, .band-forest, .admin-bar) :focus-visible { outline-color: var(--forest-text); }
 
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
 .section { padding: 56px 0; border-top: 1px solid var(--border); }
-.eyebrow { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--earth); margin-bottom: 8px; }
+.eyebrow { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 8px; } /* color: palette.css */
 .muted { color: var(--text-soft); }
 .lead { font-size: 1.15rem; color: var(--text-soft); max-width: 60ch; }
 
@@ -32,7 +34,7 @@ p { margin: 0 0 12px; }
   transition: background-color var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }
 .btn-cta { background: var(--accent); color: var(--on-accent); }
-.btn-cta:hover { background: color-mix(in srgb, var(--accent) 88%, #000); }
+.btn-cta:hover { background: color-mix(in srgb, var(--accent) 88%, var(--black)); }
 .btn-primary { background: var(--green); color: var(--bg); }
 .btn-ghost { background: transparent; border-color: var(--border); color: var(--text); }
 .btn-ghost:hover { border-color: var(--text-soft); }
@@ -45,6 +47,7 @@ p { margin: 0 0 12px; }
 .badge-decidido { color: var(--success); background: color-mix(in srgb, var(--success) 12%, transparent); }
 .badge-hipotesis { color: var(--warning); background: color-mix(in srgb, var(--warning) 12%, transparent); }
 .badge-pendiente { color: var(--text-soft); background: color-mix(in srgb, var(--text-soft) 12%, transparent); }
+.badge-descartado { color: var(--danger); background: color-mix(in srgb, var(--danger) 12%, transparent); }
 .badge-ejemplo { color: var(--earth); background: color-mix(in srgb, var(--earth) 12%, transparent); }
 
 /* Listas con divisores en lugar de tarjetas */
@@ -63,7 +66,7 @@ p { margin: 0 0 12px; }
 .steps p { margin: 0; color: var(--text-soft); }
 
 /* Formularios */
-.field { display: grid; gap: 4px; margin-bottom: 14px; }
+.field { display: grid; gap: 4px; margin-bottom: 14px; align-content: start; }
 .field label { font-weight: 600; font-size: .95rem; }
 .field input, .field select, .field textarea {
   font: inherit; color: var(--text); background: var(--surface);
@@ -84,3 +87,6 @@ p { margin: 0 0 12px; }
 .form-row { display: grid; gap: 0 12px; grid-template-columns: 1fr; }
 @media (min-width: 560px) { .form-row { grid-template-columns: 1fr 1fr; } }
 .nowrap { white-space: nowrap; }
+
+/* Texto solo para lectores de pantalla (por ejemplo, «abre en otra pestaña») */
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }

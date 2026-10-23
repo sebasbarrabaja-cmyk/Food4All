@@ -1,5 +1,6 @@
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import Logo from './Logo.jsx';
+import Icon from './Icon.jsx';
 import SocialLinks from './SocialLinks.jsx';
 import useReveal from './useReveal.js';
 
@@ -14,11 +15,15 @@ export default function PublicLayout() {
           <Link to="/" className="brand" aria-label="FOOD4ALL, inicio">
             <Logo size={38} />
           </Link>
-          {/* Solo tres acciones: lo que el visitante necesita en menos de 30 segundos */}
+          {/* Tres acciones y, a la derecha, el asistente: visible, pero sin destacar más que comprar (RF-12.1-01, C-26) */}
           <nav aria-label="Principal" className="site-nav">
             <NavLink to="/comprar" className="nav-btn nav-btn--buy">Quiero comprar</NavLink>
             <NavLink to="/vender" className="nav-btn">Quiero vender</NavLink>
             <Link to="/#como" className={`nav-btn${pathname === '/' && hash === '#como' ? ' active' : ''}`}>Cómo funciona</Link>
+            {/* Sin estado activo: en /comprar ya se marca «Quiero comprar», y en crema destacaría tanto como él */}
+            <Link to="/comprar#asistente" className="nav-btn nav-btn--ai">
+              <Icon name="spark" size={18} /> Asistente IA
+            </Link>
           </nav>
         </div>
       </header>

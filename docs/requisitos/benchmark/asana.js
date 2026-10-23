@@ -409,7 +409,7 @@ function rellenar(texto, contenido) {
   mx.push(`- Procesos RF sin historia: ${sinUS.length ? sinUS.join(', ') : '**ninguno**'}.`);
   mx.push(`- Subrequisitos: ${subs.length} (${subs.filter(({ s }) => primeraEntrega(s.atomicos) === 'MVP').length} del MVP, todos con ficha completa).`);
   mx.push(...avisos.map((a) => `- ${a}`));
-  mx.push(`- Necesidades de usuario confirmadas con entrevistas: **0** de ${NECESIDADES.filter((n) => n.tipo === 'Usuario').length}. Las entrevistas F-07 y F-08 se registran el 23/10/2026; hasta entonces todas son hipótesis (regla de evidencia en \`FOOD4ALL_necesidades.md\`).`);
+  mx.push(`- Necesidades de usuario confirmadas con entrevistas: **0** de ${NECESIDADES.filter((n) => n.tipo === 'Usuario').length}. Entrevistas: F-07 tiene E1–E6 (23/10/2026) y F-08 (vendedores) ninguna; sus estados siguen la regla de evidencia de \`FOOD4ALL_necesidades.md\`.`);
   mx.push('', '## 4. Fuentes', '', '| ID | Fuente | Tipo y fiabilidad |', '| --- | --- | --- |', ...FUENTES_N.map(([id, t, f]) => `| ${id} | ${t} | ${f} |`), '');
   fs.writeFileSync(MATRIZ, mx.join('\n'));
 

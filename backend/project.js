@@ -29,9 +29,13 @@ export const PROJECT = {
   },
 
   decisions: {
-    decidido: ['Marketplace abierto con estándares mínimos', 'Carrito multi-vendedor', 'Entrega consolidada coordinada por FOOD4ALL', 'IA visible y funcional', 'Producto local como elemento central', 'Comisión como ingreso principal', 'Suscripción por beneficios'],
+    decidido: ['Marketplace abierto con estándares mínimos', 'Carrito multi-vendedor', 'Entrega consolidada coordinada por FOOD4ALL', 'IA visible y funcional', 'Producto local como elemento central', 'Comisión como ingreso principal', 'Suscripción por beneficios', 'Buscador del panel con IA gratuita (Gemini), solo para el equipo', 'Revisor de prompts con IA gratuita (Gemini)'],
     hipotesis: ['Compra mínima de unos 10–15 €', 'Primer pedido con ventaja de entrega', 'Algunos productos más baratos que en el supermercado'],
-    pendiente: ['Porcentaje de comisión', 'Precios de suscripción', 'Ubicación del hub', 'Puntos de recogida', 'Horarios de entrega', 'Quién paga cada parte de la logística', 'Definición exacta de "local"', 'Proceso detallado de alta de vendedores', 'Rol jurídico de FOOD4ALL', 'Buscador del panel de administración (con IA o sin ella)', 'Cuentas de redes sociales (Instagram, TikTok, YouTube, Pinterest)'],
+    pendiente: ['Porcentaje de comisión', 'Precios de suscripción', 'Ubicación del hub', 'Puntos de recogida', 'Horarios de entrega', 'Quién paga cada parte de la logística', 'Definición exacta de "local"', 'Proceso detallado de alta de vendedores', 'Rol jurídico de FOOD4ALL', 'Cuentas de redes sociales (Instagram, TikTok, YouTube, Pinterest)', 'Versión móvil (sin prioridad)'],
+    descartado: [
+      'Agente (Hermes Agent) para el buscador del panel: responde con terminal y archivos del servidor, necesita un modelo de IA aparte y es pesado de instalar en cada ordenador; basta un buscador con IA gratuita',
+      'API de pago de Anthropic para el revisor de prompts: tiene coste por uso; para 5-10 revisiones al día basta el nivel gratuito de Gemini',
+    ],
   },
 
   market: [

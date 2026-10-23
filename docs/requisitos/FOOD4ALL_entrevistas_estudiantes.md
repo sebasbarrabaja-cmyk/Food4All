@@ -1,7 +1,7 @@
 # FOOD4ALL — Entrevistas de usuarios e historias de usuario
 
 **Documento de trabajo** · Elaborado el 23/10/2026  
-**Base:** apuntes facilitados después de cuatro entrevistas. No son transcripciones literales.  
+**Base:** apuntes facilitados después de cuatro entrevistas. No son transcripciones literales. Datos que faltaban completados por Sebastián el 23/10/2026 (C-25 de la línea base).  
 **Propósito:** centralizar los datos, distinguir lo expresado por los entrevistados de las interpretaciones del equipo y proponer tres historias de usuario iniciales.
 
 ---
@@ -42,10 +42,12 @@ Las entrevistas son exploratorias y la muestra es pequeña. Permiten identificar
 
 - El estudiante cocina.
 - La comida la pagan su abuela o sus abuelas.
+- Compra una vez a la semana y, a veces, algún día suelto.
 - Suele comer prácticamente lo mismo cada semana.
+- No recuerda ninguna dificultad reciente para organizar la compra.
 - Dice que sabe lo que quiere preparar.
 - Su elección combina la orientación de su entrenador personal con sus propias preferencias y apetencias.
-- Indica que va justo de dinero y menciona un máximo de 100 €, pero **no quedó concretado el periodo al que corresponde esa cantidad**.
+- Indica que va justo de dinero: unos **100 € al mes** como máximo. Es difícil de precisar porque a veces su familia también le compra productos.
 - Señala que no suele desperdiciar comida.
 - Cuando necesita resolver una comida, puede comprar algo preparado o utilizar lo que tenga disponible en casa.
 
@@ -54,7 +56,7 @@ Las entrevistas son exploratorias y la muestra es pequeña. Permiten identificar
 - Consideraría la solución como una opción si viviera de forma independiente; no expresó una intención clara de utilizarla en su situación actual.
 - Revisaría las recomendaciones de IA y considera que podría confiar en ellas porque conoce el tema de alimentación y podría contrastarlas.
 - Valora métodos de pago sencillos, como Apple Pay o Google Pay.
-- Menciona «plazos asequibles»; no quedó aclarado exactamente qué modalidad de pago tiene en mente.
+- Pide «plazos asequibles» **de entrega**: que el pedido llegue en un rango de días razonable, de 1 a 4 días, y no tarde semanas. No se refiere a pagar a plazos.
 - Pide un catálogo amplio, ofertas y regularidad del servicio.
 - Sobre la entrega, destaca tanto la puntualidad/fiabilidad como que los productos lleguen frescos y en buen estado.
 
@@ -74,6 +76,8 @@ Este perfil no manifiesta una necesidad fuerte de ayuda para decidir qué comer,
 - La planificación de las comidas la hacen sus padres.
 - No identifica problemas de presupuesto.
 - Indica que no suele desperdiciar comida.
+- Su última semana fue bien, sin ningún problema.
+- Cuando no sabe qué comer, improvisa con lo que haya en la nevera y, si hace falta, sale a comprar.
 - Cuando organiza sus propias comidas, planifica qué comer, compra los ingredientes y prepara platos sencillos, sin complicarse con recetas elaboradas.
 
 ### Opinión sobre FOOD4ALL y necesidades expresadas
@@ -100,7 +104,8 @@ No se detecta un problema actual de planificación, ya que sus padres se ocupan 
 - Suele comprar los mismos productos.
 - Mira qué le falta y hace la compra.
 - Declara un presupuesto alimentario de **30–50 € semanales**.
-- Hace compras pequeñas y controla lo que compra, aunque a veces se le estropean las verduras.
+- Hace compras pequeñas y controla lo que compra, aunque a veces se le estropea alguna verdura o fruta que compra para probar algo nuevo y luego se le olvida.
+- No comparte la compra con sus compañeros de piso: cada uno paga lo suyo, como mucho algún básico como el aceite.
 - Cuando le falta un producto para cocinar, suele ir a comprarlo, aunque le resulta molesto.
 
 ### Opinión sobre FOOD4ALL y necesidades expresadas
@@ -129,7 +134,8 @@ Las necesidades potenciales se relacionan con reducir visitas imprevistas a la t
 - Declara un presupuesto alimentario de **40–60 € semanales**. Puede quedarse ajustado y le gustaría dedicar más dinero a la alimentación.
 - Suele hacer compras grandes cada semana o cada dos semanas.
 - Cuando le falta un producto, improvisa: cambia el plan de comida o prepara algo más sencillo.
-- Indica que a veces desperdicia alimentos; no se anotó qué productos ni con qué frecuencia.
+- No suele tener problemas de desperdicio.
+- No comparte la compra con sus compañeros de piso: cada uno paga lo suyo, como mucho algún básico como el aceite.
 
 ### Opinión sobre FOOD4ALL y necesidades expresadas
 
@@ -149,9 +155,9 @@ Es el perfil del público objetivo que expresa el interés más claro, aunque co
 |---|---|---|---|---|
 | Quién organiza la comida | Cocina el propio estudiante; pagan sus abuelas | Principalmente sus padres | El estudiante se organiza | El estudiante se organiza |
 | Planificación | Conoce lo que quiere preparar; rutina repetida | Sus padres planifican la mayor parte | Improvisa según la nevera | Improvisa según la nevera |
-| Presupuesto | Máximo de 100 €, periodo no concretado | No identifica problema | 30–50 €/semana | 40–60 €/semana; a veces ajustado |
-| Compra | Sin frecuencia concreta registrada | Principalmente la familia | Compras pequeñas | Compras grandes cada 1–2 semanas |
-| Desperdicio | Dice que no suele desperdiciar | Dice que no | A veces se estropean verduras | A veces desperdicia; detalle no registrado |
+| Presupuesto | Unos 100 €/mes; a veces le compra su familia | No identifica problema | 30–50 €/semana | 40–60 €/semana; a veces ajustado |
+| Compra | Una vez a la semana y algún día suelto | Principalmente la familia | Compras pequeñas | Compras grandes cada 1–2 semanas |
+| Desperdicio | Dice que no suele desperdiciar | Dice que no | A veces, verdura o fruta comprada para probar algo nuevo | No suele desperdiciar |
 | Interés en FOOD4ALL | Condicional a independizarse | Interés condicionado a productos locales, menos procesados y baratos | Dice que no la usaría | Interés condicionado a calidad, precio y cantidad |
 | Confianza en IA | Revisaría las propuestas y podría confiar por su conocimiento | La pondría a prueba | Poca o ninguna | Poca o ninguna; la pondría a prueba |
 | Otros factores relevantes | Pago sencillo, ofertas, catálogo, entrega fiable y fresca | Descubrimiento, variedad y confianza/reputación | Descuento, sencillez, rapidez y recomendación; aun así rechaza la propuesta | Descuento, sencillez, rapidez y recomendación |
@@ -238,7 +244,7 @@ Como consumidor interesado en ampliar las opciones para mis platos, quiero descu
 1. **No asumir que todo estudiante tiene el mismo problema.** Los perfiles que viven con familiares no experimentan necesariamente dificultades de compra o planificación.
 2. **Mostrar utilidad sin exigir confianza ciega en la IA.** En los dos estudiantes que comparten piso, la confianza en la IA es baja. Las propuestas deberían ser revisables, transparentes y opcionales, y el usuario debería conservar el control.
 3. **Demostrar el valor económico con información clara.** Mostrar precio, cantidad, origen y total de la cesta; no prometer que todos los productos serán más baratos.
-4. **Tratar la frescura y la fiabilidad de la entrega como requisitos por validar.** Aparecieron en el primer perfil comparativo, pero deben contrastarse con el público prioritario.
+4. **Tratar la frescura y la fiabilidad de la entrega como requisitos por validar.** Aparecieron en el primer perfil comparativo, que además pide recibir el pedido en 1–4 días, pero deben contrastarse con el público prioritario.
 5. **La confianza no se resuelve inventando prueba social.** La falta de valoraciones fue una preocupación explícita. Si no existen reseñas reales, debe comunicarse con honestidad y aportar otra información verificable sobre los vendedores y el servicio.
 6. **Los descuentos podrían incentivar la prueba, pero no garantizan uso recurrente.** Debe comprobarse si convierten el interés en una compra y si el usuario volvería a utilizar la plataforma.
 7. **La publicidad se refiere, según la aclaración recibida, a productos y ofertas dentro de la plataforma.** Si se incorpora, debe distinguirse claramente del contenido orgánico y de las recomendaciones de la IA.
@@ -256,11 +262,10 @@ Antes de considerar una solución de envasado o atmósfera modificada habría qu
 
 ## 11. Datos pendientes o no registrados
 
-- **Entrevista 1:** el máximo de 100 € se refiere a «otro periodo», pero no se concretó cuál. No debe etiquetarse como semanal ni mensual.
-- **Entrevista 1:** no se registró qué entiende exactamente por «plazos asequibles» ni a qué modalidad de pago se refiere.
+- **Entrevista 1:** resuelto el 23/10: el máximo es mensual (unos 100 €) y «plazos asequibles» se refiere al plazo de entrega (1–4 días), no al pago.
 - **Entrevista 2:** la respuesta sobre desayunos y meriendas se conoce; no hay información adicional sobre el coste o la frecuencia de compra de esos productos.
-- **Entrevista 3:** no se indicó con qué frecuencia exacta se estropean las verduras.
-- **Entrevista 4:** se sabe que a veces desperdicia, pero no qué productos, en qué cantidad ni con qué frecuencia.
+- **Entrevista 3:** se sabe qué se le estropea (verdura o fruta comprada para probar algo nuevo), pero no con qué frecuencia.
+- **Entrevista 4:** resuelto el 23/10: no suele desperdiciar (los apuntes anteriores decían «a veces»).
 - **Entrevistas 3 y 4:** se conocen los presupuestos semanales aproximados, pero no el desglose por categorías o productos.
 - **Todas las entrevistas:** no se registraron fechas, edad, curso, ciudad, frecuencia exacta de compra en todos los casos ni citas literales completas.
 - **Interés de uso:** una declaración de interés no equivale a disposición a pagar. Salvo el rechazo explícito de la Persona 1 del piso, no se registró un compromiso de compra real ni una prueba del producto.

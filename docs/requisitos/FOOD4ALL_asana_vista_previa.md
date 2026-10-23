@@ -313,7 +313,7 @@ Acceso del administrador (va por /admin, RF-13.1); acceso con Apple (RF-01.3-09,
 - [ ] **RF-01.1-01** `Must·MVP·Decidido` Mostrar el enlace de texto «Entrar» en la cabecera verde, a la derecha de «Cómo funciona» y separado 24 px; no es un botón, para mantener los tres botones principales. _(N-CAR-01)_
   - Criterio: Dado un visitante sin sesión, cuando carga cualquier página pública, entonces ve «Entrar» a la derecha de «Cómo funciona».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-02** `Must·MVP·Pendiente` Llevar el enlace «Entrar» a la ruta /entrar. _(N-CAR-01)_
+- [ ] **RF-01.1-02** `Must·MVP·Decidido` Llevar el enlace «Entrar» a la ruta /entrar. _(N-CAR-01)_
   - Criterio: Dado un visitante, cuando pulsa «Entrar», entonces la URL pasa a /entrar.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-01.1-03** `Must·MVP·Decidido` Mostrar /entrar sobre fondo crema --bg #F6F1E6 con la cabecera y el pie normales de la web. _(N-CAR-01)_
@@ -322,25 +322,25 @@ Acceso del administrador (va por /admin, RF-13.1); acceso con Apple (RF-01.3-09,
 - [ ] **RF-01.1-04** `Must·MVP·Decidido` Mostrar el acceso en una tarjeta centrada de 420 px de ancho, fondo blanco --surface, borde 1 px --border #DDD0B0, radio 10 px, sin sombra y 32 px de relleno. _(N-CAR-01)_
   - Criterio: Dada una pantalla de 1280 px, cuando se carga /entrar, entonces la tarjeta mide 420 px y está centrada.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-05** `Must·MVP·Pendiente` Titular la tarjeta «Entra en FOOD4ALL» en Fraunces 600, tamaño h2 y color --green #2F5233. _(N-CAR-01)_
+- [ ] **RF-01.1-05** `Must·MVP·Decidido` Titular la tarjeta «Entra en FOOD4ALL» en Fraunces 600, tamaño h2 y color --green #2F5233. _(N-CAR-01)_
   - Criterio: Dada /entrar, cuando se carga, entonces el título es exactamente «Entra en FOOD4ALL».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-06** `Should·MVP·Pendiente` Mostrar bajo el título el texto «Compra a varios vendedores locales con una sola cuenta.» en Figtree 17 px y color --text-soft #4A5340. _(N-CAR-01)_
+- [ ] **RF-01.1-06** `Should·MVP·Decidido` Mostrar bajo el título el texto «Compra a varios vendedores locales con una sola cuenta.» en Figtree 17 px y color --text-soft #4A5340. _(N-CAR-01)_
   - Criterio: Dada /entrar, cuando se carga, entonces se ve ese texto bajo el título.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-07** `Must·MVP·Pendiente` Ordenar la tarjeta así: título, subtítulo, botón de Google, separador «o con tu correo», formulario y enlaces de pie. _(N-CAR-01)_
+- [ ] **RF-01.1-07** `Must·MVP·Decidido` Ordenar la tarjeta así: título, subtítulo, botón de Google, separador «o con tu correo», formulario y enlaces de pie. _(N-CAR-01)_
   - Criterio: Dada /entrar, cuando se recorre de arriba abajo, entonces los elementos aparecen en ese orden.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-08** `Must·MVP·Pendiente` Mostrar en el pie de la tarjeta «¿No tienes cuenta? Crear cuenta» con enlace a /registro. _(N-CAR-01)_
+- [ ] **RF-01.1-08** `Must·MVP·Decidido` Mostrar en el pie de la tarjeta «¿No tienes cuenta? Crear cuenta» con enlace a /registro. _(N-CAR-01)_
   - Criterio: Dada /entrar, cuando pulsa «Crear cuenta», entonces llega a /registro.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.1-09** `Should·MVP·Pendiente` Mostrar bajo el anterior «¿Vendes productos locales? Solicita el alta» con enlace a /vender#alta. _(N-VEN-06)_
+- [ ] **RF-01.1-09** `Should·MVP·Decidido` Mostrar bajo el anterior «¿Vendes productos locales? Solicita el alta» con enlace a /vender#alta. _(N-VEN-06)_
   - Criterio: Dada /entrar, cuando pulsa «Solicita el alta», entonces llega al formulario de alta de vendedor.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-01.1-10** `Must·MVP·Pendiente` Guardar la página de origen en el parámetro volver cuando se exige sesión (por ejemplo /entrar?volver=/carrito) y redirigir a ella tras entrar. _(N-CAR-01)_
+- [ ] **RF-01.1-10** `Must·MVP·Decidido` Guardar la página de origen en el parámetro volver cuando se exige sesión (por ejemplo /entrar?volver=/carrito) y redirigir a ella tras entrar. _(N-CAR-01)_
   - Criterio: Dado un visitante que pulsa «Pagar» sin sesión, cuando entra, entonces vuelve a /carrito con el carrito intacto.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.1-11** `Must·MVP·Pendiente` Aceptar en volver solo rutas internas que empiecen por «/»; cualquier otra se ignora y se usa la redirección por rol. _(N-CUE-01)_
+- [ ] **RF-01.1-11** `Must·MVP·Decidido` Aceptar en volver solo rutas internas que empiecen por «/»; cualquier otra se ignora y se usa la redirección por rol. _(N-CUE-01)_
   - Criterio: Dado volver=https://otra.web, cuando entra, entonces no sale de FOOD4ALL.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-01.1-12** `Should·V2·Pendiente` En pantallas de menos de 768 px, mostrar la tarjeta a ancho completo con 16 px de margen lateral. _(N-CAR-01)_
@@ -436,58 +436,58 @@ Doble factor de autenticación; inicio de sesión sin contraseña (enlace mágic
 
 **Requisitos atómicos (18)**
 
-- [ ] **RF-01.2-01** `Must·MVP·Pendiente` Pedir el correo en un campo de tipo email con etiqueta visible «Correo electrónico» y autocompletado email. _(N-CAR-01)_
+- [ ] **RF-01.2-01** `Must·MVP·Decidido` Pedir el correo en un campo de tipo email con etiqueta visible «Correo electrónico» y autocompletado email. _(N-CAR-01)_
   - Criterio: Dado el formulario, cuando el foco entra en el campo, entonces el lector de pantalla anuncia «Correo electrónico».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-02** `Must·MVP·Pendiente` Pedir la contraseña en un campo de tipo password con etiqueta «Contraseña» y autocompletado current-password. _(N-CAR-01)_
+- [ ] **RF-01.2-02** `Must·MVP·Decidido` Pedir la contraseña en un campo de tipo password con etiqueta «Contraseña» y autocompletado current-password. _(N-CAR-01)_
   - Criterio: Dado el formulario, cuando escribe, entonces los caracteres se ocultan.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-03** `Must·MVP·Pendiente` Dar a los campos 48 px de alto, borde 1 px #DDD0B0 y radio 10 px; al enfocarlos, borde de 2 px --green. _(N-CAR-01)_
+- [ ] **RF-01.2-03** `Must·MVP·Decidido` Dar a los campos 48 px de alto, borde 1 px #DDD0B0 y radio 10 px; al enfocarlos, borde de 2 px --green. _(N-CAR-01)_
   - Criterio: Dado un campo, cuando recibe el foco, entonces su borde pasa a 2 px #2F5233.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-04** `Should·MVP·Pendiente` Incluir un icono de ojo en el campo de contraseña que la muestra u oculta, con texto alternativo «Mostrar contraseña» / «Ocultar contraseña». _(N-CAR-01)_
+- [ ] **RF-01.2-04** `Should·MVP·Decidido` Incluir un icono de ojo en el campo de contraseña que la muestra u oculta, con texto alternativo «Mostrar contraseña» / «Ocultar contraseña». _(N-CAR-01)_
   - Criterio: Dada una contraseña escrita, cuando pulsa el ojo, entonces se ve en claro y el texto alternativo cambia.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-05** `Should·MVP·Pendiente` Incluir la casilla «Mantener la sesión iniciada», desmarcada por defecto. _(N-CAR-01)_
+- [ ] **RF-01.2-05** `Should·MVP·Decidido` Incluir la casilla «Mantener la sesión iniciada», desmarcada por defecto. _(N-CAR-01)_
   - Criterio: Dado /entrar, cuando se carga, entonces la casilla está desmarcada.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-06** `Must·MVP·Pendiente` Mostrar el enlace «¿Has olvidado tu contraseña?» alineado a la derecha, encima del botón «Entrar». _(N-CAR-01)_
+- [ ] **RF-01.2-06** `Must·MVP·Decidido` Mostrar el enlace «¿Has olvidado tu contraseña?» alineado a la derecha, encima del botón «Entrar». _(N-CAR-01)_
   - Criterio: Dado /entrar, cuando pulsa el enlace, entonces llega a /recuperar.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-01.2-07** `Must·MVP·Decidido` Mostrar el botón «Entrar» a ancho completo, 48 px, forma píldora, fondo --accent #D9822B y texto --on-accent #23301F en Figtree 600. _(N-CAR-01)_
   - Criterio: Dado /entrar, cuando se carga, entonces el botón es naranja #D9822B con texto «Entrar».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-08** `Must·MVP·Pendiente` Mientras se comprueban las credenciales, cambiar el texto del botón a «Entrando…» y desactivarlo. _(N-CAR-01)_
+- [ ] **RF-01.2-08** `Must·MVP·Decidido` Mientras se comprueban las credenciales, cambiar el texto del botón a «Entrando…» y desactivarlo. _(N-CAR-01)_
   - Criterio: Dada una petición en curso, cuando pulsa otra vez, entonces no se envía una segunda petición.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-09** `Must·MVP·Pendiente` Validar en el navegador el formato del correo y mostrar «Escribe un correo válido, por ejemplo nombre@correo.com» bajo el campo en rojo #C0392B. _(N-CAR-01)_
+- [ ] **RF-01.2-09** `Must·MVP·Decidido` Validar en el navegador el formato del correo y mostrar «Escribe un correo válido, por ejemplo nombre@correo.com» bajo el campo en rojo #C0392B. _(N-CAR-01)_
   - Criterio: Dado «ana@», cuando pulsa «Entrar», entonces sale ese mensaje y el foco va al campo.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-10** `Must·MVP·Pendiente` Si la contraseña está vacía, mostrar «Escribe tu contraseña» bajo el campo. _(N-CAR-01)_
+- [ ] **RF-01.2-10** `Must·MVP·Decidido` Si la contraseña está vacía, mostrar «Escribe tu contraseña» bajo el campo. _(N-CAR-01)_
   - Criterio: Dada la contraseña vacía, cuando pulsa «Entrar», entonces sale ese mensaje.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-11** `Must·MVP·Pendiente` Si las credenciales no son correctas, mostrar encima del formulario, con fondo --tint-tomato #F6DCD3, «El correo o la contraseña no son correctos.» sin decir cuál falla. _(N-CUE-01)_
+- [ ] **RF-01.2-11** `Must·MVP·Decidido` Si las credenciales no son correctas, mostrar encima del formulario, con fondo --tint-tomato #F6DCD3, «El correo o la contraseña no son correctos.» sin decir cuál falla. _(N-CUE-01)_
   - Criterio: Dada una contraseña incorrecta, cuando pulsa «Entrar», entonces ve ese aviso y el campo contraseña se vacía.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-12** `Must·MVP·Pendiente` Redirigir tras entrar según el rol: cliente a /comprar/cliente y vendedor a /vender/panel, salvo que exista volver. _(N-CAR-01)_
+- [ ] **RF-01.2-12** `Must·MVP·Decidido` Redirigir tras entrar según el rol: cliente a /comprar/cliente y vendedor a /vender/panel, salvo que exista volver. _(N-CAR-01)_
   - Criterio: Dado un vendedor, cuando entra, entonces llega a /vender/panel.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-13** `Must·MVP·Pendiente` Bloquear la cuenta 15 minutos tras 5 intentos fallidos seguidos con el mismo correo y mostrar «Has superado los intentos. Prueba de nuevo en 15 minutos o recupera tu contraseña.» _(N-CUE-01)_
+- [ ] **RF-01.2-13** `Must·MVP·Decidido` Bloquear la cuenta 15 minutos tras 5 intentos fallidos seguidos con el mismo correo y mostrar «Has superado los intentos. Prueba de nuevo en 15 minutos o recupera tu contraseña.» _(N-CUE-01)_
   - Criterio: Dados 5 fallos, cuando lo intenta por sexta vez con la contraseña correcta, entonces no entra y ve el aviso.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-14** `Must·MVP·Pendiente` Cerrar la sesión tras 2 horas sin actividad si no se marcó «Mantener la sesión»; con ella, tras 30 días. _(N-CUE-01)_
+- [ ] **RF-01.2-14** `Must·MVP·Decidido` Cerrar la sesión tras 2 horas sin actividad si no se marcó «Mantener la sesión»; con ella, tras 30 días. _(N-CUE-01)_
   - Criterio: Dada una sesión sin marcar, cuando pasan 2 h sin actividad, entonces la siguiente acción pide entrar.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-15** `Must·MVP·Pendiente` Permitir que un vendedor con el alta «En revisión» entre, pero mostrarle solo el estado de su solicitud. _(N-VEN-07)_
+- [ ] **RF-01.2-15** `Must·MVP·Decidido` Permitir que un vendedor con el alta «En revisión» entre, pero mostrarle solo el estado de su solicitud. _(N-VEN-07)_
   - Criterio: Dado un vendedor en revisión, cuando entra, entonces ve su solicitud y no el panel completo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-01.2-16** `Should·MVP·Pendiente` Enviar el formulario con la tecla Intro desde cualquiera de los dos campos. _(N-CAR-01)_
+- [ ] **RF-01.2-16** `Should·MVP·Decidido` Enviar el formulario con la tecla Intro desde cualquiera de los dos campos. _(N-CAR-01)_
   - Criterio: Dado el foco en contraseña, cuando pulsa Intro, entonces se envía el formulario.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-17** `Must·MVP·Pendiente` Seguir el orden de tabulación: Google, correo, contraseña, ojo, casilla, enlace de olvido, «Entrar». _(N-CAR-01)_
+- [ ] **RF-01.2-17** `Must·MVP·Decidido` Seguir el orden de tabulación: Google, correo, contraseña, ojo, casilla, enlace de olvido, «Entrar». _(N-CAR-01)_
   - Criterio: Dado el teclado, cuando pulsa Tab desde el inicio, entonces recorre los elementos en ese orden.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.2-18** `Must·MVP·Pendiente` Anunciar los mensajes de error con aria-live para lectores de pantalla. _(N-CAR-01)_
+- [ ] **RF-01.2-18** `Must·MVP·Decidido` Anunciar los mensajes de error con aria-live para lectores de pantalla. _(N-CAR-01)_
   - Criterio: Dado un error, cuando aparece, entonces el lector de pantalla lo lee sin mover el foco a mano.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 
@@ -661,37 +661,37 @@ Registro de vendedores (RF-02); datos de salud (van en RF-01.9 con consentimient
 
 **Requisitos atómicos (11)**
 
-- [ ] **RF-01.4-01** `Must·MVP·Pendiente` Ofrecer el registro en /registro con la misma tarjeta y estilo que /entrar y el título «Crea tu cuenta». _(N-CAR-01)_
+- [ ] **RF-01.4-01** `Must·MVP·Decidido` Ofrecer el registro en /registro con la misma tarjeta y estilo que /entrar y el título «Crea tu cuenta». _(N-CAR-01)_
   - Criterio: Dado /registro, cuando se carga, entonces el título es «Crea tu cuenta».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-02** `Must·MVP·Pendiente` Pedir el nombre (2 a 40 caracteres); si falta, mostrar «Escribe tu nombre». _(N-CAR-01)_
+- [ ] **RF-01.4-02** `Must·MVP·Decidido` Pedir el nombre (2 a 40 caracteres); si falta, mostrar «Escribe tu nombre». _(N-CAR-01)_
   - Criterio: Dado un nombre de 1 carácter, cuando envía, entonces ve el mensaje.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-03** `Must·MVP·Pendiente` Pedir el correo y comprobar que no está registrado; si lo está, mostrar «Ya hay una cuenta con este correo. ¿Quieres entrar?» con enlace a /entrar. _(N-CAR-01)_
+- [ ] **RF-01.4-03** `Must·MVP·Decidido` Pedir el correo y comprobar que no está registrado; si lo está, mostrar «Ya hay una cuenta con este correo. ¿Quieres entrar?» con enlace a /entrar. _(N-CAR-01)_
   - Criterio: Dado un correo registrado, cuando envía, entonces ve el aviso con el enlace.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-04** `Must·MVP·Pendiente` Exigir una contraseña de al menos 8 caracteres con una letra y un número; si no, «Usa al menos 8 caracteres con letras y números». _(N-CUE-01)_
+- [ ] **RF-01.4-04** `Must·MVP·Decidido` Exigir una contraseña de al menos 8 caracteres con una letra y un número; si no, «Usa al menos 8 caracteres con letras y números». _(N-CUE-01)_
   - Criterio: Dado «abcdefgh», cuando envía, entonces ve el mensaje.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-01.4-05** `Could·V2·Pendiente` Mostrar bajo la contraseña una barra de fortaleza de 4 tramos que se actualiza al escribir. _(N-CUE-01)_
   - Criterio: Dada una contraseña de 12 caracteres con símbolos, cuando la escribe, entonces se llenan los 4 tramos.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-06** `Must·MVP·Pendiente` Pedir la zona con un desplegable obligatorio: Málaga, Sevilla o Granada; si falta, «Elige tu zona». _(N-CAR-01)_
+- [ ] **RF-01.4-06** `Must·MVP·Decidido` Pedir la zona con un desplegable obligatorio: Málaga, Sevilla o Granada; si falta, «Elige tu zona». _(N-CAR-01)_
   - Criterio: Dada la zona vacía, cuando envía, entonces ve el mensaje.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
 - [ ] **RF-01.4-07** `Must·MVP·Decidido` Exigir la casilla «Acepto las Condiciones de uso y la Política de privacidad», con ambos títulos enlazados; si falta, «Para crear la cuenta tienes que aceptar las condiciones». _(N-CUE-01)_
   - Criterio: Dada la casilla sin marcar, cuando envía, entonces no se crea la cuenta.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-01.4-08** `Should·MVP·Pendiente` Ofrecer la casilla opcional «Quiero recibir novedades por correo», desmarcada por defecto. _(N-CUE-01)_
+- [ ] **RF-01.4-08** `Should·MVP·Decidido` Ofrecer la casilla opcional «Quiero recibir novedades por correo», desmarcada por defecto. _(N-CUE-01)_
   - Criterio: Dado /registro, cuando se carga, entonces la casilla está desmarcada.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-01.4-09** `Must·MVP·Decidido` No pedir alergias ni datos de salud en el registro. _(N-CUE-01)_
   - Criterio: Dado /registro, cuando se revisan los campos, entonces no hay ninguno de salud.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-10** `Must·MVP·Pendiente` Mostrar el botón «Crear cuenta» con el mismo estilo que «Entrar». _(N-CAR-01)_
+- [ ] **RF-01.4-10** `Must·MVP·Decidido` Mostrar el botón «Crear cuenta» con el mismo estilo que «Entrar». _(N-CAR-01)_
   - Criterio: Dado /registro, cuando se carga, entonces el botón es naranja #D9822B.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-01.4-11** `Must·MVP·Pendiente` Al crear la cuenta, iniciar sesión y llevar a /comprar/cliente con el aviso «Te hemos enviado un correo para confirmar tu cuenta.» _(N-CAR-01)_
+- [ ] **RF-01.4-11** `Must·MVP·Decidido` Al crear la cuenta, iniciar sesión y llevar a /comprar/cliente con el aviso «Te hemos enviado un correo para confirmar tu cuenta.» _(N-CAR-01)_
   - Criterio: Dado un registro correcto, cuando termina, entonces ve el aviso en /comprar/cliente.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 
@@ -793,13 +793,13 @@ Verificar el teléfono; cambiar de correo (RF-01.8-03).
 - [ ] **RF-01.5-01** `Must·MVP·Pendiente` Enviar al registrarse un correo con el botón «Confirmar mi correo» y un enlace válido 24 horas. _(N-CUE-01)_
   - Criterio: Dado un registro, cuando llega el correo, entonces el enlace caduca a las 24 h.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.5-02** `Must·MVP·Pendiente` Permitir navegar y llenar el carrito sin verificar, pero no pagar. _(N-CUE-01)_
+- [ ] **RF-01.5-02** `Must·MVP·Decidido` Permitir navegar y llenar el carrito sin verificar, pero no pagar. _(N-CUE-01)_
   - Criterio: Dado un cliente sin verificar, cuando pulsa «Pagar», entonces ve «Confirma tu correo para poder pagar. Reenviar correo».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.5-03** `Should·MVP·Pendiente` Permitir reenviar el correo de verificación como máximo una vez cada 2 minutos. _(N-CUE-01)_
+- [ ] **RF-01.5-03** `Should·MVP·Decidido` Permitir reenviar el correo de verificación como máximo una vez cada 2 minutos. _(N-CUE-01)_
   - Criterio: Dado un reenvío, cuando pulsa otra vez antes de 2 min, entonces el botón está desactivado con la cuenta atrás.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.5-04** `Must·MVP·Pendiente` Si el enlace ha caducado, mostrar «Este enlace ha caducado» y un botón «Enviar otro». _(N-CUE-01)_
+- [ ] **RF-01.5-04** `Must·MVP·Decidido` Si el enlace ha caducado, mostrar «Este enlace ha caducado» y un botón «Enviar otro». _(N-CUE-01)_
   - Criterio: Dado un enlace de hace 25 h, cuando lo abre, entonces ve ese aviso.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -870,22 +870,22 @@ Recuperar la cuenta sin acceso al correo (se atiende por soporte, RF-19); pregun
 
 **Requisitos atómicos (7)**
 
-- [ ] **RF-01.6-01** `Must·MVP·Pendiente` Ofrecer /recuperar con el título «Recupera tu contraseña», un campo de correo y el botón naranja «Enviar enlace». _(N-CAR-01)_
+- [ ] **RF-01.6-01** `Must·MVP·Decidido` Ofrecer /recuperar con el título «Recupera tu contraseña», un campo de correo y el botón naranja «Enviar enlace». _(N-CAR-01)_
   - Criterio: Dado /recuperar, cuando se carga, entonces ve ese título y ese botón.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.6-02** `Must·MVP·Pendiente` Responder siempre «Si hay una cuenta con ese correo, te hemos enviado un enlace. Revisa también la carpeta de spam.», exista o no la cuenta. _(N-CUE-01)_
+- [ ] **RF-01.6-02** `Must·MVP·Decidido` Responder siempre «Si hay una cuenta con ese correo, te hemos enviado un enlace. Revisa también la carpeta de spam.», exista o no la cuenta. _(N-CUE-01)_
   - Criterio: Dado un correo no registrado, cuando lo envía, entonces ve el mismo mensaje.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-01.6-03** `Must·MVP·Pendiente` Enviar un enlace de un solo uso válido 60 minutos con el botón «Cambiar contraseña». _(N-CUE-01)_
   - Criterio: Dado un enlace usado, cuando lo abre otra vez, entonces ve «Este enlace ya no sirve. Pide otro.»
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.6-04** `Must·MVP·Pendiente` Mostrar en /recuperar/nueva los campos «Nueva contraseña» y «Repite la contraseña» con las reglas del registro y el botón «Guardar contraseña». _(N-CUE-01)_
+- [ ] **RF-01.6-04** `Must·MVP·Decidido` Mostrar en /recuperar/nueva los campos «Nueva contraseña» y «Repite la contraseña» con las reglas del registro y el botón «Guardar contraseña». _(N-CUE-01)_
   - Criterio: Dadas dos contraseñas distintas, cuando guarda, entonces ve «Las contraseñas no coinciden».
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.6-05** `Must·MVP·Pendiente` Al cambiar la contraseña, cerrar todas las sesiones abiertas y llevar a /entrar con el aviso verde #2F7D4B «Contraseña cambiada. Ya puedes entrar.» _(N-CUE-01)_
+- [ ] **RF-01.6-05** `Must·MVP·Decidido` Al cambiar la contraseña, cerrar todas las sesiones abiertas y llevar a /entrar con el aviso verde #2F7D4B «Contraseña cambiada. Ya puedes entrar.» _(N-CUE-01)_
   - Criterio: Dada una sesión abierta en otro navegador, cuando cambia la contraseña, entonces esa sesión se cierra.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.6-06** `Should·MVP·Pendiente` Limitar a 3 las peticiones de recuperación por correo y hora. _(N-CUE-01)_
+- [ ] **RF-01.6-06** `Should·MVP·Decidido` Limitar a 3 las peticiones de recuperación por correo y hora. _(N-CUE-01)_
   - Criterio: Dadas 3 peticiones en una hora, cuando pide la cuarta, entonces no se envía correo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-01.6-07** `Should·V2·Pendiente` Avisar por correo de que la contraseña ha cambiado, con un enlace «No he sido yo». _(N-CUE-01)_
@@ -960,28 +960,28 @@ Cambiar de rol desde el menú; cuentas con varios roles a la vez.
 
 **Requisitos atómicos (8)**
 
-- [ ] **RF-01.7-01** `Must·MVP·Pendiente` Con sesión, sustituir «Entrar» por un círculo de 36 px con las iniciales (fondo --saffron #E3A82B, texto --text) y el nombre en crema a su derecha. _(N-CAR-01)_
+- [ ] **RF-01.7-01** `Must·MVP·Decidido` Con sesión, sustituir «Entrar» por un círculo de 36 px con las iniciales (fondo --saffron #E3A82B, texto --text) y el nombre en crema a su derecha. _(N-CAR-01)_
   - Criterio: Dada una sesión de «Ana López», cuando carga la cabecera, entonces ve «AL» y «Ana».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-02** `Must·MVP·Pendiente` Abrir al pulsarlo un menú de 240 px, fondo blanco, borde 1 px #DDD0B0, radio 10 px y opciones de 44 px. _(N-CAR-01)_
+- [ ] **RF-01.7-02** `Must·MVP·Decidido` Abrir al pulsarlo un menú de 240 px, fondo blanco, borde 1 px #DDD0B0, radio 10 px y opciones de 44 px. _(N-CAR-01)_
   - Criterio: Dado el círculo, cuando lo pulsa, entonces se abre el menú bajo él.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-03** `Must·MVP·Pendiente` Mostrar al cliente, en este orden: Mis pedidos, Mi carrito, Preferencias, Mis datos, Cerrar sesión. _(N-CAR-01)_
+- [ ] **RF-01.7-03** `Must·MVP·Decidido` Mostrar al cliente, en este orden: Mis pedidos, Mi carrito, Preferencias, Mis datos, Cerrar sesión. _(N-CAR-01)_
   - Criterio: Dado un cliente, cuando abre el menú, entonces ve esas cinco opciones en ese orden.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-04** `Must·MVP·Pendiente` Mostrar al vendedor, en este orden: Mi panel, Mis productos, Pedidos recibidos, Datos del negocio, Cerrar sesión. _(N-VEN-02)_
+- [ ] **RF-01.7-04** `Must·MVP·Decidido` Mostrar al vendedor, en este orden: Mi panel, Mis productos, Pedidos recibidos, Datos del negocio, Cerrar sesión. _(N-VEN-02)_
   - Criterio: Dado un vendedor, cuando abre el menú, entonces ve esas cinco opciones en ese orden.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-05** `Should·MVP·Pendiente` Separar «Cerrar sesión» con una línea y mostrarlo en rojo #C0392B. _(N-CAR-01)_
+- [ ] **RF-01.7-05** `Should·MVP·Decidido` Separar «Cerrar sesión» con una línea y mostrarlo en rojo #C0392B. _(N-CAR-01)_
   - Criterio: Dado el menú, cuando se abre, entonces «Cerrar sesión» es la última opción y en rojo.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-06** `Must·MVP·Pendiente` Cerrar el menú al pulsar fuera o con la tecla Escape y devolver el foco al círculo. _(N-CAR-01)_
+- [ ] **RF-01.7-06** `Must·MVP·Decidido` Cerrar el menú al pulsar fuera o con la tecla Escape y devolver el foco al círculo. _(N-CAR-01)_
   - Criterio: Dado el menú abierto, cuando pulsa Escape, entonces se cierra y el foco vuelve al círculo.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-07** `Must·MVP·Pendiente` Al cerrar sesión, invalidarla en el servidor, ir a la portada y mostrar 4 s «Has cerrado la sesión.» _(N-CUE-01)_
+- [ ] **RF-01.7-07** `Must·MVP·Decidido` Al cerrar sesión, invalidarla en el servidor, ir a la portada y mostrar 4 s «Has cerrado la sesión.» _(N-CUE-01)_
   - Criterio: Dado un cierre de sesión, cuando vuelve atrás en el navegador, entonces no ve datos privados.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.7-08** `Must·MVP·Pendiente` Conservar el carrito del cliente en su cuenta al cerrar sesión. _(N-CAR-01)_
+- [ ] **RF-01.7-08** `Must·MVP·Decidido` Conservar el carrito del cliente en su cuenta al cerrar sesión. _(N-CAR-01)_
   - Criterio: Dado un carrito con 3 productos, cuando cierra sesión y vuelve a entrar, entonces sigue con 3 productos.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -1091,19 +1091,19 @@ Direcciones fuera de Málaga, Sevilla y Granada; validar la dirección con un se
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-01.8-01** `Must·MVP·Pendiente` Ofrecer «Mis datos» con nombre, correo, teléfono opcional y contraseña, cada uno editable con su botón «Guardar». _(N-CAR-01)_
+- [ ] **RF-01.8-01** `Must·MVP·Decidido` Ofrecer «Mis datos» con nombre, correo, teléfono opcional y contraseña, cada uno editable con su botón «Guardar». _(N-CAR-01)_
   - Criterio: Dado un cambio de nombre, cuando guarda, entonces la cabecera muestra el nombre nuevo.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca P · Market ? · Open S → Paridad
-- [ ] **RF-01.8-02** `Must·MVP·Pendiente` Exigir la contraseña actual para cambiar el correo o la contraseña. _(N-CUE-01)_
+- [ ] **RF-01.8-02** `Must·MVP·Decidido` Exigir la contraseña actual para cambiar el correo o la contraseña. _(N-CUE-01)_
   - Criterio: Dado un cambio de correo, cuando no escribe la contraseña actual, entonces no se guarda.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.8-03** `Should·MVP·Pendiente` Al cambiar el correo, enviar verificación a la dirección nueva y mantener la antigua hasta confirmarla. _(N-CUE-01)_
+- [ ] **RF-01.8-03** `Should·MVP·Decidido` Al cambiar el correo, enviar verificación a la dirección nueva y mantener la antigua hasta confirmarla. _(N-CUE-01)_
   - Criterio: Dado un correo nuevo sin confirmar, cuando entra, entonces sigue usando el antiguo.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca P · Market ? · Open S → Paridad
-- [ ] **RF-01.8-04** `Should·MVP·Pendiente` Permitir guardar hasta 5 direcciones con alias (Casa, Piso…), calle, número, piso, código postal, ciudad e indicaciones para el repartidor. _(N-CAR-01)_
+- [ ] **RF-01.8-04** `Should·MVP·Decidido` Permitir guardar hasta 5 direcciones con alias (Casa, Piso…), calle, número, piso, código postal, ciudad e indicaciones para el repartidor. _(N-CAR-01)_
   - Criterio: Dadas 5 direcciones, cuando intenta añadir la sexta, entonces ve «Puedes guardar hasta 5 direcciones».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-01.8-05** `Should·MVP·Pendiente` Marcar una dirección como predeterminada para el checkout. _(N-CAR-01)_
+- [ ] **RF-01.8-05** `Should·MVP·Decidido` Marcar una dirección como predeterminada para el checkout. _(N-CAR-01)_
   - Criterio: Dada una dirección predeterminada, cuando llega al checkout, entonces aparece seleccionada.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-01.8-06** `Must·MVP·Pendiente` Comprobar que el código postal de cada dirección está en una zona con servicio; si no, «Todavía no llegamos a este código postal». _(N-CAR-01)_
@@ -1211,7 +1211,7 @@ Objetivos nutricionales, calorías o condiciones médicas; recomendaciones de sa
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-01.9-01** `Should·MVP·Pendiente` Ofrecer «Preferencias» con presupuesto semanal orientativo, número de personas del piso y tipo de dieta (omnívora, vegetariana, vegana). _(N-PLA-02)_
+- [ ] **RF-01.9-01** `Should·MVP·Decidido` Ofrecer «Preferencias» con presupuesto semanal orientativo, número de personas del piso y tipo de dieta (omnívora, vegetariana, vegana). _(N-PLA-02)_
   - Criterio: Dado un presupuesto de 30 €, cuando guarda, entonces el asistente lo usa por defecto.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-01.9-02** `Must·MVP·Decidido` Pedir consentimiento explícito y separado antes de guardar alergias o intolerancias, con el texto «Guardaremos tus alergias solo para avisarte y filtrar productos. Puedes borrarlas cuando quieras.» _(N-CAT-02)_
@@ -1220,7 +1220,7 @@ Objetivos nutricionales, calorías o condiciones médicas; recomendaciones de sa
 - [ ] **RF-01.9-03** `Must·MVP·Decidido` Usar la lista de 14 alérgenos del Reglamento (UE) 1169/2011 como casillas. _(N-CAT-02)_
   - Criterio: Dada la sección de alergias, cuando se abre, entonces hay 14 casillas.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-01.9-04** `Must·MVP·Pendiente` Permitir retirar el consentimiento y borrar las alergias con un botón «Borrar mis alergias». _(N-CUE-01)_
+- [ ] **RF-01.9-04** `Must·MVP·Decidido` Permitir retirar el consentimiento y borrar las alergias con un botón «Borrar mis alergias». _(N-CUE-01)_
   - Criterio: Dado un borrado, cuando confirma, entonces las alergias desaparecen y no se usan.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -1323,10 +1323,10 @@ Eliminar la cuenta de un vendedor (se hace con el admin, RF-13.5); exportar en o
 - [ ] **RF-01.10-02** `Must·MVP·Decidido` Permitir eliminar la cuenta tras confirmar con la contraseña y el texto «Entiendo que se borrarán mis datos». _(N-CUE-01)_
   - Criterio: Dada la eliminación confirmada, cuando termina, entonces no puede volver a entrar con ese correo y contraseña.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.10-03** `Must·MVP·Pendiente` Conservar anonimizados los pedidos de una cuenta eliminada durante el plazo legal de facturación. _(N-CUE-01)_
+- [ ] **RF-01.10-03** `Must·MVP·Decidido` Conservar anonimizados los pedidos de una cuenta eliminada durante el plazo legal de facturación. _(N-CUE-01)_
   - Criterio: Dada una cuenta eliminada, cuando el admin consulta sus pedidos, entonces no ve nombre ni correo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-01.10-04** `Must·MVP·Pendiente` No permitir eliminar la cuenta con un pedido en curso; avisar «Tienes un pedido en camino. Podrás eliminar la cuenta cuando se entregue.» _(N-CUE-01)_
+- [ ] **RF-01.10-04** `Must·MVP·Decidido` No permitir eliminar la cuenta con un pedido en curso; avisar «Tienes un pedido en camino. Podrás eliminar la cuenta cuando se entregue.» _(N-CUE-01)_
   - Criterio: Dado un pedido en reparto, cuando intenta eliminar la cuenta, entonces ve el aviso.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -1344,9 +1344,10 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - N-VEN-06 Conocer con claridad los requisitos y los pasos del alta (22)
 - N-VEN-07 Admitir solo vendedores con registro sanitario o con una exención justificada (5)
-- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (3)
 - N-VEN-05 Cobrar con transparencia: comisión y liquidación claras (3)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (2)
+- N-VEN-01 Llegar a clientes nuevos y ganar visibilidad (2)
+- N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra (1)
 
 **Supone que existe:** RF-01 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -1357,12 +1358,12 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - RF-02.3 · Documentación (3) · Must · MVP
 - RF-02.4 · Estados de la solicitud (4) · Must · MVP
 - RF-02.5 · Activación y formación (3) · Must · MVP
-- RF-02.6 · Datos del negocio y perfil público (4) · Should · MVP
+- RF-02.6 · Datos del negocio y perfil público (4) · Must · MVP
 - RF-02.7 · Diseño y comportamiento del formulario de alta (6) · Must · MVP
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 30 · Sin referente 3 · Mejora 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
+35 requisitos atómicos · Poco extendido 29 · Sin referente 3 · Mejora 2 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-02.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -1471,7 +1472,7 @@ Calculadora de ganancias; casos de éxito de vendedores (no existen).
 - [ ] **RF-02.1-04** `Must·MVP·Decidido` Explicar la comisión como «Pendiente de definir» mientras no esté decidida, sin mostrar porcentajes. _(N-VEN-05)_
   - Criterio: Dado /vender, cuando se lee la comisión, entonces no aparece ningún porcentaje.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Mejora
-- [ ] **RF-02.1-05** `Must·MVP·Pendiente` Mostrar el botón «Solicitar el alta» en naranja --accent que baja al formulario (#alta). _(N-VEN-06)_
+- [ ] **RF-02.1-05** `Must·MVP·Decidido` Mostrar el botón «Solicitar el alta» en naranja --accent que baja al formulario (#alta). _(N-VEN-06)_
   - Criterio: Dado /vender, cuando pulsa el botón, entonces la página se desplaza al formulario.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 
@@ -1584,25 +1585,25 @@ Comprobar automáticamente el RGSEAA en el registro oficial (lo revisa una perso
 
 **Requisitos atómicos (10)**
 
-- [ ] **RF-02.2-01** `Must·MVP·Pendiente` Pedir nombre del negocio (2 a 80 caracteres). _(N-VEN-06)_
+- [ ] **RF-02.2-01** `Must·MVP·Decidido` Pedir nombre del negocio (2 a 80 caracteres). _(N-VEN-06)_
   - Criterio: Dado un nombre vacío, cuando envía, entonces ve «Escribe el nombre del negocio».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.2-02** `Must·MVP·Pendiente` Pedir el tipo de negocio con un desplegable: agricultor, ganadero, frutería, panadería u obrador, despensa, cocina local, otro. _(N-VEN-06)_
+- [ ] **RF-02.2-02** `Must·MVP·Decidido` Pedir el tipo de negocio con un desplegable: agricultor, ganadero, frutería, panadería u obrador, despensa, cocina local, otro. _(N-VEN-06)_
   - Criterio: Dado «otro», cuando lo elige, entonces aparece un campo de texto para describirlo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 - [ ] **RF-02.2-03** `Must·MVP·Pendiente` Pedir la zona (Málaga, Sevilla, Granada) y la dirección de recogida con código postal. _(N-VEN-06)_
   - Criterio: Dado un código postal fuera de zona, cuando envía, entonces ve «Por ahora solo recogemos en Málaga, Sevilla y Granada».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
-- [ ] **RF-02.2-04** `Must·MVP·Pendiente` Pedir persona de contacto, teléfono (9 dígitos) y correo. _(N-VEN-06)_
+- [ ] **RF-02.2-04** `Must·MVP·Decidido` Pedir persona de contacto, teléfono (9 dígitos) y correo. _(N-VEN-06)_
   - Criterio: Dado un teléfono de 8 dígitos, cuando envía, entonces ve «El teléfono debe tener 9 dígitos».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 - [ ] **RF-02.2-05** `Must·MVP·Decidido` Pedir el número de Registro General Sanitario (RGSEAA) o declarar que está exento como pequeño productor (RD 1086/2020). _(N-VEN-07)_
   - Criterio: Dado el campo vacío sin declarar exención, cuando envía, entonces no se acepta la solicitud.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market S · Open ? → Mejora
-- [ ] **RF-02.2-06** `Must·MVP·Pendiente` Pedir los días y horas en que se puede recoger el producto (casillas por día y franja). _(N-VEN-06)_
+- [ ] **RF-02.2-06** `Must·MVP·Decidido` Pedir los días y horas en que se puede recoger el producto (casillas por día y franja). _(N-VEN-06)_
   - Criterio: Dados ningún día marcado, cuando envía, entonces ve «Indica al menos un día de recogida».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market S · Open ? → Poco extendido
-- [ ] **RF-02.2-07** `Should·MVP·Pendiente` Pedir una descripción breve de lo que vende (hasta 500 caracteres). _(N-VEN-06)_
+- [ ] **RF-02.2-07** `Should·MVP·Decidido` Pedir una descripción breve de lo que vende (hasta 500 caracteres). _(N-VEN-06)_
   - Criterio: Dados 501 caracteres, cuando escribe, entonces el contador se pone en rojo y no deja enviar.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market S · Open ? → Poco extendido
 - [ ] **RF-02.2-08** `Must·MVP·Decidido` Exigir la aceptación de las condiciones para vendedores (P2B) con enlace al texto. _(N-VEN-07)_
@@ -1706,13 +1707,13 @@ Firma electrónica de documentos; caducidad automática del registro.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-02.3-01** `Must·MVP·Pendiente` Permitir adjuntar el justificante del registro sanitario en PDF, JPG o PNG de hasta 5 MB. _(N-VEN-07)_
+- [ ] **RF-02.3-01** `Must·MVP·Decidido` Permitir adjuntar el justificante del registro sanitario en PDF, JPG o PNG de hasta 5 MB. _(N-VEN-07)_
   - Criterio: Dado un archivo de 6 MB, cuando lo sube, entonces ve «El archivo no puede superar 5 MB».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RF-02.3-02** `Could·V2·Pendiente` Permitir adjuntar hasta 5 fotos del negocio o del producto. _(N-VEN-06)_
   - Criterio: Dadas 5 fotos, cuando intenta subir la sexta, entonces no se añade.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RF-02.3-03** `Must·MVP·Pendiente` Guardar los documentos en almacenamiento privado, accesibles solo para el administrador. _(N-CUE-01)_
+- [ ] **RF-02.3-03** `Must·MVP·Decidido` Guardar los documentos en almacenamiento privado, accesibles solo para el administrador. _(N-CUE-01)_
   - Criterio: Dado el enlace de un documento, cuando lo abre un usuario sin rol admin, entonces recibe acceso denegado.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -1814,7 +1815,7 @@ Estados intermedios de «documentación pendiente»; apelaciones.
 - [ ] **RF-02.4-02** `Must·MVP·Pendiente` Notificar por correo al vendedor cada cambio de estado. _(N-VEN-06)_
   - Criterio: Dado el paso a Verificada, cuando ocurre, entonces el vendedor recibe un correo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.4-03** `Must·MVP·Pendiente` Exigir un motivo escrito al rechazar y enviarlo al vendedor. _(N-VEN-07)_
+- [ ] **RF-02.4-03** `Must·MVP·Decidido` Exigir un motivo escrito al rechazar y enviarlo al vendedor. _(N-VEN-07)_
   - Criterio: Dado un rechazo sin motivo, cuando el admin guarda, entonces no se permite.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 - [ ] **RF-02.4-04** `Should·V2·Pendiente` Permitir al vendedor rechazado volver a solicitar el alta pasados 30 días. _(N-VEN-06)_
@@ -1912,13 +1913,13 @@ Formación en vídeo; visitas al vendedor.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-02.5-01** `Must·MVP·Pendiente` Al verificar, enviar al vendedor un enlace para crear su contraseña, válido 72 horas. _(N-VEN-06)_
+- [ ] **RF-02.5-01** `Must·MVP·Decidido` Al verificar, enviar al vendedor un enlace para crear su contraseña, válido 72 horas. _(N-VEN-06)_
   - Criterio: Dado el enlace, cuando pasan 73 h, entonces caduca y el admin puede reenviarlo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-02.5-02** `Should·MVP·Pendiente` Mostrar al vendedor en su primer acceso una guía de 4 pasos: datos del negocio, primer producto, días de recogida y cómo preparar pedidos. _(N-VEN-06)_
+- [ ] **RF-02.5-02** `Should·MVP·Decidido` Mostrar al vendedor en su primer acceso una guía de 4 pasos: datos del negocio, primer producto, días de recogida y cómo preparar pedidos. _(N-VEN-06)_
   - Criterio: Dado un primer acceso, cuando entra, entonces ve la guía y puede saltarla.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-02.5-03** `Must·MVP·Pendiente` No publicar productos de un vendedor hasta que complete los datos del negocio. _(N-VEN-06)_
+- [ ] **RF-02.5-03** `Must·MVP·Decidido` No publicar productos de un vendedor hasta que complete los datos del negocio. _(N-VEN-06)_
   - Criterio: Dado un vendedor sin datos, cuando intenta publicar, entonces ve «Completa los datos del negocio antes de publicar».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -1928,7 +1929,7 @@ Formación en vídeo; visitas al vendedor.
 
 _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
 
 **1. Descripción**
 
@@ -1936,10 +1937,11 @@ Datos comerciales del vendedor y su perfil público, donde los clientes ven su h
 
 **2. Origen**
 
-- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Necesidad: N-VEN-05 Cobrar con transparencia: comisión y liquidación claras
+- Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
+- Necesidad: N-VEN-01 Llegar a clientes nuevos y ganar visibilidad
 - Historias: US-02
-- Fuentes de las necesidades: F-01, F-12 · Fuentes del benchmark: F-04, S08, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07, F-12 · Fuentes del benchmark: F-04, S08, S09
 
 **3. Actores y roles**
 
@@ -1996,7 +1998,7 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad
 
 **15. Competencia**
 
-Poco extendido 4
+Poco extendido 3 · Paridad 1
 
 - Mercadona online: 0 sí, 3 no
 - Glovo: 0 sí
@@ -2011,12 +2013,12 @@ IBAN y su validación (V2); valoraciones en el perfil (RF-11).
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-02.6-01** `Should·MVP·Pendiente` Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad. _(N-VEN-01)_
+- [ ] **RF-02.6-01** `Should·MVP·Decidido` Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad. _(N-VEN-01)_
   - Criterio: Dado un cambio de historia, cuando guarda, entonces se ve en su perfil público.
   - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-02.6-02** `Should·MVP·Pendiente` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona y productos activos. _(N-VEN-01)_
-  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos.
-  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Poco extendido
+- [ ] **RF-02.6-02** `Must·MVP·Decidido` Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona, productos activos y un apartado «Cómo producimos» escrito por el vendedor (hasta 500 caracteres). _(N-CAT-01)_
+  - Criterio: Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos y el apartado «Cómo producimos».
+  - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market S · Open S → Paridad
 - [ ] **RF-02.6-03** `Should·V2·Pendiente` Guardar el IBAN para las liquidaciones, visible solo enmascarado (ES** **** 1234). _(N-VEN-05)_
   - Criterio: Dado un IBAN guardado, cuando el vendedor lo consulta, entonces ve solo los 4 últimos dígitos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
@@ -2115,22 +2117,22 @@ Formulario en varios pasos; guardar el borrador en el servidor.
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-02.7-01** `Must·MVP·Pendiente` Mostrar el formulario en una tarjeta blanca de 720 px con dos columnas en ordenador y una en móvil. _(N-VEN-06)_
+- [ ] **RF-02.7-01** `Must·MVP·Decidido` Mostrar el formulario en una tarjeta blanca de 720 px con dos columnas en ordenador y una en móvil. _(N-VEN-06)_
   - Criterio: Dada una pantalla de 1280 px, cuando se ve, entonces hay dos columnas.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.7-02** `Should·MVP·Pendiente` Agrupar los campos en tres bloques con título: Tu negocio, Contacto y Requisitos. _(N-VEN-06)_
+- [ ] **RF-02.7-02** `Should·MVP·Decidido` Agrupar los campos en tres bloques con título: Tu negocio, Contacto y Requisitos. _(N-VEN-06)_
   - Criterio: Dado el formulario, cuando se ve, entonces hay tres bloques.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.7-03** `Must·MVP·Pendiente` Marcar los campos obligatorios con «(obligatorio)» en la etiqueta, no solo con asterisco. _(N-VEN-06)_
+- [ ] **RF-02.7-03** `Must·MVP·Decidido` Marcar los campos obligatorios con «(obligatorio)» en la etiqueta, no solo con asterisco. _(N-VEN-06)_
   - Criterio: Dado un campo obligatorio, cuando se lee la etiqueta, entonces dice «(obligatorio)».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.7-04** `Should·MVP·Pendiente` Guardar el borrador del formulario en el navegador para no perderlo si se cierra la página. _(N-VEN-06)_
+- [ ] **RF-02.7-04** `Should·MVP·Decidido` Guardar el borrador del formulario en el navegador para no perderlo si se cierra la página. _(N-VEN-06)_
   - Criterio: Dado un formulario a medias, cuando vuelve, entonces sigue relleno.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.7-05** `Must·MVP·Pendiente` Al fallar el envío, llevar el foco al primer campo con error y listar arriba los errores. _(N-VEN-06)_
+- [ ] **RF-02.7-05** `Must·MVP·Decidido` Al fallar el envío, llevar el foco al primer campo con error y listar arriba los errores. _(N-VEN-06)_
   - Criterio: Dados 2 errores, cuando envía, entonces ve la lista y el foco en el primero.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-02.7-06** `Must·MVP·Pendiente` Mostrar el botón «Enviar solicitud» en naranja, 48 px, con «Enviando…» mientras se procesa. _(N-VEN-06)_
+- [ ] **RF-02.7-06** `Must·MVP·Decidido` Mostrar el botón «Enviar solicitud» en naranja, 48 px, con «Enviando…» mientras se procesa. _(N-VEN-06)_
   - Criterio: Dado un envío, cuando está en curso, entonces el botón está desactivado.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 
@@ -2267,7 +2269,7 @@ Roles de admin con permisos distintos; acceso con doble factor (V2).
 - [ ] **RF-13.1-02** `Must·MVP·Decidido` Mostrar una barra lateral fija a la izquierda con las secciones y la activa marcada. _(N-CUE-01)_
   - Criterio: Dado /admin, cuando se cambia de sección, entonces la barra marca la nueva.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RF-13.1-03** `Must·MVP·Pendiente` Cerrar la sesión de administración tras 30 minutos sin actividad. _(N-CUE-01)_
+- [ ] **RF-13.1-03** `Must·MVP·Decidido` Cerrar la sesión de administración tras 30 minutos sin actividad. _(N-CUE-01)_
   - Criterio: Dados 31 min sin actividad, cuando pulsa algo, entonces debe entrar de nuevo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -2363,10 +2365,10 @@ Auditorías presenciales; sanciones.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-13.2-01** `Must·MVP·Pendiente` Listar las solicitudes de alta con filtros por estado y zona. _(N-VEN-07)_
+- [ ] **RF-13.2-01** `Must·MVP·Decidido` Listar las solicitudes de alta con filtros por estado y zona. _(N-VEN-07)_
   - Criterio: Dado el filtro «En revisión», cuando se aplica, entonces solo salen esas.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
-- [ ] **RF-13.2-02** `Must·MVP·Pendiente` Ver el detalle de cada solicitud con documentos y cambiar su estado con motivo. _(N-VEN-07)_
+- [ ] **RF-13.2-02** `Must·MVP·Decidido` Ver el detalle de cada solicitud con documentos y cambiar su estado con motivo. _(N-VEN-07)_
   - Criterio: Dado un rechazo, cuando se guarda con motivo, entonces se envía al vendedor.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market P · Open ? → Poco extendido
 - [ ] **RF-13.2-03** `Should·V2·Pendiente` Suspender a un vendedor ocultando sus productos sin borrarlos y con motivo registrado. _(N-CAT-01)_
@@ -2391,7 +2393,7 @@ Vista del admin sobre pedidos e incidencias: buscar un pedido y ver sus subpedid
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S01, S04, S06, S07
 
 **3. Actores y roles**
 
@@ -2466,7 +2468,7 @@ Editar pedidos ya pagados; métricas (V2).
 - [ ] **RF-13.3-01** `Should·V2·Pendiente` Revisar y retirar productos que incumplan las normas, avisando al vendedor. _(N-CAT-01)_
   - Criterio: Dado un producto retirado por el admin, cuando ocurre, entonces el vendedor recibe el motivo.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-13.3-02** `Must·MVP·Pendiente` Ver todos los pedidos con sus subpedidos y estados, con búsqueda por número. _(N-HUB-03)_
+- [ ] **RF-13.3-02** `Must·MVP·Decidido` Ver todos los pedidos con sus subpedidos y estados, con búsqueda por número. _(N-HUB-03)_
   - Criterio: Dado F4A-2026-00012, cuando lo busca, entonces ve su detalle.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-13.3-03** `Must·MVP·Pendiente` Gestionar la cola de incidencias ordenada por antigüedad, con el plazo de 24 h visible. _(N-INC-01)_
@@ -2628,7 +2630,7 @@ Listado y bloqueo de cuentas (V2).
 - [ ] **RF-13.5-02** `Should·V2·Pendiente` Permitir bloquear una cuenta con motivo; el usuario bloqueado no puede entrar. _(N-CAT-01)_
   - Criterio: Dada una cuenta bloqueada, cuando intenta entrar, entonces ve «Tu cuenta está bloqueada. Escríbenos.»
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RF-13.5-03** `Must·MVP·Pendiente` Crear cuentas de administrador solo desde otra cuenta de administrador. _(N-CUE-01)_
+- [ ] **RF-13.5-03** `Must·MVP·Decidido` Crear cuentas de administrador solo desde otra cuenta de administrador. _(N-CUE-01)_
   - Criterio: Dado un cliente, cuando intenta acceder a /admin/usuarios, entonces recibe 403.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -2649,7 +2651,7 @@ Configuración operativa que hoy son hipótesis o decisiones pendientes: compra 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
 
 **3. Actores y roles**
 
@@ -2952,7 +2954,7 @@ Portada que en un vistazo dice qué es FOOD4ALL, para quién y qué hacer: lema,
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3034,7 +3036,7 @@ Vídeo de fondo; carrusel de ofertas.
 - [ ] **RF-15.2-03** `Must·MVP·Decidido` Mostrar en el hero tres botones grandes de 54 px: «Quiero comprar», «Quiero vender» y «Cómo funciona». _(N-PLA-01)_
   - Criterio: Dada la portada, cuando se mide, entonces los tres botones miden 54 px de alto.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-15.2-04** `Should·MVP·Decidido` Mostrar bajo el hero una cinta azafrán con nombres de producto en movimiento que se para al pasar el ratón. _(N-VEN-01)_
+- [ ] **RF-15.2-04** `Could·V2·Decidido` Mostrar bajo el hero una cinta azafrán con nombres de producto en movimiento que se para al pasar el ratón. _(N-VEN-01)_
   - Criterio: Dado el ratón sobre la cinta, cuando pasa, entonces se detiene.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-15.2-05** `Must·MVP·Decidido` Explicar en una frase cómo funciona: «Una sola compra a varios vendedores locales, con una entrega». _(N-ENT-01)_
@@ -3061,7 +3063,7 @@ Sección «Cómo funciona» que explica el recorrido del cliente y el logístico
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3136,7 +3138,7 @@ Simulador interactivo.
 - [ ] **RF-15.3-01** `Must·MVP·Decidido` Explicar el proceso del cliente en 5 pasos numerados con colores en ciclo tomate, azafrán, oliva, melocotón: pides, la IA propone, revisas, pagas una vez, recibes todo junto. _(N-PLA-01)_
   - Criterio: Dada la sección, cuando se ve, entonces hay 5 pasos en ese orden.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-15.3-02** `Must·MVP·Pendiente` Explicar el proceso logístico en 4 pasos: recogida en origen, hub, empaquetado y entrega única. _(N-ENT-01)_
+- [ ] **RF-15.3-02** `Must·MVP·Decidido` Explicar el proceso logístico en 4 pasos: recogida en origen, hub, empaquetado y entrega única. _(N-ENT-01)_
   - Criterio: Dada la sección, cuando se ve, entonces hay 4 pasos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-15.3-03** `Should·MVP·Decidido` Mostrar un ejemplo concreto: «Tengo 25 € y 4 días» con la cesta resultante (datos de ejemplo marcados). _(N-PLA-01)_
@@ -3165,7 +3167,7 @@ Sección «Quiénes somos» y comparativa honesta con el supermercado online y e
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -3238,10 +3240,10 @@ Comparador de precios con supermercados.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-15.4-01** `Must·MVP·Pendiente` Explicar el problema que resolvemos, la propuesta en una frase y los valores: local, ahorro y confianza. _(N-PLA-01)_
+- [ ] **RF-15.4-01** `Must·MVP·Decidido` Explicar el problema que resolvemos, la propuesta en una frase y los valores: local, ahorro y confianza. _(N-PLA-01)_
   - Criterio: Dada la sección, cuando se lee, entonces aparecen los tres valores.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-15.4-02** `Should·MVP·Pendiente` Mostrar las zonas iniciales (Málaga, Sevilla y Granada) en un mapa sencillo. _(N-ENT-01)_
+- [ ] **RF-15.4-02** `Should·MVP·Decidido` Mostrar las zonas iniciales (Málaga, Sevilla y Granada) en un mapa sencillo. _(N-ENT-01)_
   - Criterio: Dado el mapa, cuando se ve, entonces marca las tres ciudades.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-15.4-03** `Should·MVP·Decidido` Comparar FOOD4ALL con supermercado online y delivery en una tabla de 5 criterios, sin afirmar que es más barato. _(N-CAT-03)_
@@ -3267,7 +3269,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-14
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S09
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S09
 
 **3. Actores y roles**
 
@@ -3503,7 +3505,7 @@ Selector de idioma (V3).
 
 **Requisitos atómicos (5)**
 
-- [ ] **RF-15.7-01** `Must·MVP·Pendiente` Mostrar en el pie: enlaces legales (aviso legal, privacidad, cookies, condiciones), créditos de imágenes y redes. _(N-CAT-03)_
+- [ ] **RF-15.7-01** `Must·MVP·Decidido` Mostrar en el pie: enlaces legales (aviso legal, privacidad, cookies, condiciones), créditos de imágenes y redes. _(N-CAT-03)_
   - Criterio: Dado el pie, cuando se revisa, entonces están todos los enlaces.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RF-15.7-02** `Must·MVP·Decidido` Mostrar el aviso «Proyecto conceptual · datos de ejemplo» en el pie de todas las páginas. _(N-CAT-03)_
@@ -3653,22 +3655,22 @@ Importación masiva por CSV (V3, RF-03.7-04); variantes de un mismo producto.
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-03.1-01** `Must·MVP·Pendiente` Ofrecer en «Mis productos» el botón «Añadir producto» que abre la ficha vacía. _(N-VEN-02)_
+- [ ] **RF-03.1-01** `Must·MVP·Decidido` Ofrecer en «Mis productos» el botón «Añadir producto» que abre la ficha vacía. _(N-VEN-02)_
   - Criterio: Dado un vendedor verificado, cuando pulsa el botón, entonces ve la ficha vacía.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.1-02** `Must·MVP·Pendiente` Pedir el nombre del producto (3 a 80 caracteres) con las calificaciones detrás («Tomate rosa, ecológico»). _(N-CAT-01)_
+- [ ] **RF-03.1-02** `Must·MVP·Decidido` Pedir el nombre del producto (3 a 80 caracteres) con las calificaciones detrás («Tomate rosa, ecológico»). _(N-CAT-01)_
   - Criterio: Dado un nombre de 2 caracteres, cuando guarda, entonces ve el error.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.1-03** `Must·MVP·Pendiente` Pedir una descripción que no repita el nombre (20 a 600 caracteres). _(N-CAT-01)_
+- [ ] **RF-03.1-03** `Must·MVP·Decidido` Pedir una descripción que no repita el nombre (20 a 600 caracteres). _(N-CAT-01)_
   - Criterio: Dada una descripción igual al nombre, cuando guarda, entonces ve «Describe el producto, no repitas el nombre».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.1-04** `Must·MVP·Pendiente` Pedir la categoría: fruta, verdura, carne, pescado, lácteos y huevos, pan y bollería, despensa, comida preparada. _(N-CAT-01)_
+- [ ] **RF-03.1-04** `Must·MVP·Decidido` Pedir la categoría: fruta, verdura, carne, pescado, lácteos y huevos, pan y bollería, despensa, comida preparada. _(N-CAT-01)_
   - Criterio: Dada la categoría vacía, cuando guarda, entonces ve «Elige una categoría».
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca ? · Market ? · Open S → Paridad
-- [ ] **RF-03.1-05** `Must·MVP·Pendiente` Pedir el formato de venta: por unidad, por peso (kg) o por pack, con su cantidad. _(N-CAT-01)_
+- [ ] **RF-03.1-05** `Must·MVP·Decidido` Pedir el formato de venta: por unidad, por peso (kg) o por pack, con su cantidad. _(N-CAT-01)_
   - Criterio: Dado «por peso» sin cantidad, cuando guarda, entonces ve el error.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.1-06** `Must·MVP·Pendiente` Guardar el producto como borrador hasta que la ficha esté completa. _(N-CAT-01)_
+- [ ] **RF-03.1-06** `Must·MVP·Decidido` Guardar el producto como borrador hasta que la ficha esté completa. _(N-CAT-01)_
   - Criterio: Dada una ficha incompleta, cuando guarda, entonces queda en estado Borrador y no se publica.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -3781,19 +3783,19 @@ Información nutricional detallada; definición cerrada de «local» (pendiente 
 - [ ] **RF-03.2-02** `Must·MVP·Decidido` Exigir la lista de ingredientes en productos elaborados. _(N-CAT-02)_
   - Criterio: Dado un producto de despensa sin ingredientes, cuando publica, entonces no se publica.
   - Competencia: Mercadona P · Glovo ? · Too N · Wetaca ? · Market P · Open S → Poco extendido
-- [ ] **RF-03.2-03** `Must·MVP·Pendiente` Exigir el tipo de fecha: caducidad o consumo preferente, y los días de vida útil desde la recogida. _(N-CAD-01)_
+- [ ] **RF-03.2-03** `Must·MVP·Decidido` Exigir el tipo de fecha: caducidad o consumo preferente, y los días de vida útil desde la recogida. _(N-CAD-01)_
   - Criterio: Dado un fresco sin vida útil, cuando publica, entonces no se publica.
   - Competencia: Mercadona P · Glovo ? · Too N · Wetaca P · Market S · Open S → Diferencial
-- [ ] **RF-03.2-04** `Must·MVP·Pendiente` Exigir la conservación: ambiente, refrigerado (0–4 °C) o congelado (−18 °C). _(N-CAD-01)_
+- [ ] **RF-03.2-04** `Must·MVP·Decidido` Exigir la conservación: ambiente, refrigerado (0–4 °C) o congelado (−18 °C). _(N-CAD-01)_
   - Criterio: Dado un yogur sin conservación, cuando publica, entonces no se publica.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca P · Market S · Open ? → Poco extendido
-- [ ] **RF-03.2-05** `Must·MVP·Pendiente` Exigir el peso o volumen neto en productos envasados. _(N-CAT-03)_
+- [ ] **RF-03.2-05** `Must·MVP·Decidido` Exigir el peso o volumen neto en productos envasados. _(N-CAT-03)_
   - Criterio: Dado un envasado sin peso, cuando publica, entonces no se publica.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.2-06** `Should·MVP·Pendiente` Permitir indicar etiquetas opcionales: temporada, ecológico certificado, aprovechamiento. _(N-VEN-01)_
+- [ ] **RF-03.2-06** `Should·MVP·Decidido` Permitir indicar etiquetas opcionales: temporada, ecológico certificado, aprovechamiento. _(N-VEN-01)_
   - Criterio: Dado «ecológico» marcado, cuando se publica, entonces la tarjeta muestra la etiqueta.
   - Competencia: Mercadona P · Glovo ? · Too N · Wetaca P · Market S · Open S → Poco extendido
-- [ ] **RF-03.2-07** `Must·MVP·Pendiente` Exigir el número de certificado si se marca «ecológico certificado». _(N-CAT-03)_
+- [ ] **RF-03.2-07** `Must·MVP·Decidido` Exigir el número de certificado si se marca «ecológico certificado». _(N-CAT-03)_
   - Criterio: Dado «ecológico» sin certificado, cuando publica, entonces ve el error.
   - Competencia: Mercadona P · Glovo ? · Too N · Wetaca P · Market S · Open S → Poco extendido
 
@@ -3889,10 +3891,10 @@ Detección automática de alérgenos a partir de los ingredientes.
 - [ ] **RF-03.3-01** `Must·MVP·Decidido` Exigir que el vendedor marque, para los 14 alérgenos, «contiene», «puede contener trazas» o «no contiene». _(N-CAT-02)_
   - Criterio: Dado un alérgeno sin marcar, cuando publica, entonces no se publica.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-03.3-02** `Must·MVP·Pendiente` Mostrar los alérgenos con icono y texto; nunca solo con icono. _(N-CAT-02)_
+- [ ] **RF-03.3-02** `Must·MVP·Decidido` Mostrar los alérgenos con icono y texto; nunca solo con icono. _(N-CAT-02)_
   - Criterio: Dado un producto con gluten, cuando se ve la ficha, entonces aparece el icono con la palabra «Gluten».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-03.3-03** `Must·MVP·Pendiente` Pedir al vendedor que confirme los alérgenos cada vez que cambie los ingredientes. _(N-CAT-02)_
+- [ ] **RF-03.3-03** `Must·MVP·Decidido` Pedir al vendedor que confirme los alérgenos cada vez que cambie los ingredientes. _(N-CAT-02)_
   - Criterio: Dado un cambio de ingredientes, cuando guarda, entonces debe confirmar de nuevo los alérgenos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 
@@ -3986,16 +3988,16 @@ Edición de fotos; vídeo del producto.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-03.4-01** `Must·MVP·Pendiente` Exigir al menos 1 foto y permitir hasta 5, en JPG, PNG o WebP de hasta 5 MB. _(N-CAT-01)_
+- [ ] **RF-03.4-01** `Must·MVP·Decidido` Exigir al menos 1 foto y permitir hasta 5, en JPG, PNG o WebP de hasta 5 MB. _(N-CAT-01)_
   - Criterio: Dado un producto sin foto, cuando publica, entonces no se publica.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-03.4-02** `Could·V2·Pendiente` Recomendar foto horizontal con el producto en primer plano y avisar si la foto es vertical. _(N-CAT-01)_
   - Criterio: Dada una foto vertical, cuando la sube, entonces ve el consejo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.4-03** `Should·MVP·Pendiente` Generar versiones de 400 y 1200 px de ancho para la tarjeta y la ficha. _(N-CAR-01)_
+- [ ] **RF-03.4-03** `Should·MVP·Decidido` Generar versiones de 400 y 1200 px de ancho para la tarjeta y la ficha. _(N-CAR-01)_
   - Criterio: Dada una foto de 4000 px, cuando se publica, entonces la tarjeta carga la de 400 px.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.4-04** `Should·MVP·Pendiente` Exigir texto alternativo para cada foto, propuesto a partir del nombre. _(N-CAR-01)_
+- [ ] **RF-03.4-04** `Should·MVP·Decidido` Exigir texto alternativo para cada foto, propuesto a partir del nombre. _(N-CAR-01)_
   - Criterio: Dada una foto, cuando se publica, entonces su alt no está vacío.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -4189,10 +4191,10 @@ Integración con el inventario del comercio.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-03.6-01** `Must·MVP·Pendiente` Permitir al vendedor fijar las unidades disponibles por día de recogida. _(N-VEN-02)_
+- [ ] **RF-03.6-01** `Must·MVP·Decidido` Permitir al vendedor fijar las unidades disponibles por día de recogida. _(N-VEN-02)_
   - Criterio: Dadas 10 unidades, cuando se venden 10, entonces el producto sale «Agotado» ese día.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.6-02** `Must·MVP·Pendiente` Permitir marcar un producto como «No disponible esta semana» sin borrarlo. _(N-VEN-02)_
+- [ ] **RF-03.6-02** `Must·MVP·Decidido` Permitir marcar un producto como «No disponible esta semana» sin borrarlo. _(N-VEN-02)_
   - Criterio: Dado un producto pausado, cuando un cliente busca, entonces no aparece.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-03.6-03** `Should·V2·Pendiente` Avisar al vendedor por correo cuando un producto se agote. _(N-VEN-02)_
@@ -4289,10 +4291,10 @@ Historial de versiones del producto.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-03.7-01** `Must·MVP·Pendiente` Permitir editar cualquier campo; los cambios de precio no afectan a pedidos ya pagados. _(N-VEN-02)_
+- [ ] **RF-03.7-01** `Must·MVP·Decidido` Permitir editar cualquier campo; los cambios de precio no afectan a pedidos ya pagados. _(N-VEN-02)_
   - Criterio: Dado un cambio de precio, cuando hay un pedido pagado, entonces ese pedido conserva el precio anterior.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RF-03.7-02** `Must·MVP·Pendiente` Permitir retirar un producto; queda en «Retirados» y puede reactivarse. _(N-VEN-02)_
+- [ ] **RF-03.7-02** `Must·MVP·Decidido` Permitir retirar un producto; queda en «Retirados» y puede reactivarse. _(N-VEN-02)_
   - Criterio: Dado un producto retirado, cuando lo reactiva, entonces vuelve a publicarse.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RF-03.7-03** `Could·V2·Pendiente` Permitir crear packs con varios productos del mismo vendedor y un precio conjunto. _(N-PLA-02)_
@@ -4448,7 +4450,7 @@ Revisión previa del admin de cada producto (se hace a posteriori, RF-13.3-01, V
 - [ ] **RF-03.9-01** `Must·MVP·Decidido` Publicar un producto solo si todos los campos obligatorios están completos. _(N-CAT-01)_
   - Criterio: Dada una ficha completa, cuando pulsa «Publicar», entonces el estado pasa a Publicado.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-03.9-02** `Should·MVP·Pendiente` Mostrar al vendedor una vista previa de la tarjeta y la ficha antes de publicar. _(N-CAT-01)_
+- [ ] **RF-03.9-02** `Should·MVP·Decidido` Mostrar al vendedor una vista previa de la tarjeta y la ficha antes de publicar. _(N-CAT-01)_
   - Criterio: Dada una ficha completa, cuando pulsa «Vista previa», entonces ve la tarjeta tal como la verá el cliente.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-03.9-03** `Could·V3·Pendiente` Permitir vender producto no local solo cuando el admin lo autorice por falta de oferta local, y marcarlo «No local». _(N-CAT-03)_
@@ -4585,16 +4587,16 @@ Scroll infinito; mapa de vendedores.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-04.1-01** `Must·MVP·Pendiente` Mostrar el catálogo en /comprar#marketplace filtrado por la zona elegida en la cabecera. _(N-CAR-01)_
+- [ ] **RF-04.1-01** `Must·MVP·Decidido` Mostrar el catálogo en /comprar#marketplace filtrado por la zona elegida en la cabecera. _(N-CAR-01)_
   - Criterio: Dada la zona Sevilla, cuando abre el catálogo, entonces solo ve vendedores de Sevilla.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
-- [ ] **RF-04.1-02** `Must·MVP·Pendiente` Mostrar las categorías como fila de botones con su punto de color de la paleta de mercado. _(N-CAR-01)_
+- [ ] **RF-04.1-02** `Must·MVP·Decidido` Mostrar las categorías como fila de botones con su punto de color de la paleta de mercado. _(N-CAR-01)_
   - Criterio: Dado el catálogo, cuando pulsa «Fruta», entonces solo ve fruta.
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca ? · Market ? · Open S → Paridad
-- [ ] **RF-04.1-03** `Must·MVP·Pendiente` Mostrar los productos en rejilla de 4 columnas en ordenador, 2 en tableta y 1 en móvil. _(N-CAR-01)_
+- [ ] **RF-04.1-03** `Must·MVP·Decidido` Mostrar los productos en rejilla de 4 columnas en ordenador, 2 en tableta y 1 en móvil. _(N-CAR-01)_
   - Criterio: Dada una pantalla de 1280 px, cuando carga, entonces hay 4 columnas.
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca P · Market ? · Open S → Paridad
-- [ ] **RF-04.1-04** `Should·MVP·Pendiente` Cargar 24 productos y mostrar «Ver más» para los siguientes 24. _(N-CAR-01)_
+- [ ] **RF-04.1-04** `Should·MVP·Decidido` Cargar 24 productos y mostrar «Ver más» para los siguientes 24. _(N-CAR-01)_
   - Criterio: Dados 60 productos, cuando pulsa «Ver más» dos veces, entonces ve los 60.
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca P · Market ? · Open S → Paridad
 
@@ -4686,16 +4688,16 @@ Búsqueda por voz o por foto.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-04.2-01** `Must·MVP·Pendiente` Mostrar el buscador en la cabecera con el texto de ayuda «Busca productos o vendedores». _(N-CAR-01)_
+- [ ] **RF-04.2-01** `Must·MVP·Decidido` Mostrar el buscador en la cabecera con el texto de ayuda «Busca productos o vendedores». _(N-CAR-01)_
   - Criterio: Dada la cabecera, cuando se carga, entonces se ve el buscador.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.2-02** `Must·MVP·Pendiente` Buscar por nombre de producto, de vendedor y de categoría, sin distinguir mayúsculas ni tildes. _(N-CAR-01)_
+- [ ] **RF-04.2-02** `Must·MVP·Decidido` Buscar por nombre de producto, de vendedor y de categoría, sin distinguir mayúsculas ni tildes. _(N-CAR-01)_
   - Criterio: Dado «platano», cuando busca, entonces encuentra «Plátano de Canarias».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.2-03** `Should·MVP·Pendiente` Sugerir hasta 6 resultados mientras se escribe a partir de 2 caracteres. _(N-CAR-01)_
+- [ ] **RF-04.2-03** `Should·MVP·Decidido` Sugerir hasta 6 resultados mientras se escribe a partir de 2 caracteres. _(N-CAR-01)_
   - Criterio: Dado «to», cuando escribe, entonces ve hasta 6 sugerencias.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.2-04** `Should·MVP·Pendiente` Si no hay resultados, mostrar «No encontramos “<texto>” en tu zona» y 4 productos de temporada. _(N-CAR-01)_
+- [ ] **RF-04.2-04** `Should·MVP·Decidido` Si no hay resultados, mostrar «No encontramos “<texto>” en tu zona» y 4 productos de temporada. _(N-CAR-01)_
   - Criterio: Dado «caviar», cuando busca, entonces ve el mensaje y 4 sugerencias.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 
@@ -4792,16 +4794,16 @@ Filtros nutricionales.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-04.3-01** `Must·MVP·Pendiente` Filtrar por vendedor, categoría, «sin» un alérgeno, temporada, ecológico y conservación. _(N-CAT-02)_
+- [ ] **RF-04.3-01** `Must·MVP·Decidido` Filtrar por vendedor, categoría, «sin» un alérgeno, temporada, ecológico y conservación. _(N-CAT-02)_
   - Criterio: Dado «sin gluten», cuando filtra, entonces no aparece ningún producto con gluten ni trazas.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Diferencial
-- [ ] **RF-04.3-02** `Should·MVP·Pendiente` Aplicar por defecto el filtro de las alergias guardadas del cliente, con aviso «Ocultamos productos con tus alérgenos» y opción de desactivarlo. _(N-CAT-02)_
+- [ ] **RF-04.3-02** `Should·MVP·Decidido` Aplicar por defecto el filtro de las alergias guardadas del cliente, con aviso «Ocultamos productos con tus alérgenos» y opción de desactivarlo. _(N-CAT-02)_
   - Criterio: Dado un cliente alérgico al huevo, cuando abre el catálogo, entonces no ve productos con huevo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Diferencial
 - [ ] **RF-04.3-03** `Should·V2·Pendiente` Ordenar por relevancia, precio (de menor a mayor y al revés) y novedad. _(N-PLA-02)_
   - Criterio: Dado «precio de menor a mayor», cuando ordena, entonces el primero es el más barato.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.3-04** `Should·MVP·Pendiente` Mostrar los filtros activos como etiquetas con una «×» para quitarlos y un enlace «Quitar todos». _(N-CAR-01)_
+- [ ] **RF-04.3-04** `Should·MVP·Decidido` Mostrar los filtros activos como etiquetas con una «×» para quitarlos y un enlace «Quitar todos». _(N-CAR-01)_
   - Criterio: Dados 2 filtros, cuando pulsa «Quitar todos», entonces se ve el catálogo completo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 
@@ -4901,13 +4903,13 @@ Favoritos (V2).
 - [ ] **RF-04.4-01** `Must·MVP·Decidido` Mostrar en la tarjeta: foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos y precio. _(N-CAT-01)_
   - Criterio: Dada una tarjeta, cuando se ve, entonces contiene esos siete datos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Poco extendido
-- [ ] **RF-04.4-02** `Should·MVP·Pendiente` Dar a la tarjeta fondo blanco, borde 1 px #DDD0B0 y radio 10 px; al pasar el ratón sube 4 px en 200 ms. _(N-CAR-01)_
+- [ ] **RF-04.4-02** `Should·MVP·Decidido` Dar a la tarjeta fondo blanco, borde 1 px #DDD0B0 y radio 10 px; al pasar el ratón sube 4 px en 200 ms. _(N-CAR-01)_
   - Criterio: Dado el ratón encima, cuando pasa, entonces la tarjeta se eleva.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Paridad
-- [ ] **RF-04.4-03** `Must·MVP·Pendiente` Incluir en la tarjeta el botón «Añadir» y un selector de cantidad que aparece tras añadir. _(N-CAR-01)_
+- [ ] **RF-04.4-03** `Must·MVP·Decidido` Incluir en la tarjeta el botón «Añadir» y un selector de cantidad que aparece tras añadir. _(N-CAR-01)_
   - Criterio: Dado «Añadir» pulsado, cuando se añade, entonces el botón se convierte en «− 1 +».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.4-04** `Must·MVP·Pendiente` Mostrar «Agotado» en gris y desactivar «Añadir» si no hay stock. _(N-CAR-01)_
+- [ ] **RF-04.4-04** `Must·MVP·Decidido` Mostrar «Agotado» en gris y desactivar «Añadir» si no hay stock. _(N-CAR-01)_
   - Criterio: Dado stock 0, cuando se ve la tarjeta, entonces «Añadir» está desactivado.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -5005,17 +5007,17 @@ Productos relacionados (V2).
 
 **Requisitos atómicos (5)**
 
-- [ ] **RF-04.5-01** `Must·MVP·Pendiente` Mostrar en /producto/<id> la galería de fotos, el nombre, el vendedor con enlace a su perfil y el precio por unidad y por kilo. _(N-CAT-01)_
+- [ ] **RF-04.5-01** `Must·MVP·Decidido` Mostrar en /producto/<id> la galería de fotos, el nombre, el vendedor con enlace a su perfil y el precio por unidad y por kilo. _(N-CAT-01)_
   - Criterio: Dada una ficha, cuando pulsa el vendedor, entonces llega a su perfil.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca N · Market S · Open S → Paridad
 - [ ] **RF-04.5-02** `Must·MVP·Decidido` Mostrar ingredientes, alérgenos (contiene y trazas), conservación, tipo de fecha y vida útil. _(N-CAT-02)_
   - Criterio: Dado un queso, cuando se abre la ficha, entonces se ven los cinco datos.
   - Competencia: Mercadona P · Glovo ? · Too N · Wetaca P · Market S · Open S → Poco extendido
-- [ ] **RF-04.5-03** `Should·MVP·Pendiente` Mostrar el origen con municipio y distancia aproximada al centro de la zona. _(N-VEN-01)_
+- [ ] **RF-04.5-03** `Should·MVP·Decidido` Mostrar el origen con municipio y distancia aproximada al centro de la zona. _(N-VEN-01)_
   - Criterio: Dado un producto de Alhaurín, cuando se ve en Málaga, entonces muestra «Alhaurín el Grande · 20 km».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Poco extendido
-- [ ] **RF-04.5-04** `Could·V2·Pendiente` Mostrar hasta 4 productos relacionados del mismo vendedor. _(N-CAR-01)_
-  - Criterio: Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 relacionados.
+- [ ] **RF-04.5-04** `Could·V2·Pendiente` Mostrar hasta 4 productos del mismo vendedor bajo el título «Más de <vendedor>», para que se vea el criterio. _(N-CAR-01)_
+  - Criterio: Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 bajo «Más de <vendedor>».
   - Competencia: Mercadona S · Glovo ? · Too N · Wetaca P · Market S · Open S → Paridad
 - [ ] **RF-04.5-05** `Could·V3·Pendiente` Mostrar el desglose orientativo del precio: parte del vendedor, logística y FOOD4ALL. _(N-CAT-03)_
   - Criterio: Dado un precio, cuando se pulsa «¿A dónde va tu dinero?», entonces se ve el desglose.
@@ -5259,13 +5261,13 @@ Funcionamiento sin conexión.
 - [ ] **RF-04.8-01** `Should·V2·Pendiente` En móvil, abrir los filtros en un panel desde abajo con el botón «Filtrar (n)». _(N-CAR-01)_
   - Criterio: Dados 2 filtros activos, cuando se ve el botón, entonces dice «Filtrar (2)».
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.8-02** `Should·MVP·Pendiente` Mantener los filtros y la posición al volver de una ficha al catálogo. _(N-CAR-01)_
+- [ ] **RF-04.8-02** `Should·MVP·Decidido` Mantener los filtros y la posición al volver de una ficha al catálogo. _(N-CAR-01)_
   - Criterio: Dado un filtro y un scroll, cuando vuelve atrás, entonces conserva ambos.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-04.8-03** `Could·V2·Pendiente` Mostrar marcadores grises de carga con la forma de la tarjeta mientras llegan los productos. _(N-CAR-01)_
   - Criterio: Dada una carga lenta, cuando espera, entonces ve las tarjetas grises.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-04.8-04** `Must·MVP·Pendiente` Si falla la carga, mostrar «No hemos podido cargar los productos» con el botón «Reintentar». _(N-CAR-01)_
+- [ ] **RF-04.8-04** `Must·MVP·Decidido` Si falla la carga, mostrar «No hemos podido cargar los productos» con el botón «Reintentar». _(N-CAR-01)_
   - Criterio: Dado un error de red, cuando ocurre, entonces ve el mensaje y el botón.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-04.8-05** `Should·V2·Pendiente` Reflejar búsqueda y filtros en la URL para poder compartirlos. _(N-CAR-01)_
@@ -5363,13 +5365,13 @@ Etiquetas definidas por el vendedor.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-04.9-01** `Should·MVP·Pendiente` Mostrar la etiqueta «Temporada» en oliva --olive y «Ecológico» con su sello cuando correspondan. _(N-VEN-01)_
+- [ ] **RF-04.9-01** `Should·MVP·Decidido` Mostrar la etiqueta «Temporada» en oliva --olive y «Ecológico» con su sello cuando correspondan. _(N-VEN-01)_
   - Criterio: Dado un producto de temporada, cuando se ve, entonces lleva la etiqueta en #7D8A2E.
   - Competencia: Mercadona ? · Glovo ? · Too P · Wetaca ? · Market S · Open S → Poco extendido
 - [ ] **RF-04.9-02** `Could·V2·Pendiente` Mostrar «Aprovechamiento» en los productos con defecto estético y precio reducido. _(N-VEN-03)_
   - Criterio: Dado un producto de aprovechamiento, cuando se ve, entonces lleva la etiqueta.
   - Competencia: Mercadona ? · Glovo ? · Too P · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-04.9-03** `Must·MVP·Pendiente` Mostrar el aviso «Contiene tus alérgenos» en rojo si el cliente desactivó el filtro y el producto tiene uno de sus alérgenos. _(N-CAT-02)_
+- [ ] **RF-04.9-03** `Must·MVP·Decidido` Mostrar el aviso «Contiene tus alérgenos» en rojo si el cliente desactivó el filtro y el producto tiene uno de sus alérgenos. _(N-CAT-02)_
   - Criterio: Dado un alérgico al huevo sin filtro, cuando ve un producto con huevo, entonces aparece el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Diferencial
 - [ ] **RF-04.9-04** `Could·V2·Pendiente` Mostrar «Quedan 3» cuando queden 3 unidades o menos. _(N-CAR-01)_
@@ -5411,7 +5413,7 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 
 **Competencia**
 
-30 requisitos atómicos · Poco extendido 26 · Diferencial 2 · Paridad 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-12.
+30 requisitos atómicos · Poco extendido 25 · Diferencial 2 · Paridad 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-12.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -5442,13 +5444,12 @@ Cliente
 
 **5. Ubicación**
 
-/comprar#asistente y acceso «Pide una cesta a la IA» en la portada y en el carrito vacío.
+/comprar#asistente, desde la pestaña «Asistente IA» de la cabecera (arriba a la derecha) y desde el carrito vacío.
 
 **6. Elementos de la pantalla (en este orden)**
 
 - Botones de presupuesto 15, 25, 40 € y días 2, 4, 7 (RF-12.6)
 - Campos: presupuesto, días, personas, tiempo para cocinar
-- Campo de texto libre «Cuéntanos qué necesitas»
 - Botón «Preparar mi cesta»
 
 **7. Diseño**
@@ -5457,9 +5458,9 @@ Ver RF-12.6.
 
 **8. Flujo principal**
 
-1. El cliente elige con botones o escribe una frase («Tengo 25 € y 4 días»).
-2. El asistente rellena los campos con lo entendido.
-3. El cliente pulsa «Preparar mi cesta».
+1. El cliente elige el presupuesto y los días con los botones.
+2. Completa personas y tiempo para cocinar.
+3. Pulsa «Preparar mi cesta».
 
 **9. Campos y validaciones**
 
@@ -5470,7 +5471,7 @@ Ver RF-12.6.
 
 **10. Flujos alternativos y errores**
 
-- Frase que no se entiende: «No lo he entendido. Elige el presupuesto y los días con los botones.»
+- Campo vacío o fuera de rango: se muestra el mensaje del campo y no se envía.
 
 **11. Reglas de negocio y seguridad**
 
@@ -5507,13 +5508,13 @@ Entrada por voz o foto de la nevera.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-12.1-01** `Should·MVP·Pendiente` `simulado` Ofrecer el asistente en /comprar#asistente y desde la portada con «Pide una cesta a la IA». _(N-IA-01)_
-  - Criterio: Dada la portada, cuando pulsa el acceso, entonces llega al asistente.
+- [ ] **RF-12.1-01** `Should·MVP·Pendiente` `simulado` Ofrecer el asistente en /comprar#asistente y desde la pestaña «Asistente IA» de la cabecera, arriba a la derecha: visible, pero sin destacar más que «Comprar». _(N-IA-01)_
+  - Criterio: Dada cualquier página, cuando pulsa «Asistente IA» en la cabecera, entonces llega al asistente.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.1-02** `Should·MVP·Pendiente` `simulado` Pedir presupuesto (5 a 200 €), días (1 a 7), número de personas (1 a 6) y tiempo para cocinar (poco, normal, mucho). _(N-IA-01)_
   - Criterio: Dado un presupuesto de 3 €, cuando envía, entonces ve «El presupuesto mínimo es de 5 €».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Diferencial
-- [ ] **RF-12.1-03** `Should·MVP·Pendiente` `simulado` Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»). _(N-IA-01)_
+- [ ] **RF-12.1-03** `Could·V2·Pendiente` Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»). _(N-IA-01)_
   - Criterio: Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.1-04** `Should·MVP·Pendiente` `simulado` Rellenar por defecto con las preferencias guardadas del cliente. _(N-IA-01)_
@@ -5707,7 +5708,7 @@ RNF-01 Seguridad · RNF-02 Privacidad · RNF-05 Accesibilidad · RNF-06 Compatib
 
 **15. Competencia**
 
-Poco extendido 4
+Poco extendido 3 · Mejora 1
 
 - Mercadona online: 0 sí, 4 no
 - Glovo: 0 sí, 4 parcial
@@ -5715,6 +5716,7 @@ Poco extendido 4
 - Wetaca: 0 sí
 - Market Wagon: 0 sí
 - Open Food Network: 0 sí
+- Diferenciales y mejoras: RF-12.3-01 (Mejora)
 
 **16. Fuera de alcance**
 
@@ -5724,7 +5726,7 @@ Guardar cestas (V2).
 
 - [ ] **RF-12.3-01** `Should·MVP·Pendiente` `simulado` Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»). _(N-IA-02)_
   - Criterio: Dada una cesta, cuando se ve un producto, entonces tiene su motivo.
-  - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Mejora
 - [ ] **RF-12.3-02** `Should·MVP·Pendiente` `simulado` Permitir quitar, cambiar la cantidad o pedir «Otra opción» en cada producto. _(N-IA-01)_
   - Criterio: Dado «Otra opción», cuando la pulsa, entonces se cambia por un producto de la misma categoría.
   - Competencia: Mercadona N · Glovo P · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
@@ -5933,7 +5935,6 @@ Cliente
 **6. Elementos de la pantalla (en este orden)**
 
 - Botones de presupuesto (15, 25, 40 €) y días (2, 4, 7)
-- Campo de texto libre
 - Mensajes: cliente a la derecha; IA a la izquierda con etiqueta «IA»
 - Total de la cesta y «Te sobran 1,60 €»
 - Botón «Nueva cesta»
@@ -5944,7 +5945,7 @@ Mensajes en tarjetas de radio 10 px: cliente en --tint-peach, IA en --surface co
 
 **8. Flujo principal**
 
-1. El cliente usa los botones o escribe.
+1. El cliente usa los botones y los campos.
 2. Ve la respuesta a la izquierda.
 3. Pulsa «Nueva cesta» para empezar de cero.
 
@@ -5954,11 +5955,11 @@ No tiene campos de entrada.
 
 **10. Flujos alternativos y errores**
 
-- Petición que no es de comida: «Solo puedo ayudarte con tu compra de comida».
+- Respuesta que tarda más de 10 s: «Estamos preparando tu cesta…» (RF-12.2-05).
 
 **11. Reglas de negocio y seguridad**
 
-- La IA solo atiende compras de comida (Pendiente: propuesta).
+- Sin texto libre en el MVP: solo opciones guiadas (C-26). El filtro de peticiones que no son de comida llega con el texto libre (RF-12.6-05, V2).
 
 **12. Accesibilidad**
 
@@ -5989,8 +5990,8 @@ Historial de conversaciones.
 
 **Requisitos atómicos (5)**
 
-- [ ] **RF-12.6-01** `Should·MVP·Pendiente` `simulado` Mostrar el asistente con opciones guiadas (botones de presupuesto 15, 25, 40 € y días 2, 4, 7) y un campo de texto libre. _(N-IA-01)_
-  - Criterio: Dado el asistente, cuando se abre, entonces se ven los botones y el campo.
+- [ ] **RF-12.6-01** `Should·MVP·Pendiente` `simulado` Mostrar el asistente con opciones guiadas: botones de presupuesto (15, 25, 40 €) y días (2, 4, 7), y los campos de personas y tiempo para cocinar. _(N-IA-01)_
+  - Criterio: Dado el asistente, cuando se abre, entonces se ven los botones y los campos, sin texto libre.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-12.6-02** `Should·MVP·Pendiente` `simulado` Mostrar la conversación como mensajes: los del cliente a la derecha y los de la IA a la izquierda con la etiqueta «IA». _(N-IA-02)_
   - Criterio: Dada una respuesta, cuando aparece, entonces está a la izquierda con la etiqueta.
@@ -6001,7 +6002,7 @@ Historial de conversaciones.
 - [ ] **RF-12.6-04** `Should·MVP·Pendiente` `simulado` Permitir empezar de nuevo con «Nueva cesta». _(N-IA-01)_
   - Criterio: Dado «Nueva cesta», cuando lo pulsa, entonces se vacía la conversación.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-12.6-05** `Should·MVP·Pendiente` `simulado` Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida». _(N-IA-02)_
+- [ ] **RF-12.6-05** `Could·V2·Pendiente` Si la petición no es de comida, responder «Solo puedo ayudarte con tu compra de comida». _(N-IA-02)_
   - Criterio: Dado «hazme los deberes», cuando lo envía, entonces recibe esa respuesta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 
@@ -6155,7 +6156,7 @@ Inicio del panel del vendedor: qué tiene que hacer hoy y con qué plazo.
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6226,10 +6227,10 @@ Estadísticas (V2).
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-16.1-01** `Must·MVP·Pendiente` Mostrar en /vender/panel un resumen con: pedidos de hoy, pedidos por confirmar, productos agotados y próxima recogida. _(N-VEN-04)_
+- [ ] **RF-16.1-01** `Must·MVP·Decidido` Mostrar en /vender/panel un resumen con: pedidos de hoy, pedidos por confirmar, productos agotados y próxima recogida. _(N-VEN-04)_
   - Criterio: Dado un vendedor con 2 pedidos por confirmar, cuando entra, entonces ve «2 por confirmar».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-16.1-02** `Must·MVP·Pendiente` Destacar en naranja las acciones pendientes con plazo, con el tiempo restante. _(N-VEN-04)_
+- [ ] **RF-16.1-02** `Must·MVP·Decidido` Destacar en naranja las acciones pendientes con plazo, con el tiempo restante. _(N-VEN-04)_
   - Criterio: Dado un pedido que vence en 3 h, cuando se ve, entonces muestra «Confirma antes de 3 h».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-16.1-03** `Must·MVP·Decidido` Mostrar pestañas: Inicio, Pedidos, Productos, Ventas, Negocio; la activa en tomate --tomato. _(N-VEN-04)_
@@ -6252,7 +6253,7 @@ Lista de subpedidos del vendedor por día de recogida, con su estado y la opció
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -6325,10 +6326,10 @@ Exportar pedidos.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-16.2-01** `Must·MVP·Pendiente` Listar los subpedidos por día de recogida con estado: Nuevo, Confirmado, Listo, Recogido. _(N-VEN-04)_
+- [ ] **RF-16.2-01** `Must·MVP·Decidido` Listar los subpedidos por día de recogida con estado: Nuevo, Confirmado, Listo, Recogido. _(N-VEN-04)_
   - Criterio: Dado el filtro «mañana», cuando se aplica, entonces solo salen los de mañana.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-16.2-02** `Should·MVP·Pendiente` Permitir confirmar todos los subpedidos de un día con «Confirmar todos» si no hay faltas. _(N-VEN-04)_
+- [ ] **RF-16.2-02** `Should·MVP·Decidido` Permitir confirmar todos los subpedidos de un día con «Confirmar todos» si no hay faltas. _(N-VEN-04)_
   - Criterio: Dados 5 nuevos sin faltas, cuando pulsa, entonces pasan a Confirmado.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-16.2-03** `Should·V2·Pendiente` Mostrar el historial de subpedidos de los últimos 12 meses. _(N-VEN-04)_
@@ -6488,13 +6489,13 @@ Edición masiva.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-16.4-01** `Must·MVP·Pendiente` Listar los productos con foto, nombre, estado (Publicado, Borrador, Retirado, Agotado) y stock. _(N-VEN-02)_
+- [ ] **RF-16.4-01** `Must·MVP·Decidido` Listar los productos con foto, nombre, estado (Publicado, Borrador, Retirado, Agotado) y stock. _(N-VEN-02)_
   - Criterio: Dado un borrador, cuando se ve la lista, entonces muestra el estado Borrador.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-16.4-02** `Should·MVP·Pendiente` Permitir cambiar el stock desde la lista sin abrir la ficha. _(N-VEN-02)_
+- [ ] **RF-16.4-02** `Should·MVP·Decidido` Permitir cambiar el stock desde la lista sin abrir la ficha. _(N-VEN-02)_
   - Criterio: Dado el stock de 10, cuando lo cambia a 8 en la lista, entonces se guarda.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-16.4-03** `Must·MVP·Pendiente` Mostrar qué le falta a cada borrador para publicarse. _(N-VEN-06)_
+- [ ] **RF-16.4-03** `Must·MVP·Decidido` Mostrar qué le falta a cada borrador para publicarse. _(N-VEN-06)_
   - Criterio: Dado un borrador sin alérgenos, cuando se ve, entonces dice «Faltan alérgenos».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-16.4-04** `Could·V2·Pendiente` Permitir duplicar un producto para crear otro parecido. _(N-VEN-02)_
@@ -6517,7 +6518,7 @@ Días sin recogida (vacaciones) del vendedor, avisando si ya hay pedidos en esas
 
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-15
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -6589,10 +6590,10 @@ Calendario recurrente.
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-16.5-01** `Must·MVP·Pendiente` Permitir al vendedor marcar días sin recogida (vacaciones) con fecha de inicio y fin. _(N-VEN-04)_
+- [ ] **RF-16.5-01** `Must·MVP·Decidido` Permitir al vendedor marcar días sin recogida (vacaciones) con fecha de inicio y fin. _(N-VEN-04)_
   - Criterio: Dadas vacaciones del 1 al 7, cuando se guardan, entonces sus productos no se venden esos días.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RF-16.5-02** `Must·MVP·Pendiente` Avisar de que hay pedidos en esas fechas antes de guardar las vacaciones. _(N-VEN-04)_
+- [ ] **RF-16.5-02** `Must·MVP·Decidido` Avisar de que hay pedidos en esas fechas antes de guardar las vacaciones. _(N-VEN-04)_
   - Criterio: Dado un pedido el día 3, cuando marca vacaciones, entonces ve el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -6778,7 +6779,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 25 · Paridad 7 · Diferencial 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
+35 requisitos atómicos · Poco extendido 22 · Paridad 9 · Mejora 2 · Diferencial 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-05.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -6874,16 +6875,16 @@ Carritos compartidos de piso (idea futura); varios carritos por cliente.
 - [ ] **RF-05.1-01** `Must·MVP·Decidido` Permitir añadir productos de cualquier vendedor de la zona al mismo carrito. _(N-CAR-01)_
   - Criterio: Dado un producto del vendedor A en el carrito, cuando añade uno del vendedor B, entonces el carrito tiene ambos.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-05.1-02** `Must·MVP·Pendiente` Mostrar el icono del carrito en la cabecera con un contador de unidades en un círculo naranja --accent. _(N-CAR-01)_
+- [ ] **RF-05.1-02** `Must·MVP·Decidido` Mostrar el icono del carrito en la cabecera con un contador de unidades en un círculo naranja --accent. _(N-CAR-01)_
   - Criterio: Dados 3 productos, cuando se ve la cabecera, entonces el contador muestra 3.
   - Competencia: Mercadona S · Glovo N · Too N · Wetaca P · Market S · Open S → Paridad
-- [ ] **RF-05.1-03** `Should·MVP·Pendiente` Al añadir, mostrar durante 3 s el aviso «Añadido: <producto> de <vendedor>» con enlace «Ver carrito». _(N-CAR-01)_
+- [ ] **RF-05.1-03** `Should·MVP·Decidido` Al añadir, mostrar durante 3 s el aviso «Añadido: <producto> de <vendedor>» con enlace «Ver carrito». _(N-CAR-01)_
   - Criterio: Dado un añadido, cuando ocurre, entonces aparece el aviso.
   - Competencia: Mercadona S · Glovo N · Too N · Wetaca P · Market S · Open S → Paridad
-- [ ] **RF-05.1-04** `Must·MVP·Pendiente` No permitir añadir productos de otra zona; si cambia de zona con productos, avisar «Tu carrito tiene productos de <zona>. ¿Vaciarlo?» _(N-CAR-01)_
+- [ ] **RF-05.1-04** `Must·MVP·Decidido` No permitir añadir productos de otra zona; si cambia de zona con productos, avisar «Tu carrito tiene productos de <zona>. ¿Vaciarlo?» _(N-CAR-01)_
   - Criterio: Dado un carrito de Málaga, cuando cambia a Sevilla, entonces ve la pregunta.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.1-05** `Must·MVP·Pendiente` Limitar la cantidad de cada producto al stock disponible del día de recogida. _(N-CAR-01)_
+- [ ] **RF-05.1-05** `Must·MVP·Decidido` Limitar la cantidad de cada producto al stock disponible del día de recogida. _(N-CAR-01)_
   - Criterio: Dado stock 4, cuando intenta poner 5, entonces el + se desactiva en 4.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -6905,7 +6906,7 @@ Vista del carrito agrupada por vendedor con un único total. El cliente ve de qu
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -6984,19 +6985,19 @@ Cupones (V2).
 - [ ] **RF-05.2-01** `Must·MVP·Decidido` Mostrar el carrito en /carrito agrupado por vendedor, con el nombre del vendedor y su ciudad como cabecera de cada grupo. _(N-CAR-01)_
   - Criterio: Dados productos de 3 vendedores, cuando abre /carrito, entonces ve 3 grupos.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-05.2-02** `Must·MVP·Pendiente` Mostrar en cada línea: miniatura, nombre, formato, precio unitario, selector de cantidad, subtotal y botón «Quitar». _(N-CAR-01)_
+- [ ] **RF-05.2-02** `Must·MVP·Decidido` Mostrar en cada línea: miniatura, nombre, formato, precio unitario, selector de cantidad, subtotal y botón «Quitar». _(N-CAR-01)_
   - Criterio: Dada una línea, cuando se ve, entonces contiene esos siete elementos.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-05.2-03** `Must·MVP·Pendiente` Mostrar el subtotal de cada vendedor al pie de su grupo. _(N-CAR-01)_
+- [ ] **RF-05.2-03** `Must·MVP·Decidido` Mostrar el subtotal de cada vendedor al pie de su grupo. _(N-CAR-01)_
   - Criterio: Dados 2 productos de 3 € del vendedor A, cuando se ve, entonces su subtotal es 6,00 €.
   - Competencia: Mercadona S · Glovo N · Too N · Wetaca N · Market S · Open S → Paridad
 - [ ] **RF-05.2-04** `Must·MVP·Decidido` Mostrar un único total del carrito con el desglose: productos, envío y total. _(N-CAR-01)_
   - Criterio: Dados 25 € de productos y envío de 3,90 €, cuando se ve, entonces el total es 28,90 €.
   - Competencia: Mercadona S · Glovo N · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-05.2-05** `Must·MVP·Pendiente` Mostrar la nota «Recibirás todo en una sola entrega» bajo el total. _(N-ENT-01)_
+- [ ] **RF-05.2-05** `Must·MVP·Decidido` Mostrar la nota «Recibirás todo en una sola entrega» bajo el total. _(N-ENT-01)_
   - Criterio: Dado un carrito con varios vendedores, cuando se ve, entonces aparece la nota.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Poco extendido
-- [ ] **RF-05.2-06** `Should·MVP·Pendiente` Con el carrito vacío, mostrar «Tu carrito está vacío» y los botones «Ver productos» y «Pedir una cesta a la IA». _(N-PLA-01)_
+- [ ] **RF-05.2-06** `Should·MVP·Decidido` Con el carrito vacío, mostrar «Tu carrito está vacío» y los botones «Ver productos» y «Pedir una cesta a la IA». _(N-PLA-01)_
   - Criterio: Dado un carrito vacío, cuando abre /carrito, entonces ve el mensaje y los dos botones.
   - Competencia: Mercadona S · Glovo N · Too N · Wetaca N · Market S · Open S → Paridad
 
@@ -7087,13 +7088,13 @@ Cantidades por peso con decimales (V2).
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-05.3-01** `Must·MVP·Pendiente` Cambiar la cantidad con los botones − y + o escribiendo el número. _(N-CAR-01)_
+- [ ] **RF-05.3-01** `Must·MVP·Decidido` Cambiar la cantidad con los botones − y + o escribiendo el número. _(N-CAR-01)_
   - Criterio: Dado 2, cuando pulsa +, entonces pasa a 3 y se recalculan subtotal y total.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-05.3-02** `Should·MVP·Pendiente` Al poner la cantidad a 0 o pulsar «Quitar», eliminar la línea y mostrar «Producto quitado. Deshacer» durante 5 s. _(N-CAR-01)_
+- [ ] **RF-05.3-02** `Should·MVP·Decidido` Al poner la cantidad a 0 o pulsar «Quitar», eliminar la línea y mostrar «Producto quitado. Deshacer» durante 5 s. _(N-CAR-01)_
   - Criterio: Dado «Quitar», cuando pulsa «Deshacer», entonces la línea vuelve.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-05.3-03** `Should·MVP·Pendiente` Recalcular los totales en menos de 300 ms tras cada cambio. _(N-CAR-01)_
+- [ ] **RF-05.3-03** `Should·MVP·Decidido` Recalcular los totales en menos de 300 ms tras cada cambio. _(N-CAR-01)_
   - Criterio: Dado un cambio de cantidad, cuando ocurre, entonces el total se actualiza en ≤ 300 ms.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 
@@ -7115,7 +7116,7 @@ Un solo coste de envío por pedido, se compre a uno o a cinco vendedores, y una 
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
 
 **3. Actores y roles**
 
@@ -7174,7 +7175,7 @@ RNF-01 Seguridad · RNF-03 Eficiencia · RNF-04 Usabilidad · RNF-05 Accesibilid
 
 **15. Competencia**
 
-Poco extendido 3 · Mejora 1
+Poco extendido 2 · Mejora 2
 
 - Mercadona online: 4 sí
 - Glovo: 0 sí, 2 no
@@ -7182,7 +7183,7 @@ Poco extendido 3 · Mejora 1
 - Wetaca: 0 sí
 - Market Wagon: 2 sí
 - Open Food Network: 0 sí
-- Diferenciales y mejoras: RF-05.4-02 (Mejora)
+- Diferenciales y mejoras: RF-05.4-02 (Mejora), RF-05.4-04 (Mejora)
 
 **16. Fuera de alcance**
 
@@ -7199,9 +7200,9 @@ Envío gratis por suscripción (V3); envío por distancia.
 - [ ] **RF-05.4-03** `Must·MVP·Pendiente` Mostrar una barra de progreso hacia la compra mínima: «Te faltan 2,00 € para el mínimo». _(N-CAR-01)_
   - Criterio: Dados 10 € y un mínimo de 12 €, cuando se ve el carrito, entonces aparece ese texto.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.4-04** `Must·MVP·Pendiente` Mostrar el coste de envío antes del checkout, nunca por primera vez al pagar. _(N-CAT-03)_
+- [ ] **RF-05.4-04** `Must·MVP·Decidido` Mostrar el coste de envío antes del checkout, nunca por primera vez al pagar. _(N-CAT-03)_
   - Criterio: Dado el carrito, cuando se ve, entonces el envío ya figura en el desglose.
-  - Competencia: Mercadona S · Glovo N · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo N · Too ? · Wetaca ? · Market S · Open ? → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -7290,10 +7291,10 @@ Seguimiento del gasto mensual.
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-05.5-01** `Should·MVP·Pendiente` Si el cliente fijó un presupuesto, mostrar en el carrito «Llevas 24,10 € de tu presupuesto de 30 €». _(N-PLA-02)_
+- [ ] **RF-05.5-01** `Should·MVP·Decidido` Si el cliente fijó un presupuesto, mostrar en el carrito «Llevas 24,10 € de tu presupuesto de 30 €». _(N-PLA-02)_
   - Criterio: Dado un presupuesto de 30 €, cuando el carrito suma 24,10 €, entonces ve ese texto.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Diferencial
-- [ ] **RF-05.5-02** `Should·MVP·Pendiente` Avisar en color --warning #B7791F cuando el carrito supere el presupuesto, sin impedir la compra. _(N-PLA-02)_
+- [ ] **RF-05.5-02** `Should·MVP·Decidido` Avisar en color --warning #B7791F cuando el carrito supere el presupuesto, sin impedir la compra. _(N-PLA-02)_
   - Criterio: Dados 32 € con presupuesto de 30 €, cuando se ve, entonces aparece «Te has pasado 2,00 € de tu presupuesto».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Diferencial
 
@@ -7385,13 +7386,13 @@ Reservar stock al añadir al carrito.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-05.6-01** `Must·MVP·Pendiente` Comprobar stock y precio de cada línea al abrir el carrito y al pulsar «Pagar». _(N-CAR-01)_
+- [ ] **RF-05.6-01** `Must·MVP·Decidido` Comprobar stock y precio de cada línea al abrir el carrito y al pulsar «Pagar». _(N-CAR-01)_
   - Criterio: Dado un producto agotado después de añadirlo, cuando abre el carrito, entonces la línea aparece marcada.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-05.6-02** `Must·MVP·Pendiente` Marcar las líneas agotadas con «Ya no está disponible» y excluirlas del total. _(N-CAR-01)_
+- [ ] **RF-05.6-02** `Must·MVP·Decidido` Marcar las líneas agotadas con «Ya no está disponible» y excluirlas del total. _(N-CAR-01)_
   - Criterio: Dada una línea agotada, cuando se ve el total, entonces no la suma.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-05.6-03** `Must·MVP·Pendiente` Si cambió un precio, mostrar «El precio ha cambiado de 2,00 € a 2,20 €» en la línea. _(N-CAT-03)_
+- [ ] **RF-05.6-03** `Must·MVP·Decidido` Si cambió un precio, mostrar «El precio ha cambiado de 2,00 € a 2,20 €» en la línea. _(N-CAT-03)_
   - Criterio: Dado un cambio de precio, cuando abre el carrito, entonces ve el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -7467,7 +7468,7 @@ RNF-01 Seguridad · RNF-03 Eficiencia · RNF-04 Usabilidad · RNF-05 Accesibilid
 
 **15. Competencia**
 
-Poco extendido 3
+Paridad 2 · Poco extendido 1
 
 - Mercadona online: 3 sí
 - Glovo: 0 sí
@@ -7482,15 +7483,15 @@ Listas guardadas (V2).
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-05.7-01** `Must·MVP·Pendiente` Guardar el carrito de un cliente con sesión en su cuenta y mostrarlo en cualquier dispositivo. _(N-CAR-01)_
+- [ ] **RF-05.7-01** `Must·MVP·Decidido` Guardar el carrito de un cliente con sesión en su cuenta y mostrarlo en cualquier dispositivo. _(N-CAR-01)_
   - Criterio: Dado un carrito en el ordenador, cuando entra desde el móvil, entonces ve el mismo carrito.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.7-02** `Should·MVP·Pendiente` Guardar el carrito de un visitante sin sesión en el navegador durante 7 días. _(N-CAR-01)_
+- [ ] **RF-05.7-02** `Must·MVP·Decidido` Guardar el carrito de un visitante sin sesión en el navegador durante 7 días. _(N-CAR-01)_
   - Criterio: Dado un visitante, cuando vuelve a los 5 días, entonces su carrito sigue.
-  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.7-03** `Should·MVP·Pendiente` Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar. _(N-CAR-01)_
+  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Paridad
+- [ ] **RF-05.7-03** `Must·MVP·Decidido` Al entrar, unir el carrito del navegador con el de la cuenta; si un producto está en ambos, quedarse con la cantidad mayor y avisar. _(N-CAR-01)_
   - Criterio: Dados 2 tomates en el navegador y 3 en la cuenta, cuando entra, entonces quedan 3 y ve el aviso.
-  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+  - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Paridad
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -7579,7 +7580,7 @@ Diseño móvil (V2).
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-05.8-01** `Must·MVP·Pendiente` Mostrar el carrito en dos columnas en ordenador: líneas a la izquierda (2/3) y resumen fijo a la derecha (1/3). _(N-CAR-01)_
+- [ ] **RF-05.8-01** `Must·MVP·Decidido` Mostrar el carrito en dos columnas en ordenador: líneas a la izquierda (2/3) y resumen fijo a la derecha (1/3). _(N-CAR-01)_
   - Criterio: Dada una pantalla de 1280 px, cuando se ve, entonces el resumen sigue visible al hacer scroll.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
 - [ ] **RF-05.8-02** `Should·V2·Pendiente` En móvil, mostrar el total y el botón «Pagar» en una barra fija abajo. _(N-CAR-01)_
@@ -7591,10 +7592,10 @@ Diseño móvil (V2).
 - [ ] **RF-05.8-04** `Must·MVP·Pendiente` Mostrar el botón «Pagar» naranja con el total: «Pagar 28,90 €», desactivado si no se llega al mínimo. _(N-CAR-01)_
   - Criterio: Dado un carrito bajo el mínimo, cuando se ve, entonces el botón está desactivado con el motivo.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-05.8-05** `Should·MVP·Pendiente` Mostrar el enlace «Seguir comprando» que vuelve al catálogo con la zona y filtros anteriores. _(N-CAR-01)_
+- [ ] **RF-05.8-05** `Should·MVP·Decidido` Mostrar el enlace «Seguir comprando» que vuelve al catálogo con la zona y filtros anteriores. _(N-CAR-01)_
   - Criterio: Dado el carrito, cuando pulsa el enlace, entonces vuelve al catálogo filtrado.
   - Competencia: Mercadona S · Glovo N · Too N · Wetaca N · Market S · Open S → Paridad
-- [ ] **RF-05.8-06** `Should·MVP·Pendiente` Ofrecer «Vaciar carrito» con confirmación. _(N-CAR-01)_
+- [ ] **RF-05.8-06** `Should·MVP·Decidido` Ofrecer «Vaciar carrito» con confirmación. _(N-CAR-01)_
   - Criterio: Dado «Vaciar», cuando confirma, entonces el carrito queda vacío.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 
@@ -7615,7 +7616,7 @@ Información de entrega en el carrito: la próxima franja y por qué hay un solo
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -7684,13 +7685,13 @@ Elegir franja en el carrito (se elige en RF-06.2).
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-05.9-01** `Should·MVP·Pendiente` Mostrar la próxima franja disponible en el carrito: «Próxima entrega: jueves 18–20 h». _(N-ENT-01)_
+- [ ] **RF-05.9-01** `Should·MVP·Decidido` Mostrar la próxima franja disponible en el carrito: «Próxima entrega: jueves 18–20 h». _(N-ENT-01)_
   - Criterio: Dado el carrito, cuando se ve, entonces muestra la próxima franja.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-05.9-02** `Could·V2·Pendiente` Mostrar la hora de cierre para esa franja con cuenta atrás si faltan menos de 2 horas. _(N-PLA-01)_
   - Criterio: Dado un cierre en 90 min, cuando se ve, entonces muestra «Cierra en 1 h 30 min».
   - Competencia: Mercadona P · Glovo ? · Too ? · Wetaca S · Market ? · Open S → Poco extendido
-- [ ] **RF-05.9-03** `Should·MVP·Pendiente` Explicar con un icono de información por qué hay un solo envío aunque haya varios vendedores. _(N-ENT-01)_
+- [ ] **RF-05.9-03** `Should·MVP·Decidido` Explicar con un icono de información por qué hay un solo envío aunque haya varios vendedores. _(N-ENT-01)_
   - Criterio: Dado el icono, cuando pasa el ratón, entonces explica la entrega consolidada.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open S → Poco extendido
 
@@ -7707,7 +7708,7 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 **Necesidades que cubre (nº de requisitos)**
 
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (18)
-- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (7)
+- N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas (8)
 - N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (3)
 - N-CAT-02 Conocer ingredientes y alérgenos antes de pagar (2)
 - N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar (2)
@@ -7725,13 +7726,13 @@ _Responsable: por asignar (propuesta: Miguel) · Fecha: por asignar · Subtareas
 - RF-06.3 · Revisión de alérgenos y condiciones (4) · Must · MVP
 - RF-06.4 · Pago simulado (8) · Must · MVP
 - RF-06.5 · Confirmación (4) · Must · MVP
-- RF-06.6 · Modificar o cancelar (4) · Must · MVP
+- RF-06.6 · Modificar o cancelar (5) · Must · MVP
 - RF-06.7 · Diseño y navegación del checkout (6) · Must · MVP
 - RF-06.8 · Datos de facturación (2) · Could · V2
 
 **Competencia**
 
-35 requisitos atómicos · Poco extendido 20 · Paridad 11 · Diferencial 2 · Sin referente 2. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
+36 requisitos atómicos · Poco extendido 19 · Paridad 12 · Diferencial 2 · Sin referente 2 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-06.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -7822,13 +7823,13 @@ Compra como invitado.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-06.1-01** `Must·MVP·Pendiente` Exigir sesión con correo verificado para pasar al checkout. _(N-CUE-01)_
+- [ ] **RF-06.1-01** `Must·MVP·Decidido` Exigir sesión con correo verificado para pasar al checkout. _(N-CUE-01)_
   - Criterio: Dado un visitante, cuando pulsa «Pagar», entonces va a /entrar?volver=/checkout.
   - Competencia: Mercadona N · Glovo ? · Too ? · Wetaca N · Market N · Open ? → Paridad
-- [ ] **RF-06.1-02** `Must·MVP·Pendiente` Mostrar el checkout en una sola página con tres pasos numerados: Entrega, Revisión y Pago. _(N-CAR-01)_
+- [ ] **RF-06.1-02** `Must·MVP·Decidido` Mostrar el checkout en una sola página con tres pasos numerados: Entrega, Revisión y Pago. _(N-CAR-01)_
   - Criterio: Dado /checkout, cuando se carga, entonces se ven los tres pasos.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-06.1-03** `Must·MVP·Pendiente` Mostrar a la derecha un resumen fijo con los grupos por vendedor, el envío y el total. _(N-CAR-01)_
+- [ ] **RF-06.1-03** `Must·MVP·Decidido` Mostrar a la derecha un resumen fijo con los grupos por vendedor, el envío y el total. _(N-CAR-01)_
   - Criterio: Dada una pantalla de 1280 px, cuando hace scroll, entonces el resumen sigue visible.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
 
@@ -7849,7 +7850,7 @@ Paso «Entrega»: dirección, día y franja de entrega con su hora de cierre. La
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -7929,7 +7930,7 @@ Puntos de recogida (V3, D-03).
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-06.2-01** `Must·MVP·Pendiente` Mostrar la dirección predeterminada y permitir elegir otra o añadir una nueva sin salir del checkout. _(N-ENT-01)_
+- [ ] **RF-06.2-01** `Must·MVP·Decidido` Mostrar la dirección predeterminada y permitir elegir otra o añadir una nueva sin salir del checkout. _(N-ENT-01)_
   - Criterio: Dado «Añadir dirección», cuando la guarda, entonces queda seleccionada.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-06.2-02** `Must·MVP·Hipótesis` Ofrecer días de entrega de los próximos 7 días y franjas de 2 horas entre 9:00 y 21:00 según la capacidad de la zona. _(N-ENT-01)_
@@ -7938,7 +7939,7 @@ Puntos de recogida (V3, D-03).
 - [ ] **RF-06.2-03** `Must·MVP·Pendiente` Mostrar la hora de cierre de cada franja: «Pide antes del martes a las 20:00». _(N-PLA-01)_
   - Criterio: Dada una franja, cuando se ve, entonces muestra su hora de cierre.
   - Competencia: Mercadona P · Glovo ? · Too ? · Wetaca S · Market ? · Open S → Poco extendido
-- [ ] **RF-06.2-04** `Should·MVP·Pendiente` Permitir indicaciones para el repartidor de hasta 200 caracteres. _(N-ENT-01)_
+- [ ] **RF-06.2-04** `Should·MVP·Decidido` Permitir indicaciones para el repartidor de hasta 200 caracteres. _(N-ENT-01)_
   - Criterio: Dados 201 caracteres, cuando escribe, entonces no se aceptan más.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
 
@@ -8040,13 +8041,13 @@ Consejo médico (no se da).
 - [ ] **RF-06.3-01** `Must·MVP·Decidido` Mostrar antes de pagar la lista de alérgenos de todo el pedido agrupada por producto. _(N-CAT-02)_
   - Criterio: Dado un pedido con pan y queso, cuando llega a Revisión, entonces ve «Gluten (pan)» y «Leche (queso)».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Diferencial
-- [ ] **RF-06.3-02** `Must·MVP·Pendiente` Si algún producto contiene un alérgeno guardado por el cliente, pedir confirmación expresa. _(N-CAT-02)_
+- [ ] **RF-06.3-02** `Must·MVP·Decidido` Si algún producto contiene un alérgeno guardado por el cliente, pedir confirmación expresa. _(N-CAT-02)_
   - Criterio: Dado un cliente alérgico al huevo y un producto con huevo, cuando avanza, entonces debe marcar «Sé que este producto contiene huevo».
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open S → Diferencial
 - [ ] **RF-06.3-03** `Must·MVP·Decidido` Avisar de que los productos perecederos no admiten desistimiento y los de despensa sí, durante 14 días. _(N-CAT-03)_
   - Criterio: Dado un pedido mixto, cuando llega a Revisión, entonces ve el aviso con los productos de cada tipo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-06.3-04** `Must·MVP·Pendiente` Exigir la casilla «He leído y acepto las condiciones de compra» con enlace. _(N-CAT-03)_
+- [ ] **RF-06.3-04** `Must·MVP·Decidido` Exigir la casilla «He leído y acepto las condiciones de compra» con enlace. _(N-CAT-03)_
   - Criterio: Dada la casilla sin marcar, cuando pulsa «Pagar», entonces no avanza.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open S → Paridad
 
@@ -8153,19 +8154,19 @@ Pagos reales, PayPal, Bizum y tickets restaurante (V3).
 - [ ] **RF-06.4-01** `Must·MVP·Decidido` `simulado` Ofrecer pago simulado con tarjeta, claramente marcado «Pago de prueba: no se cobra nada». _(N-CAT-03)_
   - Criterio: Dado el paso Pago, cuando se carga, entonces ve el aviso.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-06.4-02** `Must·MVP·Pendiente` `simulado` Validar el número de tarjeta con el algoritmo de Luhn, la caducidad futura y el CVC de 3 dígitos. _(N-CAR-01)_
+- [ ] **RF-06.4-02** `Must·MVP·Decidido` `simulado` Validar el número de tarjeta con el algoritmo de Luhn, la caducidad futura y el CVC de 3 dígitos. _(N-CAR-01)_
   - Criterio: Dada una caducidad pasada, cuando paga, entonces ve «La tarjeta ha caducado».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-06.4-03** `Must·MVP·Pendiente` `simulado` Simular un rechazo con la tarjeta de prueba 4000 0000 0000 0002 y mostrar «El banco ha rechazado el pago». _(N-CAR-01)_
+- [ ] **RF-06.4-03** `Must·MVP·Decidido` `simulado` Simular un rechazo con la tarjeta de prueba 4000 0000 0000 0002 y mostrar «El banco ha rechazado el pago». _(N-CAR-01)_
   - Criterio: Dada esa tarjeta, cuando paga, entonces ve el rechazo y el pedido no se crea.
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca S · Market S · Open S → Paridad
-- [ ] **RF-06.4-04** `Must·MVP·Pendiente` `simulado` Mostrar el botón «Pagar 28,90 €» con el importe exacto, en naranja --accent. _(N-CAR-01)_
+- [ ] **RF-06.4-04** `Must·MVP·Decidido` `simulado` Mostrar el botón «Pagar 28,90 €» con el importe exacto, en naranja --accent. _(N-CAR-01)_
   - Criterio: Dado un total de 28,90 €, cuando se ve el botón, entonces dice «Pagar 28,90 €».
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-06.4-05** `Must·MVP·Decidido` `simulado` Hacer un único cobro por el total, aunque el pedido tenga varios vendedores. _(N-CAR-01)_
   - Criterio: Dados 3 vendedores, cuando paga, entonces hay un solo cargo.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-06.4-06** `Must·MVP·Pendiente` `simulado` Evitar cobros dobles: un segundo clic en «Pagar» durante el proceso no genera otro pedido. _(N-CAR-01)_
+- [ ] **RF-06.4-06** `Must·MVP·Decidido` `simulado` Evitar cobros dobles: un segundo clic en «Pagar» durante el proceso no genera otro pedido. _(N-CAR-01)_
   - Criterio: Dado un doble clic, cuando termina, entonces hay un solo pedido.
   - Competencia: Mercadona S · Glovo S · Too N · Wetaca S · Market S · Open S → Paridad
 - [ ] **RF-06.4-07** `Could·V3·Pendiente` Preparar la integración para PayPal y Bizum en una versión con pagos reales. _(N-CAR-01)_
@@ -8265,13 +8266,13 @@ Compartir el pedido.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-06.5-01** `Must·MVP·Pendiente` Tras pagar, mostrar /pedido/<número> con «¡Pedido confirmado!», número, franja, dirección y grupos por vendedor. _(N-CAR-01)_
+- [ ] **RF-06.5-01** `Must·MVP·Decidido` Tras pagar, mostrar /pedido/<número> con «¡Pedido confirmado!», número, franja, dirección y grupos por vendedor. _(N-CAR-01)_
   - Criterio: Dado un pago correcto, cuando termina, entonces ve esa página.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-06.5-02** `Must·MVP·Pendiente` Enviar un correo de confirmación con el mismo contenido y el enlace al seguimiento. _(N-CAR-01)_
   - Criterio: Dado un pedido, cuando se confirma, entonces llega el correo en menos de 2 minutos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
-- [ ] **RF-06.5-03** `Must·MVP·Pendiente` Numerar los pedidos como F4A-AAAA-NNNNN (año y número correlativo). _(N-CAR-01)_
+- [ ] **RF-06.5-03** `Must·MVP·Decidido` Numerar los pedidos como F4A-AAAA-NNNNN (año y número correlativo). _(N-CAR-01)_
   - Criterio: Dado el primer pedido de 2026, cuando se crea, entonces su número es F4A-2026-00001.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open S → Poco extendido
 - [ ] **RF-06.5-04** `Should·V2·Pendiente` Generar una factura en PDF por pedido con el desglose por vendedor, descargable desde «Mis pedidos». _(N-CAT-03)_
@@ -8293,10 +8294,11 @@ El cliente puede cancelar sin coste hasta la hora de cierre de su franja; despu�
 **2. Origen**
 
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
+- Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S04, S06, S10
 
 **3. Actores y roles**
 
@@ -8356,33 +8358,37 @@ RNF-01 Seguridad · RNF-04 Usabilidad · RNF-05 Accesibilidad · RNF-06 Compatib
 
 **15. Competencia**
 
-Poco extendido 3 · Paridad 1
+Paridad 2 · Poco extendido 2 · Mejora 1
 
-- Mercadona online: 3 sí
-- Glovo: 3 sí, 1 parcial
+- Mercadona online: 4 sí
+- Glovo: 4 sí, 1 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 1 sí
 - Market Wagon: 0 sí
 - Open Food Network: 1 sí
+- Diferenciales y mejoras: RF-06.6-05 (Mejora)
 
 **16. Fuera de alcance**
 
 Cancelación parcial por el cliente.
 
-**Requisitos atómicos (4)**
+**Requisitos atómicos (5)**
 
 - [ ] **RF-06.6-01** `Should·V2·Pendiente` Permitir modificar cantidades o franja hasta la hora de cierre de la franja. _(N-PLA-01)_
   - Criterio: Dado un pedido antes del cierre, cuando cambia la franja, entonces se guarda.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open S → Paridad
-- [ ] **RF-06.6-02** `Must·MVP·Pendiente` `simulado` Permitir cancelar sin coste hasta la hora de cierre con el botón «Cancelar pedido» y confirmación. _(N-CAR-01)_
+- [ ] **RF-06.6-02** `Must·MVP·Decidido` `simulado` Permitir cancelar sin coste hasta la hora de cierre con el botón «Cancelar pedido» y confirmación. _(N-CAR-01)_
   - Criterio: Dada una cancelación antes del cierre, cuando confirma, entonces el pedido pasa a Cancelado y se registra un reembolso de prueba por el total.
-  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-06.6-03** `Must·MVP·Pendiente` Después del cierre, ocultar «Cancelar pedido» y mostrar «El pedido ya se está preparando». _(N-CAR-01)_
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Paridad
+- [ ] **RF-06.6-03** `Must·MVP·Decidido` Después del cierre, ocultar «Cancelar pedido» y mostrar «El pedido ya se está preparando». _(N-CAR-01)_
   - Criterio: Dado un pedido tras el cierre, cuando lo abre, entonces no ve el botón.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-06.6-04** `Could·V2·Pendiente` Aplicar códigos promocionales en el checkout con el campo «¿Tienes un código?». _(N-PLA-02)_
   - Criterio: Dado un código válido del 10 %, cuando lo aplica, entonces el total baja un 10 %.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
+- [ ] **RF-06.6-05** `Must·MVP·Decidido` En la confirmación del pedido y en su correo, mostrar «Puedes cancelar sin coste hasta el <día> a las <hora>» con la hora de cierre de su franja. _(N-CAT-03)_
+  - Criterio: Dado un pedido de la franja del jueves con cierre el martes a las 20:00, cuando se confirma, entonces la pantalla y el correo dicen «Puedes cancelar sin coste hasta el martes a las 20:00».
+  - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -8475,19 +8481,19 @@ Cabecera reducida del checkout (V2).
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-06.7-01** `Must·MVP·Pendiente` Mostrar los tres pasos como acordeón: el actual abierto y los completados resumidos con «Cambiar». _(N-CAR-01)_
+- [ ] **RF-06.7-01** `Must·MVP·Decidido` Mostrar los tres pasos como acordeón: el actual abierto y los completados resumidos con «Cambiar». _(N-CAR-01)_
   - Criterio: Dado el paso Pago, cuando se ve, entonces Entrega aparece resumida con «Cambiar».
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-06.7-02** `Must·MVP·Pendiente` No avanzar de paso si hay errores; mostrar el error junto al campo. _(N-CAR-01)_
+- [ ] **RF-06.7-02** `Must·MVP·Decidido` No avanzar de paso si hay errores; mostrar el error junto al campo. _(N-CAR-01)_
   - Criterio: Dada una franja sin elegir, cuando pulsa «Continuar», entonces ve «Elige una franja».
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-06.7-03** `Should·MVP·Pendiente` Conservar lo rellenado si el cliente vuelve al carrito y regresa al checkout. _(N-CAR-01)_
+- [ ] **RF-06.7-03** `Should·MVP·Decidido` Conservar lo rellenado si el cliente vuelve al carrito y regresa al checkout. _(N-CAR-01)_
   - Criterio: Dada una franja elegida, cuando vuelve al carrito y regresa, entonces sigue elegida.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-06.7-04** `Should·V2·Pendiente` Reservar la franja elegida durante 15 minutos mientras se paga. _(N-CAR-01)_
   - Criterio: Dada una franja con 1 hueco, cuando otro cliente intenta elegirla en esos 15 min, entonces aparece completa.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
-- [ ] **RF-06.7-05** `Must·MVP·Pendiente` Si cambia el precio o el stock durante el checkout, volver a Revisión con el aviso del cambio. _(N-CAT-03)_
+- [ ] **RF-06.7-05** `Must·MVP·Decidido` Si cambia el precio o el stock durante el checkout, volver a Revisión con el aviso del cambio. _(N-CAT-03)_
   - Criterio: Dado un producto agotado durante el pago, cuando paga, entonces vuelve a Revisión con el aviso.
   - Competencia: Mercadona S · Glovo P · Too ? · Wetaca S · Market ? · Open ? → Poco extendido
 - [ ] **RF-06.7-06** `Could·V2·Pendiente` Mostrar en el checkout solo el logo y un enlace «Volver al carrito», sin el menú completo. _(N-CAR-01)_
@@ -8566,6 +8572,7 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 - N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda (1)
 - N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó (1)
 - N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» (1)
+- N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto (1)
 
 **Supone que existe:** RF-01, RF-02, RF-13, RF-15, RF-03, RF-04, RF-12, RF-16, RF-17, RF-05, RF-06 (se escribe como supuesto; no hay que esperar a que esté hecho).
 
@@ -8575,14 +8582,14 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 - RF-07.1 · División (2) · Must · MVP
 - RF-07.2 · Aviso y vista del vendedor (3) · Must · MVP
-- RF-07.3 · Confirmar o avisar de faltas (8) · Must · MVP
+- RF-07.3 · Confirmar o avisar de faltas (9) · Must · MVP
 - RF-07.4 · Preparación y etiqueta (3) · Must · MVP
 - RF-07.5 · Plazos y avisos al vendedor (4) · Must · MVP
 - RF-07.6 · Pedido sin el grupo de un vendedor (2) · Must · MVP
 
 **Competencia**
 
-22 requisitos atómicos · Poco extendido 21 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
+23 requisitos atómicos · Poco extendido 21 · Mejora 1 · Paridad 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-07.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -8601,7 +8608,7 @@ Al confirmarse el pago, el pedido global se divide en un subpedido por vendedor.
 - Necesidad: N-CAR-01 Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-04, F-06, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
+- Fuentes de las necesidades: F-04, F-07, F-10, F-12 · Fuentes del benchmark: F-04, S07, S09
 
 **3. Actores y roles**
 
@@ -8676,7 +8683,7 @@ Dividir un vendedor en varios subpedidos.
 - [ ] **RF-07.1-01** `Must·MVP·Decidido` Al confirmar un pedido, crear un subpedido por vendedor con sus líneas, su subtotal y el mismo número de pedido más un sufijo (-A, -B…). _(N-CAR-01)_
   - Criterio: Dado un pedido de 3 vendedores, cuando se confirma, entonces hay 3 subpedidos F4A-…-A, -B y -C.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
-- [ ] **RF-07.1-02** `Must·MVP·Pendiente` Mantener el pedido global como unidad para el cliente y los subpedidos como unidad para cada vendedor. _(N-VEN-04)_
+- [ ] **RF-07.1-02** `Must·MVP·Decidido` Mantener el pedido global como unidad para el cliente y los subpedidos como unidad para cada vendedor. _(N-VEN-04)_
   - Criterio: Dado un pedido, cuando el cliente lo abre, entonces ve uno; y cada vendedor ve solo el suyo.
   - Competencia: Mercadona N · Glovo N · Too N · Wetaca N · Market S · Open S → Poco extendido
 
@@ -8697,7 +8704,7 @@ El vendedor recibe aviso de cada subpedido nuevo y ve solo su parte, sin datos d
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -8774,7 +8781,7 @@ Avisos por SMS o WhatsApp.
 - [ ] **RF-07.2-02** `Must·MVP·Decidido` Mostrar al vendedor solo su parte: productos, cantidades, día y franja de recogida; nunca datos del cliente. _(N-CUE-01)_
   - Criterio: Dado un subpedido, cuando lo abre el vendedor, entonces no ve nombre ni dirección del cliente.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.2-03** `Should·MVP·Pendiente` Generar la hoja de preparación del día con todas las líneas por producto, imprimible. _(N-VEN-04)_
+- [ ] **RF-07.2-03** `Should·MVP·Decidido` Generar la hoja de preparación del día con todas las líneas por producto, imprimible. _(N-VEN-04)_
   - Criterio: Dado el día de recogida, cuando pulsa «Hoja de preparación», entonces ve el total por producto.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -8793,9 +8800,10 @@ El vendedor confirma su subpedido o declara faltas línea a línea antes de la r
 **2. Origen**
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
+- Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S01, S07, S08
+- Fuentes de las necesidades: F-01, F-07, F-12 · Fuentes del benchmark: S01, S07, S08
 
 **3. Actores y roles**
 
@@ -8862,13 +8870,13 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-07 Fiab
 
 **15. Competencia**
 
-Poco extendido 7 · Mejora 1
+Poco extendido 7 · Mejora 1 · Paridad 1
 
 - Mercadona online: 0 sí
 - Glovo: 0 sí, 6 parcial
 - Too Good To Go: 0 sí
 - Wetaca: 0 sí
-- Market Wagon: 8 sí
+- Market Wagon: 9 sí
 - Open Food Network: 0 sí
 - Diferenciales y mejoras: RF-07.3-04 (Mejora)
 
@@ -8876,32 +8884,35 @@ Poco extendido 7 · Mejora 1
 
 Sustitutos (V2); transferencia bancaria real; automatizar el inventario del comercio.
 
-**Requisitos atómicos (8)**
+**Requisitos atómicos (9)**
 
-- [ ] **RF-07.3-01** `Must·MVP·Pendiente` Pedir al vendedor que confirme cada subpedido antes de 12 horas desde la hora de cierre. _(N-VEN-04)_
+- [ ] **RF-07.3-01** `Must·MVP·Decidido` Pedir al vendedor que confirme cada subpedido antes de 12 horas desde la hora de cierre. _(N-VEN-04)_
   - Criterio: Dado un subpedido sin confirmar a las 12 h, cuando vence, entonces el admin recibe una alerta.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-02** `Must·MVP·Pendiente` Permitir al vendedor marcar una línea como «Falta» indicando cuántas unidades puede servir. _(N-HUB-03)_
+- [ ] **RF-07.3-02** `Must·MVP·Decidido` Permitir al vendedor marcar una línea como «Falta» indicando cuántas unidades puede servir. _(N-HUB-03)_
   - Criterio: Dadas 4 pedidas y 2 disponibles, cuando marca la falta, entonces la línea queda en 2.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-07.3-03** `Should·V2·Pendiente` Permitir al vendedor proponer un sustituto solo de su catálogo y de precio igual o menor. _(N-HUB-03)_
   - Criterio: Dado un sustituto más caro, cuando lo propone, entonces no se permite.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-04** `Should·V2·Pendiente` Pedir al cliente que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
+- [ ] **RF-07.3-04** `Should·V2·Pendiente` Si el cliente no eligió preferencia (RF-07.3-09), pedirle que acepte o rechace el sustituto antes de la hora de corte (inicio de la franja de recogida del vendedor); sin respuesta, excluir la línea con el motivo «sin aceptación» y registrar su reembolso de prueba. _(N-HUB-03)_
   - Criterio: Dado un sustituto sin respuesta, cuando vence la hora de corte, entonces la línea se excluye, el registro muestra «sin aceptación» y el total baja una sola vez.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Mejora
-- [ ] **RF-07.3-05** `Must·MVP·Pendiente` `simulado` Al confirmarse una falta, conservar el pedido global, recalcular el total simulado por la diferencia y registrar un reembolso de prueba (cambio de estado y de saldo, sin transferencia real) con fecha y autor. _(N-HUB-03)_
+- [ ] **RF-07.3-05** `Must·MVP·Decidido` `simulado` Al confirmarse una falta, conservar el pedido global, recalcular el total simulado por la diferencia y registrar un reembolso de prueba (cambio de estado y de saldo, sin transferencia real) con fecha y autor. _(N-HUB-03)_
   - Criterio: Dado un subpedido de Ana con 4 tomates a 1 € y 2 disponibles, cuando confirma la falta, entonces solo su subpedido muestra 2 servidas, el total simulado baja 2,00 € una vez y el pedido global se conserva.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-06** `Must·MVP·Pendiente` Aceptar en una falta solo cantidades enteras entre 0 y la cantidad pedida, y solo en líneas del subpedido del propio vendedor. _(N-HUB-03)_
+- [ ] **RF-07.3-06** `Must·MVP·Decidido` Aceptar en una falta solo cantidades enteras entre 0 y la cantidad pedida, y solo en líneas del subpedido del propio vendedor. _(N-HUB-03)_
   - Criterio: Dada una línea de 4 unidades, cuando el vendedor indica 5 o −1, entonces ve «Indica un número entre 0 y 4» y no se guarda.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-07** `Must·MVP·Pendiente` Tratar como la misma acción un segundo envío de la falta sobre la misma línea: no se vuelve a descontar ni a reembolsar. _(N-HUB-03)_
+- [ ] **RF-07.3-07** `Must·MVP·Decidido` Tratar como la misma acción un segundo envío de la falta sobre la misma línea: no se vuelve a descontar ni a reembolsar. _(N-HUB-03)_
   - Criterio: Dada una línea ya marcada como falta, cuando el vendedor reenvía la misma acción, entonces ve «La falta ya está registrada» y el total no cambia.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.3-08** `Must·MVP·Pendiente` No permitir declarar faltas después de que el operador registre la recogida; desde ese momento la diferencia la registra el hub al verificar (RF-08.2). _(N-HUB-03)_
+- [ ] **RF-07.3-08** `Must·MVP·Decidido` No permitir declarar faltas después de que el operador registre la recogida; desde ese momento la diferencia la registra el hub al verificar (RF-08.2). _(N-HUB-03)_
   - Criterio: Dada la recogida ya registrada, cuando el vendedor intenta declarar una falta, entonces la acción está bloqueada con el aviso «El pedido ya se ha recogido. Avisa al equipo».
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
+- [ ] **RF-07.3-09** `Should·V2·Pendiente` Dejar elegir al cliente al pagar, para todo el pedido o por producto, qué hacer si falta algo: «Sustituir por uno parecido» o «No servir». Con «No servir» no se le proponen sustitutos; con «Sustituir», el sustituto se acepta solo si es igual o más barato. _(N-PLA-02)_
+  - Criterio: Dada la preferencia «Sustituir» y un sustituto de 0,90 € para una línea de 1,00 €, cuando el vendedor lo propone, entonces se acepta sin preguntar y se registra un reembolso de prueba de 0,10 €; dada «No servir», cuando falta, entonces la línea se excluye sin proponer sustituto.
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Paridad
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -8920,7 +8931,7 @@ El vendedor prepara su parte, imprime la etiqueta con número, bultos, conservac
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -8994,13 +9005,13 @@ Impresoras de etiquetas específicas; códigos de barras.
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-07.4-01** `Must·MVP·Pendiente` Generar para cada subpedido una etiqueta imprimible con número de subpedido, vendedor, número de bultos y conservación (ambiente, refrigerado o congelado). _(N-CAT-01)_
+- [ ] **RF-07.4-01** `Must·MVP·Decidido` Generar para cada subpedido una etiqueta imprimible con número de subpedido, vendedor, número de bultos y conservación (ambiente, refrigerado o congelado). _(N-CAT-01)_
   - Criterio: Dado un subpedido, cuando pulsa «Imprimir etiqueta», entonces obtiene un PDF de 100 × 60 mm.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-07.4-02** `Must·MVP·Decidido` Incluir en la etiqueta el lote o la fecha de caducidad de cada producto. _(N-CAT-01)_
   - Criterio: Dado un producto con lote, cuando se imprime, entonces el lote aparece.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.4-03** `Must·MVP·Pendiente` Permitir al vendedor marcar el subpedido como «Listo para recoger». _(N-HUB-01)_
+- [ ] **RF-07.4-03** `Must·MVP·Decidido` Permitir al vendedor marcar el subpedido como «Listo para recoger». _(N-HUB-01)_
   - Criterio: Dado «Listo», cuando lo marca, entonces el operador lo ve en su ruta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -9022,7 +9033,7 @@ Plazos y avisos: recordatorio al vendedor antes de que venza su plazo, aviso al 
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Necesidad: N-VEN-04 Saber qué preparar y para cuándo: pedido claro y franja de recogida
 - Historias: US-11
-- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S08
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S08
 
 **3. Actores y roles**
 
@@ -9094,13 +9105,13 @@ Penalizaciones al vendedor (dependen de D-02).
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-07.5-01** `Should·MVP·Pendiente` Avisar al vendedor 2 horas antes de que venza el plazo de confirmación. _(N-VEN-04)_
+- [ ] **RF-07.5-01** `Should·MVP·Decidido` Avisar al vendedor 2 horas antes de que venza el plazo de confirmación. _(N-VEN-04)_
   - Criterio: Dado un subpedido sin confirmar, cuando faltan 2 h, entonces llega el recordatorio.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.5-02** `Must·MVP·Pendiente` Si el vendedor no confirma en plazo, avisar al cliente de un posible retraso en ese grupo. _(N-HUB-03)_
+- [ ] **RF-07.5-02** `Must·MVP·Decidido` Si el vendedor no confirma en plazo, avisar al cliente de un posible retraso en ese grupo. _(N-HUB-03)_
   - Criterio: Dado un plazo vencido, cuando ocurre, entonces el cliente recibe el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-07.5-03** `Must·MVP·Pendiente` `simulado` Si el vendedor no tiene nada del subpedido, permitir «No puedo servir este pedido», que excluye todo su grupo y registra su reembolso de prueba. _(N-HUB-03)_
+- [ ] **RF-07.5-03** `Must·MVP·Decidido` `simulado` Si el vendedor no tiene nada del subpedido, permitir «No puedo servir este pedido», que excluye todo su grupo y registra su reembolso de prueba. _(N-HUB-03)_
   - Criterio: Dado «No puedo servir», cuando confirma, entonces el grupo entero queda excluido y se registra el reembolso de prueba de su importe.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-07.5-04** `Should·V2·Pendiente` Contar las faltas por vendedor para su tasa de cumplimiento. _(N-CAT-01)_
@@ -9123,7 +9134,7 @@ Si un vendedor no puede servir su grupo, el resto del pedido sigue sin recargo; 
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Historias: US-11
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S05
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S05
 
 **3. Actores y roles**
 
@@ -9197,7 +9208,7 @@ Proponer otro vendedor para sustituir el grupo.
 - [ ] **RF-07.6-01** `Must·MVP·Pendiente` `simulado` Si un grupo se cancela entero, mantener el resto del pedido y recalcular la compra mínima sin cobrar recargo. _(N-HUB-03)_
   - Criterio: Dado un grupo cancelado que deja el pedido bajo el mínimo, cuando ocurre, entonces el pedido sigue sin recargo.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-07.6-02** `Must·MVP·Pendiente` `simulado` Si se cancelan todos los grupos, cancelar el pedido y registrar el reembolso de prueba del total, envío incluido. _(N-HUB-03)_
+- [ ] **RF-07.6-02** `Must·MVP·Decidido` `simulado` Si se cancelan todos los grupos, cancelar el pedido y registrar el reembolso de prueba del total, envío incluido. _(N-HUB-03)_
   - Criterio: Dados todos los grupos cancelados, cuando ocurre, entonces el pedido pasa a Cancelado y el reembolso de prueba es igual al total pagado.
   - Competencia: Mercadona S · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -9398,7 +9409,7 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 
 **Necesidades que cubre (nº de requisitos)**
 
-- N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (8)
+- N-ENT-01 Recibir todo en una sola entrega, en una franja conocida (11)
 - N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» (5)
 - N-HUB-02 Mantener la cadena de frío y separar frío y seco (4)
 - N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar (4)
@@ -9415,16 +9426,16 @@ _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subta
 **Subrequisitos (uno por subtarea)**
 
 - RF-08.1 · Ruta de recogida (3) · Must · MVP
-- RF-08.2 · Recepción y verificación en el hub (4) · Must · MVP
+- RF-08.2 · Recepción y verificación en el hub (6) · Must · MVP
 - RF-08.3 · Empaquetado consolidado (4) · Must · MVP
-- RF-08.4 · Reparto y entrega (5) · Must · MVP
-- RF-08.5 · Retirada y excedentes (2) · Should · V2
+- RF-08.4 · Reparto y entrega (6) · Must · MVP
+- RF-08.5 · Retirada y excedentes (2) · Must · MVP
 - RF-08.6 · Aplicación del operador (4) · Should · V2
 - RF-08.7 · Entrega al cliente (4) · Must · MVP
 
 **Competencia**
 
-26 requisitos atómicos · Poco extendido 13 · Paridad 12 · Mejora 1. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-08.
+29 requisitos atómicos · Poco extendido 13 · Paridad 12 · Mejora 4. Detalle: FOOD4ALL_requisitos_benchmark.xlsx, hoja Requisitos, filtro RF-08.
 
 **Hecho cuando:** todos los subrequisitos están cerrados y revisados.
 
@@ -9442,7 +9453,7 @@ Ruta diaria de recogida en origen: qué vendedores visitar, cuándo y qué subpe
 
 - Necesidad: N-HUB-01 Tener rutas y franjas de recogida fiables, con aviso de «pedido listo»
 - Historias: US-12
-- Fuentes de las necesidades: F-06, F-12 · Fuentes del benchmark: S08, S09
+- Fuentes de las necesidades: F-12 · Fuentes del benchmark: S08, S09
 
 **3. Actores y roles**
 
@@ -9541,9 +9552,10 @@ Recepción en el hub y verificación línea a línea de cada subpedido antes de 
 **2. Origen**
 
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
+- Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9583,6 +9595,7 @@ No tiene campos de entrada.
 
 - Línea que no coincide con lo pedido: se marca y se avisa al admin.
 - Verificación terminada con líneas sin revisar: no se permite.
+- Subpedido que no ha llegado a la hora de empaquetar: se marca «No ha llegado» y el cliente elige esperar a la siguiente franja o recibir lo demás (RF-08.2-05); sin respuesta al empezar la franja, se entrega lo demás (RF-08.2-06).
 
 **11. Reglas de negocio y seguridad**
 
@@ -9604,21 +9617,21 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-09 Traz
 
 **15. Competencia**
 
-Poco extendido 2 · Mejora 1 · Paridad 1
+Mejora 3 · Poco extendido 2 · Paridad 1
 
 - Mercadona online: 0 sí
 - Glovo: 0 sí
 - Too Good To Go: 0 sí
-- Wetaca: 2 sí
-- Market Wagon: 3 sí, 1 no
-- Open Food Network: 2 sí
-- Diferenciales y mejoras: RF-08.2-02 (Mejora)
+- Wetaca: 4 sí
+- Market Wagon: 5 sí, 1 no
+- Open Food Network: 4 sí
+- Diferenciales y mejoras: RF-08.2-02 (Mejora), RF-08.2-05 (Mejora), RF-08.2-06 (Mejora)
 
 **16. Fuera de alcance**
 
 Control de temperatura automatizado.
 
-**Requisitos atómicos (4)**
+**Requisitos atómicos (6)**
 
 - [ ] **RF-08.2-01** `Must·MVP·Pendiente` Registrar la llegada de cada subpedido al hub con hora y responsable. _(N-HUB-03)_
   - Criterio: Dado un subpedido recibido, cuando se registra, entonces su estado pasa a «En el hub».
@@ -9632,6 +9645,12 @@ Control de temperatura automatizado.
 - [ ] **RF-08.2-04** `Should·V2·Pendiente` Registrar la temperatura de la cámara de frío al recibir refrigerados. _(N-HUB-02)_
   - Criterio: Dada una temperatura de 6 °C, cuando se registra, entonces salta una alerta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open ? → Poco extendido
+- [ ] **RF-08.2-05** `Must·MVP·Pendiente` Si un subpedido no ha llegado al hub a la hora de empaquetar su franja, avisar al cliente y dejarle elegir: «Esperar y recibirlo todo en la siguiente franja» o «Recibir ahora lo demás» (ese grupo se excluye con su reembolso de prueba). _(N-ENT-01)_
+  - Criterio: Dado un pedido de dos vendedores con uno sin llegar al hub a la hora de empaquetar, cuando el operador lo marca «No ha llegado», entonces el cliente recibe el aviso con las dos opciones.
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Mejora
+- [ ] **RF-08.2-06** `Must·MVP·Pendiente` Si el cliente no responde al aviso antes del inicio de la franja, entregar lo demás a tiempo y excluir el grupo que falta con su reembolso de prueba y el motivo «llegó tarde al hub»; con «Esperar», el pedido entero pasa a la siguiente franja libre. _(N-ENT-01)_
+  - Criterio: Dado el aviso sin respuesta al empezar la franja, cuando se empaqueta, entonces sale el pedido sin ese grupo, el total simulado baja una sola vez y el registro muestra «llegó tarde al hub».
+  - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca S · Market S · Open S → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -9651,7 +9670,7 @@ Empaquetado consolidado: todos los subpedidos verificados de un pedido en una so
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-05, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9759,7 +9778,7 @@ Reparto de los pedidos empaquetados por franja y registro de la entrega; si no h
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04, F-05, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -9796,12 +9815,14 @@ Panel interno (vendedor, operador o admin): fondo --bg #F6F1E6, contenido en tar
 **10. Flujos alternativos y errores**
 
 - Segunda entrega fallida: devolución al hub (V2, RF-08.4-04).
+- El reparto no llegará dentro de la franja: el operador marca «Retraso» y el cliente recibe, antes de que termine, la nueva hora estimada, y puede mantenerla o elegir otra franja sin coste (RF-08.4-06).
 
 **11. Reglas de negocio y seguridad**
 
 - Entrega en la franja elegida (Hipótesis, H-02).
 - Modelo laboral de la última milla pendiente (Pendiente, Ley 12/2021).
 - Puntos de recogida, V3.
+- Sin compensación por retraso en el MVP: depende de la comisión y del coste del envío (D-02, Pendiente).
 
 **12. Accesibilidad**
 
@@ -9817,20 +9838,21 @@ RNF-01 Seguridad · RNF-05 Accesibilidad · RNF-06 Compatibilidad · RNF-09 Traz
 
 **15. Competencia**
 
-Paridad 4 · Poco extendido 1
+Paridad 4 · Poco extendido 1 · Mejora 1
 
-- Mercadona online: 3 sí
-- Glovo: 4 sí
-- Too Good To Go: 3 sí, 1 no
-- Wetaca: 3 sí
-- Market Wagon: 5 sí
-- Open Food Network: 3 sí, 1 parcial
+- Mercadona online: 4 sí
+- Glovo: 5 sí
+- Too Good To Go: 4 sí, 1 no
+- Wetaca: 4 sí
+- Market Wagon: 6 sí
+- Open Food Network: 4 sí, 1 parcial
+- Diferenciales y mejoras: RF-08.4-06 (Mejora)
 
 **16. Fuera de alcance**
 
 Mapa en tiempo real (V3).
 
-**Requisitos atómicos (5)**
+**Requisitos atómicos (6)**
 
 - [ ] **RF-08.4-01** `Must·MVP·Pendiente` Asignar los pedidos empaquetados a rutas de reparto por franja. _(N-ENT-01)_
   - Criterio: Dada la franja 18–20 h, cuando se asigna, entonces todos sus pedidos están en una ruta.
@@ -9847,6 +9869,9 @@ Mapa en tiempo real (V3).
 - [ ] **RF-08.4-05** `Could·V3·Pendiente` Ofrecer recogida en un punto de la zona sin coste de envío. _(N-PLA-02)_
   - Criterio: Dada la opción «Recoger en punto», cuando la elige, entonces el envío es 0 €.
   - Competencia: Mercadona ? · Glovo S · Too S · Wetaca ? · Market S · Open S → Paridad
+- [ ] **RF-08.4-06** `Must·MVP·Pendiente` Si el reparto no va a llegar dentro de la franja, avisar al cliente antes de que termine, con la nueva hora estimada, y dejarle mantenerla o elegir otra franja sin coste. _(N-ENT-01)_
+  - Criterio: Dada una franja de 18 a 20 h y una llegada estimada a las 20:30, cuando el operador marca «Retraso», entonces el cliente recibe el aviso antes de las 20:00 y puede elegir otra franja.
+  - Competencia: Mercadona S · Glovo S · Too S · Wetaca S · Market S · Open S → Mejora
 
 **Hecho cuando:** los 16 apartados están completos, cada regla tiene su criterio y el revisor lo aprueba en un comentario que indica: elemento revisado, discrepancias encontradas, decisión, cambio hecho y fecha. «Hecho cuando» es la definición de terminado de la ficha; los criterios de aceptación son los del apartado 13.
 
@@ -9854,11 +9879,11 @@ Mapa en tiempo real (V3).
 
 _Responsable: por asignar (propuesta: Sebastián) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** V2 · **Alcance:** V2 · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente · **Depende de:** D-01 rol jurídico; D-03 hub y zonas
 
 **1. Descripción**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Retirada de un lote: el admin retira un producto o lote que no es seguro y la plataforma avisa a todos los clientes que lo compraron. En el MVP solo la retirada con aviso (RF-08.5-01); los excedentes del hub son V2.
 
 **2. Origen**
 
@@ -9870,6 +9895,53 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 **3. Actores y roles**
 
 Operador, repartidor
+
+**4. Supuestos de entrada y salida**
+
+- Supone que existe: Aviso del productor o de la autoridad sanitaria sobre un lote; cuenta de admin con sesión.
+- Entrega a: Producto retirado del catálogo, líneas afectadas marcadas y aviso enviado a cada comprador (correo y «Mis pedidos»).
+
+**5. Ubicación**
+
+/admin → Productos → «Retirar lote».
+
+**6. Elementos de la pantalla (en este orden)**
+
+- Buscador de producto y vendedor
+- Campo de lote o rango de fechas de venta
+- Campo «Motivo» que verá el cliente
+- Recuento de pedidos y clientes afectados
+- Botón «Retirar y avisar» con confirmación
+
+**7. Diseño**
+
+Panel interno (vendedor, operador o admin): fondo --bg #F6F1E6, contenido en tarjetas; pestañas o barra lateral con la sección activa marcada; Botón principal: píldora (--radius-pill), 48 px de alto, fondo --accent #D9822B, texto --on-accent #23301F en Figtree 600. Ratón encima: sube 2 px en 200 ms. Foco: anillo de 2 px --green #2F5233 separado 2 px. Desactivado: opacidad 50 % y cursor «no permitido». Cargando: texto en gerundio («Guardando…») y desactivado.
+
+**8. Flujo principal**
+
+1. El admin elige el producto y el lote o las fechas de venta.
+2. Ve cuántos pedidos y clientes están afectados.
+3. Escribe el motivo y pulsa «Retirar y avisar».
+4. El producto deja de venderse, las líneas de los pedidos aún no entregados se excluyen y cada comprador recibe el aviso con qué hacer con el producto.
+
+**9. Campos y validaciones**
+
+- **Motivo** · texto · obligatorio: Sí · 10 a 300 · mensaje: «Explica al cliente por qué se retira»
+
+**10. Flujos alternativos y errores**
+
+- Ningún pedido con ese lote: se retira del catálogo sin avisos y se indica «Sin compradores afectados».
+- Correo que no se puede enviar: el aviso queda igualmente en «Mis pedidos» y se registra el fallo.
+
+**11. Reglas de negocio y seguridad**
+
+- Avisar a quien compró un producto inseguro (Decidido, C-23; Reglamento (CE) 178/2002, art. 19).
+- Quién ordena la retirada, la plataforma o el productor, depende de su rol jurídico (Pendiente, D-01); el aviso a los compradores es de la plataforma en cualquier caso.
+- El reembolso de lo retirado sigue la regla de incidencias (RF-10, simulado).
+
+**12. Accesibilidad**
+
+Orden de tabulación igual al orden visual; foco siempre visible; zonas pulsables de 44 × 44 px como mínimo; contraste ≥ 4,5:1 (RNF-05)
 
 **13. Criterios de aceptación**
 
@@ -9892,11 +9964,11 @@ Poco extendido 2
 
 **16. Fuera de alcance**
 
-Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprint. Para el Hito 2 bastan la descripción de los requisitos atómicos y sus criterios.
+Registro de excedentes y su destino (V2, RF-08.5-02).
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-08.5-01** `Should·V2·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
+- [ ] **RF-08.5-01** `Must·MVP·Decidido` Permitir al admin retirar un lote de producto y avisar a todos los clientes que lo compraron. _(N-CAT-01)_
   - Criterio: Dado un lote retirado, cuando se confirma, entonces cada comprador recibe el aviso.
   - Competencia: Mercadona ? · Glovo ? · Too P · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-08.5-02** `Should·V2·Pendiente` Registrar los excedentes del hub y su destino: devolución, donación o desecho. _(N-CAD-01)_
@@ -9921,7 +9993,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Necesidad: N-HUB-03 Verificar cada pedido y resolver las faltas antes de entregar
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9982,7 +10054,7 @@ Regla de entrega del frío: los refrigerados nunca se dejan sin entregar en mano
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-05, F-12 · Fuentes del benchmark: S02, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S02, S06, S07
 
 **3. Actores y roles**
 
@@ -10112,7 +10184,7 @@ Estados del pedido que ve el cliente y cómo se calculan a partir de los subpedi
 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-04, F-05 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -10186,10 +10258,10 @@ Estados de devolución.
 - [ ] **RF-09.1-01** `Must·MVP·Decidido` Gestionar seis estados del pedido: Recibido, Recogida, En el hub, Empaquetado, En reparto y Entregado. _(N-ENT-01)_
   - Criterio: Dado un pedido nuevo, cuando se crea, entonces está en Recibido.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-09.1-02** `Must·MVP·Pendiente` Calcular el estado global como el del subpedido más atrasado hasta que todos llegan al hub. _(N-ENT-01)_
+- [ ] **RF-09.1-02** `Must·MVP·Decidido` Calcular el estado global como el del subpedido más atrasado hasta que todos llegan al hub. _(N-ENT-01)_
   - Criterio: Dados 2 subpedidos en el hub y 1 en Recogida, cuando se ve el pedido, entonces está en Recogida.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-09.1-03** `Must·MVP·Pendiente` Guardar la hora de cada cambio de estado. _(N-ENT-01)_
+- [ ] **RF-09.1-03** `Must·MVP·Decidido` Guardar la hora de cada cambio de estado. _(N-ENT-01)_
   - Criterio: Dado un cambio a Empaquetado, cuando se consulta, entonces se ve su hora.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -10209,7 +10281,7 @@ Pantalla de seguimiento con la línea de seis pasos y el detalle por vendedor, i
 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-04, F-05 · Fuentes del benchmark: S01, S02, S04
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02, S04
 
 **3. Actores y roles**
 
@@ -10279,10 +10351,10 @@ Mapa del repartidor (V3).
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-09.2-01** `Must·MVP·Pendiente` Mostrar en /pedido/<número> una línea de seis pasos con el actual resaltado en --green y los pasados con su hora. _(N-ENT-01)_
+- [ ] **RF-09.2-01** `Must·MVP·Decidido` Mostrar en /pedido/<número> una línea de seis pasos con el actual resaltado en --green y los pasados con su hora. _(N-ENT-01)_
   - Criterio: Dado un pedido En el hub, cuando lo abre, entonces los tres primeros pasos aparecen completados.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-09.2-02** `Must·MVP·Pendiente` Mostrar debajo el detalle por vendedor con el estado de cada subpedido. _(N-ENT-01)_
+- [ ] **RF-09.2-02** `Must·MVP·Decidido` Mostrar debajo el detalle por vendedor con el estado de cada subpedido. _(N-ENT-01)_
   - Criterio: Dado un subpedido con falta, cuando se ve, entonces muestra «Falta 1 unidad · reembolso de prueba registrado».
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-09.2-03** `Should·V2·Pendiente` Mostrar la franja de entrega y, el día de reparto, una hora estimada de ±30 min. _(N-ENT-01)_
@@ -10309,7 +10381,7 @@ Correos al cliente en los momentos clave y ante cualquier falta.
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-06
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -10409,7 +10481,7 @@ Lista «Mis pedidos» con los pedidos del cliente del más reciente al más anti
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-06
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -10477,7 +10549,7 @@ Filtros por fecha.
 
 **Requisitos atómicos (2)**
 
-- [ ] **RF-09.4-01** `Must·MVP·Pendiente` Listar en «Mis pedidos» los pedidos del cliente, del más reciente al más antiguo, con fecha, total, estado y número de vendedores. _(N-ENT-01)_
+- [ ] **RF-09.4-01** `Must·MVP·Decidido` Listar en «Mis pedidos» los pedidos del cliente, del más reciente al más antiguo, con fecha, total, estado y número de vendedores. _(N-ENT-01)_
   - Criterio: Dados 3 pedidos, cuando abre la lista, entonces el primero es el último que hizo.
   - Competencia: Mercadona S · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-09.4-02** `Should·V2·Pendiente` Ofrecer en cada pedido entregado el botón «Repetir pedido», que añade al carrito lo que siga disponible. _(N-PLA-01)_
@@ -10501,7 +10573,7 @@ Plantilla común de correos: marca, número, estado y botón al pedido, sin dato
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -10629,7 +10701,7 @@ El cliente abre una incidencia desde un pedido entregado: qué producto, qué pa
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S07
 
 **3. Actores y roles**
 
@@ -10706,22 +10778,22 @@ Devoluciones físicas de perecederos (no se piden).
 
 **Requisitos atómicos (6)**
 
-- [ ] **RF-10.1-01** `Must·MVP·Pendiente` Mostrar en cada pedido entregado el botón «Tengo un problema». _(N-INC-01)_
+- [ ] **RF-10.1-01** `Must·MVP·Decidido` Mostrar en cada pedido entregado el botón «Tengo un problema». _(N-INC-01)_
   - Criterio: Dado un pedido entregado, cuando lo abre, entonces ve el botón.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
 - [ ] **RF-10.1-02** `Must·MVP·Hipótesis` Permitir abrir incidencias hasta 48 horas después de la entrega en frescos y 14 días en despensa. _(N-INC-01)_
   - Criterio: Dado un fresco entregado hace 50 h, cuando pulsa el botón, entonces ve «El plazo para frescos es de 48 horas».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-10.1-03** `Must·MVP·Pendiente` Pedir el producto afectado (uno o varios) y el tipo: mal estado, falta, producto equivocado, caducado, otro. _(N-INC-01)_
+- [ ] **RF-10.1-03** `Must·MVP·Decidido` Pedir el producto afectado (uno o varios) y el tipo: mal estado, falta, producto equivocado, caducado, otro. _(N-INC-01)_
   - Criterio: Dado «mal estado» sin producto, cuando envía, entonces ve «Elige el producto».
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.1-04** `Must·MVP·Pendiente` Exigir al menos una foto en «mal estado», «equivocado» y «caducado», hasta 3 fotos de 5 MB. _(N-INC-01)_
+- [ ] **RF-10.1-04** `Must·MVP·Decidido` Exigir al menos una foto en «mal estado», «equivocado» y «caducado», hasta 3 fotos de 5 MB. _(N-INC-01)_
   - Criterio: Dado «mal estado» sin foto, cuando envía, entonces ve «Añade una foto del producto».
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.1-05** `Should·MVP·Pendiente` Pedir una descripción opcional de hasta 500 caracteres. _(N-INC-01)_
+- [ ] **RF-10.1-05** `Should·MVP·Decidido` Pedir una descripción opcional de hasta 500 caracteres. _(N-INC-01)_
   - Criterio: Dados 501 caracteres, cuando escribe, entonces no se aceptan más.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.1-06** `Should·MVP·Pendiente` `simulado` Dejar elegir la solución preferida: reembolso o sustitución en el próximo pedido. _(N-INC-01)_
+- [ ] **RF-10.1-06** `Should·MVP·Decidido` `simulado` Dejar elegir la solución preferida: reembolso o sustitución en el próximo pedido. _(N-INC-01)_
   - Criterio: Dada «sustitución», cuando se resuelve, entonces el producto se añade gratis al siguiente pedido.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
 
@@ -10741,7 +10813,7 @@ Resolución humana de la incidencia en menos de 24 h laborables, con reembolso d
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S02, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02, S07
 
 **3. Actores y roles**
 
@@ -10819,16 +10891,16 @@ Atribución de la incidencia a la liquidación del vendedor (V2, depende de D-02
 - [ ] **RF-10.2-01** `Must·MVP·Hipótesis` Resolver en menos de 24 horas laborables con una persona del equipo, no con un bot. _(N-INC-01)_
   - Criterio: Dada una incidencia abierta el lunes a las 10:00, cuando se resuelve, entonces es antes del martes a las 10:00.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Mejora
-- [ ] **RF-10.2-02** `Must·MVP·Pendiente` `simulado` Registrar el reembolso aprobado al momento como reembolso de prueba sobre el pago simulado; con pagos reales (V3) se devolverá al medio de pago original en un máximo de 5 días hábiles. _(N-INC-01)_
+- [ ] **RF-10.2-02** `Must·MVP·Decidido` `simulado` Registrar el reembolso aprobado al momento como reembolso de prueba sobre el pago simulado; con pagos reales (V3) se devolverá al medio de pago original en un máximo de 5 días hábiles. _(N-INC-01)_
   - Criterio: Dado un reembolso aprobado, cuando se registra, entonces el pedido muestra «Reembolso de prueba: <importe>» con fecha y no se hace ninguna transferencia.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-10.2-03** `Must·MVP·Pendiente` No pedir la devolución física de perecederos. _(N-INC-01)_
+- [ ] **RF-10.2-03** `Must·MVP·Decidido` No pedir la devolución física de perecederos. _(N-INC-01)_
   - Criterio: Dado un yogur en mal estado, cuando se resuelve, entonces no se pide devolverlo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RF-10.2-04** `Should·V2·Pendiente` Atribuir cada incidencia a su responsable: vendedor, hub o reparto, para las métricas y para la liquidación. _(N-INC-01)_
   - Criterio: Dado un fallo del vendedor, cuando se resuelve, entonces el importe se descuenta de su liquidación.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RF-10.2-05** `Must·MVP·Pendiente` Avisar al cliente por correo de la resolución con el importe y la fecha. _(N-INC-01)_
+- [ ] **RF-10.2-05** `Must·MVP·Decidido` Avisar al cliente por correo de la resolución con el importe y la fecha. _(N-INC-01)_
   - Criterio: Dada una resolución, cuando se cierra, entonces llega el correo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -10848,7 +10920,7 @@ El cliente ve el estado de su incidencia en el pedido; un rechazo siempre lleva 
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S02
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S02
 
 **3. Actores y roles**
 
@@ -10916,13 +10988,13 @@ Chat (V3).
 
 **Requisitos atómicos (3)**
 
-- [ ] **RF-10.3-01** `Must·MVP·Pendiente` Mostrar las incidencias en el pedido con estado: Abierta, En revisión, Resuelta o Rechazada. _(N-INC-01)_
+- [ ] **RF-10.3-01** `Must·MVP·Decidido` Mostrar las incidencias en el pedido con estado: Abierta, En revisión, Resuelta o Rechazada. _(N-INC-01)_
   - Criterio: Dada una incidencia, cuando abre el pedido, entonces ve su estado.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RF-10.3-02** `Should·V2·Pendiente` Permitir intercambiar mensajes con el equipo dentro de la incidencia. _(N-INC-01)_
   - Criterio: Dado un mensaje del equipo, cuando llega, entonces el cliente puede responder en la misma pantalla.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
-- [ ] **RF-10.3-03** `Must·MVP·Pendiente` Exigir un motivo al rechazar una incidencia. _(N-INC-01)_
+- [ ] **RF-10.3-03** `Must·MVP·Decidido` Exigir un motivo al rechazar una incidencia. _(N-INC-01)_
   - Criterio: Dado un rechazo sin motivo, cuando el admin guarda, entonces no se permite.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 
@@ -10942,7 +11014,7 @@ Diseño del formulario de incidencia en 3 pasos y confirmación con la hora lím
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S07
 
 **3. Actores y roles**
 
@@ -11012,16 +11084,16 @@ Guardar a medias.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RF-10.4-01** `Must·MVP·Pendiente` Mostrar la incidencia en 3 pasos: qué producto, qué pasó y qué solución prefieres. _(N-INC-01)_
+- [ ] **RF-10.4-01** `Must·MVP·Decidido` Mostrar la incidencia en 3 pasos: qué producto, qué pasó y qué solución prefieres. _(N-INC-01)_
   - Criterio: Dado el formulario, cuando se abre, entonces muestra el paso 1 de 3.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.4-02** `Should·MVP·Pendiente` Mostrar las fotos subidas en miniatura con opción de quitarlas. _(N-INC-01)_
+- [ ] **RF-10.4-02** `Should·MVP·Decidido` Mostrar las fotos subidas en miniatura con opción de quitarlas. _(N-INC-01)_
   - Criterio: Dada una foto, cuando pulsa «×», entonces se quita.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.4-03** `Must·MVP·Pendiente` Al enviar, mostrar «Hemos recibido tu incidencia. Te responderemos antes de <fecha y hora>». _(N-INC-01)_
+- [ ] **RF-10.4-03** `Must·MVP·Decidido` Al enviar, mostrar «Hemos recibido tu incidencia. Te responderemos antes de <fecha y hora>». _(N-INC-01)_
   - Criterio: Dada una incidencia el lunes a las 10:00, cuando la envía, entonces ve «antes del martes a las 10:00».
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
-- [ ] **RF-10.4-04** `Should·MVP·Pendiente` Limitar a una incidencia abierta por producto y pedido. _(N-INC-01)_
+- [ ] **RF-10.4-04** `Should·MVP·Decidido` Limitar a una incidencia abierta por producto y pedido. _(N-INC-01)_
   - Criterio: Dada una incidencia abierta del mismo producto, cuando intenta otra, entonces ve la existente.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca S · Market S · Open ? → Paridad
 
@@ -11041,7 +11113,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -11090,7 +11162,7 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 
 **v0.4 · 22/10/2026** · **Responsable:** por asignar · **Revisor:** por asignar · **Fecha:** por asignar
 
-**Fase:** 4 · Entrega y posventa (puesto 17 de 19 en la cascada) · **Actores:** Cliente · **Historias:** US-13 · **Prioridad:** Should · **Entrega:** V2
+**Fase:** 4 · Entrega y posventa (puesto 17 de 19 en la cascada) · **Actores:** Cliente · **Historias:** US-13 · **Prioridad:** Must · **Entrega:** MVP
 
 **Necesidades que cubre (nº de requisitos)**
 
@@ -11103,7 +11175,7 @@ _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Sub
 **Subrequisitos (uno por subtarea)**
 
 - RF-11.1 · Pedir la valoración (4) · Should · V2
-- RF-11.2 · Mostrar y moderar (4) · Should · V2
+- RF-11.2 · Mostrar y moderar (4) · Must · MVP
 - RF-11.3 · Diseño y reglas de la valoración (5) · Should · V2
 
 **Competencia**
@@ -11177,7 +11249,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 _Responsable: por asignar (propuesta: Juan Antonio) · Fecha: por asignar · Subtareas: 0_
 
-**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Should · **Entrega:** V2 · **Alcance:** V2 · **Estado:** Pendiente
+**Responsable:** por asignar · **Revisor:** por asignar · **Prioridad:** Must · **Entrega:** MVP · **Alcance:** MVP · **Estado:** Pendiente
 
 **1. Descripción**
 
@@ -11266,7 +11338,7 @@ Valoraciones reales, moderación y respuestas (V2).
 - [ ] **RF-11.2-03** `Could·V2·Pendiente` Permitir al vendedor responder una vez a cada comentario. _(N-VEN-01)_
   - Criterio: Dada una respuesta, cuando se publica, entonces aparece bajo el comentario.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
-- [ ] **RF-11.2-04** `Should·V2·Decidido` No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual. _(N-CAT-03)_
+- [ ] **RF-11.2-04** `Must·MVP·Decidido` No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual. _(N-CAT-03)_
   - Criterio: Dado el modo conceptual, cuando se ve un perfil, entonces no hay estrellas de ejemplo.
   - Competencia: Mercadona ? · Glovo P · Too ? · Wetaca P · Market ? · Open ? → Poco extendido
 
@@ -11461,7 +11533,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-17
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S02
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02
 
 **3. Actores y roles**
 
@@ -11524,7 +11596,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-17
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01
 
 **3. Actores y roles**
 
@@ -11661,16 +11733,16 @@ Doble factor de autenticación; auditoría externa de seguridad.
 - [ ] **RNF-01.1-01** `Must·MVP·Decidido` Guardar las contraseñas solo con hash bcrypt de coste 12 o superior. _(N-CUE-01)_
   - Criterio: Dada la base de datos, cuando se revisa, entonces no hay ninguna contraseña en claro.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.1-02** `Must·MVP·Pendiente` Servir toda la web por HTTPS con TLS 1.2 o superior y redirigir HTTP a HTTPS. _(N-CUE-01)_
+- [ ] **RNF-01.1-02** `Must·MVP·Decidido` Servir toda la web por HTTPS con TLS 1.2 o superior y redirigir HTTP a HTTPS. _(N-CUE-01)_
   - Criterio: Dada una petición http://, cuando llega, entonces se redirige con código 301.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.1-03** `Must·MVP·Pendiente` Usar cookies de sesión HttpOnly, Secure y SameSite=Lax. _(N-CUE-01)_
+- [ ] **RNF-01.1-03** `Must·MVP·Decidido` Usar cookies de sesión HttpOnly, Secure y SameSite=Lax. _(N-CUE-01)_
   - Criterio: Dada la cookie de sesión, cuando se inspecciona, entonces tiene los tres atributos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.1-04** `Must·MVP·Pendiente` Regenerar el identificador de sesión al iniciar sesión. _(N-CUE-01)_
+- [ ] **RNF-01.1-04** `Must·MVP·Decidido` Regenerar el identificador de sesión al iniciar sesión. _(N-CUE-01)_
   - Criterio: Dado un inicio de sesión, cuando termina, entonces el identificador es distinto del anterior.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.1-05** `Must·MVP·Pendiente` Proteger los formularios que cambian datos contra CSRF. _(N-CUE-01)_
+- [ ] **RNF-01.1-05** `Must·MVP·Decidido` Proteger los formularios que cambian datos contra CSRF. _(N-CUE-01)_
   - Criterio: Dada una petición sin token CSRF, cuando llega, entonces se rechaza con 403.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -11744,13 +11816,13 @@ Pruebas de intrusión profesionales.
 - [ ] **RNF-01.2-01** `Must·MVP·Decidido` Comprobar el rol en el servidor en cada acción; ocultar un botón no basta. _(N-CUE-01)_
   - Criterio: Dado un cliente que llama a la API de vendedor, cuando lo intenta, entonces recibe 403.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.2-02** `Must·MVP·Pendiente` Validar en el servidor todos los datos de entrada, aunque ya se validen en el navegador. _(N-CUE-01)_
+- [ ] **RNF-01.2-02** `Must·MVP·Decidido` Validar en el servidor todos los datos de entrada, aunque ya se validen en el navegador. _(N-CUE-01)_
   - Criterio: Dado un precio negativo enviado a la API, cuando llega, entonces se rechaza con 400.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.2-03** `Must·MVP·Pendiente` Escapar todo texto de usuario al mostrarlo para evitar inyección de código (XSS). _(N-CUE-01)_
+- [ ] **RNF-01.2-03** `Must·MVP·Decidido` Escapar todo texto de usuario al mostrarlo para evitar inyección de código (XSS). _(N-CUE-01)_
   - Criterio: Dado un nombre «<script>», cuando se muestra, entonces aparece como texto.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.2-04** `Must·MVP·Pendiente` Usar consultas parametrizadas en la base de datos. _(N-CUE-01)_
+- [ ] **RNF-01.2-04** `Must·MVP·Decidido` Usar consultas parametrizadas en la base de datos. _(N-CUE-01)_
   - Criterio: Dado un buscador con «' OR 1=1», cuando busca, entonces no devuelve datos ajenos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-01.2-05** `Must·MVP·Decidido` Guardar los secretos (claves de API, Asana) solo en variables de entorno del servidor, nunca en el frontend ni en el repositorio. _(N-CUE-01)_
@@ -11759,7 +11831,7 @@ Pruebas de intrusión profesionales.
 - [ ] **RNF-01.2-06** `Should·V2·Pendiente` Limitar a 100 peticiones por minuto e IP las rutas públicas de la API. _(N-CUE-01)_
   - Criterio: Dadas 101 peticiones en un minuto, cuando llega la 101, entonces recibe 429.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-01.2-07** `Must·MVP·Pendiente` Comprobar el tipo real de los archivos subidos y rechazar los ejecutables. _(N-CUE-01)_
+- [ ] **RNF-01.2-07** `Must·MVP·Decidido` Comprobar el tipo real de los archivos subidos y rechazar los ejecutables. _(N-CUE-01)_
   - Criterio: Dado un .exe renombrado a .jpg, cuando se sube, entonces se rechaza.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -11857,10 +11929,10 @@ Evaluación de impacto completa (se haría antes de operar con datos reales; req
 - [ ] **RNF-02.1-02** `Must·MVP·Decidido` Tratar las alergias como datos de salud: consentimiento explícito, separado y revocable. _(N-CUE-01)_
   - Criterio: Dado el consentimiento retirado, cuando se consulta la base de datos, entonces las alergias no están.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RNF-02.1-03** `Must·MVP·Pendiente` Publicar la política de privacidad con responsable, finalidades, base jurídica, plazos y derechos. _(N-CUE-01)_
+- [ ] **RNF-02.1-03** `Must·MVP·Decidido` Publicar la política de privacidad con responsable, finalidades, base jurídica, plazos y derechos. _(N-CUE-01)_
   - Criterio: Dada /privacidad, cuando se lee, entonces contiene esos cinco apartados.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RNF-02.1-04** `Must·MVP·Pendiente` Mostrar un aviso de cookies que permita rechazarlas todas con el mismo esfuerzo que aceptarlas. _(N-CUE-01)_
+- [ ] **RNF-02.1-04** `Must·MVP·Decidido` Mostrar un aviso de cookies que permita rechazarlas todas con el mismo esfuerzo que aceptarlas. _(N-CUE-01)_
   - Criterio: Dado el aviso, cuando se ve, entonces «Rechazar» y «Aceptar» están al mismo nivel.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 
@@ -11931,7 +12003,7 @@ Portal de derechos automatizado.
 
 **Requisitos atómicos (4)**
 
-- [ ] **RNF-02.2-01** `Must·MVP·Pendiente` Atender las solicitudes de acceso, rectificación y supresión en un máximo de 30 días. _(N-CUE-01)_
+- [ ] **RNF-02.2-01** `Must·MVP·Decidido` Atender las solicitudes de acceso, rectificación y supresión en un máximo de 30 días. _(N-CUE-01)_
   - Criterio: Dada una supresión pedida el 1 de mayo, cuando se resuelve, entonces es antes del 31 de mayo.
   - Competencia: Mercadona ? · Glovo S · Too ? · Wetaca ? · Market ? · Open ? → Poco extendido
 - [ ] **RNF-02.2-02** `Must·MVP·Decidido` No mostrar datos del cliente a los vendedores: solo productos y cantidades. _(N-CUE-01)_
@@ -12034,13 +12106,13 @@ Medición con usuarios reales en producción (RUM).
 - [ ] **RNF-03.1-01** `Must·MVP·Hipótesis` Mostrar el contenido principal de la portada en 2,5 s o menos en móvil con 4G (LCP). _(N-CAR-01)_
   - Criterio: Dada una medición Lighthouse móvil, cuando se ejecuta, entonces el LCP es ≤ 2,5 s.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-03.1-02** `Should·MVP·Pendiente` Mantener el desplazamiento de elementos al cargar (CLS) por debajo de 0,1. _(N-CAR-01)_
+- [ ] **RNF-03.1-02** `Should·MVP·Decidido` Mantener el desplazamiento de elementos al cargar (CLS) por debajo de 0,1. _(N-CAR-01)_
   - Criterio: Dada una medición, cuando se ejecuta, entonces el CLS es < 0,1.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-03.1-03** `Should·MVP·Pendiente` Responder a cada interacción en menos de 200 ms (INP). _(N-CAR-01)_
+- [ ] **RNF-03.1-03** `Should·MVP·Decidido` Responder a cada interacción en menos de 200 ms (INP). _(N-CAR-01)_
   - Criterio: Dada una medición, cuando se pulsa «Añadir», entonces el INP es < 200 ms.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-03.1-04** `Should·MVP·Pendiente` Servir las fotos en WebP con lazy loading fuera de la primera pantalla. _(N-CAR-01)_
+- [ ] **RNF-03.1-04** `Should·MVP·Decidido` Servir las fotos en WebP con lazy loading fuera de la primera pantalla. _(N-CAR-01)_
   - Criterio: Dada la página de productos, cuando se carga, entonces solo se descargan las fotos visibles.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -12187,7 +12259,7 @@ CDN.
 - [ ] **RNF-03.3-01** `Should·V2·Pendiente` Mantener el JavaScript inicial de la portada por debajo de 200 KB comprimido. _(N-CAR-01)_
   - Criterio: Dada la compilación, cuando se mide, entonces el JS inicial es < 200 KB.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-03.3-02** `Should·MVP·Pendiente` Cargar las fuentes con font-display: swap para que el texto se vea desde el principio. _(N-CAR-01)_
+- [ ] **RNF-03.3-02** `Should·MVP·Decidido` Cargar las fuentes con font-display: swap para que el texto se vea desde el principio. _(N-CAR-01)_
   - Criterio: Dada una carga lenta, cuando empieza, entonces el texto se ve con la fuente de sistema.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -12289,10 +12361,10 @@ Pruebas A/B.
 - [ ] **RNF-04.1-03** `Should·MVP·Hipótesis` Que un vendedor publique su primer producto sin ayuda en 10 minutos o menos. _(N-VEN-02)_
   - Criterio: Dados 3 vendedores, cuando prueban, entonces al menos 2 lo consiguen en ≤ 10 min.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-04.1-04** `Must·MVP·Pendiente` Escribir todos los textos de interfaz en español claro, en segunda persona y sin tecnicismos. _(N-CAR-01)_
+- [ ] **RNF-04.1-04** `Must·MVP·Decidido` Escribir todos los textos de interfaz en español claro, en segunda persona y sin tecnicismos. _(N-CAR-01)_
   - Criterio: Dada una revisión de textos, cuando se hace, entonces no hay términos técnicos sin explicar.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-04.1-05** `Must·MVP·Pendiente` Mostrar cada error junto al campo que lo causa, con qué hacer para corregirlo. _(N-CAR-01)_
+- [ ] **RNF-04.1-05** `Must·MVP·Decidido` Mostrar cada error junto al campo que lo causa, con qué hacer para corregirlo. _(N-CAR-01)_
   - Criterio: Dado un error, cuando aparece, entonces dice cómo arreglarlo.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-04.1-06** `Must·MVP·Decidido` Mantener el texto siempre sobre fondo liso, nunca sobre fotos o texturas. _(N-CAR-01)_
@@ -12472,22 +12544,22 @@ Certificación de accesibilidad.
 - [ ] **RNF-05.1-01** `Must·MVP·Decidido` Mantener un contraste de 4,5:1 en texto normal y 3:1 en texto grande e iconos. _(N-CAR-01)_
   - Criterio: Dada una revisión con axe, cuando se ejecuta, entonces no hay errores de contraste.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-05.1-02** `Must·MVP·Pendiente` Permitir usar toda la web solo con teclado, con el foco siempre visible. _(N-CAR-01)_
+- [ ] **RNF-05.1-02** `Must·MVP·Decidido` Permitir usar toda la web solo con teclado, con el foco siempre visible. _(N-CAR-01)_
   - Criterio: Dada una compra completa con teclado, cuando se hace, entonces se termina sin ratón.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-05.1-03** `Must·MVP·Decidido` Dar a todas las zonas pulsables al menos 44 × 44 px. _(N-CAR-01)_
   - Criterio: Dada una revisión, cuando se mide, entonces ningún botón es menor de 44 px.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-05.1-04** `Must·MVP·Pendiente` Dar texto alternativo a todas las imágenes con contenido y vacío a las decorativas. _(N-CAR-01)_
+- [ ] **RNF-05.1-04** `Must·MVP·Decidido` Dar texto alternativo a todas las imágenes con contenido y vacío a las decorativas. _(N-CAR-01)_
   - Criterio: Dada una revisión, cuando se ejecuta, entonces no hay imágenes sin alt.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-05.1-05** `Must·MVP·Decidido` Respetar prefers-reduced-motion: sin animaciones si el usuario lo pide. _(N-CAR-01)_
   - Criterio: Dado el ajuste activado, cuando se carga la portada, entonces nada se mueve.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-05.1-06** `Must·MVP·Pendiente` Etiquetar todos los campos de formulario con <label> visible. _(N-CAR-01)_
+- [ ] **RNF-05.1-06** `Must·MVP·Decidido` Etiquetar todos los campos de formulario con <label> visible. _(N-CAR-01)_
   - Criterio: Dada una revisión, cuando se ejecuta, entonces ningún campo carece de etiqueta.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-05.1-07** `Should·MVP·Pendiente` Permitir ampliar el texto al 200 % sin perder contenido ni funciones. _(N-CAR-01)_
+- [ ] **RNF-05.1-07** `Should·MVP·Decidido` Permitir ampliar el texto al 200 % sin perder contenido ni funciones. _(N-CAR-01)_
   - Criterio: Dado un zoom del 200 %, cuando se usa el carrito, entonces todo sigue accesible.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -12577,7 +12649,7 @@ Navegadores antiguos; PWA (V3).
 
 **Requisitos atómicos (4)**
 
-- [ ] **RNF-06.1-01** `Must·MVP·Pendiente` Funcionar en las 2 últimas versiones de Chrome, Firefox, Safari y Edge. _(N-CAR-01)_
+- [ ] **RNF-06.1-01** `Must·MVP·Decidido` Funcionar en las 2 últimas versiones de Chrome, Firefox, Safari y Edge. _(N-CAR-01)_
   - Criterio: Dadas las pruebas de interfaz, cuando se ejecutan en los 4, entonces todas pasan.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-06.1-02** `Should·V2·Decidido` Adaptarse a pantallas desde 360 px de ancho sin desplazamiento horizontal. _(N-CAR-01)_
@@ -12680,16 +12752,16 @@ Alta disponibilidad multi-región.
 - [ ] **RNF-07.1-01** `Could·V3·Hipótesis` Estar disponible el 99,5 % del tiempo mensual, sin contar mantenimientos avisados. _(N-CAR-01)_
   - Criterio: Dado un mes, cuando se mide, entonces la caída total es ≤ 3,6 h.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-07.1-02** `Must·MVP·Pendiente` No perder ningún pedido pagado aunque falle un subpedido o un servicio externo. _(N-CAR-01)_
+- [ ] **RNF-07.1-02** `Must·MVP·Decidido` No perder ningún pedido pagado aunque falle un subpedido o un servicio externo. _(N-CAR-01)_
   - Criterio: Dado un fallo simulado del servicio de correo, cuando se paga, entonces el pedido se guarda igual.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-07.1-03** `Should·V2·Pendiente` Hacer copia de seguridad diaria de la base de datos y conservarla 30 días. _(N-CAR-01)_
   - Criterio: Dada una restauración de prueba, cuando se hace, entonces se recuperan los datos del día anterior.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-07.1-04** `Must·MVP·Pendiente` Registrar los errores del servidor con fecha, ruta y usuario anonimizado. _(N-CAR-01)_
+- [ ] **RNF-07.1-04** `Must·MVP·Decidido` Registrar los errores del servidor con fecha, ruta y usuario anonimizado. _(N-CAR-01)_
   - Criterio: Dado un error 500, cuando ocurre, entonces aparece en el registro.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
-- [ ] **RNF-07.1-05** `Must·MVP·Pendiente` Si un servicio externo (IA, correo) no responde, seguir funcionando y mostrar un aviso claro. _(N-CAR-01)_
+- [ ] **RNF-07.1-05** `Must·MVP·Decidido` Si un servicio externo (IA, correo) no responde, seguir funcionando y mostrar un aviso claro. _(N-CAR-01)_
   - Criterio: Dada la IA caída, cuando se abre el asistente, entonces ve «El asistente no está disponible ahora. Puedes comprar desde el catálogo».
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 
@@ -12793,7 +12865,7 @@ Revisión jurídica profesional (necesaria antes de operar).
 - [ ] **RNF-08.1-03** `Should·V2·Pendiente` Explicar a los vendedores cómo se ordenan los productos en el catálogo (Reglamento P2B 2019/1150). _(N-CAT-03)_
   - Criterio: Dadas las condiciones de vendedor, cuando se leen, entonces explican el orden.
   - Competencia: Mercadona N · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
-- [ ] **RNF-08.1-04** `Must·MVP·Pendiente` Publicar aviso legal con identificación del prestador (LSSI). _(N-CAT-03)_
+- [ ] **RNF-08.1-04** `Must·MVP·Decidido` Publicar aviso legal con identificación del prestador (LSSI). _(N-CAT-03)_
   - Criterio: Dada /aviso-legal, cuando se lee, entonces identifica al titular.
   - Competencia: Mercadona N · Glovo S · Too ? · Wetaca ? · Market S · Open ? → Poco extendido
 - [ ] **RNF-08.1-05** `Must·MVP·Decidido` Marcar la web como «Proyecto conceptual» y los datos como «de ejemplo» mientras no haya operación real. _(N-CAT-03)_
@@ -12989,7 +13061,7 @@ Métricas de complejidad.
 
 **Requisitos atómicos (5)**
 
-- [ ] **RNF-10.1-01** `Must·MVP·Pendiente` Separar el código en capas: presentación, lógica de negocio y acceso a datos. _(N-CAR-01)_
+- [ ] **RNF-10.1-01** `Must·MVP·Decidido` Separar el código en capas: presentación, lógica de negocio y acceso a datos. _(N-CAR-01)_
   - Criterio: Dada una revisión de diseño, cuando se hace, entonces ninguna página accede directamente a la base de datos.
   - Competencia: Mercadona ? · Glovo ? · Too ? · Wetaca ? · Market ? · Open ? → Sin referente
 - [ ] **RNF-10.1-02** `Must·MVP·Decidido` Poder sustituir el motor de IA simulado por uno real cambiando solo la configuración (patrón Adapter). _(N-IA-01)_

@@ -39,7 +39,7 @@ module.exports = (R) => {
 
   R.sub('RF-02.6', 'Datos del negocio y perfil público');
   R('Permitir editar nombre comercial, descripción, foto de portada, historia (hasta 1.500 caracteres) y ciudad.', 'Dado un cambio de historia, cuando guarda, entonces se ve en su perfil público.', 'S', 'MVP', ['BF17'], 'N-VEN-01');
-  R('Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona y productos activos.', 'Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos.', 'S', 'MVP', ['BF17'], 'N-VEN-01');
+  R('Mostrar un perfil público en /vendedores/<nombre> con historia, fotos, zona, productos activos y un apartado «Cómo producimos» escrito por el vendedor (hasta 500 caracteres).', 'Dado un vendedor verificado, cuando un cliente abre su perfil, entonces ve sus productos y el apartado «Cómo producimos».', 'M', 'MVP', ['BF17'], 'N-CAT-01', { pos: 'Paridad', just: 'Market Wagon muestra en cada producto la granja, el condado, cómo produce y una descripción del productor; Glovo, Mercadona y Wetaca no dicen el origen (recorrido del 23/10/2026). La ficha (RF-04.5-01, Must) enlaza a este perfil.' });
   R('Guardar el IBAN para las liquidaciones, visible solo enmascarado (ES** **** 1234).', 'Dado un IBAN guardado, cuando el vendedor lo consulta, entonces ve solo los 4 últimos dígitos.', 'S', 'V2', ['BF76'], 'N-VEN-05');
   R('Validar el formato del IBAN español (ES + 22 dígitos) antes de guardarlo.', 'Dado un IBAN de 20 dígitos, cuando guarda, entonces ve «El IBAN no es válido».', 'S', 'V2', [], 'N-VEN-05');
 
@@ -129,7 +129,7 @@ module.exports = (R) => {
   R('Mostrar en /producto/<id> la galería de fotos, el nombre, el vendedor con enlace a su perfil y el precio por unidad y por kilo.', 'Dada una ficha, cuando pulsa el vendedor, entonces llega a su perfil.', 'M', 'MVP', ['BF17', 'BF18'], 'N-CAT-01');
   R('Mostrar ingredientes, alérgenos (contiene y trazas), conservación, tipo de fecha y vida útil.', 'Dado un queso, cuando se abre la ficha, entonces se ven los cinco datos.', 'M', 'MVP', ['BF14', 'BF15', 'BF21'], 'N-CAT-02', { estado: 'Decidido' });
   R('Mostrar el origen con municipio y distancia aproximada al centro de la zona.', 'Dado un producto de Alhaurín, cuando se ve en Málaga, entonces muestra «Alhaurín el Grande · 20 km».', 'S', 'MVP', ['BF16'], 'N-VEN-01');
-  R('Mostrar hasta 4 productos relacionados del mismo vendedor.', 'Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 relacionados.', 'C', 'V2', [], 'N-CAR-01');
+  R('Mostrar hasta 4 productos del mismo vendedor bajo el título «Más de <vendedor>», para que se vea el criterio.', 'Dado un vendedor con 6 productos, cuando se abre uno, entonces se ven 4 bajo «Más de <vendedor>».', 'C', 'V2', [], 'N-CAR-01');
   R('Mostrar el desglose orientativo del precio: parte del vendedor, logística y FOOD4ALL.', 'Dado un precio, cuando se pulsa «¿A dónde va tu dinero?», entonces se ve el desglose.', 'C', 'V3', ['BF19'], 'N-CAT-03');
 
   R.sub('RF-04.6', 'Favoritos y habituales');

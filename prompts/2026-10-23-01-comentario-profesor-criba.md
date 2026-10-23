@@ -4,6 +4,7 @@ fecha: 2026-10-23
 autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
+tema: Requisitos del Hito 2
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 
@@ -45,3 +46,5 @@ Aun queda que mis compañeros suban las suyas, por eso hay 4-5
 Haz el 2, no el 1
 
 **Resultado:** se hizo commit y push a `main` de los cambios de hoy y del registro de prompts, sin coautoría de Claude. Asana no se actualizó: se hará cuando el usuario lo pida.
+
+*Entrada recuperada de `main` al fusionar el 23/10/2026 a las 21:36: estaba solo en esa rama.*

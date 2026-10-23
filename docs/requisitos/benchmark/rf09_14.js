@@ -57,14 +57,14 @@ module.exports = (R) => {
   R('Mostrar en el perfil del vendedor la media y el número de valoraciones a partir de 3.', 'Dadas 2 valoraciones, cuando se ve el perfil, entonces muestra «Pocas valoraciones todavía».', 'S', 'V2', ['BF63'], 'N-CAT-01');
   R('Moderar los comentarios antes de publicarlos: sin insultos, datos personales ni publicidad.', 'Dado un comentario con un teléfono, cuando se modera, entonces no se publica.', 'S', 'V2', [], 'N-CAT-03');
   R('Permitir al vendedor responder una vez a cada comentario.', 'Dada una respuesta, cuando se publica, entonces aparece bajo el comentario.', 'C', 'V2', [], 'N-VEN-01');
-  R('No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual.', 'Dado el modo conceptual, cuando se ve un perfil, entonces no hay estrellas de ejemplo.', 'S', 'V2', [], 'N-CAT-03', { estado: 'Decidido' });
+  R('No mostrar valoraciones inventadas ni contadores de prueba social mientras el proyecto sea conceptual.', 'Dado el modo conceptual, cuando se ve un perfil, entonces no hay estrellas de ejemplo.', 'M', 'MVP', [], 'N-CAT-03', { estado: 'Decidido', just: 'Sube al MVP a propuesta de Juan Antonio (criba, bloque E; C-29): E2, E5 y E6 desconfían de una app nueva, y se cumple sin valoraciones reales porque consiste en no inventarlas. Información veraz: N-CAT-03, regla A.2 c.' });
 
   R.proc('RF-12', 'Asistente de IA para generar la cesta');
 
   R.sub('RF-12.1', 'Entrada');
-  R('Ofrecer el asistente en /comprar#asistente y desde la portada con «Pide una cesta a la IA».', 'Dada la portada, cuando pulsa el acceso, entonces llega al asistente.', 'S', 'MVP', ['BF67'], 'N-IA-01');
+  R('Ofrecer el asistente en /comprar#asistente y desde la pestaña «Asistente IA» de la cabecera, arriba a la derecha: visible, pero sin destacar más que «Comprar».', 'Dada cualquier página, cuando pulsa «Asistente IA» en la cabecera, entonces llega al asistente.', 'S', 'MVP', ['BF67'], 'N-IA-01', { just: 'Acceso visible pero secundario: la IA va en tercer lugar (C-13) y no es la única forma de comprar (C-26).' });
   R('Pedir presupuesto (5 a 200 €), días (1 a 7), número de personas (1 a 6) y tiempo para cocinar (poco, normal, mucho).', 'Dado un presupuesto de 3 €, cuando envía, entonces ve «El presupuesto mínimo es de 5 €».', 'S', 'MVP', ['BF67'], 'N-IA-01', { pos: 'Diferencial', just: 'Wetaca sugiere un menú semanal propio; ninguno verificado arma una cesta de varios vendedores por presupuesto.' });
-  R('Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»).', 'Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.', 'S', 'MVP', [], 'N-IA-01');
+  R('Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»).', 'Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.', 'C', 'V2', [], 'N-IA-01', { just: 'Sale del MVP por el plan de contraste de N-IA-01, que quedó «No confirmada» (E3 y E4): el asistente se queda en opciones guiadas (C-26).' });
   R('Rellenar por defecto con las preferencias guardadas del cliente.', 'Dado un presupuesto guardado de 30 €, cuando abre el asistente, entonces aparece 30 €.', 'S', 'MVP', ['BF11'], 'N-IA-01');
 
   R.sub('RF-12.2', 'Generación de la cesta');
@@ -75,7 +75,7 @@ module.exports = (R) => {
   R('Responder en 10 segundos como máximo; si tarda más, mostrar «Estamos preparando tu cesta…» con una animación suave.', 'Dada una respuesta de 12 s, cuando pasa de 10 s, entonces ve el mensaje.', 'S', 'MVP', [], 'N-PLA-01');
 
   R.sub('RF-12.3', 'Explicación y ajuste');
-  R('Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»).', 'Dada una cesta, cuando se ve un producto, entonces tiene su motivo.', 'S', 'MVP', ['BF68'], 'N-IA-02');
+  R('Explicar en cada producto por qué se propone («Para 3 cenas · aguanta 5 días en nevera»).', 'Dada una cesta, cuando se ve un producto, entonces tiene su motivo.', 'S', 'MVP', ['BF68'], 'N-IA-02', { pos: 'Mejora', just: 'Ningún competidor recorrido explica sus recomendaciones («Otros también compraron», «Productos relacionados», platos «similares»); solo la etiqueta ambiental de Open Food Network dice en qué se basa (recorrido del 23/10/2026).' });
   R('Permitir quitar, cambiar la cantidad o pedir «Otra opción» en cada producto.', 'Dado «Otra opción», cuando la pulsa, entonces se cambia por un producto de la misma categoría.', 'S', 'MVP', [], 'N-IA-01');
   R('Permitir pasar toda la cesta al carrito con «Añadir todo al carrito».', 'Dada una cesta de 9 productos, cuando pulsa el botón, entonces el carrito tiene los 9.', 'S', 'MVP', [], 'N-IA-01');
   R('No añadir nada al carrito sin que el cliente lo confirme.', 'Dada una cesta generada, cuando no pulsa nada, entonces el carrito no cambia.', 'S', 'MVP', [], 'N-IA-02', { estado: 'Decidido' });

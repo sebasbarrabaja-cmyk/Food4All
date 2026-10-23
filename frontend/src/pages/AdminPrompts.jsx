@@ -4,7 +4,7 @@ import Status from '../components/Status.jsx';
 
 // Registro de prompts del proyecto + segundo agente que los pule (backend/agent.js).
 const AUTHORS = ['Sebastián', 'Juan Antonio', 'Miguel', 'Equipo'];
-const EMPTY = { titulo: '', autor: 'Sebastián', herramienta: 'Claude Code', tipo: 'Sesión de trabajo', texto: '' };
+const EMPTY = { titulo: '', autor: 'Sebastián', herramienta: 'Claude Code', tipo: 'Sesión de trabajo', tema: 'Requisitos del Hito 2', texto: '' };
 
 const words = (t) => t.trim().split(/\s+/).filter(Boolean).length;
 
@@ -70,7 +70,7 @@ function PromptItem({ p, agentOn, onSaved }) {
     try {
       await api('/api/admin/prompts', {
         titulo: `${p.titulo} (pulido)`, autor: 'Agente revisor', herramienta: p.herramienta,
-        tipo: 'Versión pulida', origen: `Versión pulida de ${p.id}`, texto: polish.result.texto,
+        tipo: 'Versión pulida', tema: p.tema || 'Otro', origen: `Versión pulida de ${p.id}`, texto: polish.result.texto,
       });
       polish.reset(); onSaved();
     } catch (e) { setSaveError(e.message); } finally { setSaving(false); }
@@ -103,7 +103,7 @@ function PromptItem({ p, agentOn, onSaved }) {
   );
 }
 
-function NewPrompt({ types, agentOn, onSaved }) {
+function NewPrompt({ types, temas, agentOn, onSaved }) {
   const [form, setForm] = useState(EMPTY);
   const [errors, setErrors] = useState({});
   const [saving, setSaving] = useState(false);
@@ -127,12 +127,16 @@ function NewPrompt({ types, agentOn, onSaved }) {
       <div className="form-row">
         <div className="field">
           <label htmlFor="np-titulo">Título</label>
-          <input id="np-titulo" value={form.titulo} onChange={set('titulo')} aria-invalid={Boolean(errors.titulo)} />
-          {errors.titulo && <span className="error">{errors.titulo}</span>}
+          <input id="np-titulo" value={form.titulo} onChange={set('titulo')} aria-invalid={Boolean(errors.titulo)} aria-describedby={errors.titulo ? 'np-titulo-err' : undefined} />
+          {errors.titulo && <span className="error" id="np-titulo-err" role="alert">{errors.titulo}</span>}
         </div>
         <div className="field">
           <label htmlFor="np-tipo">Tipo</label>
           <select id="np-tipo" value={form.tipo} onChange={set('tipo')}>{types.map((t) => <option key={t}>{t}</option>)}</select>
+        </div>
+        <div className="field">
+          <label htmlFor="np-tema">Para qué sirvió</label>
+          <select id="np-tema" value={form.tema} onChange={set('tema')}>{temas.map((t) => <option key={t}>{t}</option>)}</select>
         </div>
         <div className="field">
           <label htmlFor="np-autor">Autor</label>
@@ -145,9 +149,9 @@ function NewPrompt({ types, agentOn, onSaved }) {
       </div>
       <div className="field">
         <label htmlFor="np-texto">Prompt</label>
-        <textarea id="np-texto" rows={8} value={form.texto} onChange={set('texto')} aria-invalid={Boolean(errors.texto)}
+        <textarea id="np-texto" rows={8} value={form.texto} onChange={set('texto')} aria-invalid={Boolean(errors.texto)} aria-describedby={errors.texto ? 'np-texto-err' : undefined}
           placeholder="Pega aquí el prompt tal cual lo has enviado (o vas a enviar)." />
-        {errors.texto && <span className="error">{errors.texto}</span>}
+        {errors.texto && <span className="error" id="np-texto-err" role="alert">{errors.texto}</span>}
       </div>
       <div className="toolbar">
         <button className="btn btn-primary" disabled={saving}>{saving ? 'Guardando…' : 'Guardar'}</button>
@@ -164,6 +168,16 @@ function NewPrompt({ types, agentOn, onSaved }) {
       )}
     </form>
   );
+}
+
+// Por persona (en el orden del equipo) y, dentro, por tema; en cada tema, del más nuevo al más antiguo.
+function groups(prompts, temas) {
+  const people = [...AUTHORS, ...new Set(prompts.map((p) => p.autor || 'Sin autor'))].filter((a, i, all) => all.indexOf(a) === i);
+  return people
+    .map((autor) => [autor, [...temas, 'Sin tema']
+      .map((tema) => [tema, prompts.filter((p) => (p.autor || 'Sin autor') === autor && (temas.includes(p.tema) ? p.tema : 'Sin tema') === tema)])
+      .filter(([, ps]) => ps.length)])
+    .filter(([, ts]) => ts.length);
 }
 
 export default function AdminPrompts() {
@@ -186,7 +200,7 @@ export default function AdminPrompts() {
       <p className="toolbar">
         {data.agent
           ? <Status kind="decidido">Agente revisor activo</Status>
-          : <><Status kind="pendiente">Agente revisor sin configurar</Status><span className="muted small">Añade ANTHROPIC_API_KEY a backend/.env y reinicia el servidor.</span></>}
+          : <><Status kind="pendiente">Agente revisor sin configurar</Status><span className="muted small">Añade GEMINI_API_KEY a backend/.env y reinicia el servidor.</span></>}
       </p>
       <div className="chips" role="group" aria-label="Filtrar por tipo">
         {['', ...data.types].map((t) => (
@@ -195,11 +209,21 @@ export default function AdminPrompts() {
           </button>
         ))}
       </div>
-      <div className="prompt-list">
-        {shown.length ? shown.map((p) => <PromptItem key={p.id} p={p} agentOn={data.agent} onSaved={load} />)
-          : <p className="muted">No hay prompts de este tipo.</p>}
-      </div>
-      <NewPrompt types={data.types} agentOn={data.agent} onSaved={load} />
+      {shown.length === 0 && <p className="muted">No hay prompts de este tipo.</p>}
+      {groups(shown, data.temas).map(([autor, temas]) => (
+        <section key={autor} className="prompt-group" aria-labelledby={`pg-${autor}`}>
+          <h3 id={`pg-${autor}`}>{autor} <span className="muted small">· {temas.reduce((n, [, ps]) => n + ps.length, 0)}</span></h3>
+          {temas.map(([tema, ps]) => (
+            <div key={tema}>
+              <h4 className="prompt-group__tema">{tema} <span className="muted small">· {ps.length}</span></h4>
+              <div className="prompt-list">
+                {ps.map((p) => <PromptItem key={p.id} p={p} agentOn={data.agent} onSaved={load} />)}
+              </div>
+            </div>
+          ))}
+        </section>
+      ))}
+      <NewPrompt types={data.types} temas={data.temas} agentOn={data.agent} onSaved={load} />
     </>
   );
 }

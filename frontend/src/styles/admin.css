@@ -13,12 +13,19 @@
 }
 .side-search {
   display: flex; align-items: center; gap: 8px; padding: 0 10px; min-height: 44px;
-  border: 1px dashed var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text-soft);
+  border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); color: var(--text-soft);
 }
 .side-search input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: .95rem; color: var(--text); }
 .side-search input:disabled { cursor: not-allowed; }
 .side-search .badge { font-size: .7rem; }
+.side-search:focus-within { border-color: var(--green); }
+.side-search input::-webkit-search-cancel-button { -webkit-appearance: none; appearance: none; } /* la × del navegador sale azul */
 .side-search__note { font-size: .78rem; color: var(--text-soft); margin: 6px 2px 18px; }
+.side-search__results { list-style: none; margin: -10px 0 18px; padding: 0; display: grid; gap: 2px; }
+.side-search__results a { display: flex; align-items: center; gap: 8px; min-height: 36px; padding: 0 10px; border-radius: var(--radius); text-decoration: none; font-weight: 600; color: var(--green); background: var(--tint-sage); }
+.side-search__answer:not(:empty) { margin: -10px 0 18px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); font-size: .92rem; }
+.side-search__answer p { margin: 0 0 10px; }
+.side-search__answer p:last-child { margin-bottom: 0; }
 
 .side-nav { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
 .side-nav a {
@@ -27,19 +34,19 @@
   transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
 }
 .side-nav a:hover { background: var(--tint-sage); color: var(--green); }
-.side-nav a.active { background: var(--green); color: var(--forest-text); }
+.side-nav a.active { background: var(--forest); color: var(--forest-text); }
 
 /* Prompts */
 .btn-sm { min-height: 38px; padding: 0 14px; font-size: .92rem; }
 .form-error { color: var(--danger); margin: 10px 0 0; }
 .prompt-list { display: grid; gap: 10px; margin: 16px 0 28px; }
 .prompt { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
-.prompt > summary { cursor: pointer; padding: 14px 16px; display: grid; gap: 4px; list-style: none; }
+.prompt > summary { cursor: pointer; padding: 14px 16px; display: block; list-style: none; }
 .prompt > summary::-webkit-details-marker { display: none; }
-.prompt > summary::before { content: '▸'; float: left; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
+.prompt > summary::before { content: '▸'; display: inline-block; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
 .prompt[open] > summary::before { transform: rotate(90deg); }
 .prompt__title { font: 600 1.05rem var(--font-display); color: var(--green); }
-.prompt__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.prompt__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; }
 .prompt__body { padding: 0 16px 16px; }
 .prompt-text {
   margin: 0 0 12px; max-height: 360px; overflow: auto; padding: 14px; border-radius: 8px;
@@ -50,9 +57,9 @@
 .input-inline { flex: 1; min-width: 220px; min-height: 38px; padding: 0 12px; font: inherit; font-size: .92rem; border: 1px solid var(--border); border-radius: var(--radius-pill); background: var(--surface); color: var(--text); }
 
 .tag { display: inline-block; padding: 2px 10px; border-radius: var(--radius-pill); font-size: .78rem; font-weight: 600; background: var(--tint-sage); color: var(--green); }
-.tag--prompt { background: var(--tint-peach); color: #8A3B26; }
-.tag--feedback { background: var(--tint-tomato); color: #8A3B26; }
-.tag--versión { background: var(--tint-mustard); color: #6B4A12; }
+.tag--prompt { background: var(--tint-peach); color: var(--tag-tomato-text); }
+.tag--feedback { background: var(--tint-tomato); color: var(--tag-tomato-text); }
+.tag--versión { background: var(--tint-mustard); color: var(--tag-mustard-text); }
 
 .polish { margin-top: 14px; padding: 16px; border-radius: var(--radius); border: 1px solid var(--saffron); background: color-mix(in srgb, var(--tint-mustard) 45%, var(--surface)); }
 .polish__head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
@@ -68,3 +75,31 @@
   .admin-side { position: static; height: auto; border-right: 0; border-bottom: 1px solid var(--border); padding-right: 0; }
   .polish__cols { grid-template-columns: 1fr; }
 }
+
+/* Hito 2: requisitos leídos de docs/requisitos (AdminHito2.jsx) */
+#hito2 h3 { margin-top: 36px; }
+.h2-links { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.h2-links a {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: var(--radius-pill);
+  border: 1px solid var(--border); background: var(--surface); color: var(--green); font-weight: 600; font-size: .9rem; text-decoration: none;
+}
+.h2-links a:hover { background: var(--tint-sage); }
+.h2-figures { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin: 16px 0; }
+.h2-figure { display: grid; gap: 4px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.h2-figure__label { font-size: .85rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--eyebrow); }
+.h2-figure strong { font: 600 2rem/1.1 var(--font-display); color: var(--green); }
+.h2-more > summary { cursor: pointer; font-weight: 600; color: var(--green); min-height: 44px; display: flex; align-items: center; }
+.h2-sub { margin: 20px 0 4px; }
+#hito2 .filter select { max-width: 100%; }
+.h2-changes { display: grid; gap: 10px; margin-top: 12px; }
+.h2-change { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+.h2-change dt { font-weight: 600; color: var(--green); }
+.h2-change dd { margin: 0; }
+.h2-more > summary::before { content: '▸'; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
+.h2-more[open] > summary::before { transform: rotate(90deg); }
+
+/* Prompts agrupados por persona y, dentro, por tema */
+.prompt-group { margin-top: 28px; }
+.prompt-group > h3 { margin: 0 0 4px; }
+.prompt-group__tema { margin: 18px 0 0; font-size: 1rem; color: var(--text-soft); }
+.prompt-group .prompt-list { margin: 10px 0 0; }

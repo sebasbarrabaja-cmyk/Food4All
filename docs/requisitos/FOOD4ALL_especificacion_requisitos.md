@@ -92,7 +92,7 @@ FOOD4ALL permite a un estudiante que vive fuera de casa comprar a varios vendedo
 
 **Alcance de este hito.** Marketplace local con cuatro actores (cliente, vendedor, operador del hub y administrador): catálogo, carrito multi-vendedor, pago único simulado, subpedidos, logística consolidada, seguimiento, incidencias y asistente de IA simulado. Quedan fuera los precios reales, la comisión, la ubicación del hub y los pagos reales (bloque 10).
 
-**Qué es evidencia y qué no.** Ninguna necesidad de usuario está todavía confirmada. El 23/10/2026 se registraron las primeras 4 entrevistas a estudiantes (F-07), y solo 2 son del perfil objetivo. Con ellas, cinco necesidades pasan a «Indicio» y N-IA-01 queda «No confirmada» (`FOOD4ALL_necesidades.md`, apartado 5.1). Las demás siguen como hipótesis o como obligaciones legales. Faltan las entrevistas del resto del equipo, también las de vendedores (F-08), así que estos estados son provisionales. Las personas de B2 son arquetipos documentales, no usuarios observados. Los umbrales de los RNF indican si salen de una norma, de una referencia técnica, de una decisión o de una hipótesis, y se verificarán en el Sprint 5.
+**Qué es evidencia y qué no.** Ninguna necesidad de usuario está todavía confirmada. El 23/10/2026 se registraron 6 entrevistas a estudiantes (F-07): E1–E4 de Sebastián y E5–E6 de Juan Antonio. De ellas, 4 son del perfil objetivo. Con ellas, seis necesidades pasan a «Indicio» y N-IA-01 queda «No confirmada» (`FOOD4ALL_necesidades.md`, apartado 5.1). Las demás siguen como hipótesis o como obligaciones legales. No hay ninguna entrevista a vendedores (F-08), así que estos estados son provisionales. Las personas de B2 son arquetipos documentales, no usuarios observados. Los umbrales de los RNF indican si salen de una norma, de una referencia técnica, de una decisión o de una hipótesis, y se verificarán en el Sprint 5.
 
 **Entregables exigidos en Asana** y dónde se cubren:
 
@@ -128,7 +128,7 @@ Todo lo que viene después se apoya en estas fuentes: una necesidad sin fuente n
 | F-04 | Comparativo de 10 empresas del sector | Benchmark exploratorio: brecha del carrito multi-vendedor, pagos, incidencias. Fiabilidad baja: no cita fuentes | Juan Antonio | Hecho |
 | F-05 | Investigación de entrega a clientes | Franjas, zonas, entrega fallida | Miguel | En curso |
 | F-06 | Investigación de recogida a vendedores | Rutas, ventanas, paradas | Juan Antonio | En curso |
-| F-07 | Entrevistas a estudiantes (mínimo 5), códigos E1, E2… | Contrastar las necesidades del cliente | Miguel | E1–E4 registradas el 23/10/2026 (`FOOD4ALL_entrevistas_estudiantes.md`); faltan las del resto del equipo |
+| F-07 | Entrevistas a estudiantes (mínimo 5), códigos E1, E2… | Contrastar las necesidades del cliente | Miguel | E1–E4 (Sebastián) y E5–E6 (Juan Antonio) registradas el 23/10/2026; las 12 de Miguel se descartaron porque se generaron con IA (C-22) |
 | F-08 | Entrevistas a vendedores locales (mínimo 2–3), códigos V1, V2… | Contrastar las necesidades del vendedor | Juan Antonio | Se registran el 23/10/2026 |
 | F-09 | Borrador de 211 requisitos (`FOOD4ALL_requisitos.md`, 09/10/2026) | Lista de partida para la criba. Histórico: no es evidencia | Sebastián | Hecho |
 | F-10 | Benchmark de competidores (Anexo B y Excel) | Qué hace la competencia en cada requisito | Sebastián | Hecho |
@@ -144,28 +144,28 @@ El catálogo único tiene 22 necesidades: 16 de usuario y 6 obligaciones legales
 <!-- catalogo:inicio -->
 | ID | Necesidad | Quién | Tipo | Estado | Fuentes | Requisitos (MVP) |
 | --- | --- | --- | --- | --- | --- | --- |
-| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4) | 21 (12) |
-| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4; E1 comparativo) | 19 (5) |
+| N-PLA-01 | Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar | Estudiante (P1) | Usuario | Indicio | F-01, F-02, F-07 (E3, E4, E6) | 21 (12) |
+| N-PLA-02 | Controlar cuánto gasta en comida y ajustarse a un presupuesto | Estudiante (P1) | Usuario | Indicio | F-01, F-07 (E4, E5, E6; E1 comparativo) | 20 (5) |
 | N-CAR-01 | Comprar producto local de varios vendedores en un solo pedido y un solo pago, sin ir de tienda en tienda | Estudiante (P1) | Usuario | Indicio | F-04, F-10, F-07 (E4; E3 en contra del producto, no de la necesidad) | 162 (137) |
-| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-05 | 33 (27) |
-| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3, E4) | 8 (3) |
-| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (10) |
-| N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (9) |
-| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E1 y E2 comparativos) | 36 (14) |
+| N-ENT-01 | Recibir todo en una sola entrega, en una franja conocida | Estudiante (P1) | Usuario | Hipótesis | F-04, F-07 (solo E1, comparativo: entrega en 1–4 días) | 36 (30) |
+| N-CAD-01 | Gestionar cantidades, conservación y caducidades para no tirar comida | Estudiante (P1) | Usuario | Indicio | F-01, F-03, F-07 (E3; en contra: E4) | 8 (3) |
+| N-IA-01 | Que el asistente simplifique la decisión sin obligarle a explicar demasiado | Estudiante (P1) | Usuario | No confirmada | F-02, F-07 (en contra: E3, E4) | 10 (9) |
+| N-IA-02 | Saber cuándo habla con una IA y distinguir una recomendación de la publicidad | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento de IA 2024/1689; DSA 2022/2065) | 11 (8) |
+| N-CAT-01 | Confiar en el origen, la calidad y la trazabilidad de lo que compra | Estudiante (P1) | Usuario | Indicio | F-03 (Reglamento 178/2002), F-04, F-07 (E4; E5 y E6 comprueban la fiabilidad de una app antes de usarla; en contra del origen: E6; E1 y E2 comparativos) | 37 (16) |
 | N-CAT-02 | Conocer ingredientes y alérgenos antes de pagar | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (Reglamento 1169/2011, art. 14) | 14 (14) |
-| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 35 (18) |
+| N-CAT-03 | Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas | Estudiante (P1) | Obligación legal | Obligación legal | F-03 (RDL 1/2007; LSSI; P2B 2019/1150) | 36 (20) |
 | N-CUE-01 | Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó | Estudiante, vendedor (P1, P2) | Obligación legal | Obligación legal | F-03 (RGPD; LOPDGDD) | 61 (53) |
-| N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Hipótesis | F-04 (fiabilidad baja: no cita fuentes) | 34 (17) |
-| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 15 (10) |
+| N-INC-01 | Tener una solución rápida, atendida por personas, si algo llega mal | Estudiante (P1) | Usuario | Indicio | F-04 (fiabilidad baja: no cita fuentes), F-07 (E5) | 34 (17) |
+| N-VEN-01 | Llegar a clientes nuevos y ganar visibilidad | Vendedor (P2) | Usuario | Hipótesis | F-01 (comercio tradicional 10,6 %) | 14 (8) |
 | N-VEN-02 | Vender online sin montar una web propia ni gestionar envíos | Vendedor (P2) | Usuario | Hipótesis | F-01, F-04 | 16 (9) |
 | N-VEN-03 | Reducir la merma del género que no vende a tiempo | Vendedor (P2) | Usuario | Hipótesis | F-03 (Ley 1/2025) | 1 (0) |
-| N-VEN-04 | Saber qué preparar y para cuándo: pedido claro y franja de recogida | Vendedor (P2) | Usuario | Hipótesis | F-06, F-12 | 13 (12) |
+| N-VEN-04 | Saber qué preparar y para cuándo: pedido claro y franja de recogida | Vendedor (P2) | Usuario | Hipótesis | F-12 | 13 (12) |
 | N-VEN-05 | Cobrar con transparencia: comisión y liquidación claras | Vendedor (P2) | Usuario | Hipótesis | F-12 (críticas a la tarifa de Market Wagon) | 11 (1) |
 | N-VEN-06 | Conocer con claridad los requisitos y los pasos del alta | Vendedor (P2) | Usuario | Hipótesis | F-03 | 24 (22) |
 | N-VEN-07 | Admitir solo vendedores con registro sanitario o con una exención justificada | Administrador (P3) | Obligación legal | Obligación legal | F-03 (RD 191/2011; RD 1086/2020) | 9 (9) |
-| N-HUB-01 | Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» | Operador (P3) | Usuario | Hipótesis | F-06, F-12 | 6 (3) |
+| N-HUB-01 | Tener rutas y franjas de recogida fiables, con aviso de «pedido listo» | Operador (P3) | Usuario | Hipótesis | F-12 | 6 (3) |
 | N-HUB-02 | Mantener la cadena de frío y separar frío y seco | Operador (P3) | Obligación legal | Obligación legal | F-03 (Reglamento 852/2004), F-12 | 4 (2) |
-| N-HUB-03 | Verificar cada pedido y resolver las faltas antes de entregar | Operador (P3) | Usuario | Hipótesis | F-06, F-12 | 16 (13) |
+| N-HUB-03 | Verificar cada pedido y resolver las faltas antes de entregar | Operador (P3) | Usuario | Hipótesis | F-12 | 16 (13) |
 <!-- catalogo:fin -->
 
 **Regla de evidencia** (resumen). Una necesidad de usuario pasa a **Confirmada** si la mencionan 3 o más entrevistas independientes del perfil afectado, en respuesta a preguntas abiertas, con cita literal y sin un número igual o mayor que la contradiga. Con 1 o 2 entrevistas queda como **Indicio**. Las personas, el benchmark y los estudios ayudan a formular hipótesis, pero no confirman.
@@ -517,12 +517,12 @@ Estos puntos abiertos afectan a los requisitos. Mientras sigan abiertos, cada fi
 | ID | Tipo | Descripción | Procesos afectados | Valor provisional | Cómo se cierra |
 | --- | --- | --- | --- | --- | --- |
 | H-01 | Hipótesis | El estudiante acepta una compra mínima para varios días | RF-05, RF-07, RF-13 | 10–15 € | Entrevistas F-07 |
-| H-02 | Hipótesis | El estudiante acepta esperar a una entrega consolidada en una franja | RF-06, RF-08, RF-09 | Franjas de 2 h en los próximos 7 días | Entrevistas F-07 |
+| H-02 | Hipótesis | El estudiante acepta esperar a una entrega consolidada en una franja | RF-06, RF-08, RF-09 | Franjas de 2 h en los próximos 7 días | Entrevistas F-07: preguntar también si preferirían recoger en un punto cercano. Plan B si resulta falsa: punto de recogida comunitario (RF-08.4-05, V3; lo hacen Market Wagon y Open Food Network), pendiente de debate del equipo |
 | H-03 | Hipótesis | Comprar en FOOD4ALL ahorra frente al supermercado | RF-12, RF-15 | No se promete ahorro | Comparativa de precios |
 | H-04 | Hipótesis | Plazos de incidencias aceptables: 48 h en frescos, 14 días en despensa y respuesta humana en 24 h laborables | RF-10, RF-13 | Esos valores | Entrevistas F-07 y capacidad del equipo |
 | D-01 | Pendiente | Rol jurídico: intermediario, operador alimentario o mixto | RF-02, RF-08, RF-10, RNF-08, RNF-09 | Mixto | Decisión del equipo con el profesor y revisión profesional |
 | D-02 | Pendiente | Porcentaje de comisión por venta | RF-02, RF-07, RF-13, RF-17 | Sin mostrar | Modelo de negocio |
-| D-03 | Pendiente | Ubicación del hub, zonas y horas de cierre de cada franja | RF-06, RF-08, RF-13 | Una zona por ciudad; cierre la víspera a las 20:00 | Investigación F-05 y F-06 |
+| D-03 | Pendiente | Ubicación del hub, zonas y horas de cierre de cada franja | RF-06, RF-08, RF-13 | Una zona por ciudad; cierre la víspera a las 20:00 | Entrevistas a vendedores (F-08) y la pregunta del punto de recogida; F-05 y F-06 no se hicieron. Alternativa considerada: puntos de recogida comunitarios en lugar de la entrega en casa (M-06 de los recorridos del 23/10), pendiente de debate del equipo. **Se decide en el Hito 3** (antes del 13/11/2026), con el profesor; responsable: Sebastián |
 | D-04 | Pendiente | Plazo de confirmación del vendedor | RF-07, RF-16 | Hora de cierre + 12 h | Entrevistas F-08 |
 | R-01 | Riesgo | Pocos vendedores por zona hacen inviable la consolidación | RF-08 | Mínimo de vendedores por zona | Entrevistas F-08 |
 | R-02 | Riesgo | La IA propone un producto con un alérgeno declarado | RF-12 | Filtro obligatorio por alérgenos | Criterio de aceptación en RF-12.2-03 |
