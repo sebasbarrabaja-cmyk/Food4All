@@ -9,6 +9,8 @@ origen: Mensajes enviados a Claude Code (Windows) en la sesión, en orden y sin 
 
 Sesión de Juan Antonio desde su terminal de Windows, con Sebastián en llamada.
 
+*Nota (23/10, 21:07):* las cinco últimas entradas tenían horas estimadas posteriores a la subida a GitHub (último commit a las 21:04), así que no podían ser reales. Se han cambiado por «Hora no registrada (antes de las 21:04)». El orden de los mensajes y su texto no cambian.
+
 ### 20:15
 
 Conectate con github a el repositorio https://github.com/sebasbarrabaja-cmyk/Food4All.git
@@ -75,31 +77,31 @@ Continua con lo que estas haciendo y ten en cuenta que sebastian va a realizar c
 
 **Resultado:** se resolvió el conflicto quedándose con la tabla de Sebastián y los «Sí» de Juan Antonio en las 7 RST que no cambiaron; RST-06 y RST-07 quedan «Pendiente» de su voto. E5 P7 y las preguntas extra siguen pendientes. Se subió enseguida para no chocar con los cambios de Sebastián. Después, el asistente preparó para Juan Antonio las discrepancias de su revisión cruzada (personas v2 y comparativo), sin escribir el comentario de Asana.
 
-### 21:10
+### Hora no registrada (antes de las 21:04)
 
 mira el git y me vuelves a preguntar
 
 **Resultado:** sin cambios nuevos que choquen. Sebastián anotó en la línea base que quiere un motor de IA real (afecta a RST-07). El asistente volvió a hacer las preguntas pendientes; Juan Antonio las interrumpió.
 
-### 21:12
+### Hora no registrada (antes de las 21:04)
 
 Sí estas son https://openfoodnetwork.net/?locale=es_US , https://home.localfoodmarketplace.com/ , https://dairy.marketwagon.com/
 
 **Resultado:** las tres páginas se añadieron como fuentes del comparativo original en `FOOD4ALL_comparativo_revisado.md`, apartado 4, sin cambiar la fiabilidad de F-04. Siguen pendientes su voto en RST-06 y RST-07 y lo de «mi compañero» en E5.
 
-### 21:18
+### Hora no registrada (antes de las 21:04)
 
 hazme las dos preguntas de elejir
 
 **Resultado:** Juan Antonio eligió «Sí a las dos» (RST-06 y RST-07, texto nuevo de Sebastián) y que «mi compañero» de E5 P7 es «alguien de fuera del piso». Se anotó en la tabla de RST y como aclaración del entrevistador en E5.
 
-### 21:24
+### Hora no registrada (antes de las 21:04)
 
 corrige las discrepancias del documento de personas
 
 **Resultado:** en `FOOD4ALL_personas_empatia_v2.md`: estados de la tabla 3 actualizados con E1–E6 y nota del apartado 2; cuatro criterios del 6.2 ajustados a B4 (ruta del operador, registro en cada parada, faltas con RF-07.3-09, aviso «Consume primero»); errata «Universidad Europea» y línea en blanco antes del separador del apartado 3. Se anota la revisión de Juan Antonio en la cabecera. El comentario de Asana lo escribe él.
 
-### 21:30
+### Hora no registrada (antes de las 21:04)
 
 pues vamos a ello
 
