@@ -131,3 +131,9 @@ dame esas dos cosas y ya redacto yo
 escribe el mensaje en asana y dime lo de sebastian ya que estoy en llamada
 
 **Resultado:** el asistente no publicó en Asana (regla 2 de `AGENTS.md`: el asistente nunca publica comentarios). Le dejó su comentario listo para pegar, con la última frase corregida porque las tres páginas ya están incorporadas, y los puntos para contarle a Sebastián en la llamada.
+
+### 22:00
+
+subelo al git y sebastian lo rebisa desde hay y que queda de mi parte
+
+**Resultado:** se comprobó que todo estaba ya subido a `docs/juanantonio-hito2`, sin conflictos con `docs/hito2-entrega`, y se subió este registro. Se le dijo lo que le queda: pegar su comentario en Asana y, si da tiempo, las dos preguntas extra a E5 y E6.
