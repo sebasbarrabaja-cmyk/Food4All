@@ -106,11 +106,11 @@ Lo que no se cambió, y por qué:
 - La cabecera con 4 botones en pantallas estrechas: el móvil no tiene prioridad (`DISENO.md`).
 - La lectura de unos 0,9 MB por petición: el panel solo lo usa el equipo y responde en unos 24 ms.
 
-### 21:05 · Revisión de seguridad (`/security-review`)
+### 21:04 · Revisión de seguridad (`/security-review`)
 
 **Resultado:** sin vulnerabilidades. El endpoint exige sesión, no recibe datos del usuario y solo lee archivos fijos del repositorio. React escapa todo el texto y los enlaces a Asana se forman con un prefijo fijo.
 
-### 21:05
+### 21:04
 
 Siguiente paso
 
