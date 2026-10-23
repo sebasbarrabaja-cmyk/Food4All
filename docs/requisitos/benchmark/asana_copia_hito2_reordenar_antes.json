@@ -1,0 +1,378 @@
+{
+ "fecha": "2026-10-23T19:29:45.301Z",
+ "tareas": {
+  "hito2": {
+   "gid": "1218693472298299",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body>Elicitar y documentar los requisitos del marketplace de productos locales.\n\n📌 Entregables:\n• Necesidades de vendedores locales y compradores\n• Requisitos funcionales (catálogo, carrito, pagos, valoraciones) y no funcionales\n• User Stories con criterios de aceptación\n• Matriz de trazabilidad inicial\n\n💬 Comentario sugerido: incluir al menos 2 personas/arquetipos de usuario.\n\n📎 Adjuntar: documento de requisitos + mapa de empatía.</body>",
+   "name": "[Food4All] Hito 2 – Requisitos y Criterios de Aceptación · Marketplace Local",
+   "notes": "Elicitar y documentar los requisitos del marketplace de productos locales.\n\n📌 Entregables:\n• Necesidades de vendedores locales y compradores\n• Requisitos funcionales (catálogo, carrito, pagos, valoraciones) y no funcionales\n• User Stories con criterios de aceptación\n• Matriz de trazabilidad inicial\n\n💬 Comentario sugerido: incluir al menos 2 personas/arquetipos de usuario.\n\n📎 Adjuntar: documento de requisitos + mapa de empatía.",
+   "parent": null
+  },
+  "historias": {
+   "gid": "1219778820409707",
+   "assignee": null,
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body>Historias de usuario. Hemos entrevistado a varios alumnos con la propuesta de Food4All para recaudar  información. \n\nCada historia se verá reflejada en subtareas que creara cada entrevistador y le asignara su correo a la historia. Dicha historia ha de contener preguntas realizadas y respuestas del usuario, no hace falta el nombre de la persona, pero si su situación. \n\nUn ejemplo ficticio como referencia : \nPersona 1, estudiando universitario, vive en un piso compartido, tiene un presupuesto moderado y dispone de x cantidad de tiempo.\nPregunta 1 : \nRespuesta a la pregunta 1 :\nPregunta 2 :\n....\nConclusiones sacadas de la entrevista :</body>",
+   "name": "Historias de usuario",
+   "notes": "Historias de usuario. Hemos entrevistado a varios alumnos con la propuesta de Food4All para recaudar  información. \n\nCada historia se verá reflejada en subtareas que creara cada entrevistador y le asignara su correo a la historia. Dicha historia ha de contener preguntas realizadas y respuestas del usuario, no hace falta el nombre de la persona, pero si su situación. \n\nUn ejemplo ficticio como referencia : \nPersona 1, estudiando universitario, vive en un piso compartido, tiene un presupuesto moderado y dispone de x cantidad de tiempo.\nPregunta 1 : \nRespuesta a la pregunta 1 :\nPregunta 2 :\n....\nConclusiones sacadas de la entrevista :",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "entrega": {
+   "gid": "1219576135905899",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body></body>",
+   "name": "Investigación sobre la entrega de paquetes a los clientes",
+   "notes": "",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "recogida": {
+   "gid": "1219576135905901",
+   "assignee": {
+    "gid": "1218392455615310",
+    "name": "martincampanojuan@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body></body>",
+   "name": "Investigar sobre la recogida de productos de los vendedores",
+   "notes": "",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "carrito": {
+   "gid": "1219638004965792",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body>Los clientes</body>",
+   "name": "Como centralizar el carrito",
+   "notes": "Los clientes",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "temporales": {
+   "gid": "1219350212080609",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body>Trabajamos la elección de los requisitos para el desarrollo de FOOD4ALL</body>",
+   "name": "Requisitos temporales",
+   "notes": "Trabajamos la elección de los requisitos para el desarrollo de FOOD4ALL",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "otrasEmpresas": {
+   "gid": "1219350212080612",
+   "assignee": {
+    "gid": "1218392455615310",
+    "name": "martincampanojuan@gmail.com"
+   },
+   "completed": true,
+   "due_on": "2026-10-16",
+   "html_notes": "<body></body>",
+   "name": "Información de otras empresas",
+   "notes": "",
+   "parent": {
+    "gid": "1219350212080609"
+   }
+  },
+  "inicial": {
+   "gid": "1219350212080613",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": true,
+   "due_on": "2026-10-16",
+   "html_notes": "<body></body>",
+   "name": "Información inicial de requisitos de nuestra empresa ",
+   "notes": "",
+   "parent": {
+    "gid": "1219350212080609"
+   }
+  },
+  "comparar": {
+   "gid": "1219350212080616",
+   "assignee": null,
+   "completed": true,
+   "due_on": null,
+   "html_notes": "<body></body>",
+   "name": "Comparar y contrastar información de los requisitos iniciales con las demás empreas",
+   "notes": "",
+   "parent": {
+    "gid": "1219350212080609"
+   }
+  },
+  "criba": {
+   "gid": "1219350212080617",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-19",
+   "html_notes": "<body>Definir cuales son los requisitos funcionales mínimos que tenemos que hacer. Y luego hacer una lista de requisitos secundarios no necesarios para el funcionamiento del marketplace </body>",
+   "name": "Criba de requisitos",
+   "notes": "Definir cuales son los requisitos funcionales mínimos que tenemos que hacer. Y luego hacer una lista de requisitos secundarios no necesarios para el funcionamiento del marketplace ",
+   "parent": {
+    "gid": "1219350212080609"
+   }
+  },
+  "b1": {
+   "gid": "1219658628732136",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-20",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li><strong>Catálogo único de necesidades:</strong> <code>docs/requisitos/FOOD4ALL_necesidades.md</code> (adjunto). 22 necesidades con ID N-&lt;MÓDULO&gt;-NN, como propone este bloque: 16 de usuario y 6 obligaciones legales. Sustituye a N-01…N-08 (fichas de B4 hasta el 21/10) y a N-01…N-20 (personas de B2, v1); las equivalencias están en el apartado 4.</li><li><strong>Regla de evidencia</strong> (sustituye a «confirmada si aparece en 2 o más fuentes»): una necesidad es Confirmada si la mencionan 3 o más entrevistas independientes del perfil afectado, con pregunta abierta, cita literal y sin un número igual o mayor que la contradiga. Con 1 o 2, es un Indicio. Las personas y el benchmark no confirman.</li><li><strong>Plan de contraste:</strong> para cada necesidad, la pregunta abierta y qué requisitos cambian si resulta falsa (apartado 5).</li><li><strong>Entrevistas:</strong> se registran el 23/10 como subtareas de «Historias de usuario» con la plantilla del apartado 6 (E1…, V1…), sin datos que identifiquen a nadie.</li><li><strong>Estado a 22/10:</strong> 0 necesidades confirmadas. Todas son Hipótesis u Obligación legal.</li></ul>\n<strong>Descripción anterior</strong>\nResponsable propuesto: Sebastián (Product Owner del sprint) · Fecha: lunes 20 oct\n\nObjetivo: conseguir evidencia real de qué necesitan compradores y vendedores ANTES de escribir los requisitos. Sin esto, los requisitos son inventados.\n\nCómo se registra: cada necesidad detectada se codifica como N-&lt;MÓDULO&gt;-NN (ej. N-ENT-01) y es el origen de las fichas RF/RNF del bloque B4.\n\nRegla del proyecto: lo que no salga de una entrevista o de una fuente citada se marca como HIPÓTESIS / PENDIENTE DE VALIDACIÓN.\n\nResultado: lista de necesidades N-XXX con su fuente (entrevista nº, fecha, perfil anonimizado).</body>",
+   "name": "[B1] Conocer a los usuarios: entrevistas y necesidades",
+   "notes": "Actualización v0.4 (22/10/2026)\n    Catálogo único de necesidades: docs/requisitos/FOOD4ALL_necesidades.md (adjunto). 22 necesidades con ID N-<MÓDULO>-NN, como propone este bloque: 16 de usuario y 6 obligaciones legales. Sustituye a N-01…N-08 (fichas de B4 hasta el 21/10) y a N-01…N-20 (personas de B2, v1); las equivalencias están en el apartado 4.\n    Regla de evidencia (sustituye a «confirmada si aparece en 2 o más fuentes»): una necesidad es Confirmada si la mencionan 3 o más entrevistas independientes del perfil afectado, con pregunta abierta, cita literal y sin un número igual o mayor que la contradiga. Con 1 o 2, es un Indicio. Las personas y el benchmark no confirman.\n    Plan de contraste: para cada necesidad, la pregunta abierta y qué requisitos cambian si resulta falsa (apartado 5).\n    Entrevistas: se registran el 23/10 como subtareas de «Historias de usuario» con la plantilla del apartado 6 (E1…, V1…), sin datos que identifiquen a nadie.\n    Estado a 22/10: 0 necesidades confirmadas. Todas son Hipótesis u Obligación legal.\n\nDescripción anterior\nResponsable propuesto: Sebastián (Product Owner del sprint) · Fecha: lunes 20 oct\n\nObjetivo: conseguir evidencia real de qué necesitan compradores y vendedores ANTES de escribir los requisitos. Sin esto, los requisitos son inventados.\n\nCómo se registra: cada necesidad detectada se codifica como N-<MÓDULO>-NN (ej. N-ENT-01) y es el origen de las fichas RF/RNF del bloque B4.\n\nRegla del proyecto: lo que no salga de una entrevista o de una fuente citada se marca como HIPÓTESIS / PENDIENTE DE VALIDACIÓN.\n\nResultado: lista de necesidades N-XXX con su fuente (entrevista nº, fecha, perfil anonimizado).",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "entEstudiantes": {
+   "gid": "1219639783923611",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-20",
+   "html_notes": "<body>Responsable propuesto: Miguel · Fecha: lunes 20 oct\n\nObjetivo: entrevistar al menos a 5 estudiantes que viven fuera de casa (Málaga, Sevilla o Granada) usando el guion preparado en el Hito 1.\n\nPreguntas clave:\n• ¿Cuánto gastas a la semana en comida?\n• ¿Cocinas? ¿Cuánto tiempo le dedicas?\n• ¿Cuánta comida tiras y por qué?\n• ¿Dónde compras y cada cuánto?\n• ¿Qué apps usas (Glovo, supermercado online...)?\n• ¿En qué franjas podrías recibir un pedido?\n• ¿Tienes alergias o sigues alguna dieta?\n• ¿Qué te haría pagar por un servicio así?\n\nCómo registrar cada entrevista: código (E1, E2...), fecha, ciudad, perfil anonimizado (edad aproximada, curso) y respuestas literales. No guardar datos personales identificables (RGPD).</body>",
+   "name": "Entrevistas a estudiantes (mínimo 5)",
+   "notes": "Responsable propuesto: Miguel · Fecha: lunes 20 oct\n\nObjetivo: entrevistar al menos a 5 estudiantes que viven fuera de casa (Málaga, Sevilla o Granada) usando el guion preparado en el Hito 1.\n\nPreguntas clave:\n• ¿Cuánto gastas a la semana en comida?\n• ¿Cocinas? ¿Cuánto tiempo le dedicas?\n• ¿Cuánta comida tiras y por qué?\n• ¿Dónde compras y cada cuánto?\n• ¿Qué apps usas (Glovo, supermercado online...)?\n• ¿En qué franjas podrías recibir un pedido?\n• ¿Tienes alergias o sigues alguna dieta?\n• ¿Qué te haría pagar por un servicio así?\n\nCómo registrar cada entrevista: código (E1, E2...), fecha, ciudad, perfil anonimizado (edad aproximada, curso) y respuestas literales. No guardar datos personales identificables (RGPD).",
+   "parent": {
+    "gid": "1219658628732136"
+   }
+  },
+  "entVendedores": {
+   "gid": "1219639783923612",
+   "assignee": {
+    "gid": "1218392455615310",
+    "name": "martincampanojuan@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-20",
+   "html_notes": "<body>Responsable propuesto: Juan Antonio · Fecha: lunes 20 oct\n\nObjetivo: entender cómo trabajan los comercios locales y si se sumarían a Food4All. Mínimo 2-3 vendedores (frutería, panadería, puesto de mercado...).\n\nPreguntas clave:\n• ¿Cómo vendes hoy? (tienda, web, redes sociales)\n• ¿Qué comisión por venta te parecería aceptable?\n• ¿Podrías preparar pedidos para una recogida a una hora fija?\n• ¿Cómo controlas el stock y las caducidades?\n• ¿Qué haces con el producto que está a punto de caducar?\n• ¿Cómo cobras? ¿Qué plazos de pago necesitas?\n• ¿Qué te preocupa de vender en una plataforma?\n\nRegistro: código (V1, V2...), fecha, tipo de comercio, ciudad y respuestas literales. Si no se consigue entrevistar, hacer encuesta corta y marcar los resultados como HIPÓTESIS.</body>",
+   "name": "Entrevistas o encuesta a vendedores locales (mínimo 2-3)",
+   "notes": "Responsable propuesto: Juan Antonio · Fecha: lunes 20 oct\n\nObjetivo: entender cómo trabajan los comercios locales y si se sumarían a Food4All. Mínimo 2-3 vendedores (frutería, panadería, puesto de mercado...).\n\nPreguntas clave:\n• ¿Cómo vendes hoy? (tienda, web, redes sociales)\n• ¿Qué comisión por venta te parecería aceptable?\n• ¿Podrías preparar pedidos para una recogida a una hora fija?\n• ¿Cómo controlas el stock y las caducidades?\n• ¿Qué haces con el producto que está a punto de caducar?\n• ¿Cómo cobras? ¿Qué plazos de pago necesitas?\n• ¿Qué te preocupa de vender en una plataforma?\n\nRegistro: código (V1, V2...), fecha, tipo de comercio, ciudad y respuestas literales. Si no se consigue entrevistar, hacer encuesta corta y marcar los resultados como HIPÓTESIS.",
+   "parent": {
+    "gid": "1219658628732136"
+   }
+  },
+  "resumen": {
+   "gid": "1219639783923613",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-21",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li>Los códigos son los del catálogo único (<code>FOOD4ALL_necesidades.md</code>). El ejemplo de abajo (N-IA-01: ajustar la compra a un presupuesto) es ahora <strong>N-PLA-02</strong>.</li><li>La regla «CONFIRMADA con 2 o más fuentes» se sustituye por la regla de evidencia del apartado 1 del catálogo.</li><li>Tabla de hallazgos: Qué dijeron | Qué significa | N-ID | Fuente (E3, V2…). Al terminar, se cambia el estado en <code>benchmark/necesidades.js</code> y se regenera con <code>npm run todo</code>.</li></ul>\n<strong>Descripción anterior</strong>\nResponsable propuesto: Sebastián · Fecha: martes 21 oct\n\nObjetivo: convertir lo que dijeron estudiantes y vendedores en necesidades numeradas, que son el origen de todos los requisitos.\n\nFormato (tabla): Qué dijeron | Qué significa | Necesidad (N-ID) | Fuente\n\nEjemplo: &quot;No sé cuánto gastar a la semana&quot; | falta de planificación | N-IA-01: el estudiante necesita ayuda para ajustar su compra semanal a un presupuesto | E3, E5\n\nCódigos de módulo: CUE (cuentas), CAT (catálogo), VEN (vendedor), IA (asistente), CAR (carrito), PAG (pagos), HUB (consolidación), ENT (entrega), VAL (valoraciones), CAD (caducidad).\n\nCada necesidad se marca como CONFIRMADA (aparece en 2 o más fuentes) o HIPÓTESIS (1 fuente o ninguna).</body>",
+   "name": "Resumen de hallazgos y lista de necesidades N-XXX",
+   "notes": "Actualización v0.4 (22/10/2026)\n    Los códigos son los del catálogo único (FOOD4ALL_necesidades.md). El ejemplo de abajo (N-IA-01: ajustar la compra a un presupuesto) es ahora N-PLA-02.\n    La regla «CONFIRMADA con 2 o más fuentes» se sustituye por la regla de evidencia del apartado 1 del catálogo.\n    Tabla de hallazgos: Qué dijeron | Qué significa | N-ID | Fuente (E3, V2…). Al terminar, se cambia el estado en benchmark/necesidades.js y se regenera con npm run todo.\n\nDescripción anterior\nResponsable propuesto: Sebastián · Fecha: martes 21 oct\n\nObjetivo: convertir lo que dijeron estudiantes y vendedores en necesidades numeradas, que son el origen de todos los requisitos.\n\nFormato (tabla): Qué dijeron | Qué significa | Necesidad (N-ID) | Fuente\n\nEjemplo: \"No sé cuánto gastar a la semana\" | falta de planificación | N-IA-01: el estudiante necesita ayuda para ajustar su compra semanal a un presupuesto | E3, E5\n\nCódigos de módulo: CUE (cuentas), CAT (catálogo), VEN (vendedor), IA (asistente), CAR (carrito), PAG (pagos), HUB (consolidación), ENT (entrega), VAL (valoraciones), CAD (caducidad).\n\nCada necesidad se marca como CONFIRMADA (aparece en 2 o más fuentes) o HIPÓTESIS (1 fuente o ninguna).",
+   "parent": {
+    "gid": "1219658628732136"
+   }
+  },
+  "b2": {
+   "gid": "1219658628732137",
+   "assignee": {
+    "gid": "1218392455615310",
+    "name": "martincampanojuan@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-21",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li>Adjunta la <strong>v2</strong> del documento de personas (<code>FOOD4ALL_personas_empatia_v2.md</code>): mismos textos, con las necesidades del catálogo único y los requisitos con su ID vigente de B4. La v1 numeraba sus requisitos por su cuenta (su RF-01 era el asistente, que en B4 es RF-12).</li><li>Incluye el mapa necesidad → proceso → ficha → historia → criterio (apartado 10).</li><li>Son <strong>arquetipos documentales</strong>, no usuarios observados: se contrastan con las entrevistas de B1 antes de presentarlos como validación.</li><li>Pendiente: revisión de Juan Antonio.</li></ul>\n<strong>Descripción anterior</strong>\nResponsable propuesto: Juan Antonio · Fecha: martes 21 oct\n\nObjetivo: representar a los usuarios reales de Food4All con personas basadas en las entrevistas de B1, no inventadas. El hito pide al menos 2 personas y un mapa de empatía.\n\nPlantilla de cada persona:\n• Nombre ficticio, edad, ciudad y situación\n• Objetivos\n• Frustraciones\n• Cómo compra o vende hoy\n• Qué espera de Food4All\n• Una cita representativa sacada de las entrevistas\n• Necesidades relacionadas (N-ID)\n\nEjemplos orientativos (sustituir por datos reales de las entrevistas):\n• Estudiante: &quot;Lucía, 20 años, de Jaén, estudia en Granada. Tiene unos 40 € a la semana para comida, no sabe planificar y acaba tirando producto.&quot;\n• Vendedor: &quot;Antonio, frutero de barrio. No tiene web y parte de su género se estropea antes de venderlo.&quot;\n• Operador del hub o repartidor (opcional): es el actor que diferencia a Food4All de la competencia.\n\nMapa de empatía de cada persona: Piensa y siente / Ve / Oye / Dice y hace / Dolores / Ganancias.\n\nEntregable: personas + mapas de empatía adjuntos al documento de requisitos.</body>",
+   "name": "[B2] Personas y mapas de empatía",
+   "notes": "Actualización v0.4 (22/10/2026)\n    Adjunta la v2 del documento de personas (FOOD4ALL_personas_empatia_v2.md): mismos textos, con las necesidades del catálogo único y los requisitos con su ID vigente de B4. La v1 numeraba sus requisitos por su cuenta (su RF-01 era el asistente, que en B4 es RF-12).\n    Incluye el mapa necesidad → proceso → ficha → historia → criterio (apartado 10).\n    Son arquetipos documentales, no usuarios observados: se contrastan con las entrevistas de B1 antes de presentarlos como validación.\n    Pendiente: revisión de Juan Antonio.\n\nDescripción anterior\nResponsable propuesto: Juan Antonio · Fecha: martes 21 oct\n\nObjetivo: representar a los usuarios reales de Food4All con personas basadas en las entrevistas de B1, no inventadas. El hito pide al menos 2 personas y un mapa de empatía.\n\nPlantilla de cada persona:\n• Nombre ficticio, edad, ciudad y situación\n• Objetivos\n• Frustraciones\n• Cómo compra o vende hoy\n• Qué espera de Food4All\n• Una cita representativa sacada de las entrevistas\n• Necesidades relacionadas (N-ID)\n\nEjemplos orientativos (sustituir por datos reales de las entrevistas):\n• Estudiante: \"Lucía, 20 años, de Jaén, estudia en Granada. Tiene unos 40 € a la semana para comida, no sabe planificar y acaba tirando producto.\"\n• Vendedor: \"Antonio, frutero de barrio. No tiene web y parte de su género se estropea antes de venderlo.\"\n• Operador del hub o repartidor (opcional): es el actor que diferencia a Food4All de la competencia.\n\nMapa de empatía de cada persona: Piensa y siente / Ve / Oye / Dice y hace / Dolores / Ganancias.\n\nEntregable: personas + mapas de empatía adjuntos al documento de requisitos.",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "b3": {
+   "gid": "1219658628732138",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-21",
+   "html_notes": "<body><strong>Actualizado el 20/10/2026.</strong> Los requisitos legales ya están dentro del catálogo de [B4], con ID propio:\n<ul><li>Información alimentaria y alérgenos (Reglamento UE 1169/2011): RF-03.3 Alérgenos, RF-06.3 Revisión de alérgenos y condiciones, RF-01.9 Preferencias, dieta y alergias</li><li>Trazabilidad (Reglamento CE 178/2002): RNF-09 Trazabilidad alimentaria</li><li>Protección de datos (RGPD y LOPDGDD): RNF-02 Privacidad y RNF-01.2</li><li>Comercio electrónico y consumidores (LSSI-CE y RDL 1/2007): RF-06.3 (condiciones y desistimiento) y RNF-08 Transparencia y cumplimiento</li></ul>\nObjetivo de este bloque: comprobar que esos requisitos citan bien cada fuente (título, organismo, fecha y enlace) y que el rol jurídico supuesto en el Hito 1 (intermediario, operador alimentario o mixto) encaja con ellos.\n\n<strong>Aviso:</strong> todo es PENDIENTE DE VALIDACIÓN. La revisión legal profesional es obligatoria antes de pasar de piloto a lanzamiento.</body>",
+   "name": "[B3] Requisitos legales que se convierten en requisitos del software",
+   "notes": "Actualizado el 20/10/2026. Los requisitos legales ya están dentro del catálogo de [B4], con ID propio:\n    Información alimentaria y alérgenos (Reglamento UE 1169/2011): RF-03.3 Alérgenos, RF-06.3 Revisión de alérgenos y condiciones, RF-01.9 Preferencias, dieta y alergias\n    Trazabilidad (Reglamento CE 178/2002): RNF-09 Trazabilidad alimentaria\n    Protección de datos (RGPD y LOPDGDD): RNF-02 Privacidad y RNF-01.2\n    Comercio electrónico y consumidores (LSSI-CE y RDL 1/2007): RF-06.3 (condiciones y desistimiento) y RNF-08 Transparencia y cumplimiento\n\nObjetivo de este bloque: comprobar que esos requisitos citan bien cada fuente (título, organismo, fecha y enlace) y que el rol jurídico supuesto en el Hito 1 (intermediario, operador alimentario o mixto) encaja con ellos.\n\nAviso: todo es PENDIENTE DE VALIDACIÓN. La revisión legal profesional es obligatoria antes de pasar de piloto a lanzamiento.",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "b4": {
+   "gid": "1219658628732139",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-22",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li>Las <strong>105 fichas del MVP</strong> (90 RF y 15 RNF) tienen todos sus apartados escritos. Las de V2 y V3 dicen que se completan cuando entren en un sprint.</li><li>Cada requisito lleva su necesidad del catálogo único (ID y nombre), su <strong>alcance</strong> (MVP, MVP simulado, V2, V3 o Excluido) y de qué <strong>depende</strong> (D-01 rol jurídico, D-02 comisión, D-03 hub, H-…).</li><li><strong>Regla de prioridad:</strong> Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. 58 requisitos ajustados.</li><li><strong>Estados comunes del pedido</strong> (RF-06 a RF-10, RNF-07): <code>FOOD4ALL_estados_pedido.md</code>. El reembolso es un registro de prueba, nunca una transferencia. 3 requisitos nuevos de faltas (RF-07.3-06 a -08).</li><li>Cada RNF indica el <strong>origen de su umbral</strong> (ley, referencia técnica, decisión o hipótesis) y su plan de verificación para el Sprint 5.</li><li>Pendiente: repartir responsables y revisores, la revisión de cada ficha por otro miembro y la criba.</li></ul>\n<strong>Descripción anterior</strong>\n<strong>Catálogo de requisitos del marketplace FOOD4ALL (v0.2, 20/10/2026).</strong> Cada requisito tiene ID propio y se puede trabajar solo, sin esperar a nadie.\n\n<strong>Cómo está organizado</strong>\n<ul><li><strong>Requisitos funcionales</strong>: 19 procesos (RF-01 a RF-19) en orden de construcción: Base → Oferta → Compra → Entrega y posventa. Dentro de cada proceso, un subrequisito por pantalla o método (RF-01.1, RF-01.2…), 111 en total.</li><li><strong>Requisitos no funcionales</strong>: RNF-01 a RNF-11, con 16 subrequisitos.</li><li>Cada subrequisito lleva su ficha de 16 apartados y la lista de requisitos atómicos (RF-01.2-01, RF-01.2-02…), cada uno con su criterio de aceptación y su comparación con 6 competidores. Son 556 en total.</li></ul>\n<strong>Cómo trabajar tu requisito</strong>\n<ol><li>Abre la subtarea. Lo que pone «Por completar por el responsable» es tu trabajo: descripción, supuestos, ubicación, elementos de la pantalla, diseño, flujo, campos, errores, reglas, accesibilidad y fuera de alcance.</li><li>El nivel de detalle exigido está en el login (RF-01.1 a RF-01.7), que ya está completo: un programador tiene que poder construirlo sin preguntar nada.</li><li>Colores, tipografía y componentes: <code>docs/DISENO.md</code> del repositorio.</li><li>Al terminar, pide revisión en un comentario. El revisor aprueba con otro comentario y se cierra la subtarea.</li></ol>\n<strong>Fuente</strong>: repositorio Food4All en GitHub, carpeta <code>docs/requisitos/</code>. Ahí están la especificación completa (.md), el Excel con los 556 requisitos y la comparación con la competencia, y la vista previa de todas estas tareas. Si cambias un requisito aquí, cámbialo también allí.\n\n<strong>Pendiente</strong>\n<ul><li>Asignar responsable, revisor y fecha a cada proceso. Hay un reparto propuesto en <code>docs/requisitos/FOOD4ALL_propuesta_asana.md</code>.</li><li>La prioridad MoSCoW de cada requisito es una propuesta; se confirma en «Criba de requisitos» (dentro de «Requisitos temporales»).</li><li>RF-13.7 «Prompts del proyecto»: propuesto quitarlo, porque es de la landing y no del marketplace.</li></ul>\nLas fichas anteriores (RF-CUE-01, RF-CAR-01…) se sustituyeron el 20/10/2026. Hay copia de su contenido en <code>docs/requisitos/benchmark/asana_copia_hito2_antes.json</code>.</body>",
+   "name": "[B4] Catálogo de requisitos: fichas RF / RNF",
+   "notes": "Actualización v0.4 (22/10/2026)\n    Las 105 fichas del MVP (90 RF y 15 RNF) tienen todos sus apartados escritos. Las de V2 y V3 dicen que se completan cuando entren en un sprint.\n    Cada requisito lleva su necesidad del catálogo único (ID y nombre), su alcance (MVP, MVP simulado, V2, V3 o Excluido) y de qué depende (D-01 rol jurídico, D-02 comisión, D-03 hub, H-…).\n    Regla de prioridad: Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. 58 requisitos ajustados.\n    Estados comunes del pedido (RF-06 a RF-10, RNF-07): FOOD4ALL_estados_pedido.md. El reembolso es un registro de prueba, nunca una transferencia. 3 requisitos nuevos de faltas (RF-07.3-06 a -08).\n    Cada RNF indica el origen de su umbral (ley, referencia técnica, decisión o hipótesis) y su plan de verificación para el Sprint 5.\n    Pendiente: repartir responsables y revisores, la revisión de cada ficha por otro miembro y la criba.\n\nDescripción anterior\nCatálogo de requisitos del marketplace FOOD4ALL (v0.2, 20/10/2026). Cada requisito tiene ID propio y se puede trabajar solo, sin esperar a nadie.\n\nCómo está organizado\n    Requisitos funcionales: 19 procesos (RF-01 a RF-19) en orden de construcción: Base → Oferta → Compra → Entrega y posventa. Dentro de cada proceso, un subrequisito por pantalla o método (RF-01.1, RF-01.2…), 111 en total.\n    Requisitos no funcionales: RNF-01 a RNF-11, con 16 subrequisitos.\n    Cada subrequisito lleva su ficha de 16 apartados y la lista de requisitos atómicos (RF-01.2-01, RF-01.2-02…), cada uno con su criterio de aceptación y su comparación con 6 competidores. Son 556 en total.\n\nCómo trabajar tu requisito\n    Abre la subtarea. Lo que pone «Por completar por el responsable» es tu trabajo: descripción, supuestos, ubicación, elementos de la pantalla, diseño, flujo, campos, errores, reglas, accesibilidad y fuera de alcance.\n    El nivel de detalle exigido está en el login (RF-01.1 a RF-01.7), que ya está completo: un programador tiene que poder construirlo sin preguntar nada.\n    Colores, tipografía y componentes: docs/DISENO.md del repositorio.\n    Al terminar, pide revisión en un comentario. El revisor aprueba con otro comentario y se cierra la subtarea.\n\nFuente: repositorio Food4All en GitHub, carpeta docs/requisitos/. Ahí están la especificación completa (.md), el Excel con los 556 requisitos y la comparación con la competencia, y la vista previa de todas estas tareas. Si cambias un requisito aquí, cámbialo también allí.\n\nPendiente\n    Asignar responsable, revisor y fecha a cada proceso. Hay un reparto propuesto en docs/requisitos/FOOD4ALL_propuesta_asana.md.\n    La prioridad MoSCoW de cada requisito es una propuesta; se confirma en «Criba de requisitos» (dentro de «Requisitos temporales»).\n    RF-13.7 «Prompts del proyecto»: propuesto quitarlo, porque es de la landing y no del marketplace.\n\nLas fichas anteriores (RF-CUE-01, RF-CAR-01…) se sustituyeron el 20/10/2026. Hay copia de su contenido en docs/requisitos/benchmark/asana_copia_hito2_antes.json.",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "rf": {
+   "gid": "1219706035211412",
+   "assignee": null,
+   "completed": false,
+   "due_on": null,
+   "html_notes": "<body>v0.4 · 22/10/2026. Un proceso principal por subtarea, en el orden de la cascada de construcción. Dentro de cada proceso, un subrequisito por pantalla o método, con su ficha. Las fichas del MVP están completas; las de V2 y V3 se completan cuando entren en un sprint. Fuente: docs/requisitos/ del repositorio.\n</body>",
+   "name": "Requisitos funcionales (RF-01 a RF-19)",
+   "notes": "v0.4 · 22/10/2026. Un proceso principal por subtarea, en el orden de la cascada de construcción. Dentro de cada proceso, un subrequisito por pantalla o método, con su ficha. Las fichas del MVP están completas; las de V2 y V3 se completan cuando entren en un sprint. Fuente: docs/requisitos/ del repositorio.\n",
+   "parent": {
+    "gid": "1219658628732139"
+   }
+  },
+  "rnf": {
+   "gid": "1219706036557411",
+   "assignee": null,
+   "completed": false,
+   "due_on": null,
+   "html_notes": "<body>v0.4 · 22/10/2026. Un requisito no funcional por subtarea, agrupados por característica de calidad (ISO/IEC 25010). Cada uno indica a qué procesos afecta, de dónde sale su umbral (ley, referencia técnica, decisión o hipótesis) y cómo se verificará en el Sprint 5.\n</body>",
+   "name": "Requisitos no funcionales (RNF-01 a RNF-11)",
+   "notes": "v0.4 · 22/10/2026. Un requisito no funcional por subtarea, agrupados por característica de calidad (ISO/IEC 25010). Cada uno indica a qué procesos afecta, de dónde sale su umbral (ley, referencia técnica, decisión o hipótesis) y cómo se verificará en el Sprint 5.\n",
+   "parent": {
+    "gid": "1219658628732139"
+   }
+  },
+  "b5": {
+   "gid": "1219658628732140",
+   "assignee": {
+    "gid": "1218442072411160",
+    "name": "sebasbarrabaja@gmail.com"
+   },
+   "completed": false,
+   "due_on": "2026-10-22",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li><strong>19 historias</strong>, una por proceso: nuevas US-14 (web pública), US-15 (panel del vendedor), US-16 (liquidación), US-17 (contacto), US-18 (avisos al vendedor) y US-19 (suscripción).</li><li>Todas con <strong>criterios Gherkin propios</strong>. La prioridad de cada historia coincide con la de los requisitos de su proceso: US-06 y US-07 pasan a Must y US-08 queda como Should con IA simulada. Las 14 primeras forman el MVP.</li><li><strong>Revisión INVEST:</strong> tabla en el bloque 6 de la especificación. Pendiente: que la marque otro miembro.</li></ul>\n<strong>Descripción anterior</strong>\n<strong>Actualizado el 20/10/2026.</strong> Las historias de usuario están en la subtarea <strong>Product Backlog</strong>: 13 historias (US-01 a US-13), ordenadas por valor y por la cascada de construcción, con prioridad, puntos y entrega (las 9 primeras son el MVP). Cada una indica a qué proceso de [B4] corresponde.\n\n<strong>Formato</strong>: US-NN · Como &lt;actor&gt;, quiero &lt;acción&gt;, para &lt;beneficio&gt;. Los criterios de aceptación (Dado… cuando… entonces…) son los de las fichas de su proceso en [B4].\n\n<strong>Revisión INVEST</strong>: cada historia debe ser Independiente, Negociable, Valiosa, Estimable, Pequeña (cabe en un sprint) y Testable. Se revisa en un comentario de cada historia; la que no cumpla se divide o se reescribe.\n\n<strong>Ejemplo</strong>: US-08 · Como estudiante, quiero pedir a la IA una cesta para mi presupuesto y mis días, para no tener que planificar yo solo.\n<ul><li>Dado un presupuesto de 40 € y 5 días, cuando pulso «Generar cesta», entonces el total es igual o menor que 40 €.</li><li>Dado que marco «sin gluten», entonces ningún producto de la cesta contiene gluten.</li></ul></body>",
+   "name": "[B5] User stories y revisión INVEST",
+   "notes": "Actualización v0.4 (22/10/2026)\n    19 historias, una por proceso: nuevas US-14 (web pública), US-15 (panel del vendedor), US-16 (liquidación), US-17 (contacto), US-18 (avisos al vendedor) y US-19 (suscripción).\n    Todas con criterios Gherkin propios. La prioridad de cada historia coincide con la de los requisitos de su proceso: US-06 y US-07 pasan a Must y US-08 queda como Should con IA simulada. Las 14 primeras forman el MVP.\n    Revisión INVEST: tabla en el bloque 6 de la especificación. Pendiente: que la marque otro miembro.\n\nDescripción anterior\nActualizado el 20/10/2026. Las historias de usuario están en la subtarea Product Backlog: 13 historias (US-01 a US-13), ordenadas por valor y por la cascada de construcción, con prioridad, puntos y entrega (las 9 primeras son el MVP). Cada una indica a qué proceso de [B4] corresponde.\n\nFormato: US-NN · Como <actor>, quiero <acción>, para <beneficio>. Los criterios de aceptación (Dado… cuando… entonces…) son los de las fichas de su proceso en [B4].\n\nRevisión INVEST: cada historia debe ser Independiente, Negociable, Valiosa, Estimable, Pequeña (cabe en un sprint) y Testable. Se revisa en un comentario de cada historia; la que no cumpla se divide o se reescribe.\n\nEjemplo: US-08 · Como estudiante, quiero pedir a la IA una cesta para mi presupuesto y mis días, para no tener que planificar yo solo.\n    Dado un presupuesto de 40 € y 5 días, cuando pulso «Generar cesta», entonces el total es igual o menor que 40 €.\n    Dado que marco «sin gluten», entonces ningún producto de la cesta contiene gluten.\n",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "backlog": {
+   "gid": "1219706269855253",
+   "assignee": null,
+   "completed": false,
+   "due_on": null,
+   "html_notes": "<body>v0.4 · 22/10/2026. Historias ordenadas por prioridad y por la cascada. Las 14 primeras forman el MVP (13 Must y 1 Should con IA simulada). Puntos en escala 1, 2, 3, 5 y 8; se revisan en cada Sprint Planning. La prioridad es una propuesta hasta la criba. Revisión INVEST: bloque 6 de la especificación.\n</body>",
+   "name": "Product Backlog (19 historias)",
+   "notes": "v0.4 · 22/10/2026. Historias ordenadas por prioridad y por la cascada. Las 14 primeras forman el MVP (13 Must y 1 Should con IA simulada). Puntos en escala 1, 2, 3, 5 y 8; se revisan en cada Sprint Planning. La prioridad es una propuesta hasta la criba. Revisión INVEST: bloque 6 de la especificación.\n",
+   "parent": {
+    "gid": "1219658628732140"
+   }
+  },
+  "b6": {
+   "gid": "1219658628732141",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong>\n<ul><li><strong>Matriz de trazabilidad</strong> generada: <code>FOOD4ALL_matriz_trazabilidad.md</code> (adjunta en «Matriz de trazabilidad inicial»). Tiene cobertura por necesidad, 127 subrequisitos con necesidad, fuente, historia, prioridad, alcance, dependencias, criterios y RNF, y controles. Las columnas de los Hitos 3, 4 y 5 quedan vacías.</li><li><strong>Glosario v2:</strong> bloque 11 de la especificación, con todos los términos pedidos y los del pedido (pedido global, línea, falta, hora de cierre, reembolso de prueba…).</li><li><strong>Documento de requisitos:</strong> <code>FOOD4ALL_documento_requisitos_hito2.md</code> (especificación v0.4 con anexos de necesidades, personas, estados, matriz, comparativo y fichas). Se regenera con <code>npm run todo</code>.</li><li>Pendiente: «Estado entrega» del Hito 2 y la Sprint Review.</li></ul>\n<strong>Descripción anterior</strong>\nResponsable propuesto: Miguel · Fecha: viernes 23 oct (entrega del hito)\n\nObjetivo: dejar el Hito 2 cerrado y comprobable.\n\nMatriz de trazabilidad inicial (una fila por requisito). Columnas: Necesidad (N-ID) | Fuente | Requisito (RF/RNF) | User story | Prioridad MoSCoW | Caso de uso (Hito 3) | Clase (Hito 4) | Prueba (Hito 5).\nLas tres últimas columnas se dejan vacías: se rellenan en los próximos hitos.\n\nGlosario v2: añadir hub, pedido consolidado, subpedido, cesta IA, franja de entrega, capacidad de franja, vendedor aprobado y lote.\n\nDocumento de requisitos: necesidades, personas y mapas de empatía, fichas RF/RNF, user stories, matriz y glosario. Adjuntarlo en la tarea del Hito 2 junto con el mapa de empatía.\n\nAl terminar: cambiar el campo &quot;Estado entrega&quot; del Hito 2 y presentar en la Sprint Review del viernes.</body>",
+   "name": "[B6] Trazabilidad y entrega del hito",
+   "notes": "Actualización v0.4 (22/10/2026)\n    Matriz de trazabilidad generada: FOOD4ALL_matriz_trazabilidad.md (adjunta en «Matriz de trazabilidad inicial»). Tiene cobertura por necesidad, 127 subrequisitos con necesidad, fuente, historia, prioridad, alcance, dependencias, criterios y RNF, y controles. Las columnas de los Hitos 3, 4 y 5 quedan vacías.\n    Glosario v2: bloque 11 de la especificación, con todos los términos pedidos y los del pedido (pedido global, línea, falta, hora de cierre, reembolso de prueba…).\n    Documento de requisitos: FOOD4ALL_documento_requisitos_hito2.md (especificación v0.4 con anexos de necesidades, personas, estados, matriz, comparativo y fichas). Se regenera con npm run todo.\n    Pendiente: «Estado entrega» del Hito 2 y la Sprint Review.\n\nDescripción anterior\nResponsable propuesto: Miguel · Fecha: viernes 23 oct (entrega del hito)\n\nObjetivo: dejar el Hito 2 cerrado y comprobable.\n\nMatriz de trazabilidad inicial (una fila por requisito). Columnas: Necesidad (N-ID) | Fuente | Requisito (RF/RNF) | User story | Prioridad MoSCoW | Caso de uso (Hito 3) | Clase (Hito 4) | Prueba (Hito 5).\nLas tres últimas columnas se dejan vacías: se rellenan en los próximos hitos.\n\nGlosario v2: añadir hub, pedido consolidado, subpedido, cesta IA, franja de entrega, capacidad de franja, vendedor aprobado y lote.\n\nDocumento de requisitos: necesidades, personas y mapas de empatía, fichas RF/RNF, user stories, matriz y glosario. Adjuntarlo en la tarea del Hito 2 junto con el mapa de empatía.\n\nAl terminar: cambiar el campo \"Estado entrega\" del Hito 2 y presentar en la Sprint Review del viernes.",
+   "parent": {
+    "gid": "1218693472298299"
+   }
+  },
+  "matriz": {
+   "gid": "1219640514565663",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong> Matriz generada desde el repositorio (adjunta): <code>docs/requisitos/FOOD4ALL_matriz_trazabilidad.md</code>. No se edita a mano; si cambia un requisito, se regenera con <code>npm run todo</code>. Una relación escrita no prueba que la fuente sea válida: lo confirma el revisor de cada bloque.\n\n<strong>Descripción anterior</strong>\n</body>",
+   "name": "Matriz de trazabilidad inicial",
+   "notes": "Actualización v0.4 (22/10/2026) Matriz generada desde el repositorio (adjunta): docs/requisitos/FOOD4ALL_matriz_trazabilidad.md. No se edita a mano; si cambia un requisito, se regenera con npm run todo. Una relación escrita no prueba que la fuente sea válida: lo confirma el revisor de cada bloque.\n\nDescripción anterior\n",
+   "parent": {
+    "gid": "1219658628732141"
+   }
+  },
+  "glosario": {
+   "gid": "1219640514565664",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong> Glosario v2 en el bloque 11 de la especificación (<code>FOOD4ALL_especificacion_requisitos.md</code>), con todos los términos pedidos aquí.\n\n<strong>Descripción anterior</strong>\n</body>",
+   "name": "Glosario v2",
+   "notes": "Actualización v0.4 (22/10/2026) Glosario v2 en el bloque 11 de la especificación (FOOD4ALL_especificacion_requisitos.md), con todos los términos pedidos aquí.\n\nDescripción anterior\n",
+   "parent": {
+    "gid": "1219658628732141"
+   }
+  },
+  "montar": {
+   "gid": "1219640514565665",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body><strong>Actualización v0.4 (22/10/2026)</strong> Documento montado: <code>FOOD4ALL_documento_requisitos_hito2.md</code> (adjunto en el Hito 2). Une la especificación v0.4 y sus anexos; se regenera con <code>npm run todo</code>.\n\n<strong>Descripción anterior</strong>\n</body>",
+   "name": "Montar el documento de requisitos y adjuntarlo al Hito 2",
+   "notes": "Actualización v0.4 (22/10/2026) Documento montado: FOOD4ALL_documento_requisitos_hito2.md (adjunto en el Hito 2). Une la especificación v0.4 y sus anexos; se regenera con npm run todo.\n\nDescripción anterior\n",
+   "parent": {
+    "gid": "1219658628732141"
+   }
+  },
+  "estado": {
+   "gid": "1219640514565666",
+   "assignee": {
+    "gid": "1218470662161695",
+    "name": "Miguel"
+   },
+   "completed": false,
+   "due_on": "2026-10-23",
+   "html_notes": "<body></body>",
+   "name": "Actualizar \"Estado entrega\" del Hito 2 y preparar la Sprint Review",
+   "notes": "",
+   "parent": {
+    "gid": "1219658628732141"
+   }
+  }
+ }
+}

@@ -231,3 +231,15 @@ Mira lo subido por juan antonio,da el ok
 - RF-11.2-04 sube a Must · MVP (C-29).
 - MVP: 403. Must: 307.
 - La criba y las RST salen de los temas abiertos. Se regeneró con `npm run todo`.
+
+### 21:28
+
+aplica Asana
+
+**Resultado:** antes de aplicar se comprobó que las 6 tareas que se iban a borrar seguían vacías (sin subtareas, comentarios ni adjuntos) y que nadie había subido ya E1–E6. Después se ejecutó `reordenar_hito2.js --si`, que tardó 51 s, con 38 cambios y ningún comentario; la copia previa quedó en `asana_copia_hito2_reordenar_antes.json`. Comprobación, volviendo a leer Asana:
+- B1–B6 tienen los nombres del enunciado.
+- E1–E6 están en «Historias de usuario», con su responsable. Se pusieron en orden, porque Asana las había dejado al revés.
+- La criba conserva los 3 comentarios: 2 del profesor y 1 de Sebastián.
+- El Hito 2 tiene adjunto el documento v0.4.
+- Las tareas de Miguel pasan a Sebastián.
+- Hay dos revisiones cruzadas asignadas a Juan Antonio.
