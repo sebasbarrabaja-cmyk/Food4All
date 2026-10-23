@@ -92,3 +92,9 @@ Sí estas son https://openfoodnetwork.net/?locale=es_US , https://home.localfood
 hazme las dos preguntas de elejir
 
 **Resultado:** Juan Antonio eligió «Sí a las dos» (RST-06 y RST-07, texto nuevo de Sebastián) y que «mi compañero» de E5 P7 es «alguien de fuera del piso». Se anotó en la tabla de RST y como aclaración del entrevistador en E5.
+
+### 21:24
+
+corrige las discrepancias del documento de personas
+
+**Resultado:** en `FOOD4ALL_personas_empatia_v2.md`: estados de la tabla 3 actualizados con E1–E6 y nota del apartado 2; cuatro criterios del 6.2 ajustados a B4 (ruta del operador, registro en cada parada, faltas con RF-07.3-09, aviso «Consume primero»); errata «Universidad Europea» y línea en blanco antes del separador del apartado 3. Se anota la revisión de Juan Antonio en la cabecera. El comentario de Asana lo escribe él.
