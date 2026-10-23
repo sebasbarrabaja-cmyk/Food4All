@@ -152,3 +152,9 @@ a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la ca
 1a(Fixea lo de los datos reales, que se vean digo, hay personas detras de estas entrevistas pero que no se sepa nada de ellos). Sobre el matiz 2, lo que falta no lo comprendo, aclaramelo y que impacto tiene
 
 **Resultado:** Sebastián vota las RST: 7 sí y 2 cambiar. La columna de Miguel queda como «Asume Sebastián» (C-27). RST-06 dice ahora que las entrevistas son a personas reales sin datos que las identifiquen, y E5 y E6 pierden carrera, curso, edad y localidad. RST-07 añade el motor de IA simulado. El asistente explicó qué significa el matiz 2 y qué impacto tiene.
+
+### 20:47
+
+La IA tendra que existir, pero eso quiero debatirlo con el profesor. por lo explicado, continuemos
+
+**Resultado:** queda anotado como tema abierto en la línea base: el motor de IA real se debatirá con el profesor y, de momento, RST-07 lo deja simulado. Se pasa al bloque de la landing.
