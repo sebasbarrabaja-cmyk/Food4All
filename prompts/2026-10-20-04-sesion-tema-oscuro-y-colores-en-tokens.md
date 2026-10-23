@@ -27,3 +27,22 @@ El code-review encontró que los tokens nuevos no tenían valor en el tema oscur
 ### Mensaje 4
 
 1b 2a 3a 4dejalo asi 5 abrelo en web, espacio de trabajo/ escritorio llamado web
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a los cuatro archivos de la sesión 4 (20-01 a 20-04); aquí van solo las que corresponden a este arreglo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Pasar los colores a tokens y dar valores propios al tema oscuro, con el contraste medido.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Elegí entre las opciones que me dio la IA (tema oscuro: darle valores), en vez de aceptar lo primero.
+  - Decidí no reconstruir las horas de los mensajes que no se apuntaron, en lugar de inventarlas.
+  - Cada arreglo fue en su propia rama, y comprobé que se podían unir antes de hacerlo.
+- **Por qué estaba justificado usar IA aquí:**
+  - Encontrar fallos de seguridad y de accesibilidad que necesitan conocimientos que todavía estoy aprendiendo.
+  - Probar en el navegador decenas de páginas y estados que a mano llevarían horas.
+  - La IA proponía, y yo decidía cuál de las opciones se aplicaba.
