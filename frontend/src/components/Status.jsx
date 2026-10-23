@@ -3,6 +3,7 @@ const LABELS = {
   decidido: 'Decidido',
   hipotesis: 'Hipótesis',
   pendiente: 'Por definir',
+  descartado: 'Descartado',
   ejemplo: 'Datos de ejemplo',
 };
 

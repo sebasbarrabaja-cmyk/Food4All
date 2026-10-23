@@ -127,8 +127,8 @@ function NewPrompt({ types, agentOn, onSaved }) {
       <div className="form-row">
         <div className="field">
           <label htmlFor="np-titulo">Título</label>
-          <input id="np-titulo" value={form.titulo} onChange={set('titulo')} aria-invalid={Boolean(errors.titulo)} />
-          {errors.titulo && <span className="error">{errors.titulo}</span>}
+          <input id="np-titulo" value={form.titulo} onChange={set('titulo')} aria-invalid={Boolean(errors.titulo)} aria-describedby={errors.titulo ? 'np-titulo-err' : undefined} />
+          {errors.titulo && <span className="error" id="np-titulo-err" role="alert">{errors.titulo}</span>}
         </div>
         <div className="field">
           <label htmlFor="np-tipo">Tipo</label>
@@ -145,9 +145,9 @@ function NewPrompt({ types, agentOn, onSaved }) {
       </div>
       <div className="field">
         <label htmlFor="np-texto">Prompt</label>
-        <textarea id="np-texto" rows={8} value={form.texto} onChange={set('texto')} aria-invalid={Boolean(errors.texto)}
+        <textarea id="np-texto" rows={8} value={form.texto} onChange={set('texto')} aria-invalid={Boolean(errors.texto)} aria-describedby={errors.texto ? 'np-texto-err' : undefined}
           placeholder="Pega aquí el prompt tal cual lo has enviado (o vas a enviar)." />
-        {errors.texto && <span className="error">{errors.texto}</span>}
+        {errors.texto && <span className="error" id="np-texto-err" role="alert">{errors.texto}</span>}
       </div>
       <div className="toolbar">
         <button className="btn btn-primary" disabled={saving}>{saving ? 'Guardando…' : 'Guardar'}</button>
@@ -186,7 +186,7 @@ export default function AdminPrompts() {
       <p className="toolbar">
         {data.agent
           ? <Status kind="decidido">Agente revisor activo</Status>
-          : <><Status kind="pendiente">Agente revisor sin configurar</Status><span className="muted small">Añade ANTHROPIC_API_KEY a backend/.env y reinicia el servidor.</span></>}
+          : <><Status kind="pendiente">Agente revisor sin configurar</Status><span className="muted small">Añade GEMINI_API_KEY a backend/.env y reinicia el servidor.</span></>}
       </p>
       <div className="chips" role="group" aria-label="Filtrar por tipo">
         {['', ...data.types].map((t) => (

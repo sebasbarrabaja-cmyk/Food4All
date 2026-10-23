@@ -1,8 +1,6 @@
 // Segundo agente: revisa y pule los prompts del equipo antes de usarlos con Claude Code.
-// La clave vive solo en backend/.env (ANTHROPIC_API_KEY); nunca llega al navegador.
-import Anthropic from '@anthropic-ai/sdk';
-
-const MODEL = process.env.ANTHROPIC_MODEL || 'claude-opus-5-5';
+// Usa Gemini gratis (backend/gemini.js); la clave vive solo en backend/.env (GEMINI_API_KEY).
+import { generate, aiReady, AIError, MODELS } from './gemini.js';
 
 const SYSTEM = `Eres el revisor de prompts del equipo de FOOD4ALL, un proyecto universitario de Ingeniería Informática: una landing informativa (React + Express) de un marketplace de alimentación local en Andalucía. El equipo escribe prompts en español para un asistente de programación (Claude Code) y tú los pules antes de que se usen.
 
@@ -21,48 +19,21 @@ Responde exactamente con este formato y nada más:
 - (cada cambio importante que has hecho y por qué, en una línea)
 </cambios>`;
 
-export class AgentError extends Error {
-  constructor(message, status = 502) { super(message); this.status = status; }
-}
-
-export const agentReady = () => Boolean(process.env.ANTHROPIC_API_KEY || process.env.ANTHROPIC_AUTH_TOKEN);
+export { AIError as AgentError };
+export const agentReady = aiReady;
 
 export async function polishPrompt(texto, objetivo = '') {
-  if (!agentReady()) throw new AgentError('Falta ANTHROPIC_API_KEY en backend/.env.', 503);
-  const client = new Anthropic();
-
   const peticion = objetivo
     ? `Objetivo del autor para esta revisión: ${objetivo}\n\n<prompt_original>\n${texto}\n</prompt_original>`
     : `<prompt_original>\n${texto}\n</prompt_original>`;
 
-  let msg;
-  try {
-    // En streaming: los prompts largos (el documento maestro) pueden generar respuestas largas.
-    msg = await client.beta.messages.stream({
-      model: MODEL,
-      max_tokens: 64000,
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
-      output_config: { effort: 'medium' },
-      system: SYSTEM,
-      messages: [{ role: 'user', content: peticion }],
-    }).finalMessage();
-  } catch (e) {
-    if (e instanceof Anthropic.AuthenticationError) throw new AgentError('La clave de Anthropic no es válida (ANTHROPIC_API_KEY).', 503);
-    if (e instanceof Anthropic.RateLimitError) throw new AgentError('Demasiadas peticiones a la IA. Prueba en un minuto.', 429);
-    if (e instanceof Anthropic.APIError) throw new AgentError(`Error de la IA (${e.status ?? 'sin estado'}): ${e.message}`);
-    throw new AgentError(`No se pudo contactar con la IA: ${e.message}`);
-  }
+  // Los prompts largos (el documento maestro) tardan más: hasta 3 minutos.
+  const out = await generate({ model: MODELS.smart, system: SYSTEM, prompt: peticion, timeoutMs: 180_000 });
 
-  if (msg.stop_reason === 'refusal') throw new AgentError('La IA no ha querido revisar este texto.', 422);
-  const out = msg.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
   const pulido = out.match(/<prompt_pulido>\s*([\s\S]*?)\s*<\/prompt_pulido>/)?.[1];
-  if (!pulido) {
-    const motivo = msg.stop_reason === 'max_tokens' ? 'la respuesta se cortó por larga' : 'formato inesperado';
-    throw new AgentError(`La IA no devolvió un prompt válido (${motivo}).`);
-  }
+  if (!pulido) throw new AIError('La IA no devolvió un prompt válido (formato inesperado).');
   const cambios = (out.match(/<cambios>\s*([\s\S]*?)\s*<\/cambios>/)?.[1] ?? '')
     .split('\n').map((l) => l.replace(/^\s*[-*]\s*/, '').trim()).filter(Boolean);
 
-  return { texto: pulido, cambios, modelo: msg.model };
+  return { texto: pulido, cambios, modelo: MODELS.smart };
 }

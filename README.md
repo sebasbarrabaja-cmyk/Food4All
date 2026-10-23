@@ -43,23 +43,33 @@ Colores, tipografía, componentes, imágenes y arquitectura: [`docs/DISENO.md`](
 | `/vender` | Recorrido del vendedor, qué gana, reparto de papeles, requisitos y formulario de alta (funciona) |
 | `/comunidad` | Por qué nos importa la comunidad, qué publicaremos, nuestras redes (enlaces en `frontend/src/data/social.js`) y cómo participar |
 | `/vender/panel` | Panel de ejemplo: catálogo, pedidos, liquidación y visibilidad patrocinada |
-| `/admin` | Privado, con barra lateral: resumen, mercado, marco legal, equipo, hitos de Asana en directo, altas, marketplace de ejemplo y registro de prompts con agente revisor |
+| `/admin` | Privado, con barra lateral: resumen, mercado, marco legal, equipo, hitos de Asana en directo, altas, marketplace de ejemplo y registro de prompts con agente revisor. Arriba, un buscador que salta a cada sección y responde preguntas simples con IA |
 
 ## Requisitos (Hito 2)
 
 Requisitos del marketplace (RF-01 a RF-19, RNF-01 a RNF-11, 556 requisitos atómicos comparados con la competencia) y backlog: [`docs/requisitos/`](docs/requisitos/README.md). Están también en Asana, en el Hito 2 de Food4All.
 
-## Prompts y agente revisor
+## IA del panel: buscador y agente revisor
+
+Usa **Gemini, en su nivel gratuito** (Google AI Studio). Necesita en `backend/.env`:
+
+```
+GEMINI_API_KEY=tu_clave
+```
+
+La clave se crea gratis en [aistudio.google.com](https://aistudio.google.com) → Get API key. Solo vive en el backend. Uso previsto: unas 5-10 consultas al día, muy por debajo del límite gratuito (el límite exacto de cada modelo se ve en AI Studio). Sin clave, el panel funciona igual: el buscador solo salta entre secciones y el botón de pulir sale desactivado.
+
+- **Buscador** (barra lateral, `backend/search.js`): al escribir, muestra las secciones que coinciden; con Intro, responde preguntas simples ("¿de qué va el proyecto?") con los datos del panel y ofrece ir al apartado correcto. No es un agente: una sola consulta, sin herramientas. Modelo: `gemini-3.5-flash-lite` (~2-3 s).
+- **Agente revisor** (`backend/agent.js`): el botón **Pulir con IA** propone una versión más clara del prompt sin cambiar lo que pide. Nada se guarda sin confirmar, y el original no se toca. Modelo: `gemini-3.5-flash` (~3-5 s; el documento maestro entero, bastante más).
+
+**Condiciones del nivel gratuito** ([términos de la API de Gemini](https://ai.google.dev/gemini-api/terms)):
+- Solo en el **panel privado**, para el equipo. En la UE no se puede ofrecer a usuarios una app con el nivel gratuito: un buscador en la web pública necesitaría el nivel de pago.
+- Desde la UE, Google aplica las reglas de privacidad del nivel de pago: no usa lo que se envía para entrenar. Aun así, piden no enviar datos personales.
+- Hay que ser mayor de 18 años.
+
+## Prompts
 
 Todos los prompts usados para desarrollar el proyecto se guardan en [`prompts/`](prompts/README.md), un `.md` por prompt. Se ven, se añaden y se copian desde `/admin#prompts`.
-
-El botón **Pulir con IA** llama a un segundo agente (Claude, `backend/agent.js`) que propone una versión más clara del prompt sin cambiar lo que pide. Nada se guarda sin confirmar, y el original no se toca. Necesita en `backend/.env`:
-
-```
-ANTHROPIC_API_KEY=tu_clave
-```
-
-La clave se crea en console.anthropic.com → API Keys. Solo vive en el backend. Cada revisión consume crédito de la cuenta (un prompt normal, céntimos; el documento maestro entero, bastante más).
 
 ## Asana
 

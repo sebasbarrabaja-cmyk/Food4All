@@ -34,9 +34,13 @@ const oneLine = (s) => String(s ?? '').replace(/[\r\n]+/g, ' ').trim();
 export function add({ titulo, autor, herramienta, tipo, origen, texto }) {
   mkdirSync(DIR, { recursive: true });
   const fecha = new Date().toISOString().slice(0, 10);
-  const existing = new Set(readdirSync(DIR));
-  let file = `${fecha}-${slug(titulo)}.md`;
-  for (let n = 2; existing.has(file); n++) file = `${fecha}-${slug(titulo)}-${n}.md`;
+  // AAAA-MM-DD-NN-titulo.md: NN es el siguiente número del día (01, 02…), para que se ordenen.
+  const used = readdirSync(DIR)
+    .map((f) => f.match(/^(\d{4}-\d{2}-\d{2})-(\d{2,})-/))
+    .filter((m) => m?.[1] === fecha)
+    .map((m) => Number(m[2]));
+  const nn = String(Math.max(0, ...used) + 1).padStart(2, '0');
+  const file = `${fecha}-${nn}-${slug(titulo)}.md`;
 
   const meta = { titulo, fecha, autor, herramienta, tipo, origen };
   const head = FIELDS.filter((k) => oneLine(meta[k])).map((k) => `${k}: ${oneLine(meta[k])}`).join('\n');
