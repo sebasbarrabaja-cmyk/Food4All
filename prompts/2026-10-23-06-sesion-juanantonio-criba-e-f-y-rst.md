@@ -73,4 +73,16 @@ No te entiendo del todo
 
 Continua con lo que estas haciendo y ten en cuenta que sebastian va a realizar cambios en breve en el git
 
-**Resultado:** se resolvió el conflicto quedándose con la tabla de Sebastián y los «Sí» de Juan Antonio en las 7 RST que no cambiaron; RST-06 y RST-07 quedan «Pendiente» de su voto. E5 P7 y las preguntas extra siguen pendientes. Se subió enseguida para no chocar con los cambios de Sebastián.
+**Resultado:** se resolvió el conflicto quedándose con la tabla de Sebastián y los «Sí» de Juan Antonio en las 7 RST que no cambiaron; RST-06 y RST-07 quedan «Pendiente» de su voto. E5 P7 y las preguntas extra siguen pendientes. Se subió enseguida para no chocar con los cambios de Sebastián. Después, el asistente preparó para Juan Antonio las discrepancias de su revisión cruzada (personas v2 y comparativo), sin escribir el comentario de Asana.
+
+### 21:10
+
+mira el git y me vuelves a preguntar
+
+**Resultado:** sin cambios nuevos que choquen. Sebastián anotó en la línea base que quiere un motor de IA real (afecta a RST-07). El asistente volvió a hacer las preguntas pendientes; Juan Antonio las interrumpió.
+
+### 21:12
+
+Sí estas son https://openfoodnetwork.net/?locale=es_US , https://home.localfoodmarketplace.com/ , https://dairy.marketwagon.com/
+
+**Resultado:** las tres páginas se añadieron como fuentes del comparativo original en `FOOD4ALL_comparativo_revisado.md`, apartado 4, sin cambiar la fiabilidad de F-04. Siguen pendientes su voto en RST-06 y RST-07 y lo de «mi compañero» en E5.
