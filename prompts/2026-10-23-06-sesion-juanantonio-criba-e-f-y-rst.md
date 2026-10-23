@@ -184,3 +184,9 @@ entoneces dame exactamente todo lo que tengo que poner en asana
 queda algo más de mi parte ?
 
 **Resultado:** se trajo lo último de `docs/hito2-entrega` (criba aprobada, C-28 y C-29). Le quedan: pegar el comentario en Asana, la segunda revisión cruzada (núcleo de compra y estados del pedido) y escribir con sus palabras la «Revisión crítica del equipo» al final de este archivo (prioritario en `AGENTS.md`).
+
+### Hora no registrada (después de las 21:42)
+
+revisa el asana y el git y dime que falta
+
+**Resultado:** el Asana de clase no está conectado a esta sesión, así que solo se revisó git. `docs/hito2-entrega` ya está fusionada en `main` (PR #2) y B6 tiene el ok de Sebastián en Asana. A Juan Antonio le faltan la «Revisión crítica del equipo» de este archivo, la segunda revisión cruzada (núcleo de compra y estados del pedido) y que se unan a `main` sus últimos registros de prompt.
