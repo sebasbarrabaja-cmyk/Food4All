@@ -3,7 +3,7 @@
 **Fuente:** entrevistas presenciales del 23/10/2026, hechas por Juan Antonio con un guion propio de 9 preguntas abiertas que no repiten las de E1–E4. Las respuestas son **literales**.
 **Datos personales (RST-06):** son personas reales, pero el perfil se ha dejado general (sin carrera, curso, edad ni localidad de origen) para que no se pueda saber quiénes son.
 **Nota de método:** E5 y E6 son compañeras de piso entre sí y personas cercanas al entrevistador. Puede influir en lo que cuentan, y no son del todo independientes.
-**Pendiente (Juan Antonio):** revisar las conclusiones; no se hizo la pregunta de «si no pudieras estar en casa cuando llega el pedido» ni la del punto de recogida.
+**Pendiente (Juan Antonio):** no se hizo la pregunta de «si no pudieras estar en casa cuando llega el pedido» ni la del punto de recogida.
 
 ---
 
@@ -61,14 +61,15 @@
 
 **Conclusiones del entrevistador (aparte de lo que dijo):**
 
-*Redactadas por el asistente a petición de Sebastián (23/10/2026) a partir de las respuestas literales. Juan Antonio las revisa y las corrige con sus palabras: son sus entrevistas.*
+*Redactadas por Juan Antonio (23/10/2026); sustituyen a las que había propuesto el asistente.*
 
-- La comida que trae de casa de su familia es su principal fuente de comida: sin ella, dice que «se queda con hambre». FOOD4ALL no compite solo con el supermercado; también compite con la comida de casa, que es gratis y casera.
-- Elige dónde comprar por cercanía (Mercadona, a 10 minutos) y elige los productos por precio, dentro de lo que busca («de lo más barato»). El precio pesa más que el origen.
-- Prefiere comida «recién hecha y no congelada». Encaja con el producto fresco y local, aunque ella habla de platos cocinados, no de ingredientes.
-- No compra comida por internet. Su única experiencia online relevante (Amazon, dos envíos rotos) terminó bien porque la devolución y el reembolso funcionaron. Si un pedido de FOOD4ALL llega mal, tiene que resolverse igual de fácil: es el proceso de incidencias (RF-10).
-- Antes de fiarse de una app mira las reseñas o busca en Google. Una plataforma nueva sin valoraciones le genera desconfianza.
-- El horario y la convivencia no son un problema: el único roce que recuerda fue por gustos de cocina, no por compras ni gastos.
+**Conclusión 1. Preferencia por la comida recién hecha.**
+
+E5 expresa que le gustaría consumir comida recién hecha en lugar de congelada. Esta conclusión se apoya en su respuesta a la pregunta 9: «Me gustaría que fuese comida recién hecha y no congelada».
+
+**Conclusión 2. Comercio local y proximidad.**
+
+Mi lectura es que FOOD4ALL podría ofrecer una alternativa para dar más visibilidad al comercio local. Sin embargo, E5 no expresa directamente que quiera apoyar a los pequeños comercios frente a las grandes empresas. En la pregunta 3 explica que compra en Mercadona porque le queda a diez minutos. Por tanto, la cercanía y la comodidad sí están respaldadas por la entrevista, mientras que su supuesto interés por apoyar al comercio local es una interpretación personal que habría que validar.
 
 ---
 
@@ -123,14 +124,11 @@
 
 **Conclusiones del entrevistador (aparte de lo que dijo):**
 
-*Redactadas por el asistente a petición de Sebastián (23/10/2026) a partir de las respuestas literales. Juan Antonio las revisa y las corrige con sus palabras: son sus entrevistas.*
+*Redactadas por Juan Antonio (23/10/2026); sustituyen a las que había propuesto el asistente.*
 
-- Igual que E5, se apoya en los tuppers y la comida que trae de su casa, que le hacen «mucho más fácil y corto» cocinar. El patrón se repite en el mismo piso. Inferencia: la semana de estas estudiantes gira alrededor de la vuelta del pueblo, y eso podría influir en qué día quieren recibir un pedido.
-- Ya usa una app de comida (Glovo) y le parece «rápido y fácil». Lo que le frena son los gastos de envío y de gestión. Esto apoya un único coste de envío por pedido (RF-05.4-01) y mostrar el precio final sin sorpresas.
-- Elige el supermercado solo por cercanía y no mira las etiquetas, solo «que le vaya a gustar». Para ella, el origen local o lo poco procesado no es un motivo de compra. **Contradice en parte la prioridad 2 del Product Owner (C-13: producto local y poco procesado).**
-- Improvisa con lo que tiene en la despensa, como E3 y E4.
-- Antes de usar una app, investiga si es fiable, igual que E5 y E2.
-- No tiene problemas de horario ni de convivencia por la comida.
+**Conclusión. Los gastos de envío frenan el uso de Glovo.**
+
+E6 considera que Glovo es rápido y fácil de utilizar, pero señala que el precio aumenta mucho con los gastos de envío y de gestión. Por tanto, el coste final es una barrera para su uso, aunque valore la comodidad del servicio. Esta conclusión se apoya en la pregunta 4.
 
 ---
 

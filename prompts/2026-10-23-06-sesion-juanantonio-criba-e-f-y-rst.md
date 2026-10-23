@@ -119,3 +119,9 @@ pues vamos a ello
 dame esas dos cosas y ya redacto yo
 
 **Resultado:** el asistente le dio el material para el comentario de Asana y para reescribir E5, E6 y el bloque E. No cambió los documentos: los redacta Juan Antonio.
+
+### 21:50
+
+(pegó dos textos suyos: el comentario de revisión cruzada para Asana y «Conclusiones y decisiones de la criba» con E5, E6, bloque E y bloque F)
+
+**Resultado:** el comentario de Asana no se publica (lo pega él). Sus conclusiones de E5 y E6 sustituyen a las del asistente en `FOOD4ALL_entrevistas_E5_E6_juan_antonio.md`, y su decisión del bloque E (subir RF-11.2-04 a Must · MVP; RF-11.1-02 y RF-11.2-01 siguen en V2) sustituye al punto 1 del borrador en `FOOD4ALL_criba_argumentos.md`. El bloque F queda igual. No se tocaron los requisitos ni se ejecutó `npm run todo`: el cambio de prioridad lo registra Sebastián en la línea base.
