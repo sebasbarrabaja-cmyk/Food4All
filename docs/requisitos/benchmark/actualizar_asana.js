@@ -89,7 +89,8 @@ const F = 'name,html_notes,completed';
   const subB1 = await hijos(B['[B1]'].gid);
   const subB6 = await hijos(B['[B6]'].gid);
   const temporales = bloques.find((t) => t.name.startsWith('Requisitos temporales'));
-  const subTemp = temporales ? await hijos(temporales.gid) : [];
+  // Desde el 23/10 (reordenar_hito2.js) la criba y el benchmark están en [B4], no en «Requisitos temporales».
+  const subTemp = temporales ? await hijos(temporales.gid) : await hijos(B['[B4]'].gid);
   const destinos = {
     HITO: hito, '[B1]': B['[B1]'], '[B2]': B['[B2]'], '[B4]': B['[B4]'], '[B5]': B['[B5]'], '[B6]': B['[B6]'],
     'Resumen de hallazgos': subB1.find((t) => t.name.startsWith('Resumen de hallazgos')),

@@ -295,3 +295,27 @@ sí, hazme el bloque
 1abc 2abcd 3abc
 
 **Resultado:** los dos prompts base terminan con su revisión crítica, hecha por Sebastián, con la nota de que Juan Antonio y Miguel no la han revisado. Solo queda la de Juan Antonio.
+
+### 21:52
+
+Juan antonio gestiona lo suyo, algo mas de mi parte?
+
+**Resultado:** queda «Estado entrega», avisar cuando Juan Antonio suba lo suyo, dar al profesor la contraseña del panel y, más adelante, poner al día la defensa.
+
+### 21:53
+
+El estado esta ya. Sin contar lo de Juan antonio, si el profesor lo revisa mañana esta todo correcto?
+
+**Resultado:** no del todo. Las 129 fichas de B4 y B5 en Asana eran las del 22/10 y no recogían lo de hoy (C-14 a C-29). Se adaptó `actualizar_asana.js` al Asana reordenado (la criba ahora está en [B4]) y se probó en seco.
+
+### 21:54
+
+El profesor pide de entrega un archivo cargado, ademas del asana
+
+**Resultado:** se le preguntó qué archivo y dónde. El documento completo ya está adjunto en Asana (856 kB en Markdown).
+
+### 21:54
+
+1a 2(Literalmete pone o una url o un archivo cargado)
+
+**Resultado:** `actualizar_asana.js --si` tardó 2 min 21 s: 129 descripciones actualizadas, ninguna creada, borrada ni comentada, y copia previa en `asana_copia_hito2_v04_antes.json`. En la nueva prueba en seco quedan 39 diferencias que son solo de codificación de comillas (`&quot;` en Asana frente a `"`): el contenido coincide. Lo de la URL o el archivo se plantea a continuación.
