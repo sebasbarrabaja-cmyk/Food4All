@@ -1,6 +1,7 @@
 # FOOD4ALL · Entrevistas de Juan Antonio (E5 y E6) · Hito 2
 
 **Fuente:** entrevistas presenciales del 23/10/2026, hechas por Juan Antonio con un guion propio de 9 preguntas abiertas que no repiten las de E1–E4. Las respuestas son **literales**.
+**Datos personales (RST-06):** son personas reales, pero el perfil se ha dejado general (sin carrera, curso, edad ni localidad de origen) para que no se pueda saber quiénes son.
 **Nota de método:** E5 y E6 son compañeras de piso entre sí y personas cercanas al entrevistador. Puede influir en lo que cuentan, y no son del todo independientes.
 **Pendiente (Juan Antonio):** revisar las conclusiones; en E5, P7, aclarar «mi compañero» (el perfil dice que comparte piso con otras estudiantes); no se hizo la pregunta de «si no pudieras estar en casa cuando llega el pedido» ni la del punto de recogida.
 
@@ -8,7 +9,7 @@
 
 ## E5 · Estudiante · 2026-10-23 · Málaga
 
-**Perfil:** 2.º de Química, unos 19 años, comparte piso en Málaga con otras estudiantes; es de un pueblo de fuera de Málaga; cocina 5 días a la semana
+**Perfil:** estudiante universitaria; comparte piso en Málaga con otras estudiantes; su familia vive fuera de la ciudad; cocina 5 días a la semana
 **Cómo se hizo:** presencial · 15 min · entrevista Juan Antonio
 
 **Pregunta 1:** ¿Qué has comido hoy y de dónde ha salido esa comida?
@@ -72,7 +73,7 @@
 
 ## E6 · Estudiante · 2026-10-23 · Málaga  (segunda compañera de piso)
 
-**Perfil:** 2.º de Ingeniería Civil, unos 20 años, comparte piso en Málaga (el mismo que E5); es de un pueblo de fuera de Málaga; cocina 2 días a la semana
+**Perfil:** estudiante universitaria; comparte piso en Málaga (el mismo que E5); su familia vive fuera de la ciudad; cocina 2 días a la semana
 **Cómo se hizo:** presencial · 14 min · entrevista Juan Antonio
 
 **Pregunta 1:** ¿Qué has comido hoy y de dónde ha salido esa comida?

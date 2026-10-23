@@ -117,8 +117,38 @@ Y voy a hacer la parte de Miguel yo
 
 **Resultado:** en `AGENTS.md` y en la criba, el bloque C, su parte de las RST y la entrega en Asana pasan a Sebastián. La revisión cruzada del núcleo de compra queda pendiente de reasignar, porque tiene que hacerla alguien distinto del autor.
 
-### 20:35
+### 20:32
 
 Escribe que ahora estamos en llamada juan antonio y yo
 
 **Resultado:** se anotó en `AGENTS.md` («Ahora mismo») que Sebastián y Juan Antonio están en llamada terminando el Hito 2, para que el agente de Juan Antonio se coordine con lo que decidan.
+
+### 20:33
+
+1a
+
+**Resultado:** RF-06.6-04 (códigos promocionales) sigue en Could · V2. Su justificación en el catálogo dice por qué y apunta al riesgo, anotado como C-24 en la línea base. Se regeneró con `npm run todo` y las cifras no cambian.
+
+### 20:34
+
+Coherencia por encima de cualquier cosa
+
+**Resultado:** se comprobó que las justificaciones nuevas (RF-08.5-01 y RF-06.6-04) van en el campo que usa el catálogo y salen en el Excel. El siguiente bloque es que E1–E6 digan lo mismo en todos los documentos.
+
+### 20:35
+
+a
+
+**Resultado:** E1–E6 dicen lo mismo en todos los documentos (C-25). Se corrigieron los datos de E1–E4 y la tabla 5.1 de necesidades se rehízo con E1–E6. N-INC-01 pasa a Indicio y N-CAD-01 se debilita; ninguna necesidad llega a Confirmada. Se actualizaron las fuentes F-05 a F-08 y la evidencia de D-03, y se quitaron las comillas de citas que no son literales (E1–E4 son apuntes). Se regeneró con `npm run todo`.
+
+### 20:39
+
+a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la cabezera de la web que ponga asistente ia, y que se vea bien, no remarcado pero casi)
+
+**Resultado:** bloque C aprobado y escrito en la criba (C-26). Por el plan de contraste de N-IA-01, RF-12.1-03 (texto libre) y RF-12.6-05 pasan a Could · V2. RF-12.1-01 pasa a ser una pestaña «Asistente IA» arriba a la derecha de la cabecera, visible pero sin destacar más que «Comprar». Se ajustaron las fichas del asistente y las cifras: MVP 403, con 36 simulados. La pestaña se hará en la landing.
+
+### 20:44
+
+1a(Fixea lo de los datos reales, que se vean digo, hay personas detras de estas entrevistas pero que no se sepa nada de ellos). Sobre el matiz 2, lo que falta no lo comprendo, aclaramelo y que impacto tiene
+
+**Resultado:** Sebastián vota las RST: 7 sí y 2 cambiar. La columna de Miguel queda como «Asume Sebastián» (C-27). RST-06 dice ahora que las entrevistas son a personas reales sin datos que las identifiquen, y E5 y E6 pierden carrera, curso, edad y localidad. RST-07 añade el motor de IA simulado. El asistente explicó qué significa el matiz 2 y qué impacto tiene.

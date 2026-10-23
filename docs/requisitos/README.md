@@ -6,7 +6,7 @@ Requisitos del **marketplace** FOOD4ALL, no de la landing. Versión **0.4** (22/
 | --- | --- |
 | [`FOOD4ALL_especificacion_requisitos.md`](FOOD4ALL_especificacion_requisitos.md) | La especificación: fuentes, necesidades, personas, procesos en cascada, 19 historias con Gherkin, RF-01 a RF-19, RNF-01 a RNF-11, trazabilidad, decisiones abiertas, fuentes de verdad, glosario v2, backlog y el ejemplo del login (Anexo A) |
 | [`FOOD4ALL_necesidades.md`](FOOD4ALL_necesidades.md) | **Catálogo único de necesidades** (N-<MÓDULO>-NN), regla de evidencia, equivalencias con los códigos antiguos, plan de contraste y plantilla de entrevista |
-| [`FOOD4ALL_entrevistas_estudiantes.md`](FOOD4ALL_entrevistas_estudiantes.md) | Entrevistas a estudiantes E1–E4 (F-07, 23/10/2026): apuntes, comparación y tres historias propuestas. Faltan las del resto del equipo |
+| [`FOOD4ALL_entrevistas_estudiantes.md`](FOOD4ALL_entrevistas_estudiantes.md) | Entrevistas a estudiantes E1–E4 (F-07, 23/10/2026): apuntes, comparación y tres historias propuestas. E5–E6, de Juan Antonio, en [`FOOD4ALL_entrevistas_E5_E6_juan_antonio.md`](FOOD4ALL_entrevistas_E5_E6_juan_antonio.md) |
 | [`FOOD4ALL_estados_pedido.md`](FOOD4ALL_estados_pedido.md) | Estados del pedido global, el subpedido y la línea, y el pago y el reembolso de prueba: el contrato común de RF-06 a RF-10 |
 | [`FOOD4ALL_matriz_trazabilidad.md`](FOOD4ALL_matriz_trazabilidad.md) | Matriz de trazabilidad (generada): cobertura por necesidad, una fila por subrequisito y controles |
 | [`FOOD4ALL_personas_empatia_v2.md`](FOOD4ALL_personas_empatia_v2.md) | Personas y mapas de empatía de B2 (Juan Antonio), v2 con los IDs corregidos |

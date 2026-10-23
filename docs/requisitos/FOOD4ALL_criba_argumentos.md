@@ -16,18 +16,19 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | --- | --- | --- | --- |
 | RF-05 Carrito · RF-06 Checkout · RF-07 Subpedidos | 92 | 78 | 14 |
 | RF-08 Hub y entrega | 29 | 17 | 12 |
-| RF-12 Asistente de IA | 30 | 24 (simulado, ninguno Must) | 6 |
+| RF-12 Asistente de IA | 30 | 22 (simulado, ninguno Must) | 8 |
 | RF-11 Valoraciones · RF-14 Suscripción · RF-17 Liquidación · RF-18 Comunicación · RF-19 Soporte | 40 | 0 | 40 |
 | RF-13 Administración | 22 | 10 | 12 (2 excluidos) |
 | RNF-04 Usabilidad · RNF-05 Accesibilidad | 19 | 19 | 0 |
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
-| **Total** | **564** | **405** (38 simulados) | **155** + 4 excluidos |
+| **Total** | **564** | **403** (36 simulados) | **157** + 4 excluidos |
 
-Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). Son solo las de Sebastián: faltan las del resto del equipo.
-- **Precio y producto:** E4 compraría directamente al productor si percibe «mayor calidad, un precio favorable y una cantidad adecuada». A E2 le atraen los productos «locales, menos procesados y más baratos».
-- **IA:** E3 y E4, «poca o ninguna» confianza; E2 la pondría a prueba; E1 la revisaría. N-IA-01, «No confirmada».
+Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). E1–E4 son apuntes de Sebastián, sin citas literales; E5–E6 son de Juan Antonio, literales. Las de Miguel se descartaron (C-22).
+- **Precio y producto:** E4 compraría directamente al productor si percibe mayor calidad, un precio favorable y una cantidad adecuada. A E2 le atraen los productos locales, menos procesados y más baratos. E5 busca «de lo más barato del mercado» y a E6 le frenan los gastos de envío de Glovo. E6 no mira el origen: «solo miro que me vaya a gustar».
+- **IA:** E3 y E4, poca o ninguna confianza; E2 la pondría a prueba; E1 la revisaría. N-IA-01, «No confirmada».
 - **Rechazo:** E3 dice que no usaría FOOD4ALL.
-- **Candidatas fuera del catálogo:** descuentos u ofertas (E1, E3, E4); interfaz sencilla y rápida (E3, E4); E2 echa de menos opiniones en una empresa nueva.
+- **Confianza:** E2 echa de menos opiniones en una empresa nueva; E5 y E6 miran reseñas o investigan si una app es fiable antes de usarla.
+- **Candidatas fuera del catálogo:** descuentos u ofertas (E1, E3, E4; RF-06.6-04 sigue en V2, C-24); interfaz sencilla y rápida (E3, E4).
 
 **Postura del Product Owner** (Sebastián, 23/10/2026; registro de cambios C-13). Lo que el marketplace tiene que tener sí o sí, en orden: **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado). Van ligados: sin carrito sencillo no se compra, y sin buen producto el carrito no sirve. **3) El asistente de IA** es una parte importante del proyecto, pero va detrás de los dos primeros. Pendiente del visto bueno del equipo.
 
@@ -48,7 +49,7 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 
 1. **Problema que corrige.** Antes, la prioridad y la entrega se decidían por separado y se contradecían en 58 requisitos. Un «Must · V2» decía a la vez «imprescindible» y «puede esperar» (35 casos, por ejemplo RF-02.6-03, el IBAN del vendedor). Un «Could · MVP» metía trabajo opcional en lo primero que se construye y le quitaba tiempo al núcleo (por ejemplo RF-04.8-03, tarjetas grises de carga). Con la regla, cada etiqueta significa lo mismo en todas las fichas, que es lo que pidió la valoración. Además, **RF-15.2-04** (la cinta animada de la portada) baja a Could · V2: es diseño visual y no responde al problema. Se aplica al aprobar la criba.
 2. **Cuándo es Must.** Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio. Es decir, si cumple al menos una de estas condiciones: (a) es necesario para el recorrido central, que son varios vendedores, un pedido, un pago de prueba y una entrega; (b) es necesario para que se vea el valor del producto, con precio final claro y origen; (c) lo exige la ley o la seguridad, como los alérgenos, el registro sanitario o los datos personales. Lo demás es Should o menos. Es la definición de la Clase 8 aplicada a nuestro problema.
-3. **Si una entrevista lo contradice.** Una sola contradicción no cambia el requisito: se registra como riesgo y se busca más evidencia (así se trató el «no la usaría» de E3). Si 3 o más entrevistas independientes lo contradicen, que es la misma regla que usamos para confirmar, se reabre con un registro de cambio: origen, impacto, alternativa, decisión y versión. Decide el Product Owner con el equipo (Clase 11). Ejemplo: C-13, que cambió el lugar de la IA.
+3. **Si una entrevista lo contradice.** Una sola contradicción no cambia el requisito: se registra como riesgo y se busca más evidencia (así se trató el rechazo de E3). Si 3 o más entrevistas independientes lo contradicen, que es la misma regla que usamos para confirmar, se reabre con un registro de cambio: origen, impacto, alternativa, decisión y versión. Decide el Product Owner con el equipo (Clase 11). Ejemplo: C-13, que cambió el lugar de la IA.
 
 ## B · El núcleo de compra dentro del MVP (RF-05, RF-06 y RF-07) · Sebastián
 
@@ -83,12 +84,17 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 - «"El sistema tendrá IA" no es una necesidad ni un requisito verificable» (Clase 6).
 
 **Preguntas:**
-1. Con E1–E4 (N-IA-01 «No confirmada»), ¿por qué la IA debería seguir en la demo, aunque sea simulada, o por qué debería salir del MVP?
+1. Con E1–E4 (N-IA-01 «No confirmada»; a E5 y E6 no se les preguntó por la IA), ¿por qué la IA debería seguir en la demo, aunque sea simulada, o por qué debería salir del MVP?
 2. ¿Cuál es la alternativa sin IA para que el estudiante haga su compra semanal?
 3. Si lo atractivo es el precio y el producto natural (postura del PO, C-13: carrito y producto primero, IA en tercer lugar), ¿qué requisitos de RF-12 bajarías de prioridad y cuáles conservarías?
 4. ¿Por qué el pago y el reembolso son simulados, y qué no podemos afirmar en la demo por eso?
 
-**Respuesta (Sebastián):** _pendiente_
+**Decisión de Sebastián (redactada con ayuda del asistente):**
+
+1. **Por qué la IA sigue en la demo.** Entra como Should · MVP simulado: opcional y revisable. Nunca añade nada al carrito sin confirmación (RF-12.3-04) y lleva la etiqueta «Propuesta generada por IA» (RF-12.4-01). No puede ser Must, porque N-IA-01 quedó «No confirmada»: E3 y E4 tienen poca o ninguna confianza. Se diseña para esa desconfianza: E1 la revisaría y E2 la pondría a prueba. Si 3 o más entrevistas del perfil objetivo la rechazan, sale del MVP (regla A.3).
+2. **Alternativa sin IA.** El catálogo de la zona con filtros y el carrito normal (RF-04 y RF-05). La compra funciona entera sin el asistente.
+3. **Qué baja y qué se conserva.** Se aplica el plan de contraste de N-IA-01 (`FOOD4ALL_necesidades.md`, apartado 5): RF-12.1-03 (escribir en lenguaje natural) pasa a Could · V2, y con él el filtro de peticiones que no son de comida (RF-12.6-05). El asistente se queda en opciones guiadas: presupuesto, días, personas y tiempo para cocinar. El acceso (RF-12.1-01) pasa a ser una pestaña «Asistente IA» arriba a la derecha de la cabecera: visible, pero sin destacar más que «Comprar». Es el tercer lugar de C-13: la IA no se presenta como la única forma de comprar. Se conservan la cesta dentro del presupuesto, la exclusión de alérgenos, el ajuste producto a producto y la transparencia (RF-12.2 a RF-12.4).
+4. **Por qué pago y reembolso son simulados.** Nunca hay dinero real: sin pasarela, sin comisiones reales y sin el riesgo legal de cobrar. Por eso en la demo no se puede afirmar que el cobro, el reparto del dinero entre vendedores o los reembolsos funcionen de verdad: solo que el recorrido y los importes son correctos.
 
 ## D · Hub y entrega con la mitad aplazada (RF-08) · Sebastián
 
@@ -158,21 +164,21 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 
 ## Restricciones (RST) candidatas · los tres
 
-La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualidad medible) y **RST** (límite de alcance, política, integración o contexto). La Clase 11 pide a Food4All «restricciones de operación declaradas» y separa la restricción (un límite externo) de la hipótesis (un supuesto sin fuente). Todas estas salen de algo ya decidido o de una obligación legal del catálogo. **Cada uno dice sí, no o cambiar**, y al validarlas se añaden a la línea base.
+La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualidad medible) y **RST** (límite de alcance, política, integración o contexto). La Clase 11 pide a Food4All «restricciones de operación declaradas» y separa la restricción (un límite externo) de la hipótesis (un supuesto sin fuente). Todas estas salen de algo ya decidido o de una obligación legal del catálogo. **Cada uno dice sí, no o cambiar**, y al validarlas se añaden a la línea base. La columna de Miguel no vota por separado: sus tareas las asume Sebastián desde el 23/10 a las 20:31, así que validan dos personas.
 
 | ID | Restricción | De dónde sale | Sebastián | Juan Antonio | Miguel |
 | --- | --- | --- | --- | --- | --- |
-| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | | Sí | |
-| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | | Sí | |
-| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | | Sí | |
-| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | | Sí | |
-| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | | Sí | |
-| RST-06 | Ni el prototipo ni el registro de entrevistas usan datos personales reales | N-CUE-01 (RGPD); Clase 11 | | Sí | |
-| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5 | | Sí | |
-| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | | Sí | |
-| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | | Sí | |
+| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | Sí | Sí | Asume Sebastián |
+| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | Sí | Sí | Asume Sebastián |
+| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | Sí | Sí | Asume Sebastián |
+| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | Sí (las zonas dentro de cada ciudad son D-03, Hito 3) | Sí | Asume Sebastián |
+| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | Sí | Sí | Asume Sebastián |
+| RST-06 | Ni el prototipo ni el registro de entrevistas permiten identificar a nadie: las entrevistas son a personas reales, pero sin nombre, contacto ni combinaciones de datos (carrera, curso, edad, localidad) que digan quién es | N-CUE-01 (RGPD); Clase 11 | Cambiar (texto nuevo; perfiles de E5 y E6 generalizados el 23/10) | Pendiente: el texto cambió (C-27) | Asume Sebastián |
+| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio, ni motor de IA (la cesta del asistente la genera un simulador; RNF-10.1-02 permite cambiarlo por uno real) | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5; RNF-10.1-02; C-26 | Cambiar (añade el motor de IA) | Pendiente: el texto cambió (C-27) | Asume Sebastián |
+| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | Sí | Sí | Asume Sebastián |
+| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | Sí | Sí | Asume Sebastián |
 
-*Columna de Juan Antonio rellenada con ayuda del asistente (23/10/2026); todas salen de decisiones ya tomadas o de obligaciones legales del catálogo.*
+*Columna de Juan Antonio rellenada con ayuda del asistente (23/10/2026). RST-06 y RST-07 quedan pendientes de su voto porque Sebastián cambió el texto después (C-27).*
 
 Se descartaron RST-08 (valores provisionales de D-01 a D-04), porque es un supuesto del piloto y ya figura como C-09 en la línea base, y RST-09 (análisis legal orientativo), porque es un aviso sobre el documento y no un límite del sistema. Los números no se reutilizan. La regla de cancelación (solo antes de la hora de cierre) se decide en el comité de cambio, no aquí.
 

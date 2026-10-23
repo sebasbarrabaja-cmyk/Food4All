@@ -1,6 +1,6 @@
 # FOOD4ALL · Guía para los agentes del equipo
 
-Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 23/10/2026, 20:35.
+Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 23/10/2026, 20:34.
 
 ## 1. El proyecto en cinco líneas
 
@@ -9,7 +9,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Equipo:** Sebastián (backend y Product Owner), Juan Antonio (frontend), Miguel (IA y datos).
 - **En este repositorio:** una landing documental (`frontend/` y `backend/`, con `npm start` → `localhost:3001`), los requisitos del Hito 2 (`docs/requisitos/`) y el registro de prompts (`prompts/`).
 - **Ahora mismo:** el **Hito 2 (necesidades, requisitos y criterios de aceptación) se entrega el 23/10/2026 a las 23:59**. El Sprint 3 (análisis y diseño estructurado) empieza el 26/10.
-- **23/10, desde las 20:35:** Sebastián y Juan Antonio están en llamada terminando el Hito 2 juntos (criba, RST, entrevistas y Asana). Si eres el agente de Juan Antonio, coordina con lo que decidan en la llamada antes de tocar `FOOD4ALL_criba_argumentos.md`.
+- **23/10, desde las 20:32:** Sebastián y Juan Antonio están en llamada terminando el Hito 2 juntos (criba, RST, entrevistas y Asana). Si eres el agente de Juan Antonio, coordina con lo que decidan en la llamada antes de tocar `FOOD4ALL_criba_argumentos.md`.
 
 ## 2. Reglas para el agente (obligatorias)
 
@@ -63,12 +63,12 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 ## 5. Lo decidido hasta hoy (23/10)
 
-- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 405, de ellos 38 simulados; cifras del 23/10 con C-23), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
+- **Requisitos v0.4** (22/10): catálogo único de 22 necesidades, 19 procesos, 564 requisitos (MVP 403, de ellos 36 simulados; cifras del 23/10 con C-26), 19 historias y matriz generada. Cada uno de los cambios está en el registro de cambios de la línea base.
 - **Orden de lo imprescindible** (Product Owner, C-13, pendiente del visto bueno del equipo): **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado), que van ligados; **3) el asistente de IA**, importante pero detrás. En las entrevistas, la confianza en la IA es baja (N-IA-01 «No confirmada»).
 - **Regla de prioridad:** Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio.
 - **Una entrevista en contra no cambia un requisito:** se registra como riesgo. Si 3 o más lo contradicen, se reabre con un registro de cambio.
 - **Pago y reembolso son de prueba:** nunca hay dinero real.
-- **Entrevistas E1–E4** (Sebastián): 5 necesidades en «Indicio». Ninguna está confirmada todavía.
+- **Entrevistas E1–E6** (E1–E4 de Sebastián y E5–E6 de Juan Antonio; las de Miguel, descartadas en C-22): 6 necesidades en «Indicio» y ninguna confirmada (C-25). No hay entrevistas a vendedores.
 
 ## 6. Trabajo de cada uno (hoy)
 
@@ -91,12 +91,12 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Esta rama (`docs/hito2-entrega`)** tiene todo el Hito 2, con las mejoras de la landing de WSL ya unidas (ver apartado 8). Falta la página del Hito 2 en la landing que pide el enunciado (`FOOD4ALL_hito2_enunciado.md`).
 - **Pendiente de Sebastián:** comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y los recorridos por la competencia con capturas (en curso).
 - **Logística:** retrasos del reparto y del vendedor, cubiertos el 23/10 (C-15: RF-08.2-05, RF-08.2-06 y RF-08.4-06). Queda la compensación por retraso. Las mejoras de los recorridos por la competencia (M-01 a M-08) se revisan una a una: `docs/competencia/FOOD4ALL_recorridos_competencia.md`.
-- **Abierto en el Hito 2:** aprobar la criba, validar las RST, las entrevistas del resto del equipo, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
+- **Abierto en el Hito 2:** aprobar la criba, validar las RST, entrevistas a vendedores, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
 
 ## 8. Traspaso (23/10, 17:40): lo que queda para terminar sin Sebastián
 
 - **Rama:** todo está en `docs/hito2-entrega`, ya con las mejoras de la landing de WSL unidas y probadas: compila, las rutas responden, el login bloquea tras 5 fallos y el panel lista los 19 prompts. Los `node_modules` que vinieron de Windows no sirven en Linux: reinstalad con `npm run install:all`.
-- **Criba (actualizado a las 20:35):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
+- **Criba (actualizado a las 20:34):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
 - **Mejoras de los recorridos por la competencia:** M-01 a M-08 revisadas una a una (C-14 a C-21 en la línea base). M-06 (punto de recogida) y pagar como invitado esperan a nuevas entrevistas y a un debate del equipo.
-- **Asana (pendiente):** subir las entrevistas E1–E4 de Sebastián como subtareas de «Historias de usuario», comprobar que estén las vuestras, asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
+- **Asana (pendiente, lo sube Sebastián al final, cuando todo esté verificado):** subir E1–E4 (Sebastián) y E5–E6 (Juan Antonio) como subtareas de «Historias de usuario», asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
 - **Antes de entregar:** RST validadas; criba aprobada; documento adjunto al Hito 2 y «Estado entrega» cambiado (Sebastián, en lugar de Miguel); explicación al profesor de cómo ver los prompts (`/admin#prompts`). La contraseña la da Sebastián en persona.

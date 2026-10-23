@@ -56,3 +56,21 @@ súbelo a github
 que falta y que debo comunicar a mis compañeros
 
 **Resultado:** lista de lo que falta para la entrega, a partir de `AGENTS.md` y `FOOD4ALL_tareas_entrega.md` de la rama del equipo, y un mensaje para el grupo con lo que ha hecho Juan Antonio.
+
+### 20:58
+
+(pegó la lista de sus cuatro tareas pendientes) pues vamos a hacerlo desde aqui
+
+**Resultado:** al traer los últimos cambios de `docs/hito2-entrega` salió un conflicto en la tabla de RST (Sebastián votó a la vez y cambió RST-06 y RST-07, C-27). El asistente preguntó el voto de esas dos, quién es «mi compañero» en E5 P7 y si se hicieron las preguntas que faltaban; Juan Antonio no respondió a las opciones.
+
+### 21:00
+
+No te entiendo del todo
+
+**Resultado:** el asistente explicó el conflicto y las tres preguntas con palabras más sencillas.
+
+### 21:02
+
+Continua con lo que estas haciendo y ten en cuenta que sebastian va a realizar cambios en breve en el git
+
+**Resultado:** se resolvió el conflicto quedándose con la tabla de Sebastián y los «Sí» de Juan Antonio en las 7 RST que no cambiaron; RST-06 y RST-07 quedan «Pendiente» de su voto. E5 P7 y las preguntas extra siguen pendientes. Se subió enseguida para no chocar con los cambios de Sebastián.

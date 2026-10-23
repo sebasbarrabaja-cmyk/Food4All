@@ -62,9 +62,9 @@ module.exports = (R) => {
   R.proc('RF-12', 'Asistente de IA para generar la cesta');
 
   R.sub('RF-12.1', 'Entrada');
-  R('Ofrecer el asistente en /comprar#asistente y desde la portada con «Pide una cesta a la IA».', 'Dada la portada, cuando pulsa el acceso, entonces llega al asistente.', 'S', 'MVP', ['BF67'], 'N-IA-01');
+  R('Ofrecer el asistente en /comprar#asistente y desde la pestaña «Asistente IA» de la cabecera, arriba a la derecha: visible, pero sin destacar más que «Comprar».', 'Dada cualquier página, cuando pulsa «Asistente IA» en la cabecera, entonces llega al asistente.', 'S', 'MVP', ['BF67'], 'N-IA-01', { just: 'Acceso visible pero secundario: la IA va en tercer lugar (C-13) y no es la única forma de comprar (C-26).' });
   R('Pedir presupuesto (5 a 200 €), días (1 a 7), número de personas (1 a 6) y tiempo para cocinar (poco, normal, mucho).', 'Dado un presupuesto de 3 €, cuando envía, entonces ve «El presupuesto mínimo es de 5 €».', 'S', 'MVP', ['BF67'], 'N-IA-01', { pos: 'Diferencial', just: 'Wetaca sugiere un menú semanal propio; ninguno verificado arma una cesta de varios vendedores por presupuesto.' });
-  R('Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»).', 'Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.', 'S', 'MVP', [], 'N-IA-01');
+  R('Permitir escribir la petición en lenguaje natural («Tengo 25 € y 4 días»).', 'Dado ese texto, cuando lo envía, entonces el asistente rellena presupuesto 25 € y 4 días.', 'C', 'V2', [], 'N-IA-01', { just: 'Sale del MVP por el plan de contraste de N-IA-01, que quedó «No confirmada» (E3 y E4): el asistente se queda en opciones guiadas (C-26).' });
   R('Rellenar por defecto con las preferencias guardadas del cliente.', 'Dado un presupuesto guardado de 30 €, cuando abre el asistente, entonces aparece 30 €.', 'S', 'MVP', ['BF11'], 'N-IA-01');
 
   R.sub('RF-12.2', 'Generación de la cesta');
