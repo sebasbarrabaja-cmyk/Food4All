@@ -177,3 +177,39 @@ Espera a juan antonio, creo que ha subido algo
 a( que se separe los promts por personas, pero no por dias o bloques de para que han servido)
 
 **Resultado:** se fusionó la rama. El registro de la landing pasa a ser `2026-10-23-07` (la sesión de Juan Antonio empezó antes) y las cinco horas imposibles de su registro quedan como «Hora no registrada (antes de las 21:04)». Lo de separar los prompts por personas se aclara en el siguiente mensaje.
+
+### 21:12
+
+Espera a juan antonio, queda ya poco, Queda algo mas?
+
+**Resultado:** se listó lo que falta, por prioridad:
+- aprobar la criba;
+- Asana y «Estado entrega»;
+- los prompts de Miguel, que no están registrados;
+- la revisión crítica de los prompts por el equipo;
+- las revisiones cruzadas en Asana;
+- el cierre de la sesión.
+
+También se comprobó que los 22 prompts no tienen correos ni teléfonos.
+
+### 21:14
+
+empieza por el punto 1
+
+**Resultado:** se preparó la aprobación de la criba con lo que dicen los documentos que se aplica al aprobarla:
+- RF-15.2-04 pasa a Could · V2;
+- los requisitos del MVP en «Pendiente» que no dependen de nada pasan a «Decidido»;
+- C-02, C-03 y C-11 se aprueban;
+- se anota C-28.
+
+### 21:15
+
+Para lo de juan antonio esperamos a que me de el ok, esta trabajando e ello
+
+**Resultado:** la aprobación queda en espera del ok de Juan Antonio. No se tocan la criba ni la línea base.
+
+### 21:16
+
+sí, prepáralo en seco
+
+**Resultado:** se escribió `benchmark/reordenar_hito2.js` y se probó en seco (8,6 s, solo GET, sin escribir nada en Asana): 38 cambios, ninguno de ellos un comentario. Se añadieron al repositorio el guion de entrevistas y E1–E4 en formato pregunta y respuesta (`FOOD4ALL_entrevistas_E1_E4_preguntas.md`), que el script usa como texto de las subtareas.
