@@ -11,6 +11,7 @@ export const DESTINOS = {
   '#mercado': 'Mercado: TAM, SAM, SOM, gasto en alimentación, estudiantes',
   '#legal': 'Marco legal: normativa y tareas legales pendientes',
   '#equipo': 'Equipo y roles',
+  '#hito2': 'Hito 2: necesidades, criba, hipótesis y decisiones, restricciones (RST), exclusiones, fuentes, trazabilidad y registro de cambios',
   '#hitos': 'Hitos del curso y tareas de Asana',
   '#vendedores': 'Altas: solicitudes de vendedores recibidas',
   '#marketplace': 'Marketplace de ejemplo: vendedores por ciudad y pedidos de ejemplo',

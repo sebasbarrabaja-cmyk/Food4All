@@ -20,7 +20,8 @@ export default function PublicLayout() {
             <NavLink to="/comprar" className="nav-btn nav-btn--buy">Quiero comprar</NavLink>
             <NavLink to="/vender" className="nav-btn">Quiero vender</NavLink>
             <Link to="/#como" className={`nav-btn${pathname === '/' && hash === '#como' ? ' active' : ''}`}>Cómo funciona</Link>
-            <Link to="/comprar#asistente" className={`nav-btn nav-btn--ai${pathname === '/comprar' && hash === '#asistente' ? ' active' : ''}`}>
+            {/* Sin estado activo: en /comprar ya se marca «Quiero comprar», y en crema destacaría tanto como él */}
+            <Link to="/comprar#asistente" className="nav-btn nav-btn--ai">
               <Icon name="spark" size={18} /> Asistente IA
             </Link>
           </nav>

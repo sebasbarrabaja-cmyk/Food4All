@@ -20,7 +20,7 @@ const ASANA_HITO2 = [
 const read = (f) => readFileSync(REQ + f, 'utf8');
 
 // Orden natural de IDs: RF-02.1 < RF-10.1 < RNF-01.1.
-const key = (id) => [id.startsWith('RNF') ? 1 : 0, ...id.match(/\d+/g).map(Number)];
+const key = (id) => [id.startsWith('RNF') ? 1 : 0, ...(id.match(/\d+/g) ?? []).map(Number)];
 function byId(a, b) {
   const ka = key(a), kb = key(b);
   for (let i = 0; i < Math.max(ka.length, kb.length); i++) if ((ka[i] ?? 0) !== (kb[i] ?? 0)) return (ka[i] ?? 0) - (kb[i] ?? 0);
@@ -34,7 +34,7 @@ const plain = (s) => s.replace(/\*\*|`/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, 
 function rows(md, prefix) {
   return md.split('\n')
     .filter((l) => l.startsWith('| ') && plain(l.slice(2)).startsWith(prefix))
-    .map((l) => l.slice(1, -1).split(' | ').map((c) => plain(c)));
+    .map((l) => l.replace(/^\||\|$/g, '').split('|').map((c) => plain(c)));
 }
 
 // Texto de un apartado «## …» o «### …» hasta el siguiente del mismo nivel o superior.

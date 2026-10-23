@@ -286,4 +286,3 @@ a.network:hover { transform: translateY(-4px); box-shadow: 0 12px 26px color-mix
 .site-nav .nav-btn--ai { gap: 8px; border-color: var(--saffron); }
 .site-nav .nav-btn--ai svg { color: var(--saffron); }
 .site-nav .nav-btn--ai:hover { background: color-mix(in srgb, var(--saffron) 18%, transparent); }
-.site-nav .nav-btn--ai.active svg { color: var(--forest); }

@@ -89,3 +89,19 @@ a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la ca
 sube el git para juan antonio
 
 **Resultado:** se subió el cambio a `docs/hito2-entrega` antes de que terminara `/code-review`. Los arreglos de la revisión irán en un commit aparte.
+
+### 21:03 · Revisión de código (`/code-review`)
+
+**Resultado:** se corrigieron los fallos reales:
+- `stats.json` estaba en `.gitignore` y en un clon nuevo la página daba error. Se deja de ignorar y se sube.
+- Las celdas vacías de las tablas desplazaban los votos de las RST.
+- `#hito2` faltaba en los destinos del buscador con IA.
+- «Asistente IA» y «Quiero comprar» se marcaban activos a la vez. La pestaña ya no se marca, para no destacar más que comprar.
+- La selección inicial de la trazabilidad dependía de un ID escrito a mano.
+- La ordenación fallaba con un ID sin números.
+- El texto de `/comprar` no coincidía con el paso 1.
+- El icono de la barra lateral estaba repetido.
+
+Lo que no se cambió, y por qué:
+- La cabecera con 4 botones en pantallas estrechas: el móvil no tiene prioridad (`DISENO.md`).
+- La lectura de unos 0,9 MB por petición: el panel solo lo usa el equipo y responde en unos 24 ms.
