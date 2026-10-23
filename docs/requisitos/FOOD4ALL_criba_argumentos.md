@@ -23,11 +23,12 @@ Propuesta completa en `FOOD4ALL_correcciones_hito2.md`, apartado 4. Cifras de `b
 | RNF-11 Sostenibilidad | 3 | 0 | 3 |
 | **Total** | **564** | **405** (38 simulados) | **155** + 4 excluidos |
 
-Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). Son solo las de Sebastián: faltan las del resto del equipo.
-- **Precio y producto:** E4 compraría directamente al productor si percibe «mayor calidad, un precio favorable y una cantidad adecuada». A E2 le atraen los productos «locales, menos procesados y más baratos».
-- **IA:** E3 y E4, «poca o ninguna» confianza; E2 la pondría a prueba; E1 la revisaría. N-IA-01, «No confirmada».
+Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). E1–E4 son apuntes de Sebastián, sin citas literales; E5–E6 son de Juan Antonio, literales. Las de Miguel se descartaron (C-22).
+- **Precio y producto:** E4 compraría directamente al productor si percibe mayor calidad, un precio favorable y una cantidad adecuada. A E2 le atraen los productos locales, menos procesados y más baratos. E5 busca «de lo más barato del mercado» y a E6 le frenan los gastos de envío de Glovo. E6 no mira el origen: «solo miro que me vaya a gustar».
+- **IA:** E3 y E4, poca o ninguna confianza; E2 la pondría a prueba; E1 la revisaría. N-IA-01, «No confirmada».
 - **Rechazo:** E3 dice que no usaría FOOD4ALL.
-- **Candidatas fuera del catálogo:** descuentos u ofertas (E1, E3, E4); interfaz sencilla y rápida (E3, E4); E2 echa de menos opiniones en una empresa nueva.
+- **Confianza:** E2 echa de menos opiniones en una empresa nueva; E5 y E6 miran reseñas o investigan si una app es fiable antes de usarla.
+- **Candidatas fuera del catálogo:** descuentos u ofertas (E1, E3, E4; RF-06.6-04 sigue en V2, C-24); interfaz sencilla y rápida (E3, E4).
 
 **Postura del Product Owner** (Sebastián, 23/10/2026; registro de cambios C-13). Lo que el marketplace tiene que tener sí o sí, en orden: **1) el carrito simplificado** (varios vendedores, un pedido, un pago) y **2) los productos** (precio claro, local y poco procesado). Van ligados: sin carrito sencillo no se compra, y sin buen producto el carrito no sirve. **3) El asistente de IA** es una parte importante del proyecto, pero va detrás de los dos primeros. Pendiente del visto bueno del equipo.
 
@@ -48,7 +49,7 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 
 1. **Problema que corrige.** Antes, la prioridad y la entrega se decidían por separado y se contradecían en 58 requisitos. Un «Must · V2» decía a la vez «imprescindible» y «puede esperar» (35 casos, por ejemplo RF-02.6-03, el IBAN del vendedor). Un «Could · MVP» metía trabajo opcional en lo primero que se construye y le quitaba tiempo al núcleo (por ejemplo RF-04.8-03, tarjetas grises de carga). Con la regla, cada etiqueta significa lo mismo en todas las fichas, que es lo que pidió la valoración. Además, **RF-15.2-04** (la cinta animada de la portada) baja a Could · V2: es diseño visual y no responde al problema. Se aplica al aprobar la criba.
 2. **Cuándo es Must.** Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio. Es decir, si cumple al menos una de estas condiciones: (a) es necesario para el recorrido central, que son varios vendedores, un pedido, un pago de prueba y una entrega; (b) es necesario para que se vea el valor del producto, con precio final claro y origen; (c) lo exige la ley o la seguridad, como los alérgenos, el registro sanitario o los datos personales. Lo demás es Should o menos. Es la definición de la Clase 8 aplicada a nuestro problema.
-3. **Si una entrevista lo contradice.** Una sola contradicción no cambia el requisito: se registra como riesgo y se busca más evidencia (así se trató el «no la usaría» de E3). Si 3 o más entrevistas independientes lo contradicen, que es la misma regla que usamos para confirmar, se reabre con un registro de cambio: origen, impacto, alternativa, decisión y versión. Decide el Product Owner con el equipo (Clase 11). Ejemplo: C-13, que cambió el lugar de la IA.
+3. **Si una entrevista lo contradice.** Una sola contradicción no cambia el requisito: se registra como riesgo y se busca más evidencia (así se trató el rechazo de E3). Si 3 o más entrevistas independientes lo contradicen, que es la misma regla que usamos para confirmar, se reabre con un registro de cambio: origen, impacto, alternativa, decisión y versión. Decide el Product Owner con el equipo (Clase 11). Ejemplo: C-13, que cambió el lugar de la IA.
 
 ## B · El núcleo de compra dentro del MVP (RF-05, RF-06 y RF-07) · Sebastián
 
@@ -83,7 +84,7 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 - «"El sistema tendrá IA" no es una necesidad ni un requisito verificable» (Clase 6).
 
 **Preguntas:**
-1. Con E1–E4 (N-IA-01 «No confirmada»), ¿por qué la IA debería seguir en la demo, aunque sea simulada, o por qué debería salir del MVP?
+1. Con E1–E4 (N-IA-01 «No confirmada»; a E5 y E6 no se les preguntó por la IA), ¿por qué la IA debería seguir en la demo, aunque sea simulada, o por qué debería salir del MVP?
 2. ¿Cuál es la alternativa sin IA para que el estudiante haga su compra semanal?
 3. Si lo atractivo es el precio y el producto natural (postura del PO, C-13: carrito y producto primero, IA en tercer lugar), ¿qué requisitos de RF-12 bajarías de prioridad y cuáles conservarías?
 4. ¿Por qué el pago y el reembolso son simulados, y qué no podemos afirmar en la demo por eso?

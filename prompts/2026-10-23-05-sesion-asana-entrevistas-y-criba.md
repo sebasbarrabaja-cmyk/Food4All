@@ -134,3 +134,9 @@ Escribe que ahora estamos en llamada juan antonio y yo
 Coherencia por encima de cualquier cosa
 
 **Resultado:** se comprobó que las justificaciones nuevas (RF-08.5-01 y RF-06.6-04) van en el campo que usa el catálogo y salen en el Excel. El siguiente bloque es que E1–E6 digan lo mismo en todos los documentos.
+
+### 20:35
+
+a
+
+**Resultado:** E1–E6 dicen lo mismo en todos los documentos (C-25). Se corrigieron los datos de E1–E4 y la tabla 5.1 de necesidades se rehízo con E1–E6. N-INC-01 pasa a Indicio y N-CAD-01 se debilita; ninguna necesidad llega a Confirmada. Se actualizaron las fuentes F-05 a F-08 y la evidencia de D-03, y se quitaron las comillas de citas que no son literales (E1–E4 son apuntes). Se regeneró con `npm run todo`.

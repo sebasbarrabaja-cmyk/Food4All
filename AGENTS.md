@@ -68,7 +68,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Regla de prioridad:** Must solo en el MVP; el MVP solo lleva Must o Should; V2 lleva Should o Could; V3 solo Could. Un requisito es Must si, al quitarlo, la demo deja de responder al problema o se incumple algo obligatorio.
 - **Una entrevista en contra no cambia un requisito:** se registra como riesgo. Si 3 o más lo contradicen, se reabre con un registro de cambio.
 - **Pago y reembolso son de prueba:** nunca hay dinero real.
-- **Entrevistas E1–E4** (Sebastián): 5 necesidades en «Indicio». Ninguna está confirmada todavía.
+- **Entrevistas E1–E6** (E1–E4 de Sebastián y E5–E6 de Juan Antonio; las de Miguel, descartadas en C-22): 6 necesidades en «Indicio» y ninguna confirmada (C-25). No hay entrevistas a vendedores.
 
 ## 6. Trabajo de cada uno (hoy)
 
@@ -91,12 +91,12 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Esta rama (`docs/hito2-entrega`)** tiene todo el Hito 2, con las mejoras de la landing de WSL ya unidas (ver apartado 8). Falta la página del Hito 2 en la landing que pide el enunciado (`FOOD4ALL_hito2_enunciado.md`).
 - **Pendiente de Sebastián:** comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y los recorridos por la competencia con capturas (en curso).
 - **Logística:** retrasos del reparto y del vendedor, cubiertos el 23/10 (C-15: RF-08.2-05, RF-08.2-06 y RF-08.4-06). Queda la compensación por retraso. Las mejoras de los recorridos por la competencia (M-01 a M-08) se revisan una a una: `docs/competencia/FOOD4ALL_recorridos_competencia.md`.
-- **Abierto en el Hito 2:** aprobar la criba, validar las RST, las entrevistas del resto del equipo, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
+- **Abierto en el Hito 2:** aprobar la criba, validar las RST, entrevistas a vendedores, las revisiones cruzadas, los responsables en Asana y la regla de cancelación (comité de cambio de la Clase 11). La lista está en `FOOD4ALL_linea_base_h2.md`, apartado 5.
 
 ## 8. Traspaso (23/10, 17:40): lo que queda para terminar sin Sebastián
 
 - **Rama:** todo está en `docs/hito2-entrega`, ya con las mejoras de la landing de WSL unidas y probadas: compila, las rutas responden, el login bloquea tras 5 fallos y el panel lista los 19 prompts. Los `node_modules` que vinieron de Windows no sirven en Linux: reinstalad con `npm run install:all`.
 - **Criba (actualizado a las 20:34):** bloques A, B y D hechos por Sebastián. D-03 (el hub) se decide en el Hito 3 con el profesor. RF-08.5-01 (retirada de un lote) sube a Must · MVP (C-23). Quedan el C (Sebastián, en lugar de Miguel) y el E y el F (Juan Antonio).
 - **Mejoras de los recorridos por la competencia:** M-01 a M-08 revisadas una a una (C-14 a C-21 en la línea base). M-06 (punto de recogida) y pagar como invitado esperan a nuevas entrevistas y a un debate del equipo.
-- **Asana (pendiente):** subir las entrevistas E1–E4 de Sebastián como subtareas de «Historias de usuario», comprobar que estén las vuestras, asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
+- **Asana (pendiente, lo sube Sebastián al final, cuando todo esté verificado):** subir E1–E4 (Sebastián) y E5–E6 (Juan Antonio) como subtareas de «Historias de usuario», asignar responsables y reducir el número de subtareas a las imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
 - **Antes de entregar:** RST validadas; criba aprobada; documento adjunto al Hito 2 y «Estado entrega» cambiado (Sebastián, en lugar de Miguel); explicación al profesor de cómo ver los prompts (`/admin#prompts`). La contraseña la da Sebastián en persona.

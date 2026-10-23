@@ -2651,7 +2651,7 @@ Configuración operativa que hoy son hipótesis o decisiones pendientes: compra 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CAT-01 Confiar en el origen, la calidad y la trazabilidad de lo que compra
 - Historias: US-09
-- Fuentes de las necesidades: F-03, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S01, S04, S05, S06, S07
 
 **3. Actores y roles**
 
@@ -2954,7 +2954,7 @@ Portada que en un vistazo dice qué es FOOD4ALL, para quién y qué hacer: lema,
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3063,7 +3063,7 @@ Sección «Cómo funciona» que explica el recorrido del cliente y el logístico
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S06, S07, S09
 
 **3. Actores y roles**
 
@@ -3167,7 +3167,7 @@ Sección «Quiénes somos» y comparativa honesta con el supermercado online y e
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-14
-- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S04, S06
+- Fuentes de las necesidades: F-01, F-02, F-03, F-04, F-07, F-10 · Fuentes del benchmark: S04, S06
 
 **3. Actores y roles**
 
@@ -3269,7 +3269,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-14
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S09
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S09
 
 **3. Actores y roles**
 
@@ -6908,7 +6908,7 @@ Vista del carrito agrupada por vendedor con un único total. El cliente ve de qu
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07, F-10 · Fuentes del benchmark: F-04, S01, S04, S05, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -7118,7 +7118,7 @@ Un solo coste de envío por pedido, se compre a uno o a cinco vendedores, y una 
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-04
-- Fuentes de las necesidades: F-03, F-04, F-05, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-10 · Fuentes del benchmark: S01, S05, S07
 
 **3. Actores y roles**
 
@@ -7618,7 +7618,7 @@ Información de entrega en el carrito: la próxima franja y por qué hay un solo
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-04
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04, S06, S08, S09
 
 **3. Actores y roles**
 
@@ -7852,7 +7852,7 @@ Paso «Entrega»: dirección, día y franja de entrega con su hora de cierre. La
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-05
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -9557,7 +9557,7 @@ Recepción en el hub y verificación línea a línea de cada subpedido antes de 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-05, F-06, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-06, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9672,7 +9672,7 @@ Empaquetado consolidado: todos los subpedidos verificados de un pedido en una so
 - Necesidad: N-CAT-02 Conocer ingredientes y alérgenos antes de pagar
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-05, F-12 · Fuentes del benchmark: S06, S07, S08, S09
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S06, S07, S08, S09
 
 **3. Actores y roles**
 
@@ -9780,7 +9780,7 @@ Reparto de los pedidos empaquetados por franja y registro de la entrega; si no h
 - Necesidad: N-CAT-03 Recibir información veraz: precio final, costes, condiciones y avisos, sin sorpresas
 - Necesidad: N-PLA-02 Controlar cuánto gasta en comida y ajustarse a un presupuesto
 - Historias: US-12
-- Fuentes de las necesidades: F-01, F-03, F-04, F-05, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
+- Fuentes de las necesidades: F-01, F-03, F-04, F-07 · Fuentes del benchmark: F-04, S02, S04, S06, S07, S09
 
 **3. Actores y roles**
 
@@ -10056,7 +10056,7 @@ Regla de entrega del frío: los refrigerados nunca se dejan sin entregar en mano
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-HUB-02 Mantener la cadena de frío y separar frío y seco
 - Historias: US-12
-- Fuentes de las necesidades: F-03, F-04, F-05, F-12 · Fuentes del benchmark: S02, S06, S07
+- Fuentes de las necesidades: F-03, F-04, F-07, F-12 · Fuentes del benchmark: S02, S06, S07
 
 **3. Actores y roles**
 
@@ -10186,7 +10186,7 @@ Estados del pedido que ve el cliente y cómo se calculan a partir de los subpedi
 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-04, F-05 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -10283,7 +10283,7 @@ Pantalla de seguimiento con la línea de seis pasos y el detalle por vendedor, i
 
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-04, F-05 · Fuentes del benchmark: S01, S02, S04
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02, S04
 
 **3. Actores y roles**
 
@@ -10383,7 +10383,7 @@ Correos al cliente en los momentos clave y ante cualquier falta.
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Historias: US-06
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -10483,7 +10483,7 @@ Lista «Mis pedidos» con los pedidos del cliente del más reciente al más anti
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Necesidad: N-PLA-01 Saber qué comprar y qué comer los próximos días, planificando en vez de improvisar
 - Historias: US-06
-- Fuentes de las necesidades: F-01, F-02, F-04, F-05, F-07 · Fuentes del benchmark: S01, S04
+- Fuentes de las necesidades: F-01, F-02, F-04, F-07 · Fuentes del benchmark: S01, S04
 
 **3. Actores y roles**
 
@@ -10575,7 +10575,7 @@ Plantilla común de correos: marca, número, estado y botón al pedido, sin dato
 - Necesidad: N-CUE-01 Que sus datos personales y de salud estén protegidos y solo se usen para lo que aceptó
 - Necesidad: N-ENT-01 Recibir todo en una sola entrega, en una franja conocida
 - Historias: US-06
-- Fuentes de las necesidades: F-03, F-04, F-05 · Fuentes del benchmark: S09
+- Fuentes de las necesidades: F-03, F-04, F-07 · Fuentes del benchmark: S09
 
 **3. Actores y roles**
 
@@ -10703,7 +10703,7 @@ El cliente abre una incidencia desde un pedido entregado: qué producto, qué pa
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S07
 
 **3. Actores y roles**
 
@@ -10815,7 +10815,7 @@ Resolución humana de la incidencia en menos de 24 h laborables, con reembolso d
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S02, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02, S07
 
 **3. Actores y roles**
 
@@ -10922,7 +10922,7 @@ El cliente ve el estado de su incidencia en el pedido; un rechazo siempre lleva 
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S02
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S02
 
 **3. Actores y roles**
 
@@ -11016,7 +11016,7 @@ Diseño del formulario de incidencia en 3 pasos y confirmación con la hora lím
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S06, S07
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S06, S07
 
 **3. Actores y roles**
 
@@ -11115,7 +11115,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-07
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: —
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: —
 
 **3. Actores y roles**
 
@@ -11535,7 +11535,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-17
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01, S02
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01, S02
 
 **3. Actores y roles**
 
@@ -11598,7 +11598,7 @@ Fuera del MVP (V2): esta ficha se completa cuando el requisito entre en un sprin
 
 - Necesidad: N-INC-01 Tener una solución rápida, atendida por personas, si algo llega mal
 - Historias: US-17
-- Fuentes de las necesidades: F-04 · Fuentes del benchmark: S01
+- Fuentes de las necesidades: F-04, F-07 · Fuentes del benchmark: S01
 
 **3. Actores y roles**
 
