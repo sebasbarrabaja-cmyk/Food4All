@@ -227,6 +227,12 @@ entonces de la revision de persona la subo asi el comentario que te di o que cam
 
 **Resultado:** se le dio su comentario completo con el único cambio: el final «RAMA DE TRABAJO» sustituido por «CAMBIO».
 
+### Hora no registrada (después de las 21:42)
+
+y donde la subo
+
+**Resultado:** se le indicó el camino en Asana: [Food4All] Hito 2 → [B6] Matriz de trazabilidad, línea base y entrega → «Revisión cruzada: comparativo y personas» → comentarios.
+
 ---
 
 ## Revisión crítica del equipo
