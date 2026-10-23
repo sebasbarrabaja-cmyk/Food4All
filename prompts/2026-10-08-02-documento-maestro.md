@@ -2439,3 +2439,25 @@ Cada nueva decisión debe incorporarse indicando:
 - qué impacto tiene;
 - qué hipótesis sustituye;
 - qué partes siguen abiertas.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a los dos prompts base (08-01 y 08-02). Las opciones las propuso el asistente; la elección es de Sebastián. Juan Antonio y Miguel no han revisado este prompt.*
+
+- **Revisado por:** Sebastián (el prompt es del equipo)
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Que fueran la «fuente de verdad»: todo lo de la landing y de los requisitos debía salir de ahí y no inventarse.
+  - Las reglas de honestidad del prompt de la landing: datos de ejemplo marcados como tales, sin prueba social falsa y distinguiendo lo decidido de las hipótesis.
+  - La idea del maestro (un carrito, varios vendedores y una sola entrega), que sigue siendo el núcleo del proyecto.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - La IA como centro del producto: las entrevistas no la respaldaron y quedó en tercer lugar (C-13).
+  - «Móvil primero»: decidimos empezar por ordenador.
+  - Prometer ahorro: no se afirma sin una comparación de precios (H-03 y RST-03), aunque el lema siga diciendo «Ahorra».
+  - Los datos del maestro (mercado y competencia) se contrastaron después con fuentes y con los recorridos por la competencia.
+- **Por qué estaba justificado usar IA aquí:**
+  - Pasar de una idea a un prompt largo y ordenado ayudó a que el equipo se pusiera de acuerdo en qué era FOOD4ALL.
+  - Un prompt detallado hacía que lo que generara la IA después fuera coherente.
+  - El contenido (la idea, el usuario y las decisiones) era nuestro; la IA lo ordenaba y lo redactaba.

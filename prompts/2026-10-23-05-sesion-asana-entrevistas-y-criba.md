@@ -283,3 +283,15 @@ Pues hazme un sistemas de preguntas para los promts. De miguel olvidate por hoy
 1abc 2abcd 3abc · 1acbd 2abd 3abc · 1abcd 2abc 3ac · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abc 2abc 3abc · 1abc 2abc 3abc · 1abc 2abcd 3abc · 1abcd 2abcd 3abc · 1abcd 2abcd 3abc
 
 **Resultado:** diez respuestas, una por bloque. Los 19 prompts de Sebastián terminan con «## Revisión crítica del equipo», hecha con sus elecciones y marcada como «Respuestas de Sebastián a preguntas guiadas del asistente». Quedan el de Juan Antonio y los dos «del Equipo».
+
+### 21:50
+
+sí, hazme el bloque
+
+**Resultado:** un último bloque de preguntas para los dos prompts base del equipo (`2026-10-08-01` y `-02`).
+
+### 21:51
+
+1abc 2abcd 3abc
+
+**Resultado:** los dos prompts base terminan con su revisión crítica, hecha por Sebastián, con la nota de que Juan Antonio y Miguel no la han revisado. Solo queda la de Juan Antonio.
