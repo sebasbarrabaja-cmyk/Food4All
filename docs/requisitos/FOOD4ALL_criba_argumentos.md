@@ -121,7 +121,19 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 3. ¿Qué riesgo se acepta al dejarlos fuera, y a quién afecta: al comprador o al vendedor?
 4. ¿Por qué el panel de prompts y los hitos de Asana no son requisitos del marketplace?
 
-**Respuesta (Juan Antonio):** _pendiente_
+**Decisión de Juan Antonio (redactada con ayuda del asistente):**
+
+1. **Por qué las valoraciones pueden esperar.** Es cierto que E2, E5 y E6 miran opiniones o fiabilidad antes de usar una app nueva, y no lo descartamos: queda registrado como el riesgo más claro de este bloque. Pero RF-11 no resuelve eso en la demo. Las valoraciones necesitan compradores reales que reciban pedidos reales, y el MVP es una demo con pago de prueba (RST-01): no habría ninguna valoración verdadera que enseñar. La media solo se muestra a partir de 3 valoraciones (RF-11.2-01), y está prohibido mostrar valoraciones inventadas mientras el proyecto sea conceptual (RF-11.2-04). *Inferencia:* además, lo que hacen E5 y E6 es mirar reseñas **de la app** en la tienda de aplicaciones o en Google, fuera de la plataforma; las valoraciones de productos y vendedores de RF-11 son otra cosa. En el MVP la confianza se apoya en lo que sí entra: el perfil del vendedor con «Cómo producimos» (M-05), el registro sanitario aprobado (RST-05) y las incidencias con reembolso (RF-10). **Para que entraran:** que haya pedidos reales en un piloto y que más entrevistas, de personas que no se conozcan entre sí, pidan valorar o ver valoraciones de los vendedores. Ojo: E5 y E6 son compañeras de piso y cercanas a mí, así que no cuentan como tres fuentes independientes.
+2. **Por qué el valor se demuestra sin los otros cuatro.** El valor es comprar a varios vendedores en un carrito, pagar una vez y recibirlo todo en una entrega (bloques B y D). Ninguno de los cuatro procesos forma parte de ese recorrido:
+   - **Suscripción (RF-14, Could):** es una comodidad para quien ya compra cada semana. Primero hay que ver que compran una vez. E5 y E6 organizan la semana según lo que traen del pueblo, así que una suscripción fija tampoco encaja todavía con lo que contaron.
+   - **Liquidación del vendedor (RF-17):** con pago de prueba no hay dinero real que repartir, y la comisión (D-02) no está decidida.
+   - **Comunicación con vendedores (RF-18):** en la demo cada vendedor ya ve su subpedido (RF-07.1-02) y se le avisa si no confirma (RF-07.3-01). Lo demás es mensajería del día a día.
+   - **Soporte y contacto (RF-19):** el problema más probable después de comprar, que algo llegue mal, ya está cubierto por las incidencias del MVP (RF-10), con reembolso de prueba y respuesta de una persona en menos de 24 h laborables. Es lo que E5 contó de su compra en Amazon.
+3. **Riesgo que aceptamos y a quién afecta.**
+   - **Comprador:** puede desconfiar de una plataforma nueva sin opiniones (E2, E5, E6) y no tiene un canal de contacto general, solo el de incidencias.
+   - **Vendedor:** no ve sus condiciones ni sus pagos en la plataforma y no tiene mensajería con el equipo. Es el riesgo más grande, porque no hemos entrevistado a ningún vendedor (las de Miguel se descartaron, C-22) y sus necesidades siguen en Hipótesis.
+   - Se revisa cuando haya entrevistas a vendedores o un piloto con pedidos reales.
+4. **Por qué el panel de prompts y los hitos de Asana son Won't.** Son herramientas del equipo para la asignatura (lo que pide el profesor en la landing y en Asana), no algo que use un comprador o un vendedor. No salen de ninguna necesidad del catálogo. Ser Won't en el marketplace no significa que no se hagan: el panel de prompts ya existe en la landing (`/admin#prompts`). Es el «fuera de este alcance» de la Clase 8.
 
 ## F · Calidad: usabilidad y accesibilidad dentro, sostenibilidad fuera · Juan Antonio
 
@@ -134,7 +146,15 @@ Lo que dicen las entrevistas E1–E4 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 2. N-CAD-01 (no tirar comida) es Indicio. ¿Por qué entonces la sostenibilidad puede esperar?
 3. Elige un umbral de RNF-04 o RNF-05: ¿de dónde sale y cómo lo comprobaríais?
 
-**Respuesta (Juan Antonio):** _pendiente_
+**Decisión de Juan Antonio (redactada con ayuda del asistente):**
+
+1. **Por qué no se aplazan.** La usabilidad y la accesibilidad no son una función que se añade después: son la forma en que se construye cada pantalla del carrito, el checkout y el seguimiento. Aplazarlas sería rehacer el frontend en la V2. Además, lo que se pide en las entrevistas es justo eso: E3 y E4, una interfaz sencilla y rápida, y E6 valora que Glovo sea «rápido y fácil». Si comprar a varios vendedores es más difícil que ir al supermercado de al lado (E5 y E6 eligen por cercanía), el carrito simplificado de C-13 no sirve. La accesibilidad, además, es una referencia técnica decidida (WCAG 2.2 AA) y puede ser obligación legal (Directiva 2019/882, a confirmar).
+2. **Por qué la sostenibilidad puede esperar aunque N-CAD-01 sea Indicio.** N-CAD-01 no se queda sin cubrir: 3 de sus 8 requisitos están en el MVP como funciones: el vendedor tiene que indicar el tipo de fecha y la vida útil y la conservación de cada producto (RF-03), y el asistente prioriza productos con vida útil adecuada a los días pedidos. Lo que se aplaza es RNF-11: el embalaje reutilizable, medir los kg de desperdicio del hub cada semana y priorizar la donación de excedentes. Eso solo se puede medir con un hub funcionando de verdad, y el hub no está decidido (D-03, Hito 3). Si la Ley 1/2025 obliga a la plataforma a medir depende de su rol jurídico (D-01, pendiente). En la demo no habría ningún dato real que registrar. Y ni E5 ni E6 hablaron de tirar comida.
+3. **Umbral elegido: RNF-04, «≥ 4 de 5 usuarios completan la primera compra sin ayuda en ≤ 5 minutos».**
+   - **De dónde sale:** es una **hipótesis pedagógica**, no una ley ni un dato de una fuente. Cinco usuarios es lo habitual en una prueba de usabilidad pequeña, y 5 minutos es lo que creemos razonable para una compra de dos vendedores.
+   - **Cómo se comprueba (Sprint 5):** prueba moderada con 5 estudiantes que no sean del equipo ni hayan visto el prototipo. Tarea: «compra un producto a dos vendedores distintos y paga». Se cronometra sin ayudar y se pasa el cuestionario SUS al terminar.
+   - **Qué haría que lo revisáramos:** si menos de 4 terminan, o tardan más de 5 minutos, se revisa el diseño del carrito y del checkout antes de tocar el umbral. Si todos terminan muy por debajo, se puede endurecer.
+   - Para RNF-05 ya hay un caso hecho: el contraste mínimo 4,5:1 de la landing se corrigió en la rama de WSL (commit «fix: contraste AA y colores en tokens»); se comprueba con axe y con un recorrido solo con teclado.
 
 ## Restricciones (RST) candidatas · los tres
 
@@ -142,15 +162,17 @@ La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualida
 
 | ID | Restricción | De dónde sale | Sebastián | Juan Antonio | Miguel |
 | --- | --- | --- | --- | --- | --- |
-| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | | | |
-| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | | | |
-| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | | | |
-| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | | | |
-| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | | | |
-| RST-06 | Ni el prototipo ni el registro de entrevistas usan datos personales reales | N-CUE-01 (RGPD); Clase 11 | | | |
-| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5 | | | |
-| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | | | |
-| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | | | |
+| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | | Sí | |
+| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | | Sí | |
+| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | | Sí | |
+| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | | Sí | |
+| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | | Sí | |
+| RST-06 | Ni el prototipo ni el registro de entrevistas usan datos personales reales | N-CUE-01 (RGPD); Clase 11 | | Sí | |
+| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5 | | Sí | |
+| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | | Sí | |
+| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | | Sí | |
+
+*Columna de Juan Antonio rellenada con ayuda del asistente (23/10/2026); todas salen de decisiones ya tomadas o de obligaciones legales del catálogo.*
 
 Se descartaron RST-08 (valores provisionales de D-01 a D-04), porque es un supuesto del piloto y ya figura como C-09 en la línea base, y RST-09 (análisis legal orientativo), porque es un aviso sobre el documento y no un límite del sistema. Los números no se reutilizan. La regla de cancelación (solo antes de la hora de cierre) se decide en el comité de cambio, no aquí.
 
