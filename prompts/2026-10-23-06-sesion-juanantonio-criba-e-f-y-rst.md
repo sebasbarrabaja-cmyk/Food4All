@@ -149,3 +149,9 @@ Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte l
 (pegó el error de PowerShell al ejecutar `npm run todo` en la carpeta `Food4All` de fuera del repositorio: «la ejecución de scripts está deshabilitada en este sistema»)
 
 **Resultado:** el asistente le explicó que no lo ejecute: según la regla 7 de `AGENTS.md`, `npm run todo` lo ejecuta solo Sebastián para que no haya choques. Además estaba en la carpeta equivocada (fuera del repositorio y de `docs/requisitos/benchmark/`). No se cambió nada.
+
+### 22:12
+
+en que parte de asana subo el comentario
+
+**Resultado:** se le indicó el camino en Asana: tarea [Food4All] Hito 2 – Requisitos y Criterios de Aceptación · Marketplace Local → subtarea [B2] Personas y mapas de empatía → caja de comentarios.
