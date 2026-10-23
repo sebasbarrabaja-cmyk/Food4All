@@ -104,3 +104,15 @@ Antes de seguri con el bloque 2 espero a christina, cuando este agente lo tenga,
 Hecho lo del git
 
 **Resultado:** push de `docs/hito2-entrega` a GitHub por SSH (rama nueva; `main` sin tocar).
+
+### 16:20 (aprox.)
+
+Christina ya ha terminado, sigue con sus resultados
+
+**Resultado:** se leyó `RESULTADOS.md` (8 competidores; los hallazgos #1, #2, #4, #6, #7 y #9 confirmados, y #3 y #8 en parte). Se escribió `docs/competencia/FOOD4ALL_recorridos_competencia.md` para el repositorio y para Asana: objetivo, pasos, información recogida, comparación con FOOD4ALL, problemas reales y cómo los resuelven, y 8 mejoras propuestas (M-01 a M-08), sin aplicar ninguna. Se copiaron los resultados, el registro y los textos de las condiciones a `docs/competencia/recorridos/`. Las capturas ocupan 48 MB en PNG y 18,3 MB en JPEG (calidad 80, se lee bien); se pregunta cuál subir.
+
+### 16:25 (aprox.)
+
+1a 2a 3 De lo que recomienda en vez de hacerla del tiron implemtetalo uno por uno y para enteder los puntos y para comprobarlos y contrastarlo con lo que tenemos
+
+**Resultado:** las 98 capturas se pasaron a JPEG en `docs/competencia/recorridos/` (18 MB) y `registro.tsv` apunta a los `.jpg`. Para registrar los prompts de Christina se pidió el texto que le envió Sebastián. Las mejoras se revisan una a una: qué dicen, qué hay ya en los requisitos y qué cambia; cada una se aplica solo con el ok de Sebastián.
