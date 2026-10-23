@@ -157,3 +157,12 @@ prepara lo de la revisión crítica de los prompts
 Quita el pendiente, Anotalo internamente como prioritario, pero que visiblemente no este. Haz el merge al manin y sigue con el cierre, ya le di el ok al B6
 
 **Resultado:** se deshace lo visible del cambio de las 21:33: la plantilla al final de los 22 prompts, el aviso de «Revisión pendiente» y el recuento del panel. Queda anotado como prioritario solo en `AGENTS.md`, que no se ve en la landing. Ningún prompt dice que esté revisado. Después se fusiona con `main` y se hace el cierre.
+
+**Resultado de la fusión con `main` y del cierre (21:36 a 21:39):**
+- `main` tenía una versión anterior del trabajo de la mañana (3f79be2), que chocaba en 10 archivos. Se quedó la versión de `docs/hito2-entrega` y se recuperó el único contenido que solo estaba en `main`: el prompt de las 14:33 en `2026-10-23-01`.
+- Se unieron los últimos registros de Juan Antonio. Sus horas 22:12 a 22:24 eran imposibles (su último commit es de las 21:35) y ahora dicen «Hora no registrada (entre las 21:25 y las 21:35)».
+- PR #1 abierto y fusionado en `main` (`bf43162`).
+- Cierre:
+  - `FOOD4ALL_contexto.md` y `FOOD4ALL_resumen.md`, en la carpeta recibida, están al día;
+  - la nota técnica de la wiki del proyecto está actualizada.
+- B6: Sebastián dio el ok en Asana.
