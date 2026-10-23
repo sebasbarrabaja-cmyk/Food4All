@@ -31,9 +31,18 @@ const slug = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50) || 'prompt';
 const oneLine = (s) => String(s ?? '').replace(/[\r\n]+/g, ' ').trim();
 
+// Día de España, no de UTC: entre las 00:00 y las 02:00 toISOString daría el día anterior.
+// Con formatToParts y no con un formato de idioma, que puede cambiar entre versiones de ICU.
+function hoyEnEspana() {
+  const parts = new Intl.DateTimeFormat('en', { timeZone: 'Europe/Madrid', year: 'numeric', month: '2-digit', day: '2-digit' })
+    .formatToParts(new Date());
+  const get = (type) => parts.find((p) => p.type === type).value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+
 export function add({ titulo, autor, herramienta, tipo, origen, texto }) {
   mkdirSync(DIR, { recursive: true });
-  const fecha = new Date().toISOString().slice(0, 10);
+  const fecha = hoyEnEspana();
   // AAAA-MM-DD-NN-titulo.md: NN es el siguiente número del día (01, 02…), para que se ordenen.
   const used = readdirSync(DIR)
     .map((f) => f.match(/^(\d{4}-\d{2}-\d{2})-(\d{2,})-/))
