@@ -9,6 +9,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Equipo:** Sebastián (backend y Product Owner), Juan Antonio (frontend), Miguel (IA y datos).
 - **En este repositorio:** una landing documental (`frontend/` y `backend/`, con `npm start` → `localhost:3001`), los requisitos del Hito 2 (`docs/requisitos/`) y el registro de prompts (`prompts/`).
 - **Ahora mismo:** el **Hito 2 (necesidades, requisitos y criterios de aceptación) se entrega el 23/10/2026 a las 23:59**. El Sprint 3 (análisis y diseño estructurado) empieza el 26/10.
+- **23/10, desde las 20:35:** Sebastián y Juan Antonio están en llamada terminando el Hito 2 juntos (criba, RST, entrevistas y Asana). Si eres el agente de Juan Antonio, coordina con lo que decidan en la llamada antes de tocar `FOOD4ALL_criba_argumentos.md`.
 
 ## 2. Reglas para el agente (obligatorias)
 

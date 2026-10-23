@@ -116,3 +116,9 @@ Actualiza el git para juan antonio. a
 Y voy a hacer la parte de Miguel yo
 
 **Resultado:** en `AGENTS.md` y en la criba, el bloque C, su parte de las RST y la entrega en Asana pasan a Sebastián. La revisión cruzada del núcleo de compra queda pendiente de reasignar, porque tiene que hacerla alguien distinto del autor.
+
+### 20:35
+
+Escribe que ahora estamos en llamada juan antonio y yo
+
+**Resultado:** se anotó en `AGENTS.md` («Ahora mismo») que Sebastián y Juan Antonio están en llamada terminando el Hito 2, para que el agente de Juan Antonio se coordine con lo que decidan.
