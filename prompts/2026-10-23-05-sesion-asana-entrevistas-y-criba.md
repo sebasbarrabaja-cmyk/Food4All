@@ -146,3 +146,9 @@ a
 a(Pero matices, quiero que salga como una pesataña arriba a la derecha en la cabezera de la web que ponga asistente ia, y que se vea bien, no remarcado pero casi)
 
 **Resultado:** bloque C aprobado y escrito en la criba (C-26). Por el plan de contraste de N-IA-01, RF-12.1-03 (texto libre) y RF-12.6-05 pasan a Could · V2. RF-12.1-01 pasa a ser una pestaña «Asistente IA» arriba a la derecha de la cabecera, visible pero sin destacar más que «Comprar». Se ajustaron las fichas del asistente y las cifras: MVP 403, con 36 simulados. La pestaña se hará en la landing.
+
+### 20:44
+
+1a(Fixea lo de los datos reales, que se vean digo, hay personas detras de estas entrevistas pero que no se sepa nada de ellos). Sobre el matiz 2, lo que falta no lo comprendo, aclaramelo y que impacto tiene
+
+**Resultado:** Sebastián vota las RST: 7 sí y 2 cambiar. La columna de Miguel queda como «Asume Sebastián» (C-27). RST-06 dice ahora que las entrevistas son a personas reales sin datos que las identifiquen, y E5 y E6 pierden carrera, curso, edad y localidad. RST-07 añade el motor de IA simulado. El asistente explicó qué significa el matiz 2 y qué impacto tiene.

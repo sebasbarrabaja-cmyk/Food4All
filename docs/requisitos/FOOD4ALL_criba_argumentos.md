@@ -144,19 +144,19 @@ Lo que dicen las entrevistas E1–E6 (`FOOD4ALL_necesidades.md`, apartado 5.1). 
 
 ## Restricciones (RST) candidatas · los tres
 
-La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualidad medible) y **RST** (límite de alcance, política, integración o contexto). La Clase 11 pide a Food4All «restricciones de operación declaradas» y separa la restricción (un límite externo) de la hipótesis (un supuesto sin fuente). Todas estas salen de algo ya decidido o de una obligación legal del catálogo. **Cada uno dice sí, no o cambiar**, y al validarlas se añaden a la línea base.
+La Clase 7 distingue tres tipos: **RF** (capacidad observable), **RNF** (cualidad medible) y **RST** (límite de alcance, política, integración o contexto). La Clase 11 pide a Food4All «restricciones de operación declaradas» y separa la restricción (un límite externo) de la hipótesis (un supuesto sin fuente). Todas estas salen de algo ya decidido o de una obligación legal del catálogo. **Cada uno dice sí, no o cambiar**, y al validarlas se añaden a la línea base. La columna de Miguel no vota por separado: sus tareas las asume Sebastián desde el 23/10 a las 20:31, así que validan dos personas.
 
 | ID | Restricción | De dónde sale | Sebastián | Juan Antonio | Miguel |
 | --- | --- | --- | --- | --- | --- |
-| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | | | |
-| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | | | |
-| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | | | |
-| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | | | |
-| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | | | |
-| RST-06 | Ni el prototipo ni el registro de entrevistas usan datos personales reales | N-CUE-01 (RGPD); Clase 11 | | | |
-| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5 | | | |
-| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | | | |
-| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | | | |
+| RST-01 | El prototipo no cobra dinero real: el pago es de prueba | Alcance «MVP simulado»; RF-06.4 | Sí | | Asume Sebastián |
+| RST-02 | El reembolso es un registro de prueba que resta del pago de prueba, nunca una transferencia | `FOOD4ALL_estados_pedido.md`, apartado 6 | Sí | | Asume Sebastián |
+| RST-03 | La web muestra el precio final y la cantidad de cada producto; no afirma que sea más barato que otra tienda sin una comparación con fecha, ciudad y código postal | H-03; Clase 5; C-13 | Sí | | Asume Sebastián |
+| RST-04 | El ámbito inicial es Málaga, Sevilla y Granada: no se aceptan pedidos de otras zonas | Decisión cerrada 15 del contexto | Sí (las zonas dentro de cada ciudad son D-03, Hito 3) | | Asume Sebastián |
+| RST-05 | Solo venden negocios con registro sanitario (o una exención justificada) aprobado por el administrador | N-VEN-07; US-02 y US-09 | Sí | | Asume Sebastián |
+| RST-06 | Ni el prototipo ni el registro de entrevistas permiten identificar a nadie: las entrevistas son a personas reales, pero sin nombre, contacto ni combinaciones de datos (carrera, curso, edad, localidad) que digan quién es | N-CUE-01 (RGPD); Clase 11 | Cambiar (texto nuevo; perfiles de E5 y E6 generalizados el 23/10) | | Asume Sebastián |
+| RST-07 | Sin integraciones reales: ni banco, ni proveedor logístico, ni inventario del comercio, ni motor de IA (la cesta del asistente la genera un simulador; RNF-10.1-02 permite cambiarlo por uno real) | «Fuera de alcance» de las fichas; valoración del 21/10; Clase 5; RNF-10.1-02; C-26 | Cambiar (añade el motor de IA) | | Asume Sebastián |
+| RST-10 | Los productos refrigerados se guardan y transportan en frío y separados de los secos | N-HUB-02 (obligación legal) | Sí | | Asume Sebastián |
+| RST-11 | Los ingredientes y alérgenos se muestran antes de pagar | N-CAT-02 (obligación legal) | Sí | | Asume Sebastián |
 
 Se descartaron RST-08 (valores provisionales de D-01 a D-04), porque es un supuesto del piloto y ya figura como C-09 en la línea base, y RST-09 (análisis legal orientativo), porque es un aviso sobre el documento y no un límite del sistema. Los números no se reutilizan. La regla de cancelación (solo antes de la hora de cierre) se decide en el comité de cambio, no aquí.
 
