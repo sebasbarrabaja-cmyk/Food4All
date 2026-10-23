@@ -149,6 +149,7 @@ Esta subido todo ya al git y dame el mensaje para el asana y dime en que parte l
 (pegó el error de PowerShell al ejecutar `npm run todo` en la carpeta `Food4All` de fuera del repositorio: «la ejecución de scripts está deshabilitada en este sistema»)
 
 **Resultado:** el asistente le explicó que no lo ejecute: según la regla 7 de `AGENTS.md`, `npm run todo` lo ejecuta solo Sebastián para que no haya choques. Además estaba en la carpeta equivocada (fuera del repositorio y de `docs/requisitos/benchmark/`). No se cambió nada.
+
 ### Hora no registrada (entre las 21:25 y las 21:35)
 
 en que parte de asana subo el comentario
@@ -166,3 +167,20 @@ se a actualizado el asana revisalo y dime si tengo que cambiar algo del comentar
 entonces debo cambiar algo del comentario
 
 **Resultado:** sí, dos cosas: añadir «Cambio» y sustituir «Rama de trabajo» por que los cambios ya están unidos en `docs/hito2-entrega`. Se le dio el comentario completo con esos dos ajustes para pegarlo él.
+### Hora no registrada (después de las 21:35)
+
+solo ese o tengo que implementar el anterior comentario
+
+**Resultado:** solo el último, que ya lleva todo el anterior más los dos ajustes. Si ya había pegado el anterior en [B2], que lo borre de ahí.
+
+### Hora no registrada (después de las 21:35)
+
+entoneces dame exactamente todo lo que tengo que poner en asana
+
+**Resultado:** se le dio el único texto que tiene listo para Asana (su comentario de revisión cruzada, con dónde pegarlo). La segunda revisión cruzada aún no está hecha, así que no hay comentario para ella.
+
+### Hora no registrada (después de las 21:35)
+
+queda algo más de mi parte ?
+
+**Resultado:** se trajo lo último de `docs/hito2-entrega` (criba aprobada, C-28 y C-29). Le quedan: pegar el comentario en Asana, la segunda revisión cruzada (núcleo de compra y estados del pedido) y escribir con sus palabras la «Revisión crítica del equipo» al final de este archivo (prioritario en `AGENTS.md`).
