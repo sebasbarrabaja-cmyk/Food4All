@@ -4,6 +4,7 @@ fecha: 2026-10-10
 autor: Sebastián
 herramienta: Claude Code
 tipo: Feedback
+tema: Landing (web y panel)
 origen: Mensaje a Claude Code tras la revisión del profesor
 ---
 

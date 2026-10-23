@@ -41,12 +41,12 @@
 .form-error { color: var(--danger); margin: 10px 0 0; }
 .prompt-list { display: grid; gap: 10px; margin: 16px 0 28px; }
 .prompt { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
-.prompt > summary { cursor: pointer; padding: 14px 16px; display: grid; gap: 4px; list-style: none; }
+.prompt > summary { cursor: pointer; padding: 14px 16px; display: block; list-style: none; }
 .prompt > summary::-webkit-details-marker { display: none; }
-.prompt > summary::before { content: '▸'; float: left; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
+.prompt > summary::before { content: '▸'; display: inline-block; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
 .prompt[open] > summary::before { transform: rotate(90deg); }
 .prompt__title { font: 600 1.05rem var(--font-display); color: var(--green); }
-.prompt__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.prompt__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 4px; }
 .prompt__body { padding: 0 16px 16px; }
 .prompt-text {
   margin: 0 0 12px; max-height: 360px; overflow: auto; padding: 14px; border-radius: 8px;
@@ -97,6 +97,9 @@
 .h2-change dd { margin: 0; }
 .h2-more > summary::before { content: '▸'; margin-right: 8px; color: var(--earth); transition: transform var(--dur) var(--ease); }
 .h2-more[open] > summary::before { transform: rotate(90deg); }
-.h2-changes .prompt > summary { display: block; }
-.h2-changes .prompt > summary::before { float: none; display: inline-block; }
-.h2-changes .prompt__meta { display: flex; margin-top: 4px; }
+
+/* Prompts agrupados por persona y, dentro, por tema */
+.prompt-group { margin-top: 28px; }
+.prompt-group > h3 { margin: 0 0 4px; }
+.prompt-group__tema { margin: 18px 0 0; font-size: 1rem; color: var(--text-soft); }
+.prompt-group .prompt-list { margin: 10px 0 0; }

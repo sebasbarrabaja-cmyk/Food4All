@@ -3,8 +3,10 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 'node:fs';
 
 const DIR = new URL('../prompts/', import.meta.url);
-const FIELDS = ['titulo', 'fecha', 'autor', 'herramienta', 'tipo', 'origen'];
+const FIELDS = ['titulo', 'fecha', 'autor', 'herramienta', 'tipo', 'tema', 'origen'];
 export const TYPES = ['Prompt base', 'Sesión de trabajo', 'Feedback', 'Versión pulida', 'Otro'];
+// Para qué sirvió cada prompt: el panel los agrupa por persona y, dentro, por tema.
+export const TEMAS = ['Contexto y método', 'Landing (web y panel)', 'Requisitos del Hito 2', 'Asana', 'Competencia', 'Organización del equipo', 'Otro'];
 
 function parse(file) {
   const raw = readFileSync(new URL(file, DIR), 'utf8').replace(/\r\n/g, '\n');
@@ -40,7 +42,7 @@ function hoyEnEspana() {
   return `${get('year')}-${get('month')}-${get('day')}`;
 }
 
-export function add({ titulo, autor, herramienta, tipo, origen, texto }) {
+export function add({ titulo, autor, herramienta, tipo, tema, origen, texto }) {
   mkdirSync(DIR, { recursive: true });
   const fecha = hoyEnEspana();
   // AAAA-MM-DD-NN-titulo.md: NN es el siguiente número del día (01, 02…), para que se ordenen.
@@ -51,7 +53,7 @@ export function add({ titulo, autor, herramienta, tipo, origen, texto }) {
   const nn = String(Math.max(0, ...used) + 1).padStart(2, '0');
   const file = `${fecha}-${nn}-${slug(titulo)}.md`;
 
-  const meta = { titulo, fecha, autor, herramienta, tipo, origen };
+  const meta = { titulo, fecha, autor, herramienta, tipo, tema, origen };
   const head = FIELDS.filter((k) => oneLine(meta[k])).map((k) => `${k}: ${oneLine(meta[k])}`).join('\n');
   writeFileSync(new URL(file, DIR), `---\n${head}\n---\n\n${texto.trim()}\n`);
   return parse(file);

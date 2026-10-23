@@ -149,7 +149,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 | **Barra lateral del admin** | `Admin.jsx`, `styles/admin.css` | Fija a la izquierda. Marca la sección visible y tiene arriba el **buscador**: al escribir lista las secciones que coinciden (palabras en `KEYWORDS`); con Intro, la IA responde en 1-3 frases y ofrece un botón "Ir a…" (`btn-ghost`, no naranja: no es una llamada a la acción). Sin clave de IA, solo lista secciones |
 | **Decisiones** | `Admin.jsx`, sección Resumen | Cuatro columnas: Decidido, Hipótesis, Pendiente y **Descartado** (badge en `--danger` al 12 %), cada descartado con su porqué. Datos en `backend/project.js` |
 | **Hito 2** | `AdminHito2.jsx`, `backend/hito2.js` | Sección `#hito2` del panel: cifras, necesidades, criba, hipótesis y decisiones, RST y exclusiones, fuentes, trazabilidad por necesidad (con enlaces a Asana) y registro de cambios. Todo se lee de `docs/requisitos` en cada petición: no se copia a mano |
-| **Prompts** | `AdminPrompts.jsx` | Registro de prompts con filtro por tipo, copiar, "Pulir con IA" (original y propuesta lado a lado) y alta de prompts nuevos |
+| **Prompts** | `AdminPrompts.jsx` | Registro de prompts agrupado por persona y, dentro, por tema (campo `tema`: para qué sirvió), con filtro por tipo, copiar, "Pulir con IA" (original y propuesta lado a lado) y alta de prompts nuevos |
 | **Logo** | `Logo.jsx`, `public/favicon.svg` | Caja de mercado con tres frutas y una hoja, y "FOOD**4**ALL" en Fraunces con el 4 en naranja o azafrán. Se adapta al fondo con `--logo-crate` y `--logo-stripe` |
 
 ## 6. Imágenes

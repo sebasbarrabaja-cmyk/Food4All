@@ -4,6 +4,7 @@ fecha: 2026-10-22
 autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
+tema: Requisitos del Hito 2
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 

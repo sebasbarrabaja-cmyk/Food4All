@@ -4,6 +4,7 @@ fecha: 2026-10-23
 autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
+tema: Requisitos del Hito 2
 origen: Mensajes enviados a Claude Code (WSL) en la sesión, en orden y sin corregir. Horas aproximadas
 ---
 
@@ -163,4 +164,16 @@ La IA tendra que existir, pero eso quiero debatirlo con el profesor. por lo expl
 
 Ok, pero primero, antes de todo, actualiza el git con lo que haces para qeu juan antonio pueda trabajar tambien
 
-**Resultado:** se aprobó la especificación de la página «Hito 2 · Requisitos» del panel `/admin`, de la pestaña «Asistente IA» y del texto de `/comprar`; el texto queda en `2026-10-23-06`, el registro del cambio de la landing. Antes de empezar, se subió todo y se avisó en `AGENTS.md` de qué archivos se van a tocar, para que Juan Antonio trabaje en `docs/requisitos/` sin choques.
+**Resultado:** se aprobó la especificación de la página «Hito 2 · Requisitos» del panel `/admin`, de la pestaña «Asistente IA» y del texto de `/comprar`; el texto queda en `2026-10-23-07`, el registro del cambio de la landing. Antes de empezar, se subió todo y se avisó en `AGENTS.md` de qué archivos se van a tocar, para que Juan Antonio trabaje en `docs/requisitos/` sin choques.
+
+### 21:05
+
+Espera a juan antonio, creo que ha subido algo
+
+**Resultado:** su rama `docs/juanantonio-hito2` traía la criba E y F, sus votos de las RST, la aclaración de E5 P7 y sus revisiones. Se fusiona sin conflictos. Se detectaron dos incoherencias en su registro de prompts: el número 06 estaba repetido y había horas posteriores a la subida.
+
+### 21:06
+
+a( que se separe los promts por personas, pero no por dias o bloques de para que han servido)
+
+**Resultado:** se fusionó la rama. El registro de la landing pasa a ser `2026-10-23-07` (la sesión de Juan Antonio empezó antes) y las cinco horas imposibles de su registro quedan como «Hora no registrada (antes de las 21:04)». Lo de separar los prompts por personas se aclara en el siguiente mensaje.

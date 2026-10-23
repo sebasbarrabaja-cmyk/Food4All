@@ -139,7 +139,7 @@ app.get('/api/admin/hito2', requireAdmin, (_req, res) => {
 });
 
 // Registro de prompts usados en el desarrollo (ficheros en /prompts, dentro del repo).
-app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, agent: agentReady() }));
+app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, temas: prompts.TEMAS, agent: agentReady() }));
 
 app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   const b = req.body ?? {};
@@ -147,10 +147,11 @@ app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   if (str(b.titulo).length < 3) errors.titulo = 'Pon un título (mín. 3 caracteres).';
   if (str(b.texto).length < 10) errors.texto = 'El prompt está vacío.';
   if (!prompts.TYPES.includes(b.tipo)) errors.tipo = 'Elige un tipo.';
+  if (b.tema !== undefined && !prompts.TEMAS.includes(b.tema)) errors.tema = 'Elige un tema.';
   if (Object.keys(errors).length) return res.status(400).json({ errors });
   res.status(201).json(prompts.add({
     titulo: str(b.titulo), autor: str(b.autor), herramienta: str(b.herramienta) || 'Claude Code',
-    tipo: b.tipo, origen: str(b.origen), texto: str(b.texto),
+    tipo: b.tipo, tema: b.tema ?? 'Otro', origen: str(b.origen), texto: str(b.texto),
   }));
 });
 
