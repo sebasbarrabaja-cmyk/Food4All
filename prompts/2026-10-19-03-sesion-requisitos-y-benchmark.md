@@ -95,3 +95,25 @@ Continua
 ### 14:52
 
 En vez de hacer un claude doc, hazlo en un .md en la carpeta
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026). Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - La estructura por procesos principales, con un requisito por pantalla o método, para que cada uno pudiera trabajar sin depender de los demás.
+  - El backlog de historias, como base para priorizar.
+  - La comparación de cada requisito con 6 competidores, porque me daba argumentos para saber qué es estándar y qué nos diferencia.
+  - Guardarlo en `.md` dentro del repositorio en vez de en un documento aparte, para tenerlo con el código.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Pedí que se rehiciera la estructura cogiendo lo mejor de cada grupo, con un formato de empresa, en lugar de la primera propuesta.
+  - La valoración del profesor del 21/10 detectó fallos (tres catálogos de necesidades distintos y prioridades incoherentes con la entrega), y los corregimos en la versión 0.4.
+  - Hay requisitos del benchmark que quedan «sin verificar» y no los di por buenos.
+- **Por qué estaba justificado usar IA aquí:**
+  - Comparar más de 500 requisitos con 6 competidores a mano no era viable en el tiempo del sprint.
+  - Me ayudaba a escribir requisitos con un formato uniforme y criterios de aceptación.
+  - La estructura y las decisiones las marcamos nosotros; la IA hacía el trabajo repetitivo.

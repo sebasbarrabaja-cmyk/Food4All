@@ -97,3 +97,20 @@ Carpeta `~/proyectos/Food4All-recibido-2026-10-23/competencia-recorridos/` con:
 3. Al final de `RESULTADOS.md`, una tabla resumen: competidor × (varios vendedores, mínimo, envío, franja, faltas, cancelación, IA) con Sí / No / No verificado.
 
 Cuando termines, avisa a Sebas para que se lo diga a Melchizedek. Tiempo orientativo: unos 10–15 min por competidor.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a 22-01, 23-02 y 23-04; aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Recorrer la competencia como lo haría un cliente, con capturas, en vez de fiarnos de lo que dicen sus webs.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Puse límites a los recorridos: sin pagar, sin crear cuenta y sin datos personales.
+  - Las mejoras de la competencia no se aplicaron solas: las revisé una a una (M-01 a M-08).
+- **Por qué estaba justificado usar IA aquí:**
+  - Recorrer 8 webs y sacar 98 capturas con notas lleva muchas horas a mano.
+  - Las reglas y las decisiones las puse yo; la IA las aplicaba y documentaba.

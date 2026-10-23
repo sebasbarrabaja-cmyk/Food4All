@@ -45,3 +45,20 @@ Cuando lo tengas ajustado, elimina todo lo repetido e innecesario. Sin que se pi
 (Respuesta a la pregunta del asistente) Borra los 4, y que no tengan contenido redundante. Y revisa que no haya fallos graves como por ejmeplo FOOF4ALL en vez de FOOD4ALL. Dentro del repo: no tocarlos.
 
 **Resultado:** se pasó al contexto la lista entera de los 211 requisitos del borrador. Se borraron de `C:\Universidad\Software` los ficheros `FOOD4ALL_master_prompt.md`, `FOOD4ALL_prompt_landing.md`, `FOOD4ALL_requisitos.md` y `esquema_comparativo_de_empresas_de_alimentaci_n.md`; los dos primeros siguen enteros en `prompts/`. Erratas revisadas: no queda ningún «FOOF4ALL» por error; los que aparecen son citas de la errata o el filtro de Asana que la acepta. El repo no se tocó.
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a 22-01, 23-02 y 23-04; aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Tener un documento de contexto y un `AGENTS.md`, para que cualquier agente del equipo trabaje con las mismas reglas.
+  - Registrar cada prompt con fecha, persona y resultado, porque lo pidió el profesor y nos da transparencia.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Precisé yo la regla de los prompts: cómo se registran, incluido el resultado de cada uno.
+- **Por qué estaba justificado usar IA aquí:**
+  - Mantener la documentación al día para que el equipo pudiera seguir sin mí.
+  - Las reglas y las decisiones las puse yo; la IA las aplicaba y documentaba.

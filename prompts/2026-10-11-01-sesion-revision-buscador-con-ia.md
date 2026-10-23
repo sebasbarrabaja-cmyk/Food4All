@@ -25,3 +25,19 @@ No estoy interesadi en la version de movil. Ponlo como pendiente pero sin priori
 ### 3
 
 1a(No quiero un agente, quiero un buscador para tipo:  ¿De que va el proyecto? y que te envie al apartado correcto o reponda preguntas simples. 2a(Busca antes de nada) 3a(Quiero que sea util. pero tampoco vamos a poner 100 pronts al dia, yo te digo que mas de 5-10 lo dudo) 3a
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a las tres primeras sesiones de la landing (08-03, 10-01 y 11-01); aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - Usar Gemini en su nivel gratuito, solo en el panel privado, en vez de una API de pago.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Descarté el agente pesado (Hermes) porque había que instalarlo en cada ordenador y bastaba con un buscador sencillo.
+- **Por qué estaba justificado usar IA aquí:**
+  - Construir una web completa (frontend, backend y panel) en pocos días, sin ser yo todavía experto en React ni Express.
+  - El contenido y el diseño salían de nuestros documentos (el prompt de la landing y el maestro); la IA los implementaba.

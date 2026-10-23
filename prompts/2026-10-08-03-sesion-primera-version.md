@@ -93,3 +93,20 @@ https://github.com/sebasbarrabaja-cmyk/Food4All.git
 ### 16:16
 
 Quitale la autoria al claude
+
+---
+
+## Revisión crítica del equipo
+
+*Respuestas de Sebastián a preguntas guiadas del asistente (23/10/2026), comunes a las tres primeras sesiones de la landing (08-03, 10-01 y 11-01); aquí van solo las que corresponden a este archivo. Las opciones las propuso el asistente; la elección es de Sebastián.*
+
+- **Revisado por:** Sebastián
+- **Fecha:** 23/10/2026
+- **Qué aceptamos de lo que propuso la IA y por qué:**
+  - La estructura de la landing: «tres botones y ya», datos de ejemplo marcados como tales y sin prueba social falsa.
+- **Qué corregimos, rechazamos o comprobamos aparte:**
+  - Decidí empezar por ordenador aunque el prompt pedía móvil primero.
+  - Quité la coautoría de Claude de los commits: el trabajo lo firmamos nosotros.
+- **Por qué estaba justificado usar IA aquí:**
+  - Construir una web completa (frontend, backend y panel) en pocos días, sin ser yo todavía experto en React ni Express.
+  - El contenido y el diseño salían de nuestros documentos (el prompt de la landing y el maestro); la IA los implementaba.
