@@ -38,3 +38,9 @@ que puedo hacer yo , soy Juan Antonio
 hazlo desde esta terminal
 
 **Resultado:** en la rama `docs/juanantonio-hito2`, el asistente redactó las respuestas de los bloques E y F de `FOOD4ALL_criba_argumentos.md` y rellenó la columna de Juan Antonio de las RST (todas «Sí»), marcado como «redactado con ayuda del asistente». Juan Antonio las revisa antes de subirlas. No se tocaron las conclusiones de E5 y E6 (tienen que ir con sus palabras), no se escribió nada en Asana y no se ejecutó `npm run todo`.
+
+### 20:45
+
+tienes la regla que incluyo sebastian para que se guarden todos los promts
+
+**Resultado:** el asistente confirmó que aplica la regla 1 de `AGENTS.md` (cargada desde `CLAUDE.md`) y añadió este mensaje al registro de la sesión.
