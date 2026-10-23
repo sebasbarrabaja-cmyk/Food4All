@@ -215,6 +215,12 @@ pegue el 2 que mas hago
 
 **Resultado:** le quedan pegar el comentario de la primera revisión (con el final corregido) si no está, y pedir a Sebastián que una `docs/juanantonio-hito2` a `main`.
 
+### Hora no registrada (después de las 21:42)
+
+pues hazlo
+
+**Resultado:** el asistente no unió nada a `main` (regla 6 de `AGENTS.md`: nunca se trabaja ni se hace `push` en `main`; une Sebastián) ni pegó en Asana (regla 2). Le abrió en el navegador la página para crear el PR de `docs/juanantonio-hito2` a `main`, para que lo cree él y lo una Sebastián.
+
 ---
 
 ## Revisión crítica del equipo
