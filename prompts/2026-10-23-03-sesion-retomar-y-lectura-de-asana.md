@@ -170,3 +170,9 @@ a. Importante, me quedan pococ tokens, prepara todo para que mis compañeros pue
 No necestio lo de asana primero, lo de git es prioritario
 
 **Resultado:** se dejó Asana para después y se pasó a preparar el repositorio para que el equipo termine sin Sebastián: unir las ramas de WSL, renumerar los prompts repetidos, revisar la coherencia y dejar el traspaso en `AGENTS.md`.
+
+### 17:30 (aprox.)
+
+Subelo, y luego haces las pruebas
+
+**Resultado:** se unieron a `docs/hito2-entrega` las ramas de WSL `fix/seguridad-formularios`, `fix/fecha-prompts` y `fix/buscador-reserva` (un conflicto en `README.md`, resuelto dejando las dos secciones). Se renumeraron los prompts de Windows por orden de hora: `2026-10-19-01-sesion-requisitos-y-benchmark` → `2026-10-19-03` y `2026-10-20-01-requisitos-en-asana` → `2026-10-20-05`, con su referencia en `FOOD4ALL_propuesta_asana.md`. Push y, después, las pruebas.
