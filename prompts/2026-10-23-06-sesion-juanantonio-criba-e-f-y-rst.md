@@ -98,3 +98,9 @@ hazme las dos preguntas de elejir
 corrige las discrepancias del documento de personas
 
 **Resultado:** en `FOOD4ALL_personas_empatia_v2.md`: estados de la tabla 3 actualizados con E1–E6 y nota del apartado 2; cuatro criterios del 6.2 ajustados a B4 (ruta del operador, registro en cada parada, faltas con RF-07.3-09, aviso «Consume primero»); errata «Universidad Europea» y línea en blanco antes del separador del apartado 3. Se anota la revisión de Juan Antonio en la cabecera. El comentario de Asana lo escribe él.
+
+### 21:30
+
+pues vamos a ello
+
+**Resultado:** en `FOOD4ALL_comparativo_revisado.md`, el hallazgo 1 pasa a verificado en Glovo con los recorridos del 23/10 (un carrito por tienda) y el 7 se refuerza con los precios de envío por dirección. Se anota en el apartado 3.
