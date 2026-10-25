@@ -156,9 +156,11 @@ const done = (t) => (t.completed ? <Status kind="decidido">Hecho</Status> : <Sta
 const count = (p) => p && p.total > 0 && <span className="muted small"> · {p.done}/{p.total}</span>;
 
 // Responsable en Asana y, si difiere o falta, el previsto en el plan.
-function Who({ t }) {
+// Sin conexión (offline) no se sabe quién la tiene en Asana: solo se muestra el previsto.
+function Who({ t, offline }) {
   const asana = t.assignee;
   const plan = t.planned;
+  if (offline) return plan ? <span className="muted small">previsto: {plan}</span> : null;
   return (
     <span className="muted small">
       {asana ?? 'Sin asignar'}
@@ -184,12 +186,13 @@ function Milestones() {
   if (error) return <p role="alert" style={{ color: 'var(--danger)' }}>Error al cargar los hitos: {error} <button className="btn btn-ghost" onClick={load}>Reintentar</button></p>;
   if (!data) return <p className="muted">Cargando hitos de Asana…</p>;
 
+  const offline = data.source === 'plan';
   return (
     <>
       <p className="toolbar">
         <button className="btn btn-ghost" onClick={load}>Actualizar</button>
-        {data.source === 'plan'
-          ? <span className="muted small">Sin conexión con Asana ({data.error}). Se muestra solo el plan.</span>
+        {offline
+          ? <span className="muted small">Sin conexión con Asana ({data.error}). Se muestra el plan: qué hay que hacer y quién lo tiene previsto, sin estado real.</span>
           : <span className="muted small">Datos en directo de Asana · solo tareas [Food4All].</span>}
       </p>
       {data.milestones.map((m) => (
@@ -201,21 +204,21 @@ function Milestones() {
             {m.completed && <> <Status kind="decidido">Completado</Status></>}
           </summary>
           {m.children.length === 0
-            ? <p className="muted small">Todavía sin subtareas en Asana.</p>
+            ? <p className="muted small">{offline ? 'El plan no detalla este hito.' : 'Todavía sin subtareas en Asana.'}</p>
             : (
               <ul className="divided">
                 {m.children.map((c) => (
                   <li key={c.name}>
                     <div className="task-line">
-                      <span>{done(c)} <strong>{c.name}</strong>{count(c.progress)}</span>
-                      <Who t={c} />
+                      <span>{!offline && done(c)} <strong>{c.name}</strong>{count(c.progress)}</span>
+                      <Who t={c} offline={offline} />
                     </div>
                     {c.children.length > 0 && (
                       <ul className="subtasks">
                         {c.children.map((l) => (
                           <li key={l.name} className="task-line">
-                            <span>{done(l)} {l.name}</span>
-                            <Who t={l} />
+                            <span>{!offline && done(l)} {l.name}</span>
+                            <Who t={l} offline={offline} />
                           </li>
                         ))}
                       </ul>

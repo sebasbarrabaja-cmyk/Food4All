@@ -113,3 +113,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 2 · Quitar «Ahorra.»
 
 **Resultado:** Fuera del titular de la portada y del lema del pie. La web no puede demostrar ahorro (hipótesis H-03: «No se promete ahorro»), y la tabla de Comprar ya decía «no afirmamos que todo sea más barato». De paso, el titular queda en dos líneas sin la palabra «casa.» suelta.
+
+### Punto 3 · Asana sin conexión
+
+**Resultado:** Sin conexión con Asana, el panel ya no marca cada tarea del plan como «Abierto · Sin asignar» (el Hito 1, ya entregado, parecía sin empezar). Ahora muestra solo la tarea y «previsto: persona», con un aviso de que no hay estado real. Con Asana conectado no cambia nada (sin probar: en WSL no hay token).
