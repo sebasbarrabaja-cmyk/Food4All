@@ -37,7 +37,7 @@ const ZONES = ['malaga', 'sevilla', 'granada'];
 const str = (v) => (typeof v === 'string' ? v.trim() : '');
 
 // Longitud máxima de cada campo del alta. Mantener al día con MAX_LEN de frontend/src/pages/Vender.jsx.
-const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
+const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 300, offer: 1000, pickupHours: 120 };
 const QUINCE_MIN = 15 * 60 * 1000;
 const tooMany = (res, wait) => res.set('Retry-After', String(wait)).status(429)
   .json({ error: `Demasiados intentos. Prueba otra vez dentro de ${Math.ceil(wait / 60)} min.` });

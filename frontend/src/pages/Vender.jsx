@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, cloneElement } from 'react';
 import { Link } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import ZoneTabs, { SELLER_TABS } from '../components/ZoneTabs.jsx';
@@ -35,7 +35,7 @@ const TYPES = [
 ];
 const ZONES = [['malaga', 'Málaga'], ['sevilla', 'Sevilla'], ['granada', 'Granada']];
 // Longitud máxima de cada campo: los mismos límites que MAX_LEN de backend/server.js.
-const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
+const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 300, offer: 1000, pickupHours: 120 };
 const EMPTY = { businessName: '', type: '', zone: '', email: '', phone: '', sanitaryRegistry: '', offer: '', pickupHours: '', privacy: false };
 
 function SellerForm() {
@@ -72,15 +72,16 @@ function SellerForm() {
     );
   }
 
+  // La ayuda y el error se enlazan al campo (aria-describedby) para que el lector de pantalla los lea.
   const field = (k, label, input, hint) => (
     <div className="field">
       <label htmlFor={k}>{label}</label>
-      {input}
-      {hint && <span className="hint">{hint}</span>}
+      {cloneElement(input, { 'aria-describedby': [hint && `${k}-hint`, errors[k] && `${k}-err`].filter(Boolean).join(' ') || undefined })}
+      {hint && <span className="hint" id={`${k}-hint`}>{hint}</span>}
       {errors[k] && <span className="error" id={`${k}-err`} role="alert">{errors[k]}</span>}
     </div>
   );
-  const inv = (k) => ({ id: k, maxLength: MAX_LEN[k], 'aria-invalid': Boolean(errors[k]), 'aria-describedby': errors[k] ? `${k}-err` : undefined });
+  const inv = (k) => ({ id: k, maxLength: MAX_LEN[k], 'aria-invalid': Boolean(errors[k]) });
 
   return (
     <form className="panel" onSubmit={submit} noValidate>

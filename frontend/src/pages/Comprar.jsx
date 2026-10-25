@@ -159,14 +159,14 @@ export default function Comprar() {
             <table>
               <thead><tr><th></th><th>FOOD4ALL</th><th>Plataformas de mercados municipales</th><th>Supermercado</th><th>Delivery inmediato</th></tr></thead>
               <tbody>
-                <tr><th scope="row">Para qué</th><td>Planificar varios días</td><td>Comprar en los puestos de tu mercado</td><td>Compra general</td><td>Comer ahora</td></tr>
-                <tr><th scope="row">Vendedores</th><td>Varios locales en un carrito</td><td>Puestos de un mercado (en Sevilla, un mercado por pedido)</td><td>Una cadena</td><td>Normalmente uno por pedido</td></tr>
-                <tr><th scope="row">Después de comprar</th><td>Recordatorios y siguiente compra</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><th scope="row">Para qué</th><td>Planificar varios días</td><td>Comprar en tu mercado o en comercios de tu ciudad</td><td>Compra general</td><td>Comer ahora</td></tr>
+                <tr><th scope="row">Vendedores</th><td>Varios locales en un carrito</td><td>Puestos de mercado y comercios del municipio (en Sevilla, un solo mercado por pedido)</td><td>Una cadena</td><td>Normalmente uno por pedido</td></tr>
+                <tr><th scope="row">Después de comprar</th><td>Recordatorios y siguiente compra</td><td className="muted">No comprobado</td><td>—</td><td>—</td></tr>
                 <tr><th scope="row">Precio</th><td colSpan={4}>Algunos productos podrían ser más competitivos <Status kind="hipotesis" /> — no afirmamos que todo sea más barato.</td></tr>
               </tbody>
             </table>
           </div>
-          <p className="muted small" style={{ marginTop: 8 }}>Comparación conceptual. La columna de mercados municipales resume las plataformas públicas de Málaga y Sevilla, consultadas el 26/10/2026.</p>
+          <p className="muted small" style={{ marginTop: 8 }}>Comparación conceptual: las columnas de supermercado y delivery no describen con exactitud a ningún servicio concreto. La de mercados municipales resume lo que dicen las plataformas públicas de Málaga y Sevilla, consultadas el 26/10/2026.</p>
         </div>
       </section>
     </>

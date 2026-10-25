@@ -110,43 +110,43 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 - **Después de cada punto:** compilar, comprobar en el navegador y un mini-análisis (¿ha servido?, ¿se puede simplificar?, ¿se explica en una frase?).
 - **No se toca:** `backend/.env`, los datos de `docs/requisitos`, Asana, dependencias, móvil ni tema oscuro.
 
-### Punto 2 · Quitar «Ahorra.»
+#### Punto 2 · Quitar «Ahorra.»
 
 **Resultado:** Fuera del titular de la portada y del lema del pie. La web no puede demostrar ahorro (hipótesis H-03: «No se promete ahorro»), y la tabla de Comprar ya decía «no afirmamos que todo sea más barato». De paso, el titular queda en dos líneas sin la palabra «casa.» suelta.
 
-### Punto 3 · Asana sin conexión
+#### Punto 3 · Asana sin conexión
 
 **Resultado:** Sin conexión con Asana, el panel ya no marca cada tarea del plan como «Abierto · Sin asignar» (el Hito 1, ya entregado, parecía sin empezar). Ahora muestra solo la tarea y «previsto: persona», con un aviso de que no hay estado real. Con Asana conectado no cambia nada (sin probar: en WSL no hay token).
 
-### Punto 4 · Segundo clic en los enlaces con ancla
+#### Punto 4 · Segundo clic en los enlaces con ancla
 
 **Resultado:** `RouteEffects.jsx` ahora también reacciona a la `key` de cada navegación, que cambia en cada clic aunque la URL sea la misma. Probado en el navegador: bajar y volver a pulsar «Cómo funciona» vuelve a la sección (antes no hacía nada). De paso, pulsar «Quiero comprar» estando ya en `/comprar` sube al principio.
 
-### Punto 5 · Botón «Solicitar el alta» arriba en /vender
+#### Punto 5 · Botón «Solicitar el alta» arriba en /vender
 
 **Resultado:** El inicio de `/vender` tiene ahora un botón «Solicitar el alta» que lleva al formulario, igual que «Ver cómo sería tu pedido» en `/comprar`. Antes el formulario quedaba tres pantallas más abajo sin ningún acceso directo. Probado: el clic deja el formulario entero a la vista, sin que lo tape la cabecera.
 
-### Punto 6 · Altas en el panel
+#### Punto 6 · Altas en el panel
 
 **Resultado:** La tabla de altas muestra ahora la fecha (hora de España), el teléfono (o «sin teléfono») y los horarios de recogida, que se pedían en el formulario pero no se veían. Lo más nuevo sale arriba. Si la sesión ha caducado, lleva al login en vez de decir «Todavía no hay solicitudes», y si falla un cambio de estado se avisa. Probado con dos altas de prueba (borradas después): cambio de estado guardado y, tras reiniciar el servidor, el cambio lleva al login sin guardar nada.
 
-### Punto 7 · Índice en Hito 2 y registro de cambios compacto
+#### Punto 7 · Índice en Hito 2 y registro de cambios compacto
 
 **Resultado:** Hito 2 (unas 16 pantallas) tiene al principio un índice con sus 9 apartados. El registro de cambios ocupa una línea por cambio (caben unos 14 por pantalla en vez de 5) y cada uno se sigue abriendo con sus campos de la Clase 11. No se cambia ningún dato ni de dónde sale. Se descartó pasarlo a tabla porque se perderían esos campos.
 
-### Punto 8 · Quitar la pestaña «Asistente IA»
+#### Punto 8 · Quitar la pestaña «Asistente IA»
 
 **Resultado:** Fuera de la cabecera, con su CSS. Motivo de Sebastián: la pestaña es del marketplace, no de la landing (que explica el proyecto). La cabecera vuelve a los tres botones; al asistente se llega desde Comprar y desde el pie. `docs/DISENO.md` actualizado. Pendiente para el equipo: anotarlo en la línea base (C-26 y RF-12.1-01 siguen describiendo la pestaña).
 
-### Punto 9 · Quitar lo que no aporta y precios de ejemplo
+#### Punto 9 · Quitar lo que no aporta y precios de ejemplo
 
 **Resultado:** Fuera la sección «Suscripción por beneficios · Próximamente», el botón desactivado «Repetir esta compra» y la fila «Quién decide qué comprar» (Tú / Tú / Tú). En vez de «Precio todavía no disponible» (unas 25 veces), cada producto lleva un precio de ejemplo basado en precios de supermercado de octubre de 2026, con un aviso en letra pequeña: «Precios de ejemplo, meramente representativos». El origen de cada precio (fuente o «estimación») está en `docs/precios-de-ejemplo.md`. El pedido de ejemplo suma 19,10 € + entrega (por definir) y la cesta de 25 € del asistente, 14,20 €. La miel del panel del vendedor sigue sin precio porque es el ejemplo de ficha incompleta, y las ventas del vendedor quedan «Por definir» porque dependen de la comisión. `docs/DISENO.md` actualizado.
 
-### Punto 10 · Privacidad en el alta y detalles de texto
+#### Punto 10 · Privacidad en el alta y detalles de texto
 
 **Resultado:** El alta de vendedor lleva una casilla obligatoria: «Acepto que se guarden estos datos solo para valorar el alta en esta demostración universitaria. No se comparten con nadie.» El servidor también la exige (solo acepta `true`; probado con `curl`), y no se guarda aparte porque toda alta guardada la ha aceptado. Se avisa de que todos los campos son obligatorios salvo los marcados, y «Horarios» pasa a «(opcional)», como ya era en el servidor. Detalles: titulares sin palabras sueltas (`text-wrap: balance`), «1 l» y «Málaga · Sevilla · Granada» sin partirse, «Ver en Commons» en una línea, «1 producto» en singular y título propio en la página 404.
 
-### Revisión final (/code-review y /security-review)
+#### Revisión final (/code-review y /security-review)
 
 **Resultado:** La revisión de seguridad no encontró vulnerabilidades en la rama. De los 9 hallazgos de la revisión de código se arreglaron 7:
 - Si falla un cambio de estado, el aviso sale encima de la tabla y la tabla no desaparece (probado parando el servidor).
