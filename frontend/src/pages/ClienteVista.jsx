@@ -3,11 +3,12 @@ import ZoneTabs, { CLIENT_TABS } from '../components/ZoneTabs.jsx';
 import BasketByVendor from '../components/BasketByVendor.jsx';
 import { PhotoNote } from '../components/Photo.jsx';
 import Icon from '../components/Icon.jsx';
-import { EXAMPLE_ORDER, ORDER_STATES, REMINDERS, PRICE_PENDING, groupByVendor } from '../data/examples.js';
+import { EXAMPLE_ORDER, ORDER_STATES, REMINDERS, PRICE_NOTE, eur, productById, groupByVendor } from '../data/examples.js';
 
 // Vista de ejemplo del cliente: carrito, checkout, seguimiento y después de comprar.
 export default function ClienteVista() {
   const o = EXAMPLE_ORDER;
+  const subtotal = o.items.reduce((sum, [id, qty]) => sum + productById(id).price * qty, 0);
   const vendors = groupByVendor(o.items).length;
 
   return (
@@ -32,10 +33,11 @@ export default function ClienteVista() {
             <BasketByVendor lines={o.items} />
             <PhotoNote />
             <div className="summary">
-              <div><span>Subtotal</span><span className="muted">{PRICE_PENDING}</span></div>
+              <div><span>Subtotal</span><span>{eur(subtotal)}</span></div>
               <div><span>Entrega</span><span className="muted"><Status kind="pendiente" /></span></div>
-              <div><strong>Total</strong><strong className="muted">{PRICE_PENDING}</strong></div>
+              <div><strong>Total</strong><strong>{eur(subtotal)} + entrega</strong></div>
             </div>
+            <p className="muted small">{PRICE_NOTE}</p>
           </div>
         </div>
       </section>
@@ -84,7 +86,6 @@ export default function ClienteVista() {
           </div>
           <ul className="divided">
             {REMINDERS.map(([p, t]) => <li key={p}><strong>{p}.</strong> <span className="muted">{t}</span></li>)}
-            <li><button className="btn btn-ghost" disabled>Repetir esta compra</button> <span className="muted small">Disponible en la versión real</span></li>
           </ul>
         </div>
       </section>

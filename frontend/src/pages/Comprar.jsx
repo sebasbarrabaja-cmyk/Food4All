@@ -4,7 +4,7 @@ import Status from '../components/Status.jsx';
 import ZoneTabs, { CLIENT_TABS } from '../components/ZoneTabs.jsx';
 import Photo, { PhotoNote } from '../components/Photo.jsx';
 import Icon from '../components/Icon.jsx';
-import { PRODUCTS, VENDORS, ZONES, CATEGORY_COLOR, vendorOf, PRICE_PENDING } from '../data/examples.js';
+import { PRODUCTS, VENDORS, ZONES, CATEGORY_COLOR, vendorOf, PRICE_NOTE, eur } from '../data/examples.js';
 
 // Recorrido del cliente (sección 3.2): 6 pasos visibles + detalle del resto.
 const STEPS = [
@@ -137,7 +137,7 @@ export default function Comprar() {
                     <dt>Alérgenos</dt><dd>{p.allergens}</dd>
                     <dt>Conservación</dt><dd>{p.storage}</dd>
                   </dl>
-                  <p className="product-card__price small">{PRICE_PENDING}</p>
+                  <p className="product-card__price small">{eur(p.price)}</p>
                 </div>
               </li>
             ))}
@@ -146,7 +146,7 @@ export default function Comprar() {
           <PhotoNote />
           <p className="muted small" style={{ marginTop: 12 }}>
             Compra mínima: unos 10–15 € <Status kind="hipotesis" /> · Coste de entrega <Status kind="pendiente" /> ·
-            Vendedores y productos inventados para la demostración.
+            Vendedores y productos inventados para la demostración. {PRICE_NOTE}
           </p>
         </div>
       </section>
@@ -161,20 +161,12 @@ export default function Comprar() {
               <tbody>
                 <tr><th scope="row">Para qué</th><td>Planificar varios días</td><td>Compra general</td><td>Comer ahora</td></tr>
                 <tr><th scope="row">Vendedores</th><td>Varios locales en un carrito</td><td>Una cadena</td><td>Normalmente uno por pedido</td></tr>
-                <tr><th scope="row">Quién decide qué comprar</th><td>Tú, con ayuda de la IA</td><td>Tú</td><td>Tú</td></tr>
                 <tr><th scope="row">Después de comprar</th><td>Recordatorios y siguiente compra</td><td>—</td><td>—</td></tr>
                 <tr><th scope="row">Precio</th><td colSpan={3}>Algunos productos podrían ser más competitivos <Status kind="hipotesis" /> — no afirmamos que todo sea más barato.</td></tr>
               </tbody>
             </table>
           </div>
           <p className="muted small" style={{ marginTop: 8 }}>Comparación conceptual; no describe con exactitud a ningún servicio concreto.</p>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="container">
-          <h2>Suscripción por beneficios</h2>
-          <p className="muted">Ventajas de entrega y promociones, sin cajas obligatorias. <Status kind="pendiente">Próximamente</Status></p>
         </div>
       </section>
     </>

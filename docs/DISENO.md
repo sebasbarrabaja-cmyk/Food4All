@@ -13,7 +13,7 @@ Estado: segunda versión, tras el feedback del profesor (10 de octubre de 2026):
 3. **Producto local visible desde el primer segundo:** ilustración de campo en el hero y fotos de mercado.
 4. **Honestidad:**
    - Es un proyecto conceptual: los datos son de ejemplo y se marcan como tal.
-   - Los precios aparecen como "Precio todavía no disponible".
+   - Los precios son de ejemplo, basados en precios de supermercado de octubre de 2026, y siempre llevan en letra pequeña el aviso «Precios de ejemplo, meramente representativos» (decisión de Sebastián, 25/10/2026). De dónde sale cada uno: `docs/precios-de-ejemplo.md`.
    - Se distingue siempre lo **decidido**, las **hipótesis** y lo que está **por definir**.
    - No hay prueba social: ni opiniones, ni contadores, ni "ya somos X".
 5. **Profesional, no funcional.** El asistente de IA, el carrito y el seguimiento son ejemplos estáticos. Solo funcionan de verdad el formulario de alta de vendedores y el panel de administración.
@@ -139,7 +139,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 | **Banda de cierre** | `.band-forest` | Verde bosque con la textura de dibujos. **Es el único sitio con textura** |
 | **Manchas de icono** | `Blob.jsx` | Icono de trazo sobre mancha de color, con tono (`tomato`, `saffron`, `olive`, `peach`, `green`) y un giro leve |
 | **Pasos numerados** | `.steps`, `.steps-visual` | Número en círculo de color en ciclo: tomate → azafrán → oliva → melocotón (tomate y oliva en su variante `-strong` para que el número se lea) |
-| **Tarjeta de producto** | `Comprar.jsx` | Foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos, conservación y "Precio todavía no disponible" |
+| **Tarjeta de producto** | `Comprar.jsx` | Foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos, conservación y precio de ejemplo (con el aviso al pie del catálogo) |
 | **Cesta por vendedor** | `BasketByVendor.jsx` | Agrupada por vendedor, con miniatura, y "Por qué" en la cesta de la IA |
 | **Badges de estado** | `Status.jsx` | Decidido, Hipótesis, Por definir y Datos de ejemplo |
 | **Iconos** | `Icon.jsx` | SVG de trazo de 1.6 px en un único fichero. Para añadir uno, se añade su `path` |

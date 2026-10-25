@@ -137,3 +137,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 8 · Quitar la pestaña «Asistente IA»
 
 **Resultado:** Fuera de la cabecera, con su CSS. Motivo de Sebastián: la pestaña es del marketplace, no de la landing (que explica el proyecto). La cabecera vuelve a los tres botones; al asistente se llega desde Comprar y desde el pie. `docs/DISENO.md` actualizado. Pendiente para el equipo: anotarlo en la línea base (C-26 y RF-12.1-01 siguen describiendo la pestaña).
+
+### Punto 9 · Quitar lo que no aporta y precios de ejemplo
+
+**Resultado:** Fuera la sección «Suscripción por beneficios · Próximamente», el botón desactivado «Repetir esta compra» y la fila «Quién decide qué comprar» (Tú / Tú / Tú). En vez de «Precio todavía no disponible» (unas 25 veces), cada producto lleva un precio de ejemplo basado en precios de supermercado de octubre de 2026, con un aviso en letra pequeña: «Precios de ejemplo, meramente representativos». El origen de cada precio (fuente o «estimación») está en `docs/precios-de-ejemplo.md`. El pedido de ejemplo suma 19,10 € + entrega (por definir) y la cesta de 25 € del asistente, 14,20 €. La miel del panel del vendedor sigue sin precio porque es el ejemplo de ficha incompleta, y las ventas del vendedor quedan «Por definir» porque dependen de la comisión. `docs/DISENO.md` actualizado.
