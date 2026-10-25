@@ -29,7 +29,7 @@ export default function Creditos() {
                   <td>{LABELS[id] ?? id}</td>
                   <td className="muted">{c.author}</td>
                   <td>{c.license}</td>
-                  <td><a href={c.url} target="_blank" rel="noreferrer">Ver en Commons</a></td>
+                  <td className="nowrap"><a href={c.url} target="_blank" rel="noreferrer">Ver en Commons</a></td>
                 </tr>
               ))}
             </tbody>

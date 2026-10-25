@@ -122,7 +122,7 @@ export default function Comprar() {
                 {vendors.map((v) => <option key={v.id} value={v.id}>{v.name}</option>)}
               </select>
             </label>
-            <span className="muted small" aria-live="polite">{products.length} productos</span>
+            <span className="muted small" aria-live="polite">{products.length} {products.length === 1 ? 'producto' : 'productos'}</span>
           </div>
           <ul className="product-grid">
             {products.map((p) => (
@@ -130,7 +130,7 @@ export default function Comprar() {
                 <Photo id={p.id} alt={p.name} className="product-card__img" />
                 <div className="product-card__body">
                   <span className="cat small" style={{ '--cat': CATEGORY_COLOR[p.category] }}>{p.category}</span>
-                  <h3>{p.name} <span className="muted small">{p.unit}</span></h3>
+                  <h3>{p.name} <span className="muted small nowrap">{p.unit}</span></h3>
                   <p className="small"><strong>{vendorOf(p).name}</strong> <span className="muted">· {vendorOf(p).zone}</span></p>
                   <dl className="product-card__facts small">
                     <dt>Origen</dt><dd>{p.origin}</dd>

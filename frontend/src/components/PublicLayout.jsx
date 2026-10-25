@@ -51,7 +51,7 @@ export default function PublicLayout() {
             <Link to="/comunidad">Por qué nos importa</Link>
             <Link to="/comunidad#redes">Nuestras redes</Link>
             <SocialLinks className="social-links--footer" />
-            <p className="muted small" style={{ marginTop: 10 }}>Zona inicial: Málaga · Sevilla · Granada</p>
+            <p className="muted small" style={{ marginTop: 10 }}>Zona inicial: <span className="nowrap">Málaga · Sevilla · Granada</span></p>
           </nav>
         </div>
         <div className="container footer-bottom">

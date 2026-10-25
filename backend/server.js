@@ -59,6 +59,7 @@ app.post('/api/sellers/apply', (req, res) => {
   if (!/^\S+@\S+\.\S+$/.test(str(b.email))) errors.email = 'Introduce un correo válido.';
   if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'El registro sanitario es obligatorio.';
   if (str(b.offer).length < 10) errors.offer = 'Cuéntanos brevemente qué ofreces (mín. 10 caracteres).';
+  if (b.privacy !== true) errors.privacy = 'Para enviar la solicitud tienes que aceptar el uso de los datos.';
   if (Object.keys(errors).length) return res.status(400).json({ errors });
   applyLimit.hit(req.ip);
 

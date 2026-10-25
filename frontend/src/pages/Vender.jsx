@@ -36,7 +36,7 @@ const TYPES = [
 const ZONES = [['malaga', 'Málaga'], ['sevilla', 'Sevilla'], ['granada', 'Granada']];
 // Longitud máxima de cada campo: los mismos límites que MAX_LEN de backend/server.js.
 const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
-const EMPTY = { businessName: '', type: '', zone: '', email: '', phone: '', sanitaryRegistry: '', offer: '', pickupHours: '' };
+const EMPTY = { businessName: '', type: '', zone: '', email: '', phone: '', sanitaryRegistry: '', offer: '', pickupHours: '', privacy: false };
 
 function SellerForm() {
   const [form, setForm] = useState(EMPTY);
@@ -84,6 +84,7 @@ function SellerForm() {
 
   return (
     <form className="panel" onSubmit={submit} noValidate>
+      <p className="muted small">Todos los campos son obligatorios salvo los marcados como opcionales.</p>
       {field('businessName', 'Nombre del negocio', <input {...inv('businessName')} value={form.businessName} onChange={set('businessName')} required />)}
       <div className="form-row">
         {field('type', 'Tipo', (
@@ -105,7 +106,14 @@ function SellerForm() {
       </div>
       {field('sanitaryRegistry', 'Número de registro sanitario', <input {...inv('sanitaryRegistry')} value={form.sanitaryRegistry} onChange={set('sanitaryRegistry')} required />)}
       {field('offer', '¿Qué ofreces?', <textarea {...inv('offer')} value={form.offer} onChange={set('offer')} required />, 'Tipo de productos, temporada, volumen aproximado.')}
-      {field('pickupHours', 'Horarios de recogida posibles', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
+      {field('pickupHours', 'Horarios de recogida posibles (opcional)', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
+      {/* Consentimiento (RGPD): el servidor también lo comprueba; no se guarda aparte porque toda alta guardada lo ha aceptado */}
+      <div className="field-check">
+        <input type="checkbox" id="privacy" checked={form.privacy} onChange={(e) => setForm({ ...form, privacy: e.target.checked })}
+          aria-invalid={Boolean(errors.privacy)} aria-describedby={errors.privacy ? 'privacy-err' : undefined} required />
+        <label htmlFor="privacy">Acepto que se guarden estos datos solo para valorar el alta en esta demostración universitaria. No se comparten con nadie.</label>
+        {errors.privacy && <span className="error" id="privacy-err" role="alert">{errors.privacy}</span>}
+      </div>
       {formError && <p className="error" role="alert" style={{ color: 'var(--danger)' }}>{formError}</p>}
       <button className="btn btn-cta" type="submit" disabled={state === 'sending'}>
         {state === 'sending' ? 'Enviando…' : 'Enviar solicitud'}
