@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import ZoneTabs, { SELLER_TABS } from '../components/ZoneTabs.jsx';
 import Blob from '../components/Blob.jsx';
+import Icon from '../components/Icon.jsx';
 
 // Recorrido del vendedor (sección 3.3).
 const STEPS = [
@@ -124,6 +125,7 @@ export default function Vender() {
             <h1>Solo somos un intermediario, no siete</h1>
             <p className="lead">Nuevos clientes, más alcance y un canal de venta adicional, con la logística centralizada por FOOD4ALL.</p>
             <p className="muted">Estamos buscando a los primeros vendedores. El proyecto aún no está pilotado.</p>
+            <Link to="/vender#alta" className="btn btn-cta" style={{ marginTop: 8 }}>Solicitar el alta <Icon name="arrow" size={18} /></Link>
           </div>
           <ol className="steps">
             {STEPS.map(([t, d]) => (

@@ -121,3 +121,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 4 · Segundo clic en los enlaces con ancla
 
 **Resultado:** `RouteEffects.jsx` ahora también reacciona a la `key` de cada navegación, que cambia en cada clic aunque la URL sea la misma. Probado en el navegador: bajar y volver a pulsar «Cómo funciona» vuelve a la sección (antes no hacía nada). De paso, pulsar «Quiero comprar» estando ya en `/comprar` sube al principio.
+
+### Punto 5 · Botón «Solicitar el alta» arriba en /vender
+
+**Resultado:** El inicio de `/vender` tiene ahora un botón «Solicitar el alta» que lleva al formulario, igual que «Ver cómo sería tu pedido» en `/comprar`. Antes el formulario quedaba tres pantallas más abajo sin ningún acceso directo. Probado: el clic deja el formulario entero a la vista, sin que lo tape la cabecera.
