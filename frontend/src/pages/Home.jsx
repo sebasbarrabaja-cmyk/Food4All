@@ -28,7 +28,7 @@ export default function Home() {
         <img className="hero__img" src={HERO_IMG} alt="Ilustración de un campo con olivos y una caja de fruta y verdura fresca" />
         <div className="container hero__content">
           <p className="eyebrow hero__eyebrow">Marketplace de alimentación local</p>
-          <h1 id="hero-title">Planifica tu comida. Ahorra. <span className="hero__accent">Come como en casa.</span></h1>
+          <h1 id="hero-title">Planifica tu comida. <span className="hero__accent">Come como en casa.</span></h1>
           <p className="lead">Productos de varios vendedores locales en una sola compra y una sola entrega.</p>
           <div className="hero__actions">
             <Link to="/comprar" className="btn btn-cta btn-lg">Quiero comprar <Icon name="arrow" size={18} /></Link>

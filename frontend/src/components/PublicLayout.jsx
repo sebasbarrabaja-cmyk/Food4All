@@ -36,7 +36,7 @@ export default function PublicLayout() {
         <div className="container footer-grid">
           <div>
             <Logo size={28} />
-            <p className="muted small" style={{ marginTop: 8 }}>Planifica tu comida. Ahorra. Come como en casa.</p>
+            <p className="muted small" style={{ marginTop: 8 }}>Planifica tu comida. Come como en casa.</p>
           </div>
           <nav aria-label="Clientes">
             <h2 className="footer-title">Clientes</h2>
