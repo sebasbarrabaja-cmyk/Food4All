@@ -47,3 +47,9 @@ Se descartaron 3:
 - «El repositorio es público» es correcto: comprobado en GitHub.
 - Distinguir en el panel un número de registro de una exención pediría un campo nuevo en los datos.
 - Registrar mensajes que no tocan la landing: pendiente de que Sebastián decida qué regla manda.
+
+### ~00:44
+
+a
+
+**Resultado:** En Food4All se registran **todos** los prompts del desarrollo, como pide `AGENTS.md` (el profesor exige todos), aunque no toquen la landing. La regla privada de Sebastián que decía «lo que no toca la landing no entra» queda pendiente de que él la cambie.
