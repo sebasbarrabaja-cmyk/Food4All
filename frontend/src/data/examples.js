@@ -92,6 +92,8 @@ export const VENDOR_ORDERS = [
 ];
 
 export const productById = (id) => PRODUCTS.find((p) => p.id === id);
+// Suma de líneas [id, cantidad] a precio de ejemplo.
+export const linesTotal = (items) => items.reduce((sum, [id, qty]) => sum + productById(id).price * qty, 0);
 
 // Agrupa líneas [productId, qty] por vendedor.
 export function groupByVendor(lines) {

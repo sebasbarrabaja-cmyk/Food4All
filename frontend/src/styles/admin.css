@@ -78,7 +78,8 @@
 
 /* Hito 2: requisitos leídos de docs/requisitos (AdminHito2.jsx) */
 #hito2 h3 { margin-top: 36px; }
-.h2-links { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.h2-links__label { margin: 16px 0 0; }
+.h2-links { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .h2-links a {
   display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 0 14px; border-radius: var(--radius-pill);
   border: 1px solid var(--border); background: var(--surface); color: var(--green); font-weight: 600; font-size: .9rem; text-decoration: none;

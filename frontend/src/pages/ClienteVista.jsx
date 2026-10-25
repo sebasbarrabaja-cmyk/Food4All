@@ -3,12 +3,12 @@ import ZoneTabs, { CLIENT_TABS } from '../components/ZoneTabs.jsx';
 import BasketByVendor from '../components/BasketByVendor.jsx';
 import { PhotoNote } from '../components/Photo.jsx';
 import Icon from '../components/Icon.jsx';
-import { EXAMPLE_ORDER, ORDER_STATES, REMINDERS, PRICE_NOTE, eur, productById, groupByVendor } from '../data/examples.js';
+import { EXAMPLE_ORDER, ORDER_STATES, REMINDERS, PRICE_NOTE, eur, linesTotal, groupByVendor } from '../data/examples.js';
 
 // Vista de ejemplo del cliente: carrito, checkout, seguimiento y después de comprar.
 export default function ClienteVista() {
   const o = EXAMPLE_ORDER;
-  const subtotal = o.items.reduce((sum, [id, qty]) => sum + productById(id).price * qty, 0);
+  const subtotal = linesTotal(o.items);
   const vendors = groupByVendor(o.items).length;
 
   return (

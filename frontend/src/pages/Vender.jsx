@@ -109,7 +109,7 @@ function SellerForm() {
       {field('pickupHours', 'Horarios de recogida posibles (opcional)', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
       {/* Consentimiento (RGPD): el servidor también lo comprueba; no se guarda aparte porque toda alta guardada lo ha aceptado */}
       <div className="field-check">
-        <input type="checkbox" id="privacy" checked={form.privacy} onChange={(e) => setForm({ ...form, privacy: e.target.checked })}
+        <input type="checkbox" id="privacy" checked={form.privacy} onChange={(e) => { setForm({ ...form, privacy: e.target.checked }); setErrors({ ...errors, privacy: undefined }); }}
           aria-invalid={Boolean(errors.privacy)} aria-describedby={errors.privacy ? 'privacy-err' : undefined} required />
         <label htmlFor="privacy">Acepto que se guarden estos datos solo para valorar el alta en esta demostración universitaria. No se comparten con nadie.</label>
         {errors.privacy && <span className="error" id="privacy-err" role="alert">{errors.privacy}</span>}

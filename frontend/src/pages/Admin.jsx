@@ -125,6 +125,7 @@ const fecha = (iso) => (iso
 function Sellers() {
   const [items, setItems] = useState([]);
   const [error, setError] = useState('');
+  const [actionError, setActionError] = useState(''); // fallo al cambiar un estado: la tabla se queda
   const navigate = useNavigate();
 
   // Sesión caducada (401) → al login: no es lo mismo que «no hay solicitudes».
@@ -142,7 +143,8 @@ function Sellers() {
       method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }),
     }).catch(() => null);
     if (r?.status === 401) return navigate('/admin/login');
-    if (!r?.ok) return setError('no se pudo cambiar el estado');
+    if (!r?.ok) return setActionError('No se pudo cambiar el estado. Inténtalo otra vez.');
+    setActionError('');
     load();
   }
 
@@ -152,6 +154,7 @@ function Sellers() {
   const sorted = [...items].sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''));
   return (
     <div className="table-wrap">
+      {actionError && <p role="alert" style={{ color: 'var(--danger)' }}>{actionError}</p>}
       <table>
         <thead><tr><th>Fecha</th><th>Negocio</th><th>Contacto</th><th>Recogida</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
         <tbody>
@@ -266,6 +269,8 @@ function Milestones() {
   );
 }
 
+const productos = (n) => `${n} ${n === 1 ? 'producto' : 'productos'}`;
+
 function MarketplaceExample() {
   const orders = [
     { ...EXAMPLE_ORDER, state: ORDER_STATES[EXAMPLE_ORDER.currentState] },
@@ -281,7 +286,7 @@ function MarketplaceExample() {
               {VENDORS.filter((v) => v.zone === z).map((v) => (
                 <li key={v.id} className="task-line">
                   <span><strong>{v.name}</strong> <span className="muted small">{v.type}</span></span>
-                  <span className="muted small">{PRODUCTS.filter((p) => p.vendor === v.id).length} productos</span>
+                  <span className="muted small nowrap">{productos(PRODUCTS.filter((p) => p.vendor === v.id).length)}</span>
                 </li>
               ))}
             </ul>

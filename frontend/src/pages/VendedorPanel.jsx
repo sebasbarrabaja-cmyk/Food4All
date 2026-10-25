@@ -1,7 +1,7 @@
 import Status from '../components/Status.jsx';
 import Photo, { PhotoNote } from '../components/Photo.jsx';
 import ZoneTabs, { SELLER_TABS } from '../components/ZoneTabs.jsx';
-import { PRODUCTS, VENDORS, VENDOR_ORDERS, PRICE_NOTE, eur, productById } from '../data/examples.js';
+import { PRODUCTS, VENDORS, VENDOR_ORDERS, PRICE_NOTE, eur, linesTotal, productById } from '../data/examples.js';
 
 // Vista de ejemplo del panel de un vendedor (Granja La Vereda).
 const VENDOR = VENDORS.find((v) => v.id === 's1');
@@ -86,7 +86,7 @@ export default function VendedorPanel() {
             <p className="muted">Tus ventas y la comisión de FOOD4ALL.</p>
           </div>
           <ul className="divided">
-            <li><strong>Ventas del periodo:</strong> <Status kind="pendiente" /> <span className="muted small">(dependen de la comisión)</span></li>
+            <li><strong>Ventas del periodo:</strong> {eur(linesTotal(VENDOR_ORDERS.filter((o) => o.state === 'Confirmado').flatMap((o) => o.items)))} <span className="muted small">(pedidos confirmados, antes de la comisión)</span></li>
             <li><strong>Comisión FOOD4ALL:</strong> <Status kind="pendiente" /></li>
             <li><strong>Quién la asume:</strong> <Status kind="pendiente" /></li>
             <li><strong>Periodicidad de pagos:</strong> <Status kind="pendiente" /></li>

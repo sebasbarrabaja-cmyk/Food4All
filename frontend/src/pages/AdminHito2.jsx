@@ -88,8 +88,10 @@ export default function AdminHito2() {
     <>
       <p className="lead">Necesidades, decisiones y requisitos del Hito 2, leídos de <code>docs/requisitos</code> del repositorio (línea base v0.4). Lo que se ve aquí es lo mismo que hay en los documentos.</p>
       <nav aria-label="Apartados del Hito 2">
+        <p className="muted small h2-links__label">Ir a:</p>
         <ul className="h2-links">{INDEX.map(([id, t]) => <li key={id}><a href={`#${id}`}>{t}</a></li>)}</ul>
       </nav>
+      <p className="muted small h2-links__label">En Asana (abre otra pestaña):</p>
       <ul className="h2-links" aria-label="Hito 2 en Asana">
         {d.asana.map((a) => <li key={a.url}><a href={a.url} target="_blank" rel="noreferrer"><Icon name="flag" size={16} /> {a.name}<span className="sr-only"> (abre Asana en otra pestaña)</span></a></li>)}
       </ul>

@@ -145,3 +145,18 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 10 · Privacidad en el alta y detalles de texto
 
 **Resultado:** El alta de vendedor lleva una casilla obligatoria: «Acepto que se guarden estos datos solo para valorar el alta en esta demostración universitaria. No se comparten con nadie.» El servidor también la exige (solo acepta `true`; probado con `curl`), y no se guarda aparte porque toda alta guardada la ha aceptado. Se avisa de que todos los campos son obligatorios salvo los marcados, y «Horarios» pasa a «(opcional)», como ya era en el servidor. Detalles: titulares sin palabras sueltas (`text-wrap: balance`), «1 l» y «Málaga · Sevilla · Granada» sin partirse, «Ver en Commons» en una línea, «1 producto» en singular y título propio en la página 404.
+
+### Revisión final (/code-review y /security-review)
+
+**Resultado:** La revisión de seguridad no encontró vulnerabilidades en la rama. De los 9 hallazgos de la revisión de código se arreglaron 7:
+- Si falla un cambio de estado, el aviso sale encima de la tabla y la tabla no desaparece (probado parando el servidor).
+- La 404 conserva su título al pasar de una 404 a otra.
+- El error de privacidad se borra al marcar la casilla.
+- «Ventas del periodo» del vendedor: 8,40 € (pedidos confirmados, antes de la comisión). Antes decía «Por definir», como si las ventas dependieran de la comisión.
+- Una sola función, `linesTotal`, para sumar líneas a precio de ejemplo.
+- `docs/precios-de-ejemplo.md` ya no comprueba la cesta del asistente, que no se muestra en ninguna página.
+- En Hito 2, «Ir a:» y «En Asana (abre otra pestaña):» distinguen el índice de los enlaces externos.
+
+Además se arregló «1 productos» también en el Marketplace del panel. Se dejaron dos hallazgos:
+- **Pulsar el mismo enlace sin ancla sube arriba:** hoy no hay filtros en la URL y es lo habitual en la web.
+- **Guardar la prueba del consentimiento:** sería un campo nuevo en los datos; queda pendiente de Sebastián.

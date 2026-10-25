@@ -23,7 +23,7 @@ Los importes están en `frontend/src/data/examples.js` (campo `price`). Si cambi
 | Manzanas | 1 kg | 2,60 € | Mayorista Golden ~1,90 €/kg [3] |
 | Potaje de garbanzos (2 raciones) | 700 g | 6,50 € | Estimación |
 
-**Comprobación:** la cesta de ejemplo del asistente («Tengo 25 € para cuatro días») suma 14,20 € y el pedido de ejemplo, 19,10 € sin la entrega. Los dos son coherentes con la compra mínima de 10–15 € (H-01). La miel del panel del vendedor no tiene precio a propósito: es el ejemplo de ficha incompleta, que no se publica.
+**Comprobación:** el pedido de ejemplo suma 19,10 € sin la entrega, por encima de la compra mínima de 10–15 € (H-01). En el panel del vendedor, las ventas de los pedidos confirmados suman 8,40 €. La miel del panel del vendedor no tiene precio a propósito: es el ejemplo de ficha incompleta, que no se publica.
 
 ## Fuentes
 
