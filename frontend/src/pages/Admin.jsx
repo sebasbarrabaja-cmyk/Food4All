@@ -117,28 +117,51 @@ function Sidebar({ ia }) {
   );
 }
 
+// Fecha y hora de España, corta: «25/10/26, 23:40».
+const fecha = (iso) => (iso
+  ? new Date(iso).toLocaleString('es-ES', { timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short' })
+  : '—');
+
 function Sellers() {
   const [items, setItems] = useState([]);
-  const load = useCallback(() => fetch('/api/admin/sellers').then((r) => r.json()).then(setItems), []);
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
+
+  // Sesión caducada (401) → al login: no es lo mismo que «no hay solicitudes».
+  const load = useCallback(() => fetch('/api/admin/sellers')
+    .then((r) => {
+      if (r.status === 401) return navigate('/admin/login');
+      if (!r.ok) throw new Error(`error ${r.status}`);
+      return r.json().then((list) => { setItems(list); setError(''); });
+    })
+    .catch((e) => setError(e.message)), [navigate]);
   useEffect(() => { load(); }, [load]);
 
   async function setStatus(id, status) {
-    await fetch(`/api/admin/sellers/${id}`, {
+    const r = await fetch(`/api/admin/sellers/${id}`, {
       method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }),
-    });
+    }).catch(() => null);
+    if (r?.status === 401) return navigate('/admin/login');
+    if (!r?.ok) return setError('no se pudo cambiar el estado');
     load();
   }
 
+  if (error) return <p role="alert" style={{ color: 'var(--danger)' }}>Error con las altas: {error} <button className="btn btn-ghost" onClick={load}>Reintentar</button></p>;
   if (!items.length) return <p className="muted">Todavía no hay solicitudes de alta.</p>;
+  // La más nueva, arriba.
+  const sorted = [...items].sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''));
   return (
     <div className="table-wrap">
       <table>
-        <thead><tr><th>Negocio</th><th>Tipo</th><th>Zona</th><th>Contacto</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>Negocio</th><th>Contacto</th><th>Recogida</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
         <tbody>
-          {items.map((s) => (
+          {sorted.map((s) => (
             <tr key={s.id}>
-              <td><strong>{s.businessName}</strong><br /><span className="muted small">{s.offer}</span></td>
-              <td>{s.type}</td><td>{s.zone}</td><td>{s.email}</td><td>{s.sanitaryRegistry}</td>
+              <td className="small">{fecha(s.createdAt)}</td>
+              <td><strong>{s.businessName}</strong> <span className="muted small">· {s.type} · {s.zone}</span><br /><span className="muted small">{s.offer}</span></td>
+              <td>{s.email}<br /><span className="muted small">{s.phone || 'sin teléfono'}</span></td>
+              <td className="small">{s.pickupHours || '—'}</td>
+              <td>{s.sanitaryRegistry}</td>
               <td>
                 <select aria-label={`Estado de ${s.businessName}`} value={s.status} onChange={(e) => setStatus(s.id, e.target.value)}>
                   {STATUSES.map((st) => <option key={st}>{st}</option>)}

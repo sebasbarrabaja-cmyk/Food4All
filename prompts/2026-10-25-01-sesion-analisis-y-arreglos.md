@@ -125,3 +125,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 5 · Botón «Solicitar el alta» arriba en /vender
 
 **Resultado:** El inicio de `/vender` tiene ahora un botón «Solicitar el alta» que lleva al formulario, igual que «Ver cómo sería tu pedido» en `/comprar`. Antes el formulario quedaba tres pantallas más abajo sin ningún acceso directo. Probado: el clic deja el formulario entero a la vista, sin que lo tape la cabecera.
+
+### Punto 6 · Altas en el panel
+
+**Resultado:** La tabla de altas muestra ahora la fecha (hora de España), el teléfono (o «sin teléfono») y los horarios de recogida, que se pedían en el formulario pero no se veían. Lo más nuevo sale arriba. Si la sesión ha caducado, lleva al login en vez de decir «Todavía no hay solicitudes», y si falla un cambio de estado se avisa. Probado con dos altas de prueba (borradas después): cambio de estado guardado y, tras reiniciar el servidor, el cambio lleva al login sin guardar nada.
