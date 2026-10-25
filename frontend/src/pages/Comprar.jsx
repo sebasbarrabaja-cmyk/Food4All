@@ -157,16 +157,16 @@ export default function Comprar() {
           <h2>¿En qué se diferencia?</h2>
           <div className="table-wrap">
             <table>
-              <thead><tr><th></th><th>FOOD4ALL</th><th>Supermercado</th><th>Delivery inmediato</th></tr></thead>
+              <thead><tr><th></th><th>FOOD4ALL</th><th>Plataformas de mercados municipales</th><th>Supermercado</th><th>Delivery inmediato</th></tr></thead>
               <tbody>
-                <tr><th scope="row">Para qué</th><td>Planificar varios días</td><td>Compra general</td><td>Comer ahora</td></tr>
-                <tr><th scope="row">Vendedores</th><td>Varios locales en un carrito</td><td>Una cadena</td><td>Normalmente uno por pedido</td></tr>
-                <tr><th scope="row">Después de comprar</th><td>Recordatorios y siguiente compra</td><td>—</td><td>—</td></tr>
-                <tr><th scope="row">Precio</th><td colSpan={3}>Algunos productos podrían ser más competitivos <Status kind="hipotesis" /> — no afirmamos que todo sea más barato.</td></tr>
+                <tr><th scope="row">Para qué</th><td>Planificar varios días</td><td>Comprar en los puestos de tu mercado</td><td>Compra general</td><td>Comer ahora</td></tr>
+                <tr><th scope="row">Vendedores</th><td>Varios locales en un carrito</td><td>Puestos de un mercado (en Sevilla, un mercado por pedido)</td><td>Una cadena</td><td>Normalmente uno por pedido</td></tr>
+                <tr><th scope="row">Después de comprar</th><td>Recordatorios y siguiente compra</td><td>—</td><td>—</td><td>—</td></tr>
+                <tr><th scope="row">Precio</th><td colSpan={4}>Algunos productos podrían ser más competitivos <Status kind="hipotesis" /> — no afirmamos que todo sea más barato.</td></tr>
               </tbody>
             </table>
           </div>
-          <p className="muted small" style={{ marginTop: 8 }}>Comparación conceptual; no describe con exactitud a ningún servicio concreto.</p>
+          <p className="muted small" style={{ marginTop: 8 }}>Comparación conceptual. La columna de mercados municipales resume las plataformas públicas de Málaga y Sevilla, consultadas el 26/10/2026.</p>
         </div>
       </section>
     </>
