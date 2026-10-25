@@ -132,7 +132,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 
 | Patrón | Dónde | Notas |
 |---|---|---|
-| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro, 3 botones y, a la derecha, la pestaña **«Asistente IA»** (`.nav-btn--ai`: filo y chispa en azafrán, visible pero sin destacar más que comprar; RF-12.1-01, C-26). El activo va en crema y "Quiero comprar" siempre en naranja |
+| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro y 3 botones. La pestaña «Asistente IA» (C-26) se quitó el 25/10/2026: el asistente es del marketplace, no de la landing; se llega a él desde Comprar y el pie. El activo va en crema y "Quiero comprar" siempre en naranja |
 | **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en `--green-deep`. La activa se subraya en azafrán |
 | **Hero** | `Home.jsx` | Ilustración `hero.svg`, oscurecido a la izquierda, "Come como en casa." en azafrán y tres botones grandes |
 | **Bandas de sección** | `palette.css` | `.band-sage`, `.band-peach`, `.band-mustard`, `.band-forest` y `.band-plain`. En páginas interiores se alternan solas salvia y melocotón |
@@ -189,7 +189,7 @@ food4all/
 ```
 
 - **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel`, `/comunidad` y `/creditos`.
-- **Cabecera:** tres botones más la pestaña «Asistente IA» a la derecha (23/10/2026, C-26). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
+- **Cabecera:** tres botones (la pestaña «Asistente IA» de la C-26 se quitó el 25/10/2026: es del marketplace, no de la landing). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
 - **Rutas privadas:** `/admin` (las protege el backend, no solo la interfaz).
 - **Vista pública y privada están separadas:** el equipo, los hitos, el mercado y el marco legal **no** van en el JavaScript público. Viven en `backend/project.js` y se sirven con sesión.
 - **Asana:**

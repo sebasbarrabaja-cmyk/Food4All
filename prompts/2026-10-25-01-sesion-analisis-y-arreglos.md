@@ -133,3 +133,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 7 · Índice en Hito 2 y registro de cambios compacto
 
 **Resultado:** Hito 2 (unas 16 pantallas) tiene al principio un índice con sus 9 apartados. El registro de cambios ocupa una línea por cambio (caben unos 14 por pantalla en vez de 5) y cada uno se sigue abriendo con sus campos de la Clase 11. No se cambia ningún dato ni de dónde sale. Se descartó pasarlo a tabla porque se perderían esos campos.
+
+### Punto 8 · Quitar la pestaña «Asistente IA»
+
+**Resultado:** Fuera de la cabecera, con su CSS. Motivo de Sebastián: la pestaña es del marketplace, no de la landing (que explica el proyecto). La cabecera vuelve a los tres botones; al asistente se llega desde Comprar y desde el pie. `docs/DISENO.md` actualizado. Pendiente para el equipo: anotarlo en la línea base (C-26 y RF-12.1-01 siguen describiendo la pestaña).
