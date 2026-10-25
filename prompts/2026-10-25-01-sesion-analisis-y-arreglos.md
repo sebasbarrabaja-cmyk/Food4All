@@ -166,3 +166,5 @@ Además se arregló «1 productos» también en el Marketplace del panel. Se dej
 2a 3a
 
 **Resultado:** 2a: cada alta guarda `privacyAcceptedAt`, con la misma marca de tiempo que `createdAt`, como prueba de cuándo se aceptó la casilla (RGPD, art. 7.1). Probado con una alta de prueba, borrada después. 3a: abajo.
+
+**Resultado (3a):** El enlace directo `/admin#prompts` (el que se da al profesor) y los demás del panel llegan ahora a su sección. Antes se quedaban arriba porque el panel aún no tenía datos. Un primer arreglo (repetir el salto una vez) se quedaba corto, porque las secciones de arriba crecían al cargar. El definitivo vuelve a bajar a la sección cada vez que el panel cambia de altura, durante 3 s como mucho, y se para si la persona toca la página. Probado con `#prompts`, `#vendedores` y `#hito2`. Sin probar: que se pare al mover la rueda (PinchTab no genera esos eventos) y el caso con Asana conectado y lento.

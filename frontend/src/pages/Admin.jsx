@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import Icon from '../components/Icon.jsx';
 import AdminPrompts from './AdminPrompts.jsx';
@@ -321,10 +321,26 @@ const KIND = { fuente: ['decidido', 'Fuente externa'], hipotesis: ['hipotesis', 
 export default function Admin() {
   const [p, setP] = useState(null);
   const navigate = useNavigate();
+  const { hash } = useLocation();
 
   useEffect(() => {
     fetch('/api/admin/project').then((r) => (r.ok ? r.json().then(setP) : navigate('/admin/login')));
   }, [navigate]);
+
+  // Enlace directo (p. ej. /admin#prompts para el profesor): cuando el panel se pinta, las secciones
+  // de arriba aún cargan sus datos y crecen, y la sección pedida se va hacia abajo. Durante 3 s, cada
+  // vez que el panel cambia de altura se vuelve a bajar a ella; si la persona toca la página, se para.
+  useEffect(() => {
+    if (!p || !hash) return undefined;
+    const go = () => document.getElementById(hash.slice(1))?.scrollIntoView();
+    const ro = new ResizeObserver(go);
+    ro.observe(document.querySelector('.admin-main'));
+    const stop = () => ro.disconnect();
+    const timer = setTimeout(stop, 3000);
+    const USER = ['wheel', 'keydown', 'mousedown', 'touchstart'];
+    USER.forEach((ev) => window.addEventListener(ev, stop, { once: true }));
+    return () => { stop(); clearTimeout(timer); USER.forEach((ev) => window.removeEventListener(ev, stop)); };
+  }, [p, hash]);
 
   async function logout() {
     await fetch('/api/admin/logout', { method: 'POST' });
