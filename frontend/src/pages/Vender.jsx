@@ -107,7 +107,7 @@ function SellerForm() {
       {field('sanitaryRegistry', 'Número de registro sanitario', <input {...inv('sanitaryRegistry')} value={form.sanitaryRegistry} onChange={set('sanitaryRegistry')} required />)}
       {field('offer', '¿Qué ofreces?', <textarea {...inv('offer')} value={form.offer} onChange={set('offer')} required />, 'Tipo de productos, temporada, volumen aproximado.')}
       {field('pickupHours', 'Horarios de recogida posibles (opcional)', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
-      {/* Consentimiento (RGPD): el servidor también lo comprueba; no se guarda aparte porque toda alta guardada lo ha aceptado */}
+      {/* Consentimiento (RGPD): el servidor también lo comprueba y guarda cuándo se aceptó (privacyAcceptedAt) */}
       <div className="field-check">
         <input type="checkbox" id="privacy" checked={form.privacy} onChange={(e) => { setForm({ ...form, privacy: e.target.checked }); setErrors({ ...errors, privacy: undefined }); }}
           aria-invalid={Boolean(errors.privacy)} aria-describedby={errors.privacy ? 'privacy-err' : undefined} required />

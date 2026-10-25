@@ -63,6 +63,7 @@ app.post('/api/sellers/apply', (req, res) => {
   if (Object.keys(errors).length) return res.status(400).json({ errors });
   applyLimit.hit(req.ip);
 
+  const now = new Date().toISOString();
   const item = store.append('sellerApplications', {
     id: randomUUID(),
     businessName: str(b.businessName),
@@ -74,7 +75,9 @@ app.post('/api/sellers/apply', (req, res) => {
     offer: str(b.offer),
     pickupHours: str(b.pickupHours),
     status: 'recibida',
-    createdAt: new Date().toISOString(),
+    createdAt: now,
+    // Prueba del consentimiento (RGPD, art. 7.1): cuándo marcó la casilla. El texto está en Vender.jsx.
+    privacyAcceptedAt: now,
   });
   res.status(201).json({ id: item.id, status: item.status });
 });

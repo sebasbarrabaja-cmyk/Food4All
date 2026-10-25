@@ -160,3 +160,9 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 Además se arregló «1 productos» también en el Marketplace del panel. Se dejaron dos hallazgos:
 - **Pulsar el mismo enlace sin ancla sube arriba:** hoy no hay filtros en la URL y es lo habitual en la web.
 - **Guardar la prueba del consentimiento:** sería un campo nuevo en los datos; queda pendiente de Sebastián.
+
+### ~00:12 (26/10)
+
+2a 3a
+
+**Resultado:** 2a: cada alta guarda `privacyAcceptedAt`, con la misma marca de tiempo que `createdAt`, como prueba de cuándo se aceptó la casilla (RGPD, art. 7.1). Probado con una alta de prueba, borrada después. 3a: abajo.
