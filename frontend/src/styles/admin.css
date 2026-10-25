@@ -91,7 +91,11 @@
 .h2-more > summary { cursor: pointer; font-weight: 600; color: var(--green); min-height: 44px; display: flex; align-items: center; }
 .h2-sub { margin: 20px 0 4px; }
 #hito2 .filter select { max-width: 100%; }
-.h2-changes { display: grid; gap: 10px; margin-top: 12px; }
+.h2-changes { display: grid; gap: 4px; margin-top: 12px; }
+/* Registro de cambios: una línea por cambio; al abrirlo, sus campos de la Clase 11 */
+.prompt--compact > summary { padding: 8px 12px; }
+.prompt--compact .prompt__title { font-size: 0.95rem; }
+.prompt--compact .prompt__meta { display: inline; margin: 0 0 0 8px; }
 .h2-change { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
 .h2-change dt { font-weight: 600; color: var(--green); }
 .h2-change dd { margin: 0; }

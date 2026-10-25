@@ -129,3 +129,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 6 · Altas en el panel
 
 **Resultado:** La tabla de altas muestra ahora la fecha (hora de España), el teléfono (o «sin teléfono») y los horarios de recogida, que se pedían en el formulario pero no se veían. Lo más nuevo sale arriba. Si la sesión ha caducado, lleva al login en vez de decir «Todavía no hay solicitudes», y si falla un cambio de estado se avisa. Probado con dos altas de prueba (borradas después): cambio de estado guardado y, tras reiniciar el servidor, el cambio lleva al login sin guardar nada.
+
+### Punto 7 · Índice en Hito 2 y registro de cambios compacto
+
+**Resultado:** Hito 2 (unas 16 pantallas) tiene al principio un índice con sus 9 apartados. El registro de cambios ocupa una línea por cambio (caben unos 14 por pantalla en vez de 5) y cada uno se sigue abriendo con sus campos de la Clase 11. No se cambia ningún dato ni de dónde sale. Se descartó pasarlo a tabla porque se perderían esos campos.
