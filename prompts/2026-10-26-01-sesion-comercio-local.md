@@ -53,3 +53,14 @@ Se descartaron 3:
 a
 
 **Resultado:** En Food4All se registran **todos** los prompts del desarrollo, como pide `AGENTS.md` (el profesor exige todos), aunque no toquen la landing. La regla privada de Sebastián que decía «lo que no toca la landing no entra» queda pendiente de que él la cambie.
+
+### ~00:51
+
+Haz que la norma este en el propio git, para que cuando tu lo leas entiendas todo, subelo al git que quiero hacer un "/clear" que tienes demasiado contexto.
+
+**Resultado:** `AGENTS.md` actualizado:
+- **Regla 1:** se registran todos los prompts, en el mismo commit, con horas aproximadas «~» si hace falta, «####» para lo que no es un mensaje y sin credenciales.
+- **Regla 6:** las ramas salen de `main` y el repositorio es público.
+- **Apartado 9:** traspaso del 26/10, con las ramas y lo pendiente.
+
+Se suben `fix/analisis-landing` y `feat/comercio-local` a GitHub, sin PR.
