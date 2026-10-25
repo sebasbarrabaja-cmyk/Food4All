@@ -117,3 +117,7 @@ Arregla punto por punto, haz del 1 al 10 y cada vez que termies uno haz un anali
 ### Punto 3 · Asana sin conexión
 
 **Resultado:** Sin conexión con Asana, el panel ya no marca cada tarea del plan como «Abierto · Sin asignar» (el Hito 1, ya entregado, parecía sin empezar). Ahora muestra solo la tarea y «previsto: persona», con un aviso de que no hay estado real. Con Asana conectado no cambia nada (sin probar: en WSL no hay token).
+
+### Punto 4 · Segundo clic en los enlaces con ancla
+
+**Resultado:** `RouteEffects.jsx` ahora también reacciona a la `key` de cada navegación, que cambia en cada clic aunque la URL sea la misma. Probado en el navegador: bajar y volver a pulsar «Cómo funciona» vuelve a la sección (antes no hacía nada). De paso, pulsar «Quiero comprar» estando ya en `/comprar` sube al principio.
