@@ -29,3 +29,7 @@ Quiero que ahora hagas otro analisis pero solo en pequeños detalles. Busca info
 ### Cambio 1 · Tabla «¿En qué se diferencia?»
 
 **Resultado:** Nueva columna «Plataformas de mercados municipales» en `/comprar` (CL-01, CL-02). Málaga y Sevilla ya tienen plataformas municipales con reparto. En Sevilla, «en cada compra solo se permiten pedidos de un único mercado o agrupación», y esa es la diferencia con Food4All. La nota al pie dice de dónde salen los datos y la fecha de consulta.
+
+### Cambio 2 · Registro sanitario o exención
+
+**Resultado:** El campo del alta pasa a «Registro sanitario o exención», con la ayuda «Tu número de registro sanitario (RGSEAA). Si no lo necesitas, escribe el motivo: lo revisamos antes del alta». Los requisitos mínimos, el mensaje de error del servidor y la columna del panel dicen lo mismo. Así el formulario cumple la RST-05 ya validada («o una exención justificada»). Motivo: un productor en venta directa (Decreto 163/2016, CL-05) no tiene por qué tener registro RGSEAA. Queda como pregunta legal para el equipo si ese productor puede vender a través de un intermediario (CL-06).

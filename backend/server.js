@@ -57,7 +57,7 @@ app.post('/api/sellers/apply', (req, res) => {
   if (!SELLER_TYPES.includes(b.type)) errors.type = 'Elige un tipo de negocio.';
   if (!ZONES.includes(b.zone)) errors.zone = 'Elige una zona.';
   if (!/^\S+@\S+\.\S+$/.test(str(b.email))) errors.email = 'Introduce un correo válido.';
-  if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'El registro sanitario es obligatorio.';
+  if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'Indica tu registro sanitario o el motivo de la exención.';
   if (str(b.offer).length < 10) errors.offer = 'Cuéntanos brevemente qué ofreces (mín. 10 caracteres).';
   if (b.privacy !== true) errors.privacy = 'Para enviar la solicitud tienes que aceptar el uso de los datos.';
   if (Object.keys(errors).length) return res.status(400).json({ errors });

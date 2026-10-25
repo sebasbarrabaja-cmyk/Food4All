@@ -104,7 +104,8 @@ function SellerForm() {
         {field('email', 'Correo de contacto', <input {...inv('email')} type="email" value={form.email} onChange={set('email')} required />)}
         {field('phone', 'Teléfono (opcional)', <input {...inv('phone')} type="tel" value={form.phone} onChange={set('phone')} />)}
       </div>
-      {field('sanitaryRegistry', 'Número de registro sanitario', <input {...inv('sanitaryRegistry')} value={form.sanitaryRegistry} onChange={set('sanitaryRegistry')} required />)}
+      {field('sanitaryRegistry', 'Registro sanitario o exención', <input {...inv('sanitaryRegistry')} value={form.sanitaryRegistry} onChange={set('sanitaryRegistry')} required />,
+        'Tu número de registro sanitario (RGSEAA). Si no lo necesitas, escribe el motivo: lo revisamos antes del alta.')}
       {field('offer', '¿Qué ofreces?', <textarea {...inv('offer')} value={form.offer} onChange={set('offer')} required />, 'Tipo de productos, temporada, volumen aproximado.')}
       {field('pickupHours', 'Horarios de recogida posibles (opcional)', <input {...inv('pickupHours')} value={form.pickupHours} onChange={set('pickupHours')} placeholder="Ej.: lunes a viernes, 8:00–11:00" />)}
       {/* Consentimiento (RGPD): el servidor también lo comprueba y guarda cuándo se aceptó (privacyAcceptedAt) */}
@@ -176,7 +177,7 @@ export default function Vender() {
           <ul className="divided">
             <li>Sin producto en mal estado ni obtenido de forma fraudulenta.</li>
             <li>Sin información oculta: fichas completas con ingredientes y alérgenos.</li>
-            <li>Registro sanitario en vigor.</li>
+            <li>Registro sanitario en vigor o una exención justificada, que revisamos antes del alta.</li>
             <li className="muted">Proceso detallado de homologación <Status kind="pendiente" /></li>
           </ul>
           <p className="muted small" style={{ marginTop: 12 }}>

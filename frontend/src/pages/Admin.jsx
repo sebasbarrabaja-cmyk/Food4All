@@ -156,7 +156,7 @@ function Sellers() {
     <div className="table-wrap">
       {actionError && <p role="alert" style={{ color: 'var(--danger)' }}>{actionError}</p>}
       <table>
-        <thead><tr><th>Fecha</th><th>Negocio</th><th>Contacto</th><th>Recogida</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>Negocio</th><th>Contacto</th><th>Recogida</th><th>Registro o exención</th><th>Estado</th></tr></thead>
         <tbody>
           {sorted.map((s) => (
             <tr key={s.id}>
