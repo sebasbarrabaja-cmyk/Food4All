@@ -32,6 +32,18 @@ a
 
 **Resultado:** Versión 0.2 del apartado B.3. Se separan las partidas con fuente o calculadas (MVP, repartidores, pasarela, gestoría, seguro e IA) de las que solo tienen una hipótesis del equipo (alquiler, furgonetas con frío, personal del hub, atención al cliente, dirección, mantenimiento, marketing, asesoría y servidores). Coste del primer curso: 185.957–433.787 € frente a 28.000–225.000 € de ingresos. El modelo no cubre costes en ningún escenario, ni siquiera sin el MVP, lo que refuerza el riesgo R6. Cifras recalculadas con un script.
 
+### ~13:20
+
+Segun nuestro profesor, le costo montar el marketplace mundo animal 3.2M(Ahora solo estamos con ideas, nada confirmado)
+
+**Resultado:** El asistente comparó la cifra con la estimación del documento (orden de magnitud, qué puede incluir) y propuso preguntas para el profesor. No se cambió el documento; quedó como propuesta registrarla como referencia sin nombrar la empresa (repositorio público).
+
+### ~13:30
+
+a. Tambien piensa que nuestro objetivo es minimo alacncar toda la peninsula iberica
+
+**Resultado:** La cifra del profesor no entra en el documento hasta que él aclare qué incluye. El asistente explicó qué supone el objetivo de la península (fases, coste por ciudad, Portugal y RST-04) y propuso cómo registrarlo, sin cambiar todavía el documento ni la línea base.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
