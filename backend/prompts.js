@@ -4,7 +4,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync } from 
 
 const DIR = new URL('../prompts/', import.meta.url);
 const FIELDS = ['titulo', 'fecha', 'autor', 'herramienta', 'tipo', 'tema', 'origen'];
-export const TYPES = ['Prompt base', 'Sesión de trabajo', 'Feedback', 'Versión pulida', 'Otro'];
+export const TYPES = ['Prompt base', 'Sesión de trabajo', 'Feedback', 'Otro'];
 // Para qué sirvió cada prompt: el panel los agrupa por persona y, dentro, por tema.
 export const TEMAS = ['Contexto y método', 'Landing (web y panel)', 'Requisitos del Hito 2', 'Asana', 'Competencia', 'Organización del equipo', 'Otro'];
 
