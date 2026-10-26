@@ -1,6 +1,6 @@
 # FOOD4ALL · Alcance, coste y tiempo
 
-26/10/2026 · Versión 0.1 · Estado: **borrador**, pendiente de revisión por el equipo · Preparado por Sebastián con Claude Code (prompt en `prompts/2026-10-26-03-sesion-alcance-coste-tiempo.md`)
+26/10/2026 · Versión 0.2 · Estado: **borrador**, pendiente de revisión por el equipo · Preparado por Sebastián con Claude Code (prompt en `prompts/2026-10-26-03-sesion-alcance-coste-tiempo.md`)
 
 Este documento fija las tres restricciones del proyecto (alcance, tiempo y coste) en dos planos que no se mezclan:
 
@@ -137,29 +137,55 @@ Siguen sin decidir el rol jurídico (D-01), la comisión (D-02), el hub (D-03, s
 
 | Fase | Duración | Contenido |
 | --- | --- | --- |
-| Construcción del MVP | 6 meses | Programar los 403 requisitos del MVP, con integraciones reales |
+| Construcción del MVP | 6–8 meses | Programar los 403 requisitos del MVP, con integraciones reales |
 | Alta de vendedores y prueba en una ciudad | 1–2 meses | Entrevistas a vendedores (F-08, ninguna hecha), registro sanitario (RST-05) y prueba del hub |
 | Piloto en tres ciudades | 1 curso (≈ 7 meses de operación) | El periodo sobre el que se calcula el SOM |
 
 ### B.3 Coste
 
-| Partida | Pesimista | Optimista (más pedidos, más gasto) | Cálculo y etiqueta |
+El periodo es el primer curso: la construcción y los 7 meses de operación. Los sueldos se calculan con el factor de cotización de A.3 (× 1,3215): el SMI de 2026 (17.094 €/año, RD 126/2026, **Hecho**) cuesta 22.590 € a la empresa, un junior (28.000 €) cuesta 37.002 € y un senior (41.339 €, media de Indeed del 11/10/2026, **Hecho**) cuesta 54.629 €. «Pesimista» es menos pedidos y menos gasto; «optimista» es más pedidos y, por tanto, más gasto.
+
+**Partidas con fuente o calculadas sobre datos:**
+
+| Partida | Pesimista | Optimista | Cálculo y etiqueta |
 | --- | ---: | ---: | --- |
-| Construir el MVP (una vez) | 55.503 € | 55.503 € | **Hipótesis:** 3 juniors durante 6 meses a 37.002 €/año de coste empresa |
-| Repartidores | 39.532 € | 79.064 € | **Inferencia:** 1 o 2 personas por hub, cobrando el SMI de 2026 (17.094 €/año, RD 126/2026, **Hecho**) × 1,3215, durante 7 meses |
-| Alquiler de los 3 hubs | 16.800 € | 31.500 € | **Hipótesis:** 800–1.500 € al mes por hub durante 7 meses. **No encontrado:** precio de alquiler de un local o nave pequeña en las tres ciudades |
+| Construir el MVP (una vez) | 55.503 € | 85.756 € | **Hipótesis:** de 3 juniors durante 6 meses a 2 juniors y 1 senior durante 8 meses |
+| Repartidores | 39.532 € | 79.064 € | **Inferencia:** 1 o 2 personas por hub, cobrando el SMI, durante 7 meses |
 | Pasarela de pago | 6.566 € | 33.232 € | **Inferencia:** 1,5 % + 0,25 € por cobro (tarifa estándar de Stripe para tarjetas del EEE, según meetergo; confirmar en la web de Stripe) sobre 281.400 € a 30 € por pedido, y sobre 1.500.800 € a 35 € por pedido |
-| Vehículos con frío (RST-10) | — | — | **No estimado:** falta un precio de renting con fuente |
-| IA real (Gemini 3.5 Flash) | ≈ 100 € | ≈ 500 € | **Hipótesis:** una consulta por pedido de unos 2.000 tokens de entrada y 1.000 de salida, a 1,50 $ y 9 $ por millón (precio de terceros; confirmar en Google) |
-| **Coste del primer curso** | **≈ 118.500 €** | **≈ 199.800 €** | Sin vehículos, gestoría, seguros ni marketing |
+| Gestoría (contabilidad, impuestos y nóminas) | 2.880 € | 7.680 € | **Inferencia:** 150–280 €/mes (percentiles 25 y 75 de 30 despachos, Copilot Gestoría 2026) más 15–30 € por nómina, con 6–12 empleados, durante 12 meses |
+| Seguro de responsabilidad civil | 300 € | 600 € | **Hecho (fuente secundaria):** 300–600 €/año para una pyme (Asest). No cubre la mercancía transportada |
+| IA real (Gemini 3.5 Flash) | 100 € | 500 € | **Hipótesis:** una consulta por pedido de unos 2.000 tokens de entrada y 1.000 de salida, a 1,50 $ y 9 $ por millón (precio de terceros; confirmar en Google) |
+
+**Partidas sin fuente (rango de hipótesis del equipo):**
+
+| Partida | Pesimista | Optimista | Supuesto y cómo se comprueba |
+| --- | ---: | ---: | --- |
+| Alquiler de los 3 hubs | 16.800 € | 31.500 € | 800–1.500 € al mes por hub durante 7 meses. **No encontrado:** precio de un local o nave pequeña. Se comprueba con anuncios fechados en las tres ciudades |
+| Furgonetas con frío (RST-10) | 12.600 € | 42.000 € | 1 o 2 por hub, a 600–1.000 € al mes en renting, durante 7 meses. **No encontrado:** las empresas de renting no publican precios. Se comprueba pidiendo presupuesto |
+| Personal del hub (preparar y juntar pedidos) | 19.766 € | 39.532 € | Media jornada o jornada completa por hub, cobrando el SMI, durante 7 meses |
+| Atención al cliente y alta de vendedores | 13.177 € | 26.355 € | 1 o 2 personas para las tres ciudades, cobrando el SMI, durante 7 meses (respuesta humana en 24 h, RST-05) |
+| Dirección del negocio | 0 € | 21.584 € | Pesimista: los fundadores no cobran. Optimista: 1 sueldo de junior durante 7 meses |
+| Mantenimiento del software | 10.792 € | 21.584 € | Media jornada o jornada completa de un junior durante 7 meses (arreglos y V2) |
+| Marketing (captar clientes) | 6.700 € | 40.200 € | 10–30 € por cliente para 670–1.340 clientes (los del SOM). **No encontrado:** un coste de captación de referencia |
+| Asesoría legal (D-01, venta directa) y constitución | 1.000 € | 3.000 € | Se comprueba pidiendo presupuesto |
+| Servidores y dominio | 240 € | 1.200 € | 20–100 € al mes durante 12 meses |
+
+| Total | Pesimista | Optimista |
+| --- | ---: | ---: |
+| Sin construir el MVP (operar el primer curso) | 130.454 € | 348.032 € |
+| **Con el MVP (primer curso completo)** | **185.957 €** | **433.787 €** |
+
+En la versión 0.1, solo con las partidas de la primera tabla más el alquiler, el coste era de 118.501 € a 199.799 €. Ese «barato» era un mínimo: no contaba las furgonetas, el personal fuera del reparto ni el marketing.
+
+**Siguen sin contar:** el IVA, las compensaciones por faltas o retrasos (dependen de D-02), el seguro de la mercancía, los gastos de antes del lanzamiento (alta de vendedores y prueba en una ciudad) y la subida de sueldos de 2027.
 
 **Ingresos esperados** (análisis del mercado del Hito 3, **Hipótesis**): el GMV, es decir, el valor total de los pedidos, está entre 0,28 y 1,5 M€. Con una comisión del 10–15 %, salen **28.000–225.000 € al año**.
 
 **Lectura:**
 
-- **Escenario pesimista:** solo el reparto, los hubs y la pasarela de pago (≈ 63.000 €) ya superan los ingresos (≈ 28.000 €). Sin contar el MVP, se pierden unos 35.000 €; con el MVP, unos 90.000 €.
-- **Escenario optimista:** cubre los costes (≈ 225.000 € frente a ≈ 199.800 €), pero solo si se cumple todo a la vez: demanda alta, comisión del 15 % y los hubs en la parte alta de su capacidad.
-- **Conclusión:** confirma el riesgo R6. Con un pedido de 10–15 € y una comisión del 10–15 %, cada pedido deja 1–2,25 €, y eso no paga el reparto. Antes de dar por bueno el modelo hay que decidir el pedido mínimo, la recogida en un punto (C-19) y la comisión (D-02).
+- **Escenario pesimista:** ingresa ≈ 28.000 € y gasta ≈ 130.500 € en operar. Pierde unos 102.000 € sin contar el MVP, y unos 158.000 € con él.
+- **Escenario optimista:** ingresa ≈ 225.000 € y gasta ≈ 348.000 € en operar. También pierde: unos 123.000 € sin contar el MVP, y unos 209.000 € con él. Con más pedidos hacen falta más repartidores, más furgonetas y más personal, así que el coste crece a la vez que los ingresos.
+- **Conclusión:** con estos supuestos, el modelo **no se paga en ningún escenario**. El primer curso de una plataforma suele perder dinero, pero aquí también se pierde en la operación, sin contar el MVP. Eso confirma el riesgo R6: con un pedido de 10–15 € y una comisión del 10–15 %, cada pedido deja 1–2,25 €, y eso no paga el reparto. Antes de dar por bueno el modelo hay que decidir el pedido mínimo, la recogida en un punto (C-19), la comisión (D-02) y si el reparto se hace con medios propios o se subcontrata.
 
 ---
 
@@ -174,6 +200,8 @@ Siguen sin decidir el rol jurídico (D-01), la comisión (D-02), el hub (D-03, s
 | Comisión | 10–15 % | D-02 | Equipo |
 | Personas por hub | 1–2 | D-03 y entrevistas a vendedores | Equipo |
 | Alquiler del hub | 800–1.500 €/mes | Anuncios con fecha en las tres ciudades | Equipo |
+| Renting de una furgoneta con frío | 600–1.000 €/mes | Presupuesto de dos empresas de renting | Equipo |
+| Coste de captar un cliente | 10–30 € | Prueba de anuncios o referencia publicada | Equipo |
 
 ## D. Fuentes
 
@@ -182,6 +210,9 @@ Siguen sin decidir el rol jurídico (D-01), la comisión (D-02), el hub (D-03, s
 - Salario junior: [Indeed, desarrollador/a junior](https://es.indeed.com/career/junior-developer/salaries) (consultado el 26/10/2026), [Nettocalc, desarrollador de software](https://nettocalc.com/es/desarrollador-software) y [Jobrise, salario developer junior 2026](https://jobrise.io/es/blog/salario-developer-junior-espana-2026/).
 - Cotizaciones de 2026: [Asepeyo, bases y tipos 2026](https://www.asepeyo.es/wp-content/uploads/Bases-tipos-cotizacion-2026-ES.pdf) y [Cuatrecasas, Orden de cotización 2026](https://www.cuatrecasas.com/es/spain/laboral/art/claves-orden-cotizacion-2026).
 - SMI 2026: [CSIF, RD 126/2026](https://www.csif.es/va/noticia/portada/castillayleonempresaprivada/articulo/85925).
+- Desarrollador senior: [Indeed, desarrollador/a senior](https://es.indeed.com/career/senior-developer/salaries) (actualizado el 11/10/2026).
+- Gestoría: [Copilot Gestoría, precios 2026](https://copilotgestoria.com/blog/pricing-gestorias-2026-tarifas-servicio-margenes-rentabilidad-estudio-despachos) y [Gestoría 24/7](https://gestoria247.com/sociedades/precios).
+- Seguro de responsabilidad civil: [Asest](https://asest.es/story/supuesto-practico-los-seguros-de-responsabilidad-civil-en-pequenos-negocios/) (fuente secundaria).
 - Stripe: [meetergo](https://meetergo.com/es/blog/stripe) y [getquipu](https://getquipu.com/blog/comisiones-stripe/) (fuentes secundarias).
 - Gemini: [pricepertoken](https://pricepertoken.com/pricing-page/model/google-gemini-3.5-flash) (fuente secundaria; la oficial es [ai.google.dev/gemini-api/docs/pricing](https://ai.google.dev/gemini-api/docs/pricing)).
 
@@ -190,3 +221,4 @@ Siguen sin decidir el rol jurídico (D-01), la comisión (D-02), el hub (D-03, s
 | Versión | Fecha | Cambio | Responsable |
 | --- | --- | --- | --- |
 | 0.1 | 26/10/2026 | Primera versión | Sebastián |
+| 0.2 | 26/10/2026 | B.3: partidas que faltaban (furgonetas, personal del hub, atención al cliente, dirección, mantenimiento, marketing, gestoría, seguro, asesoría y servidores) y un senior en el MVP optimista. El coste del primer curso pasa de 118.501–199.799 € a 185.957–433.787 €, y el modelo deja de cubrir costes también en el escenario optimista | Sebastián |
