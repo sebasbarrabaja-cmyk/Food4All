@@ -1,4 +1,4 @@
-import { groupByVendor, PRICE_PENDING } from '../data/examples.js';
+import { groupByVendor, eur } from '../data/examples.js';
 import Photo from './Photo.jsx';
 
 // Lista agrupada por vendedor, con origen y alérgenos visibles (se usa en asistente y carrito).
@@ -17,7 +17,7 @@ export default function BasketByVendor({ lines, showNotes = false }) {
                   <div className="small muted">Origen: {p.origin} · Alérgenos: {p.allergens} · {p.storage}</div>
                   {showNotes && note && <div className="small basket__why">Por qué: {note}</div>}
                 </div>
-                <span className="small muted basket__price">{PRICE_PENDING}</span>
+                <span className="small basket__price">{eur(p.price * qty)}</span>
               </li>
             ))}
           </ul>

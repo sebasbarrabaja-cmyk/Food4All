@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import Icon from '../components/Icon.jsx';
 import AdminPrompts from './AdminPrompts.jsx';
@@ -117,28 +117,54 @@ function Sidebar({ ia }) {
   );
 }
 
+// Fecha y hora de España, corta: «25/10/26, 23:40».
+const fecha = (iso) => (iso
+  ? new Date(iso).toLocaleString('es-ES', { timeZone: 'Europe/Madrid', dateStyle: 'short', timeStyle: 'short' })
+  : '—');
+
 function Sellers() {
   const [items, setItems] = useState([]);
-  const load = useCallback(() => fetch('/api/admin/sellers').then((r) => r.json()).then(setItems), []);
+  const [error, setError] = useState('');
+  const [actionError, setActionError] = useState(''); // fallo al cambiar un estado: la tabla se queda
+  const navigate = useNavigate();
+
+  // Sesión caducada (401) → al login: no es lo mismo que «no hay solicitudes».
+  const load = useCallback(() => fetch('/api/admin/sellers')
+    .then((r) => {
+      if (r.status === 401) return navigate('/admin/login');
+      if (!r.ok) throw new Error(`error ${r.status}`);
+      return r.json().then((list) => { setItems(list); setError(''); });
+    })
+    .catch((e) => setError(e.message)), [navigate]);
   useEffect(() => { load(); }, [load]);
 
   async function setStatus(id, status) {
-    await fetch(`/api/admin/sellers/${id}`, {
+    const r = await fetch(`/api/admin/sellers/${id}`, {
       method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }),
-    });
+    }).catch(() => null);
+    if (r?.status === 401) return navigate('/admin/login');
+    if (!r?.ok) return setActionError('No se pudo cambiar el estado. Inténtalo otra vez.');
+    setActionError('');
     load();
   }
 
+  if (error) return <p role="alert" style={{ color: 'var(--danger)' }}>Error con las altas: {error} <button className="btn btn-ghost" onClick={load}>Reintentar</button></p>;
   if (!items.length) return <p className="muted">Todavía no hay solicitudes de alta.</p>;
+  // La más nueva, arriba.
+  const sorted = [...items].sort((a, b) => (b.createdAt ?? '').localeCompare(a.createdAt ?? ''));
   return (
     <div className="table-wrap">
+      {actionError && <p role="alert" style={{ color: 'var(--danger)' }}>{actionError}</p>}
       <table>
-        <thead><tr><th>Negocio</th><th>Tipo</th><th>Zona</th><th>Contacto</th><th>Registro sanitario</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Fecha</th><th>Negocio</th><th>Contacto</th><th>Recogida</th><th>Registro o exención</th><th>Estado</th></tr></thead>
         <tbody>
-          {items.map((s) => (
+          {sorted.map((s) => (
             <tr key={s.id}>
-              <td><strong>{s.businessName}</strong><br /><span className="muted small">{s.offer}</span></td>
-              <td>{s.type}</td><td>{s.zone}</td><td>{s.email}</td><td>{s.sanitaryRegistry}</td>
+              <td className="small">{fecha(s.createdAt)}</td>
+              <td><strong>{s.businessName}</strong> <span className="muted small">· {s.type} · {s.zone}</span><br /><span className="muted small">{s.offer}</span></td>
+              <td>{s.email}<br /><span className="muted small">{s.phone || 'sin teléfono'}</span></td>
+              <td className="small">{s.pickupHours || '—'}</td>
+              <td>{s.sanitaryRegistry}</td>
               <td>
                 <select aria-label={`Estado de ${s.businessName}`} value={s.status} onChange={(e) => setStatus(s.id, e.target.value)}>
                   {STATUSES.map((st) => <option key={st}>{st}</option>)}
@@ -156,9 +182,11 @@ const done = (t) => (t.completed ? <Status kind="decidido">Hecho</Status> : <Sta
 const count = (p) => p && p.total > 0 && <span className="muted small"> · {p.done}/{p.total}</span>;
 
 // Responsable en Asana y, si difiere o falta, el previsto en el plan.
-function Who({ t }) {
+// Sin conexión (offline) no se sabe quién la tiene en Asana: solo se muestra el previsto.
+function Who({ t, offline }) {
   const asana = t.assignee;
   const plan = t.planned;
+  if (offline) return plan ? <span className="muted small">previsto: {plan}</span> : null;
   return (
     <span className="muted small">
       {asana ?? 'Sin asignar'}
@@ -184,12 +212,13 @@ function Milestones() {
   if (error) return <p role="alert" style={{ color: 'var(--danger)' }}>Error al cargar los hitos: {error} <button className="btn btn-ghost" onClick={load}>Reintentar</button></p>;
   if (!data) return <p className="muted">Cargando hitos de Asana…</p>;
 
+  const offline = data.source === 'plan';
   return (
     <>
       <p className="toolbar">
         <button className="btn btn-ghost" onClick={load}>Actualizar</button>
-        {data.source === 'plan'
-          ? <span className="muted small">Sin conexión con Asana ({data.error}). Se muestra solo el plan.</span>
+        {offline
+          ? <span className="muted small">Sin conexión con Asana ({data.error}). Se muestra el plan: qué hay que hacer y quién lo tiene previsto, sin estado real.</span>
           : <span className="muted small">Datos en directo de Asana · solo tareas [Food4All].</span>}
       </p>
       {data.milestones.map((m) => (
@@ -201,21 +230,21 @@ function Milestones() {
             {m.completed && <> <Status kind="decidido">Completado</Status></>}
           </summary>
           {m.children.length === 0
-            ? <p className="muted small">Todavía sin subtareas en Asana.</p>
+            ? <p className="muted small">{offline ? 'El plan no detalla este hito.' : 'Todavía sin subtareas en Asana.'}</p>
             : (
               <ul className="divided">
                 {m.children.map((c) => (
                   <li key={c.name}>
                     <div className="task-line">
-                      <span>{done(c)} <strong>{c.name}</strong>{count(c.progress)}</span>
-                      <Who t={c} />
+                      <span>{!offline && done(c)} <strong>{c.name}</strong>{count(c.progress)}</span>
+                      <Who t={c} offline={offline} />
                     </div>
                     {c.children.length > 0 && (
                       <ul className="subtasks">
                         {c.children.map((l) => (
                           <li key={l.name} className="task-line">
-                            <span>{done(l)} {l.name}</span>
-                            <Who t={l} />
+                            <span>{!offline && done(l)} {l.name}</span>
+                            <Who t={l} offline={offline} />
                           </li>
                         ))}
                       </ul>
@@ -240,6 +269,8 @@ function Milestones() {
   );
 }
 
+const productos = (n) => `${n} ${n === 1 ? 'producto' : 'productos'}`;
+
 function MarketplaceExample() {
   const orders = [
     { ...EXAMPLE_ORDER, state: ORDER_STATES[EXAMPLE_ORDER.currentState] },
@@ -255,7 +286,7 @@ function MarketplaceExample() {
               {VENDORS.filter((v) => v.zone === z).map((v) => (
                 <li key={v.id} className="task-line">
                   <span><strong>{v.name}</strong> <span className="muted small">{v.type}</span></span>
-                  <span className="muted small">{PRODUCTS.filter((p) => p.vendor === v.id).length} productos</span>
+                  <span className="muted small nowrap">{productos(PRODUCTS.filter((p) => p.vendor === v.id).length)}</span>
                 </li>
               ))}
             </ul>
@@ -290,10 +321,26 @@ const KIND = { fuente: ['decidido', 'Fuente externa'], hipotesis: ['hipotesis', 
 export default function Admin() {
   const [p, setP] = useState(null);
   const navigate = useNavigate();
+  const { hash } = useLocation();
 
   useEffect(() => {
     fetch('/api/admin/project').then((r) => (r.ok ? r.json().then(setP) : navigate('/admin/login')));
   }, [navigate]);
+
+  // Enlace directo (p. ej. /admin#prompts para el profesor): cuando el panel se pinta, las secciones
+  // de arriba aún cargan sus datos y crecen, y la sección pedida se va hacia abajo. Durante 3 s, cada
+  // vez que el panel cambia de altura se vuelve a bajar a ella; si la persona toca la página, se para.
+  useEffect(() => {
+    if (!p || !hash) return undefined;
+    const go = () => document.getElementById(hash.slice(1))?.scrollIntoView();
+    const ro = new ResizeObserver(go);
+    ro.observe(document.querySelector('.admin-main'));
+    const stop = () => ro.disconnect();
+    const timer = setTimeout(stop, 3000);
+    const USER = ['wheel', 'keydown', 'mousedown', 'touchstart'];
+    USER.forEach((ev) => window.addEventListener(ev, stop, { once: true }));
+    return () => { stop(); clearTimeout(timer); USER.forEach((ev) => window.removeEventListener(ev, stop)); };
+  }, [p, hash]);
 
   async function logout() {
     await fetch('/api/admin/logout', { method: 'POST' });

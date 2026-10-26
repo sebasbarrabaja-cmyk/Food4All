@@ -37,7 +37,7 @@ const ZONES = ['malaga', 'sevilla', 'granada'];
 const str = (v) => (typeof v === 'string' ? v.trim() : '');
 
 // Longitud máxima de cada campo del alta. Mantener al día con MAX_LEN de frontend/src/pages/Vender.jsx.
-const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 120, offer: 1000, pickupHours: 120 };
+const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 300, offer: 1000, pickupHours: 120 };
 const QUINCE_MIN = 15 * 60 * 1000;
 const tooMany = (res, wait) => res.set('Retry-After', String(wait)).status(429)
   .json({ error: `Demasiados intentos. Prueba otra vez dentro de ${Math.ceil(wait / 60)} min.` });
@@ -57,11 +57,13 @@ app.post('/api/sellers/apply', (req, res) => {
   if (!SELLER_TYPES.includes(b.type)) errors.type = 'Elige un tipo de negocio.';
   if (!ZONES.includes(b.zone)) errors.zone = 'Elige una zona.';
   if (!/^\S+@\S+\.\S+$/.test(str(b.email))) errors.email = 'Introduce un correo válido.';
-  if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'El registro sanitario es obligatorio.';
+  if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'Indica tu registro sanitario o el motivo de la exención.';
   if (str(b.offer).length < 10) errors.offer = 'Cuéntanos brevemente qué ofreces (mín. 10 caracteres).';
+  if (b.privacy !== true) errors.privacy = 'Para enviar la solicitud tienes que aceptar el uso de los datos.';
   if (Object.keys(errors).length) return res.status(400).json({ errors });
   applyLimit.hit(req.ip);
 
+  const now = new Date().toISOString();
   const item = store.append('sellerApplications', {
     id: randomUUID(),
     businessName: str(b.businessName),
@@ -73,7 +75,9 @@ app.post('/api/sellers/apply', (req, res) => {
     offer: str(b.offer),
     pickupHours: str(b.pickupHours),
     status: 'recibida',
-    createdAt: new Date().toISOString(),
+    createdAt: now,
+    // Prueba del consentimiento (RGPD, art. 7.1): cuándo marcó la casilla. El texto está en Vender.jsx.
+    privacyAcceptedAt: now,
   });
   res.status(201).json({ id: item.id, status: item.status });
 });

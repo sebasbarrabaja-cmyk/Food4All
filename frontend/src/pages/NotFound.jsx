@@ -1,6 +1,11 @@
-import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function NotFound() {
+  // RouteEffects no sabe qué rutas no existen: el título lo pone esta página, en cada URL
+  // (de una 404 a otra la página no se vuelve a montar).
+  const { pathname } = useLocation();
+  useEffect(() => { document.title = 'Página no encontrada · FOOD4ALL'; }, [pathname]);
   return (
     <section className="section" style={{ borderTop: 0 }}>
       <div className="container">

@@ -13,7 +13,7 @@ Estado: segunda versión, tras el feedback del profesor (10 de octubre de 2026):
 3. **Producto local visible desde el primer segundo:** ilustración de campo en el hero y fotos de mercado.
 4. **Honestidad:**
    - Es un proyecto conceptual: los datos son de ejemplo y se marcan como tal.
-   - Los precios aparecen como "Precio todavía no disponible".
+   - Los precios son de ejemplo, basados en precios de supermercado de octubre de 2026, y siempre llevan en letra pequeña el aviso «Precios de ejemplo, meramente representativos» (decisión de Sebastián, 25/10/2026). De dónde sale cada uno: `docs/precios-de-ejemplo.md`.
    - Se distingue siempre lo **decidido**, las **hipótesis** y lo que está **por definir**.
    - No hay prueba social: ni opiniones, ni contadores, ni "ya somos X".
 5. **Profesional, no funcional.** El asistente de IA, el carrito y el seguimiento son ejemplos estáticos. Solo funcionan de verdad el formulario de alta de vendedores y el panel de administración.
@@ -132,14 +132,14 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 
 | Patrón | Dónde | Notas |
 |---|---|---|
-| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro, 3 botones y, a la derecha, la pestaña **«Asistente IA»** (`.nav-btn--ai`: filo y chispa en azafrán, visible pero sin destacar más que comprar; RF-12.1-01, C-26). El activo va en crema y "Quiero comprar" siempre en naranja |
+| **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro y 3 botones. La pestaña «Asistente IA» (C-26) se quitó el 25/10/2026: el asistente es del marketplace, no de la landing; se llega a él desde Comprar y el pie. El activo va en crema y "Quiero comprar" siempre en naranja |
 | **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en `--green-deep`. La activa se subraya en azafrán |
 | **Hero** | `Home.jsx` | Ilustración `hero.svg`, oscurecido a la izquierda, "Come como en casa." en azafrán y tres botones grandes |
 | **Bandas de sección** | `palette.css` | `.band-sage`, `.band-peach`, `.band-mustard`, `.band-forest` y `.band-plain`. En páginas interiores se alternan solas salvia y melocotón |
 | **Banda de cierre** | `.band-forest` | Verde bosque con la textura de dibujos. **Es el único sitio con textura** |
 | **Manchas de icono** | `Blob.jsx` | Icono de trazo sobre mancha de color, con tono (`tomato`, `saffron`, `olive`, `peach`, `green`) y un giro leve |
 | **Pasos numerados** | `.steps`, `.steps-visual` | Número en círculo de color en ciclo: tomate → azafrán → oliva → melocotón (tomate y oliva en su variante `-strong` para que el número se lea) |
-| **Tarjeta de producto** | `Comprar.jsx` | Foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos, conservación y "Precio todavía no disponible" |
+| **Tarjeta de producto** | `Comprar.jsx` | Foto, categoría con punto de color, nombre, vendedor y ciudad, origen, alérgenos, conservación y precio de ejemplo (con el aviso al pie del catálogo) |
 | **Cesta por vendedor** | `BasketByVendor.jsx` | Agrupada por vendedor, con miniatura, y "Por qué" en la cesta de la IA |
 | **Badges de estado** | `Status.jsx` | Decidido, Hipótesis, Por definir y Datos de ejemplo |
 | **Iconos** | `Icon.jsx` | SVG de trazo de 1.6 px en un único fichero. Para añadir uno, se añade su `path` |
@@ -189,7 +189,7 @@ food4all/
 ```
 
 - **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel`, `/comunidad` y `/creditos`.
-- **Cabecera:** tres botones más la pestaña «Asistente IA» a la derecha (23/10/2026, C-26). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
+- **Cabecera:** tres botones (la pestaña «Asistente IA» de la C-26 se quitó el 25/10/2026: es del marketplace, no de la landing). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
 - **Rutas privadas:** `/admin` (las protege el backend, no solo la interfaz).
 - **Vista pública y privada están separadas:** el equipo, los hitos, el mercado y el marco legal **no** van en el JavaScript público. Viven en `backend/project.js` y se sirven con sesión.
 - **Asana:**

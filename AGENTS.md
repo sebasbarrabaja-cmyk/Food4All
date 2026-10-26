@@ -1,6 +1,6 @@
 # FOOD4ALL · Guía para los agentes del equipo
 
-Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 23/10/2026, 20:34.
+Lee este archivo entero antes de hacer nada en el repositorio. Está escrito para el asistente de IA de cada miembro del equipo (Claude Code, Codex, Cursor u otro). Última actualización: 26/10/2026, 01:00 (traspaso del 26/10 en el apartado 9).
 
 ## 1. El proyecto en cinco líneas
 
@@ -15,11 +15,15 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 ## 2. Reglas para el agente (obligatorias)
 
 1. **Registra cada prompt de tu usuario** en `prompts/`, tal cual (con erratas), con fecha, hora, autor y resultado. El formato está en `prompts/README.md`: un `.md` por sesión, con nombre `AAAA-MM-DD-NN-titulo.md`, donde `NN` es el siguiente número libre de ese día. El profesor exige todos los prompts del desarrollo: **no omitas ninguno**.
+   - **Todos** quiere decir todos: también los que no cambian la landing (abrir la web, preguntas, respuestas cortas como «1a 2b»). Decisión de Sebastián del 26/10, que manda sobre cualquier regla privada que diga lo contrario.
+   - Cada mensaje va bajo `### HH:MM` y termina con `**Resultado:**`. Si no se sabe la hora exacta, se pone `### ~HH:MM` (aproximada), nunca una hora inventada. Lo que escribe el asistente y no es un mensaje (especificaciones, resúmenes de cada punto) va con `####`.
+   - El registro va **en el mismo commit** que el cambio al que corresponde.
+   - Las credenciales nunca se copian: se escribe `[usuario y contraseña del panel: omitidos del registro]`.
 2. **Nunca publiques comentarios en Asana.** El 23/10 el profesor vio un comentario escrito con IA y respondió «Esto lo ha hecho la IA». Los comentarios, las revisiones y los argumentos los escribe la persona. Si te pide ayuda, propón y explica tus razones; si el texto final lo redactas tú, márcalo como «redactado con ayuda del asistente» y deja el prompt registrado.
 3. **Asana es solo de lectura.** Se escribe solo con el visto bueno de Sebastián y solo en tareas que empiecen por `[Food4All]`. El proyecto lo comparten los tres grupos de clase: no toques nada de IndiConnect ni de LearnCode.
 4. **No inventes evidencia.** Ni entrevistas, ni citas, ni datos de competidores. Lo que no esté comprobado se marca como Hipótesis o «No verificado».
 5. **Sin datos personales.** En las entrevistas no van nombres, teléfonos ni nada que identifique a la persona (RGPD).
-6. **Git:** nunca trabajes ni hagas `push` en `main`. Crea tu rama desde `docs/hito2-entrega` (por ejemplo `docs/juanantonio-hito2`) y pide a Sebastián que la una. Mensajes en español (`tipo: qué`), **sin firmas de IA ni `Co-Authored-By`**.
+6. **Git:** nunca trabajes ni hagas `push` en `main`. Crea tu rama desde `main` (desde el 23/10 ya incluye `docs/hito2-entrega`) y pide a Sebastián que la una. **El repositorio es público** (comprobado en GitHub el 26/10): nada de nombres de comercios reales, datos personales ni credenciales en nada que se suba. Mensajes en español (`tipo: qué`), **sin firmas de IA ni `Co-Authored-By`**.
 7. **No regeneres los requisitos por tu cuenta.** `npm run todo` (en `docs/requisitos/benchmark/`) reescribe el Excel, la matriz y la vista previa. Lo ejecuta Sebastián, para que no haya choques.
 8. **Nunca leas ni envíes `backend/.env`** a ningún servicio: tiene claves.
 
@@ -104,3 +108,28 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - **Pendiente para otro día (interno): datos de E5 y E6 en el historial de git.** El repositorio es público y el commit `58437c7` (23/10, 20:32) conserva la primera versión del perfil de E5 y E6: carrera, edad aproximada y que son compañeras de piso del entrevistador. La versión actual ya no lo tiene (C-27, RST-06). Para quitarlo del todo hay que reescribir el historial y forzar el push en `main`; Sebastián decidió el 23/10 dejarlo para otro día.
 - **Pendiente para otro día (interno):** los prompts que usó Miguel con Claude para las 12 historias descartadas (C-22). El enunciado pide registrar todos los prompts; Sebastián lo deja para después del 23/10.
 - **Antes de entregar:** RST validadas; criba aprobada; documento adjunto al Hito 2 y «Estado entrega» cambiado (Sebastián, en lugar de Miguel); explicación al profesor de cómo ver los prompts (`/admin#prompts`). La contraseña la da Sebastián en persona.
+
+## 9. Traspaso (26/10, 01:00): estado tras el análisis de la landing
+
+**Ramas unidas a `main` el 26/10 con un PR** (Sebastián lo pidió):
+- `fix/analisis-landing` (12 commits, desde `main`): arreglos del análisis completo de la landing. Cada punto, con su motivo y su prueba, está en `prompts/2026-10-25-01-sesion-analisis-y-arreglos.md`. Resumen:
+  - Fuera «Ahorra.» del titular y la pestaña «Asistente IA» de la cabecera (es del marketplace, no de la landing).
+  - Botón «Solicitar el alta» arriba en `/vender`.
+  - Precios de ejemplo con el aviso «meramente representativos»; el origen de cada uno, en `docs/precios-de-ejemplo.md`.
+  - Fuera «Suscripción», «Repetir compra» y la fila Tú/Tú/Tú.
+  - Casilla de privacidad obligatoria y `privacyAcceptedAt` en cada alta.
+  - Panel: altas con fecha, teléfono y horarios; la sesión caducada lleva al login; Asana sin conexión ya no se muestra como «Abierto»; índice en Hito 2; los enlaces directos (`/admin#prompts`) llegan a su sección.
+  - Detalles de texto.
+  - /code-review y /security-review hechos.
+- `feat/comercio-local` (encima de la anterior): investigación del pequeño comercio en `docs/competencia/comercio-local.md` (CL-01 a CL-10), plataformas municipales de Málaga y Sevilla en la tabla comparativa y «registro sanitario o exención» en el alta (RST-05). Registro: `prompts/2026-10-26-01-sesion-comercio-local.md`.
+
+**Pendiente:**
+- **Sebastián:** cambiar `ADMIN_PASSWORD` en `backend/.env` (era la de ejemplo y está mal) y escribir la «Revisión crítica del equipo» de los dos prompts del 25 y el 26/10.
+- **Equipo:**
+  - Anotar en la línea base la retirada de la pestaña (C-30; la C-26 y RF-12.1-01 aún la describen).
+  - Pregunta legal D-01: ¿puede un productor en venta directa (Decreto 163/2016, «sin intermediarios») vender a través de FOOD4ALL? (CL-06).
+  - Añadir las plataformas municipales al comparativo.
+  - Preguntas nuevas para entrevistas a vendedores (en `comercio-local.md`).
+  - `AI_EXAMPLE` en `frontend/src/data/examples.js` no se usa.
+  - El titular «no siete» de `/vender` es críptico.
+- **En el ordenador de Sebastián:** `~/proyectos/Food4All-recibido-2026-10-23/food4all` (184 MB) se puede borrar cuando se pasen a `food4all` sus dos archivos ignorados (`docs/requisitos/benchmark/asana_tareas.json`, `html_previo_v04/`) y Sebastián compare su `.env` con el de `food4all`.

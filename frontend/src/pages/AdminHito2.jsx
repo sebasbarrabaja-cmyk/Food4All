@@ -7,6 +7,13 @@ import Status from '../components/Status.jsx';
 // Estado de una necesidad → badge (regla de evidencia de FOOD4ALL_necesidades.md).
 const NEED_KIND = { Confirmada: 'decidido', 'Obligación legal': 'decidido', Indicio: 'hipotesis', Hipótesis: 'pendiente', 'No confirmada': 'descartado' };
 
+// Índice del apartado: con 16 pantallas de Hito 2, se salta directo a lo que se busca.
+const INDEX = [
+  ['hito2-cifras', 'Cifras'], ['hito2-necesidades', 'Necesidades'], ['hito2-decisiones', 'La criba'],
+  ['hito2-hipotesis', 'Hipótesis'], ['hito2-restricciones', 'Restricciones'], ['hito2-fuentes', 'Fuentes'],
+  ['hito2-trazabilidad', 'Trazabilidad'], ['hito2-cambios', 'Registro de cambios'], ['hito2-abierto', 'Abierto'],
+];
+
 const Ext = ({ href, children }) => (href
   ? <a href={href} target="_blank" rel="noreferrer">{children}<span className="sr-only"> (abre Asana en otra pestaña)</span></a>
   : children);
@@ -80,6 +87,11 @@ export default function AdminHito2() {
   return (
     <>
       <p className="lead">Necesidades, decisiones y requisitos del Hito 2, leídos de <code>docs/requisitos</code> del repositorio (línea base v0.4). Lo que se ve aquí es lo mismo que hay en los documentos.</p>
+      <nav aria-label="Apartados del Hito 2">
+        <p className="muted small h2-links__label">Ir a:</p>
+        <ul className="h2-links">{INDEX.map(([id, t]) => <li key={id}><a href={`#${id}`}>{t}</a></li>)}</ul>
+      </nav>
+      <p className="muted small h2-links__label">En Asana (abre otra pestaña):</p>
       <ul className="h2-links" aria-label="Hito 2 en Asana">
         {d.asana.map((a) => <li key={a.url}><a href={a.url} target="_blank" rel="noreferrer"><Icon name="flag" size={16} /> {a.name}<span className="sr-only"> (abre Asana en otra pestaña)</span></a></li>)}
       </ul>
@@ -168,7 +180,7 @@ export default function AdminHito2() {
       <p className="muted small">Qué cambió, quién lo decidió, cuándo y por qué (campos de la Clase 11). Fuente: FOOD4ALL_linea_base_h2.md.</p>
       <div className="h2-changes">
         {[...d.changes].reverse().map((c) => (
-          <details key={c.id} className="prompt">
+          <details key={c.id} className="prompt prompt--compact">
             <summary>
               <span className="prompt__title">{c.id} · {c.elemento}</span>
               <span className="prompt__meta muted small">{c.fecha} · {c.responsable} · {c.tipo} · v{c.version}</span>

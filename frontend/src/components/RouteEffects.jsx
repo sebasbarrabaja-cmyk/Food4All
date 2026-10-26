@@ -14,13 +14,15 @@ const TITLES = [
 ];
 
 // Al cambiar de página: vuelve arriba (salvo si hay ancla) y actualiza el título.
+// `key` cambia en cada clic, aunque la URL sea la misma: así un segundo clic en
+// «Cómo funciona» vuelve a llevar a la sección.
 export default function RouteEffects() {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
     if (hash) document.getElementById(hash.slice(1))?.scrollIntoView();
     else window.scrollTo(0, 0);
-  }, [pathname, hash]);
+  }, [pathname, hash, key]);
 
   useEffect(() => {
     const match = pathname === '/' ? null : TITLES.find(([p]) => pathname.startsWith(p));
