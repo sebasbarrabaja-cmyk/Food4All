@@ -60,3 +60,21 @@ Requisitos extra del enunciado: [AÑADIR AQUÍ SI EL HITO 3 PIDE ALGO MÁS]
 guarda el prompt en prompts/
 
 **Resultado:** Se creó este registro en la rama `docs/prompt-analisis-mercado`, con los dos mensajes de la sesión y el prompt para Perplexity. El archivo de contexto sigue fuera del repositorio. Sin `push`.
+
+### ~01:35
+
+súbelo, ya cargué la clave. Y una cosa, no tiene por defecto la regla de guardar el promt con la hora? Sino hay que añadirla. Y luego, mañana quiero arreglar para que no gaste tanto contexto el proyecto, segmentarlo y crear skills individuales para cada punto
+
+**Resultado:** Se subió la rama `docs/prompt-analisis-mercado` a GitHub, sin PR. La regla de la hora ya existe (`AGENTS.md`, regla 1, con `~` si no se sabe la hora exacta), pero el asistente no recibe la hora de cada mensaje. Propuso tres opciones: a) un hook del proyecto que la apunte; b) usar el hook global de Sebastián; c) dejarlo con `~`. Para el día siguiente propuso partir el proyecto en skills: registro de prompts, requisitos del Hito 2, mercado y competencia, Asana y landing, con `AGENTS.md` como índice corto.
+
+### ~01:38
+
+1c Me parece bien la division, aunque quiero concretarla mas, Mañana te lo recuerdo yo personalmente
+
+**Resultado:** Las horas siguen siendo aproximadas, con `~` (opción c). El reparto en skills se concretará el 27/10, cuando Sebastián lo recuerde.
+
+### 01:38
+
+sí, súbelo
+
+**Resultado:** Se subió a GitHub el registro de los últimos mensajes (rama `docs/prompt-analisis-mercado`, sin PR).
