@@ -64,3 +64,9 @@ Haz que la norma este en el propio git, para que cuando tu lo leas entiendas tod
 - **Apartado 9:** traspaso del 26/10, con las ramas y lo pendiente.
 
 Se suben `fix/analisis-landing` y `feat/comercio-local` a GitHub, sin PR.
+
+### ~01:09
+
+Subelo al main y hago el clear
+
+**Resultado:** Se unió a `main` con un PR (no con `push` directo, que las reglas prohíben), con `fix/analisis-landing` y `feat/comercio-local` dentro. El traspaso de `AGENTS.md` se actualizó para decir que las ramas ya están unidas.

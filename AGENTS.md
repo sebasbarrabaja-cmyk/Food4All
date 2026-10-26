@@ -111,7 +111,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 
 ## 9. Traspaso (26/10, 01:00): estado tras el análisis de la landing
 
-**Ramas sin unir** (subidas a GitHub, sin PR; las une Sebastián):
+**Ramas unidas a `main` el 26/10 con un PR** (Sebastián lo pidió):
 - `fix/analisis-landing` (12 commits, desde `main`): arreglos del análisis completo de la landing. Cada punto, con su motivo y su prueba, está en `prompts/2026-10-25-01-sesion-analisis-y-arreglos.md`. Resumen:
   - Fuera «Ahorra.» del titular y la pestaña «Asistente IA» de la cabecera (es del marketplace, no de la landing).
   - Botón «Solicitar el alta» arriba en `/vender`.
@@ -124,7 +124,7 @@ Lee este archivo entero antes de hacer nada en el repositorio. Está escrito par
 - `feat/comercio-local` (encima de la anterior): investigación del pequeño comercio en `docs/competencia/comercio-local.md` (CL-01 a CL-10), plataformas municipales de Málaga y Sevilla en la tabla comparativa y «registro sanitario o exención» en el alta (RST-05). Registro: `prompts/2026-10-26-01-sesion-comercio-local.md`.
 
 **Pendiente:**
-- **Sebastián:** cambiar `ADMIN_PASSWORD` en `backend/.env` (era la de ejemplo y está mal), escribir la «Revisión crítica del equipo» de los dos prompts del 25 y el 26/10, y unir las ramas.
+- **Sebastián:** cambiar `ADMIN_PASSWORD` en `backend/.env` (era la de ejemplo y está mal) y escribir la «Revisión crítica del equipo» de los dos prompts del 25 y el 26/10.
 - **Equipo:**
   - Anotar en la línea base la retirada de la pestaña (C-30; la C-26 y RF-12.1-01 aún la describen).
   - Pregunta legal D-01: ¿puede un productor en venta directa (Decreto 163/2016, «sin intermediarios») vender a través de FOOD4ALL? (CL-06).
