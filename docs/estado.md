@@ -5,7 +5,7 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 ## Ahora
 
 - **Sprint 3** (análisis y diseño estructurado), desde el 26/10.
-- **Feedback del profesor (27/10)** sobre la landing, pendiente de pasar a issues y repartir: buscador con IA en el admin, Asana dentro de la landing (para cerrar Asana), selector de idiomas, FAQ, indicador de tokens (total y por acción, de todo el desarrollo), trazabilidad (necesidad → requisito → tarea → prompt), avisos de tareas por persona con sesión propia, cronograma, expectativa vs. realidad, base de datos PostgreSQL para los prompts y mejor ordenación de prompts (persona, uso, resultado y etiquetas). Análisis: `prompts/2026-10-27-01-sesion-feedback-y-agentes.md`.
+- **Feedback del profesor (27/10):** repartido en los issues #11 a #22 (Miguel: #11 a #15; Sebastián: #16 a #19; Juan Antonio: #20 a #22). Reparto y contratos: `docs/contratos.md`. Hoy, Miguel: #11 (base de datos) y #12 (usuarios y avisos).
 
 ## Pendiente
 

@@ -73,6 +73,7 @@ Reparte la tarea entre los 3, como miguel no trabajó mucho, ponle más tareas h
   - `backend/db.js` (interfaz vacía para Miguel) y `backend/modulos/` (seis módulos montados con una línea en `server.js`), cada uno con su archivo en `backend/datos-prueba/`.
   - Seis secciones en el panel, con su componente vacío y sus entradas en `SECTIONS`, `KEYWORDS` y `DESTINOS`.
   - Página `/faq`, con su enlace en el pie.
+- **Issues** #11 a #22 en GitHub, uno por punto y con su responsable: Miguel #11 a #15, Sebastián #16 a #19, Juan Antonio #20 a #22.
 - **Probado:** compila; las seis rutas dan 401 sin sesión y 200 con la forma del contrato; `/faq` responde 200. **Sin probar** en el navegador con sesión: la contraseña del panel está en `.env`.
 
 ## Revisión crítica del equipo
