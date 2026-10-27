@@ -80,6 +80,12 @@ Lo de promt, version pulida es innecesario, una idea descartada, quitalo
 
 **Resultado:** Rama `refactor/quitar-version-pulida` (encima de `docs/alcance-coste-tiempo`). Se borró `backend/agent.js` y se quitaron la ruta `/api/admin/prompts/polish`, el tipo «Versión pulida», los botones «Pulir con IA» y «Pulir antes de guardar», el aviso del agente revisor, sus estilos y sus menciones en `README.md`, `prompts/README.md` y `docs/DISENO.md`. El buscador del panel sigue igual (ahora importa `aiReady` y `AIError` de `gemini.js`). Probado con un servidor de prueba en otro puerto: la lista de prompts carga (25), los tipos ya no incluyen «Versión pulida», la ruta de pulir da 404, un prompt con ese tipo se rechaza (400) y el buscador responde. Compila; el paquete ya no contiene «Pulir». /code-review hecho.
 
+### ~14:25
+
+abrela
+
+**Resultado:** Se abrió `localhost:3001/admin#prompts` en Firefox, con el servidor ya reiniciado con la rama `refactor/quitar-version-pulida`.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
