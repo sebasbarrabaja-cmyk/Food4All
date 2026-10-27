@@ -22,6 +22,12 @@ Pues vamos a ello
 
 **Resultado:** Issue #20 en la rama `feat/idiomas`, creada desde `feat/esqueleto-feedback` porque el esqueleto aún no está en `main` (habrá que hacer `git rebase origin/main` cuando se una). Se instalan `react-i18next` e `i18next` (aprobados en el issue); sin detector de idioma para no añadir otra dependencia. Todos los textos de la web pública pasan a `frontend/src/i18n/es.json` y `en.json`, una clave por página; los datos de ejemplo siguen en `data/examples.js` y solo `en.json` los traduce. Selector «ES · EN» en la cabecera (`aria-pressed`, `lang`), idioma guardado en el navegador, `<html lang>` y títulos de pestaña según el idioma. El panel (`/admin`) sigue en español, también las etiquetas de estado. Comprobado con `npm run build` y capturas en español e inglés de la portada, `/comprar` y `/comprar/cliente`. Pendiente: los errores del formulario de alta vienen del servidor y siguen solo en español.
 
+### 15:11
+
+Sí, sube la rama y abre el PR
+
+**Resultado:** `git push` de `feat/idiomas`. El PR va contra `feat/esqueleto-feedback`, como los demás PR encadenados del 27/10, para que solo se vea el cambio de idiomas; cuando se una el esqueleto, GitHub lo pasa a `main`. Sin `gh` en este ordenador, el PR se abre desde el enlace de GitHub con el título y la descripción ya puestos.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
