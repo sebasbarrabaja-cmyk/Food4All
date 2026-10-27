@@ -52,6 +52,12 @@ Pues hazlo y subelo al git . Antes de subirlo dime que cambiaste y muestramelo y
 
 **Resultado:** Sin respuesta a las dos preguntas, se toman las opciones por defecto: horas «Sin medir» y rama `feat/expectativa` sobre `feat/faq`. `backend/modulos/expectativa.js` calcula en cada petición 12 filas: cada hito con sus fechas y horas previstas frente a su estado y los commits de esas fechas; horas y coste de personal «Sin medir»; tokens de la ruta del #17 (datos de prueba mientras no esté); estado de los hitos; commits por persona (los cuatro nombres de autor de Sebastián son la misma cuenta) y sesiones y mensajes de `prompts/` por autor. Cada fila lleva `medido` (medido, sin medir, datos de prueba o por llegar), campo añadido al contrato. Vista en el panel con una tabla y la fuente de cada dato. Comprobado: la ruta da 401 sin sesión y 12 filas con sesión (servidor local con credenciales de prueba, sin leer `backend/.env`), `npm run build` y captura del panel. No se sube hasta el visto bueno de Juan Antonio.
 
+### 15:24
+
+Sí, súbelo y prepara los PR
+
+**Resultado:** Con el visto bueno de Juan Antonio, `git push` de `feat/faq` y `feat/expectativa`. Dos PR encadenados, como el de idiomas: FAQ contra `feat/idiomas` («Closes #21») y expectativa contra `feat/faq` («Closes #22»). Sin `gh`, se abren desde los enlaces de GitHub con el título y la descripción puestos.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
