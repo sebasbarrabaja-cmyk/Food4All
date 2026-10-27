@@ -1,35 +1,35 @@
+import { useTranslation } from 'react-i18next';
 import { PHOTO_CREDITS } from '../data/photoCredits.js';
 import { PRODUCTS } from '../data/examples.js';
+import { productoT } from '../i18n/index.js';
 import Photo from '../components/Photo.jsx';
 
-const LABELS = {
-  market: 'Puesto de fruta y verdura (portada)',
-  bakery: 'Panadería (portada)',
-  farm: 'Cosecha en el campo (portada)',
-  ...Object.fromEntries(PRODUCTS.map((p) => [p.id, `${p.name} (catálogo de ejemplo)`])),
-};
-
 export default function Creditos() {
+  const { t } = useTranslation();
+  const labels = {
+    market: t('creditos.usos.market'),
+    bakery: t('creditos.usos.bakery'),
+    farm: t('creditos.usos.farm'),
+    ...Object.fromEntries(PRODUCTS.map((p) => [p.id, t('creditos.usos.producto', { nombre: productoT(t, p).name })])),
+  };
+  const columnas = t('creditos.columnas', { returnObjects: true });
   return (
     <section className="section" style={{ borderTop: 0 }}>
       <div className="container">
-        <p className="eyebrow">Créditos</p>
-        <h1>Créditos de las imágenes</h1>
-        <p className="lead">
-          Las fotos de esta web son ilustrativas y proceden de Wikimedia Commons, con licencias libres.
-          No muestran productos, vendedores ni pedidos reales de FOOD4ALL. La ilustración de la portada y el logo son propios.
-        </p>
+        <p className="eyebrow">{t('creditos.antetitulo')}</p>
+        <h1>{t('creditos.titulo')}</h1>
+        <p className="lead">{t('creditos.texto')}</p>
         <div className="table-wrap">
           <table>
-            <thead><tr><th></th><th>Uso en la web</th><th>Autor</th><th>Licencia</th><th>Original</th></tr></thead>
+            <thead><tr>{columnas.map((c, i) => <th key={i}>{c}</th>)}</tr></thead>
             <tbody>
               {Object.entries(PHOTO_CREDITS).map(([id, c]) => (
                 <tr key={id}>
                   <td><Photo id={id} alt="" className="credit-thumb" /></td>
-                  <td>{LABELS[id] ?? id}</td>
+                  <td>{labels[id] ?? id}</td>
                   <td className="muted">{c.author}</td>
                   <td>{c.license}</td>
-                  <td className="nowrap"><a href={c.url} target="_blank" rel="noreferrer">Ver en Commons</a></td>
+                  <td className="nowrap"><a href={c.url} target="_blank" rel="noreferrer">{t('creditos.verCommons')}</a></td>
                 </tr>
               ))}
             </tbody>

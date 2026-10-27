@@ -1,103 +1,111 @@
+import { useTranslation } from 'react-i18next';
 import Status from '../components/Status.jsx';
 import Photo, { PhotoNote } from '../components/Photo.jsx';
 import ZoneTabs, { SELLER_TABS } from '../components/ZoneTabs.jsx';
-import { PRODUCTS, VENDORS, VENDOR_ORDERS, PRICE_NOTE, eur, linesTotal, productById } from '../data/examples.js';
+import { PRODUCTS, VENDORS, VENDOR_ORDERS, linesTotal, productById } from '../data/examples.js';
+import { dato, productoT, eurT } from '../i18n/index.js';
 
 // Vista de ejemplo del panel de un vendedor (Granja La Vereda).
 const VENDOR = VENDORS.find((v) => v.id === 's1');
 const CATALOG = PRODUCTS.filter((p) => p.vendor === VENDOR.id);
 
 export default function VendedorPanel() {
+  const { t, i18n } = useTranslation();
+  const eur = (n) => eurT(i18n.resolvedLanguage, n);
+  const cat = t('panelVendedor.catalogo', { returnObjects: true });
+  const ped = t('panelVendedor.pedidos', { returnObjects: true });
+  const liq = t('panelVendedor.liquidacion', { returnObjects: true });
   return (
     <>
-      <ZoneTabs tabs={SELLER_TABS} label="Zona de vendedores" />
+      <ZoneTabs tabs={SELLER_TABS} label="comun.pestanasVendedores" />
       <section className="section" style={{ borderTop: 0 }}>
         <div className="container">
-          <p className="eyebrow">Panel del vendedor</p>
+          <p className="eyebrow">{t('panelVendedor.antetitulo')}</p>
           <h1>{VENDOR.name}</h1>
-          <p className="lead">Así verías tu catálogo, tus pedidos y tus ventas.</p>
+          <p className="lead">{t('panelVendedor.entradilla')}</p>
           <p>
-            <Status kind="ejemplo" /> <span className="muted small">Vendedor inventado.</span>{' '}
-            Estado de la solicitud: <Status kind="decidido">Verificada</Status>
+            <Status kind="ejemplo" /> <span className="muted small">{t('panelVendedor.inventado')}</span>{' '}
+            {t('panelVendedor.estadoSolicitud')} <Status kind="decidido">{t('panelVendedor.verificada')}</Status>
           </p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <h2>Catálogo</h2>
-          <p className="muted">Sin ficha completa, el producto no se publica.</p>
+          <h2>{cat.titulo}</h2>
+          <p className="muted">{cat.texto}</p>
           <div className="table-wrap">
             <table>
-              <thead><tr><th>Producto</th><th>Categoría</th><th>Unidad</th><th>Alérgenos</th><th>Tipo de fecha</th><th>Conservación</th><th>Precio</th><th>Ficha</th></tr></thead>
+              <thead><tr>{cat.columnas.map((c) => <th key={c}>{c}</th>)}</tr></thead>
               <tbody>
-                {CATALOG.map((p) => (
-                  <tr key={p.id}>
-                    <td><div className="cell-photo"><Photo id={p.id} alt="" className="basket__thumb" /><div><strong>{p.name}</strong><br /><span className="muted small">{p.origin}</span></div></div></td>
-                    <td>{p.category}</td><td>{p.unit}</td><td>{p.allergens}</td>
-                    <td>{p.dateType}</td><td>{p.storage}</td>
-                    <td>{eur(p.price)}</td>
-                    <td><Status kind="decidido">Completa</Status></td>
-                  </tr>
-                ))}
+                {CATALOG.map((product) => {
+                  const p = productoT(t, product);
+                  return (
+                    <tr key={p.id}>
+                      <td><div className="cell-photo"><Photo id={p.id} alt="" className="basket__thumb" /><div><strong>{p.name}</strong><br /><span className="muted small">{p.origin}</span></div></div></td>
+                      <td>{dato(t, 'categorias', p.category)}</td><td>{p.unit}</td><td>{p.allergens}</td>
+                      <td>{p.dateType}</td><td>{p.storage}</td>
+                      <td>{eur(p.price)}</td>
+                      <td><Status kind="decidido">{cat.completa}</Status></td>
+                    </tr>
+                  );
+                })}
                 <tr>
-                  <td><strong>Miel de azahar</strong><br /><span className="muted small">Sierra Norte de Sevilla</span></td>
-                  <td>Despensa</td><td>500 g</td><td className="muted">—</td><td className="muted">—</td><td>Ambiente</td>
+                  <td><strong>{cat.miel}</strong><br /><span className="muted small">{cat.mielOrigen}</span></td>
+                  <td>{cat.mielCategoria}</td><td>500 g</td><td className="muted">—</td><td className="muted">—</td><td>{cat.mielConservacion}</td>
                   <td className="muted">—</td>
-                  <td><Status kind="hipotesis">Incompleta · no publicada</Status></td>
+                  <td><Status kind="hipotesis">{cat.incompleta}</Status></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <PhotoNote />
-          <p className="muted small">{PRICE_NOTE}</p>
+          <p className="muted small">{t('comun.notaPrecios')}</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <h2>Pedidos</h2>
-          <p className="muted">Solo ves tu parte de cada pedido consolidado. Confirmas disponibilidad o avisas de una falta para proponer sustituto.</p>
+          <h2>{ped.titulo}</h2>
+          <p className="muted">{ped.texto}</p>
           <div className="table-wrap">
             <table>
-              <thead><tr><th>Pedido</th><th>Tus productos</th><th>Recogida</th><th>Estado</th></tr></thead>
+              <thead><tr>{ped.columnas.map((c) => <th key={c}>{c}</th>)}</tr></thead>
               <tbody>
                 {VENDOR_ORDERS.map((o) => (
                   <tr key={o.number}>
                     <td><strong>{o.number}</strong></td>
-                    <td>{o.items.map(([id, q]) => `${productById(id).name} × ${q}`).join(', ')}</td>
-                    <td className="muted">{o.pickup}</td>
-                    <td>{o.state}</td>
+                    <td>{o.items.map(([id, q]) => `${productoT(t, productById(id)).name} × ${q}`).join(', ')}</td>
+                    <td className="muted">{dato(t, 'franjas', o.pickup)}</td>
+                    <td>{dato(t, 'estados', o.state)}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="muted small" style={{ marginTop: 8 }}>
-            Deja cada parte identificada con número de pedido y fecha de lote o caducidad. FOOD4ALL la recoge en origen.
-          </p>
+          <p className="muted small" style={{ marginTop: 8 }}>{ped.nota}</p>
         </div>
       </section>
 
       <section className="section">
         <div className="container split">
           <div>
-            <h2>Liquidación</h2>
-            <p className="muted">Tus ventas y la comisión de FOOD4ALL.</p>
+            <h2>{liq.titulo}</h2>
+            <p className="muted">{liq.texto}</p>
           </div>
           <ul className="divided">
-            <li><strong>Ventas del periodo:</strong> {eur(linesTotal(VENDOR_ORDERS.filter((o) => o.state === 'Confirmado').flatMap((o) => o.items)))} <span className="muted small">(pedidos confirmados, antes de la comisión)</span></li>
-            <li><strong>Comisión FOOD4ALL:</strong> <Status kind="pendiente" /></li>
-            <li><strong>Quién la asume:</strong> <Status kind="pendiente" /></li>
-            <li><strong>Periodicidad de pagos:</strong> <Status kind="pendiente" /></li>
+            <li><strong>{liq.ventas}</strong> {eur(linesTotal(VENDOR_ORDERS.filter((o) => o.state === 'Confirmado').flatMap((o) => o.items)))} <span className="muted small">{liq.confirmados}</span></li>
+            <li><strong>{liq.comision}</strong> <Status kind="pendiente" /></li>
+            <li><strong>{liq.quien}</strong> <Status kind="pendiente" /></li>
+            <li><strong>{liq.periodicidad}</strong> <Status kind="pendiente" /></li>
           </ul>
         </div>
       </section>
 
       <section className="section">
         <div className="container">
-          <h2>Visibilidad patrocinada</h2>
-          <p className="muted">Opcional. Los productos destacados siempre se marcan como patrocinados y nunca se mezclan con las recomendaciones de la IA.</p>
+          <h2>{t('panelVendedor.patrocinio.titulo')}</h2>
+          <p className="muted">{t('panelVendedor.patrocinio.texto')}</p>
         </div>
       </section>
     </>

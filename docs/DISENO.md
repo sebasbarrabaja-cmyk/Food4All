@@ -133,6 +133,7 @@ Sobre azafrán, el texto va en `--on-saffron` (6,54), no en `--green` (4,17).
 | Patrón | Dónde | Notas |
 |---|---|---|
 | **Cabecera** | `PublicLayout.jsx` | Verde bosque, filo azafrán de 3 px, fija al hacer scroll. Logo claro y 3 botones. La pestaña «Asistente IA» (C-26) se quitó el 25/10/2026: el asistente es del marketplace, no de la landing; se llega a él desde Comprar y el pie. El activo va en crema y "Quiero comprar" siempre en naranja |
+| **Selector de idioma** | `PublicLayout.jsx` | A la derecha de los tres botones, más discreto: «ES · EN» en una píldora con filete crema; el elegido, relleno en crema. Botones con `aria-pressed`, `lang` y nombre del idioma («Español», «English»). Solo en la web pública: el panel sigue en español (27/10/2026) |
 | **Pestañas de zona** | `ZoneTabs.jsx` | Segunda fila de la cabecera, en `--green-deep`. La activa se subraya en azafrán |
 | **Hero** | `Home.jsx` | Ilustración `hero.svg`, oscurecido a la izquierda, "Come como en casa." en azafrán y tres botones grandes |
 | **Bandas de sección** | `palette.css` | `.band-sage`, `.band-peach`, `.band-mustard`, `.band-forest` y `.band-plain`. En páginas interiores se alternan solas salvia y melocotón |
@@ -188,7 +189,8 @@ food4all/
 ```
 
 - **Rutas públicas:** `/`, `/comprar`, `/comprar/cliente`, `/vender`, `/vender/panel`, `/comunidad` y `/creditos`.
-- **Cabecera:** tres botones (la pestaña «Asistente IA» de la C-26 se quitó el 25/10/2026: es del marketplace, no de la landing). La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
+- **Cabecera:** tres botones (la pestaña «Asistente IA» de la C-26 se quitó el 25/10/2026: es del marketplace, no de la landing) y el selector de idioma. La comunidad se enlaza desde la portada y el pie, no desde la cabecera.
+- **Idiomas:** la web pública en español e inglés con `react-i18next`. Ningún texto visible se escribe en el JSX: va en `frontend/src/i18n/es.json` y `en.json`. Los datos de ejemplo siguen en español en `data/examples.js` y solo `en.json` los traduce (`datos.*`): si falta una traducción, se ve el original. El idioma se guarda en el navegador (`food4all-idioma`); la primera vez, el del navegador. `<html lang>` cambia con él y en `/admin` es siempre `es`.
 - **Rutas privadas:** `/admin` (las protege el backend, no solo la interfaz).
 - **Vista pública y privada están separadas:** el equipo, los hitos, el mercado y el marco legal **no** van en el JavaScript público. Viven en `backend/project.js` y se sirven con sesión.
 - **Asana:**
