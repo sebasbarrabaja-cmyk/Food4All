@@ -20,6 +20,7 @@ Se carga en cada sesión: aquí solo va lo obligatorio. El resto está en las sk
 7. **No regeneres los requisitos** (`npm run todo` en `docs/requisitos/benchmark/`): lo ejecuta Sebastián.
 8. **Nunca leas ni envíes `backend/.env`**: tiene claves.
 9. **Cierra la sesión con `/exit`:** así el hook guarda tus tokens en `docs/tokens.csv` (skill `food4all-prompts`).
+10. **Al abrir la sesión**, otro hook lista tus issues abiertos (necesita `gh auth login`). Díselos a la persona en una o dos líneas antes de empezar.
 
 ## Qué skill usar
 
