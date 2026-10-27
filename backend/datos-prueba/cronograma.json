@@ -1,0 +1,7 @@
+{
+  "_nota": "Datos de prueba. tipo: hito | tarea. Las tareas usan los mismos id que /api/admin/tareas.",
+  "elementos": [
+    { "id": "H3", "tipo": "hito", "titulo": "Ejemplo: Hito 3", "inicio": "2026-10-26", "fin": "2026-11-09", "responsable": null },
+    { "id": "T-001", "tipo": "tarea", "titulo": "Ejemplo: base de datos común", "inicio": "2026-10-27", "fin": "2026-10-29", "responsable": "miguel" }
+  ]
+}

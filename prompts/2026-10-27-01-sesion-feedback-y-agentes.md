@@ -56,6 +56,25 @@ Rama `refactor/organizar-agentes`. `AGENTS.md` ≤ 3.500 caracteres, con las reg
 
 **Resultado:** Se quitó `.claude/` de `.git/info/exclude` y se añadió `.claude/settings.local.json` a `.gitignore` (ajustes personales). `git config user.name` pasa a «Sebastián» solo en este repositorio, para la columna `persona` de los tokens. La revisión automática (/code-review) miró el diff de la rama anterior y sus tres avisos no se sostienen al comprobarlos (`words()` se usa, las clases `.polish*` ya no están en el CSS, «Versión pulida» solo aparece en el texto de un mensaje). Los cambios de esta rama se revisaron a mano. Tres commits: reglas y skills, tokens, y textos caducados.
 
+### ~11:40
+
+Reparte la tarea entre los 3, como miguel no trabajó mucho, ponle más tareas hoy. Solo un punto, yo me encargo de los promts y la IA. Y organizalo de tal manera que podamos hacer cada uno nuestra parte aunque dependa de otro, que todo coincida cuando se una
+
+**Resultado:** Propuesta de reparto. Sebastián: 1, 5, 9 y 10 (prompts e IA). Miguel, con más carga: base de datos común, 7, 2, 8 y 6, y para hoy base de datos, login por persona y avisos. Juan Antonio: 3, 4 y 11 (páginas públicas que no toca nadie más). Para que encaje al unirlo: un esqueleto con todo lo compartido ya preparado, contratos de cada ruta con datos de prueba, datos de prueba si no hay base de datos, migraciones numeradas por dueño, claves comunes y un orden de unión. Cinco preguntas.
+
+### ~11:42
+
+1b 2a 3(que lo decida Miguel) 4(los colaboradors del git) 5a ok
+
+**Resultado:**
+- **Decisiones:** `react-i18next` para los idiomas; contraseñas con `scrypt`; el motor de base de datos lo elige Miguel; issues asignados a los colaboradores del repositorio (`sebasbarrabaja-cmyk`, `MiguelJMN` y `Jamc46`, que se toma por Juan Antonio por descarte); español e inglés.
+- **Rama `feat/esqueleto-feedback`:**
+  - `docs/contratos.md`: reparto, archivos de cada uno, rutas, base de datos, claves comunes, sesión, idiomas y orden de unión.
+  - `backend/db.js` (interfaz vacía para Miguel) y `backend/modulos/` (seis módulos montados con una línea en `server.js`), cada uno con su archivo en `backend/datos-prueba/`.
+  - Seis secciones en el panel, con su componente vacío y sus entradas en `SECTIONS`, `KEYWORDS` y `DESTINOS`.
+  - Página `/faq`, con su enlace en el pie.
+- **Probado:** compila; las seis rutas dan 401 sin sesión y 200 con la forma del contrato; `/faq` responde 200. **Sin probar** en el navegador con sesión: la contraseña del panel está en `.env`.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*

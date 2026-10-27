@@ -4,6 +4,13 @@ import Status from '../components/Status.jsx';
 import Icon from '../components/Icon.jsx';
 import AdminPrompts from './AdminPrompts.jsx';
 import AdminHito2 from './AdminHito2.jsx';
+// Secciones del feedback del 27/10: cada una en su archivo, con su dueño (docs/contratos.md).
+import AdminAvisos from './AdminAvisos.jsx';
+import AdminTareas from './AdminTareas.jsx';
+import AdminCronograma from './AdminCronograma.jsx';
+import AdminTraza from './AdminTraza.jsx';
+import AdminTokens from './AdminTokens.jsx';
+import AdminExpectativa from './AdminExpectativa.jsx';
 import {
   VENDORS, PRODUCTS, ZONES, EXAMPLE_ORDER, ORDER_STATES, VENDOR_ORDERS, productById,
 } from '../data/examples.js';
@@ -12,8 +19,11 @@ import {
 const STATUSES = ['recibida', 'en revisión', 'verificada', 'rechazada'];
 const SECTIONS = [
   ['resumen', 'Resumen', 'grid'], ['mercado', 'Mercado', 'chart'], ['legal', 'Marco legal', 'scale'],
-  ['equipo', 'Equipo', 'users'], ['hito2', 'Hito 2 · Requisitos', 'check'], ['hitos', 'Hitos y Asana', 'flag'], ['vendedores', 'Altas', 'store'],
+  ['equipo', 'Equipo', 'users'], ['hito2', 'Hito 2 · Requisitos', 'check'], ['hitos', 'Hitos y Asana', 'flag'],
+  ['avisos', 'Avisos', 'chat'], ['tareas', 'Tareas', 'card'], ['cronograma', 'Cronograma', 'arrow'], ['trazabilidad', 'Trazabilidad', 'route'],
+  ['vendedores', 'Altas', 'store'],
   ['marketplace', 'Marketplace', 'basket'], ['prompts', 'Prompts', 'doc'],
+  ['tokens', 'Tokens', 'spark'], ['expectativa', 'Expectativa vs. realidad', 'eye'],
 ];
 
 // Palabras con las que el buscador encuentra cada sección al momento, sin IA.
@@ -27,6 +37,12 @@ const KEYWORDS = {
   vendedores: 'altas vendedores solicitudes alta',
   marketplace: 'marketplace pedidos ejemplo zonas productos malaga sevilla granada',
   prompts: 'prompts ia claude gemini registro',
+  avisos: 'avisos pendientes recordatorios mis tareas',
+  tareas: 'tareas responsables estado asana backlog',
+  cronograma: 'cronograma calendario fechas plazos gantt',
+  trazabilidad: 'trazabilidad traza necesidad requisito tarea prompt',
+  tokens: 'tokens consumo coste uso ia',
+  expectativa: 'expectativa realidad previsto real desviacion tiempo coste alcance',
 };
 const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 const TITLES = Object.fromEntries(SECTIONS.map(([id, t]) => [`#${id}`, t]));
@@ -431,6 +447,26 @@ export default function Admin() {
             <Milestones />
           </section>
 
+          <section className="section" id="avisos">
+            <h2>Avisos</h2>
+            <AdminAvisos />
+          </section>
+
+          <section className="section" id="tareas">
+            <h2>Tareas del equipo</h2>
+            <AdminTareas />
+          </section>
+
+          <section className="section" id="cronograma">
+            <h2>Cronograma</h2>
+            <AdminCronograma />
+          </section>
+
+          <section className="section" id="trazabilidad">
+            <h2>Trazabilidad</h2>
+            <AdminTraza />
+          </section>
+
           <section className="section" id="vendedores">
             <h2>Altas de vendedores</h2>
             <p className="muted small">Almacenamiento provisional en el servidor (backend/data/db.json). Solo visible para administración.</p>
@@ -446,6 +482,16 @@ export default function Admin() {
           <section className="section" id="prompts">
             <h2>Prompts del proyecto</h2>
             <AdminPrompts />
+          </section>
+
+          <section className="section" id="tokens">
+            <h2>Tokens</h2>
+            <AdminTokens />
+          </section>
+
+          <section className="section" id="expectativa">
+            <h2>Expectativa vs. realidad</h2>
+            <AdminExpectativa />
           </section>
         </main>
       </div>

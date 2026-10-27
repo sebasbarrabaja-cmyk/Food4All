@@ -1,0 +1,6 @@
+{
+  "_nota": "Datos de prueba. Una fila por enlace necesidad → requisito → tarea → prompts. prompts = id del .md de prompts/ (nombre sin .md).",
+  "filas": [
+    { "necesidad": "N-EJEMPLO", "requisito": "RF-EJEMPLO", "tarea": "T-001", "prompts": ["2026-10-27-01-sesion-feedback-y-agentes"] }
+  ]
+}
