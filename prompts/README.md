@@ -1,6 +1,6 @@
 # Prompts del proyecto
 
-Registro de todos los prompts usados para desarrollar FOOD4ALL. Se consultan, se añaden y se pulen con IA desde el panel de administración (sección **Prompts**).
+Registro de todos los prompts usados para desarrollar FOOD4ALL. Se consultan y se añaden desde el panel de administración (sección **Prompts**).
 
 - Un fichero `.md` por prompt, con nombre `AAAA-MM-DD-NN-titulo.md` (`NN` = número del prompt en ese día: `01`, `02`…), para que se ordenen por fecha y por orden.
 - Cabecera entre líneas `---` con `titulo`, `fecha`, `autor`, `herramienta`, `tipo`, `tema` y `origen`. `tema` dice para qué sirvió: Contexto y método · Landing (web y panel) · Requisitos del Hito 2 · Asana · Competencia · Organización del equipo · Otro. El panel los agrupa por persona y, dentro, por tema.

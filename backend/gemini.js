@@ -1,4 +1,4 @@
-// IA del panel (buscador y revisor de prompts): Gemini, nivel gratuito de Google AI Studio.
+// IA del panel (buscador): Gemini, nivel gratuito de Google AI Studio.
 // La clave vive solo en backend/.env (GEMINI_API_KEY); nunca llega al navegador.
 // Condiciones del nivel gratuito: solo para uso interno del equipo (panel privado), nunca en la web
 // pública, porque en la UE no se puede ofrecer a usuarios sin pasar al nivel de pago.

@@ -15,7 +15,7 @@ export const DESTINOS = {
   '#hitos': 'Hitos del curso y tareas de Asana',
   '#vendedores': 'Altas: solicitudes de vendedores recibidas',
   '#marketplace': 'Marketplace de ejemplo: vendedores por ciudad y pedidos de ejemplo',
-  '#prompts': 'Prompts: registro de los prompts usados en el desarrollo y revisor de prompts',
+  '#prompts': 'Prompts: registro de los prompts usados en el desarrollo',
   '/': 'Web pública: portada',
   '/comprar': 'Web pública: recorrido del cliente, asistente de IA, productos y suscripción',
   '/comprar/cliente': 'Web pública: pedido de ejemplo del cliente',
