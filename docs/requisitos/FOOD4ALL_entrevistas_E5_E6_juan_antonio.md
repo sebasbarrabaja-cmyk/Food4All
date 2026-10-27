@@ -136,7 +136,7 @@ E6 considera que Glovo es rápido y fácil de utilizar, pero señala que el prec
 
 | Necesidad | Antes | Con E5 y E6 | Estado propuesto |
 | --- | --- | --- | --- |
-| N-PLA-02 Controlar el gasto | E4 | + E5 (busca lo más barato) y E6 (los gastos de envío le frenan) | **Indicio fuerte.** Son 3 del perfil objetivo, pero E4 son apuntes sin cita literal y E5 y E6 viven juntas: no llega a Confirmada |
+| N-PLA-02 Controlar el gasto | E4 | + E5 (busca lo más barato) y E6 (los gastos de envío le frenan) | **Indicio**, el que más apoyo tiene: 3 del perfil objetivo. No llega a Confirmada porque E4 son apuntes sin cita literal y E5 y E6 viven juntas |
 | N-PLA-01 Planificar en vez de improvisar | E3 y E4 | + E6 improvisa con la despensa | Indicio. Ninguna pide ayuda para planificar: improvisan y les va bien |
 | N-CAT-01 Confiar en origen y calidad | E4 | E5 y E6 se informan antes de fiarse (reseñas, Google). **E6 no mira etiquetas ni origen** | Indicio. La parte de *confianza en la plataforma* sale reforzada; la de *origen* sale debilitada |
 | N-INC-01 Solución si algo llega mal | — | E5 (Amazon: roto, devuelto, reembolsado) | Pasa de Hipótesis a **Indicio** |
@@ -145,15 +145,7 @@ E6 considera que Glovo es rápido y fácil de utilizar, pero señala que el prec
 
 ### Riesgos para la criba
 
-1. **Valoraciones (RF-11), hoy todo fuera del MVP.** E2, E5 y E6 dicen, sin que se les pregunte, que buscan opiniones o fiabilidad antes de usar una app nueva. Es el bloque E de Juan Antonio: conviene que lo argumente con sus propias entrevistas.
+1. **Valoraciones (RF-11).** E2, E5 y E6 dicen, sin que se les pregunte, que buscan opiniones o fiabilidad antes de usar una app nueva. Con la propuesta de Juan Antonio en el bloque E (C-29), RF-11.2-04 («No mostrar valoraciones inventadas ni contadores de prueba social») entró en el MVP; las estrellas (RF-11.1-02) y la media (RF-11.2-01) siguen en V2.
 2. **La prioridad 2 de C-13 (producto local y poco procesado).** E2 y E4 la apoyan; E6 la contradice, y E5 elige por precio. Según la regla A.3 se registra como riesgo, sin cambiar requisitos.
 3. **El competidor real es la comida de casa**, no solo el supermercado. No estaba en el benchmark.
 4. **Faltan entrevistas a vendedores.** No hay ninguna, y las de Miguel están descartadas (C-22).
-
-
----
-
-### Recordatorios
-- Nada de nombres, teléfonos ni datos que identifiquen (tampoco el nombre del pueblo si es muy pequeño; basta con «pueblo de la provincia»).
-- Si una respuesta interesa, tira de ella con: «¿Me pones un ejemplo?», «¿Cuándo fue la última vez?».
-- En las conclusiones conviene decir que son personas cercanas a ti (tus compañeras de piso): puede influir en lo que te cuentan, y el profe lo valorará como honestidad metodológica.
