@@ -1,11 +1,11 @@
 ---
-titulo: Tareas del 27/10 y selector de idiomas (punto 3)
+titulo: Tareas del 27/10, selector de idiomas (punto 3) y FAQ (punto 4)
 fecha: 2026-10-27
 autor: Juan Antonio
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
-origen: Revisión de lo que repartió Sebastián (issues #20 a #22) y el issue #20, web pública en español e inglés
+origen: Revisión de lo que repartió Sebastián (issues #20 a #22), el issue #20 (web pública en español e inglés) y el #21 (preguntas frecuentes)
 ---
 
 Horas sacadas del historial de la sesión (hora de España).
@@ -27,6 +27,18 @@ Pues vamos a ello
 Sí, sube la rama y abre el PR
 
 **Resultado:** `git push` de `feat/idiomas`. El PR va contra `feat/esqueleto-feedback`, como los demás PR encadenados del 27/10, para que solo se vea el cambio de idiomas; cuando se una el esqueleto, GitHub lo pasa a `main`. Sin `gh` en este ordenador, el PR se abre desde el enlace de GitHub con el título y la descripción ya puestos.
+
+### 15:12
+
+Ya está creado, sigue con la FAQ
+
+**Resultado:** Rama `feat/faq` sobre `feat/idiomas`, para que la FAQ salga ya traducida. Se buscan las fuentes de lo decidido: `FOOD4ALL_linea_base_h2.md` (registro de cambios y apartado 5), las RST de `FOOD4ALL_criba_argumentos.md`, `FOOD4ALL_estados_pedido.md` y las decisiones de `backend/project.js`. Propuesta de 17 preguntas (12 para estudiantes y 5 para vendedores), cada una con su fuente, para que Juan Antonio las apruebe antes de escribirlas. Dos consultas: si incluir la de cancelar (regla abierta) y la de valoraciones (C-29).
+
+### 15:14
+
+Me parece bien, incluye las dos y escríbela
+
+**Resultado:** Página `/faq` con las 17 preguntas en español e inglés (`faq.*` de `es.json` y `en.json`), en dos bloques con preguntas desplegables (`<details>`). Lo abierto lleva su etiqueta: «Por definir» (zonas dentro de cada ciudad, coste de entrega, cancelación, puntos de recogida, pagar sin cuenta, incidencias, comisión) e «Hipótesis» (compra mínima, precios más competitivos). Ninguna respuesta añade nada que no esté en las fuentes. Durante el trabajo, un script reescrito con PowerShell estropeó las tildes del bloque `faq`; se detectó en la captura y se reparó antes del commit. Comprobado con `npm run build`, el texto renderizado en los dos idiomas y capturas de `/faq`. `docs/DISENO.md` recoge el patrón y la ruta.
 
 ## Revisión crítica del equipo
 

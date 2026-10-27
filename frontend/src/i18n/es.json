@@ -424,7 +424,174 @@
   "faq": {
     "antetitulo": "Preguntas frecuentes",
     "titulo": "Preguntas frecuentes",
-    "enConstruccion": "En construcción."
+    "entradilla": "Lo que ya está decidido y lo que todavía no. Cuando algo está abierto, lo decimos.",
+    "grupos": [
+      {
+        "id": "estudiantes",
+        "titulo": "Si quieres comprar",
+        "preguntas": [
+          {
+            "p": "¿Qué es FOOD4ALL?",
+            "r": [
+              {
+                "t": "Un marketplace de alimentación local: compras productos de varios vendedores de tu ciudad en un solo carrito, pagas una sola vez y lo recibes todo en una única entrega."
+              }
+            ]
+          },
+          {
+            "p": "¿Ya puedo hacer un pedido?",
+            "r": [
+              {
+                "t": "Todavía no. FOOD4ALL es un proyecto universitario y esta web usa datos de ejemplo: no hay vendedores, pedidos ni precios reales. En el prototipo el pago es de prueba y nunca se cobra dinero real."
+              }
+            ]
+          },
+          {
+            "p": "¿En qué ciudades funciona?",
+            "r": [
+              {
+                "t": "Empieza en Málaga, Sevilla y Granada, y no acepta pedidos de otras zonas. Qué zonas se cubren dentro de cada ciudad está",
+                "estado": "pendiente"
+              }
+            ]
+          },
+          {
+            "p": "¿Cuánto cuesta la entrega? ¿Hay pedido mínimo?",
+            "r": [
+              {
+                "t": "El coste de la entrega está",
+                "estado": "pendiente"
+              },
+              {
+                "t": "Pensamos en una compra mínima de unos 10–15 €, pero es una",
+                "estado": "hipotesis"
+              }
+            ]
+          },
+          {
+            "p": "¿Es más barato que el supermercado?",
+            "r": [
+              {
+                "t": "No lo afirmamos. Verás el precio final y la cantidad de cada producto antes de pagar. Que algunos productos puedan salir más competitivos es una",
+                "estado": "hipotesis"
+              }
+            ]
+          },
+          {
+            "p": "¿Qué hace la inteligencia artificial?",
+            "r": [
+              {
+                "t": "Eliges con botones tu presupuesto, los días y cuánto tiempo tienes para cocinar, y te propone una cesta de varios vendedores explicando por qué elige cada producto. Es una propuesta: decides tú. En el prototipo la cesta la genera un simulador, no una IA real."
+              }
+            ]
+          },
+          {
+            "p": "¿Veré los ingredientes y los alérgenos?",
+            "r": [
+              {
+                "t": "Sí, antes de pagar. Un producto sin ficha completa (origen, ingredientes, alérgenos, conservación y tipo de fecha) no se publica."
+              }
+            ]
+          },
+          {
+            "p": "¿Qué pasa si mi pedido llega tarde?",
+            "r": [
+              {
+                "t": "Te avisamos antes de que acabe tu franja con la nueva hora estimada, y puedes mantenerla o elegir otra franja sin coste. Si un vendedor llega tarde, eliges esperar o recibir ya lo demás. Por ahora no hay compensación por retraso."
+              }
+            ]
+          },
+          {
+            "p": "¿Puedo cancelar un pedido?",
+            "r": [
+              {
+                "t": "La regla de cancelación está",
+                "estado": "pendiente"
+              },
+              {
+                "t": "La propuesta es poder cancelar sin coste hasta la hora de cierre de tu franja. Los productos perecederos no tienen derecho de desistimiento."
+              }
+            ]
+          },
+          {
+            "p": "¿Hay puntos de recogida?",
+            "r": [
+              {
+                "t": "Lo estamos debatiendo: cambiaría el modelo de entrega a domicilio. Está",
+                "estado": "pendiente"
+              }
+            ]
+          },
+          {
+            "p": "¿Necesito crear una cuenta?",
+            "r": [
+              {
+                "t": "Puedes llenar el carrito sin cuenta: se guarda y se une al de tu cuenta cuando entras. Pagar sin cuenta está",
+                "estado": "pendiente"
+              }
+            ]
+          },
+          {
+            "p": "¿Y si algo llega mal?",
+            "r": [
+              {
+                "t": "Habrá un formulario sencillo de incidencias. Quién te responde (el vendedor, FOOD4ALL o los dos) está",
+                "estado": "pendiente"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "vendedores",
+        "titulo": "Si quieres vender",
+        "preguntas": [
+          {
+            "p": "¿Quién puede vender en FOOD4ALL?",
+            "r": [
+              {
+                "t": "Negocios locales de alimentación con registro sanitario en vigor o con una exención justificada que revisamos antes del alta. Cada producto necesita su ficha completa con ingredientes y alérgenos."
+              }
+            ]
+          },
+          {
+            "p": "¿Tengo que encargarme de los envíos?",
+            "r": [
+              {
+                "t": "No. Preparas tu parte del pedido y FOOD4ALL la recoge en tu negocio, la junta con la de otros vendedores en un hub y la entrega al cliente."
+              }
+            ]
+          },
+          {
+            "p": "¿Cuánto cobra FOOD4ALL?",
+            "r": [
+              {
+                "t": "Una comisión por cada venta. El porcentaje, quién la asume y cada cuánto se paga están",
+                "estado": "pendiente"
+              }
+            ]
+          },
+          {
+            "p": "¿Puedo solicitar el alta ya?",
+            "r": [
+              {
+                "t": "Sí, con el formulario de la página de vendedores. Los datos solo se usan para valorar el alta en esta demostración universitaria. El proyecto aún no está pilotado."
+              }
+            ]
+          },
+          {
+            "p": "¿Habrá opiniones y valoraciones?",
+            "r": [
+              {
+                "t": "Nunca mostraremos valoraciones inventadas ni contadores para aparentar éxito. Las valoraciones de clientes reales llegarán en una versión posterior."
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "verAlta": "Ir al formulario de alta",
+    "otraPregunta": "¿No encuentras tu pregunta? Muchas decisiones siguen abiertas y las iremos contando en la comunidad."
   },
 
   "noEncontrada": {
