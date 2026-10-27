@@ -1,11 +1,11 @@
 ---
-titulo: Tareas del 27/10, selector de idiomas (punto 3) y FAQ (punto 4)
+titulo: Tareas del 27/10: idiomas (punto 3), FAQ (punto 4) y expectativa vs. realidad (punto 11)
 fecha: 2026-10-27
 autor: Juan Antonio
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
-origen: Revisión de lo que repartió Sebastián (issues #20 a #22), el issue #20 (web pública en español e inglés) y el #21 (preguntas frecuentes)
+origen: Revisión de lo que repartió Sebastián (issues #20 a #22), el issue #20 (web pública en español e inglés) el #21 (preguntas frecuentes) y el #22 (expectativa vs. realidad)
 ---
 
 Horas sacadas del historial de la sesión (hora de España).
@@ -39,6 +39,18 @@ Ya está creado, sigue con la FAQ
 Me parece bien, incluye las dos y escríbela
 
 **Resultado:** Página `/faq` con las 17 preguntas en español e inglés (`faq.*` de `es.json` y `en.json`), en dos bloques con preguntas desplegables (`<details>`). Lo abierto lleva su etiqueta: «Por definir» (zonas dentro de cada ciudad, coste de entrega, cancelación, puntos de recogida, pagar sin cuenta, incidencias, comisión) e «Hipótesis» (compra mínima, precios más competitivos). Ninguna respuesta añade nada que no esté en las fuentes. Durante el trabajo, un script reescrito con PowerShell estropeó las tildes del bloque `faq`; se detectó en la captura y se reparó antes del commit. Comprobado con `npm run build`, el texto renderizado en los dos idiomas y capturas de `/faq`. `docs/DISENO.md` recoge el patrón y la ruta.
+
+### 15:18
+
+No dime el que falta
+
+**Resultado:** No se sube la FAQ. Explicación del #22: sección del panel que compara lo previsto en `docs/FOOD4ALL_alcance_coste_tiempo.md` con lo real (git, `prompts/` y tokens), con su fuente; ruta `GET /api/admin/expectativa` y vista `AdminExpectativa.jsx`. Las horas reales no las mide nadie. Dos preguntas: qué hacer con las horas y de qué rama partir.
+
+### 15:19
+
+Pues hazlo y subelo al git . Antes de subirlo dime que cambiaste y muestramelo y doy mi visto bueno
+
+**Resultado:** Sin respuesta a las dos preguntas, se toman las opciones por defecto: horas «Sin medir» y rama `feat/expectativa` sobre `feat/faq`. `backend/modulos/expectativa.js` calcula en cada petición 12 filas: cada hito con sus fechas y horas previstas frente a su estado y los commits de esas fechas; horas y coste de personal «Sin medir»; tokens de la ruta del #17 (datos de prueba mientras no esté); estado de los hitos; commits por persona (los cuatro nombres de autor de Sebastián son la misma cuenta) y sesiones y mensajes de `prompts/` por autor. Cada fila lleva `medido` (medido, sin medir, datos de prueba o por llegar), campo añadido al contrato. Vista en el panel con una tabla y la fuente de cada dato. Comprobado: la ruta da 401 sin sesión y 12 filas con sesión (servidor local con credenciales de prueba, sin leer `backend/.env`), `npm run build` y captura del panel. No se sube hasta el visto bueno de Juan Antonio.
 
 ## Revisión crítica del equipo
 

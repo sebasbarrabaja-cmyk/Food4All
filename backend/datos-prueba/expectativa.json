@@ -1,6 +1,7 @@
 {
-  "_nota": "Datos de prueba. aspecto: Tiempo | Coste | Alcance | Otro. previsto sale de docs/FOOD4ALL_alcance_coste_tiempo.md; real, de git, prompts y tokens. fuente obligatoria.",
+  "_nota": "Datos de prueba. aspecto: Tiempo | Coste | Alcance | Otro. previsto sale de docs/FOOD4ALL_alcance_coste_tiempo.md; real, de git, prompts y tokens. fuente obligatoria. medido (añadido): medido | sin-medir | prueba | futuro. generado (añadido): cuándo se calculó.",
+  "generado": "2026-10-27T12:00:00.000Z",
   "filas": [
-    { "aspecto": "Tiempo", "previsto": "Ejemplo: 10 h", "real": "Ejemplo: 14 h", "fuente": "ejemplo", "nota": "Datos de prueba" }
+    { "aspecto": "Tiempo", "previsto": "Ejemplo: 10 h", "real": "Ejemplo: 14 h", "fuente": "ejemplo", "nota": "Datos de prueba", "medido": "prueba" }
   ]
 }
