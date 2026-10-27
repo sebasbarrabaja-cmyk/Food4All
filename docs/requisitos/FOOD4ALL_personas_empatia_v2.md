@@ -256,7 +256,7 @@ Tres necesidades de la v1 (N-03, N-04 y N-05) eran la misma: saber qué comprar,
 | --- | --- | --- |
 | Lucía | /comprar y /comprar/cliente | Entra, ve el mensaje de planificar y comer local, indica presupuesto y días al asistente, revisa la cesta con productos de varios vendedores, paga una vez, sigue el pedido y recibe recordatorios |
 | Antonio | /vender y /vender/panel | Conoce el recorrido del vendedor, solicita el alta, sube su catálogo con fichas completas, ve su parte del pedido, confirma o avisa de una falta, la deja lista para la recogida y consulta su liquidación |
-| Rafa | Vista de operación (panel interno) | Consulta su ruta de recogida con franjas y accesos, registra cantidad, estado y temperatura en cada parada y verifica el pedido en el hub |
+| Rafa | Vista de operación (panel interno) | Consulta su ruta de recogida con franjas y accesos, registra la recogida en cada parada (hora y bultos; la temperatura, en V2) y verifica el pedido en el hub |
 
 ### 6.2 Requisitos funcionales con criterios de aceptación
 

@@ -189,6 +189,12 @@ Sí, aplica las correcciones de la 1 a la 6
 
 **Resultado:** Rama `docs/revision-e5-e6` sobre `feat/expectativa`. Aplicadas: 1) quitado «Recordatorios» de las entrevistas (RST-06); 2) N-PLA-02 pasa de «Indicio fuerte» a «Indicio», explicando por qué tiene más apoyo; 3) riesgo de las valoraciones al día con C-29; 4) N-IA-01 «No confirmada» (C-08) en el comparativo; 5) descripción del registro de paradas de 6.2 ajustada al MVP (hora y bultos; la temperatura, en V2); 6) `docs/estado.md` al día. No se tocan las respuestas de las entrevistadas ni las interpretaciones de Juan Antonio. La línea 259 (6.1) también menciona la temperatura sin separar MVP y V2: no se cambia porque no estaba en lo aprobado. Sin subir hasta el visto bueno.
 
+### 15:49
+
+Sí, súbelo y prepara el PR y  no te dejes nada
+
+**Resultado:** Como pide no dejarse nada, se aplica también a la línea 259 de `FOOD4ALL_personas_empatia_v2.md` (apartado 6.1) el ajuste ya aprobado para 6.2: Rafa registra la recogida en cada parada (hora y bultos; la temperatura, en V2). Ya no queda en el documento ninguna «cantidad, estado y temperatura». `git push` de `docs/revision-e5-e6` y PR contra `feat/expectativa`, que no cierra ningún issue y recoge todos los cambios, lo que queda para Juan Antonio y lo que debe revisar Sebastián.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
