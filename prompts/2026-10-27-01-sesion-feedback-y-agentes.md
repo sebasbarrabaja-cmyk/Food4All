@@ -76,6 +76,18 @@ Reparte la tarea entre los 3, como miguel no trabajó mucho, ponle más tareas h
 - **Issues** #11 a #22 en GitHub, uno por punto y con su responsable: Miguel #11 a #15, Sebastián #16 a #19, Juan Antonio #20 a #22.
 - **Probado:** compila; las seis rutas dan 401 sin sesión y 200 con la forma del contrato; `/faq` responde 200. **Sin probar** en el navegador con sesión: la contraseña del panel está en `.env`.
 
+### ~11:55
+
+haz el push y abre los PR. Y una cosa, si mis compañeros habren una carpeta con el git al dia les dice tienes pendiente x cosa?
+
+**Resultado:** Push de `docs/alcance-coste-tiempo`, `refactor/quitar-version-pulida`, `refactor/organizar-agentes` y `feat/esqueleto-feedback`, y PR encadenados #23 → #24 → #25 → #26, cada uno con qué, por qué y cómo se probó. A la pregunta: hoy no; el agente solo lo vería si lee `docs/estado.md`. Se propone un hook `SessionStart` que enseñe los issues abiertos de cada uno.
+
+### ~12:00
+
+Algun problema?
+
+**Resultado:** Ninguno en el push ni en los PR. Avisos: unir con «Create a merge commit» y en orden, y probar el panel con sesión antes de unir el #26.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
