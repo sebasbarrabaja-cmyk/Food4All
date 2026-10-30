@@ -23,7 +23,7 @@ si, abre el PR
 
 haz los encargos #5 a #8
 
-**Resultado:** Especificación con `prompt-master`. Comprobado que el #5 (tokens por persona) ya lo resolvió el PR #33 (`docs/tokens/<persona>/`, en git). Preguntas sobre el #7, que es del módulo de Juan Antonio (`expectativa.js`), y sobre cómo arreglar el #6.
+**Resultado:** Especificación con `prompt-master`. Comprobado que el #5 (tokens por persona) ya lo resolvió el PR #32 (`docs/tokens/<persona>/`, en git). Preguntas sobre el #7, que es del módulo de Juan Antonio (`expectativa.js`), y sobre cómo arreglar el #6.
 
 ### ~15:17
 
