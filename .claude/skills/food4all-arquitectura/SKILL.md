@@ -24,7 +24,7 @@ description: Arquitectura técnica de la landing de FOOD4ALL — qué hace cada 
 | `asana.js` | Lee Asana: solo tareas `[Food4All]`, dos niveles de subtareas. Sin conexión, usa el plan de `project.js` |
 | `prompts.js` | Lee y escribe `prompts/*.md`. Campos: `titulo, fecha, autor, herramienta, tipo, tema, origen`; listas `TYPES` y `TEMAS` |
 | `ia.js` | Llamada a la IA local (Ollama, modelo `IA_MODELO`, por defecto `qwen3.5:4b`). Sin clave ni pago; solo funciona donde corre Ollama. Traduce su consumo de tokens a la forma común de `modulos/tokens.js` |
-| `search.js` | Buscador del panel: una llamada con los datos del panel y la lista `DESTINOS`. Sin herramientas |
+| `search.js` | Buscador del panel: una llamada a la IA con un contexto de tope fijo (trozos de datos elegidos por parecido con la pregunta, índice de prompts y la conversación de la pestaña) y la lista `DESTINOS`; puede llevar a un prompt concreto. Se afina con `node tools/probar-buscador.mjs` (25 preguntas, no suma tokens). Sin herramientas |
 | `store.js` | Altas de vendedores en `backend/data/db.json` (ignorado por git) |
 | `limiter.js` | Límite de intentos (login y formularios) |
 

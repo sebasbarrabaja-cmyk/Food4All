@@ -47,41 +47,84 @@ const KEYWORDS = {
 const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 const TITLES = Object.fromEntries(SECTIONS.map(([id, t]) => [`#${id}`, t]));
 
-// Buscador: al escribir, filtra secciones; con Intro, pregunta a la IA (backend/search.js).
+// Buscador con dos modos (backend/search.js):
+// - Buscar: al escribir, lista las secciones que coinciden (sin IA). Intro pasa al modo IA.
+// - Preguntar a la IA: la barra cambia de color; Intro con texto pregunta y Esc vuelve a Buscar.
+// Recuerda la conversación de esta pestaña para entender «eso», «los»…; se limpia sola (las más
+// antiguas cuando pasa del tope, o toda tras 10 min sin preguntar) y con «Nueva conversación».
+const TOPE_CONVERSACION = 4500; // caracteres (~1.500 tokens); el servidor vuelve a recortar
+const OLVIDAR_TRAS = 10 * 60 * 1000;
+
+function recortar(conv) {
+  const out = [];
+  let n = 0;
+  for (const c of [...conv].reverse()) {
+    n += c.pregunta.length + c.respuesta.length;
+    if (n > TOPE_CONVERSACION || out.length >= 6) break;
+    out.unshift(c);
+  }
+  return out;
+}
+
 function SideSearch({ ia }) {
   const [q, setQ] = useState('');
-  const [answer, setAnswer] = useState(null); // { loading } | { respuesta, destino } | { error }
+  const [modo, setModo] = useState('buscar'); // 'buscar' | 'ia'
+  const [answer, setAnswer] = useState(null); // { loading } | { respuesta, destino, prompt } | { error }
+  const [conv, setConv] = useState([]);
+  const [ultima, setUltima] = useState(0);
   const words = norm(q).split(/\s+/).filter((w) => w.length > 1);
-  const matches = words.length
+  const matches = modo === 'buscar' && words.length
     ? SECTIONS.filter(([id, t]) => words.some((w) => norm(`${t} ${KEYWORDS[id] ?? ''}`).includes(w)))
     : [];
 
-  async function submit(e) {
-    e.preventDefault();
-    // Sin IA al cargar también se pregunta: si Ollama ya está en marcha responde, y si no, el error dice qué hacer.
-    if (q.trim().length < 2) return;
+  async function preguntar() {
+    const pregunta = q.trim();
+    const previa = Date.now() - ultima > OLVIDAR_TRAS ? [] : conv;
+    if (previa !== conv) setConv([]); // olvidada: que el aviso «Recuerda N preguntas» no engañe
     setAnswer({ loading: true });
     try {
       const r = await fetch('/api/admin/ask', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pregunta: q.trim() }),
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pregunta, conversacion: previa }),
       });
       const data = await r.json();
-      setAnswer(r.ok ? data : { error: data.error ?? 'No se pudo responder.' });
+      if (!r.ok) { setAnswer({ error: data.error ?? 'No se pudo responder.' }); return; }
+      setAnswer(data);
+      setConv(recortar([...previa, { pregunta, respuesta: data.respuesta }]));
+      setUltima(Date.now());
+      setQ('');
     } catch {
       setAnswer({ error: 'No se pudo contactar con el servidor.' });
     }
   }
 
-  const goTo = answer?.destino;
+  function submit(e) {
+    e.preventDefault();
+    if (answer?.loading) return;
+    if (modo === 'buscar') { setModo('ia'); setAnswer(null); return; }
+    if (q.trim().length >= 2) preguntar();
+  }
+
+  function salir() { setModo('buscar'); setAnswer(null); }
+  function nueva() { setConv([]); setAnswer(null); }
+  // Abre el prompt en su sección, ya filtrado y desplegado (lo escucha AdminPrompts.jsx).
+  function abrirPrompt(id) { window.dispatchEvent(new CustomEvent('food4all:abrir-prompt', { detail: id })); }
+
+  const pensando = Boolean(answer?.loading);
+  const destino = answer?.destino;
   return (
     <>
-      <form className="side-search" role="search" onSubmit={submit}>
-        <Icon name="search" size={18} />
-        <input type="search" placeholder="Busca o pregunta…" value={q} aria-label="Buscar en el panel o hacer una pregunta"
-          onChange={(e) => { setQ(e.target.value); setAnswer(null); }} />
+      <form className={`side-search${modo === 'ia' ? ' side-search--ia' : ''}${pensando ? ' side-search--pensando' : ''}`} role="search" onSubmit={submit}>
+        <Icon name={modo === 'ia' ? 'spark' : 'search'} size={18} />
+        <input type="search" placeholder={modo === 'ia' ? 'Pregunta a la IA…' : 'Busca o pregunta…'} value={q}
+          aria-label={modo === 'ia' ? 'Pregunta a la IA del panel' : 'Buscar en el panel'} aria-busy={pensando}
+          onChange={(e) => { setQ(e.target.value); if (!pensando) setAnswer(null); }}
+          onKeyDown={(e) => { if (e.key === 'Escape' && modo === 'ia') { e.preventDefault(); salir(); } }} />
+        {modo === 'ia' && <span className="side-search__modo">IA</span>}
       </form>
       <p className="side-search__note">
-        {ia ? 'Escribe para saltar a una sección. Pulsa Intro para preguntar a la IA.' : 'IA local apagada (ollama serve): solo busca secciones.'}
+        {modo === 'ia'
+          ? <>Intro para preguntar · Esc para volver a buscar{!ia && ' · la IA local parece apagada (ollama serve)'}</>
+          : <>Escribe para saltar a una sección. Intro: modo IA, y otro Intro para preguntar.{!ia && ' La IA local parece apagada (ollama serve).'}</>}
       </p>
       {matches.length > 0 && !answer && (
         <ul className="side-search__results">
@@ -89,22 +132,29 @@ function SideSearch({ ia }) {
         </ul>
       )}
       <div className="side-search__answer" aria-live="polite">
-        {answer?.loading && <p className="muted small">Buscando…</p>}
+        {pensando && <p className="side-search__pensando">Pensando<span aria-hidden="true" className="puntos"><i>.</i><i>.</i><i>.</i></span></p>}
         {answer?.error && <p className="form-error small" role="alert">{answer.error}</p>}
         {answer?.respuesta && (
           <>
             <p>{answer.respuesta}</p>
-            {goTo && (goTo.startsWith('#')
-              ? <a className="btn btn-ghost btn-sm" href={goTo}>Ir a {TITLES[goTo] ?? goTo}</a>
-              : <Link className="btn btn-ghost btn-sm" to={goTo}>Abrir {goTo}</Link>)}
+            {answer.prompt
+              ? <button type="button" className="btn btn-primary btn-sm" onClick={() => abrirPrompt(answer.prompt)}>Abrir el prompt</button>
+              : destino && (destino.startsWith('#')
+                ? <a className="btn btn-primary btn-sm" href={destino}>Ir a {TITLES[destino] ?? destino}</a>
+                : <Link className="btn btn-primary btn-sm" to={destino}>Abrir {destino}</Link>)}
           </>
         )}
       </div>
+      {modo === 'ia' && conv.length > 0 && !pensando && (
+        <p className="side-search__conv muted small">
+          Recuerda {conv.length} {conv.length === 1 ? 'pregunta' : 'preguntas'} ·{' '}
+          <button type="button" className="btn-link" onClick={nueva}>Nueva conversación</button>
+        </p>
+      )}
     </>
   );
 }
 
-// Barra lateral del panel: salta entre secciones y marca la que está en pantalla.
 function Sidebar({ ia }) {
   const [active, setActive] = useState(SECTIONS[0][0]);
   useEffect(() => {

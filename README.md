@@ -62,6 +62,8 @@ Opcional en `backend/.env`: `IA_MODELO` (por defecto `qwen3.5:4b`), `OLLAMA_URL`
 
 **Buscador** (barra lateral, `backend/search.js`): al escribir, muestra las secciones que coinciden; con Intro, responde preguntas simples ("¿de qué va el proyecto?") con los datos del panel y ofrece ir al apartado correcto. No es un agente: una sola consulta, sin herramientas. Medido el 30/10 con una RTX 5060 de portátil: la primera pregunta tarda unos 16 s (carga el modelo) y las siguientes, 1-2 s; acierta el apartado en 7 de 10 preguntas de prueba. El consumo de cada consulta se apunta en `/admin#tokens`.
 
+Cómo se usa: el primer Intro pasa la barra a **modo IA** (verde); el segundo, con texto, pregunta; Esc vuelve a buscar secciones. Recuerda las preguntas anteriores de la pestaña (se olvidan solas tras 10 min) y puede llevar a un prompt concreto. Para afinarlo: `node tools/probar-buscador.mjs` (25 preguntas con su apartado esperado; el 30/10, 23–25 aciertos y unos 4 s por pregunta con el contexto nuevo).
+
 ## Prompts
 
 Todos los prompts usados para desarrollar el proyecto se guardan en [`prompts/`](prompts/README.md), un `.md` por prompt. Se ven, se añaden y se copian desde `/admin#prompts`.

@@ -177,7 +177,11 @@ app.post('/api/admin/prompts', requireAdmin, (req, res) => {
 app.post('/api/admin/ask', requireAdmin, async (req, res) => {
   const pregunta = str(req.body?.pregunta).slice(0, 300);
   if (pregunta.length < 2) return res.status(400).json({ error: 'Escribe una pregunta.' });
-  try { res.json(await ask(pregunta)); }
+  // Conversación de la pestaña: como mucho las 6 últimas, con textos cortos (el tope de verdad está en search.js).
+  const conversacion = (Array.isArray(req.body?.conversacion) ? req.body.conversacion : []).slice(-6)
+    .filter((c) => typeof c?.pregunta === 'string' && typeof c?.respuesta === 'string')
+    .map((c) => ({ pregunta: c.pregunta.slice(0, 300), respuesta: c.respuesta.slice(0, 600) }));
+  try { res.json(await ask(pregunta, { conversacion })); }
   catch (e) { res.status(e instanceof AIError ? e.status : 500).json({ error: e.message }); }
 });
 
