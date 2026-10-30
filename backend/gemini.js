@@ -16,10 +16,23 @@ export class AIError extends Error {
   constructor(message, status = 502) { super(message); this.status = status; }
 }
 
+// usageMetadata de Gemini → { entrada, salida, cache_lectura }. Entra todo lo enviado (también lo de
+// herramientas) menos lo leído de caché, que va aparte; el razonamiento (thoughts) se cobra como salida.
+function uso(u) {
+  const cache = u.cachedContentTokenCount ?? 0;
+  return {
+    entrada: (u.promptTokenCount ?? 0) + (u.toolUsePromptTokenCount ?? 0) - cache,
+    salida: (u.candidatesTokenCount ?? 0) + (u.thoughtsTokenCount ?? 0),
+    cache_lectura: cache,
+  };
+}
+
 export const aiReady = () => Boolean(process.env.GEMINI_API_KEY);
 
 // Devuelve el texto de la respuesta. Con `schema`, Gemini responde en JSON con esa forma.
-export async function generate({ model, system, prompt, schema, timeoutMs = 90_000 }) {
+// `onUso` recibe los tokens gastados, en la forma común de modulos/tokens.js (sirve para cualquier
+// proveedor), aunque luego la respuesta no sirva.
+export async function generate({ model, system, prompt, schema, timeoutMs = 90_000, onUso }) {
   if (!aiReady()) throw new AIError('Falta GEMINI_API_KEY en backend/.env.', 503);
 
   const body = {
@@ -49,6 +62,7 @@ export async function generate({ model, system, prompt, schema, timeoutMs = 90_0
     if (res.status === 503) throw new AIError('La IA está saturada ahora mismo. Prueba en un minuto.', 503);
     if (!res.ok) throw new AIError(`Error de la IA (${res.status}): ${data.error?.message ?? 'sin detalle'}`);
 
+    if (data.usageMetadata) onUso?.(uso(data.usageMetadata));
     const cand = data.candidates?.[0];
     if (!cand || cand.finishReason === 'SAFETY' || data.promptFeedback?.blockReason) throw new AIError('La IA no ha querido responder a esto.', 422);
     // Las partes con `thought: true` son el razonamiento interno: no se muestran.

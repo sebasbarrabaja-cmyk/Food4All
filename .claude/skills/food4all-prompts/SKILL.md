@@ -1,6 +1,6 @@
 ---
 name: food4all-prompts
-description: Cómo registrar en prompts/ cada mensaje del usuario (obligatorio en FOOD4ALL, el profesor exige todos los prompts) y cómo se guardan los tokens de cada sesión en docs/tokens.csv. Úsala en cada sesión de trabajo, antes de hacer un commit y cuando haya que consultar, ordenar o contar prompts o tokens.
+description: Cómo registrar en prompts/ cada mensaje del usuario (obligatorio en FOOD4ALL, el profesor exige todos los prompts) y cómo se guardan los tokens de cada sesión en docs/tokens/. Úsala en cada sesión de trabajo, antes de hacer un commit y cuando haya que consultar, ordenar o contar prompts o tokens.
 ---
 
 # FOOD4ALL · Registro de prompts y tokens
@@ -24,8 +24,10 @@ description: Cómo registrar en prompts/ cada mensaje del usuario (obligatorio e
 
 ## Tokens
 
-- Al cerrar la sesión (`/exit`, Ctrl+D o `/clear`), el hook `SessionEnd` de `.claude/settings.json` ejecuta `tools/tokens-sesion.mjs`. El script suma el consumo del historial y añade una fila a `docs/tokens.csv`.
-- Columnas: `fecha, persona, rama, sesion, motivo, modelos, mensajes, entrada, salida, cache_escritura, cache_lectura, total`. La persona sale de `git config user.name`.
-- `docs/tokens.csv` está en `.gitignore`: cada uno guarda los suyos en su ordenador.
+- Al cerrar la sesión (`/exit`, Ctrl+D o `/clear`), el hook `SessionEnd` de `.claude/settings.json` ejecuta `tools/tokens-sesion.mjs`. El script suma el consumo del historial y lo guarda en un archivo nuevo, `docs/tokens/<persona>/<fecha>-<sesion>.csv` (uno por sesión: así dos ramas nunca tocan el mismo archivo).
+- Columnas: `fecha, persona, rama, sesion, motivo, modelos, mensajes, entrada, salida, cache_escritura, cache_lectura, total`. La persona es el ID del equipo (`sebastian`, `juan-antonio`, `miguel`): sale de `git config food4all.persona` si está puesto y, si no, del nombre y el correo de git. Si sale la carpeta `desconocido/`, pon `git config food4all.persona <tu-id>` y mueve sus archivos a tu carpeta.
+- **`docs/tokens/` va en git**: sube tus archivos nuevos con tus cambios. El panel (`/admin#tokens`) suma los de todo el equipo.
+- Las llamadas a la IA del panel (buscador) se apuntan en `docs/tokens-ia.csv`, que sí está en `.gitignore` (cada servidor apunta las suyas). El proveedor traduce su consumo a `{ entrada, salida, cache_lectura, total }` antes de llamar a `registrarIA` (`backend/modulos/tokens.js`); hoy lo hace `backend/gemini.js`.
+- El antiguo `docs/tokens.csv` (hasta el 30/10) sigue ignorado; el panel lo sigue sumando, así que no hace falta moverlo.
 - Solo funciona si Claude Code se abre **dentro de la carpeta del repositorio** (si no, no carga `.claude/settings.json`). Si se cierra la terminal de golpe, la sesión no se apunta.
-- En el registro de la sesión, el total de tokens se puede citar copiándolo de `docs/tokens.csv` en la sesión siguiente.
+- En el registro de la sesión, el total de tokens se puede citar copiándolo del archivo de esa sesión en `docs/tokens/<persona>/` en la sesión siguiente.

@@ -1,6 +1,7 @@
 // Buscador del panel: responde preguntas simples sobre el proyecto y dice a qué apartado ir.
 // No es un agente: una sola llamada a Gemini con los datos del panel como contexto, sin herramientas.
 import { generate, MODELS } from './gemini.js';
+import { registrarIA } from './modulos/tokens.js';
 import { PROJECT } from './project.js';
 import * as prompts from './prompts.js';
 
@@ -46,6 +47,7 @@ export async function ask(pregunta) {
 
   const out = await generate({
     model: MODELS.fast, system: SYSTEM, prompt: contexto, timeoutMs: 30_000,
+    onUso: (uso) => registrarIA({ accion: 'buscador', modelo: MODELS.fast, uso }),
     schema: {
       type: 'OBJECT',
       properties: {
