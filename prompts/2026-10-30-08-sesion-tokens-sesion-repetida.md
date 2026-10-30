@@ -43,6 +43,12 @@ si, pasa el code-review
 
 **Resultado:** Sebastián carga su clave (`ssh -T git@github.com`) y elige subir la rama y abrir el PR hacia `main`.
 
+### Hora no registrada (después de las 19:50)
+
+unelo en main
+
+**Resultado:** El asistente une el PR #41 en `main` con merge commit (este registro va en la rama antes de unirla).
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
