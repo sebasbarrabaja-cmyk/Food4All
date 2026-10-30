@@ -1,0 +1,495 @@
+{
+  "comun": {
+    "saltar": "Skip to content",
+    "inicio": "FOOD4ALL, home",
+    "navPrincipal": "Main",
+    "quieroComprar": "I want to buy",
+    "quieroVender": "I want to sell",
+    "comoFunciona": "How it works",
+    "idioma": "Language",
+    "lema": "Plan your meals. Eat like at home.",
+    "pie": {
+      "clientes": "Customers",
+      "asistente": "AI assistant",
+      "productos": "Products",
+      "ejemploPedido": "Sample order",
+      "vendedores": "Sellers",
+      "solicitarAlta": "Apply to join",
+      "panelEjemplo": "Sample dashboard",
+      "comunidad": "Community",
+      "porQue": "Why it matters to us",
+      "redes": "Our social media",
+      "zona": "Starting area:",
+      "aviso": "Conceptual university project · Sample data · No real sellers, orders or prices",
+      "faq": "FAQ",
+      "creditos": "Image credits",
+      "admin": "Admin access"
+    },
+    "titulos": {
+      "portada": "FOOD4ALL · Plan your meals",
+      "/comprar/cliente": "Customer view",
+      "/comprar": "I want to buy",
+      "/vender/panel": "Seller dashboard",
+      "/vender": "I want to sell",
+      "/comunidad": "Community",
+      "/creditos": "Image credits",
+      "/faq": "FAQ",
+      "noEncontrada": "Page not found"
+    },
+    "estado": {
+      "decidido": "Decided",
+      "hipotesis": "Hypothesis",
+      "pendiente": "To be defined",
+      "descartado": "Discarded",
+      "ejemplo": "Sample data"
+    },
+    "notaFotos": "Illustrative images from Wikimedia Commons: they do not show real products or sellers.",
+    "creditos": "Credits",
+    "notaPrecios": "Sample prices, for illustration only: they are not real FOOD4ALL prices.",
+    "pestanasClientes": "Customer area",
+    "pestanasVendedores": "Seller area",
+    "comoComprar": "How to buy",
+    "comoVender": "How to sell",
+    "redSocial": "FOOD4ALL on {{red}}",
+    "redProximamente": "{{red}}: coming soon",
+    "cesta": {
+      "origen": "Origin",
+      "alergenos": "Allergens",
+      "porQue": "Why"
+    }
+  },
+
+  "home": {
+    "imagen": "Illustration of a field with olive trees and a crate of fresh fruit and vegetables",
+    "antetitulo": "Local food marketplace",
+    "titulo": "Plan your meals.",
+    "tituloAcento": "Eat like at home.",
+    "entradilla": "Products from several local sellers in a single purchase and a single delivery.",
+    "asiDeFacil": "As easy as this",
+    "pasos": [
+      { "t": "Tell us what you need", "d": "Budget and days." },
+      { "t": "The AI suggests", "d": "A basket from local sellers." },
+      { "t": "You pay once", "d": "One cart, one total." },
+      { "t": "Everything arrives together", "d": "In a single delivery." }
+    ],
+    "cinta": ["Vega tomatoes", "Sourdough bread", "Olive oil", "Free-range eggs", "Guadalhorce oranges", "Goat's cheese", "Lentils", "Courgettes", "Molletes", "Apples"],
+    "local": {
+      "titulo": "Produce from nearby",
+      "texto": "From farmers, bakeries, farms and greengrocers in Málaga, Seville and Granada.",
+      "mercadoAlt": "Market stall with fruit and vegetables",
+      "mercado": "Seasonal fruit and vegetables",
+      "panAlt": "Bakery shelves with bread",
+      "pan": "Freshly baked bread",
+      "campoAlt": "Farmers harvesting vegetables in the field",
+      "campo": "Straight from the field"
+    },
+    "comunidad": {
+      "antetitulo": "Community",
+      "titulo": "Recipes, seasons and local people",
+      "texto": "We share easy recipes with local produce, introduce the producers and learn together how to make the most of our food. Follow us on social media.",
+      "boton": "Meet the community"
+    },
+    "zonas": {
+      "titulo": "What would you like to do?",
+      "comprar": "Tell us your budget and your days. We suggest the basket.",
+      "empezar": "Get started",
+      "vender": "Reach new customers. We collect and deliver.",
+      "solicitarAlta": "Apply to join"
+    }
+  },
+
+  "comprar": {
+    "antetitulo": "Customer area",
+    "titulo": "Your shopping for several days, planned",
+    "entradilla": "Products from local sellers in a single purchase and a single delivery.",
+    "verPedido": "See what your order would look like",
+    "pasos": [
+      { "t": "Tell us what you need", "d": "In the assistant you use buttons to choose your budget, the days, how many people you are and your cooking time. For example: €25 for four days." },
+      { "t": "Get a suggested basket", "d": "The AI groups the products by seller, explains why it suggests each one and compares the total with your budget. The decision is yours." },
+      { "t": "Adjust it to your taste", "d": "Remove, change or add products and ask for substitutes. The total is recalculated and we warn you if you go over budget." },
+      { "t": "Pay once", "d": "A single cart with products from several sellers and one total. Before paying you see ingredients and allergens." },
+      { "t": "Track your order", "d": "Received → collected from the seller → at the hub → packed → out for delivery → delivered." },
+      { "t": "Make the most of it", "d": "Reminders of what to eat first, ideas to use everything up and your next shop ready." }
+    ],
+    "verRecorrido": "See the full journey, step by step (10 steps)",
+    "recorrido": [
+      { "t": "Arrival", "d": "You reach the home page and choose \"I want to buy\"." },
+      { "t": "AI assistant", "d": "It asks for your budget, days, preferences, restrictions and cooking time. Allergies are optional and would only be used during the session." },
+      { "t": "Suggested basket", "d": "The AI groups the basket by seller, with quantities, the total against your budget and the reason for each product. It is a suggestion: you decide." },
+      { "t": "Review and adjust", "d": "You remove, change or add products, ask for substitutes and open the seller's page. The total is recalculated and you are warned if you go over budget." },
+      { "t": "Multi-seller cart", "d": "A single cart grouped by seller and one total. Minimum order and delivery cost, to be defined." },
+      { "t": "Single payment", "d": "Summary by seller, area and delivery slot, ingredients and allergens in view and acceptance of the terms. Perishable goods have no right of withdrawal." },
+      { "t": "Tracking", "d": "Received, collected from the seller, at the hub (consolidation and checks), packed, out for delivery and delivered." },
+      { "t": "After buying", "d": "Reminders of what to eat first, ideas to use up what you bought and your next shop ready. Expiry alerts need real batch data." },
+      { "t": "Problems", "d": "A simple form if something arrives in poor condition. Who responds (seller, FOOD4ALL or both) is to be defined." },
+      { "t": "Subscription", "d": "Delivery benefits and promotions, with no compulsory boxes. Coming soon, no prices yet." }
+    ],
+    "asistente": {
+      "antetitulo": "AI assistant",
+      "titulo": "Choose what you need and it suggests the basket",
+      "texto": "You choose your budget, days, how many people you are and your cooking time. The AI suggests products from several sellers and explains why. You decide.",
+      "sinVideo": "Your browser cannot play the video."
+    },
+    "mercado": {
+      "antetitulo": "Marketplace",
+      "titulo": "Products from local sellers",
+      "texto": "Every product shows who sells it, where it comes from and its allergens before you pay.",
+      "filtrarCiudad": "Filter by city",
+      "todas": "All",
+      "categoria": "Category",
+      "vendedor": "Seller",
+      "todos": "All",
+      "productos_one": "{{count}} product",
+      "productos_other": "{{count}} products",
+      "origen": "Origin",
+      "alergenos": "Allergens",
+      "conservacion": "Storage",
+      "sinResultados": "No sample products match these filters.",
+      "compraMinima": "Minimum order: around €10–15",
+      "costeEntrega": "Delivery cost",
+      "inventados": "Sellers and products made up for the demo."
+    },
+    "comparacion": {
+      "antetitulo": "Conceptual comparison",
+      "titulo": "How is it different?",
+      "columnas": ["FOOD4ALL", "Municipal market platforms", "Supermarket", "Instant delivery"],
+      "filas": [
+        { "t": "What for", "c": ["Planning several days", "Buying at your market or from shops in your city", "General shopping", "Eating now"] },
+        { "t": "Sellers", "c": ["Several local ones in one cart", "Market stalls and local shops (in Seville, one market per order)", "One chain", "Usually one per order"] },
+        { "t": "After buying", "c": ["Reminders and next shop", "Not checked", "—", "—"] }
+      ],
+      "precio": "Price",
+      "precioA": "Some products could be more competitive",
+      "precioB": "— we do not claim everything is cheaper.",
+      "nota": "Conceptual comparison: the supermarket and delivery columns do not exactly describe any specific service. The municipal markets column summarises what the public platforms of Málaga and Seville say, checked on 26/10/2026."
+    }
+  },
+
+  "cliente": {
+    "antetitulo": "Customer view",
+    "titulo": "This is what your order would look like",
+    "entradilla": "A sample order with products from {{count}} local sellers, paid once and delivered together.",
+    "inventado": "Made-up order to illustrate the experience. Purchases cannot be made.",
+    "carrito": {
+      "titulo": "1 · One cart, several sellers",
+      "texto": "Products are grouped by seller, but you pay a single total. Ingredients and allergens are visible before paying.",
+      "subtotal": "Subtotal",
+      "entrega": "Delivery",
+      "total": "Total",
+      "masEntrega": "{{precio}} + delivery"
+    },
+    "pago": {
+      "titulo": "2 · Single payment",
+      "texto": "Summary by seller, area and delivery slot, and acceptance of the terms.",
+      "zona": "Delivery area:",
+      "franja": "Slot:",
+      "pago": "Payment:",
+      "unaVez": "Once, to FOOD4ALL, for the whole order.",
+      "desistimiento": "Perishable goods have no right of withdrawal."
+    },
+    "seguimiento": {
+      "titulo": "3 · Tracking",
+      "pedido": "Order",
+      "hub": "At the hub we bring together the products from all the sellers and check their condition before packing."
+    },
+    "despues": {
+      "titulo": "4 · After buying",
+      "texto": "Reminders of what to eat first and ideas to use up what you bought.",
+      "prevista": "Planned feature",
+      "caducidad": ": expiry alerts need the real batch date and its type (use-by or best-before)."
+    },
+    "incidencias": {
+      "titulo": "Did something arrive wrong?",
+      "texto": "There will be a simple form to report problems. Who answers to the customer (seller, FOOD4ALL or both) is"
+    }
+  },
+
+  "vender": {
+    "antetitulo": "Seller area",
+    "titulo": "We are just one intermediary, not seven",
+    "entradilla": "New customers, more reach and an extra sales channel, with logistics centralised by FOOD4ALL.",
+    "buscando": "We are looking for our first sellers. The project has not been piloted yet.",
+    "solicitarAlta": "Apply to join",
+    "pasos": [
+      { "t": "Apply to join", "d": "Fill in the form with your business, area, health registration and collection times." },
+      { "t": "Verification", "d": "We check that you meet the minimum standards. You will see the status: received, under review, verified or rejected." },
+      { "t": "Upload your catalogue", "d": "Every product needs a complete listing: origin, price, unit, ingredients, allergens, date type and storage." },
+      { "t": "Receive your part of the order", "d": "You only see your products, quantities and collection slot. You confirm or report a shortage." },
+      { "t": "Prepare it and we collect it", "d": "You leave it ready with the order and batch number. FOOD4ALL collects it from you; you do not handle shipping." },
+      { "t": "Checks at the hub", "d": "We check the product against the order. If something does not meet the standard, it is removed and you are told." },
+      { "t": "Settlement", "d": "You see your sales and the FOOD4ALL commission." }
+    ],
+    "ganas": {
+      "antetitulo": "What you get",
+      "titulo": "One more channel, without handling deliveries",
+      "beneficios": [
+        { "t": "New customers", "d": "You reach people who plan their shopping and look for local produce." },
+        { "t": "More visibility", "d": "Your business appears alongside other sellers in your area, with its own page." },
+        { "t": "An extra channel", "d": "You keep selling as always; FOOD4ALL adds orders, it does not replace them." },
+        { "t": "Centralised logistics", "d": "We collect from you and deliver. You only prepare your part." }
+      ],
+      "hipotesisA": "That sellers get better terms than in channels with more intermediaries is a",
+      "hipotesisB": "that still has to be validated."
+    },
+    "papeles": {
+      "antetitulo": "Who does what",
+      "titulo": "Roles",
+      "roles": [
+        { "t": "The customer", "items": ["Decides what they need: budget, days and preferences", "Reviews and adjusts the basket", "Pays once", "Receives a single order"] },
+        { "t": "The seller", "items": ["Keeps their catalogue and availability up to date", "Prepares their part of each order", "Leaves it ready for collection", "Does not handle shipping or charge the customer"] },
+        { "t": "FOOD4ALL", "items": ["Provides the platform and the AI", "Brings together orders from several sellers", "Collects, consolidates and checks at the hub", "Packs and delivers"] }
+      ],
+      "requisitos": "Minimum requirements",
+      "listaRequisitos": [
+        "No spoiled or fraudulently obtained products.",
+        "No hidden information: complete listings with ingredients and allergens.",
+        "A valid health registration or a justified exemption, which we review before approval."
+      ],
+      "homologacion": "Detailed approval process",
+      "comision": "Sales commission: percentage, who pays it and payment frequency",
+      "patrocinio": "· Optional sponsored visibility, always labelled and kept apart from the AI's recommendations."
+    },
+    "alta": {
+      "antetitulo": "Seller sign-up",
+      "titulo": "Apply to join",
+      "texto": "We will review your application. The data is only used to assess your application in this university demo."
+    },
+    "panel": {
+      "antetitulo": "Seller dashboard",
+      "titulo": "This is how you would see your catalogue and orders",
+      "texto": "A catalogue with complete listings, your part of each order and the settlement, with a sample seller.",
+      "boton": "See the sample dashboard"
+    },
+    "form": {
+      "sinConexion": "It could not be sent. Check that the server is running.",
+      "recibida": "Application received",
+      "estado": "Status:",
+      "estadoRecibida": "received",
+      "revisara": ". The team will review it and write to the email you gave.",
+      "otra": "Send another application",
+      "obligatorios": "All fields are required except those marked as optional.",
+      "nombre": "Business name",
+      "tipo": "Type",
+      "zona": "Area",
+      "elige": "Choose…",
+      "tipos": {
+        "agricultor": "Farmer",
+        "granja": "Farm",
+        "fruteria": "Greengrocer",
+        "panaderia": "Bakery",
+        "obrador": "Artisan bakery",
+        "despensa": "Pantry goods",
+        "cocina": "Local kitchen"
+      },
+      "correo": "Contact email",
+      "telefono": "Phone (optional)",
+      "registro": "Health registration or exemption",
+      "registroAyuda": "Your Spanish health registration number (RGSEAA). If you do not need one, write the reason: we review it before approval.",
+      "oferta": "What do you offer?",
+      "ofertaAyuda": "Type of products, season, approximate volume.",
+      "horarios": "Possible collection times (optional)",
+      "horariosEjemplo": "E.g.: Monday to Friday, 8:00–11:00",
+      "privacidad": "I agree that this data is stored only to assess my application in this university demo. It is not shared with anyone.",
+      "enviando": "Sending…",
+      "enviar": "Send application"
+    }
+  },
+
+  "panelVendedor": {
+    "antetitulo": "Seller dashboard",
+    "entradilla": "This is how you would see your catalogue, your orders and your sales.",
+    "inventado": "Made-up seller.",
+    "estadoSolicitud": "Application status:",
+    "verificada": "Verified",
+    "catalogo": {
+      "titulo": "Catalogue",
+      "texto": "Without a complete listing, the product is not published.",
+      "columnas": ["Product", "Category", "Unit", "Allergens", "Date type", "Storage", "Price", "Listing"],
+      "completa": "Complete",
+      "miel": "Orange blossom honey",
+      "mielOrigen": "Sierra Norte de Sevilla",
+      "mielCategoria": "Pantry",
+      "mielConservacion": "Room temperature",
+      "incompleta": "Incomplete · not published"
+    },
+    "pedidos": {
+      "titulo": "Orders",
+      "texto": "You only see your part of each consolidated order. You confirm availability or report a shortage so a substitute can be suggested.",
+      "columnas": ["Order", "Your products", "Collection", "Status"],
+      "nota": "Label each part with the order number and the batch or expiry date. FOOD4ALL collects it from you."
+    },
+    "liquidacion": {
+      "titulo": "Settlement",
+      "texto": "Your sales and the FOOD4ALL commission.",
+      "ventas": "Sales for the period:",
+      "confirmados": "(confirmed orders, before commission)",
+      "comision": "FOOD4ALL commission:",
+      "quien": "Who pays it:",
+      "periodicidad": "Payment frequency:"
+    },
+    "patrocinio": {
+      "titulo": "Sponsored visibility",
+      "texto": "Optional. Featured products are always labelled as sponsored and never mixed with the AI's recommendations."
+    }
+  },
+
+  "comunidad": {
+    "antetitulo": "FOOD4ALL community",
+    "titulo": "Eating like at home",
+    "tituloAcento": "is learned together",
+    "entradilla": "FOOD4ALL is not just a shop: we want to bring together people who cook, people who produce and people who are learning to organise their meals. Recipes, seasons and tips, on our social media.",
+    "verRedes": "See our social media",
+    "porQueBoton": "Why it matters to us",
+    "ejemplos": "Sample posts",
+    "publicacionesEjemplo": "Sample posts",
+    "publicaciones": [
+      { "tag": "Recipe of the week", "t": "Vega vegetable pisto in 20 minutes" },
+      { "tag": "Cooking for several days", "t": "One pot of lentils, four meals sorted" },
+      { "tag": "Meet the producer", "t": "A day at a neighbourhood bakery" }
+    ],
+    "porQue": {
+      "antetitulo": "Why it matters to us",
+      "titulo": "Without community, local does not work",
+      "texto": "A local produce marketplace depends on trust and word of mouth more than on advertising. That is why the community has been part of the project from day one, not an add-on.",
+      "razones": [
+        { "t": "We learn from each other", "d": "Someone starting to cook away from home learns more from a real recipe, on a real budget, than from any guide." },
+        { "t": "Producers have a face", "d": "Knowing who grows or bakes what you buy is the basis of trust in local food." },
+        { "t": "Less food in the bin", "d": "Ideas to use up leftovers and what to eat first: together we cut waste." },
+        { "t": "We decide with you", "d": "What the community asks for and thinks guides what we build next. Many decisions are still open." }
+      ]
+    },
+    "pilares": {
+      "antetitulo": "What we will post",
+      "titulo": "Easy, seasonal and local cooking",
+      "texto": "Useful content to eat better with little time and a small budget. How often we post is to be defined.",
+      "calendario": "Posting schedule to be defined",
+      "lista": [
+        { "t": "Recipe of the week", "d": "With seasonal products from local sellers and designed for minimal cooking." },
+        { "t": "Seasons", "d": "What is at its best each month in Málaga, Seville and Granada." },
+        { "t": "Meet the producer", "d": "Short stories from market gardens, farms, bakeries and greengrocers." },
+        { "t": "Use up leftovers", "d": "Tips to store, freeze and reuse food without throwing it away." }
+      ]
+    },
+    "redes": {
+      "antetitulo": "Our social media",
+      "titulo": "Find us where you already are",
+      "texto": "The accounts are not open yet. As soon as they are, they will be linked here.",
+      "porCrear": "Account not created yet",
+      "seguir": "Follow",
+      "proximamente": "Coming soon",
+      "que": {
+        "instagram": "Recipe of the week, seasonal products and the sellers behind them.",
+        "tiktok": "One-minute recipes with what is in the basket and tips to avoid wasting food.",
+        "youtube": "The week's cooking step by step and visits to market gardens, bakeries and farms.",
+        "pinterest": "Recipe boards you can save, by days, cooking time and season."
+      }
+    },
+    "participar": {
+      "antetitulo": "How to take part",
+      "titulo": "Four ways to join",
+      "formas": [
+        { "t": "Follow us", "d": "On the network you use most. We will post the same content adapted to each one." },
+        { "t": "Share your dish", "d": "Tag us when you cook with local produce. The best recipes are published with your name." },
+        { "t": "Suggest producers", "d": "If you know a market garden or a bakery that should be on FOOD4ALL, tell us." },
+        { "t": "Give your opinion", "d": "Polls and open questions about what is still to be decided." }
+      ],
+      "normas": "Community rules",
+      "listaNormas": [
+        "Respect in the comments: this is a place to learn to cook, not to judge.",
+        "No hidden advertising: sponsored content is always labelled as such.",
+        "Allergies are taken seriously: every recipe lists its allergens.",
+        "No health promises or miracle diets."
+      ]
+    },
+    "cta": {
+      "titulo": "Start with your next shop",
+      "texto": "The community grows with every basket of local produce."
+    }
+  },
+
+  "creditos": {
+    "antetitulo": "Credits",
+    "titulo": "Image credits",
+    "texto": "The photos on this website are illustrative and come from Wikimedia Commons, under free licences. They do not show real FOOD4ALL products, sellers or orders. The home page illustration and the logo are our own.",
+    "columnas": ["", "Use on the website", "Author", "Licence", "Original"],
+    "verCommons": "View on Commons",
+    "usos": {
+      "market": "Fruit and vegetable stall (home page)",
+      "bakery": "Bakery (home page)",
+      "farm": "Harvest in the field (home page)",
+      "producto": "{{nombre}} (sample catalogue)"
+    }
+  },
+
+  "faq": {
+    "antetitulo": "FAQ",
+    "titulo": "Frequently asked questions",
+    "enConstruccion": "Under construction."
+  },
+
+  "noEncontrada": {
+    "antetitulo": "Error 404",
+    "titulo": "This page does not exist",
+    "texto": "The link may be misspelt or the page may have moved.",
+    "portada": "Go to the home page"
+  },
+
+  "datos": {
+    "zonas": { "Sevilla": "Seville" },
+    "tipos": {
+      "Panadería": "Bakery",
+      "Agricultor": "Farmer",
+      "Despensa": "Pantry goods",
+      "Granja": "Farm",
+      "Obrador": "Artisan bakery",
+      "Frutería": "Greengrocer",
+      "Cocina local": "Local kitchen"
+    },
+    "categorias": {
+      "Comida preparada": "Ready meals",
+      "Despensa": "Pantry",
+      "Dulces": "Sweets",
+      "Fruta": "Fruit",
+      "Huevos": "Eggs",
+      "Lácteos": "Dairy",
+      "Panadería": "Bakery",
+      "Verdura": "Vegetables"
+    },
+    "productos": {
+      "p1": { "name": "Sourdough bread", "unit": "1 loaf", "allergens": "Gluten", "dateType": "Best before", "storage": "Room temperature" },
+      "p2": { "name": "Molletes (soft rolls)", "unit": "4 pcs", "allergens": "Gluten", "dateType": "Best before", "storage": "Room temperature" },
+      "p3": { "name": "Oranges", "origin": "Guadalhorce Valley", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p4": { "name": "Avocados", "unit": "3 pcs", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p5": { "name": "Lentils", "origin": "Andalusia", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p6": { "name": "Extra virgin olive oil", "origin": "Andalusia", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p7": { "name": "Free-range eggs", "unit": "12 pcs", "allergens": "Egg", "dateType": "Best before", "storage": "Chilled" },
+      "p8": { "name": "Fresh goat's cheese", "allergens": "Milk", "dateType": "Use by", "storage": "Chilled" },
+      "p9": { "name": "Picos (olive oil breadsticks)", "origin": "Seville", "allergens": "Gluten", "dateType": "Best before", "storage": "Room temperature" },
+      "p10": { "name": "Olive oil tortas", "unit": "6 pcs", "origin": "Seville", "allergens": "Gluten, tree nuts", "dateType": "Best before", "storage": "Room temperature" },
+      "p11": { "name": "Garden tomatoes", "origin": "Vega de Granada", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p12": { "name": "Courgettes", "origin": "Vega de Granada", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p13": { "name": "Apples", "allergens": "None", "dateType": "Best before", "storage": "Room temperature" },
+      "p14": { "name": "Chickpea stew (2 servings)", "allergens": "Celery", "dateType": "Use by", "storage": "Chilled" }
+    },
+    "estados": {
+      "Recibido": "Received",
+      "Recogida en origen": "Collected from the seller",
+      "En el hub": "At the hub",
+      "Empaquetado": "Packed",
+      "En reparto": "Out for delivery",
+      "Entregado": "Delivered",
+      "Por confirmar": "To be confirmed",
+      "Confirmado": "Confirmed",
+      "Falta: propuesto sustituto": "Shortage: substitute suggested"
+    },
+    "franjas": {
+      "Franja de entrega por definir": "Delivery slot to be defined",
+      "Franja de recogida por definir": "Collection slot to be defined"
+    },
+    "recordatorios": [
+      { "p": "Avocados", "t": "Eat them first: they ripen quickly at room temperature." },
+      { "p": "Sourdough bread", "t": "If there is some left, slice it and freeze it for toast." },
+      { "p": "Lentils", "t": "Idea: cook one pot for two or three meals." }
+    ]
+  }
+}

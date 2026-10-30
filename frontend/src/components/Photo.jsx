@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 // Foto ilustrativa (Wikimedia Commons). Las fotos viven en public/img/<id>.jpg.
 export const photoSrc = (id) => `/img/${id}.jpg`;
@@ -9,10 +10,11 @@ export default function Photo({ id, alt, className = '' }) {
 
 // Aviso en letra pequeña que acompaña a los bloques con fotos.
 export function PhotoNote({ className = '' }) {
+  const { t } = useTranslation();
   return (
     <p className={`photo-note ${className}`}>
-      Imágenes ilustrativas de Wikimedia Commons: no corresponden a productos ni vendedores reales.{' '}
-      <Link to="/creditos">Créditos</Link>
+      {t('comun.notaFotos')}{' '}
+      <Link to="/creditos">{t('comun.creditos')}</Link>
     </p>
   );
 }

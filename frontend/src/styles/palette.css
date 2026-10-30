@@ -160,6 +160,16 @@
 .site-nav .nav-btn--buy:hover { background: var(--accent-hover); color: var(--on-accent); }
 .site-nav .nav-btn--buy.active { background: var(--accent); color: var(--on-accent); box-shadow: 0 0 0 2px var(--forest-text); }
 
+/* Selector de idioma (ES · EN): discreto, para no competir con las tres acciones */
+.lang-switch { display: inline-flex; flex-shrink: 0; border: 1.5px solid color-mix(in srgb, var(--forest-text) 45%, transparent); border-radius: var(--radius-pill); padding: 2px; }
+.lang-switch button {
+  min-width: 44px; min-height: 40px; padding: 0 10px; border: 0; border-radius: var(--radius-pill);
+  background: transparent; color: var(--forest-text); font: 600 .85rem var(--font-body); letter-spacing: .04em; cursor: pointer;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.lang-switch button:hover { background: color-mix(in srgb, var(--forest-text) 14%, transparent); color: var(--on-dark-hover); }
+.lang-switch button[aria-pressed="true"] { background: var(--forest-text); color: var(--forest); }
+
 /* Pestañas de zona: segunda fila de la cabecera, verde más oscuro */
 .zone-tabs { background: var(--green-deep); border-bottom: 0; }
 .zone-tabs a { min-height: 46px; color: color-mix(in srgb, var(--forest-text) 85%, transparent); }
