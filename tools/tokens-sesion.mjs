@@ -4,22 +4,11 @@
 // y no una fila más en el mismo: así dos ramas nunca tocan el mismo archivo y no hay conflictos.
 // Si algo falla, sale sin error y sin escribir: nunca debe impedir cerrar la sesión.
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
-import { execFileSync } from 'node:child_process';
-import { personaDe, lineaCsv } from './tokens-comun.mjs';
+import { lineaCsv } from './tokens-comun.mjs';
+import { git, raiz as raizDe, personaGit } from './git-comun.mjs';
 
 const COLUMNAS = ['fecha', 'persona', 'rama', 'sesion', 'motivo', 'modelos', 'mensajes',
   'entrada', 'salida', 'cache_escritura', 'cache_lectura', 'total'];
-
-const git = (cwd, ...args) => {
-  try { return execFileSync('git', args, { cwd, encoding: 'utf8' }).trim(); } catch { return ''; }
-};
-// ID del equipo. Primero `git config food4all.persona`, si alguien lo ha puesto; si no, se deduce
-// del nombre y el correo de git.
-function persona(cwd) {
-  const fija = git(cwd, 'config', 'food4all.persona');
-  if (/^[a-z-]+$/.test(fija)) return fija; // también es el nombre de la carpeta: nada de «../»
-  return personaDe(`${git(cwd, 'config', 'user.name')} ${git(cwd, 'config', 'user.email')}`);
-}
 
 try {
   const input = JSON.parse(readFileSync(0, 'utf8'));
@@ -50,8 +39,8 @@ try {
   }
   const total = suma.entrada + suma.salida + suma.cache_escritura + suma.cache_lectura;
 
-  const raiz = git(cwd, 'rev-parse', '--show-toplevel') || cwd;
-  const quien = persona(cwd);
+  const raiz = raizDe(cwd);
+  const quien = personaGit(cwd);
   const fecha = new Date().toLocaleString('sv-SE', { timeZone: 'Europe/Madrid' }).slice(0, 16);
   const carpeta = `${raiz}/docs/tokens/${quien}`;
   mkdirSync(carpeta, { recursive: true });
