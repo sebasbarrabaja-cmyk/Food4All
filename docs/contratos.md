@@ -24,7 +24,7 @@ Todas van bajo `/api/admin/` y exigen sesión (`requireAdmin`, ya puesto en `bac
 | `GET avisos` | `avisos.json` | Miguel | — |
 | `GET cronograma` | `cronograma.json` | Miguel | — |
 | `GET traza` | `traza.json` | Miguel | — |
-| `GET tokens` | `tokens.json` | Sebastián | expectativa |
+| `GET tokens` | `tokens.json` (la real añade `fuentes`: archivos leídos) | Sebastián | expectativa (puede usar `resumen()` de `modulos/tokens.js`) |
 | `GET expectativa` | `expectativa.json` | Juan Antonio | — |
 
 Las rutas nuevas (`POST`, `PATCH`…) las añade cada dueño en su módulo y las apunta aquí.
@@ -44,7 +44,7 @@ Las rutas nuevas (`POST`, `PATCH`…) las añade cada dueño en su módulo y las
 | `traza` | Miguel | `necesidad`, `requisito`, `tarea` → `tareas.id`, `prompt` → `prompts.id` |
 | `prompts` | Sebastián | `id` (nombre del `.md` sin extensión), `titulo`, `fecha`, `autor` → `usuarios.id`, `herramienta`, `tipo`, `tema`, `resultado` |
 | `prompt_etiquetas` | Sebastián | `prompt` → `prompts.id`, `etiqueta` (landing, requisito, búsqueda de información…) |
-| `tokens` | Sebastián | las columnas de `docs/tokens.csv`, más `accion` y `prompt` → `prompts.id` |
+| `tokens` | Sebastián | las columnas de `docs/tokens/<persona>/*.csv`, más `accion` y `prompt` → `prompts.id` |
 
 ## 4. Claves que comparten todos
 
