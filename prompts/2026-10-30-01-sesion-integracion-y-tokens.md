@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
+resultado: Código
+etiquetas: landing
+landing: mejora, interno
 origen: Retomar lo pendiente de Food4All: unir lo último del equipo, probarlo y empezar los issues de Sebastián
 ---
 

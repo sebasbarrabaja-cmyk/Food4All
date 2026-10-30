@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Requisitos del Hito 2
+resultado: Documento
+etiquetas: requisito, Asana
+requisitos: RF-06.6-04, RF-08.5-01, RF-11.2-04, RF-12.1-01, RF-12.1-03, RF-12.6-05, RF-15.2-04, RST-06, RST-07, N-CAD-01, N-IA-01, N-INC-01, C-02, C-03, C-11, C-13, C-14, C-22, C-23, C-24, C-25, C-26, C-27, C-28, C-29, M-01, M-08, D-03
 origen: Mensajes enviados a Claude Code (WSL) en la sesión, en orden y sin corregir. Horas aproximadas
 ---
 

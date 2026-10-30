@@ -5,6 +5,8 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Requisitos del Hito 2
+resultado: Documento
+etiquetas: requisito, Asana
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 

@@ -97,3 +97,13 @@
 .prompt-group > h3 { margin: 0 0 4px; }
 .prompt-group__tema { margin: 18px 0 0; font-size: 1rem; color: var(--text-soft); }
 .prompt-group .prompt-list { margin: 10px 0 0; }
+
+/* Filtros de prompts (#19): en fila en pantallas anchas; casillas de etiquetas del formulario */
+@media (min-width: 900px) { .prompt-filters { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); } }
+.prompt-filters .field { min-width: 0; }
+.prompt-filters select, .prompt-filters input { width: 100%; min-width: 0; }
+fieldset.field { border: 0; padding: 0; margin: 0 0 14px; min-width: 0; }
+fieldset.field > legend { font-weight: 600; font-size: .95rem; padding: 0; margin-bottom: 4px; }
+.checks { display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.checks label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; min-height: 32px; }
+.field .checks input { min-height: 0; width: 18px; height: 18px; padding: 0; accent-color: var(--green); }

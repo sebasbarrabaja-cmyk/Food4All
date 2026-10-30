@@ -144,7 +144,10 @@ app.get('/api/admin/hito2', requireAdmin, (_req, res) => {
 });
 
 // Registro de prompts usados en el desarrollo (ficheros en /prompts, dentro del repo).
-app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, temas: prompts.TEMAS }));
+app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({
+  prompts: prompts.list(), types: prompts.TYPES, temas: prompts.TEMAS,
+  resultados: prompts.RESULTADOS, etiquetas: prompts.ETIQUETAS, landing: prompts.LANDING,
+}));
 
 app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   const b = req.body ?? {};
@@ -153,10 +156,20 @@ app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   if (str(b.texto).length < 10) errors.texto = 'El prompt está vacío.';
   if (!prompts.TYPES.includes(b.tipo)) errors.tipo = 'Elige un tipo.';
   if (b.tema !== undefined && !prompts.TEMAS.includes(b.tema)) errors.tema = 'Elige un tema.';
+  if (b.resultado !== undefined && b.resultado !== '' && !prompts.RESULTADOS.includes(b.resultado)) errors.resultado = 'Elige un resultado.';
+  // Listas: solo valores de la lista cerrada (o IDs de requisito con su formato), sin repetir.
+  const lista = (v, ok) => (Array.isArray(v) && v.every((x) => typeof x === 'string' && ok(x)) ? [...new Set(v)] : null);
+  const etiquetas = lista(b.etiquetas ?? [], (x) => prompts.ETIQUETAS.includes(x));
+  const landing = lista(b.landing ?? [], (x) => prompts.LANDING.includes(x));
+  const requisitos = lista(b.requisitos ?? [], prompts.esId);
+  if (!etiquetas) errors.etiquetas = 'Etiqueta no válida.';
+  if (!landing) errors.landing = 'Tipo de cambio de la landing no válido.';
+  else if (landing.length && !etiquetas?.includes('landing')) errors.landing = 'Marca la etiqueta «landing» para indicar el tipo de cambio.';
+  if (!requisitos) errors.requisitos = 'Escribe IDs como RF-05, RST-03 o C-28, separados por comas.';
   if (Object.keys(errors).length) return res.status(400).json({ errors });
   res.status(201).json(prompts.add({
     titulo: str(b.titulo), autor: str(b.autor), herramienta: str(b.herramienta) || 'Claude Code',
-    tipo: b.tipo, tema: b.tema ?? 'Otro', origen: str(b.origen), texto: str(b.texto),
+    tipo: b.tipo, tema: b.tema ?? 'Otro', resultado: b.resultado || '', etiquetas, landing, requisitos, origen: str(b.origen), texto: str(b.texto),
   }));
 });
 

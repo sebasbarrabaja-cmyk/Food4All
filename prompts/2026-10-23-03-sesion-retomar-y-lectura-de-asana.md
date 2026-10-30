@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Asana
+resultado: Asana
+etiquetas: Asana
+requisitos: RF-02.6-02, RF-02.6-03, RF-04.5-04, RF-04.8-03, RF-05.2-04, RF-05.4, RF-05.4-02, RF-05.4-04, RF-05.7-02, RF-05.7-03, RF-06.6-02, RF-06.6-05, RF-07.3-01, RF-07.3-04, RF-07.3-09, RF-07.5-02, RF-07.6, RF-08.2, RF-08.2-05, RF-08.2-06, RF-08.3-01, RF-08.4, RF-08.4-06, RF-12.3-01, RF-14.1-01, RF-15.2-04, RST-03, RST-08, RST-09, RST-10, RST-11, N-CAT-01, N-IA-01, N-VEN-01, C-13, C-14, C-15, C-16, C-17, C-18, C-19, C-20, C-21, H-02, M-01, M-02, M-03, M-04, M-05, M-06, M-08, D-02, D-03
 origen: Mensajes enviados a Claude Code (WSL) en la sesión, en orden y sin corregir. Horas aproximadas
 ---
 

@@ -5,6 +5,9 @@ autor: Equipo
 herramienta: Claude Code
 tipo: Prompt base
 tema: Contexto y método
+resultado: Código
+etiquetas: landing
+landing: vista, comercial
 origen: FOOD4ALL_prompt_landing.md
 ---
 

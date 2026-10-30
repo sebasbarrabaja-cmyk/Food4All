@@ -5,6 +5,10 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
+resultado: Documento
+etiquetas: landing, competencia, búsqueda de información
+landing: comercial
+requisitos: RST-05, CL-01, CL-02, CL-05, CL-06, CL-10
 origen: Sesión en WSL sobre la rama fix/analisis-landing; rama feat/comercio-local. Horas aproximadas (~), reconstruidas por el asistente a partir de la hora de los commits y archivos
 ---
 

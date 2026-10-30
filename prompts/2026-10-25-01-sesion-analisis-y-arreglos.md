@@ -5,6 +5,10 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
+resultado: Código
+etiquetas: landing
+landing: mantenimiento, comercial
+requisitos: RF-12.1-01, C-26, H-03
 origen: Sesión en WSL sobre main (0672c3c), rama fix/analisis-landing. Horas aproximadas (~): el asistente las reconstruyó a partir de la hora de los archivos que creó en la sesión
 ---
 

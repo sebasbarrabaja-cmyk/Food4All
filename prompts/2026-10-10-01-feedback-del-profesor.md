@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Feedback
 tema: Landing (web y panel)
+resultado: Código
+etiquetas: landing
+landing: mejora, vista
 origen: Mensaje a Claude Code tras la revisión del profesor
 ---
 

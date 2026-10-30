@@ -5,6 +5,10 @@ autor: Juan Antonio
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Landing (web y panel)
+resultado: Código
+etiquetas: landing
+landing: mejora, comercial, documental
+requisitos: RST-06, N-IA-01, N-PLA-01, N-PLA-02, N-VEN-03, C-08, C-29
 origen: Revisión de lo que repartió Sebastián; issues #20 (web pública en español e inglés), #21 (preguntas frecuentes) y #22 (expectativa vs. realidad); revisión de E5, E6, el comparativo y las personas
 ---
 
