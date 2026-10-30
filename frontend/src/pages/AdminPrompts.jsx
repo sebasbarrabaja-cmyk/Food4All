@@ -36,7 +36,7 @@ function Etiquetas({ p }) {
 
 function PromptItem({ p }) {
   return (
-    <details className="prompt">
+    <details className="prompt" id={`prompt-${p.id}`}>
       <summary>
         <span className="prompt__title">{p.titulo}</span>
         <span className="prompt__meta">
@@ -200,6 +200,27 @@ export default function AdminPrompts() {
   const setFiltro = (k) => (e) => setF((x) => ({ ...x, [k]: e.target.value, ...(k === 'etiqueta' && e.target.value !== 'landing' && { landing: '' }) }));
   const load = useCallback(() => api('/api/admin/prompts').then(setData).catch((e) => setError(e.message)), []);
   useEffect(() => { load(); }, [load]);
+
+  // El buscador del panel pide abrir un prompt: se quitan los filtros (para que se vea), se despliega,
+  // se baja hasta él y se marca un momento.
+  const [abrir, setAbrir] = useState(null);
+  useEffect(() => {
+    const oir = (e) => { setF(SIN_FILTROS); setAbrir(e.detail); };
+    window.addEventListener('food4all:abrir-prompt', oir);
+    return () => window.removeEventListener('food4all:abrir-prompt', oir);
+  }, []);
+  useEffect(() => {
+    if (!abrir || !data) return;
+    const el = document.getElementById(`prompt-${abrir}`);
+    setAbrir(null);
+    // No está (se registró después de cargar el panel): se va a la sección y se recarga la lista.
+    if (!el) { document.getElementById('prompts')?.scrollIntoView(); load(); return; }
+    el.open = true;
+    el.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+    el.classList.add('prompt--marcado');
+    setTimeout(() => el.classList.remove('prompt--marcado'), 2000);
+    el.querySelector('summary')?.focus({ preventScroll: true });
+  }, [abrir, data, load]);
 
   if (error) return <p role="alert" className="form-error">No se pudieron cargar los prompts: {error}</p>;
   if (!data) return <p className="muted">Cargando prompts…</p>;

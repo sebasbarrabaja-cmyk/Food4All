@@ -35,7 +35,7 @@ Tengo una propuesta con lo que el profesor me ha explicado, puedo usar mi IA loc
 
 Diez posibles fallos. Arreglados: (1) un modelo sin etiqueta (`IA_MODELO=llama3`) no se reconocía → cuenta como `:latest`; (2) cada carga del panel esperaba a Ollama → la comprobación se guarda 30 s; (3) si Ollama se encendía con el panel abierto, preguntar no hacía nada → ahora se pregunta igual y el error dice qué hacer; (4) aviso en el servidor si la pregunta llena el contexto; (5 y 10) los errores de red guardan la causa real; (7) la decisión del agente Hermes ya no habla de «IA gratuita»; (8) una decisión por línea en `project.js`. Sin cambiar: (6) Ollama reutiliza lo calculado de la pregunta anterior y no dice cuánto: la entrada apuntada puede quedarse corta (anotado en `ia.js`; los 46.922 tokens medidos pueden ser menos de los reales); (9) las horas con `~` son la regla de la skill cuando no hay hora exacta.
 
-### ~13:50
+### ~13:43
 
 Cual es el siguiente paso
 

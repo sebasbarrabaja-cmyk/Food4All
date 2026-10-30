@@ -107,3 +107,28 @@ fieldset.field > legend { font-weight: 600; font-size: .95rem; padding: 0; margi
 .checks { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 .checks label { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; min-height: 32px; }
 .field .checks input { min-height: 0; width: 18px; height: 18px; padding: 0; accent-color: var(--green); }
+
+/* Buscador: modo «Preguntar a la IA» (verde con su tinte, DISENO.md) y animación mientras piensa */
+.side-search { transition: border-color var(--dur) var(--ease), background-color var(--dur) var(--ease); }
+.side-search--ia { border: 2px solid var(--green); background: var(--tint-sage); color: var(--green); }
+.side-search--ia input::placeholder { color: color-mix(in srgb, var(--green) 70%, transparent); }
+.side-search__modo { font-size: .7rem; font-weight: 700; letter-spacing: .06em; padding: 2px 8px; border-radius: var(--radius-pill); background: var(--green); color: var(--bg); }
+.side-search--pensando { background-image: linear-gradient(90deg, transparent 0%, color-mix(in srgb, var(--green) 16%, transparent) 50%, transparent 100%); background-size: 200% 100%; animation: buscando 1.2s linear infinite; }
+@keyframes buscando { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+.side-search__pensando { margin: 0; color: var(--green); font-weight: 600; }
+.side-search__pensando .puntos i { font-style: normal; animation: punto 1.2s infinite; }
+.side-search__pensando .puntos i:nth-child(2) { animation-delay: .2s; }
+.side-search__pensando .puntos i:nth-child(3) { animation-delay: .4s; }
+@keyframes punto { 0%, 60%, 100% { opacity: .2; } 30% { opacity: 1; } }
+.side-search__conv { margin: -10px 2px 18px; }
+.side-search__answer .btn { width: 100%; justify-content: center; }
+.prompt--marcado { outline: 3px solid var(--green); outline-offset: 2px; transition: outline-color 1s var(--ease); }
+@media (prefers-reduced-motion: reduce) {
+  .side-search, .prompt--marcado { transition: none; }
+  .side-search--pensando, .side-search__pensando .puntos i { animation: none; }
+  .side-search__pensando .puntos i { opacity: 1; }
+}
+/* El foco se ve en la barra entera (borde y anillo), no en una caja dentro de ella */
+.side-search input:focus-visible { outline: none; }
+.side-search:focus-within { box-shadow: 0 0 0 2px color-mix(in srgb, var(--green) 35%, transparent); }
+.admin-layout button.btn-link { border: 0; }

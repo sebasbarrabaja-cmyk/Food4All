@@ -11,9 +11,9 @@ landing: interno
 origen: Continuación de 2026-10-30-03 (misma sesión)
 ---
 
-Horas aproximadas: la sesión no guardó la hora de cada mensaje.
+Horas aproximadas: la sesión no guardó la hora de cada mensaje; se acotan con las de los commits (13:49 y 13:53) y la del PR #32 (13:54).
 
-### ~13:55
+### ~13:45
 
 Subelo al git para que cuando lo abra sepa ya su agente su tarea, ponlo como regla, cada vez que alguien tenga que hacer un cambio, que lo ponga en un archivo que se lo indique para evitar decir todo el rato que le envie un mensaje a alguien. ya esta lo del git. Luego necesito que quites todo lo que tenga que ver con gemini, por que voy a ir por la ia local. Lo de la contraseña por ahora es innecesario
 
@@ -25,11 +25,29 @@ Subelo al git para que cuando lo abra sepa ya su agente su tarea, ponlo como reg
 
 Diez posibles fallos. Arreglados: (1 y 2) un encargo se reconocía por su texto, así que uno retocado o con el mismo principio que otro hecho se perdía o salía dos veces → cada encargo lleva un número fijo (`#1`, `#2`…); (3) el hook forzaba su propio `ssh` y en Windows no vería la clave → usa el `core.sshCommand` de cada uno; (4) `git fetch` y `gh` iban uno detrás de otro (hasta 16 s) → a la vez; (5) un `food4all.persona` mal escrito («juan») mandaba todo a un archivo que nadie lee → solo vale un ID del equipo; (6) desde una subcarpeta no encontraba los encargos → usa la raíz del repositorio; (8) código repetido; (9) las ayudas de git pasan a `tools/git-comun.mjs`, solo para los hooks; (10) el hook salta también al reanudar la sesión y tras `/clear`. Sin cambiar: (7) `git fetch` solo actualiza la copia de `origin/main`, no los archivos de nadie. Probado en un repositorio de prueba: un encargo hecho con el texto retocado ya no sale, la línea vacía se ignora y «juan» se descarta.
 
-### ~14:05
+### ~13:51
 
 a
 
 **Resultado:** Se abren los PR, apilados, además de subir las ramas.
+
+### ~13:54
+
+Se que es estupido pero puedes configurar para que el hook lo aplique una vez y luego se auto elimine para que no sea redundante, pones uno para cada uno y que lo elimine, tiene sentido?
+
+**Resultado:** Ramas subidas y PR #32 a #35 abiertos (apilados sobre el #31). Sobre el hook: borrarse solo tocaría `.claude/settings.json`, que está en git y es de todos (si alguien lo sube, desaparece para el resto), y si avisa una sola vez se olvida. Tres opciones: resumen corto tras el primer aviso, avisar una vez sin más o dejarlo como está.
+
+### ~13:57
+
+1c(No me fio de que algun compañero borre o toque algo incorrecto y se pierda), como llevas lo la IA local, puedes abri la landing ahroa para probarla? Y puedes guardar probisionalmete lo de los promts hasta que esté la base de datos
+
+**Resultado:** El hook se queda como está. Landing en marcha en `localhost:3001` (rama `feat/encargos`) con el modelo cargado en la gráfica. Sobre guardar los prompts hasta la base de datos: tres opciones (dejar el #18 preparado, una copia en JSON u otra cosa).
+
+### ~14:00
+
+1(si está guardado, es suficiente) y abrelo en wsl
+
+**Resultado:** Los `.md` bastan: el #18 se queda como está. Se abrió Firefox de WSL (WSLg) en `http://localhost:3001/admin`.
 
 ## Revisión crítica del equipo
 
