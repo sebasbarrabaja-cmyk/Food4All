@@ -51,20 +51,16 @@ Requisitos del marketplace (RF-01 a RF-19, RNF-01 a RNF-11, 564 requisitos atóm
 
 ## IA del panel: buscador
 
-Usa **Gemini, en su nivel gratuito** (Google AI Studio). Necesita en `backend/.env`:
+Usa una **IA local con [Ollama](https://ollama.com)**: sin clave, sin pago y sin enviar nada fuera del ordenador (decisión del 30/10/2026). Funciona solo en el ordenador donde está Ollama; en los demás, el panel avisa («IA local apagada») y el buscador solo salta entre secciones.
 
 ```
-GEMINI_API_KEY=tu_clave
+ollama pull qwen3.5:4b   # la primera vez (3,4 GB)
+ollama serve             # si no está ya en marcha
 ```
 
-La clave se crea gratis en [aistudio.google.com](https://aistudio.google.com) → Get API key. Solo vive en el backend. Uso previsto: unas 5-10 consultas al día, muy por debajo del límite gratuito (el límite exacto de cada modelo se ve en AI Studio). Sin clave, el panel funciona igual: el buscador solo salta entre secciones.
+Opcional en `backend/.env`: `IA_MODELO` (por defecto `qwen3.5:4b`), `OLLAMA_URL` (por defecto `http://127.0.0.1:11434`) e `IA_CONTEXTO` (tokens de contexto, por defecto 16384: con los 4.000 de Ollama se cortarían los datos del panel).
 
-**Buscador** (barra lateral, `backend/search.js`): al escribir, muestra las secciones que coinciden; con Intro, responde preguntas simples ("¿de qué va el proyecto?") con los datos del panel y ofrece ir al apartado correcto. No es un agente: una sola consulta, sin herramientas. Modelo: `gemini-3.5-flash-lite` (~2-3 s).
-
-**Condiciones del nivel gratuito** ([términos de la API de Gemini](https://ai.google.dev/gemini-api/terms)):
-- Solo en el **panel privado**, para el equipo. En la UE no se puede ofrecer a usuarios una app con el nivel gratuito: un buscador en la web pública necesitaría el nivel de pago.
-- Desde la UE, Google aplica las reglas de privacidad del nivel de pago: no usa lo que se envía para entrenar. Aun así, piden no enviar datos personales.
-- Hay que ser mayor de 18 años.
+**Buscador** (barra lateral, `backend/search.js`): al escribir, muestra las secciones que coinciden; con Intro, responde preguntas simples ("¿de qué va el proyecto?") con los datos del panel y ofrece ir al apartado correcto. No es un agente: una sola consulta, sin herramientas. Medido el 30/10 con una RTX 5060 de portátil: la primera pregunta tarda unos 16 s (carga el modelo) y las siguientes, 1-2 s; acierta el apartado en 7 de 10 preguntas de prueba. El consumo de cada consulta se apunta en `/admin#tokens`.
 
 ## Prompts
 

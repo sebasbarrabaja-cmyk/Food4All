@@ -9,7 +9,7 @@ import { getSubtasks, getMilestones } from './asana.js';
 import { PROJECT } from './project.js';
 import { hito2 } from './hito2.js';
 import * as prompts from './prompts.js';
-import { aiReady, AIError } from './gemini.js';
+import { aiReady, AIError } from './ia.js';
 import { ask } from './search.js';
 import { limiter } from './limiter.js';
 import { montarModulos } from './modulos/index.js';
@@ -112,7 +112,7 @@ app.get('/api/admin/me', (req, res) => res.json({ admin: Boolean(req.session.adm
 // El resto de /api/admin exige sesión: la protección está aquí, no en el frontend.
 const requireAdmin = (req, res, next) => (req.session.admin ? next() : res.status(401).json({ error: 'No autorizado' }));
 
-app.get('/api/admin/project', requireAdmin, (_req, res) => res.json({ ...PROJECT, ia: aiReady() }));
+app.get('/api/admin/project', requireAdmin, async (_req, res) => res.json({ ...PROJECT, ia: await aiReady() }));
 
 app.get('/api/admin/sellers', requireAdmin, (_req, res) => res.json(store.read('sellerApplications')));
 

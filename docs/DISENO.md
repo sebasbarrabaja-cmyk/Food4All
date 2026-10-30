@@ -182,7 +182,7 @@ food4all/
 │  ├─ asana.js           intermediario con Asana (el token solo vive en .env)
 │  ├─ store.js           guarda las altas de vendedores en data/db.json
 │  ├─ prompts.js         lee y guarda el registro de prompts (/prompts)
-│  ├─ gemini.js          llamada a Gemini (nivel gratuito); clave en .env
+│  ├─ ia.js              llamada a la IA local (Ollama); sin clave
 │  ├─ search.js          buscador del panel: pregunta → respuesta corta y apartado
 ├─ prompts/              un .md por prompt usado en el desarrollo (va en el repo)
 ├─ docs/                 esta guía y la comparativa con la competencia

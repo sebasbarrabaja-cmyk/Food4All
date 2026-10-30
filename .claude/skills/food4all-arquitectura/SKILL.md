@@ -1,6 +1,6 @@
 ---
 name: food4all-arquitectura
-description: Arquitectura técnica de la landing de FOOD4ALL — qué hace cada archivo de backend/ (Express) y frontend/ (React + Vite), rutas de la API, dónde se guarda cada dato, integración con Gemini y con Asana, cómo arrancar y comprobar. Úsala antes de tocar código, añadir una ruta, una sección del panel o un dato nuevo, o para depurar.
+description: Arquitectura técnica de la landing de FOOD4ALL — qué hace cada archivo de backend/ (Express) y frontend/ (React + Vite), rutas de la API, dónde se guarda cada dato, IA local (Ollama) y Asana, cómo arrancar y comprobar. Úsala antes de tocar código, añadir una ruta, una sección del panel o un dato nuevo, o para depurar.
 ---
 
 # FOOD4ALL · Arquitectura
@@ -23,7 +23,7 @@ description: Arquitectura técnica de la landing de FOOD4ALL — qué hace cada 
 | `hito2.js` | Lee `docs/requisitos` (Markdown y JSON) en cada petición para `/admin#hito2` |
 | `asana.js` | Lee Asana: solo tareas `[Food4All]`, dos niveles de subtareas. Sin conexión, usa el plan de `project.js` |
 | `prompts.js` | Lee y escribe `prompts/*.md`. Campos: `titulo, fecha, autor, herramienta, tipo, tema, origen`; listas `TYPES` y `TEMAS` |
-| `gemini.js` | Llamada a Gemini (nivel gratuito, clave en `.env`). Solo para el panel privado: en la UE el nivel gratuito no se puede ofrecer al público |
+| `ia.js` | Llamada a la IA local (Ollama, modelo `IA_MODELO`, por defecto `qwen3.5:4b`). Sin clave ni pago; solo funciona donde corre Ollama. Traduce su consumo de tokens a la forma común de `modulos/tokens.js` |
 | `search.js` | Buscador del panel: una llamada con los datos del panel y la lista `DESTINOS`. Sin herramientas |
 | `store.js` | Altas de vendedores en `backend/data/db.json` (ignorado por git) |
 | `limiter.js` | Límite de intentos (login y formularios) |

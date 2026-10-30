@@ -50,7 +50,7 @@ export function resumen() {
 }
 
 // Apunta una llamada a la IA del panel. `uso` = { entrada, salida, cache_lectura }: cada proveedor
-// traduce lo suyo a esta forma (ver gemini.js). Nunca lanza: si no se puede escribir, la llamada
+// traduce lo suyo a esta forma (ver ia.js). Nunca lanza: si no se puede escribir, la llamada
 // sigue y solo se pierde el apunte.
 export function registrarIA({ accion, persona, modelo, uso = {} }) {
   try {
