@@ -88,6 +88,18 @@ Algun problema?
 
 **Resultado:** Ninguno en el push ni en los PR. Avisos: unir con «Create a merge commit» y en orden, y probar el panel con sesión antes de unir el #26.
 
+### ~12:05
+
+1a
+
+**Resultado:** Rama `feat/aviso-pendientes` (encima de `feat/esqueleto-feedback`). `tools/pendientes-sesion.mjs` y un hook `SessionStart` (solo al abrir una sesión nueva) en `.claude/settings.json`: lista los issues abiertos de quien abre la sesión con `gh issue list --assignee @me`, y Claude se lo dice. Regla 10 en `AGENTS.md`. Probado a mano: con `gh` lista #16 a #19 en 1,3 s; sin `gh`, no imprime nada y sale sin error. **Sin probar** dentro de una sesión real de Claude Code: queda para Sebastián, junto con el hook de tokens.
+
+### ~12:15
+
+funciona
+
+**Resultado:** Sebastián probó los dos hooks en una sesión real de Claude Code abierta dentro de `food4all`: al empezar avisó de los issues pendientes y, al salir, apuntó los tokens. Push de `feat/aviso-pendientes` y PR encima del #26.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
