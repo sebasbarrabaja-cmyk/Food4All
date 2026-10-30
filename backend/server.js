@@ -9,7 +9,7 @@ import { getSubtasks, getMilestones } from './asana.js';
 import { PROJECT } from './project.js';
 import { hito2 } from './hito2.js';
 import * as prompts from './prompts.js';
-import { polishPrompt, agentReady, AgentError } from './agent.js';
+import { aiReady, AIError } from './gemini.js';
 import { ask } from './search.js';
 import { limiter } from './limiter.js';
 
@@ -111,7 +111,7 @@ app.get('/api/admin/me', (req, res) => res.json({ admin: Boolean(req.session.adm
 // El resto de /api/admin exige sesión: la protección está aquí, no en el frontend.
 const requireAdmin = (req, res, next) => (req.session.admin ? next() : res.status(401).json({ error: 'No autorizado' }));
 
-app.get('/api/admin/project', requireAdmin, (_req, res) => res.json({ ...PROJECT, ia: agentReady() }));
+app.get('/api/admin/project', requireAdmin, (_req, res) => res.json({ ...PROJECT, ia: aiReady() }));
 
 app.get('/api/admin/sellers', requireAdmin, (_req, res) => res.json(store.read('sellerApplications')));
 
@@ -143,7 +143,7 @@ app.get('/api/admin/hito2', requireAdmin, (_req, res) => {
 });
 
 // Registro de prompts usados en el desarrollo (ficheros en /prompts, dentro del repo).
-app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, temas: prompts.TEMAS, agent: agentReady() }));
+app.get('/api/admin/prompts', requireAdmin, (_req, res) => res.json({ prompts: prompts.list(), types: prompts.TYPES, temas: prompts.TEMAS }));
 
 app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   const b = req.body ?? {};
@@ -159,20 +159,12 @@ app.post('/api/admin/prompts', requireAdmin, (req, res) => {
   }));
 });
 
-// Segundo agente: devuelve una versión pulida del prompt (no guarda nada).
-app.post('/api/admin/prompts/polish', requireAdmin, async (req, res) => {
-  const texto = str(req.body?.texto);
-  if (texto.length < 10) return res.status(400).json({ error: 'El prompt está vacío.' });
-  try { res.json(await polishPrompt(texto, str(req.body?.objetivo))); }
-  catch (e) { res.status(e instanceof AgentError ? e.status : 500).json({ error: e.message }); }
-});
-
 // Buscador del panel: pregunta simple → respuesta corta y apartado al que ir (no guarda nada).
 app.post('/api/admin/ask', requireAdmin, async (req, res) => {
   const pregunta = str(req.body?.pregunta).slice(0, 300);
   if (pregunta.length < 2) return res.status(400).json({ error: 'Escribe una pregunta.' });
   try { res.json(await ask(pregunta)); }
-  catch (e) { res.status(e instanceof AgentError ? e.status : 500).json({ error: e.message }); }
+  catch (e) { res.status(e instanceof AIError ? e.status : 500).json({ error: e.message }); }
 });
 
 app.use('/api', (_req, res) => res.status(404).json({ error: 'No encontrado' }));

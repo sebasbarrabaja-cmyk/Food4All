@@ -26,7 +26,7 @@ const KEYWORDS = {
   hitos: 'hitos asana tareas plan entregas calendario',
   vendedores: 'altas vendedores solicitudes alta',
   marketplace: 'marketplace pedidos ejemplo zonas productos malaga sevilla granada',
-  prompts: 'prompts ia claude gemini registro revisor pulir',
+  prompts: 'prompts ia claude gemini registro',
 };
 const norm = (s) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
 const TITLES = Object.fromEntries(SECTIONS.map(([id, t]) => [`#${id}`, t]));

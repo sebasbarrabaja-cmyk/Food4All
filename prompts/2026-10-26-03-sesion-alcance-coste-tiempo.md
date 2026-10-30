@@ -44,6 +44,48 @@ a. Tambien piensa que nuestro objetivo es minimo alacncar toda la peninsula iber
 
 **Resultado:** La cifra del profesor no entra en el documento hasta que él aclare qué incluye. El asistente explicó qué supone el objetivo de la península (fases, coste por ciudad, Portugal y RST-04) y propuso cómo registrarlo, sin cambiar todavía el documento ni la línea base.
 
+### ~13:40
+
+Una cosa, abreme la landin para mostrarsela al profesor, y dime que cambios tiene respeto al viernes
+
+**Resultado:** Se arrancó la landing (`npm start`, `localhost:3001`) desde `docs/alcance-coste-tiempo` (mismo código de la landing que `main`) y se abrió en Firefox. Resumen de los 15 commits de la landing desde el viernes 23/10 a las 22:05 (`0672c3c`, último de ese día en `main`). La pregunta sobre cómo registrar el objetivo de la península quedó pendiente.
+
+### ~13:50
+
+No funciona la contraseña default
+
+**Resultado:** El asistente revisó el login del panel sin leer `backend/.env`: no hay contraseña por defecto en el código, valen el usuario y la contraseña de `.env`, que se leen al arrancar, y tras 5 fallos la IP queda bloqueada 15 minutos. Le dio a Sebastián los pasos para cambiarla él y reiniciar el servidor.
+
+### ~13:55
+
+Usuario o contraseña incorrecto
+
+**Resultado:** El asistente propuso causas sin leer `.env`: copia distinta del `.env` (la de `Food4All-recibido-2026-10-23`), finales de línea de Windows, espacios o comillas, o el usuario. Le dio a Sebastián cómo comprobarlo él y cómo reescribir las dos líneas.
+
+### ~14:00
+
+LA contraseña es la correcta, pero no entra
+
+**Resultado:** El código del login es correcto (compara exactamente usuario y contraseña con `.env`). Se reinició el servidor para que lea el `.env` actual y se borre el bloqueo. El asistente preparó un diagnóstico que lee `.env` como el servidor y muestra solo longitudes y avisos (espacios, `\r`, comillas), sin los valores, para que lo ejecute Sebastián.
+
+### ~14:10
+
+Lo de promt, version pulida es innecesario, una idea descartada, quitalo
+
+**Resultado:** El asistente localizó todo lo que depende de la «versión pulida» (botones «Pulir con IA» y «Pulir antes de guardar», ruta `/api/admin/prompts/polish`, `backend/agent.js`, el tipo «Versión pulida», estilos y documentación; ningún prompt registrado la usa) y propuso una especificación con dos preguntas antes de tocar nada.
+
+### ~14:15
+
+1a 2a
+
+**Resultado:** Rama `refactor/quitar-version-pulida` (encima de `docs/alcance-coste-tiempo`). Se borró `backend/agent.js` y se quitaron la ruta `/api/admin/prompts/polish`, el tipo «Versión pulida», los botones «Pulir con IA» y «Pulir antes de guardar», el aviso del agente revisor, sus estilos y sus menciones en `README.md`, `prompts/README.md` y `docs/DISENO.md`. El buscador del panel sigue igual (ahora importa `aiReady` y `AIError` de `gemini.js`). Probado con un servidor de prueba en otro puerto: la lista de prompts carga (25), los tipos ya no incluyen «Versión pulida», la ruta de pulir da 404, un prompt con ese tipo se rechaza (400) y el buscador responde. Compila; el paquete ya no contiene «Pulir». /code-review hecho.
+
+### ~14:25
+
+abrela
+
+**Resultado:** Se abrió `localhost:3001/admin#prompts` en Firefox, con el servidor ya reiniciado con la rama `refactor/quitar-version-pulida`.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
