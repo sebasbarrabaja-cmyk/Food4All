@@ -8,3 +8,9 @@ tools/fotos/candidatas/
 docs/requisitos/benchmark/asana_tareas.json
 docs/requisitos/benchmark/html_previo/
 docs/requisitos/benchmark/html_previo_v04/
+
+# Tokens de cada sesión (los escribe tools/tokens-sesion.mjs; cada uno guarda los suyos)
+docs/tokens.csv
+
+# Ajustes personales de Claude Code (los compartidos van en .claude/settings.json)
+.claude/settings.local.json

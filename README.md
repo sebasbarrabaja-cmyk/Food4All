@@ -100,7 +100,7 @@ Asana es la fuente de verdad. El plan de `backend/project.js` (los 6 bloques del
 ## Estado
 
 Es una landing informativa, no el marketplace real: el asistente, el carrito y el seguimiento son ejemplos estáticos.
-Los precios se muestran como "Precio todavía no disponible".
+Los precios son de ejemplo y llevan el aviso «meramente representativos» (origen de cada uno: `docs/precios-de-ejemplo.md`).
 
 Datos de ejemplo (inventados): `frontend/src/data/examples.js`.
 Contenido interno (hitos, mercado, legal, equipo): `backend/project.js`, servido solo con sesión en `/api/admin/project`.
