@@ -7,7 +7,11 @@ export default function EnConstruccion({ punto, dueno, ruta }) {
   const [estado, setEstado] = useState(null);
   useEffect(() => {
     fetch(ruta).then(async (r) => {
-      if (!r.ok) return setEstado(`La ruta ${ruta} no responde (error ${r.status}).`);
+      if (r.status === 401) return setEstado('La sesión ha caducado: vuelve a entrar para ver sus datos.');
+      if (!r.ok) {
+        const { error } = await r.json().catch(() => ({}));
+        return setEstado(`La ruta ${ruta} da un error (${r.status}${error ? `: ${error}` : ''}).`);
+      }
       const lista = Object.values(await r.json()).find(Array.isArray);
       setEstado(lista ? `La ruta ${ruta} ya responde con ${lista.length} elementos de prueba.`
         : `La ruta ${ruta} responde, pero sin ninguna lista.`);
