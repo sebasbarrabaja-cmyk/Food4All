@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Organización del equipo
+resultado: Documento
+etiquetas: organización, landing
+landing: interno
 origen: Feedback del profesor sobre la landing y reorganización de AGENTS.md, skills y tokens
 ---
 

@@ -5,6 +5,8 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Contexto y método
+resultado: Documento
+etiquetas: organización
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 

@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Organización del equipo
+resultado: Documento
+etiquetas: organización, búsqueda de información
+requisitos: RST-04
 origen: Sesión en WSL sobre la rama docs/alcance-coste-tiempo (desde main). Horas aproximadas (~), reconstruidas por el asistente
 ---
 

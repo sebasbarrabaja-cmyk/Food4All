@@ -13,7 +13,8 @@ description: Cómo registrar en prompts/ cada mensaje del usuario (obligatorio e
   - `titulo`, `fecha` (AAAA-MM-DD) y `autor` (Sebastián · Juan Antonio · Miguel · Equipo).
   - `herramienta` (Claude Code) y `tipo` (Prompt base · Sesión de trabajo · Feedback · Otro).
   - `tema` (Contexto y método · Landing (web y panel) · Requisitos del Hito 2 · Asana · Competencia · Organización del equipo · Otro) y `origen`.
-  - Estas listas están en `backend/prompts.js` (`TYPES` y `TEMAS`): si añades un valor, cámbialo también allí.
+  - `resultado` (Código · Documento · Asana · Análisis o decisión · Descartado), `etiquetas` (landing · requisito · búsqueda de información · Asana · competencia · organización · otro, separadas por comas), `landing` si tocó la landing (vista · comercial · documental · mejora · mantenimiento · interno) y `requisitos` con los IDs a los que llegó o que cambió (`RF-05`, `RST-03`, `C-28`…). Qué significa cada uno: `prompts/README.md`.
+  - Estas listas están en `backend/prompts.js` (`TYPES`, `TEMAS`, `RESULTADOS`, `ETIQUETAS` y `LANDING`): si añades un valor, cámbialo también allí.
 - Cada mensaje va bajo `### HH:MM`, **tal cual se envió, con erratas**, y termina con una línea `**Resultado:**` (qué se hizo, o si se interrumpió o se descartó).
   - Si no sabes la hora exacta: `### ~HH:MM`. Nunca una hora inventada.
   - Lo que escribe el asistente y no es un mensaje (especificaciones, resúmenes) va bajo `####`.

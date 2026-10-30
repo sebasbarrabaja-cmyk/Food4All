@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Sesión de trabajo
 tema: Requisitos del Hito 2
+resultado: Análisis o decisión
+etiquetas: requisito, Asana
+requisitos: N-CAD-01, N-CAR-01, N-CAT-01, N-IA-01, N-PLA-01, N-PLA-02
 origen: Mensajes enviados a Claude Code en la sesión, en orden y sin corregir
 ---
 

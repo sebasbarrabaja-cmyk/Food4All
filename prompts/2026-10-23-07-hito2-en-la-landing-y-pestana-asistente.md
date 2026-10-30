@@ -5,6 +5,9 @@ autor: Sebastián
 herramienta: Claude Code
 tipo: Prompt base
 tema: Landing (web y panel)
+resultado: Código
+etiquetas: landing, requisito
+landing: documental
 origen: Especificación preparada por el asistente a partir de la petición de Sebastián y del enunciado del Hito 2; Sebastián la aprobó con «Ok» a las 20:49 (sesión `2026-10-23-05`)
 ---
 

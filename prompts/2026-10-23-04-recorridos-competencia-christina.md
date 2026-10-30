@@ -5,6 +5,8 @@ autor: Sebastián
 herramienta: Claude (Christina, asistente de Sebastián en mikoshi)
 tipo: Otro
 tema: Competencia
+resultado: Documento
+etiquetas: competencia, búsqueda de información
 origen: Mensaje de Sebastián a Christina y guion escrito por Melchizedek (Claude Code en WSL) que ella siguió. Resultado en docs/competencia/
 ---
 
