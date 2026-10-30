@@ -9,6 +9,8 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 
 ## Pendiente
 
+Lo que una persona tiene que hacer por un cambio de otra va en `docs/encargos/<persona>.md` (regla 11 de `AGENTS.md`); el hook se lo enseña al abrir la sesión.
+
 **Sebastián**
 - Escribir la «Revisión crítica del equipo» de los prompts del 25 y el 26/10.
 - Comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y terminar los recorridos por la competencia con capturas.

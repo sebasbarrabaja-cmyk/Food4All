@@ -1,10 +1,10 @@
-// Lo que comparten el hook de tokens (tools/tokens-sesion.mjs) y el panel (backend/modulos/tokens.js):
-// el formato CSV y cómo se reconoce a cada persona. Sin dependencias.
-
+// Lo que comparten los hooks (tools/tokens-sesion.mjs y tools/pendientes-sesion.mjs) y el panel
+// (backend/modulos/tokens.js): el formato CSV y cómo se reconoce a cada persona. Sin dependencias
+// ni procesos: lo que usa git está en tools/git-comun.mjs, solo para los hooks.
 // ID del equipo (backend/datos-prueba/usuarios.json) a partir del nombre o el correo de git.
-const PERSONAS = { sebastian: /sebas|zeronegativo/, 'juan-antonio': /juan|jamc46|martincampano/, miguel: /miguel/ };
+export const PERSONAS = { sebastian: /sebas|zeronegativo/, 'juan-antonio': /juan|jamc46|martincampano/, miguel: /miguel/ };
 export function personaDe(texto) {
-  const t = String(texto ?? '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+  const t = String(texto ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   if (Object.hasOwn(PERSONAS, t)) return t; // ya es un ID
   return Object.keys(PERSONAS).find((p) => PERSONAS[p].test(t)) ?? 'desconocido';
 }
