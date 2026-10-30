@@ -37,6 +37,12 @@ si, pasa el code-review
 
 **Resultado:** `/code-review` en nivel `low` sobre `main...fix/tokens-sesion-repetida`: sin hallazgos. Una sola fila por `sesion` (la de mayor total; con empate, la primera), las filas sin `sesion` se cuentan todas y se filtra antes de ordenar.
 
+### Hora no registrada (después de las 19:50)
+
+1a
+
+**Resultado:** Sebastián carga su clave (`ssh -T git@github.com`) y elige subir la rama y abrir el PR hacia `main`.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
