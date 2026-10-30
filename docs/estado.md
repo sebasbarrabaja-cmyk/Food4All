@@ -10,7 +10,6 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 ## Pendiente
 
 **Sebastián**
-- Cambiar `ADMIN_PASSWORD` en `backend/.env` (era la de ejemplo).
 - Escribir la «Revisión crítica del equipo» de los prompts del 25 y el 26/10.
 - Comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y terminar los recorridos por la competencia con capturas.
 - Asana, cuando todo esté verificado: subir E1–E6 como subtareas de «Historias de usuario», asignar responsables y dejar solo las subtareas imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.

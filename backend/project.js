@@ -36,7 +36,6 @@ export const PROJECT = {
       'Agente (Hermes Agent) para el buscador del panel: responde con terminal y archivos del servidor, necesita un modelo de IA aparte y es pesado de instalar en cada ordenador; basta un buscador con una sola llamada a la IA',
       'API de pago de Anthropic para el revisor de prompts: tiene coste por uso',
       'Revisor de prompts con IA: quitado el 26/10 (idea descartada)',
-      'Gemini (nivel gratuito) para el buscador: necesita clave; se cambió por la IA local el 30/10',
     ],
   },
 

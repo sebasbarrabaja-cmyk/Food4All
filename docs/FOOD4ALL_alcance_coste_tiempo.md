@@ -109,7 +109,7 @@ La reserva del 15 % cubre la repetición de trabajo. Ya ha pasado con las 12 ent
 | --- | ---: | --- |
 | GitHub (repositorio público) | 0 € | Hecho |
 | Asana (proyecto de la asignatura, compartido con los tres grupos) | 0 € | Hecho: lo da la asignatura |
-| IA local con Ollama (buscador del panel; hasta el 30/10, Gemini en su nivel gratuito) | 0 € | Hecho (`README.md`) |
+| IA local con Ollama (buscador del panel) | 0 € | Hecho (`README.md`) |
 | Servidor de la landing (se ejecuta en local con `npm start`) | 0 € | Hecho |
 | Asistentes de IA de cada miembro (Claude Code y otros) | Según el plan de cada uno | **Pendiente:** cada miembro lo indica |
 | Dominio de la marca (tarea del Hito 1) | — | **Pendiente:** no consta que se haya comprado |
