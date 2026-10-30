@@ -1,0 +1,8 @@
+{
+  "_nota": "Datos de prueba (inventados). estado: pendiente | en curso | hecha. Fechas AAAA-MM-DD.",
+  "tareas": [
+    { "id": "T-001", "titulo": "Ejemplo: base de datos común", "responsable": "miguel", "estado": "en curso", "inicio": "2026-10-27", "fecha_limite": "2026-10-29", "hito": "Sprint 3", "requisitos": [], "asana_gid": null },
+    { "id": "T-002", "titulo": "Ejemplo: selector de idiomas", "responsable": "juan-antonio", "estado": "pendiente", "inicio": "2026-10-28", "fecha_limite": "2026-11-03", "hito": "Sprint 3", "requisitos": [], "asana_gid": null },
+    { "id": "T-003", "titulo": "Ejemplo: etiquetas de prompts", "responsable": "sebastian", "estado": "hecha", "inicio": "2026-10-27", "fecha_limite": "2026-10-27", "hito": "Sprint 3", "requisitos": [], "asana_gid": null }
+  ]
+}

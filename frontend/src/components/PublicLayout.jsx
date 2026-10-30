@@ -55,7 +55,7 @@ export default function PublicLayout() {
           </nav>
         </div>
         <div className="container footer-bottom">
-          <p className="muted small">Proyecto universitario conceptual · Datos de ejemplo · Sin vendedores, pedidos ni precios reales · <Link to="/creditos">Créditos de imágenes</Link></p>
+          <p className="muted small">Proyecto universitario conceptual · Datos de ejemplo · Sin vendedores, pedidos ni precios reales · <Link to="/faq">Preguntas frecuentes</Link> · <Link to="/creditos">Créditos de imágenes</Link></p>
           <Link to="/admin/login" className="admin-link">Acceso administración</Link>
         </div>
       </footer>

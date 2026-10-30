@@ -1,0 +1,7 @@
+{
+  "_nota": "Datos de prueba. La versión real devuelve solo los avisos de la persona con sesión (req.session.usuario). motivo: asignada | vence pronto | vencida.",
+  "usuario": "sebastian",
+  "avisos": [
+    { "tarea": "T-003", "titulo": "Ejemplo: etiquetas de prompts", "fecha_limite": "2026-10-27", "motivo": "vence pronto" }
+  ]
+}

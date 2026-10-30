@@ -1,0 +1,6 @@
+{
+  "_nota": "Datos de prueba. aspecto: Tiempo | Coste | Alcance | Otro. previsto sale de docs/FOOD4ALL_alcance_coste_tiempo.md; real, de git, prompts y tokens. fuente obligatoria.",
+  "filas": [
+    { "aspecto": "Tiempo", "previsto": "Ejemplo: 10 h", "real": "Ejemplo: 14 h", "fuente": "ejemplo", "nota": "Datos de prueba" }
+  ]
+}

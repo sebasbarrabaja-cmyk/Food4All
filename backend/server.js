@@ -12,6 +12,7 @@ import * as prompts from './prompts.js';
 import { aiReady, AIError } from './gemini.js';
 import { ask } from './search.js';
 import { limiter } from './limiter.js';
+import { montarModulos } from './modulos/index.js';
 
 const app = express();
 // 300 kB: los prompts del equipo (el documento maestro ocupa ~80 kB) viajan en JSON.
@@ -166,6 +167,9 @@ app.post('/api/admin/ask', requireAdmin, async (req, res) => {
   try { res.json(await ask(pregunta)); }
   catch (e) { res.status(e instanceof AIError ? e.status : 500).json({ error: e.message }); }
 });
+
+// Módulos del feedback del 27/10 (tareas, avisos, cronograma, traza, tokens, expectativa): backend/modulos/.
+montarModulos(app, requireAdmin);
 
 app.use('/api', (_req, res) => res.status(404).json({ error: 'No encontrado' }));
 

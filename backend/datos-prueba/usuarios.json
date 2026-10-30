@@ -1,0 +1,8 @@
+{
+  "_nota": "Datos de prueba. IDs fijos del equipo: los usan avisos, tareas, tokens y prompts.",
+  "usuarios": [
+    { "id": "sebastian", "nombre": "Sebastián", "rol": "Backend y Product Owner" },
+    { "id": "juan-antonio", "nombre": "Juan Antonio", "rol": "Frontend" },
+    { "id": "miguel", "nombre": "Miguel", "rol": "IA y datos" }
+  ]
+}

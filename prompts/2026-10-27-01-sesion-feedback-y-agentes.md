@@ -56,6 +56,38 @@ Rama `refactor/organizar-agentes`. `AGENTS.md` ≤ 3.500 caracteres, con las reg
 
 **Resultado:** Se quitó `.claude/` de `.git/info/exclude` y se añadió `.claude/settings.local.json` a `.gitignore` (ajustes personales). `git config user.name` pasa a «Sebastián» solo en este repositorio, para la columna `persona` de los tokens. La revisión automática (/code-review) miró el diff de la rama anterior y sus tres avisos no se sostienen al comprobarlos (`words()` se usa, las clases `.polish*` ya no están en el CSS, «Versión pulida» solo aparece en el texto de un mensaje). Los cambios de esta rama se revisaron a mano. Tres commits: reglas y skills, tokens, y textos caducados.
 
+### ~11:40
+
+Reparte la tarea entre los 3, como miguel no trabajó mucho, ponle más tareas hoy. Solo un punto, yo me encargo de los promts y la IA. Y organizalo de tal manera que podamos hacer cada uno nuestra parte aunque dependa de otro, que todo coincida cuando se una
+
+**Resultado:** Propuesta de reparto. Sebastián: 1, 5, 9 y 10 (prompts e IA). Miguel, con más carga: base de datos común, 7, 2, 8 y 6, y para hoy base de datos, login por persona y avisos. Juan Antonio: 3, 4 y 11 (páginas públicas que no toca nadie más). Para que encaje al unirlo: un esqueleto con todo lo compartido ya preparado, contratos de cada ruta con datos de prueba, datos de prueba si no hay base de datos, migraciones numeradas por dueño, claves comunes y un orden de unión. Cinco preguntas.
+
+### ~11:42
+
+1b 2a 3(que lo decida Miguel) 4(los colaboradors del git) 5a ok
+
+**Resultado:**
+- **Decisiones:** `react-i18next` para los idiomas; contraseñas con `scrypt`; el motor de base de datos lo elige Miguel; issues asignados a los colaboradores del repositorio (`sebasbarrabaja-cmyk`, `MiguelJMN` y `Jamc46`, que se toma por Juan Antonio por descarte); español e inglés.
+- **Rama `feat/esqueleto-feedback`:**
+  - `docs/contratos.md`: reparto, archivos de cada uno, rutas, base de datos, claves comunes, sesión, idiomas y orden de unión.
+  - `backend/db.js` (interfaz vacía para Miguel) y `backend/modulos/` (seis módulos montados con una línea en `server.js`), cada uno con su archivo en `backend/datos-prueba/`.
+  - Seis secciones en el panel, con su componente vacío y sus entradas en `SECTIONS`, `KEYWORDS` y `DESTINOS`.
+  - Página `/faq`, con su enlace en el pie.
+- **Issues** #11 a #22 en GitHub, uno por punto y con su responsable: Miguel #11 a #15, Sebastián #16 a #19, Juan Antonio #20 a #22.
+- **Probado:** compila; las seis rutas dan 401 sin sesión y 200 con la forma del contrato; `/faq` responde 200. **Sin probar** en el navegador con sesión: la contraseña del panel está en `.env`.
+
+### ~11:55
+
+haz el push y abre los PR. Y una cosa, si mis compañeros habren una carpeta con el git al dia les dice tienes pendiente x cosa?
+
+**Resultado:** Push de `docs/alcance-coste-tiempo`, `refactor/quitar-version-pulida`, `refactor/organizar-agentes` y `feat/esqueleto-feedback`, y PR encadenados #23 → #24 → #25 → #26, cada uno con qué, por qué y cómo se probó. A la pregunta: hoy no; el agente solo lo vería si lee `docs/estado.md`. Se propone un hook `SessionStart` que enseñe los issues abiertos de cada uno.
+
+### ~12:00
+
+Algun problema?
+
+**Resultado:** Ninguno en el push ni en los PR. Avisos: unir con «Create a merge commit» y en orden, y probar el panel con sesión antes de unir el #26.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*

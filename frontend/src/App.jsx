@@ -11,6 +11,7 @@ import Admin from './pages/Admin.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Creditos from './pages/Creditos.jsx';
 import Comunidad from './pages/Comunidad.jsx';
+import Faq from './pages/Faq.jsx';
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="vender/panel" element={<VendedorPanel />} />
           <Route path="comunidad" element={<Comunidad />} />
           <Route path="creditos" element={<Creditos />} />
+          <Route path="faq" element={<Faq />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="admin/login" element={<AdminLogin />} />
