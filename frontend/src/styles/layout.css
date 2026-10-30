@@ -154,6 +154,21 @@ th { font-size: .85rem; color: var(--text-soft); font-weight: 600; }
 .full-journey__list > li { counter-increment: j; }
 .full-journey__list > li::before { content: counter(j) '. '; color: var(--earth); font-weight: 600; }
 
+/* FAQ: preguntas desplegables (details), una por fila, como el recorrido completo */
+.faq { max-width: 820px; }
+.faq__group { margin-top: 40px; }
+.faq__item { border-bottom: 1px solid var(--border); }
+.faq__item:first-of-type { border-top: 1px solid var(--border); }
+.faq__item > summary { cursor: pointer; list-style: none; min-height: 52px; display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--text); }
+.faq__item > summary::-webkit-details-marker { display: none; }
+.faq__item > summary::before { content: '▸'; color: var(--earth); transition: transform var(--dur) var(--ease); }
+.faq__item[open] > summary::before { transform: rotate(90deg); }
+.faq__item > summary:hover { color: var(--green); }
+.faq__item > p { margin: 0 0 16px 22px; }
+.faq__cta { margin-top: 20px; }
+.faq__more { margin-top: 40px; }
+@media (prefers-reduced-motion: reduce) { .faq__item > summary::before { transition: none; } }
+
 /* Filtros del marketplace */
 .filters { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 16px 0; }
 .filters .chips { margin: 0; }
