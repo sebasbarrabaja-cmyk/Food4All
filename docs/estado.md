@@ -16,8 +16,8 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 - Asana, cuando todo esté verificado: subir E1–E6 como subtareas de «Historias de usuario», asignar responsables y dejar solo las subtareas imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
 
 **Juan Antonio**
-- Revisar con sus palabras las conclusiones de E5 y E6 (las redactó el asistente). En E5, P7, aclarar «mi compañero»; faltan la pregunta de «si no pudieras estar en casa cuando llega el pedido» y la del punto de recogida.
-- Revisión cruzada de `FOOD4ALL_comparativo_revisado.md` y `FOOD4ALL_personas_empatia_v2.md` (apartados 6.2 y 10), con comentario suyo en Asana. **Sin comprobar** si ya está hecha.
+- E5 y E6: las conclusiones (commit `2b820e7`) y la aclaración de P7 (`4eb96c1`) ya son suyas (23/10). Falta volver a preguntarles lo que no se preguntó: «si no pudieras estar en casa cuando llega el pedido» y el punto de recogida. Decidir si se suavizan las inferencias de E6 en «Lo que contradice» (etiquetas → origen; un día → improvisa).
+- Revisión cruzada de `FOOD4ALL_comparativo_revisado.md` y `FOOD4ALL_personas_empatia_v2.md` (apartados 6.2 y 10), con comentario suyo en Asana. Del comparativo, el hallazgo 1 ya está revisado (23/10); falta su apartado 4. Corregidos el 27/10: N-IA-01 «No confirmada» en el comparativo y el registro de paradas de 6.2. Abierto: N-VEN-03 no tiene historia en el apartado 10 (¿intencionado, por ser V2?).
 
 **Equipo**
 - La revisión cruzada del núcleo de compra (RF-05 a RF-07) está sin reasignar: la tiene que hacer alguien distinto del autor.

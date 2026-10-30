@@ -256,7 +256,7 @@ Tres necesidades de la v1 (N-03, N-04 y N-05) eran la misma: saber qué comprar,
 | --- | --- | --- |
 | Lucía | /comprar y /comprar/cliente | Entra, ve el mensaje de planificar y comer local, indica presupuesto y días al asistente, revisa la cesta con productos de varios vendedores, paga una vez, sigue el pedido y recibe recordatorios |
 | Antonio | /vender y /vender/panel | Conoce el recorrido del vendedor, solicita el alta, sube su catálogo con fichas completas, ve su parte del pedido, confirma o avisa de una falta, la deja lista para la recogida y consulta su liquidación |
-| Rafa | Vista de operación (panel interno) | Consulta su ruta de recogida con franjas y accesos, registra cantidad, estado y temperatura en cada parada y verifica el pedido en el hub |
+| Rafa | Vista de operación (panel interno) | Consulta su ruta de recogida con franjas y accesos, registra la recogida en cada parada (hora y bultos; la temperatura, en V2) y verifica el pedido en el hub |
 
 ### 6.2 Requisitos funcionales con criterios de aceptación
 
@@ -276,7 +276,7 @@ Los identificadores de esta tabla eran propios del documento (RF-01 a RF-14) y *
 | RF-07.3-09, RF-07.3-03, RF-07.3-04 (V2) | RF-10 | Ante una falta se propone un sustituto y se notifica al cliente | N-VEN-03, N-HUB-03 | Dado un producto marcado como falta, cuando se registra, entonces el vendedor puede proponer un sustituto de su catálogo y el cliente puede aceptarlo o rechazarlo (en B4 lo propone el vendedor, no el sistema). Si al pagar el cliente eligió qué hacer si falta algo («Sustituir por uno parecido» o «No servir», RF-07.3-09), se aplica su preferencia sin preguntarle |
 | RF-17.2 (V2) | RF-11 | El vendedor consulta su liquidación y la comisión aplicada | N-VEN-05 | Dado un periodo de ventas, cuando el vendedor abre su liquidación, entonces ve ventas, comisión y total a cobrar (RF-17.2-02; la comisión depende de D-02) |
 | RF-08.1 (MVP), RF-08.6 (V2) | RF-12 | El operador ve su ruta de recogida con franjas y datos de acceso | N-HUB-01 | Dada una ruta del día, cuando el operador la abre, entonces ve la lista de vendedores a visitar con dirección, franja de recogida y subpedidos (RF-08.1-01). Ordenar las paradas por cercanía es V2 (RF-08.1-02) |
-| RF-08.1-03, RF-08.2-04 (V2), RF-07.4-02 | RF-13 | El operador registra cantidad, estado y temperatura en cada parada | N-HUB-02, N-HUB-03 | Dada una parada, cuando el operador registra la recogida, entonces se guardan la hora de recogida y los bultos recogidos (RF-08.1-03). El registro de la temperatura de la cámara de frío es V2 (RF-08.2-04) |
+| RF-08.1-03, RF-08.2-04 (V2), RF-07.4-02 | RF-13 | El operador registra la recogida en cada parada: hora y bultos en el MVP; la temperatura, en V2 | N-HUB-02, N-HUB-03 | Dada una parada, cuando el operador registra la recogida, entonces se guardan la hora de recogida y los bultos recogidos (RF-08.1-03). El registro de la temperatura de la cámara de frío es V2 (RF-08.2-04) |
 | RF-08.2 | RF-14 | El hub verifica el pedido consolidado antes de empaquetarlo | N-HUB-03 | Dado un pedido en el hub, cuando se verifica, entonces el sistema compara lo recogido con lo pedido y marca las diferencias (RF-08.2-02) |
 ---
 
