@@ -35,13 +35,22 @@ const sumar = (filas, clave) => Object.entries(Object.groupBy(filas, (f) => f[cl
   .map(([valor, grupo]) => ({ [clave]: valor, total: grupo.reduce((s, f) => s + f.total, 0) }))
   .sort((a, b) => b.total - a.total);
 
+// Una sesión retomada en otra rama deja dos archivos con la misma `sesion` y, al unir las ramas,
+// se contaría dos veces: se queda la fila de mayor total (la más avanzada). Las filas sin `sesion`
+// (llamadas a la IA del panel) se cuentan todas.
+function unaPorSesion(filas) {
+  const mayor = new Map();
+  for (const f of filas) if (f.sesion && !(mayor.get(f.sesion)?.total >= f.total)) mayor.set(f.sesion, f);
+  return filas.filter((f) => !f.sesion || mayor.get(f.sesion) === f);
+}
+
 export function resumen() {
   const sesiones = existsSync(RAIZ + SESIONES)
     ? readdirSync(RAIZ + SESIONES, { recursive: true }).filter((n) => n.endsWith('.csv')).sort().map((n) => `${SESIONES}/${n}`)
     : [];
   const fuentes = [...sesiones, ...[ANTIGUO, IA].filter((r) => existsSync(RAIZ + r))];
-  const filas = fuentes
-    .flatMap((r) => leer(r).map((f) => fila(f, r === IA ? 'otra' : 'sesion-claude')))
+  const filas = unaPorSesion(fuentes
+    .flatMap((r) => leer(r).map((f) => fila(f, r === IA ? 'otra' : 'sesion-claude'))))
     .sort((a, b) => b.fecha.localeCompare(a.fecha));
 
   const total = Object.fromEntries(['entrada', 'salida', 'cache_escritura', 'cache_lectura', 'total']
