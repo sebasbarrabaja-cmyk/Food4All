@@ -36,7 +36,7 @@ const KEYWORDS = {
   hitos: 'hitos asana tareas plan entregas calendario',
   vendedores: 'altas vendedores solicitudes alta',
   marketplace: 'marketplace pedidos ejemplo zonas productos malaga sevilla granada',
-  prompts: 'prompts ia claude gemini registro',
+  prompts: 'prompts ia claude registro',
   avisos: 'avisos pendientes recordatorios mis tareas',
   tareas: 'tareas responsables estado asana backlog',
   cronograma: 'cronograma calendario fechas plazos gantt',
@@ -58,7 +58,8 @@ function SideSearch({ ia }) {
 
   async function submit(e) {
     e.preventDefault();
-    if (q.trim().length < 2 || !ia) return;
+    // Sin IA al cargar también se pregunta: si Ollama ya está en marcha responde, y si no, el error dice qué hacer.
+    if (q.trim().length < 2) return;
     setAnswer({ loading: true });
     try {
       const r = await fetch('/api/admin/ask', {
@@ -80,7 +81,7 @@ function SideSearch({ ia }) {
           onChange={(e) => { setQ(e.target.value); setAnswer(null); }} />
       </form>
       <p className="side-search__note">
-        {ia ? 'Escribe para saltar a una sección. Pulsa Intro para preguntar a la IA.' : 'IA sin configurar (GEMINI_API_KEY): solo busca secciones.'}
+        {ia ? 'Escribe para saltar a una sección. Pulsa Intro para preguntar a la IA.' : 'IA local apagada (ollama serve): solo busca secciones.'}
       </p>
       {matches.length > 0 && !answer && (
         <ul className="side-search__results">

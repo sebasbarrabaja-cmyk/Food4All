@@ -1,6 +1,6 @@
 // Buscador del panel: responde preguntas simples sobre el proyecto y dice a qué apartado ir.
-// No es un agente: una sola llamada a Gemini con los datos del panel como contexto, sin herramientas.
-import { generate, MODELS } from './gemini.js';
+// No es un agente: una sola llamada a la IA local (ia.js) con los datos del panel como contexto, sin herramientas.
+import { generate, MODELO } from './ia.js';
 import { registrarIA } from './modulos/tokens.js';
 import { PROJECT } from './project.js';
 import * as prompts from './prompts.js';
@@ -46,13 +46,13 @@ export async function ask(pregunta) {
   const contexto = `<apartados>\n${lista()}\n</apartados>\n\n<datos_del_proyecto>\n${JSON.stringify(PROJECT)}\n</datos_del_proyecto>\n\n<registro_de_prompts>\n${JSON.stringify(registro)}\n</registro_de_prompts>\n\n<pregunta>\n${pregunta}\n</pregunta>`;
 
   const out = await generate({
-    model: MODELS.fast, system: SYSTEM, prompt: contexto, timeoutMs: 30_000,
-    onUso: (uso) => registrarIA({ accion: 'buscador', modelo: MODELS.fast, uso }),
+    system: SYSTEM, prompt: contexto, timeoutMs: 60_000,
+    onUso: (uso) => registrarIA({ accion: 'buscador', modelo: MODELO, uso }),
     schema: {
-      type: 'OBJECT',
+      type: 'object',
       properties: {
-        respuesta: { type: 'STRING' },
-        destino: { type: 'STRING', enum: [...Object.keys(DESTINOS), 'ninguno'] },
+        respuesta: { type: 'string' },
+        destino: { type: 'string', enum: [...Object.keys(DESTINOS), 'ninguno'] },
       },
       required: ['respuesta', 'destino'],
     },

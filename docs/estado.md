@@ -10,7 +10,6 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 ## Pendiente
 
 **Sebastián**
-- Cambiar `ADMIN_PASSWORD` en `backend/.env` (era la de ejemplo).
 - Escribir la «Revisión crítica del equipo» de los prompts del 25 y el 26/10.
 - Comparar con los otros grupos leyendo Asana (`docs/requisitos/benchmark/leer_otros_grupos.js`, solo lectura; el resultado se guarda fuera del repositorio) y terminar los recorridos por la competencia con capturas.
 - Asana, cuando todo esté verificado: subir E1–E6 como subtareas de «Historias de usuario», asignar responsables y dejar solo las subtareas imprescindibles. Solo en tareas `[Food4All]`, nunca con comentarios del asistente.
@@ -26,7 +25,7 @@ Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había e
 - Añadir las plataformas municipales al comparativo.
 - Entrevistas a vendedores (preguntas nuevas en `docs/competencia/comercio-local.md`). Hasta entonces esperan M-06 (punto de recogida) y pagar como invitado.
 - Abiertos del Hito 2: regla de cancelación (comité de cambio de la Clase 11) y compensación por retraso. Lista completa: `docs/requisitos/FOOD4ALL_linea_base_h2.md`, apartado 5.
-- Código y texto: `AI_EXAMPLE` en `frontend/src/data/examples.js` no se usa; el titular «no siete» de `/vender` es críptico; `backend/project.js` aún da por decidido el «Revisor de prompts con IA» (quitado el 26/10) y `MODELS.smart` de `backend/gemini.js` ya no lo usa nadie.
+- Código y texto: `AI_EXAMPLE` en `frontend/src/data/examples.js` no se usa; el titular «no siete» de `/vender` es críptico.
 
 **Para otro día (interno)**
 - Datos de E5 y E6 en el historial de git: el commit `58437c7` (23/10) conserva carrera, edad aproximada y que son compañeras de piso del entrevistador. Quitarlo exige reescribir el historial y forzar el push en `main`.

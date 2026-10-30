@@ -8,7 +8,7 @@ Cada persona cambia **solo sus archivos**. Lo compartido (`server.js`, `Admin.js
 
 | Persona | Puntos | Sus archivos |
 | --- | --- | --- |
-| **Sebastián** (prompts e IA) | 1 buscador IA · 5 tokens · 9 prompts en base de datos · 10 orden y etiquetas de prompts | `backend/prompts.js`, `search.js`, `gemini.js`, `modulos/tokens.js`, `tools/tokens-sesion.mjs`, `frontend/src/pages/AdminPrompts.jsx`, `AdminTokens.jsx`; migraciones `010–019` |
+| **Sebastián** (prompts e IA) | 1 buscador IA · 5 tokens · 9 prompts en base de datos · 10 orden y etiquetas de prompts | `backend/prompts.js`, `search.js`, `ia.js`, `modulos/tokens.js`, `tools/tokens-sesion.mjs`, `frontend/src/pages/AdminPrompts.jsx`, `AdminTokens.jsx`; migraciones `010–019` |
 | **Miguel** (datos; empieza hoy) | Base de datos común · 7 usuarios y avisos · 2 tareas en la landing · 8 cronograma · 6 trazabilidad | `backend/db.js`, `modulos/tareas.js`, `avisos.js`, `cronograma.js`, `traza.js`, `docker-compose.yml`, el bloque de login de `server.js` (`/api/admin/login`, `logout`, `me` y `requireAdmin`), `AdminLogin.jsx`, `AdminAvisos.jsx`, `AdminTareas.jsx`, `AdminCronograma.jsx`, `AdminTraza.jsx`; migraciones `001–009` |
 | **Juan Antonio** (frontend) | 3 idiomas · 4 FAQ · 11 expectativa vs. realidad | `frontend/src/i18n/`, las páginas públicas (`Home`, `Comprar`, `ClienteVista`, `Vender`, `VendedorPanel`, `Comunidad`, `Creditos`, `Faq`, `NotFound`), `PublicLayout.jsx`, `modulos/expectativa.js`, `AdminExpectativa.jsx`; migraciones `020–029` |
 
