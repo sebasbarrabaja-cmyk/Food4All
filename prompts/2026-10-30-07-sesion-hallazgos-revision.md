@@ -48,6 +48,18 @@ Haz las pruebas y luego el pr
 - En el navegador (PinchTab, servidor en el puerto 3002 con credenciales temporales, sin `.env`), las cuatro secciones en construcción dicen cuántos elementos devuelve su ruta (1, 3, 2 y 1). El mensaje de 401 no se pudo provocar: al recargar, el panel lleva antes al login.
 - PinchTab se atascó una vez (353 % de CPU) y hubo que reiniciarlo.
 
+### ~15:36
+
+Queda algo mio que no sea a mano?
+
+**Resultado:** Pendiente sin hacer a mano: encargo #9 (`tokens.js`) e issue #18 (prompts en la base de datos, que seguramente depende del #11 de Miguel). A mano: los encargos #1 (`.env.example`) y #2 (decidir la partida «IA real»). El PR #39 ya está unido.
+
+### ~15:38
+
+No me quedan tokens, prepara para hacer un /exit y clear
+
+**Resultado:** Se registran estos mensajes y se deja la rama lista para subir. Lo siguiente, en otra sesión: el encargo #9.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
