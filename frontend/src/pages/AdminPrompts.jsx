@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import Icon from '../components/Icon.jsx';
+import { api } from '../api.js';
 
 // Registro de prompts del proyecto (ficheros en /prompts).
 const AUTHORS = ['Sebastián', 'Juan Antonio', 'Miguel', 'Equipo'];
@@ -7,13 +8,6 @@ const EMPTY = { titulo: '', autor: 'Sebastián', herramienta: 'Claude Code', tip
 const SIN_FILTROS = { tipo: '', autor: '', tema: '', resultado: '', etiqueta: '', landing: '', requisito: '' };
 
 const words = (t) => t.trim().split(/\s+/).filter(Boolean).length;
-
-async function api(url, body) {
-  const r = await fetch(url, body && { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
-  const data = await r.json().catch(() => ({}));
-  if (!r.ok) throw Object.assign(new Error(data.error || 'Error inesperado'), { errors: data.errors });
-  return data;
-}
 
 function CopyButton({ text }) {
   const [done, setDone] = useState(false);
@@ -69,7 +63,7 @@ function NewPrompt({ types, temas, resultados, etiquetas, landing, onSaved }) {
     setSaving(true); setErrors({}); setOk('');
     try {
       const requisitos = form.requisitos.split(',').map((x) => x.trim().toUpperCase()).filter(Boolean);
-      const saved = await api('/api/admin/prompts', { ...form, requisitos, landing: form.etiquetas.includes('landing') ? form.landing : [] });
+      const saved = await api('/api/admin/prompts', { cuerpo: { ...form, requisitos, landing: form.etiquetas.includes('landing') ? form.landing : [] } });
       setForm(EMPTY); setOk(`Guardado en prompts/${saved.id}.md`); onSaved();
     } catch (err) { setErrors(err.errors || { texto: err.message }); }
     finally { setSaving(false); }

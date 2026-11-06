@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Icon from '../components/Icon.jsx';
 import Status from '../components/Status.jsx';
+import { api } from '../api.js';
 
 // Hito 2 (requisitos): todo llega de backend/hito2.js, que lo lee de docs/requisitos en cada petición.
 
@@ -76,9 +77,7 @@ export default function AdminHito2() {
   const [d, setD] = useState(null);
   const [error, setError] = useState('');
   useEffect(() => {
-    fetch('/api/admin/hito2')
-      .then((r) => r.json().then((data) => (r.ok ? setD(data) : setError(data.error ?? 'Error inesperado'))))
-      .catch(() => setError('No se pudo contactar con el servidor.'));
+    api('/api/admin/hito2').then(setD).catch((e) => setError(e.message));
   }, []);
 
   if (error) return <p role="alert" className="form-error">{error}</p>;

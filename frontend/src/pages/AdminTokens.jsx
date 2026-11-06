@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { api } from '../api.js';
 
 // Punto 5 del feedback del 27/10. Dueño: Sebastián. Datos: GET /api/admin/tokens (forma en docs/contratos.md).
 // Todo llega de backend/modulos/tokens.js, que suma docs/tokens/*.csv y docs/tokens-ia.csv en cada petición.
@@ -30,9 +31,7 @@ export default function AdminTokens() {
   const [d, setD] = useState(null);
   const [error, setError] = useState('');
   useEffect(() => {
-    fetch('/api/admin/tokens')
-      .then((r) => r.json().then((data) => (r.ok ? setD(data) : setError(data.error ?? 'Error inesperado'))))
-      .catch(() => setError('No se pudo contactar con el servidor.'));
+    api('/api/admin/tokens').then(setD).catch((e) => setError(e.message));
   }, []);
 
   if (error) return <p role="alert" className="form-error">{error}</p>;
