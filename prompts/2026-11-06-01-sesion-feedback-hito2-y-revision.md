@@ -150,6 +150,12 @@ prueba otra vez
 
 **Resultado:** La clave ya está en el agente y GitHub responde. El asistente sube `refactor/limpieza-codigo` y `docs/reparto-hito2` (nunca `main`) y abre dos PR: la de la limpieza contra `main` y la del reparto encima de la de la limpieza.
 
+### Hora no registrada (después de las 15:31)
+
+une la 42 y cambia la base de la 43
+
+**Resultado:** PR #42 unida en `main` con merge commit (`4ab32ac`). `gh pr edit 43 --base main` falló por un error de `gh` con los «Projects (classic)» de GitHub, ya retirados; la base se cambió con la API (`gh api -X PATCH …/pulls/43 -f base=main`). La #43 queda contra `main`, lista para unir, con este registro dentro.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
