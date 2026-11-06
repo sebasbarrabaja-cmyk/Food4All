@@ -49,6 +49,12 @@ Pon esta conversacion es Food4All
 
 **Resultado:** El asistente da por bueno el resultado del pago (confirmado / no confirmado) y señala lo que falta: el paso que comprueba si ese intento de pago ya tiene pedido antes de crearlo (lo central del RF-06), el proceso «Crear pedido y subpedidos» entre «Confirmado» y el almacén, y el mensaje de confirmación o error al usuario. Insiste en dibujar las decisiones como rombos con Sí / No en las flechas y en los pendientes de notación (almacén, flecha del vendedor, repartidor, erratas).
 
+### 13:52
+
+Sube al registro de prompts de github de food4all todos los promps de esta conversacioón
+
+**Resultado:** Los cinco mensajes anteriores ya estaban subidos; se añade este y se sube a la rama `docs/diagrama-flujo-pago`.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
