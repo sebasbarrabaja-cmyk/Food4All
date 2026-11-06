@@ -1,11 +1,19 @@
 # FOOD4ALL · Estado y pendientes
 
-Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había en `AGENTS.md` (la versión completa está en el historial de git, commit `4138056`). Cuando se cree el tablero de issues, cada punto pasa a un issue y se borra de aquí. Última actualización: 27/10/2026.
+Lo que está pasando ahora. Sale de los traspasos del 23 y el 26/10 que había en `AGENTS.md` (la versión completa está en el historial de git, commit `4138056`). Cuando se cree el tablero de issues, cada punto pasa a un issue y se borra de aquí. Última actualización: 06/11/2026.
 
 ## Ahora
 
 - **Sprint 3** (análisis y diseño estructurado), desde el 26/10.
 - **Feedback del profesor (27/10):** repartido en los issues #11 a #22 (Miguel: #11 a #15; Sebastián: #16 a #19; Juan Antonio: #20 a #22). Reparto y contratos: `docs/contratos.md`. Hoy, Miguel: #11 (base de datos) y #12 (usuarios y avisos).
+- **Evaluación del Hito 2: plazo, viernes 13/11/2026.** El profesor pide (mensaje del 06/11, registrado en `prompts/2026-11-06-01-…`):
+  1. una **URL pública** con el Hito 2 completo y todos los prompts (hoy solo se ven en local y con sesión de admin). Decidido: la landing en estático en **GitHub Pages**, sobre el diseño nuevo;
+  2. **trazabilidad de prompts**: cada requisito o artefacto enlaza a los prompts que lo generaron, con autor, fecha y resultado de la revisión;
+  3. **registro completo**: faltan los prompts de las personas y los mapas de empatía, del comparativo original y de las entrevistas descartadas (si no se pueden recuperar, decirlo con el motivo), y el `**Resultado:**` por mensaje de las sesiones anteriores al 22/10;
+  4. **contribución individual**: qué aportó y qué revisó cada miembro, con enlace a la evidencia;
+  5. **cambiar la contraseña del panel** que se compartió en un comentario de Asana y no publicar credenciales en las tareas (Sebastián).
+- **Rediseño desde cero (07/11):** web pública y panel de admin, sin las reglas de `docs/DISENO.md`, probando con las skills de diseño en copias aparte; después Sebastián elige o da feedback. Las 6 copias de pruebas anteriores (19/10 y 01/11) se borraron el 06/11; sus ramas siguen en git.
+- **Miguel:** los issues #11 a #15 y #18 siguen sin avances desde el 27/10. Decidido esperar (06/11).
 
 ## Pendiente
 
@@ -27,7 +35,7 @@ Lo que una persona tiene que hacer por un cambio de otra va en `docs/encargos/<p
 - Añadir las plataformas municipales al comparativo.
 - Entrevistas a vendedores (preguntas nuevas en `docs/competencia/comercio-local.md`). Hasta entonces esperan M-06 (punto de recogida) y pagar como invitado.
 - Abiertos del Hito 2: regla de cancelación (comité de cambio de la Clase 11) y compensación por retraso. Lista completa: `docs/requisitos/FOOD4ALL_linea_base_h2.md`, apartado 5.
-- Código y texto: `AI_EXAMPLE` en `frontend/src/data/examples.js` no se usa; el titular «no siete» de `/vender` es críptico.
+- Texto: el titular «no siete» de `/vender` es críptico. (`AI_EXAMPLE` ya se quitó el 06/11.)
 
 **Para otro día (interno)**
 - Datos de E5 y E6 en el historial de git: el commit `58437c7` (23/10) conserva carrera, edad aproximada y que son compañeras de piso del entrevistador. Quitarlo exige reescribir el historial y forzar el push en `main`.
