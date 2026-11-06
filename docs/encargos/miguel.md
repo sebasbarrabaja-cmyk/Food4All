@@ -1,3 +1,9 @@
 # Encargos de Miguel
 
-Sin encargos abiertos.
+- [ ] #1 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M1 · Aplicar el diseño** (~8 h, mié 11/11): con la base de Sebastián (S2, sáb 07/11), la web pública y el panel de admin como herramienta de trabajo (rutas por sección, vista «Hoy», márgenes ajustados), en tu rama; Juan Antonio revisa la parte de las páginas públicas (`docs/contratos.md`)
+- [ ] #2 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M2 · Prompts de las 12 entrevistas descartadas** (~1 h, lun 09/11): registrar en `prompts/` los prompts con los que se generaron (C-22) o dejar «no recuperable: motivo»
+- [ ] #3 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M3 · Tu contribución y tu ticket** (~0,5 h, mié 11/11): tu texto de «qué aporté y qué revisé» para la página de contribución (J8 de Juan Antonio) y tu ticket individual de Asana completo, con la frase sobre la IA (Hito 1, punto 6)
+- [ ] #4 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M4 · Trazabilidad artefacto → prompts** (~3 h, mié 11/11; cubre el issue #15): campo `artefactos:` en la cabecera de cada prompt (añadirlo en `backend/prompts.js`) y tabla generada «artefacto → prompts (autor, fecha, resultado de la revisión)» para la web pública (S3); cada autor revisa los suyos
+- [ ] #5 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M5 · Pregunta legal D-01** (~1 h, jue 12/11): ¿puede un productor en venta directa (Decreto 163/2016, «sin intermediarios») vender a través de FOOD4ALL? (CL-06); respuesta con fuente en la línea base
+- [ ] #6 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **M6 · Issues #11–#14 y #18 aplazados** (después del 13/11): base de datos, usuarios, tareas, cronograma y prompts en la base de datos no hacen falta para la entrega; se retoman después
+- [ ] #7 · 2026-11-06 · de Sebastián (reparto del Hito 2, plazo 13/11) · **Aviso:** si el miércoles 11/11 no hay avances en M1 ni en M4, lo tuyo se reparte entre Sebastián y Juan Antonio (decisión del 06/11)
