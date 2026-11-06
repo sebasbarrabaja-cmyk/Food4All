@@ -13,6 +13,7 @@ import { aiReady, AIError } from './ia.js';
 import { ask } from './search.js';
 import { limiter } from './limiter.js';
 import { montarModulos } from './modulos/index.js';
+import { TIPOS_VENDEDOR, ZONAS, MAX_LEN } from '../shared/alta-vendedor.js';
 
 const app = express();
 // 300 kB: los prompts del equipo (el documento maestro ocupa ~80 kB) viajan en JSON.
@@ -33,12 +34,7 @@ app.use(session({
 }));
 
 // ---------- Público ----------
-const SELLER_TYPES = ['agricultor', 'granja', 'fruteria', 'panaderia', 'obrador', 'despensa', 'cocina'];
-const ZONES = ['malaga', 'sevilla', 'granada'];
 const str = (v) => (typeof v === 'string' ? v.trim() : '');
-
-// Longitud máxima de cada campo del alta. Mantener al día con MAX_LEN de frontend/src/pages/Vender.jsx.
-const MAX_LEN = { businessName: 120, email: 120, phone: 120, sanitaryRegistry: 300, offer: 1000, pickupHours: 120 };
 const QUINCE_MIN = 15 * 60 * 1000;
 const tooMany = (res, wait) => res.set('Retry-After', String(wait)).status(429)
   .json({ error: `Demasiados intentos. Prueba otra vez dentro de ${Math.ceil(wait / 60)} min.` });
@@ -55,8 +51,8 @@ app.post('/api/sellers/apply', (req, res) => {
     if (str(b[k]).length > max) errors[k] = `Como máximo ${max} caracteres.`;
   }
   if (str(b.businessName).length < 2) errors.businessName = 'Indica el nombre del negocio.';
-  if (!SELLER_TYPES.includes(b.type)) errors.type = 'Elige un tipo de negocio.';
-  if (!ZONES.includes(b.zone)) errors.zone = 'Elige una zona.';
+  if (!TIPOS_VENDEDOR.includes(b.type)) errors.type = 'Elige un tipo de negocio.';
+  if (!ZONAS.includes(b.zone)) errors.zone = 'Elige una zona.';
   if (!/^\S+@\S+\.\S+$/.test(str(b.email))) errors.email = 'Introduce un correo válido.';
   if (str(b.sanitaryRegistry).length < 3) errors.sanitaryRegistry = 'Indica tu registro sanitario o el motivo de la exención.';
   if (str(b.offer).length < 10) errors.offer = 'Cuéntanos brevemente qué ofreces (mín. 10 caracteres).';
