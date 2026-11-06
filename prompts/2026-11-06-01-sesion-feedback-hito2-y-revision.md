@@ -134,6 +134,22 @@ Como dividimos el trabajo, Mi idea principal, el diseño me encargo yo la base, 
 
 **Resultado:** Reparto reequilibrado por horas estimadas (sin probar): Sebastián ~12,7 h (33 %), Juan Antonio ~12 h (31 %) y Miguel ~13,8 h (36 %). La trazabilidad (antes S4) y la pregunta legal D-01 pasan a Miguel (M4 y M5) y la página de contribución (antes S7), a Juan Antonio (J8). Apuntado como encargos en `docs/encargos/` (Sebastián #10–#19, Juan Antonio #8–#15, Miguel #1–#6), con un control el miércoles 11/11: si Miguel no ha avanzado, lo suyo se reparte entre los demás. En `docs/contratos.md`: Miguel aplica el diseño también a las páginas públicas y Juan Antonio revisa esa PR. Sebastián lo pasa a Asana (S10).
 
+### Hora no registrada (después de las 15:31)
+
+haz el push y abre las PR
+
+**Resultado:** El asistente comprueba la clave SSH: no estaba cargada. Le pide a Sebastián que la cargue y le explica cómo quedarán las dos PR (la segunda, encima de la primera).
+
+### Hora no registrada (después de las 15:31)
+
+**Resultado:** Sebastián ejecuta `ssh -T git@github.com` desde el prompt; falla porque sin terminal interactiva no puede pedir la frase de la clave (`ssh_askpass`). El asistente ve que hay un agente SSH compartido, vacío, y propone cargar la clave con `ssh-add` desde otra terminal o hacer el push por HTTPS con `gh`.
+
+### Hora no registrada (después de las 15:31)
+
+prueba otra vez
+
+**Resultado:** La clave ya está en el agente y GitHub responde. El asistente sube `refactor/limpieza-codigo` y `docs/reparto-hito2` (nunca `main`) y abre dos PR: la de la limpieza contra `main` y la del reparto encima de la de la limpieza.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
