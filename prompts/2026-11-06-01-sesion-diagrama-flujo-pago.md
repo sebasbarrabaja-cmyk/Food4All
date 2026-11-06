@@ -55,6 +55,12 @@ Sube al registro de prompts de github de food4all todos los promps de esta conve
 
 **Resultado:** Los cinco mensajes anteriores ya estaban subidos; se añade este y se sube a la rama `docs/diagrama-flujo-pago`.
 
+### 13:54
+
+En el github hay una regla para guardar los prompts subelos mediante esa regla
+
+**Resultado:** El asistente comprueba el registro con la regla de `AGENTS.md` y la skill `food4all-prompts` (cabecera, `### HH:MM` tal cual, **Resultado:**, revisión crítica pendiente) y con el lector del panel (`backend/prompts.js`): lo lee entero, con sus seis pasos y `RF-06`. Faltaba la parte de los tokens, porque la sesión no se abrió en la carpeta del repositorio y el hook no se ejecutó: se lanza a mano `tools/tokens-sesion.mjs` con el historial de la sesión y se sube `docs/tokens/juan-antonio/` (cuenta hasta las 13:55; lo posterior no queda contado).
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
