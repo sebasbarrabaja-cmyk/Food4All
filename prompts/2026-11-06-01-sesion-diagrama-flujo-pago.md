@@ -41,6 +41,14 @@ Pon esta conversacion es Food4All
 
 **Resultado:** Este registro, en la rama `docs/diagrama-flujo-pago`.
 
+### 13:46
+
+ Falta algo.
+
+*(Adjunta una captura de la tercera versión: tras «Proveedor de pago», «No Confirmado» → «Vuelve al carrito» y «Confirmado» → Almacén pedidos y subpedidos.)*
+
+**Resultado:** El asistente da por bueno el resultado del pago (confirmado / no confirmado) y señala lo que falta: el paso que comprueba si ese intento de pago ya tiene pedido antes de crearlo (lo central del RF-06), el proceso «Crear pedido y subpedidos» entre «Confirmado» y el almacén, y el mensaje de confirmación o error al usuario. Insiste en dibujar las decisiones como rombos con Sí / No en las flechas y en los pendientes de notación (almacén, flecha del vendedor, repartidor, erratas).
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Juan Antonio.*
