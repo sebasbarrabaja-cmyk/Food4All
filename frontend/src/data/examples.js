@@ -56,18 +56,6 @@ export const CATEGORY_COLOR = {
   'Comida preparada': 'var(--green)',
 };
 
-// Ejemplo de propuesta del asistente: producto + motivo.
-export const AI_EXAMPLE = {
-  request: 'Tengo 25 € y necesito comida para cuatro días. Tengo poco tiempo para cocinar.',
-  zone: 'Granada',
-  basket: [
-    ['p11', 1, 'Ensaladas y salsa para pasta sin apenas preparación.'],
-    ['p12', 1, 'Salteado en 10 minutos o como acompañamiento del potaje.'],
-    ['p13', 1, 'Fruta de temporada que aguanta bien varios días.'],
-    ['p14', 1, 'Dos comidas resueltas sin cocinar, para los días con menos tiempo.'],
-  ],
-};
-
 export const ORDER_STATES = ['Recibido', 'Recogida en origen', 'En el hub', 'Empaquetado', 'En reparto', 'Entregado'];
 
 export const EXAMPLE_ORDER = {

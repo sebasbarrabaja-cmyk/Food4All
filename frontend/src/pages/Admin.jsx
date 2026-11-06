@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Status from '../components/Status.jsx';
 import Icon from '../components/Icon.jsx';
+import { api } from '../api.js';
 import AdminPrompts from './AdminPrompts.jsx';
 import AdminHito2 from './AdminHito2.jsx';
 // Secciones del feedback del 27/10: cada una en su archivo, con su dueño (docs/contratos.md).
@@ -83,17 +84,13 @@ function SideSearch({ ia }) {
     if (previa !== conv) setConv([]); // olvidada: que el aviso «Recuerda N preguntas» no engañe
     setAnswer({ loading: true });
     try {
-      const r = await fetch('/api/admin/ask', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pregunta, conversacion: previa }),
-      });
-      const data = await r.json();
-      if (!r.ok) { setAnswer({ error: data.error ?? 'No se pudo responder.' }); return; }
+      const data = await api('/api/admin/ask', { cuerpo: { pregunta, conversacion: previa } });
       setAnswer(data);
       setConv(recortar([...previa, { pregunta, respuesta: data.respuesta }]));
       setUltima(Date.now());
       setQ('');
-    } catch {
-      setAnswer({ error: 'No se pudo contactar con el servidor.' });
+    } catch (e) {
+      setAnswer({ error: e.status && e.message === 'Error inesperado' ? 'No se pudo responder.' : e.message });
     }
   }
 
@@ -196,21 +193,18 @@ function Sellers() {
   const navigate = useNavigate();
 
   // Sesión caducada (401) → al login: no es lo mismo que «no hay solicitudes».
-  const load = useCallback(() => fetch('/api/admin/sellers')
-    .then((r) => {
-      if (r.status === 401) return navigate('/admin/login');
-      if (!r.ok) throw new Error(`error ${r.status}`);
-      return r.json().then((list) => { setItems(list); setError(''); });
-    })
-    .catch((e) => setError(e.message)), [navigate]);
+  const load = useCallback(() => api('/api/admin/sellers')
+    .then((list) => { setItems(list); setError(''); })
+    .catch((e) => (e.status === 401 ? navigate('/admin/login') : setError(e.status ? `error ${e.status}` : e.message))), [navigate]);
   useEffect(() => { load(); }, [load]);
 
   async function setStatus(id, status) {
-    const r = await fetch(`/api/admin/sellers/${id}`, {
-      method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }),
-    }).catch(() => null);
-    if (r?.status === 401) return navigate('/admin/login');
-    if (!r?.ok) return setActionError('No se pudo cambiar el estado. Inténtalo otra vez.');
+    try {
+      await api(`/api/admin/sellers/${id}`, { metodo: 'PATCH', cuerpo: { status } });
+    } catch (e) {
+      if (e.status === 401) return navigate('/admin/login');
+      return setActionError('No se pudo cambiar el estado. Inténtalo otra vez.');
+    }
     setActionError('');
     load();
   }
@@ -269,10 +263,7 @@ function Milestones() {
   const [error, setError] = useState('');
   const load = useCallback(() => {
     setData(null); setError('');
-    fetch('/api/admin/milestones')
-      .then((r) => (r.ok ? r.json() : r.json().then((d) => Promise.reject(new Error(d.error)))))
-      .then(setData)
-      .catch((e) => setError(e.message));
+    api('/api/admin/milestones').then(setData).catch((e) => setError(e.message));
   }, []);
   useEffect(() => { load(); }, [load]);
 
@@ -391,7 +382,9 @@ export default function Admin() {
   const { hash } = useLocation();
 
   useEffect(() => {
-    fetch('/api/admin/project').then((r) => (r.ok ? r.json().then(setP) : navigate('/admin/login')));
+    // Respuesta de error (sobre todo 401) → al login. Sin conexión (0) o un 2xx que no es JSON, se
+    // queda como está: con la sesión válida no hay que mandar a nadie al login.
+    api('/api/admin/project').then(setP).catch((e) => e.status >= 400 && navigate('/admin/login'));
   }, [navigate]);
 
   // Enlace directo (p. ej. /admin#prompts para el profesor): cuando el panel se pinta, las secciones
@@ -410,7 +403,7 @@ export default function Admin() {
   }, [p, hash]);
 
   async function logout() {
-    await fetch('/api/admin/logout', { method: 'POST' });
+    await api('/api/admin/logout', { metodo: 'POST' }).catch(() => {}); // aunque falle, se sale
     navigate('/');
   }
 
