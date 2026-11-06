@@ -12,6 +12,8 @@ Cada persona cambia **solo sus archivos**. Lo compartido (`server.js`, `Admin.js
 | **Miguel** (datos; empieza hoy) | Base de datos común · 7 usuarios y avisos · 2 tareas en la landing · 8 cronograma · 6 trazabilidad | `backend/db.js`, `modulos/tareas.js`, `avisos.js`, `cronograma.js`, `traza.js`, `docker-compose.yml`, el bloque de login de `server.js` (`/api/admin/login`, `logout`, `me` y `requireAdmin`), `AdminLogin.jsx`, `AdminAvisos.jsx`, `AdminTareas.jsx`, `AdminCronograma.jsx`, `AdminTraza.jsx`; migraciones `001–009` |
 | **Juan Antonio** (frontend) | 3 idiomas · 4 FAQ · 11 expectativa vs. realidad | `frontend/src/i18n/`, las páginas públicas (`Home`, `Comprar`, `ClienteVista`, `Vender`, `VendedorPanel`, `Comunidad`, `Creditos`, `Faq`, `NotFound`), `PublicLayout.jsx`, `modulos/expectativa.js`, `AdminExpectativa.jsx`; migraciones `020–029` |
 
+**Cambio del 06/11/2026 (reparto del Hito 2):** Miguel aplica el diseño nuevo a toda la landing, también a las páginas públicas de Juan Antonio, que revisa esa PR antes de unirla. Los issues #11–#14 y #18 de Miguel se aplazan hasta después del 13/11, y el #15 (trazabilidad) pasa a ser el encargo M4.
+
 **Hoy, Miguel:** 1) `db.js` y la migración `001` (`usuarios`); 2) login por persona; 3) avisos con los datos de prueba de tareas.
 
 ## 2. Rutas de la API

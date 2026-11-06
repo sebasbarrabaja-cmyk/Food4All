@@ -122,6 +122,46 @@ ok
 - No probado en el navegador ni el alta válida (201), para no escribir una solicitud de prueba en los datos locales.
 - `/code-review` (nivel bajo): un hallazgo, arreglado. Con `api()`, un 200 de `/api/admin/project` que no fuera JSON mandaba al login con la sesión válida; ahora solo va al login con un código ≥ 400, como antes.
 
+### Hora no registrada (después de las 15:25)
+
+Como dividimos el trabajo, Mi idea principal, el diseño me encargo yo la base, cuando la tenga quiero delegarsela a miguel que le gusta ese aspecto. Las demás tareas como las reparto. Quiero que las repartas todas con su descripcion.
+
+**Resultado:** El asistente propone un reparto hasta el 13/11 con calendario: 11 tareas para Sebastián (S1–S11), 7 para Juan Antonio (J1–J7) y 5 para Miguel (M1–M5, con los issues #11–#14 y #18 aplazados), cada una con su descripción y su fecha, y pregunta quién aplica el diseño a las páginas públicas, qué hacer si Miguel no avanza, dónde apuntar el reparto y si la carga está bien.
+
+### Hora no registrada (después de las 15:25)
+
+1a 2(si para el miercoles no esta, lo repartimos para los demás) 3a 4(Mientras sea más o menos equitativo ~33% tal vez algo más para miguel)
+
+**Resultado:** Reparto reequilibrado por horas estimadas (sin probar): Sebastián ~12,7 h (33 %), Juan Antonio ~12 h (31 %) y Miguel ~13,8 h (36 %). La trazabilidad (antes S4) y la pregunta legal D-01 pasan a Miguel (M4 y M5) y la página de contribución (antes S7), a Juan Antonio (J8). Apuntado como encargos en `docs/encargos/` (Sebastián #10–#19, Juan Antonio #8–#15, Miguel #1–#6), con un control el miércoles 11/11: si Miguel no ha avanzado, lo suyo se reparte entre los demás. En `docs/contratos.md`: Miguel aplica el diseño también a las páginas públicas y Juan Antonio revisa esa PR. Sebastián lo pasa a Asana (S10).
+
+### Hora no registrada (después de las 15:31)
+
+haz el push y abre las PR
+
+**Resultado:** El asistente comprueba la clave SSH: no estaba cargada. Le pide a Sebastián que la cargue y le explica cómo quedarán las dos PR (la segunda, encima de la primera).
+
+### Hora no registrada (después de las 15:31)
+
+**Resultado:** Sebastián ejecuta `ssh -T git@github.com` desde el prompt; falla porque sin terminal interactiva no puede pedir la frase de la clave (`ssh_askpass`). El asistente ve que hay un agente SSH compartido, vacío, y propone cargar la clave con `ssh-add` desde otra terminal o hacer el push por HTTPS con `gh`.
+
+### Hora no registrada (después de las 15:31)
+
+prueba otra vez
+
+**Resultado:** La clave ya está en el agente y GitHub responde. El asistente sube `refactor/limpieza-codigo` y `docs/reparto-hito2` (nunca `main`) y abre dos PR: la de la limpieza contra `main` y la del reparto encima de la de la limpieza.
+
+### Hora no registrada (después de las 15:31)
+
+une la 42 y cambia la base de la 43
+
+**Resultado:** PR #42 unida en `main` con merge commit (`4ab32ac`). `gh pr edit 43 --base main` falló por un error de `gh` con los «Projects (classic)» de GitHub, ya retirados; la base se cambió con la API (`gh api -X PATCH …/pulls/43 -f base=main`). La #43 queda contra `main`, lista para unir, con este registro dentro.
+
+### Hora no registrada (después de las 15:31)
+
+une la 43, que no quede nada pendiente y pueda hacer un /exit
+
+**Resultado:** PR #43 unida en `main` con merge commit (este registro va en la rama antes de unirla). `main` local actualizado y ramas locales ya unidas borradas con `git branch -d`. Sin cambios pendientes en el repositorio. Los tokens de la sesión los guarda el hook al hacer `/exit` (`docs/tokens/sebastian/`) y se suben con el siguiente cambio.
+
 ## Revisión crítica del equipo
 
 *Pendiente: la escribe Sebastián.*
