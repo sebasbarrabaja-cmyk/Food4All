@@ -1,2 +1,2 @@
 fecha,persona,rama,sesion,motivo,modelos,mensajes,entrada,salida,cache_escritura,cache_lectura,total
-2026-11-06 13:55,juan-antonio,docs/diagrama-flujo-pago,20cd36c9-3181-4f39-9e98-56c6ac012903,manual,claude-opus-5-5,27,66,16474,63881,2488436,2568857
+2026-11-06 13:56,juan-antonio,docs/diagrama-flujo-pago,20cd36c9-3181-4f39-9e98-56c6ac012903,manual,claude-opus-5-5,32,78,19917,68208,3048056,3136259
